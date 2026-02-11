@@ -27,8 +27,8 @@
     /* Typography */
     body, td, p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
 
-    /* Links */
-    a { color: #0D9488; text-decoration: none; }
+    /* Links — site-aligned indigo */
+    a { color: #6366f1; text-decoration: none; }
 
     /* Responsive */
     @media only screen and (max-width: 640px) {
@@ -42,11 +42,11 @@
       .card-img { height: auto !important; max-height: 180px !important; }
     }
 
-    /* Dark mode */
+    /* Dark mode — indigo/purple brightened to match site */
     @media (prefers-color-scheme: dark) {
       body, .body-bg { background-color: #0F172A !important; }
       .card { background-color: #1E293B !important; border-color: #334155 !important; border-bottom-color: #475569 !important; }
-      .lead-card { background-color: #1E293B !important; border-color: #0F766E !important; border-bottom-color: #0D9488 !important; }
+      .lead-card { background-color: #1E293B !important; border-color: #818cf8 !important; border-bottom-color: #818cf8 !important; }
       .qh-card { background-color: #1E293B !important; border-color: #334155 !important; border-bottom-color: #475569 !important; }
       .text-dark { color: #F1F5F9 !important; }
       .text-body { color: #CBD5E1 !important; }
@@ -55,21 +55,29 @@
       .hr-line { border-color: #334155 !important; }
       .badge-t { background-color: #374151 !important; color: #D1D5DB !important; }
       .badge-d { background-color: #1F2937 !important; color: #9CA3AF !important; }
-      .action-c { color: #2DD4BF !important; }
+      .action-c { color: #818cf8 !important; }
       .take-c { color: #94A3B8 !important; }
       .sec-B45309 { border-left-color: #F59E0B !important; }
-      .sec-0F766E { border-left-color: #2DD4BF !important; }
+      .sec-6366f1 { border-left-color: #818cf8 !important; }
       .sec-2563EB { border-left-color: #60A5FA !important; }
       .sec-0E7490 { border-left-color: #22D3EE !important; }
       .sec-334155 { border-left-color: #94A3B8 !important; }
+      .badge-difficulty-beginner { background-color: #14532d !important; color: #86efac !important; }
+      .badge-difficulty-intermediate { background-color: #78350f !important; color: #fde68a !important; }
+      .badge-difficulty-advanced { background-color: #7f1d1d !important; color: #fca5a5 !important; }
     }
   </style>
 </head>
 <body class="body-bg" style="margin: 0; padding: 0; background-color: #F0F2F5; width: 100%;">
 
+<!-- Top accent bar (site signature gradient) -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 3px; background: linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);">
+<tr><td></td></tr>
+</table>
+
 <!-- Preheader (hidden text for inbox preview) -->
 <div style="display: none; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #F0F2F5;">
-A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation — 12 curated AI stories from 25+ sources&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+Here are the brands bringing ads to ChatGPT — 3 curated AI stories from 25+ sources&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
 </div>
 
 <!-- Outer wrapper -->
@@ -80,17 +88,17 @@ A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Ex
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #0F172A;">
 <!--[if mso]>
 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:800px; height:160px;">
-<v:fill type="gradient" color="#0F172A" color2="#134E4A" angle="135"/>
+<v:fill type="gradient" color="#0F172A" color2="#6366f1" angle="135"/>
 <v:textbox inset="0,0,0,0">
 <![endif]-->
-<tr><td align="center" style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #134E4A 100%); padding: 36px 20px 28px;">
+<tr><td align="center" style="background: linear-gradient(135deg, #0F172A 0%, #312e81 50%, #6366f1 100%); padding: 36px 20px 28px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrapper" style="max-width: 600px;">
   <tr><td align="center">
-    <!-- Logo mark -->
+    <!-- Logo (hosted PNG; generate with scripts/generate_logo.py, host at Pages repo assets/) -->
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 12px;">
     <tr>
-      <td style="width: 52px; height: 52px; background: linear-gradient(135deg, #14B8A6 0%, #0D9488 50%, #0F766E 100%); border-radius: 14px; text-align: center; vertical-align: middle; line-height: 52px;">
-        <span style="font-size: 30px; color: #FFFFFF; font-weight: 800; font-family: Georgia, 'Times New Roman', serif; font-style: italic;">i</span>
+      <td>
+        <img src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="Inference" width="52" height="52" style="width: 52px; height: 52px; border-radius: 14px; display: block;" />
       </td>
     </tr>
     </table>
@@ -98,16 +106,16 @@ A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Ex
     <h1 class="hero-name" style="margin: 0 0 6px; font-size: 26px; font-weight: 800; color: #FFFFFF; letter-spacing: 6px; text-transform: uppercase; line-height: 1;">
       INFERENCE
     </h1>
-    <!-- Tagline -->
+    <!-- Tagline (aligned with site) -->
     <p class="hero-sub" style="margin: 0 0 16px; font-size: 13px; color: rgba(255,255,255,0.5); font-weight: 400;">
-      AI moves fast. Stay sharp.
+      The signal in the noise.
     </p>
-    <!-- Meta pill -->
+    <!-- Meta pill (issue number + date + stats — competitor-aligned) -->
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
     <tr>
       <td style="padding: 5px 14px; background-color: rgba(255,255,255,0.08); border-radius: 20px;">
         <span style="font-size: 12px; color: rgba(255,255,255,0.45);">
-          11 Feb 2026 &nbsp;&middot;&nbsp; 12 stories &nbsp;&middot;&nbsp; ~5 min read
+Issue #110 &nbsp;&middot;&nbsp; 11 Feb 2026 &nbsp;&middot;&nbsp; 3 stories &nbsp;&middot;&nbsp; ~3 min read
         </span>
       </td>
     </tr>
@@ -121,33 +129,51 @@ A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Ex
 <!-- ========== MAIN CONTENT ========== -->
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrapper" style="max-width: 600px; margin: 0 auto;">
 
+<!-- In this issue (table of contents — quick nav like leading newsletters) -->
+<tr><td class="mobile-pad" style="padding: 20px 20px 16px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0;">
+  <tr><td style="padding: 14px 18px;">
+    <p style="margin: 0 0 10px; font-size: 11px; font-weight: 700; color: #6B7280; letter-spacing: 1px; text-transform: uppercase;">In this issue</p>
+    <p style="margin: 0; font-size: 13px; line-height: 1.8; color: #4B5563;">
+      <a href="#ship-it-playbooks" style="color: #6366f1; text-decoration: none;">📚 Ship-It Playbooks (2)</a>    </p>
+  </td></tr>
+  </table>
+</td></tr>
+
 <!-- ========== LEAD STORY ========== -->
 <tr><td class="mobile-pad" style="padding: 24px 20px 0;">
   <!-- Section label -->
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
   <tr><td style="padding-bottom: 10px;">
-    <span style="font-size: 11px; font-weight: 700; color: #0D9488; letter-spacing: 1.5px; text-transform: uppercase;">&#x2B50;&ensp;TOP STORY</span>
+    <span style="font-size: 11px; font-weight: 700; color: #6366f1; letter-spacing: 1.5px; text-transform: uppercase;">&#x2B50;&ensp;TOP STORY</span>
   </td></tr>
   </table>
   <!-- Lead card -->
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="lead-card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; border-bottom: 3px solid #0D9488; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.08);">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="lead-card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; border-bottom: 3px solid #6366f1; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.08);">
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <a href="https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible" style="text-decoration: none;">
+          <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25462010/STK155_OPEN_AI_CVirginia_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200" alt="" width="600" class="card-img" style="width: 100%; max-width: 600px; height: 220px; object-fit: cover; display: block;">
+        </a>
+      </td>
+    </tr>
     <tr>
       <td style="padding: 20px 24px 0;">
         <!-- Badges -->
         <table role="presentation" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td style="padding-right: 6px; padding-bottom: 10px;">
-            <span class="badge-t" style="display: inline-block; padding: 3px 10px; background-color: #F0FDFA; color: #0F766E; font-size: 11px; font-weight: 600; border-radius: 12px;"></span>
+            <span class="badge-t" style="display: inline-block; padding: 3px 10px; background-color: #EEF2FF; color: #4338CA; font-size: 11px; font-weight: 600; border-radius: 12px;">Leader</span>
           </td>
           <td style="padding-bottom: 10px;">
-            <span class="text-faint" style="font-size: 11px; color: #9CA3AF;">arXiv CS.AI</span>
+            <span class="text-faint" style="font-size: 11px; color: #9CA3AF;"><img src="https://www.google.com/s2/favicons?domain=www.theverge.com&sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">The Verge AI &middot; Emma Roth &middot; 11 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://arxiv.org/abs/2602.09112" style="text-decoration: none;">
+        <a href="https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible" style="text-decoration: none;">
           <h2 class="lead-title text-dark" style="margin: 0 0 14px; font-size: 22px; font-weight: 700; color: #111827; line-height: 1.3;">
-            A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation
+            Here are the brands bringing ads to ChatGPT
           </h2>
         </a>
       </td>
@@ -156,15 +182,15 @@ A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Ex
       <td style="padding: 0 24px;">
         <!-- Summary paragraph -->
         <p class="text-body" style="margin: 0 0 14px; font-size: 15px; line-height: 1.65; color: #374151;">
-What research can be pursued with small models trained to complete true programs? 
+OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed beneath our conversations with the AI. Several companies have announced plans to show ads inside ChatGPT - placements that will reportedly cost them a pretty penny - ranging from major retailers.
         </p>
         <!-- Action -->
-        <p class="action-c" style="margin: 0 0 10px; font-size: 14px; color: #0D9488; line-height: 1.55;">
-          <strong>&#x25B8; Action:</strong> Read method and evaluation sections, then compare claims with prior baselines.
+        <p class="action-c" style="margin: 0 0 10px; font-size: 14px; color: #6366f1; line-height: 1.55;">
+          <strong>&#x25B8; Action:</strong> Add Here are the brands bringing ads to your next leadership sync as a planning input.
         </p>
         <!-- Editorial take -->
         <p class="take-c" style="margin: 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Research read: It signals where methods are moving, but confidence depends on broader replication.
+          The strategic signal here is real, but the timing matters more than the headline.
         </p>
       </td>
     </tr>
@@ -173,57 +199,10 @@ What research can be pursued with small models trained to complete true programs
         <!-- CTA button -->
         <table role="presentation" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td style="border-radius: 8px; background-color: #0D9488;">
-            <a href="https://arxiv.org/abs/2602.09112" style="display: inline-block; padding: 10px 24px; font-size: 14px; font-weight: 600; color: #FFFFFF; text-decoration: none; border-radius: 8px;">
+          <td style="border-radius: 8px; background-color: #6366f1;">
+            <a href="https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible" style="display: inline-block; padding: 10px 24px; font-size: 14px; font-weight: 600; color: #FFFFFF; text-decoration: none; border-radius: 8px;">
               Read full story &#x2192;
             </a>
-          </td>
-        </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-
-<!-- ========== FAST SIGNALS ========== -->
-<tr><td class="mobile-pad" style="padding: 28px 20px 0;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-  <tr><td style="padding-bottom: 10px;">
-    <span style="font-size: 11px; font-weight: 700; color: #6B7280; letter-spacing: 1.5px; text-transform: uppercase;">&#x26A1;&ensp;FAST SIGNALS</span>
-  </td></tr>
-  </table>
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="qh-card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-bottom: 2px solid #D1D5DB; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.04);">
-    <tr>
-      <td style="padding: 14px 18px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-        <tr>
-          <td style="vertical-align: top;">
-            <a href="https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer" class="text-dark" style="font-size: 15px; font-weight: 600; color: #111827; text-decoration: none; line-height: 1.4;">
-              ChatGPT’s deep research tool adds a built-in document viewer so you can read its reports
-            </a>
-            <p class="text-dim" style="margin: 4px 0 0; font-size: 13px; color: #6B7280; line-height: 1.5;">OpenAI is updating ChatGPT's deep research tool with a full-screen viewer that you can use to scroll through and navigate to specific areas. Why it matters: As shown in a video shared by OpenAI, the built-in viewer allows you to open ChatGPT's reports in a window.</p>
-          </td>
-          <td style="vertical-align: top; width: 70px; text-align: right; padding-left: 12px;">
-            <span class="badge-t" style="display: inline-block; padding: 3px 10px; background-color: #F3F4F6; color: #4B5563; font-size: 11px; font-weight: 500; border-radius: 12px; white-space: nowrap;">Leader</span>
-          </td>
-        </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="qh-card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-bottom: 2px solid #D1D5DB; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.04);">
-    <tr>
-      <td style="padding: 14px 18px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-        <tr>
-          <td style="vertical-align: top;">
-            <a href="https://huggingface.co/blog/transformersjs-v4" class="text-dark" style="font-size: 15px; font-weight: 600; color: #111827; text-decoration: none; line-height: 1.4;">
-              Transformers.js v4 Preview: Now Available on NPM!
-            </a>
-            <p class="text-dim" style="margin: 4px 0 0; font-size: 13px; color: #6B7280; line-height: 1.5;">Transformers.js v4 Preview: Now Available on NPM. Why it matters: This is likely an execution signal for teams evaluating near-term rollout options.</p>
-          </td>
-          <td style="vertical-align: top; width: 70px; text-align: right; padding-left: 12px;">
-            <span class="badge-t" style="display: inline-block; padding: 3px 10px; background-color: #F3F4F6; color: #4B5563; font-size: 11px; font-weight: 500; border-radius: 12px; white-space: nowrap;">Builder</span>
           </td>
         </tr>
         </table>
@@ -235,398 +214,8 @@ What research can be pursued with small models trained to complete true programs
 <!-- ========== SECTIONS ========== -->
 
 
-<!-- Section header -->
-<tr><td class="mobile-pad" style="padding: 32px 20px 14px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #B45309; letter-spacing: 1.5px; text-transform: uppercase;">
-    🌐&ensp;Industry Radar
-  </span>
-  <div style="width: 36px; height: 3px; background-color: #B45309; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.4;">The moves that change product plans, budgets, and positioning.</p>
-</td></tr>
-
-<!-- Section articles -->
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-B45309" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #B45309; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/" style="text-decoration: none;">
-          <img src="https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Leader</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">TechCrunch AI &middot; 11 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            OpenAI policy exec who opposed chatbot’s “adult mode” reportedly fired on discrimination claim
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-The executive has denied the allegation that she engaged in discrimination. Governance and legal pressure can quickly become product and reputational risk.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Assess roadmap, vendor risk, and budget impact, then adjust quarterly priorities.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Strategic signal: Governance and legal pressure can quickly become product and reputational risk.
-        </p>
-        <!-- Read link -->
-        <a href="https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-B45309" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #B45309; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/" style="text-decoration: none;">
-          <img src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/moltmining-1152x648.jpeg" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">Ars Technica AI &middot; 09 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            No humans allowed: This new space-based MMO is designed exclusively for AI agents
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-SpaceMolt envisions a world where AI plays with itself and the humans just watch. It reflects competitive movement that product teams should factor into planning.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Track near-term API, pricing, or capability changes that affect your stack.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Builder read: It reflects competitive movement that product teams should factor into planning.
-        </p>
-        <!-- Read link -->
-        <a href="https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-
-<!-- Section header -->
-<tr><td class="mobile-pad" style="padding: 32px 20px 14px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F766E; letter-spacing: 1.5px; text-transform: uppercase;">
-    🛠️&ensp;Builder's Bench
-  </span>
-  <div style="width: 36px; height: 3px; background-color: #0F766E; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.4;">New tooling worth evaluating in an actual workflow this week.</p>
-</td></tr>
-
-<!-- Section articles -->
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-0F766E" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0F766E; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://huggingface.co/blog/transformersjs-v4" style="text-decoration: none;">
-          <img src="https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">Hugging Face Blog &middot; 09 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://huggingface.co/blog/transformersjs-v4" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            Transformers.js v4 Preview: Now Available on NPM!
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-This is likely an execution signal for teams evaluating near-term rollout options.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Pilot this in one live workflow and record latency, quality, and cost deltas.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Builder read: This is likely an execution signal for teams evaluating near-term rollout options.
-        </p>
-        <!-- Read link -->
-        <a href="https://huggingface.co/blog/transformersjs-v4" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-0F766E" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0F766E; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" style="text-decoration: none;">
-          <img src="https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">LangChain Blog &middot; 10 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            The two patterns by which agents connect sandboxes
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-It may improve delivery speed if integration overhead stays manageable.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Pilot this in one live workflow and record latency, quality, and cost deltas.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Shipping signal: It may improve delivery speed if integration overhead stays manageable.
-        </p>
-        <!-- Read link -->
-        <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-
-<!-- Section header -->
-<tr><td class="mobile-pad" style="padding: 32px 20px 14px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #2563EB; letter-spacing: 1.5px; text-transform: uppercase;">
-    ⭐&ensp;Open Source Watch
-  </span>
-  <div style="width: 36px; height: 3px; background-color: #2563EB; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.4;">Repos with momentum that might deserve a deeper look.</p>
-</td></tr>
-
-<!-- Section articles -->
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-2563EB" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #2563EB; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://github.com/sickn33/antigravity-awesome-skills" style="text-decoration: none;">
-          <img src="https://avatars.githubusercontent.com/u/184072420?v=4" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">GitHub Trending (AI/ML) &middot; 11 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://github.com/sickn33/antigravity-awesome-skills" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            antigravity-awesome-skills
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Check maintenance, license, and issue velocity before adopting it.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Operator view: Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.
-        </p>
-        <!-- Read link -->
-        <a href="https://github.com/sickn33/antigravity-awesome-skills" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-2563EB" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #2563EB; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://github.com/Leey21/awesome-ai-research-writing" style="text-decoration: none;">
-          <img src="https://avatars.githubusercontent.com/u/112166430?v=4" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">GitHub Trending (AI/ML) &middot; 11 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://github.com/Leey21/awesome-ai-research-writing" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            awesome-ai-research-writing
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-Elevate your AI research writing, no more tedious polishing ✨. (5,379 stars, 417 forks) Only 12 days old with ~448 stars/day.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Check maintenance, license, and issue velocity before adopting it.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Shipping signal: (5,379 stars, 417 forks) Only 12 days old with ~448 stars/day.
-        </p>
-        <!-- Read link -->
-        <a href="https://github.com/Leey21/awesome-ai-research-writing" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-2563EB" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #2563EB; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://github.com/dwzhu-pku/PaperBanana" style="text-decoration: none;">
-          <img src="https://avatars.githubusercontent.com/u/52273452?v=4" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">GitHub Trending (AI/ML) &middot; 02 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://github.com/dwzhu-pku/PaperBanana" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            PaperBanana
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-PaperBanana: Automating Academic Illustration For AI Scientists. (3,286 stars, 161 forks, JavaScript) Only 12 days old with ~274 stars/day.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Check maintenance, license, and issue velocity before adopting it.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Builder read: (3,286 stars, 161 forks, JavaScript) Only 12 days old with ~274 stars/day.
-        </p>
-        <!-- Read link -->
-        <a href="https://github.com/dwzhu-pku/PaperBanana" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-
-<!-- Section header -->
-<tr><td class="mobile-pad" style="padding: 32px 20px 14px;">
+<!-- Section header (id for TOC deep links) -->
+<tr><td id="ship-it-playbooks" class="mobile-pad" style="padding: 32px 20px 14px;">
   <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0E7490; letter-spacing: 1.5px; text-transform: uppercase;">
     📚&ensp;Ship-It Playbooks
   </span>
@@ -639,8 +228,8 @@ PaperBanana: Automating Academic Illustration For AI Scientists. (3,286 stars, 1
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-0E7490" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0E7490; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" style="text-decoration: none;">
-          <img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-1-10.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+        <a href="https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej" style="text-decoration: none;">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcirqq7yw20gjagh686bd.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
@@ -650,36 +239,36 @@ PaperBanana: Automating Academic Illustration For AI Scientists. (3,286 stars, 1
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
         <tr>
           <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
+            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
           </td>
           <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #22c55e;">Beginner</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">MarkTechPost &middot; 11 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;"><img src="https://www.google.com/s2/favicons?domain=dev.to&sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">Dev.to AI &middot; 11 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" style="text-decoration: none;">
+        <a href="https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving
+            I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.
           </h3>
         </a>
         <!-- Summary paragraph: what_happened + why_it_matters -->
         <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency.
+The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days. The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days.
         </p>
         <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Reuse one implementation step in your stack and document what changed.
+        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #6366f1; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Adapt the core pattern from I'm an AI Agent Active on 130+ Platforms. to one real task in your current project this week.
         </p>
         <!-- Editorial take -->
         <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Shipping signal: As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency.
+          Operator note: Use this as a blueprint and trim to your production constraints.
         </p>
         <!-- Read link -->
-        <a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
+        <a href="https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej" style="font-size: 13px; font-weight: 600; color: #6366f1; text-decoration: none;">
           Read article &#x2192;
         </a>
       </td>
@@ -690,8 +279,8 @@ Serving Large Language Models (LLMs) at scale is a massive engineering challenge
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-0E7490" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0E7490; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://dev.to/cyfutureai/gpu-as-a-service-pricing-a-complete-guide-to-cost-models-and-savings-381m" style="text-decoration: none;">
-          <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3otvb2z646ytpt1hl2rv.jpg" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+        <a href="https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd" style="text-decoration: none;">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1l3ena70980qoev5e08q.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
@@ -701,142 +290,36 @@ Serving Large Language Models (LLMs) at scale is a massive engineering challenge
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
         <tr>
           <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
+            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
           </td>
           <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Beginner</span>
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #22c55e;">Beginner</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">Dev.to AI &middot; 11 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;"><img src="https://www.google.com/s2/favicons?domain=dev.to&sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">Dev.to AI &middot; 11 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://dev.to/cyfutureai/gpu-as-a-service-pricing-a-complete-guide-to-cost-models-and-savings-381m" style="text-decoration: none;">
+        <a href="https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            GPU as a Service Pricing: A Complete Guide to Cost Models and Savings
+            AI Agents 101: From Concept to Code (No Frameworks Required)
           </h3>
         </a>
         <!-- Summary paragraph: what_happened + why_it_matters -->
         <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-In the fast-evolving world of cloud computing, GPU-as-a-service has become essential for handling intensive tasks such as AI training, machine learning inference, scientific. Businesses and developers increasingly turn to these on-demand resources to avoid the high upfront costs of purchasing hardware.
+Most tutorials about AI agents rely heavily on frameworks. They’re powerful — but they abstract away the most important part: How an AI agent actually works under the hood.
         </p>
         <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Reuse one implementation step in your stack and document what changed.
+        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #6366f1; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Adapt the core pattern from AI Agents 101 to one real task in your current project this week.
         </p>
         <!-- Editorial take -->
         <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Operator view: Businesses and developers increasingly turn to these on-demand resources to avoid the high upfront costs of purchasing hardware.
+          Operator note: The strongest value is in adapting one proven pattern, not copying the whole stack.
         </p>
         <!-- Read link -->
-        <a href="https://dev.to/cyfutureai/gpu-as-a-service-pricing-a-complete-guide-to-cost-models-and-savings-381m" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-
-<!-- Section header -->
-<tr><td class="mobile-pad" style="padding: 32px 20px 14px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #475569; letter-spacing: 1.5px; text-transform: uppercase;">
-    🔬&ensp;Lab Notes
-  </span>
-  <div style="width: 36px; height: 3px; background-color: #475569; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.4;">Research and model updates with downstream product impact.</p>
-</td></tr>
-
-<!-- Section articles -->
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-334155" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #475569; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://arxiv.org/abs/2602.09112" style="text-decoration: none;">
-          <img src="https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Researcher</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">arXiv CS.AI &middot; 11 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://arxiv.org/abs/2602.09112" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-What research can be pursued with small models trained to complete true programs? It signals where methods are moving, but confidence depends on broader replication.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Read method and evaluation sections, then compare claims with prior baselines.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Research read: It signals where methods are moving, but confidence depends on broader replication.
-        </p>
-        <!-- Read link -->
-        <a href="https://arxiv.org/abs/2602.09112" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-334155" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #475569; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #F0FDFA; color: #0F766E; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d" style="display: inline-block; padding: 2px 8px; background-color: #F3F4F6; color: #6B7280; font-size: 10px; font-weight: 500; border-radius: 10px;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #9CA3AF;">Hacker News (AI) &middot; 08 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            A timeline of claims about AI/LLMs
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-It can shift model choice tradeoffs on quality, latency, and cost.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0D9488; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Benchmark against your default model before routing production traffic.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #9CA3AF; font-style: italic; line-height: 1.5;">
-          Operator view: It can shift model choice tradeoffs on quality, latency, and cost.
-        </p>
-        <!-- Read link -->
-        <a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" style="font-size: 13px; font-weight: 600; color: #0D9488; text-decoration: none;">
+        <a href="https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd" style="font-size: 13px; font-weight: 600; color: #6366f1; text-decoration: none;">
           Read article &#x2192;
         </a>
       </td>
@@ -848,14 +331,28 @@ It can shift model choice tradeoffs on quality, latency, and cost.
 <tr><td style="padding: 32px 24px 16px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="hr-line" style="border-top: 1px solid #E2E8F0;">
     <tr><td style="padding-top: 20px; text-align: center;">
-      <p class="text-faint" style="margin: 0 0 6px; font-size: 12px; color: #9CA3AF; line-height: 1.6;">
-        Curated from 25+ sources &nbsp;&middot;&nbsp;
-        <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues" style="color: #0D9488; text-decoration: none;">Past issues</a> &nbsp;&middot;&nbsp;
-        <a href="https://matthewpaver.github.io/ai-weekly/" style="color: #0D9488; text-decoration: none;">Read on web</a>
+      <!-- Share this issue (competitor-aligned: The Batch, LWiA use share + forward) -->
+      <p style="margin: 0 0 14px; font-size: 12px; color: #6B7280; font-weight: 600;">Share this issue</p>
+      <p style="margin: 0 0 18px; font-size: 13px; line-height: 1.6;">
+        <a href="mailto:?subject=Inference%20%E2%80%94%2011%20Feb%202026&body=Read%20this%20week%27s%20AI%20briefing%3A%20https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2F" style="color: #6366f1; text-decoration: none; margin-right: 12px;">Forward</a>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2F&text=Inference%20%E2%80%94%2011 Feb 2026%20AI%20briefing" style="color: #6366f1; text-decoration: none; margin-right: 12px;">X</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2F" style="color: #6366f1; text-decoration: none;">LinkedIn</a>
       </p>
-      <p class="text-faint" style="margin: 0; font-size: 12px; color: #9CA3AF;">
-        Built by <a href="https://github.com/MatthewPaver" style="color: #0D9488; text-decoration: none; font-weight: 500;">Matthew Paver</a> &nbsp;&middot;&nbsp;
-        <a href="https://www.linkedin.com/in/matthew-paver-534262166/" style="color: #0D9488; text-decoration: none;">LinkedIn</a>
+      <!-- Primary CTA -->
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 12px; color: #9CA3AF; line-height: 1.6;">
+        <a href="https://matthewpaver.github.io/ai-weekly/" style="display: inline-block; padding: 10px 20px; background-color: #6366f1; color: #FFFFFF !important; text-decoration: none; font-weight: 600; border-radius: 8px; font-size: 13px;">Read in browser</a>
+      </p>
+      <p class="text-faint" style="margin: 12px 0 6px; font-size: 12px; color: #9CA3AF; line-height: 1.6;">
+        Curated from 25+ sources &nbsp;&middot;&nbsp;
+        <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues" style="color: #6366f1; text-decoration: none;">Past issues</a> &nbsp;&middot;&nbsp;
+        <a href="https://matthewpaver.github.io/ai-weekly/" style="color: #6366f1; text-decoration: none;">Subscribe</a>
+      </p>
+      <p class="text-faint" style="margin: 0; font-size: 11px; color: #9CA3AF;">
+        Built by <a href="https://github.com/MatthewPaver" style="color: #6366f1; text-decoration: none; font-weight: 500;">Matthew Paver</a> &nbsp;&middot;&nbsp;
+        <a href="https://www.linkedin.com/in/matthew-paver-534262166/" style="color: #6366f1; text-decoration: none;">LinkedIn</a>
+      </p>
+      <p class="text-faint" style="margin: 14px 0 0; font-size: 11px; color: #94A3B8;">
+        You're receiving Inference because you subscribed at matthewpaver.github.io/ai-weekly
       </p>
     </td></tr>
   </table>

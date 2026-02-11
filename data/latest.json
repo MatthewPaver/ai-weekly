@@ -1,235 +1,83 @@
 {
   "date": "11 Feb 2026",
-  "total_articles": 12,
+  "total_articles": 3,
   "source_count": 25,
-  "read_time_minutes": 5,
-  "intro": "Midweek briefing: company moves and product decisions led the cycle. It leans builder-first, with concrete things to test quickly. We reviewed 25+ sources so you do not have to.",
+  "read_time_minutes": 3,
+  "intro": "Midweek briefing: implementation playbooks were unusually strong this round. It leans builder-first, with concrete things to test quickly. We reviewed 25+ sources so you do not have to.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (3 stories)."
+      "value": "Tutorials led coverage (2 stories)."
     },
     {
       "label": "Builder pick",
-      "value": "[Transformers.js v4 Preview: Now Available on NPM!](https://huggingface.co/blog/transformersjs-v4)"
+      "value": "[I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.](https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej)"
     },
     {
       "label": "Leader watch",
-      "value": "[ChatGPT\u2019s deep research tool adds a built-in document viewer so you can read its reports](https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer)"
-    },
-    {
-      "label": "Research watch",
-      "value": "[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation](https://arxiv.org/abs/2602.09112)"
+      "value": "[Here are the brands bringing ads to ChatGPT](https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible)"
     }
   ],
   "issue_menu": [
-    "\ud83c\udf10 Industry Radar (2)",
-    "\ud83d\udee0\ufe0f Builder's Bench (2)",
-    "\u2b50 Open Source Watch (3)",
-    "\ud83d\udcda Ship-It Playbooks (2)",
-    "\ud83d\udd2c Lab Notes (2)"
+    "\ud83d\udcda Ship-It Playbooks (2)"
   ],
   "briefing": [
     {
-      "title": "ChatGPT\u2019s deep research tool adds a built-in document viewer so you can read its reports",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer",
-      "note": "OpenAI is updating ChatGPT's deep research tool with a full-screen viewer that you can use to scroll through and navigate to specific areas. Why it matters: As shown in a video shared by OpenAI, the built-in viewer allows you to open ChatGPT's reports in a window.",
-      "track": "Leader"
+      "title": "I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.",
+      "url": "https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej",
+      "note": "The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms. Why it matters: The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+.",
+      "track": "Builder"
     },
     {
-      "title": "Transformers.js v4 Preview: Now Available on NPM!",
-      "url": "https://huggingface.co/blog/transformersjs-v4",
-      "note": "Transformers.js v4 Preview: Now Available on NPM. Why it matters: This is likely an execution signal for teams evaluating near-term rollout options.",
+      "title": "AI Agents 101: From Concept to Code (No Frameworks Required)",
+      "url": "https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd",
+      "note": "Most tutorials about AI agents rely heavily on frameworks. Why it matters: They\u2019re powerful \u2014 but they abstract away the most important part: How an AI agent actually works under.",
       "track": "Builder"
+    },
+    {
+      "title": "Here are the brands bringing ads to ChatGPT",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
+      "note": "OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed. Why it matters: Several companies have announced plans to show ads inside ChatGPT - placements that will reportedly cost them.",
+      "track": "Leader"
     }
   ],
   "editors_note": {
     "headline": "Editor's Desk",
-    "hook": "Strategy and research both moved this week, which usually means execution windows open quickly.",
-    "spotlight": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation is the story most likely to shape near-term decisions.",
-    "underhyped": "Transformers.js v4 Preview: Now Available on NPM!.",
-    "risk": "ChatGPT\u2019s deep research tool adds a built-in document viewer so you can read its reports."
+    "hook": "Here are the brands bringing ads to ChatGPT is this week's lead story. The mix leans practical, with things you can test and ship this week.",
+    "spotlight": "Here are the brands bringing ads to ChatGPT \u2014 it's the most likely to change near-term decisions for teams shipping AI products.",
+    "underhyped": "I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like. deserves more attention than it's getting.",
+    "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
-    "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
-    "url": "https://arxiv.org/abs/2602.09112",
-    "source": "arXiv CS.AI",
-    "track": "Researcher",
-    "what_happened": "What research can be pursued with small models trained to complete true programs?",
-    "our_take": "Research read: It signals where methods are moving, but confidence depends on broader replication.",
-    "what_to_do": "Read method and evaluation sections, then compare claims with prior baselines."
+    "title": "Here are the brands bringing ads to ChatGPT",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
+    "source": "The Verge AI",
+    "track": "Leader",
+    "what_happened": "OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed beneath our conversations with the AI.",
+    "our_take": "The strategic signal here is real, but the timing matters more than the headline.",
+    "what_to_do": "Add Here are the brands bringing ads to your next leadership sync as a planning input."
   },
   "quick_hits": [
     {
-      "title": "ChatGPT\u2019s deep research tool adds a built-in document viewer so you can read its reports",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer",
-      "note": "OpenAI is updating ChatGPT's deep research tool with a full-screen viewer that you can use to scroll through and navigate to specific areas. Why it matters: As shown in a video shared by OpenAI, the built-in viewer allows you to open ChatGPT's reports in a window.",
-      "track": "Leader"
+      "title": "I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.",
+      "url": "https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej",
+      "note": "The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms. Why it matters: The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+.",
+      "track": "Builder"
     },
     {
-      "title": "Transformers.js v4 Preview: Now Available on NPM!",
-      "url": "https://huggingface.co/blog/transformersjs-v4",
-      "note": "Transformers.js v4 Preview: Now Available on NPM. Why it matters: This is likely an execution signal for teams evaluating near-term rollout options.",
+      "title": "AI Agents 101: From Concept to Code (No Frameworks Required)",
+      "url": "https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd",
+      "note": "Most tutorials about AI agents rely heavily on frameworks. Why it matters: They\u2019re powerful \u2014 but they abstract away the most important part: How an AI agent actually works under.",
       "track": "Builder"
+    },
+    {
+      "title": "Here are the brands bringing ads to ChatGPT",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
+      "note": "OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed. Why it matters: Several companies have announced plans to show ads inside ChatGPT - placements that will reportedly cost them.",
+      "track": "Leader"
     }
   ],
   "sections": [
-    {
-      "title": "Industry Radar",
-      "icon": "\ud83c\udf10",
-      "deck": "The moves that change product plans, budgets, and positioning.",
-      "color": "B45309",
-      "badge": "Industry Radar",
-      "topics": [
-        "Industry",
-        "Community"
-      ],
-      "articles": [
-        {
-          "title": "OpenAI policy exec who opposed chatbot\u2019s \u201cadult mode\u201d reportedly fired on discrimination claim",
-          "url": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Lucas Ropek",
-          "published": "11 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024",
-          "summary": "The executive has denied the allegation that she engaged in discrimination.",
-          "what_happened": "The executive has denied the allegation that she engaged in discrimination.",
-          "why_it_matters": "Governance and legal pressure can quickly become product and reputational risk.",
-          "what_to_do": "Assess roadmap, vendor risk, and budget impact, then adjust quarterly priorities.",
-          "our_take": "Strategic signal: Governance and legal pressure can quickly become product and reputational risk.",
-          "audience_track": "Leader",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        },
-        {
-          "title": "No humans allowed: This new space-based MMO is designed exclusively for AI agents",
-          "url": "https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/",
-          "source": "Ars Technica AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arstechnica.com&sz=16",
-          "authors": "Kyle Orland",
-          "published": "09 Feb",
-          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/moltmining-1152x648.jpeg",
-          "summary": "SpaceMolt envisions a world where AI plays with itself and the humans just watch.",
-          "what_happened": "SpaceMolt envisions a world where AI plays with itself and the humans just watch.",
-          "why_it_matters": "It reflects competitive movement that product teams should factor into planning.",
-          "what_to_do": "Track near-term API, pricing, or capability changes that affect your stack.",
-          "our_take": "Builder read: It reflects competitive movement that product teams should factor into planning.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        }
-      ]
-    },
-    {
-      "title": "Builder's Bench",
-      "icon": "\ud83d\udee0\ufe0f",
-      "deck": "New tooling worth evaluating in an actual workflow this week.",
-      "color": "0F766E",
-      "badge": "Builders Bench",
-      "topics": [
-        "Tools"
-      ],
-      "articles": [
-        {
-          "title": "Transformers.js v4 Preview: Now Available on NPM!",
-          "url": "https://huggingface.co/blog/transformersjs-v4",
-          "source": "Hugging Face Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
-          "authors": "",
-          "published": "09 Feb",
-          "thumbnail": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
-          "summary": "Transformers.js v4 Preview: Now Available on NPM!. This release signal from Hugging Face Blog looks practical enough for a scoped pilot.",
-          "what_happened": "Transformers.js v4 Preview: Now Available on NPM!.",
-          "why_it_matters": "This is likely an execution signal for teams evaluating near-term rollout options.",
-          "what_to_do": "Pilot this in one live workflow and record latency, quality, and cost deltas.",
-          "our_take": "Builder read: This is likely an execution signal for teams evaluating near-term rollout options.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        },
-        {
-          "title": "The two patterns by which agents connect sandboxes",
-          "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
-          "source": "LangChain Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
-          "authors": "Harrison Chase",
-          "published": "10 Feb",
-          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png",
-          "summary": "Thank you to Nuno Campos from Witan Labs, Tomas Beran and Mikayel Harutyunyan from E2B, Jonathan Wall from Runloop, and Ben Guo from Zo Computer for their review and comments. TL;DR: More and more agents need a workspace: a computer where they can run code, install packages, and access.",
-          "what_happened": "The two patterns by which agents connect sandboxes.",
-          "why_it_matters": "It may improve delivery speed if integration overhead stays manageable.",
-          "what_to_do": "Pilot this in one live workflow and record latency, quality, and cost deltas.",
-          "our_take": "Shipping signal: It may improve delivery speed if integration overhead stays manageable.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        }
-      ]
-    },
-    {
-      "title": "Open Source Watch",
-      "icon": "\u2b50",
-      "deck": "Repos with momentum that might deserve a deeper look.",
-      "color": "2563EB",
-      "badge": "Open Source Watch",
-      "topics": [
-        "Repos"
-      ],
-      "articles": [
-        {
-          "title": "antigravity-awesome-skills",
-          "url": "https://github.com/sickn33/antigravity-awesome-skills",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "sickn33",
-          "published": "11 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/184072420?v=4",
-          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,382 stars, 1,716 forks, Python) Created 27 days ago, averaging ~310 stars/day.",
-          "what_happened": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor.",
-          "why_it_matters": "Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.",
-          "what_to_do": "Check maintenance, license, and issue velocity before adopting it.",
-          "our_take": "Operator view: Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        },
-        {
-          "title": "awesome-ai-research-writing",
-          "url": "https://github.com/Leey21/awesome-ai-research-writing",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "Leey21",
-          "published": "11 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/112166430?v=4",
-          "summary": "Elevate your AI research writing, no more tedious polishing \u2728. (5,379 stars, 417 forks) Only 12 days old with ~448 stars/day.",
-          "what_happened": "Elevate your AI research writing, no more tedious polishing \u2728.",
-          "why_it_matters": "(5,379 stars, 417 forks) Only 12 days old with ~448 stars/day.",
-          "what_to_do": "Check maintenance, license, and issue velocity before adopting it.",
-          "our_take": "Shipping signal: (5,379 stars, 417 forks) Only 12 days old with ~448 stars/day.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        },
-        {
-          "title": "PaperBanana",
-          "url": "https://github.com/dwzhu-pku/PaperBanana",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "dwzhu-pku",
-          "published": "02 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/52273452?v=4",
-          "summary": "PaperBanana: Automating Academic Illustration For AI Scientists. (3,286 stars, 161 forks, JavaScript) Only 12 days old with ~274 stars/day.",
-          "what_happened": "PaperBanana: Automating Academic Illustration For AI Scientists.",
-          "why_it_matters": "(3,286 stars, 161 forks, JavaScript) Only 12 days old with ~274 stars/day.",
-          "what_to_do": "Check maintenance, license, and issue velocity before adopting it.",
-          "our_take": "Builder read: (3,286 stars, 161 forks, JavaScript) Only 12 days old with ~274 stars/day.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        }
-      ]
-    },
     {
       "title": "Ship-It Playbooks",
       "icon": "\ud83d\udcda",
@@ -241,85 +89,38 @@
       ],
       "articles": [
         {
-          "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
-          "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
-          "source": "MarkTechPost",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.marktechpost.com&sz=16",
-          "authors": "Asif Razzaq",
-          "published": "11 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-1-10.png",
-          "summary": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.",
-          "what_happened": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management.",
-          "why_it_matters": "As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency.",
-          "what_to_do": "Reuse one implementation step in your stack and document what changed.",
-          "our_take": "Shipping signal: As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "GPU as a Service Pricing: A Complete Guide to Cost Models and Savings",
-          "url": "https://dev.to/cyfutureai/gpu-as-a-service-pricing-a-complete-guide-to-cost-models-and-savings-381m",
+          "title": "I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.",
+          "url": "https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej",
           "source": "Dev.to AI",
           "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
-          "authors": "Cyfuture AI",
+          "authors": "Colin Easton",
           "published": "11 Feb",
-          "thumbnail": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3otvb2z646ytpt1hl2rv.jpg",
-          "summary": "In the fast-evolving world of cloud computing, GPU-as-a-service has become essential for handling intensive tasks such as AI training, machine learning inference, scientific simulations, and graphics rendering. Businesses and developers increasingly turn to these on-demand resources to avoid the high upfront costs of purchasing hardware.",
-          "what_happened": "In the fast-evolving world of cloud computing, GPU-as-a-service has become essential for handling intensive tasks such as AI training, machine learning inference, scientific.",
-          "why_it_matters": "Businesses and developers increasingly turn to these on-demand resources to avoid the high upfront costs of purchasing hardware.",
-          "what_to_do": "Reuse one implementation step in your stack and document what changed.",
-          "our_take": "Operator view: Businesses and developers increasingly turn to these on-demand resources to avoid the high upfront costs of purchasing hardware.",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcirqq7yw20gjagh686bd.png",
+          "summary": "I'm ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days. I'm the CMO of The Colony, a community platform for AI agents.",
+          "what_happened": "The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days.",
+          "why_it_matters": "The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days.",
+          "what_to_do": "Adapt the core pattern from I'm an AI Agent Active on 130+ Platforms. to one real task in your current project this week.",
+          "our_take": "Operator note: Use this as a blueprint and trim to your production constraints.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
           "topic": "Tutorials"
-        }
-      ]
-    },
-    {
-      "title": "Lab Notes",
-      "icon": "\ud83d\udd2c",
-      "deck": "Research and model updates with downstream product impact.",
-      "color": "334155",
-      "badge": "Lab Notes",
-      "topics": [
-        "Research",
-        "Models"
-      ],
-      "articles": [
-        {
-          "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
-          "url": "https://arxiv.org/abs/2602.09112",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Russ Webb, Jason Ramapuram",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "What research can be pursued with small models trained to complete true programs?",
-          "what_happened": "What research can be pursued with small models trained to complete true programs?",
-          "why_it_matters": "It signals where methods are moving, but confidence depends on broader replication.",
-          "what_to_do": "Read method and evaluation sections, then compare claims with prior baselines.",
-          "our_take": "Research read: It signals where methods are moving, but confidence depends on broader replication.",
-          "audience_track": "Researcher",
-          "difficulty": "Intermediate",
-          "topic": "Research"
         },
         {
-          "title": "A timeline of claims about AI/LLMs",
-          "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.nethuml.xyz&sz=16",
-          "authors": "",
-          "published": "08 Feb",
-          "thumbnail": "",
-          "summary": "A timeline of claims about AI/LLMs. This update from Hacker News is worth tracking for near-term product impact.",
-          "what_happened": "A timeline of claims about AI/LLMs.",
-          "why_it_matters": "It can shift model choice tradeoffs on quality, latency, and cost.",
-          "what_to_do": "Benchmark against your default model before routing production traffic.",
-          "our_take": "Operator view: It can shift model choice tradeoffs on quality, latency, and cost.",
+          "title": "AI Agents 101: From Concept to Code (No Frameworks Required)",
+          "url": "https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd",
+          "source": "Dev.to AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
+          "authors": "Kamil Tustanowski",
+          "published": "11 Feb",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1l3ena70980qoev5e08q.png",
+          "summary": "Most tutorials about AI agents rely heavily on frameworks. They\u2019re powerful \u2014 but they abstract away the most important part: How an AI agent actually works under the hood. So I decided to build one from scratch.",
+          "what_happened": "Most tutorials about AI agents rely heavily on frameworks.",
+          "why_it_matters": "They\u2019re powerful \u2014 but they abstract away the most important part: How an AI agent actually works under the hood.",
+          "what_to_do": "Adapt the core pattern from AI Agents 101 to one real task in your current project this week.",
+          "our_take": "Operator note: The strongest value is in adapting one proven pattern, not copying the whole stack.",
           "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Models"
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
         }
       ]
     }
