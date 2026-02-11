@@ -14,11 +14,14 @@
       --surface: #ffffff;
       --surface-2: #ebf4f4;
       --text: #12212b;
-      --muted: #4a616e;
-      --line: #d7e2e2;
+      --muted: #355565;
+      --line: #c4d6dc;
       --brand: #0f766e;
       --brand-2: #0f4c5c;
       --brand-3: #c2410c;
+      --link: #0b4f63;
+      --link-hover: #083947;
+      --focus: #c2410c;
       --shadow: 0 12px 28px rgba(15, 31, 40, 0.09);
       --radius: 18px;
     }
@@ -29,8 +32,11 @@
         --surface: #0f1d26;
         --surface-2: #112531;
         --text: #e6eff4;
-        --muted: #9eb4c0;
-        --line: #1f3743;
+        --muted: #c1d0d8;
+        --line: #2d4a59;
+        --link: #7dd3fc;
+        --link-hover: #bae6fd;
+        --focus: #f59e0b;
         --shadow: 0 16px 34px rgba(2, 8, 12, 0.55);
       }
     }
@@ -48,7 +54,34 @@
       line-height: 1.56;
     }
 
-    a { color: inherit; }
+    a {
+      color: inherit;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 2px;
+    }
+
+    main a,
+    aside a,
+    .footer a {
+      color: var(--link);
+      text-decoration-color: color-mix(in srgb, var(--link), transparent 52%);
+    }
+
+    main a:hover,
+    aside a:hover,
+    .footer a:hover {
+      color: var(--link-hover);
+      text-decoration-color: currentColor;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+      border-radius: 8px;
+    }
 
     .top-bar {
       height: 4px;
@@ -187,7 +220,7 @@
 
     .menu a {
       text-decoration: none;
-      color: var(--brand-2);
+      color: var(--link);
       font-size: 0.84rem;
       font-weight: 600;
       padding: 6px 9px;
@@ -256,7 +289,7 @@
     }
 
     .action {
-      color: var(--brand-2);
+      color: var(--link);
       font-weight: 600;
     }
 
@@ -401,9 +434,8 @@
     }
 
     .story a {
-      color: var(--brand-2);
+      color: var(--link);
       font-weight: 600;
-      text-decoration: none;
       font-size: 0.9rem;
     }
 
@@ -415,14 +447,24 @@
     }
 
     .footer a {
-      color: var(--brand-2);
-      text-decoration: none;
+      color: var(--link);
       margin: 0 6px;
+    }
+
+    .search::placeholder {
+      color: color-mix(in srgb, var(--muted), transparent 10%);
     }
 
     @keyframes rise {
       from { opacity: 0; transform: translateY(8px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
     }
 
     @media (max-width: 960px) {
