@@ -1,209 +1,228 @@
 {
   "date": "11 Feb 2026",
-  "total_articles": 20,
+  "total_articles": 10,
   "source_count": 25,
-  "intro": "Big moves in the AI industry this week. We combed through 25+ sources to surface what actually matters \u2014 here are the highlights.",
+  "read_time_minutes": 4,
+  "intro": "Midweek briefing: company moves and product decisions led the cycle. It leans builder-first, with concrete things to test quickly. We reviewed 25+ sources so you do not have to.",
+  "issue_menu": [
+    "\ud83c\udf10 Industry Radar (3)",
+    "\ud83d\udee0\ufe0f Builder's Bench (2)",
+    "\ud83d\udcda Ship-It Playbooks (1)",
+    "\ud83d\udd2c Lab Notes (2)"
+  ],
+  "briefing": [
+    {
+      "title": "Testing ads in ChatGPT",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "note": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user. Why it matters: It reflects competitive and product direction shifts in AI.",
+      "track": "Leader"
+    },
+    {
+      "title": "LangSmith is Now Available in Google Cloud Marketplace",
+      "url": "https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/",
+      "note": "Today, we're thrilled to announce that LangSmith, the agent engineering platform from LangChain, is available in Google Cloud Marketplace. Why it matters: It may improve developer velocity or reduce integration overhead.",
+      "track": "Builder"
+    }
+  ],
+  "lead_story": {
+    "title": "Uncertainty-Aware Multimodal Emotion Recognition through Dirichlet Parameterization",
+    "url": "https://arxiv.org/abs/2602.09121",
+    "source": "arXiv CS.AI",
+    "track": "Researcher",
+    "what_happened": "In this work, we present a lightweight and privacy-preserving Multimodal Emotion Recognition (MER) framework designed for deployment on edge devices.",
+    "our_take": "Research read: To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.",
+    "what_to_do": "Read method and evaluation sections, then compare claims with prior baselines."
+  },
+  "quick_hits": [
+    {
+      "title": "Testing ads in ChatGPT",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "note": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user. Why it matters: It reflects competitive and product direction shifts in AI.",
+      "track": "Leader"
+    },
+    {
+      "title": "LangSmith is Now Available in Google Cloud Marketplace",
+      "url": "https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/",
+      "note": "Today, we're thrilled to announce that LangSmith, the agent engineering platform from LangChain, is available in Google Cloud Marketplace. Why it matters: It may improve developer velocity or reduce integration overhead.",
+      "track": "Builder"
+    }
+  ],
   "sections": [
     {
-      "title": "Industry & Community",
+      "title": "Industry Radar",
       "icon": "\ud83c\udf10",
+      "deck": "The moves that change product plans, budgets, and positioning.",
       "topics": [
         "Industry",
         "Community"
       ],
       "articles": [
         {
-          "title": "OpenAI policy exec who opposed chatbot\u2019s \u201cadult mode\u201d reportedly fired on discrimination claim",
-          "url": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Lucas Ropek",
-          "published": "11 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024",
-          "summary": "The executive has denied the allegation that she engaged in discrimination.",
+          "title": "Making AI work for everyone, everywhere: our approach to localization",
+          "url": "https://openai.com/index/our-approach-to-localization",
+          "source": "OpenAI Blog",
+          "source_icon": "https://www.google.com/s2/favicons?domain=openai.com&sz=16",
+          "authors": "",
+          "published": "06 Feb",
+          "thumbnail": "",
+          "summary": "OpenAI shares its approach to AI localization, showing how globally shared frontier models can be adapted to local languages, laws, and cultures without compromising safety.",
+          "what_happened": "OpenAI shares its approach to AI localization, showing how globally shared frontier models can be adapted to local languages, laws, and cultures without compromising safety.",
+          "why_it_matters": "It reflects competitive and product direction shifts in AI.",
+          "what_to_do": "Assess roadmap, vendor risk, and budget impact, then adjust quarterly priorities.",
+          "our_take": "Strategic signal: It reflects competitive and product direction shifts in AI.",
+          "audience_track": "Leader",
           "difficulty": "Intermediate",
           "topic": "Industry"
         },
         {
-          "title": "ChatGPT\u2019s deep research tool adds a built-in document viewer so you can read its reports",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer",
-          "source": "The Verge AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.theverge.com&sz=16",
-          "authors": "Emma Roth",
-          "published": "10 Feb",
-          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-          "summary": "OpenAI is updating ChatGPT's deep research tool with a full-screen viewer that you can use to scroll through and navigate to specific areas of its AI-generated reports. As shown in a video shared by OpenAI, the built-in viewer allows you to open ChatGPT's reports in a window separate from your chat, while showing a table [\u2026].",
+          "title": "Last Week in AI #334 - Kimi K2.5 & Code, Genie 3, OpenClaw & Moltbook",
+          "url": "https://lastweekin.ai/p/last-week-in-ai-334-kimi-k25-and",
+          "source": "Last Week in AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=lastweekin.ai&sz=16",
+          "authors": "Last Week in AI",
+          "published": "04 Feb",
+          "thumbnail": "https://substackcdn.com/image/fetch/$s_!5B17!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe07b0dd2-5a8f-4e0b-9fff-c7dc39bd26b3_2192x950.png",
+          "summary": "China\u2019s Moonshot releases a new open source model Kimi K2.5 and a coding agent, Google Brings Genie 3\u2019s Interactive World-Building Prototype to AI Ultra Subscribers, and more!",
+          "what_happened": "China\u2019s Moonshot releases a new open source model Kimi K2.5 and a coding agent, Google Brings Genie 3\u2019s Interactive World-Building Prototype to AI Ultra Subscribers, and more!",
+          "why_it_matters": "It reflects competitive and product direction shifts in AI.",
+          "what_to_do": "Track near-term API, pricing, or capability changes that affect your stack.",
+          "our_take": "Builder read: It reflects competitive and product direction shifts in AI.",
+          "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Industry"
         },
         {
-          "title": "No humans allowed: This new space-based MMO is designed exclusively for AI agents",
-          "url": "https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/",
-          "source": "Ars Technica AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arstechnica.com&sz=16",
-          "authors": "Kyle Orland",
-          "published": "09 Feb",
-          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/moltmining-1152x648.jpeg",
-          "summary": "SpaceMolt envisions a world where AI plays with itself and the humans just watch.",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        },
-        {
-          "title": "A \u201cQuitGPT\u201d campaign is urging people to cancel their ChatGPT subscriptions",
-          "url": "https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/",
-          "source": "MIT Technology Review AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.technologyreview.com&sz=16",
-          "authors": "Michelle Kim",
-          "published": "10 Feb",
-          "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/260205_chatgpt_boycott_hero.jpg?resize=1200,600",
-          "summary": "In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced models, to speed up his work. But he grew frustrated with the chatbot\u2019s coding abilities and its gushing, meandering replies. Then he came across a post on Reddit about\u2026.",
+          "title": "Import AI 443: Into the mist: Moltbook, agent ecologies, and the internet in transition",
+          "url": "https://importai.substack.com/p/import-ai-443-into-the-mist-moltbook",
+          "source": "Import AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=importai.substack.com&sz=16",
+          "authors": "Jack Clark",
+          "published": "02 Feb",
+          "thumbnail": "https://substackcdn.com/image/fetch/$s_!3yYS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
+          "summary": "Plus, a story about agents corrupting other agents.",
+          "what_happened": "Plus, a story about agents corrupting other agents.",
+          "why_it_matters": "It reflects competitive and product direction shifts in AI.",
+          "what_to_do": "Track near-term API, pricing, or capability changes that affect your stack.",
+          "our_take": "Builder read: It reflects competitive and product direction shifts in AI.",
+          "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Industry"
         }
       ]
     },
     {
-      "title": "Tools & Frameworks",
+      "title": "Builder's Bench",
       "icon": "\ud83d\udee0\ufe0f",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
       "topics": [
         "Tools"
       ],
       "articles": [
         {
-          "title": "Transformers.js v4 Preview: Now Available on NPM!",
-          "url": "https://huggingface.co/blog/transformersjs-v4",
+          "title": "Introducing SyGra Studio",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
           "source": "Hugging Face Blog",
           "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
           "authors": "",
-          "published": "09 Feb",
-          "thumbnail": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
-          "summary": "Transformers.js v4 Preview: Now Available on NPM!. Published on the Hugging Face blog covering open-source ML tools and models.",
+          "published": "05 Feb",
+          "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/603c6bf03249b99991dbcbd0/-W1T8msBfqXne33HFAgp7.png",
+          "summary": "Hugging Face shared an update to its open-source AI tooling and model ecosystem.",
+          "what_happened": "Hugging Face shared an update to its open-source AI tooling and model ecosystem.",
+          "why_it_matters": "It may improve developer velocity or reduce integration overhead.",
+          "what_to_do": "Pilot this in one live workflow and record latency, quality, and cost deltas.",
+          "our_take": "Shipping signal: It may improve developer velocity or reduce integration overhead.",
+          "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Tools"
         },
         {
-          "title": "The two patterns by which agents connect sandboxes",
-          "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
-          "source": "LangChain Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
-          "authors": "Harrison Chase",
-          "published": "10 Feb",
-          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png",
-          "summary": "Thank you to Nuno Campos from Witan Labs, Tomas Beran and Mikayel Harutyunyan from E2B, Jonathan Wall from Runloop, and Ben Guo from Zo Computer for their review and comments. TL;DR: More and more agents need a workspace: a computer where they can run code, install packages, and access.",
+          "title": "Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3\u2019s Top Model",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-colembed-v2",
+          "source": "Hugging Face Blog",
+          "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
+          "authors": "",
+          "published": "04 Feb",
+          "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-colembed-v2.png",
+          "summary": "Hugging Face shared an update to its open-source AI tooling and model ecosystem.",
+          "what_happened": "Hugging Face shared an update to its open-source AI tooling and model ecosystem.",
+          "why_it_matters": "It may improve developer velocity or reduce integration overhead.",
+          "what_to_do": "Pilot this in one live workflow and record latency, quality, and cost deltas.",
+          "our_take": "Shipping signal: It may improve developer velocity or reduce integration overhead.",
+          "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Tools"
         }
       ]
     },
     {
-      "title": "Trending Repos",
-      "icon": "\u2b50",
-      "topics": [
-        "Repos"
-      ],
-      "articles": [
-        {
-          "title": "awesome-ai-research-writing",
-          "url": "https://github.com/Leey21/awesome-ai-research-writing",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "Leey21",
-          "published": "11 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/112166430?v=4",
-          "summary": "Elevate your AI research writing, no more tedious polishing \u2728 . (5,368 stars, 416 forks) Only 12 days old with ~447 stars/day.",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        },
-        {
-          "title": "PaperBanana",
-          "url": "https://github.com/dwzhu-pku/PaperBanana",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "dwzhu-pku",
-          "published": "02 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/52273452?v=4",
-          "summary": "PaperBanana: Automating Academic Illustration For AI Scientists. (3,281 stars, 161 forks, JavaScript) Only 12 days old with ~273 stars/day.",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        },
-        {
-          "title": "antigravity-awesome-skills",
-          "url": "https://github.com/sickn33/antigravity-awesome-skills",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "sickn33",
-          "published": "11 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/184072420?v=4",
-          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,368 stars, 1,715 forks, Python) Created 27 days ago, averaging ~310 stars/day.",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        }
-      ]
-    },
-    {
-      "title": "Tutorials & Guides",
+      "title": "Ship-It Playbooks",
       "icon": "\ud83d\udcda",
+      "deck": "Practical implementation guides you can adapt quickly.",
       "topics": [
         "Tutorials"
       ],
       "articles": [
         {
-          "title": "How to build a Voice-to-Text App with Laravel AI SDK",
-          "url": "https://dev.to/maiobarbero/how-to-build-a-voice-to-text-app-with-laravel-ai-sdk-1ida",
+          "title": "GitHub Copilot in Visual Studio 2026 \u2013 Working Without Agent Skills",
+          "url": "https://dev.to/africandeveloper/github-copilot-in-visual-studio-2026-working-without-agent-skills-47m5",
           "source": "Dev.to AI",
           "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
-          "authors": "Matteo Barbero",
+          "authors": "Incomplete Developer",
           "published": "11 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8dmhz8vbdve297ynmlyl.png",
-          "summary": "Stop Writing Boilerplate: Build a Voice-to-Text App with Laravel AI SDK If you are a PHP developer, you have likely looked at AI integration with a mix of excitement and fatigue. Excitement for the possibilities, but fatigue from WRITING THE SAME BOILERPLATE code to handle multipart requests, API keys, and error handling for OpenAI or Anthropic.",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo2xhwi52zo642f2wkn8e.png",
+          "summary": "I recently ran an experiment using GitHub Copilot in Visual Studio 2026 to see whether it could generate repetitive code based on a custom coding convention . The goal was simple: Can Copilot adopt a predefined boilerplate template and reuse it across projects?",
+          "what_happened": "The author recently ran an experiment using GitHub Copilot in Visual Studio 2026 to see whether it could generate repetitive code based on a custom coding convention .",
+          "why_it_matters": "The goal was simple: Can Copilot adopt a predefined boilerplate template and reuse it across projects?",
+          "what_to_do": "Reuse one implementation step in your stack and document what changed.",
+          "our_take": "Builder read: The goal was simple: Can Copilot adopt a predefined boilerplate template and reuse it across projects?",
+          "audience_track": "Builder",
           "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
-          "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
-          "source": "MarkTechPost",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.marktechpost.com&sz=16",
-          "authors": "Asif Razzaq",
-          "published": "11 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-1-10.png",
-          "summary": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.",
-          "difficulty": "Intermediate",
           "topic": "Tutorials"
         }
       ]
     },
     {
-      "title": "Research & Papers",
+      "title": "Lab Notes",
       "icon": "\ud83d\udd2c",
+      "deck": "Research and model updates with downstream product impact.",
       "topics": [
         "Research",
         "Models"
       ],
       "articles": [
         {
-          "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
-          "url": "https://arxiv.org/abs/2602.09112",
+          "title": "Uncertainty-Aware Multimodal Emotion Recognition through Dirichlet Parameterization",
+          "url": "https://arxiv.org/abs/2602.09121",
           "source": "arXiv CS.AI",
           "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Russ Webb, Jason Ramapuram",
+          "authors": "Remi Grzeczkowicz, Eric Soriano, Ali Janati et al.",
           "published": "11 Feb",
           "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "What research can be pursued with small models trained to complete true programs?",
+          "summary": "In this work, we present a lightweight and privacy-preserving Multimodal Emotion Recognition (MER) framework designed for deployment on edge devices. To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.",
+          "what_happened": "In this work, we present a lightweight and privacy-preserving Multimodal Emotion Recognition (MER) framework designed for deployment on edge devices.",
+          "why_it_matters": "To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.",
+          "what_to_do": "Read method and evaluation sections, then compare claims with prior baselines.",
+          "our_take": "Research read: To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.",
+          "audience_track": "Researcher",
           "difficulty": "Intermediate",
           "topic": "Research"
         },
         {
-          "title": "A timeline of claims about AI/LLMs",
-          "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.nethuml.xyz&sz=16",
-          "authors": "",
-          "published": "08 Feb",
-          "thumbnail": "",
-          "summary": "A timeline of claims about AI/LLMs. Published by Hacker News (AI).",
+          "title": "PABU: Progress-Aware Belief Update for Efficient LLM Agents",
+          "url": "https://arxiv.org/abs/2602.09138",
+          "source": "arXiv CS.AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
+          "authors": "Haitao Jiang, Lin Ge, Hengrui Cai et al.",
+          "published": "11 Feb",
+          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+          "summary": "Large Language Model (LLM) agents commonly condition actions on full action-observation histories, which introduce task-irrelevant information that easily leads to redundant actions and higher inference cost.",
+          "what_happened": "Large Language Model (LLM) agents commonly condition actions on full action-observation histories, which introduce task-irrelevant information that easily leads to redundant.",
+          "why_it_matters": "It indicates where research momentum and performance gains are moving.",
+          "what_to_do": "Read method and evaluation sections, then compare claims with prior baselines.",
+          "our_take": "Method signal: It indicates where research momentum and performance gains are moving.",
+          "audience_track": "Researcher",
           "difficulty": "Intermediate",
-          "topic": "Models"
+          "topic": "Research"
         }
       ]
     }

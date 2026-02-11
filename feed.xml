@@ -5,167 +5,87 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 08:48:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 09:29:02 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[OpenAI policy exec who opposed chatbot’s “adult mode” reportedly fired on discrimination claim]]></title>
-      <link>https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/</link>
-      <description><![CDATA[The executive has denied the allegation that she engaged in discrimination.]]></description>
-      <category>Industry</category>
-      <pubDate>Wed, 11 Feb 2026 02:15:27 +0000</pubDate>
-      <author>Lucas Ropek</author>
-    </item>
-    <item>
-      <title><![CDATA[Transformers.js v4 Preview: Now Available on NPM!]]></title>
-      <link>https://huggingface.co/blog/transformersjs-v4</link>
-      <description><![CDATA[Transformers.js v4 Preview: Now Available on NPM!. Published on the Hugging Face blog covering open-source ML tools and models.]]></description>
-      <category>Tools</category>
-      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[How to build a Voice-to-Text App with Laravel AI SDK]]></title>
-      <link>https://dev.to/maiobarbero/how-to-build-a-voice-to-text-app-with-laravel-ai-sdk-1ida</link>
-      <description><![CDATA[Stop Writing Boilerplate: Build a Voice-to-Text App with Laravel AI SDK If you are a PHP developer, you have likely looked at AI integration with a mix of excitement and fatigue. Excitement for the possibilities, but fatigue from WRITING THE SAME BOILERPLATE code to handle multipart requests, API keys, and error handling for OpenAI or Anthropic.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 08:39:27 +0000</pubDate>
-      <author>Matteo Barbero</author>
-    </item>
-    <item>
-      <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
-      <link>https://arxiv.org/abs/2602.09112</link>
-      <description><![CDATA[What research can be pursued with small models trained to complete true programs?]]></description>
-      <category>Research</category>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Russ Webb, Jason Ramapuram</author>
-    </item>
-    <item>
-      <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
-      <link>https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/</link>
-      <description><![CDATA[A timeline of claims about AI/LLMs. Published by Hacker News (AI).]]></description>
-      <category>Models</category>
-      <pubDate>Sun, 08 Feb 2026 13:02:08 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[awesome-ai-research-writing]]></title>
-      <link>https://github.com/Leey21/awesome-ai-research-writing</link>
-      <description><![CDATA[Elevate your AI research writing, no more tedious polishing ✨ . (5,368 stars, 416 forks) Only 12 days old with ~447 stars/day.]]></description>
-      <category>Repos</category>
-      <pubDate>Wed, 11 Feb 2026 04:11:48 +0000</pubDate>
-      <author>Leey21</author>
-    </item>
-    <item>
-      <title><![CDATA[ChatGPT’s deep research tool adds a built-in document viewer so you can read its reports]]></title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer</link>
-      <description><![CDATA[OpenAI is updating ChatGPT's deep research tool with a full-screen viewer that you can use to scroll through and navigate to specific areas of its AI-generated reports. As shown in a video shared by OpenAI, the built-in viewer allows you to open ChatGPT's reports in a window separate from your chat, while showing a table […].]]></description>
-      <category>Industry</category>
-      <pubDate>Tue, 10 Feb 2026 18:02:32 +0000</pubDate>
-      <author>Emma Roth</author>
-    </item>
-    <item>
-      <title><![CDATA[The two patterns by which agents connect sandboxes]]></title>
-      <link>https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/</link>
-      <description><![CDATA[Thank you to Nuno Campos from Witan Labs, Tomas Beran and Mikayel Harutyunyan from E2B, Jonathan Wall from Runloop, and Ben Guo from Zo Computer for their review and comments. TL;DR: More and more agents need a workspace: a computer where they can run code, install packages, and access.]]></description>
-      <category>Tools</category>
-      <pubDate>Tue, 10 Feb 2026 16:32:35 +0000</pubDate>
-      <author>Harrison Chase</author>
-    </item>
-    <item>
-      <title><![CDATA[NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving]]></title>
-      <link>https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/</link>
-      <description><![CDATA[Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 04:38:57 +0000</pubDate>
-      <author>Asif Razzaq</author>
-    </item>
-    <item>
-      <title><![CDATA[PaperBanana]]></title>
-      <link>https://github.com/dwzhu-pku/PaperBanana</link>
-      <description><![CDATA[PaperBanana: Automating Academic Illustration For AI Scientists. (3,281 stars, 161 forks, JavaScript) Only 12 days old with ~273 stars/day.]]></description>
-      <category>Repos</category>
-      <pubDate>Mon, 02 Feb 2026 23:13:42 +0000</pubDate>
-      <author>dwzhu-pku</author>
-    </item>
-    <item>
-      <title><![CDATA[No humans allowed: This new space-based MMO is designed exclusively for AI agents]]></title>
-      <link>https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/</link>
-      <description><![CDATA[SpaceMolt envisions a world where AI plays with itself and the humans just watch.]]></description>
-      <category>Industry</category>
-      <pubDate>Mon, 09 Feb 2026 21:09:42 +0000</pubDate>
-      <author>Kyle Orland</author>
-    </item>
-    <item>
-      <title><![CDATA[antigravity-awesome-skills]]></title>
-      <link>https://github.com/sickn33/antigravity-awesome-skills</link>
-      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,368 stars, 1,715 forks, Python) Created 27 days ago, averaging ~310 stars/day.]]></description>
-      <category>Repos</category>
-      <pubDate>Wed, 11 Feb 2026 06:57:37 +0000</pubDate>
-      <author>sickn33</author>
-    </item>
-    <item>
-      <title><![CDATA[A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions]]></title>
-      <link>https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/</link>
-      <description><![CDATA[In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced models, to speed up his work. But he grew frustrated with the chatbot’s coding abilities and its gushing, meandering replies. Then he came across a post on Reddit about….]]></description>
-      <category>Industry</category>
-      <pubDate>Tue, 10 Feb 2026 17:00:24 +0000</pubDate>
-      <author>Michelle Kim</author>
-    </item>
-    <item>
-      <title><![CDATA[How and When the Memory Chip Shortage Will End]]></title>
-      <link>https://spectrum.ieee.org/dram-shortage</link>
-      <description><![CDATA[If it feels these days as if everything in technology is about AI, that’s because it is. And nowhere is that more true than in the market for computer memory.]]></description>
-      <category>Industry</category>
-      <pubDate>Tue, 10 Feb 2026 14:00:02 +0000</pubDate>
-      <author>Samuel K. Moore</author>
-    </item>
-    <item>
-      <title><![CDATA[Bringing ChatGPT to GenAI.mil]]></title>
-      <link>https://openai.com/index/bringing-chatgpt-to-genaimil</link>
-      <description><![CDATA[OpenAI for Government announces the deployment of a custom ChatGPT on GenAI.mil, bringing secure, safety-forward AI to U.S.]]></description>
+      <title><![CDATA[Testing ads in ChatGPT]]></title>
+      <link>https://openai.com/index/testing-ads-in-chatgpt</link>
+      <description><![CDATA[OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.]]></description>
       <category>Industry</category>
       <pubDate>Mon, 09 Feb 2026 11:00:00 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[Import AI 444: LLM societies; Huawei makes kernels with AI; ChipBench]]></title>
-      <link>https://importai.substack.com/p/import-ai-444-llm-societies-huawei</link>
-      <description><![CDATA[How can you quantify creativity?]]></description>
+      <title><![CDATA[Introducing SyGra Studio]]></title>
+      <link>https://huggingface.co/blog/ServiceNow-AI/sygra-studio</link>
+      <description><![CDATA[Hugging Face shared an update to its open-source AI tooling and model ecosystem.]]></description>
+      <category>Tools</category>
+      <pubDate>Thu, 05 Feb 2026 16:52:28 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[GitHub Copilot in Visual Studio 2026 – Working Without Agent Skills]]></title>
+      <link>https://dev.to/africandeveloper/github-copilot-in-visual-studio-2026-working-without-agent-skills-47m5</link>
+      <description><![CDATA[I recently ran an experiment using GitHub Copilot in Visual Studio 2026 to see whether it could generate repetitive code based on a custom coding convention . The goal was simple: Can Copilot adopt a predefined boilerplate template and reuse it across projects?]]></description>
+      <category>Tutorials</category>
+      <pubDate>Wed, 11 Feb 2026 09:17:46 +0000</pubDate>
+      <author>Incomplete Developer</author>
+    </item>
+    <item>
+      <title><![CDATA[Uncertainty-Aware Multimodal Emotion Recognition through Dirichlet Parameterization]]></title>
+      <link>https://arxiv.org/abs/2602.09121</link>
+      <description><![CDATA[In this work, we present a lightweight and privacy-preserving Multimodal Emotion Recognition (MER) framework designed for deployment on edge devices. To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Remi Grzeczkowicz, Eric Soriano, Ali Janati et al.</author>
+    </item>
+    <item>
+      <title><![CDATA[Import AI 443: Into the mist: Moltbook, agent ecologies, and the internet in transition]]></title>
+      <link>https://importai.substack.com/p/import-ai-443-into-the-mist-moltbook</link>
+      <description><![CDATA[Plus, a story about agents corrupting other agents.]]></description>
       <category>Industry</category>
-      <pubDate>Mon, 09 Feb 2026 14:03:34 +0000</pubDate>
+      <pubDate>Mon, 02 Feb 2026 13:31:18 +0000</pubDate>
       <author>Jack Clark</author>
     </item>
     <item>
-      <title><![CDATA[LWiAI Podcast #233 - Moltbot, Genie 3, Qwen3-Max-Thinking]]></title>
-      <link>https://lastweekin.ai/p/lwiai-podcast-233-moltbot-genie-3</link>
-      <description><![CDATA[Google adds Gemini AI-powered ‘auto browse’ to Chrome, Users flock to open source Moltbot for always-on AI, Qwen3-Max-Thinking debuts, and more!]]></description>
+      <title><![CDATA[LangSmith is Now Available in Google Cloud Marketplace]]></title>
+      <link>https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/</link>
+      <description><![CDATA[Today, we're thrilled to announce that LangSmith, the agent engineering platform from LangChain, is available in Google Cloud Marketplace.]]></description>
+      <category>Tools</category>
+      <pubDate>Tue, 10 Feb 2026 02:47:44 +0000</pubDate>
+      <author>LangChain Accounts</author>
+    </item>
+    <item>
+      <title><![CDATA[Last Week in AI #334 - Kimi K2.5 & Code, Genie 3, OpenClaw & Moltbook]]></title>
+      <link>https://lastweekin.ai/p/last-week-in-ai-334-kimi-k25-and</link>
+      <description><![CDATA[China’s Moonshot releases a new open source model Kimi K2.5 and a coding agent, Google Brings Genie 3’s Interactive World-Building Prototype to AI Ultra Subscribers, and more!]]></description>
       <category>Industry</category>
-      <pubDate>Fri, 06 Feb 2026 05:06:04 +0000</pubDate>
+      <pubDate>Wed, 04 Feb 2026 05:25:56 +0000</pubDate>
       <author>Last Week in AI</author>
     </item>
     <item>
-      <title><![CDATA[Why the Moltbook frenzy was like Pokémon]]></title>
-      <link>https://www.technologyreview.com/2026/02/09/1132537/a-lesson-from-pokemon/</link>
-      <description><![CDATA[Lots of influential people in tech last week were describing Moltbook, an online hangout populated by AI agents interacting with one another, as a glimpse into the future.]]></description>
+      <title><![CDATA[Making AI work for everyone, everywhere: our approach to localization]]></title>
+      <link>https://openai.com/index/our-approach-to-localization</link>
+      <description><![CDATA[OpenAI shares its approach to AI localization, showing how globally shared frontier models can be adapted to local languages, laws, and cultures without compromising safety.]]></description>
       <category>Industry</category>
-      <pubDate>Mon, 09 Feb 2026 17:02:56 +0000</pubDate>
-      <author>James O'Donnell</author>
+      <pubDate>Fri, 06 Feb 2026 10:00:00 +0000</pubDate>
+      
     </item>
     <item>
-      <title><![CDATA[New Devices Might Scale the Memory Wall]]></title>
-      <link>https://spectrum.ieee.org/ai-and-memory-wall</link>
-      <description><![CDATA[The hunt is on for anything that can surmount AI’s perennial memory wall –even quick models are bogged down by the time and energy needed to carry data between processor and memory. Resistive RAM (RRAM)could circumvent the wall by allowing computation to happen in the memory itself.]]></description>
-      <category>Industry</category>
-      <pubDate>Mon, 09 Feb 2026 13:00:02 +0000</pubDate>
-      <author>Rahul Rao</author>
+      <title><![CDATA[Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3’s Top Model]]></title>
+      <link>https://huggingface.co/blog/nvidia/nemotron-colembed-v2</link>
+      <description><![CDATA[Hugging Face shared an update to its open-source AI tooling and model ecosystem.]]></description>
+      <category>Tools</category>
+      <pubDate>Wed, 04 Feb 2026 15:00:40 +0000</pubDate>
+      
     </item>
     <item>
-      <title><![CDATA[AlphaGenome Deciphers Non-Coding DNA for Gene Regulation]]></title>
-      <link>https://spectrum.ieee.org/alphagenome-ai-gene-regulation</link>
-      <description><![CDATA[When AlphaFold solved the protein-folding problem in 2020, it showed that artificial intelligence could crack one of biology’s deepest  mysteries: how a string of amino acids folds itself into a working molecular machine.]]></description>
-      <category>Industry</category>
-      <pubDate>Wed, 04 Feb 2026 15:00:02 +0000</pubDate>
-      <author>Elie Dolgin</author>
+      <title><![CDATA[PABU: Progress-Aware Belief Update for Efficient LLM Agents]]></title>
+      <link>https://arxiv.org/abs/2602.09138</link>
+      <description><![CDATA[Large Language Model (LLM) agents commonly condition actions on full action-observation histories, which introduce task-irrelevant information that easily leads to redundant actions and higher inference cost.]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Haitao Jiang, Lin Ge, Hengrui Cai et al.</author>
     </item>
   </channel>
 </rss>
