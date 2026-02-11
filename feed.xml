@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 08:16:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 08:48:54 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[OpenAI policy exec who opposed chatbot’s “adult mode” reportedly fired on discrimination claim]]></title>
@@ -16,124 +16,92 @@
       <author>Lucas Ropek</author>
     </item>
     <item>
-      <title><![CDATA[Introducing SyGra Studio]]></title>
-      <link>https://huggingface.co/blog/ServiceNow-AI/sygra-studio</link>
-      <description><![CDATA[Introducing SyGra Studio. Published on the Hugging Face blog covering open-source ML tools and models.]]></description>
+      <title><![CDATA[Transformers.js v4 Preview: Now Available on NPM!]]></title>
+      <link>https://huggingface.co/blog/transformersjs-v4</link>
+      <description><![CDATA[Transformers.js v4 Preview: Now Available on NPM!. Published on the Hugging Face blog covering open-source ML tools and models.]]></description>
       <category>Tools</category>
-      <pubDate>Thu, 05 Feb 2026 16:52:28 +0000</pubDate>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[Implementing the Snake Game in Python]]></title>
-      <link>https://towardsdatascience.com/implementing-the-snake-game-in-python/</link>
-      <description><![CDATA[An easy step-by-step guide to building the snake game from scratch.]]></description>
+      <title><![CDATA[How to build a Voice-to-Text App with Laravel AI SDK]]></title>
+      <link>https://dev.to/maiobarbero/how-to-build-a-voice-to-text-app-with-laravel-ai-sdk-1ida</link>
+      <description><![CDATA[Stop Writing Boilerplate: Build a Voice-to-Text App with Laravel AI SDK If you are a PHP developer, you have likely looked at AI integration with a mix of excitement and fatigue. Excitement for the possibilities, but fatigue from WRITING THE SAME BOILERPLATE code to handle multipart requests, API keys, and error handling for OpenAI or Anthropic.]]></description>
       <category>Tutorials</category>
-      <pubDate>Tue, 10 Feb 2026 13:30:00 +0000</pubDate>
-      <author>Mahnoor Javed</author>
+      <pubDate>Wed, 11 Feb 2026 08:39:27 +0000</pubDate>
+      <author>Matteo Barbero</author>
     </item>
     <item>
-      <title><![CDATA[Uncertainty-Aware Multimodal Emotion Recognition through Dirichlet Parameterization]]></title>
-      <link>https://arxiv.org/abs/2602.09121</link>
-      <description><![CDATA[In this work, we present a lightweight and privacy-preserving Multimodal Emotion Recognition (MER) framework designed for deployment on edge devices. To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.]]></description>
+      <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
+      <link>https://arxiv.org/abs/2602.09112</link>
+      <description><![CDATA[What research can be pursued with small models trained to complete true programs?]]></description>
       <category>Research</category>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Remi Grzeczkowicz, Eric Soriano, Ali Janati et al.</author>
+      <author>Russ Webb, Jason Ramapuram</author>
     </item>
     <item>
-      <title><![CDATA[ONNX Based Generative AI LLMs in Java with Project Babylon by Adam Sotona [video]]]></title>
-      <link>https://www.youtube.com/watch?v=fJwKvE2AxIo</link>
-      <description><![CDATA[ONNX Based Generative AI LLMs in Java with Project Babylon by Adam Sotona [video]. Published by Hacker News (AI).]]></description>
+      <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
+      <link>https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/</link>
+      <description><![CDATA[A timeline of claims about AI/LLMs. Published by Hacker News (AI).]]></description>
       <category>Models</category>
-      <pubDate>Thu, 05 Feb 2026 18:33:58 +0000</pubDate>
+      <pubDate>Sun, 08 Feb 2026 13:02:08 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[ClawRouter]]></title>
-      <link>https://github.com/BlockRunAI/ClawRouter</link>
-      <description><![CDATA[Smart LLM router — save 78% on inference costs. 30+ models, one wallet, x402 micropayments. (2,135 stars, 213 forks, TypeScript) Just 7 days old — gaining ~305 stars/day.]]></description>
+      <title><![CDATA[awesome-ai-research-writing]]></title>
+      <link>https://github.com/Leey21/awesome-ai-research-writing</link>
+      <description><![CDATA[Elevate your AI research writing, no more tedious polishing ✨ . (5,368 stars, 416 forks) Only 12 days old with ~447 stars/day.]]></description>
       <category>Repos</category>
-      <pubDate>Wed, 11 Feb 2026 08:13:19 +0000</pubDate>
-      <author>BlockRunAI</author>
+      <pubDate>Wed, 11 Feb 2026 04:11:48 +0000</pubDate>
+      <author>Leey21</author>
     </item>
     <item>
-      <title><![CDATA[Facebook can animate your profile pic with AI]]></title>
-      <link>https://www.theverge.com/tech/876480/meta-facebook-animate-profile-picture-restyle-ai</link>
-      <description><![CDATA[Facebook is rolling out new AI features that let you animate your profile picture and restyle Stories and Memories. You'll also be able to add animated backgrounds to text posts to make them pop in the feed. With the animated profile pictures, you'll be able to give a still photo motion with some preset types […].]]></description>
+      <title><![CDATA[ChatGPT’s deep research tool adds a built-in document viewer so you can read its reports]]></title>
+      <link>https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer</link>
+      <description><![CDATA[OpenAI is updating ChatGPT's deep research tool with a full-screen viewer that you can use to scroll through and navigate to specific areas of its AI-generated reports. As shown in a video shared by OpenAI, the built-in viewer allows you to open ChatGPT's reports in a window separate from your chat, while showing a table […].]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 10 Feb 2026 13:14:21 +0000</pubDate>
-      <author>Jay Peters</author>
+      <pubDate>Tue, 10 Feb 2026 18:02:32 +0000</pubDate>
+      <author>Emma Roth</author>
     </item>
     <item>
-      <title><![CDATA[Helping kids and teens learn and grow online on Safer Internet Day]]></title>
-      <link>https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2026-kids-teens/</link>
-      <description><![CDATA[User profile on smartphone connected to security, media, and settings icons.]]></description>
+      <title><![CDATA[The two patterns by which agents connect sandboxes]]></title>
+      <link>https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/</link>
+      <description><![CDATA[Thank you to Nuno Campos from Witan Labs, Tomas Beran and Mikayel Harutyunyan from E2B, Jonathan Wall from Runloop, and Ben Guo from Zo Computer for their review and comments. TL;DR: More and more agents need a workspace: a computer where they can run code, install packages, and access.]]></description>
       <category>Tools</category>
-      <pubDate>Tue, 10 Feb 2026 02:30:00 +0000</pubDate>
-      <author>Mindy Brooks, Jennifer Flannery O'Connor</author>
+      <pubDate>Tue, 10 Feb 2026 16:32:35 +0000</pubDate>
+      <author>Harrison Chase</author>
     </item>
     <item>
-      <title><![CDATA[629+ MCP Servers Exist. There Was No Directory. Until Now.]]></title>
-      <link>https://dev.to/seakai/629-mcp-servers-exist-there-was-no-directory-until-now-3hhl</link>
-      <description><![CDATA[If you're building AI agents with the Model Context Protocol (MCP), you've probably hit this problem: You need a capability. You know someone built it. But you have no idea where to find it.]]></description>
+      <title><![CDATA[NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving]]></title>
+      <link>https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/</link>
+      <description><![CDATA[Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.]]></description>
       <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 08:05:51 +0000</pubDate>
-      <author>Kai</author>
-    </item>
-    <item>
-      <title><![CDATA[Shape, Symmetries, and Structure: The Changing Role of Mathematics in Machine Learning Research]]></title>
-      <link>https://thegradient.pub/shape-symmetry-structure/</link>
-      <description><![CDATA[What is the Role of Mathematics in Modern Machine Learning? The past decade has witnessed a shift in how progress is made in machine learning.]]></description>
-      <category>Research</category>
-      <pubDate>Sat, 16 Nov 2024 16:46:15 +0000</pubDate>
-      <author>Henry Kvinge</author>
-    </item>
-    <item>
-      <title><![CDATA[Claude Code costs up to $200 a month. Goose does the same thing for free.]]></title>
-      <link>https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free</link>
-      <description><![CDATA[The artificial intelligence coding revolution comes with a catch: it's expensive. Claude Code , Anthropic's terminal-based AI agent that can write, debug, and deploy code autonomously, has captured the imagination of software developers worldwide.]]></description>
-      <category>Industry</category>
-      <pubDate>Mon, 19 Jan 2026 14:00:00 +0000</pubDate>
-      <author>Michael Nuñez</author>
-    </item>
-    <item>
-      <title><![CDATA[LangSmith is Now Available in Google Cloud Marketplace]]></title>
-      <link>https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/</link>
-      <description><![CDATA[Today, we're thrilled to announce that LangSmith, the agent engineering platform from LangChain, is available in Google Cloud Marketplace.]]></description>
-      <category>Tools</category>
-      <pubDate>Tue, 10 Feb 2026 02:47:44 +0000</pubDate>
-      <author>LangChain Accounts</author>
-    </item>
-    <item>
-      <title><![CDATA[Google AI Introduces Natively Adaptive Interfaces (NAI): An Agentic Multimodal Accessibility Framework Built on Gemini for Adaptive UI Design]]></title>
-      <link>https://www.marktechpost.com/2026/02/10/google-ai-introduces-natively-adaptive-interfaces-nai-an-agentic-multimodal-accessibility-framework-built-on-gemini-for-adaptive-ui-design/</link>
-      <description><![CDATA[Google Research is proposing a new way to build accessible software with Natively Adaptive Interfaces (NAI), an agentic framework where a multimodal AI agent becomes the primary user interface and adapts the application in real time to each user’s abilities and context.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 00:03:55 +0000</pubDate>
+      <pubDate>Wed, 11 Feb 2026 04:38:57 +0000</pubDate>
       <author>Asif Razzaq</author>
     </item>
     <item>
-      <title><![CDATA[RFK Jr. Says Americans Need More Protein. His Grok-Powered Food Website Disagrees]]></title>
-      <link>https://www.wired.com/story/rfk-jr-says-americans-need-more-protein-his-grok-powered-food-website-disagrees/</link>
-      <description><![CDATA[The site Realfood.gov uses Elon Musk’s Grok chatbot to dispense nutrition information—some of which contradicts the government’s new guidelines.]]></description>
-      <category>Industry</category>
-      <pubDate>Tue, 10 Feb 2026 20:30:28 +0000</pubDate>
-      <author>Emily Mullin</author>
+      <title><![CDATA[PaperBanana]]></title>
+      <link>https://github.com/dwzhu-pku/PaperBanana</link>
+      <description><![CDATA[PaperBanana: Automating Academic Illustration For AI Scientists. (3,281 stars, 161 forks, JavaScript) Only 12 days old with ~273 stars/day.]]></description>
+      <category>Repos</category>
+      <pubDate>Mon, 02 Feb 2026 23:13:42 +0000</pubDate>
+      <author>dwzhu-pku</author>
     </item>
     <item>
-      <title><![CDATA[GeForce NOW Celebrates Six Years of Streaming With 24 Games in February]]></title>
-      <link>https://blogs.nvidia.com/blog/geforce-now-thursday-feb-2026-games-list/</link>
-      <description><![CDATA[Break out the cake and green sprinkles — GeForce NOW is turning six. Since launch, members have streamed over 1 billion hours, and the party’s just getting started. Throughout February, members can look forward to new games, fresh ways to play across more devices and even more ways to bring RTX power to every screen Read Article.]]></description>
-      <category>Tools</category>
-      <pubDate>Thu, 05 Feb 2026 14:00:53 +0000</pubDate>
-      <author>GeForce NOW Community</author>
-    </item>
-    <item>
-      <title><![CDATA[Yet another co-founder departs Elon Musk's xAI]]></title>
-      <link>https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/</link>
-      <description><![CDATA[Tony Wu leaves a company now entangled with social media, space-based IPOs.]]></description>
+      <title><![CDATA[No humans allowed: This new space-based MMO is designed exclusively for AI agents]]></title>
+      <link>https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/</link>
+      <description><![CDATA[SpaceMolt envisions a world where AI plays with itself and the humans just watch.]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 10 Feb 2026 18:54:39 +0000</pubDate>
+      <pubDate>Mon, 09 Feb 2026 21:09:42 +0000</pubDate>
       <author>Kyle Orland</author>
+    </item>
+    <item>
+      <title><![CDATA[antigravity-awesome-skills]]></title>
+      <link>https://github.com/sickn33/antigravity-awesome-skills</link>
+      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,368 stars, 1,715 forks, Python) Created 27 days ago, averaging ~310 stars/day.]]></description>
+      <category>Repos</category>
+      <pubDate>Wed, 11 Feb 2026 06:57:37 +0000</pubDate>
+      <author>sickn33</author>
     </item>
     <item>
       <title><![CDATA[A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions]]></title>
@@ -160,12 +128,44 @@
       
     </item>
     <item>
-      <title><![CDATA[Project Genie: Experimenting with infinite, interactive worlds]]></title>
-      <link>https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/</link>
-      <description><![CDATA[Google AI Ultra subscribers in the U.S. can try out Project Genie, an experimental research prototype that lets you create and explore worlds.]]></description>
+      <title><![CDATA[Import AI 444: LLM societies; Huawei makes kernels with AI; ChipBench]]></title>
+      <link>https://importai.substack.com/p/import-ai-444-llm-societies-huawei</link>
+      <description><![CDATA[How can you quantify creativity?]]></description>
       <category>Industry</category>
-      <pubDate>Thu, 29 Jan 2026 17:01:05 +0000</pubDate>
-      
+      <pubDate>Mon, 09 Feb 2026 14:03:34 +0000</pubDate>
+      <author>Jack Clark</author>
+    </item>
+    <item>
+      <title><![CDATA[LWiAI Podcast #233 - Moltbot, Genie 3, Qwen3-Max-Thinking]]></title>
+      <link>https://lastweekin.ai/p/lwiai-podcast-233-moltbot-genie-3</link>
+      <description><![CDATA[Google adds Gemini AI-powered ‘auto browse’ to Chrome, Users flock to open source Moltbot for always-on AI, Qwen3-Max-Thinking debuts, and more!]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 06 Feb 2026 05:06:04 +0000</pubDate>
+      <author>Last Week in AI</author>
+    </item>
+    <item>
+      <title><![CDATA[Why the Moltbook frenzy was like Pokémon]]></title>
+      <link>https://www.technologyreview.com/2026/02/09/1132537/a-lesson-from-pokemon/</link>
+      <description><![CDATA[Lots of influential people in tech last week were describing Moltbook, an online hangout populated by AI agents interacting with one another, as a glimpse into the future.]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 09 Feb 2026 17:02:56 +0000</pubDate>
+      <author>James O'Donnell</author>
+    </item>
+    <item>
+      <title><![CDATA[New Devices Might Scale the Memory Wall]]></title>
+      <link>https://spectrum.ieee.org/ai-and-memory-wall</link>
+      <description><![CDATA[The hunt is on for anything that can surmount AI’s perennial memory wall –even quick models are bogged down by the time and energy needed to carry data between processor and memory. Resistive RAM (RRAM)could circumvent the wall by allowing computation to happen in the memory itself.]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 09 Feb 2026 13:00:02 +0000</pubDate>
+      <author>Rahul Rao</author>
+    </item>
+    <item>
+      <title><![CDATA[AlphaGenome Deciphers Non-Coding DNA for Gene Regulation]]></title>
+      <link>https://spectrum.ieee.org/alphagenome-ai-gene-regulation</link>
+      <description><![CDATA[When AlphaFold solved the protein-folding problem in 2020, it showed that artificial intelligence could crack one of biology’s deepest  mysteries: how a string of amino acids folds itself into a working molecular machine.]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 04 Feb 2026 15:00:02 +0000</pubDate>
+      <author>Elie Dolgin</author>
     </item>
   </channel>
 </rss>
