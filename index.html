@@ -1,93 +1,397 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Inference archive of AI weekly issues." />
   <title>Inference — Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body, table, td, a { -webkit-text-size-adjust: 100%; }
-    body { margin: 0; padding: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #F0F2F5; color: #111827; }
-    a { color: #6366f1; text-decoration: none; }
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #dbe3ef;
+      --brand: #6366f1;
+      --brand-2: #a855f7;
+      --brand-3: #ec4899;
+      --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    }
+
     @media (prefers-color-scheme: dark) {
-      body { background-color: #0F172A !important; color: #F1F5F9 !important; }
-      .card { background-color: #1E293B !important; border-color: #334155 !important; }
-      .text-dim { color: #94A3B8 !important; }
-      .text-faint { color: #64748B !important; }
-      .hr-line { border-color: #334155 !important; }
+      :root {
+        --bg: #0b1220;
+        --surface: #121a2d;
+        --text: #e2e8f0;
+        --muted: #a8b6ca;
+        --line: #25314c;
+        --shadow: 0 12px 24px rgba(2, 6, 23, 0.4);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.14), transparent 32%),
+        radial-gradient(circle at 100% 0%, rgba(168, 85, 247, 0.12), transparent 26%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    .top-bar {
+      height: 3px;
+      background: linear-gradient(90deg, var(--brand) 0%, var(--brand-2) 55%, var(--brand-3) 100%);
+    }
+
+    .wrap {
+      width: min(1120px, 94vw);
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0f172a 0%, #312e81 55%, #6366f1 100%);
+      color: #fff;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.25);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-weight: 800;
+    }
+
+    .hero-sub {
+      margin: 3px 0 0;
+      color: rgba(255,255,255,0.76);
+      font-size: 0.92rem;
+    }
+
+    .stats {
+      margin-top: 14px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.92);
+      background: rgba(255,255,255,0.13);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 6px 10px;
+    }
+
+    .layout {
+      margin: 16px 0 36px;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .latest {
+      padding: 18px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .latest .kicker,
+    .archive-head {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .latest h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    .latest p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .btn {
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-radius: 10px;
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+    }
+
+    .btn.primary {
+      color: #fff;
+      border-color: transparent;
+      background: linear-gradient(120deg, var(--brand), var(--brand-2));
+    }
+
+    .btn.secondary {
+      color: var(--brand);
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+      border-color: color-mix(in srgb, var(--brand), transparent 72%);
+    }
+
+    .side {
+      padding: 18px;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .side p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .side a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .archive {
+      margin-top: 8px;
+      padding: 16px;
+    }
+
+    .search {
+      width: 100%;
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: color-mix(in srgb, var(--surface), transparent 0%);
+      color: var(--text);
+      font: inherit;
+    }
+
+    .issues-grid {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+
+    .issue {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      background: color-mix(in srgb, var(--brand), transparent 96%);
+      display: grid;
+      gap: 8px;
+    }
+
+    .issue.latest-flag {
+      border-color: color-mix(in srgb, var(--brand), transparent 58%);
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+    }
+
+    .issue time {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .issue h3 {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .issue .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .issue .summary {
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .issue .links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+
+    .issue .links a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.84rem;
+    }
+
+    .empty {
+      display: none;
+      color: var(--muted);
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      margin: 20px 0 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .footer a {
+      color: var(--brand);
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    @media (max-width: 920px) {
+      .layout { grid-template-columns: 1fr; }
     }
   </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #F0F2F5;">
-<!-- Top accent bar (same as email) -->
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 3px; background: linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);">
-<tr><td></td></tr>
-</table>
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #F0F2F5;">
-<tr><td align="center" style="padding: 0;">
-<!-- Header (same gradient and layout as email) -->
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #0F172A;">
-<tr><td align="center" style="background: linear-gradient(135deg, #0F172A 0%, #312e81 50%, #6366f1 100%); padding: 36px 20px 28px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width: 600px;">
-  <tr><td align="center">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 12px;">
-    <tr><td><img src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="Inference" width="52" height="52" style="width: 52px; height: 52px; border-radius: 14px; display: block;" /></td></tr>
-    </table>
-    <h1 style="margin: 0 0 6px; font-size: 26px; font-weight: 800; color: #FFFFFF; letter-spacing: 6px; text-transform: uppercase; line-height: 1;">INFERENCE</h1>
-    <p style="margin: 0 0 16px; font-size: 13px; color: rgba(255,255,255,0.5); font-weight: 400;">The signal in the noise.</p>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
-    <tr><td style="padding: 5px 14px; background-color: rgba(255,255,255,0.08); border-radius: 20px;">
-      <span style="font-size: 12px; color: rgba(255,255,255,0.45);">Archive &middot; 1 issues</span>
-    </td></tr>
-    </table>
-  </td></tr>
-  </table>
-</td></tr>
-</table>
-<!-- Main content (same max-width and card style as email) -->
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width: 600px; margin: 0 auto;">
-<tr><td style="padding: 24px 20px 0;">
-  <!-- Read latest CTA (same button style as email) -->
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; border-bottom: 3px solid #6366f1; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.08); margin-bottom: 20px;">
-  <tr><td style="padding: 24px;">
-    <p style="margin: 0 0 16px; font-size: 14px; color: #4B5563; line-height: 1.5;">Get the current issue in one click.</p>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td style="border-radius: 8px; background-color: #6366f1;"><a href="https://matthewpaver.github.io/ai-weekly/email.html" style="display: inline-block; padding: 10px 24px; font-size: 14px; font-weight: 600; color: #FFFFFF; text-decoration: none; border-radius: 8px;">Read latest issue &#x2192;</a></td>
-    </tr></table>
-  </td></tr>
-  </table>
-  <!-- All issues (card same style as email section cards) -->
-  <p style="font-size: 11px; font-weight: 700; color: #6366f1; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 0 10px;">All issues</p>
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #6366f1; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-  <tr><td style="padding: 16px 20px;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-<tr><td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0;"><a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-11.html" style="color: #6366f1; text-decoration: none; font-weight: 600; font-size: 15px;">11 Feb 2026</a></td></tr>
-    </table>
-  </td></tr>
-  </table>
-</td></tr>
-<!-- Footer (same as email) -->
-<tr><td style="padding: 32px 24px 16px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="hr-line" style="border-top: 1px solid #E2E8F0;">
-  <tr><td style="padding-top: 20px; text-align: center;">
-    <p style="margin: 0 0 14px; font-size: 12px; color: #6B7280; font-weight: 600;">Share</p>
-    <p style="margin: 0 0 18px; font-size: 13px;">
-      <a href="https://matthewpaver.github.io/ai-weekly/email.html" style="color: #6366f1; margin-right: 12px;">Latest issue</a>
-      <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues" style="color: #6366f1; margin-right: 12px;">Past issues (repo)</a>
-      <a href="https://matthewpaver.github.io/ai-weekly/feed.xml" style="color: #6366f1;">RSS</a>
-    </p>
-    <p style="margin: 0 0 6px; font-size: 12px; color: #9CA3AF;">
-      <a href="https://matthewpaver.github.io/ai-weekly/email.html" style="display: inline-block; padding: 10px 20px; background-color: #6366f1; color: #FFFFFF !important; text-decoration: none; font-weight: 600; border-radius: 8px; font-size: 13px;">Latest issue</a>
-    </p>
-    <p class="text-faint" style="margin: 12px 0 0; font-size: 12px; color: #9CA3AF;">
-      Built by <a href="https://github.com/MatthewPaver" style="color: #6366f1;">Matthew Paver</a> &middot; <a href="https://www.linkedin.com/in/matthew-paver-534262166/" style="color: #6366f1;">LinkedIn</a>
-    </p>
-  </td></tr>
-  </table>
-</td></tr>
-</table>
-</td></tr>
-</table>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="wrap">
+    <header class="hero">
+      <div class="brand">
+        <img class="logo" src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="Inference logo" />
+        <div>
+          <h1>Inference</h1>
+          <p class="hero-sub">The signal in the noise.</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <span class="chip">Archive</span>
+        <span class="chip">1 issues</span>
+        <span class="chip">Latest: 11 Feb 2026</span>
+        <span class="chip">Generated 2026-02-11 17:11 UTC</span>
+      </div>
+    </header>
+
+    <section class="layout">
+      <article class="card latest">
+        <p class="kicker">Latest issue</p>
+        <h2>Inference — 11 Feb 2026</h2>
+        <p>Midweek briefing: company moves and product decisions led the cycle. It leans builder-first, with concrete things to test quickly. We reviewed 25+ sources so you do not have to.</p>
+        <p><strong>Here are the brands bringing ads to ChatGPT</strong></p>
+        <div class="meta">14 stories · ~5 min read · 4 sections</div>
+        <div class="cta-row">
+          <a class="btn primary" href="/issues/2026-02-11.html">Read web issue</a>
+          <a class="btn secondary" href="https://matthewpaver.github.io/ai-weekly/email.html">Email version</a>
+        </div>
+      </article>
+
+      <aside class="card side">
+        <p><strong>Feeds and links</strong></p>
+        <p><a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS feed</a></p>
+        <p><a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest web page</a></p>
+        <p><a href="https://matthewpaver.github.io/ai-weekly/email.html">Email rendering</a></p>
+        <p><a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues">Issue files on GitHub</a></p>
+      </aside>
+    </section>
+
+    <section class="card archive">
+      <p class="archive-head">All issues</p>
+      <input id="search" class="search" type="search" placeholder="Search by date, title, or keyword" aria-label="Search issues" />
+
+      <div id="issues" class="issues-grid">
+        <article class="issue latest-flag" data-search="11 feb 2026 inference — 11 feb 2026 here are the brands bringing ads to chatgpt midweek briefing: company moves and product decisions led the cycle. it leans builder-first, with concrete things to test quickly. we reviewed 25+ sources so you do not have to.">
+          <time datetime="2026-02-11">11 Feb 2026</time>
+          <h3>Here are the brands bringing ads to ChatGPT</h3>
+          <div class="meta">14 stories · ~5 min · 4 sections</div>
+          <p class="summary">Midweek briefing: company moves and product decisions led the cycle. It leans builder-first, with concrete things to test quickly. We reviewed 25+ sources so you do not have to.</p>
+          <div class="links">
+            <a href="/issues/2026-02-11.html">Read issue</a>
+            <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/blob/main/issues/2026-02-11.md">Markdown</a>
+          </div>
+        </article>
+      </div>
+
+      <p id="empty" class="empty">No issues match your search.</p>
+    </section>
+
+    <footer class="footer">
+      <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a>
+      <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a>
+      <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
+      <a href="https://github.com/MatthewPaver/ai-weekly-newsletter">Source</a>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var input = document.getElementById('search');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.issue'));
+      var empty = document.getElementById('empty');
+
+      function applyFilter() {
+        var q = (input.value || '').trim().toLowerCase();
+        var visible = 0;
+        cards.forEach(function (card) {
+          var hay = card.getAttribute('data-search') || '';
+          var ok = !q || hay.indexOf(q) !== -1;
+          card.style.display = ok ? '' : 'none';
+          if (ok) visible += 1;
+        });
+        empty.style.display = visible ? 'none' : 'block';
+      }
+
+      input.addEventListener('input', applyFilter);
+      applyFilter();
+    })();
+  </script>
 </body>
 </html>

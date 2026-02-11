@@ -1,40 +1,89 @@
 {
   "date": "11 Feb 2026",
-  "total_articles": 1,
+  "total_articles": 14,
   "source_count": 25,
-  "read_time_minutes": 3,
-  "intro": "Midweek briefing: company moves and product decisions led the cycle. It leans leader-first, with roadmap and risk implications up front. We reviewed 25+ sources so you do not have to.",
+  "read_time_minutes": 5,
+  "intro": "Midweek briefing: company moves and product decisions led the cycle. It leans builder-first, with concrete things to test quickly. We reviewed 25+ sources so you do not have to.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (1 stories)."
+      "value": "Industry led coverage (6 stories)."
+    },
+    {
+      "label": "Builder pick",
+      "value": "[Transformers.js v4 Preview: Now Available on NPM!](https://huggingface.co/blog/transformersjs-v4)"
     },
     {
       "label": "Leader watch",
-      "value": "[Senior engineers, including co-founders, exit xAI amid controversy](https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/)"
+      "value": "[Here are the brands bringing ads to ChatGPT](https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible)"
+    },
+    {
+      "label": "Research watch",
+      "value": "[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation](https://arxiv.org/abs/2602.09112)"
     }
   ],
   "issue_menu": [
-    "\ud83c\udf10 Industry Radar (1)"
+    "\ud83c\udf10 Industry Radar (3)",
+    "\ud83d\udee0\ufe0f Builder's Bench (2)",
+    "\u2b50 Open Source Watch (3)",
+    "\ud83d\udd2c Lab Notes (2)"
   ],
-  "briefing": [],
+  "briefing": [
+    {
+      "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
+      "url": "https://arxiv.org/abs/2602.09112",
+      "note": "What research can be pursued with small models trained to complete true programs?. Why it matters: It signals where methods are moving, but confidence depends on broader replication.",
+      "track": "Researcher"
+    },
+    {
+      "title": "Transformers.js v4 Preview: Now Available on NPM!",
+      "url": "https://huggingface.co/blog/transformersjs-v4",
+      "note": "Back to Articles Transformers.js v4 Preview: Now Available on NPM. Why it matters: This is likely an execution signal for teams evaluating near-term rollout options.",
+      "track": "Builder"
+    },
+    {
+      "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
+      "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
+      "note": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. Why it matters: As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major.",
+      "track": "Builder"
+    }
+  ],
   "editors_note": {
     "headline": "Editor's Desk",
-    "hook": "The headline is Senior engineers, including co-founders, exit xAI amid, but the real question is what it means for your vendor assumptions and Q2 plans.",
-    "spotlight": "Senior engineers, including co-founders, exit xAI amid controversy \u2014 it's the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "Senior engineers, including co-founders, exit xAI amid controversy deserves more attention than it's getting.",
+    "hook": "The headline is Here are the brands bringing ads to ChatGPT, but the real question is what it means for your vendor assumptions and Q2 plans.",
+    "spotlight": "Here are the brands bringing ads to ChatGPT \u2014 it's the most likely to change near-term decisions for teams shipping AI products.",
+    "underhyped": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation deserves more attention than it's getting.",
     "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
-    "title": "Senior engineers, including co-founders, exit xAI amid controversy",
-    "url": "https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/",
-    "source": "TechCrunch AI",
+    "title": "Here are the brands bringing ads to ChatGPT",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
+    "source": "The Verge AI",
     "track": "Leader",
-    "what_happened": "At least nine engineers, including two cofounders, announced their departures from xAI in the past week.",
-    "our_take": "Musk's AI company is in a precarious position as engineers leave due to the mounting controversies.",
-    "what_to_do": "xAI should address these concerns publicly to reassure remaining employees and stakeholders."
+    "what_happened": "OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed beneath our conversations with the AI.",
+    "our_take": "Signal check: The Verge AI reinforces that strategic positioning is shifting faster than normal.",
+    "what_to_do": "Add Here are the brands bringing ads to your next leadership sync as a planning input."
   },
-  "quick_hits": [],
+  "quick_hits": [
+    {
+      "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
+      "url": "https://arxiv.org/abs/2602.09112",
+      "note": "What research can be pursued with small models trained to complete true programs?. Why it matters: It signals where methods are moving, but confidence depends on broader replication.",
+      "track": "Researcher"
+    },
+    {
+      "title": "Transformers.js v4 Preview: Now Available on NPM!",
+      "url": "https://huggingface.co/blog/transformersjs-v4",
+      "note": "Back to Articles Transformers.js v4 Preview: Now Available on NPM. Why it matters: This is likely an execution signal for teams evaluating near-term rollout options.",
+      "track": "Builder"
+    },
+    {
+      "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
+      "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
+      "note": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. Why it matters: As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major.",
+      "track": "Builder"
+    }
+  ],
   "sections": [
     {
       "title": "Industry Radar",
@@ -55,14 +104,204 @@
           "authors": "Rebecca Bellan",
           "published": "11 Feb",
           "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2199701496.jpg?resize=1200,800",
-          "summary": "Nine engineers, including co-founders, have left xAI due to growing controversies around Elon Musk's artificial intelligence firm.",
-          "what_happened": "At least nine engineers, including two cofounders, announced their departures from xAI in the past week.",
-          "why_it_matters": "The engineer exodus highlights concerns about stability and leadership at xAI amid ongoing controversy.",
-          "what_to_do": "xAI should address these concerns publicly to reassure remaining employees and stakeholders.",
-          "our_take": "Musk's AI company is in a precarious position as engineers leave due to the mounting controversies.",
+          "summary": "At least nine engineers, including two cofounders, have announced their exits from xAI in the past week, fueling online speculation and raising questions about stability at Musk\u2019s AI company amid mounting controversy.",
+          "what_happened": "At least nine engineers, including two cofounders, have announced their exits from xAI in the past week, fueling online speculation and raising questions about stability at Musk\u2019s.",
+          "why_it_matters": "It reflects competitive movement that product teams should factor into planning.",
+          "what_to_do": "Add Senior engineers, including co-founders to your next leadership sync as a planning input.",
+          "our_take": "Internal governance problems at major vendors should trigger a vendor-risk review, not just headlines.",
           "audience_track": "Leader",
           "difficulty": "Intermediate",
           "topic": "Industry"
+        },
+        {
+          "title": "Yet another co-founder departs Elon Musk's xAI",
+          "url": "https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/",
+          "source": "Ars Technica AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=arstechnica.com&sz=16",
+          "authors": "Kyle Orland",
+          "published": "10 Feb",
+          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2025/07/xai-grok-1152x648-1752596823.jpg",
+          "summary": "Tony Wu leaves a company now entangled with social media, space-based IPOs. He\u2019s now ex-xAI Yet another co-founder departs Elon Musk\u2019s xAI Tony Wu leaves a company now entangled with social media, space-based IPOs. Kyle Orland \u2013 Feb 10, 2026 1:54 pm | 74 xAI finds itself with one fewer co-founder than it had last week.",
+          "what_happened": "Tony Wu leaves a company now entangled with social media, space-based IPOs.",
+          "why_it_matters": "He\u2019s now ex-xAI Yet another co-founder departs Elon Musk\u2019s xAI Tony Wu leaves a company now entangled with social media, space-based IPOs.",
+          "what_to_do": "Monitor Yet another co-founder departs Elon Musk's for downstream API or pricing changes that could affect your roadmap.",
+          "our_take": "Signal check: Ars Technica AI reinforces that strategic positioning is shifting faster than normal.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Industry"
+        },
+        {
+          "title": "A \u201cQuitGPT\u201d campaign is urging people to cancel their ChatGPT subscriptions",
+          "url": "https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/",
+          "source": "MIT Technology Review AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=www.technologyreview.com&sz=16",
+          "authors": "Michelle Kim",
+          "published": "10 Feb",
+          "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/260205_chatgpt_boycott_hero.jpg?resize=1200,600",
+          "summary": "In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced models, to speed up his work. But he grew frustrated with the chatbot\u2019s coding abilities and its gushing, meandering replies. Then he came across a post on Reddit about\u2026.",
+          "what_happened": "In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced.",
+          "why_it_matters": "User sentiment can shift retention and pricing assumptions faster than roadmap cycles.",
+          "what_to_do": "Monitor A \u201cQuitGPT\u201d campaign is urging people for downstream API or pricing changes that could affect your roadmap.",
+          "our_take": "Signal check: Treat this as a planning input, not just a headline (MIT Technology Review AI).",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Industry"
+        }
+      ]
+    },
+    {
+      "title": "Builder's Bench",
+      "icon": "\ud83d\udee0\ufe0f",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "color": "6366f1",
+      "badge": "Builders Bench",
+      "topics": [
+        "Tools"
+      ],
+      "articles": [
+        {
+          "title": "Transformers.js v4 Preview: Now Available on NPM!",
+          "url": "https://huggingface.co/blog/transformersjs-v4",
+          "source": "Hugging Face Blog",
+          "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
+          "authors": "",
+          "published": "09 Feb",
+          "thumbnail": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
+          "summary": "Transformers.js v4 Preview: Now Available on NPM! Back to Articles Transformers.js v4 Preview: Now Available on NPM!",
+          "what_happened": "Back to Articles Transformers.js v4 Preview: Now Available on NPM!",
+          "why_it_matters": "This is likely an execution signal for teams evaluating near-term rollout options.",
+          "what_to_do": "Set up Transformers.js v4 Preview in a test environment and compare against your current tooling.",
+          "our_take": "Version bumps only matter if they reduce friction in your actual workflow \u2014 test before celebrating.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tools"
+        },
+        {
+          "title": "The two patterns by which agents connect sandboxes",
+          "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
+          "source": "LangChain Blog",
+          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
+          "authors": "Harrison Chase",
+          "published": "10 Feb",
+          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png",
+          "summary": "Thank you to Nuno Campos from Witan Labs, Tomas Beran and Mikayel Harutyunyan from E2B, Jonathan Wall from Runloop, and Ben Guo from Zo Computer for their review and comments. TL;DR: More and more agents need a workspace: a computer where they can run code, install packages, and access.",
+          "what_happened": "A new tool or framework update warrants evaluation: The two patterns by which agents connect sandboxes.",
+          "why_it_matters": "It may improve delivery speed if integration overhead stays manageable.",
+          "what_to_do": "Evaluate The two patterns by which agents connect against your current stack \u2014 run a time-boxed proof of concept this sprint.",
+          "our_take": "Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Tools"
+        }
+      ]
+    },
+    {
+      "title": "Open Source Watch",
+      "icon": "\u2b50",
+      "deck": "Repos with momentum that might deserve a deeper look.",
+      "color": "2563EB",
+      "badge": "Open Source Watch",
+      "topics": [
+        "Repos"
+      ],
+      "articles": [
+        {
+          "title": "antigravity-awesome-skills",
+          "url": "https://github.com/sickn33/antigravity-awesome-skills",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
+          "authors": "sickn33",
+          "published": "11 Feb",
+          "thumbnail": "https://avatars.githubusercontent.com/u/184072420?v=4",
+          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,431 stars, 1,733 forks, Python) Created 27 days ago, averaging ~312 stars/day.",
+          "what_happened": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor.",
+          "why_it_matters": "Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.",
+          "what_to_do": "Scan the antigravity-awesome-skills list for tools you haven't tried, then bookmark the top two.",
+          "our_take": "Open-source note: Validate issue velocity and ownership before integrating.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Repos"
+        },
+        {
+          "title": "awesome-ai-research-writing",
+          "url": "https://github.com/Leey21/awesome-ai-research-writing",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
+          "authors": "Leey21",
+          "published": "11 Feb",
+          "thumbnail": "https://avatars.githubusercontent.com/u/112166430?v=4",
+          "summary": "Elevate your AI research writing, no more tedious polishing \u2728. (5,435 stars, 417 forks) Only 12 days old with ~453 stars/day.",
+          "what_happened": "Elevate your AI research writing, no more tedious polishing \u2728.",
+          "why_it_matters": "(5,435 stars, 417 forks) Only 12 days old with ~453 stars/day.",
+          "what_to_do": "Scan the awesome-ai-research-writing list for tools you haven't tried, then bookmark the top two.",
+          "our_take": "Open-source note: Momentum is promising, but maintenance quality should decide adoption.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Repos"
+        },
+        {
+          "title": "PaperBanana",
+          "url": "https://github.com/dwzhu-pku/PaperBanana",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
+          "authors": "dwzhu-pku",
+          "published": "02 Feb",
+          "thumbnail": "https://avatars.githubusercontent.com/u/52273452?v=4",
+          "summary": "PaperBanana: Automating Academic Illustration For AI Scientists. (3,320 stars, 162 forks, JavaScript) Only 12 days old with ~277 stars/day.",
+          "what_happened": "PaperBanana: Automating Academic Illustration For AI Scientists.",
+          "why_it_matters": "(3,320 stars, 162 forks, JavaScript) Only 12 days old with ~277 stars/day.",
+          "what_to_do": "Check PaperBanana issue tracker activity and license before forking or integrating.",
+          "our_take": "Star velocity tells you what's popular, not what's reliable. Check the issue backlog before the star count.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Repos"
+        }
+      ]
+    },
+    {
+      "title": "Lab Notes",
+      "icon": "\ud83d\udd2c",
+      "deck": "Research and model updates with downstream product impact.",
+      "color": "334155",
+      "badge": "Lab Notes",
+      "topics": [
+        "Research",
+        "Models"
+      ],
+      "articles": [
+        {
+          "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
+          "url": "https://arxiv.org/abs/2602.09112",
+          "source": "arXiv CS.AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
+          "authors": "Russ Webb, Jason Ramapuram",
+          "published": "11 Feb",
+          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+          "summary": "What research can be pursued with small models trained to complete true programs?",
+          "what_happened": "What research can be pursued with small models trained to complete true programs?",
+          "why_it_matters": "It signals where methods are moving, but confidence depends on broader replication.",
+          "what_to_do": "Skim the A Small-Scale System abstract and results, then decide if a deeper read is worth the time.",
+          "our_take": "Smaller and cheaper usually beats bigger and smarter for most production use cases. Watch this space.",
+          "audience_track": "Researcher",
+          "difficulty": "Intermediate",
+          "topic": "Research"
+        },
+        {
+          "title": "A timeline of claims about AI/LLMs",
+          "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
+          "source": "Hacker News (AI)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=blog.nethuml.xyz&sz=16",
+          "authors": "",
+          "published": "08 Feb",
+          "thumbnail": "",
+          "summary": "A timeline of claims about AI/LLMs Nethum Lamahewage included in Tech February 8, 2026 3921 words 19 minutes Contents Introduction Background Why?",
+          "what_happened": "A timeline of claims about AI/LLMs Nethum Lamahewage included in Tech February 8, 2026 3921 words 19 minutes Contents Introduction Background Why?",
+          "why_it_matters": "It can shift model choice tradeoffs on quality, latency, and cost.",
+          "what_to_do": "Compare A timeline of claims about AI/LLMs cost-quality tradeoffs against your current model before switching.",
+          "our_take": "New model, same question: does it beat your current setup on your actual workload, at an acceptable cost?",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Models"
         }
       ]
     }
