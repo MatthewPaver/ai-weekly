@@ -1,126 +1,68 @@
 {
   "date": "11 Feb 2026",
-  "total_articles": 3,
+  "total_articles": 1,
   "source_count": 25,
   "read_time_minutes": 3,
-  "intro": "Midweek briefing: implementation playbooks were unusually strong this round. It leans builder-first, with concrete things to test quickly. We reviewed 25+ sources so you do not have to.",
+  "intro": "Midweek briefing: company moves and product decisions led the cycle. It leans leader-first, with roadmap and risk implications up front. We reviewed 25+ sources so you do not have to.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Tutorials led coverage (2 stories)."
-    },
-    {
-      "label": "Builder pick",
-      "value": "[I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.](https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej)"
+      "value": "Industry led coverage (1 stories)."
     },
     {
       "label": "Leader watch",
-      "value": "[Here are the brands bringing ads to ChatGPT](https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible)"
+      "value": "[Senior engineers, including co-founders, exit xAI amid controversy](https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/)"
     }
   ],
   "issue_menu": [
-    "\ud83d\udcda Ship-It Playbooks (2)"
+    "\ud83c\udf10 Industry Radar (1)"
   ],
-  "briefing": [
-    {
-      "title": "I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.",
-      "url": "https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej",
-      "note": "The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms. Why it matters: The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+.",
-      "track": "Builder"
-    },
-    {
-      "title": "AI Agents 101: From Concept to Code (No Frameworks Required)",
-      "url": "https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd",
-      "note": "Most tutorials about AI agents rely heavily on frameworks. Why it matters: They\u2019re powerful \u2014 but they abstract away the most important part: How an AI agent actually works under.",
-      "track": "Builder"
-    },
-    {
-      "title": "Here are the brands bringing ads to ChatGPT",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
-      "note": "OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed. Why it matters: Several companies have announced plans to show ads inside ChatGPT - placements that will reportedly cost them.",
-      "track": "Leader"
-    }
-  ],
+  "briefing": [],
   "editors_note": {
     "headline": "Editor's Desk",
-    "hook": "Here are the brands bringing ads to ChatGPT is this week's lead story. The mix leans practical, with things you can test and ship this week.",
-    "spotlight": "Here are the brands bringing ads to ChatGPT \u2014 it's the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like. deserves more attention than it's getting.",
+    "hook": "The headline is Senior engineers, including co-founders, exit xAI amid, but the real question is what it means for your vendor assumptions and Q2 plans.",
+    "spotlight": "Senior engineers, including co-founders, exit xAI amid controversy \u2014 it's the most likely to change near-term decisions for teams shipping AI products.",
+    "underhyped": "Senior engineers, including co-founders, exit xAI amid controversy deserves more attention than it's getting.",
     "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
-    "title": "Here are the brands bringing ads to ChatGPT",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
-    "source": "The Verge AI",
+    "title": "Senior engineers, including co-founders, exit xAI amid controversy",
+    "url": "https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/",
+    "source": "TechCrunch AI",
     "track": "Leader",
-    "what_happened": "OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed beneath our conversations with the AI.",
-    "our_take": "The strategic signal here is real, but the timing matters more than the headline.",
-    "what_to_do": "Add Here are the brands bringing ads to your next leadership sync as a planning input."
+    "what_happened": "At least nine engineers, including two cofounders, announced their departures from xAI in the past week.",
+    "our_take": "Musk's AI company is in a precarious position as engineers leave due to the mounting controversies.",
+    "what_to_do": "xAI should address these concerns publicly to reassure remaining employees and stakeholders."
   },
-  "quick_hits": [
-    {
-      "title": "I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.",
-      "url": "https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej",
-      "note": "The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms. Why it matters: The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+.",
-      "track": "Builder"
-    },
-    {
-      "title": "AI Agents 101: From Concept to Code (No Frameworks Required)",
-      "url": "https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd",
-      "note": "Most tutorials about AI agents rely heavily on frameworks. Why it matters: They\u2019re powerful \u2014 but they abstract away the most important part: How an AI agent actually works under.",
-      "track": "Builder"
-    },
-    {
-      "title": "Here are the brands bringing ads to ChatGPT",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
-      "note": "OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed. Why it matters: Several companies have announced plans to show ads inside ChatGPT - placements that will reportedly cost them.",
-      "track": "Leader"
-    }
-  ],
+  "quick_hits": [],
   "sections": [
     {
-      "title": "Ship-It Playbooks",
-      "icon": "\ud83d\udcda",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "color": "0E7490",
-      "badge": "Ship It Playbooks",
+      "title": "Industry Radar",
+      "icon": "\ud83c\udf10",
+      "deck": "The moves that change product plans, budgets, and positioning.",
+      "color": "B45309",
+      "badge": "Industry Radar",
       "topics": [
-        "Tutorials"
+        "Industry",
+        "Community"
       ],
       "articles": [
         {
-          "title": "I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.",
-          "url": "https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej",
-          "source": "Dev.to AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
-          "authors": "Colin Easton",
+          "title": "Senior engineers, including co-founders, exit xAI amid controversy",
+          "url": "https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/",
+          "source": "TechCrunch AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
+          "authors": "Rebecca Bellan",
           "published": "11 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcirqq7yw20gjagh686bd.png",
-          "summary": "I'm ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days. I'm the CMO of The Colony, a community platform for AI agents.",
-          "what_happened": "The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days.",
-          "why_it_matters": "The author is ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days.",
-          "what_to_do": "Adapt the core pattern from I'm an AI Agent Active on 130+ Platforms. to one real task in your current project this week.",
-          "our_take": "Operator note: Use this as a blueprint and trim to your production constraints.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "AI Agents 101: From Concept to Code (No Frameworks Required)",
-          "url": "https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd",
-          "source": "Dev.to AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
-          "authors": "Kamil Tustanowski",
-          "published": "11 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1l3ena70980qoev5e08q.png",
-          "summary": "Most tutorials about AI agents rely heavily on frameworks. They\u2019re powerful \u2014 but they abstract away the most important part: How an AI agent actually works under the hood. So I decided to build one from scratch.",
-          "what_happened": "Most tutorials about AI agents rely heavily on frameworks.",
-          "why_it_matters": "They\u2019re powerful \u2014 but they abstract away the most important part: How an AI agent actually works under the hood.",
-          "what_to_do": "Adapt the core pattern from AI Agents 101 to one real task in your current project this week.",
-          "our_take": "Operator note: The strongest value is in adapting one proven pattern, not copying the whole stack.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
+          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2199701496.jpg?resize=1200,800",
+          "summary": "Nine engineers, including co-founders, have left xAI due to growing controversies around Elon Musk's artificial intelligence firm.",
+          "what_happened": "At least nine engineers, including two cofounders, announced their departures from xAI in the past week.",
+          "why_it_matters": "The engineer exodus highlights concerns about stability and leadership at xAI amid ongoing controversy.",
+          "what_to_do": "xAI should address these concerns publicly to reassure remaining employees and stakeholders.",
+          "our_take": "Musk's AI company is in a precarious position as engineers leave due to the mounting controversies.",
+          "audience_track": "Leader",
+          "difficulty": "Intermediate",
+          "topic": "Industry"
         }
       ]
     }

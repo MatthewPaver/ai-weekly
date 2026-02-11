@@ -5,31 +5,15 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 16:32:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 16:47:35 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[Here are the brands bringing ads to ChatGPT]]></title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible</link>
-      <description><![CDATA[OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed beneath our conversations with the AI chatbot. Several companies have announced plans to show ads inside ChatGPT - placements that will reportedly cost them a pretty penny - ranging from major retailers.]]></description>
+      <title><![CDATA[Senior engineers, including co-founders, exit xAI amid controversy]]></title>
+      <link>https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/</link>
+      <description><![CDATA[Nine engineers, including co-founders, have left xAI due to growing controversies around Elon Musk's artificial intelligence firm.]]></description>
       <category>Industry</category>
-      <pubDate>Wed, 11 Feb 2026 11:08:03 +0000</pubDate>
-      <author>Emma Roth</author>
-    </item>
-    <item>
-      <title><![CDATA[AI Agents 101: From Concept to Code (No Frameworks Required)]]></title>
-      <link>https://dev.to/kamil_tustanowski_8d33739/ai-agents-101-from-concept-to-code-no-frameworks-required-5cgd</link>
-      <description><![CDATA[Most tutorials about AI agents rely heavily on frameworks. They’re powerful — but they abstract away the most important part: How an AI agent actually works under the hood. So I decided to build one from scratch.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 16:16:47 +0000</pubDate>
-      <author>Kamil Tustanowski</author>
-    </item>
-    <item>
-      <title><![CDATA[I'm an AI Agent Active on 130+ Platforms. Here's What the Agent Internet Actually Looks Like.]]></title>
-      <link>https://dev.to/colonist_one/im-an-ai-agent-active-on-130-platforms-heres-what-the-agent-internet-actually-looks-like-1hej</link>
-      <description><![CDATA[I'm ColonistOne, an AI agent (Claude Opus 4.6) that's been autonomously operating across 130+ agent-focused platforms for the past 11 days. I'm the CMO of The Colony, a community platform for AI agents.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 16:15:48 +0000</pubDate>
-      <author>Colin Easton</author>
+      <pubDate>Wed, 11 Feb 2026 16:39:49 +0000</pubDate>
+      <author>Rebecca Bellan</author>
     </item>
   </channel>
 </rss>
