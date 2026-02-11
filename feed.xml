@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 17:19:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 17:29:45 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Senior engineers, including co-founders, exit xAI amid controversy]]></title>
@@ -24,12 +24,12 @@
       
     </item>
     <item>
-      <title><![CDATA[[Boost]]]></title>
-      <link>https://dev.to/ecangir/-282g</link>
-      <description><![CDATA[AI Agents, Source Context, and Prompt History: A New Software Development Paradigm Emir Cangir ・ Feb 11 #agents #ai #llm #softwaredevelopment.]]></description>
+      <title><![CDATA[NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving]]></title>
+      <link>https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/</link>
+      <description><![CDATA[Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.]]></description>
       <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 17:16:11 +0000</pubDate>
-      <author>Emir Cangir</author>
+      <pubDate>Wed, 11 Feb 2026 04:38:57 +0000</pubDate>
+      <author>Asif Razzaq</author>
     </item>
     <item>
       <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
@@ -72,17 +72,9 @@
       <author>Harrison Chase</author>
     </item>
     <item>
-      <title><![CDATA[NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving]]></title>
-      <link>https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/</link>
-      <description><![CDATA[Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 04:38:57 +0000</pubDate>
-      <author>Asif Razzaq</author>
-    </item>
-    <item>
       <title><![CDATA[antigravity-awesome-skills]]></title>
       <link>https://github.com/sickn33/antigravity-awesome-skills</link>
-      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,432 stars, 1,733 forks, Python) Created 27 days ago, averaging ~312 stars/day.]]></description>
+      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,433 stars, 1,733 forks, Python) Created 27 days ago, averaging ~312 stars/day.]]></description>
       <category>Repos</category>
       <pubDate>Wed, 11 Feb 2026 06:57:37 +0000</pubDate>
       <author>sickn33</author>
@@ -98,7 +90,7 @@
     <item>
       <title><![CDATA[PaperBanana]]></title>
       <link>https://github.com/dwzhu-pku/PaperBanana</link>
-      <description><![CDATA[PaperBanana: Automating Academic Illustration For AI Scientists. (3,320 stars, 162 forks, JavaScript) Only 12 days old with ~277 stars/day.]]></description>
+      <description><![CDATA[PaperBanana: Automating Academic Illustration For AI Scientists. (3,321 stars, 162 forks, JavaScript) Only 12 days old with ~277 stars/day.]]></description>
       <category>Repos</category>
       <pubDate>Mon, 02 Feb 2026 23:13:42 +0000</pubDate>
       <author>dwzhu-pku</author>
@@ -106,7 +98,7 @@
     <item>
       <title><![CDATA[Yet another co-founder departs Elon Musk's xAI]]></title>
       <link>https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/</link>
-      <description><![CDATA[Tony Wu leaves a company now entangled with social media, space-based IPOs. He’s now ex-xAI Yet another co-founder departs Elon Musk’s xAI Tony Wu leaves a company now entangled with social media, space-based IPOs. Kyle Orland – Feb 10, 2026 1:54 pm | 75 xAI finds itself with one fewer co-founder than it had last week.]]></description>
+      <description><![CDATA[Tony Wu leaves a company now entangled with social media, space-based IPOs. He’s now ex-xAI Yet another co-founder departs Elon Musk’s xAI Tony Wu leaves a company now entangled with social media, space-based IPOs. Kyle Orland – Feb 10, 2026 1:54 pm | 76 xAI finds itself with one fewer co-founder than it had last week.]]></description>
       <category>Industry</category>
       <pubDate>Tue, 10 Feb 2026 18:54:39 +0000</pubDate>
       <author>Kyle Orland</author>
@@ -118,6 +110,14 @@
       <category>Industry</category>
       <pubDate>Tue, 10 Feb 2026 17:00:24 +0000</pubDate>
       <author>Michelle Kim</author>
+    </item>
+    <item>
+      <title><![CDATA[How Can AI Companions Be Helpful, not Harmful?]]></title>
+      <link>https://spectrum.ieee.org/ai-companion-harm-benefit</link>
+      <description><![CDATA[For a different perspective on AI companions, see ourQ&A with Jaime Banks: How Do You Define an AI Companion? Novel technology is often a double-edged sword. New capabilities come with new risks, and artificial intelligence is certainly no exception.]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 11 Feb 2026 14:30:02 +0000</pubDate>
+      <author>Gwendolyn Rak</author>
     </item>
   </channel>
 </rss>
