@@ -27,100 +27,89 @@
     /* Typography */
     body, td, p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
 
-    /* Links — higher-contrast teal for accessibility */
+    /* Links */
     a { color: #0F4C5C; text-decoration: none; }
 
     /* Responsive */
     @media only screen and (max-width: 640px) {
       .wrapper { width: 100% !important; max-width: 100% !important; }
       .mobile-pad { padding-left: 16px !important; padding-right: 16px !important; }
-      .hero-name { font-size: 22px !important; letter-spacing: 4px !important; }
-      .hero-sub { font-size: 12px !important; }
+      .hero-row td { display: block !important; text-align: center !important; padding-bottom: 8px !important; }
+      .hero-meta { text-align: center !important; }
       .lead-title { font-size: 19px !important; }
       .sec-label { font-size: 11px !important; }
       .art-title { font-size: 16px !important; }
       .card-img { height: auto !important; max-height: 180px !important; }
     }
 
-    /* Dark mode — high-contrast text/link adjustments */
+    /* Dark mode */
     @media (prefers-color-scheme: dark) {
       body, .body-bg { background-color: #0F172A !important; }
-      .card { background-color: #1E293B !important; border-color: #334155 !important; border-bottom-color: #475569 !important; }
-      .lead-card { background-color: #1E293B !important; border-color: #67E8F9 !important; border-bottom-color: #67E8F9 !important; }
-      .qh-card { background-color: #1E293B !important; border-color: #334155 !important; border-bottom-color: #475569 !important; }
+      .card { background-color: #1E293B !important; border-color: #334155 !important; }
+      .lead-card { background-color: #1E293B !important; border-color: #334155 !important; }
       .text-dark { color: #F1F5F9 !important; }
       .text-body { color: #DCE8EF !important; }
       .text-dim { color: #BFD0DB !important; }
       .text-faint { color: #A8BDCA !important; }
       .hr-line { border-color: #334155 !important; }
-      .badge-t { background-color: #374151 !important; color: #D1D5DB !important; }
-      .badge-d { background-color: #1F2937 !important; color: #DCE8EF !important; }
+      .badge-d { background-color: #1F2937 !important; color: #DCE8EF !important; border-color: #475569 !important; }
       .action-c { color: #67E8F9 !important; }
       .take-c { color: #C2D4DE !important; }
-      .sec-B45309 { border-left-color: #F59E0B !important; }
-      .sec-6366f1 { border-left-color: #67E8F9 !important; }
-      .sec-2563EB { border-left-color: #7DD3FC !important; }
-      .sec-0E7490 { border-left-color: #22D3EE !important; }
-      .sec-334155 { border-left-color: #BFD0DB !important; }
-      .badge-difficulty-beginner { background-color: #14532d !important; color: #86efac !important; }
-      .badge-difficulty-intermediate { background-color: #78350f !important; color: #fde68a !important; }
-      .badge-difficulty-advanced { background-color: #7f1d1d !important; color: #fca5a5 !important; }
+      .card { border-left-color: #67E8F9 !important; }
+      .badge-difficulty-beginner { background-color: #14532d !important; color: #86efac !important; border-color: #22c55e !important; }
+      .badge-difficulty-intermediate { background-color: #78350f !important; color: #fde68a !important; border-color: #f59e0b !important; }
+      .badge-difficulty-advanced { background-color: #7f1d1d !important; color: #fca5a5 !important; border-color: #ef4444 !important; }
+      .cta-btn { background-color: #0F766E !important; }
+      .footer-bg { background-color: #0B1220 !important; }
     }
   </style>
 </head>
-<body class="body-bg" style="margin: 0; padding: 0; background-color: #F0F2F5; width: 100%;">
+<body class="body-bg" style="margin: 0; padding: 0; background-color: #F8FAFB; width: 100%;">
 
-<!-- Top accent bar (site signature gradient) -->
+<!-- Top accent bar -->
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 3px; background: linear-gradient(90deg, #0F4C5C 0%, #0F766E 58%, #C2410C 100%);">
 <tr><td></td></tr>
 </table>
 
-<!-- Preheader (hidden text for inbox preview) -->
-<div style="display: none; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #F0F2F5;">
-Transformers.js v4 Preview: Now Available on NPM! — 14 curated AI stories from 25+ sources&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+<!-- Preheader -->
+<div style="display: none; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #F8FAFB;">
+Transformers.js v4 Preview: Now Available on NPM! — 10 curated AI stories &middot; ~4 min read&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
 </div>
 
 <!-- Outer wrapper -->
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="body-bg" style="background-color: #F0F2F5;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="body-bg" style="background-color: #F8FAFB;">
 <tr><td align="center" style="padding: 0;">
 
-<!-- ========== HEADER ========== -->
+<!-- ========== HEADER (compact, single row) ========== -->
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #0F172A;">
 <!--[if mso]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:800px; height:160px;">
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:800px; height:80px;">
 <v:fill type="gradient" color="#0F172A" color2="#0F766E" angle="135"/>
 <v:textbox inset="0,0,0,0">
 <![endif]-->
-<tr><td align="center" style="background: linear-gradient(135deg, #0F172A 0%, #0F4C5C 50%, #0F766E 100%); padding: 36px 20px 28px;">
+<tr><td align="center" style="background: linear-gradient(135deg, #0F172A 0%, #0F4C5C 50%, #0F766E 100%); padding: 18px 20px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrapper" style="max-width: 600px;">
-  <tr><td align="center">
-    <!-- Logo (hosted PNG; generate with scripts/generate_logo.py, host at Pages repo assets/) -->
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 12px;">
-    <tr>
-      <td>
-        <img src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="Inference" width="52" height="52" style="width: 52px; height: 52px; border-radius: 14px; display: block;" />
-      </td>
-    </tr>
-    </table>
-    <!-- Brand name -->
-    <h1 class="hero-name" style="margin: 0 0 6px; font-size: 26px; font-weight: 800; color: #FFFFFF; letter-spacing: 6px; text-transform: uppercase; line-height: 1;">
-      INFERENCE
-    </h1>
-    <!-- Tagline (aligned with site) -->
-    <p class="hero-sub" style="margin: 0 0 16px; font-size: 13px; color: rgba(255,255,255,0.84); font-weight: 400;">
-      The signal in the noise.
-    </p>
-    <!-- Meta pill (issue number + date + stats — competitor-aligned) -->
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
-    <tr>
-      <td style="padding: 5px 14px; background-color: rgba(255,255,255,0.08); border-radius: 20px;">
-        <span style="font-size: 12px; color: rgba(255,255,255,0.88);">
-Issue #110 &nbsp;&middot;&nbsp; 11 Feb 2026 &nbsp;&middot;&nbsp; 14 stories &nbsp;&middot;&nbsp; ~5 min read
-        </span>
-      </td>
-    </tr>
-    </table>
-  </td></tr>
+  <tr class="hero-row">
+    <td style="vertical-align: middle;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td style="padding-right: 12px; vertical-align: middle;">
+          <img src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="Inference" width="36" height="36" style="width: 36px; height: 36px; border-radius: 10px; display: block;" />
+        </td>
+        <td style="vertical-align: middle;">
+          <span style="font-size: 18px; font-weight: 800; color: #FFFFFF; letter-spacing: 4px; text-transform: uppercase; line-height: 1;">INFERENCE</span>
+          <br>
+          <span style="font-size: 11px; color: rgba(255,255,255,0.72); font-weight: 400;">The signal in the noise.</span>
+        </td>
+      </tr>
+      </table>
+    </td>
+    <td class="hero-meta" style="vertical-align: middle; text-align: right;">
+      <span style="font-size: 11px; color: rgba(255,255,255,0.85);">
+#110 &middot; 11 Feb 2026 &middot; 10 stories &middot; ~4 min
+      </span>
+    </td>
+  </tr>
   </table>
 </td></tr>
 <!--[if mso]></v:textbox></v:rect><![endif]-->
@@ -129,78 +118,57 @@ Issue #110 &nbsp;&middot;&nbsp; 11 Feb 2026 &nbsp;&middot;&nbsp; 14 stories &nbs
 <!-- ========== MAIN CONTENT ========== -->
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrapper" style="max-width: 600px; margin: 0 auto;">
 
-<!-- In this issue (table of contents — quick nav like leading newsletters) -->
-<tr><td class="mobile-pad" style="padding: 20px 20px 16px;">
+<!-- In this issue -->
+<tr><td class="mobile-pad" style="padding: 16px 20px 12px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0;">
-  <tr><td style="padding: 14px 18px;">
-    <p style="margin: 0 0 10px; font-size: 11px; font-weight: 700; color: #6B7280; letter-spacing: 1px; text-transform: uppercase;">In this issue</p>
+  <tr><td style="padding: 12px 16px;">
+    <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #6B7280; letter-spacing: 1px; text-transform: uppercase;">In this issue</p>
     <p style="margin: 0; font-size: 13px; line-height: 1.8; color: #4B5563;">
-      <a href="#industry-radar" style="color: #0F4C5C; text-decoration: none;">🌐 Industry Radar (3)</a> &nbsp;&middot;&nbsp;       <a href="#builders-bench" style="color: #0F4C5C; text-decoration: none;">🛠️ Builder&#39;s Bench (2)</a> &nbsp;&middot;&nbsp;       <a href="#open-source-watch" style="color: #0F4C5C; text-decoration: none;">⭐ Open Source Watch (3)</a> &nbsp;&middot;&nbsp;       <a href="#lab-notes" style="color: #0F4C5C; text-decoration: none;">🔬 Lab Notes (2)</a>    </p>
+      <a href="#industry-radar" style="color: #0F4C5C; text-decoration: none;">🌐 Industry Radar (2)</a> &nbsp;&middot;&nbsp;       <a href="#builders-bench" style="color: #0F4C5C; text-decoration: none;">🛠️ Builder&#39;s Bench (2)</a> &nbsp;&middot;&nbsp;       <a href="#open-source-watch" style="color: #0F4C5C; text-decoration: none;">⭐ Open Source Watch (2)</a> &nbsp;&middot;&nbsp;       <a href="#ship-it-playbooks" style="color: #0F4C5C; text-decoration: none;">📚 Ship-It Playbooks (2)</a> &nbsp;&middot;&nbsp;       <a href="#lab-notes" style="color: #0F4C5C; text-decoration: none;">🔬 Lab Notes (2)</a>    </p>
   </td></tr>
   </table>
 </td></tr>
 
 <!-- ========== LEAD STORY ========== -->
-<tr><td class="mobile-pad" style="padding: 24px 20px 0;">
-  <!-- Section label -->
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-  <tr><td style="padding-bottom: 10px;">
-    <span style="font-size: 11px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">&#x2B50;&ensp;TOP STORY</span>
-  </td></tr>
-  </table>
-  <!-- Lead card -->
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="lead-card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; border-bottom: 3px solid #0F4C5C; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.08);">
+<tr><td class="mobile-pad" style="padding: 16px 20px 0;">
+  <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">TOP STORY</p>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="lead-card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://huggingface.co/blog/transformersjs-v4" style="text-decoration: none;">
-          <img src="https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png" alt="" width="600" class="card-img" style="width: 100%; max-width: 600px; height: 220px; object-fit: cover; display: block;">
+          <img src="https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png" alt="" width="600" class="card-img" style="width: 100%; max-width: 600px; height: 200px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 20px 24px 0;">
-        <!-- Badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td style="padding-right: 6px; padding-bottom: 10px;">
-            <span class="badge-t" style="display: inline-block; padding: 3px 10px; background-color: #EEF2FF; color: #4338CA; font-size: 11px; font-weight: 600; border-radius: 12px;">Builder</span>
-          </td>
-          <td style="padding-bottom: 10px;">
-            <span class="text-faint" style="font-size: 11px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=huggingface.co&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">Hugging Face Blog &middot; 09 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
+      <td style="padding: 18px 22px 0;">
+        <span class="text-faint" style="font-size: 11px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=huggingface.co&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">Hugging Face Blog &middot; 09 Feb</span>
         <a href="https://huggingface.co/blog/transformersjs-v4" style="text-decoration: none;">
-          <h2 class="lead-title text-dark" style="margin: 0 0 14px; font-size: 22px; font-weight: 700; color: #111827; line-height: 1.3;">
+          <h2 class="lead-title text-dark" style="margin: 8px 0 12px; font-size: 22px; font-weight: 700; color: #111827; line-height: 1.3;">
             Transformers.js v4 Preview: Now Available on NPM!
           </h2>
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 0 24px;">
-        <!-- Summary paragraph -->
-        <p class="text-body" style="margin: 0 0 14px; font-size: 15px; line-height: 1.65; color: #374151;">
-A new release is now available: Transformers.js v4 Preview: Now Available on NPM!. This is likely an execution signal for teams evaluating near-term rollout options.
+      <td style="padding: 0 22px;">
+        <p class="text-body" style="margin: 0 0 12px; font-size: 15px; line-height: 1.65; color: #374151;">
+Transformers.js v4 Preview shipped this week, opening a new option for teams evaluating alternatives. Teams evaluating alternatives now have Transformers.js v4 Preview as a concrete option to benchmark against.
         </p>
-        <!-- Action -->
-        <p class="action-c" style="margin: 0 0 10px; font-size: 14px; color: #0F4C5C; line-height: 1.55;">
-          <strong>&#x25B8; Action:</strong> Set up Transformers.js v4 Preview in a test environment and compare against your current tooling.
+        <p class="action-c" style="margin: 0 0 8px; font-size: 14px; color: #0F4C5C; line-height: 1.55;">
+          <strong>Action:</strong> Install Transformers.js v4 Preview, run it against one real task, and log latency and output quality.
         </p>
-        <!-- Editorial take -->
         <p class="take-c" style="margin: 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.5;">
           Version bumps only matter if they reduce friction in your actual workflow — test before celebrating.
         </p>
       </td>
     </tr>
     <tr>
-      <td style="padding: 18px 24px 22px;">
-        <!-- CTA button -->
+      <td style="padding: 16px 22px 20px;">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td style="border-radius: 8px; background-color: #0F4C5C;">
-            <a href="https://huggingface.co/blog/transformersjs-v4" style="display: inline-block; padding: 10px 24px; font-size: 14px; font-weight: 600; color: #FFFFFF; text-decoration: none; border-radius: 8px;">
+          <td class="cta-btn" style="border-radius: 8px; background-color: #0F4C5C;">
+            <a href="https://huggingface.co/blog/transformersjs-v4" style="display: inline-block; padding: 10px 22px; font-size: 13px; font-weight: 600; color: #FFFFFF; text-decoration: none; border-radius: 8px;">
               Read full story &#x2192;
             </a>
           </td>
@@ -213,580 +181,485 @@ A new release is now available: Transformers.js v4 Preview: Now Available on NPM
 
 <!-- ========== SECTIONS ========== -->
 
-
-<!-- Section header (id for TOC deep links) -->
-<tr><td id="industry-radar" class="mobile-pad" style="padding: 32px 20px 14px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #B45309; letter-spacing: 1.5px; text-transform: uppercase;">
+<tr><td id="industry-radar" class="mobile-pad" style="padding: 28px 20px 12px;">
+  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
     🌐&ensp;Industry Radar
   </span>
-  <div style="width: 36px; height: 3px; background-color: #B45309; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.4;">The moves that change product plans, budgets, and positioning.</p>
+  <div style="width: 32px; height: 2px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
+  <p class="text-dim" style="margin: 4px 0 0; font-size: 12px; color: #6B7280; line-height: 1.4;">The moves that change product plans, budgets, and positioning.</p>
 </td></tr>
 
-<!-- Section articles -->
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-B45309" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #B45309; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible" style="text-decoration: none;">
-          <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25462010/STK155_OPEN_AI_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+          <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25462010/STK155_OPEN_AI_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
         <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Leader</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #f59e0b;">Intermediate</span>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=www.theverge.com&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">The Verge AI &middot; 11 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=www.theverge.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">The Verge AI &middot; 11 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
         <a href="https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
             Here are the brands bringing ads to ChatGPT
           </h3>
         </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-An industry development is drawing attention: Here are the brands bringing ads to ChatGPT. The impact is strategic: budget, compliance, and roadmap assumptions may need updates.
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+Monetization changes around Here are the brands bringing ads may affect pricing, UX, or data-handling assumptions. Budget, compliance, and vendor assumptions tied to Here are the brands bringing ads may need a fresh review.
         </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Add Here are the brands bringing ads to your next leadership sync as a planning input.
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Bring Here are the brands bringing ads to your next planning sync — it may affect Q2 priorities.
         </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Signal check: The Verge AI reinforces that strategic positioning is shifting faster than normal.
-        </p>
-        <!-- Read link -->
-        <a href="https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
       </td>
     </tr>
   </table>
 </td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-B45309" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #B45309; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/" style="text-decoration: none;">
-          <img src="https://cdn.arstechnica.net/wp-content/uploads/2025/07/xai-grok-1152x648-1752596823.jpg" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+        <a href="https://techcrunch.com/podcast/glean-arvind-jain-equity-podcast-own-the-ai-layer-inside-every-company/" style="text-decoration: none;">
+          <img src="https://techcrunch.com/wp-content/uploads/2026/02/Arvind-Jain-headshot.jpg?resize=1200,900" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
         <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #f59e0b;">Intermediate</span>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=arstechnica.com&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">Ars Technica AI &middot; 10 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=techcrunch.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">TechCrunch AI &middot; 11 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            Yet another co-founder departs Elon Musk&#39;s xAI
+        <a href="https://techcrunch.com/podcast/glean-arvind-jain-equity-podcast-own-the-ai-layer-inside-every-company/" style="text-decoration: none;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+            Glean’s fight to own the AI layer inside every company
           </h3>
         </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-An industry development is drawing attention: Yet another co-founder departs Elon Musk&#39;s xAI. It reflects competitive movement that product teams should factor into planning.
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+The Glean’s fight development has implications for vendor strategy and competitive positioning. The Glean’s fight shift affects competitive positioning — factor it into Q2 planning.
         </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Monitor Yet another co-founder departs Elon Musk&#39;s for downstream API or pricing changes that could affect your roadmap.
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Bring Glean’s fight to your next planning sync — it may affect Q2 priorities.
         </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Signal check: Ars Technica AI reinforces that strategic positioning is shifting faster than normal.
-        </p>
-        <!-- Read link -->
-        <a href="https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-B45309" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #B45309; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" style="text-decoration: none;">
-          <img src="https://wp.technologyreview.com/wp-content/uploads/2026/02/260205_chatgpt_boycott_hero.jpg?resize=1200,600" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #f59e0b;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=www.technologyreview.com&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">MIT Technology Review AI &middot; 10 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-An industry development is drawing attention: A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions. User sentiment can shift retention and pricing assumptions faster than roadmap cycles.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Monitor A QuitGPT campaign is urging people for downstream API or pricing changes that could affect your roadmap.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Signal check: Treat this as a planning input, not just a headline (MIT Technology Review AI).
-        </p>
-        <!-- Read link -->
-        <a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
       </td>
     </tr>
   </table>
 </td></tr>
 
-<!-- Section header (id for TOC deep links) -->
-<tr><td id="builders-bench" class="mobile-pad" style="padding: 32px 20px 14px;">
+<tr><td id="builders-bench" class="mobile-pad" style="padding: 28px 20px 12px;">
   <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
     🛠️&ensp;Builder&#39;s Bench
   </span>
-  <div style="width: 36px; height: 3px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.4;">New tooling worth evaluating in an actual workflow this week.</p>
+  <div style="width: 32px; height: 2px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
+  <p class="text-dim" style="margin: 4px 0 0; font-size: 12px; color: #6B7280; line-height: 1.4;">New tooling worth evaluating in an actual workflow this week.</p>
 </td></tr>
 
-<!-- Section articles -->
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-6366f1" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0F4C5C; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://huggingface.co/blog/transformersjs-v4" style="text-decoration: none;">
-          <img src="https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+          <img src="https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
         <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #22c55e;">Beginner</span>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=huggingface.co&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">Hugging Face Blog &middot; 09 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=huggingface.co&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">Hugging Face Blog &middot; 09 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
         <a href="https://huggingface.co/blog/transformersjs-v4" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
             Transformers.js v4 Preview: Now Available on NPM!
           </h3>
         </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-A new release is now available: Transformers.js v4 Preview: Now Available on NPM!. This is likely an execution signal for teams evaluating near-term rollout options.
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+Transformers.js v4 Preview shipped this week, opening a new option for teams evaluating alternatives. Teams evaluating alternatives now have Transformers.js v4 Preview as a concrete option to benchmark against.
         </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Set up Transformers.js v4 Preview in a test environment and compare against your current tooling.
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Install Transformers.js v4 Preview, run it against one real task, and log latency and output quality.
         </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Version bumps only matter if they reduce friction in your actual workflow — test before celebrating.
-        </p>
-        <!-- Read link -->
-        <a href="https://huggingface.co/blog/transformersjs-v4" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
       </td>
     </tr>
   </table>
 </td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-6366f1" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0F4C5C; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" style="text-decoration: none;">
-          <img src="https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+          <img src="https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
         <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #f59e0b;">Intermediate</span>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=blog.langchain.com&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">LangChain Blog &middot; 10 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=blog.langchain.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">LangChain Blog &middot; 10 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
         <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
             The two patterns by which agents connect sandboxes
           </h3>
         </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-A new tool or framework update warrants evaluation: The two patterns by which agents connect sandboxes. It may improve delivery speed if integration overhead stays manageable.
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+The two patterns by which agents connect adds a new option to the builder toolkit — worth a scoped evaluation. Adopting The two patterns by which agents connect could speed delivery if integration friction stays low.
         </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Evaluate The two patterns by which agents connect against your current stack — run a time-boxed proof of concept this sprint.
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Spin up The two patterns by which agents connect in a 2-hour proof of concept — compare output against your current tool.
         </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.
-        </p>
-        <!-- Read link -->
-        <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
       </td>
     </tr>
   </table>
 </td></tr>
 
-<!-- Section header (id for TOC deep links) -->
-<tr><td id="open-source-watch" class="mobile-pad" style="padding: 32px 20px 14px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #2563EB; letter-spacing: 1.5px; text-transform: uppercase;">
+<tr><td id="open-source-watch" class="mobile-pad" style="padding: 28px 20px 12px;">
+  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
     ⭐&ensp;Open Source Watch
   </span>
-  <div style="width: 36px; height: 3px; background-color: #2563EB; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.4;">Repos with momentum that might deserve a deeper look.</p>
+  <div style="width: 32px; height: 2px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
+  <p class="text-dim" style="margin: 4px 0 0; font-size: 12px; color: #6B7280; line-height: 1.4;">Repos with momentum that might deserve a deeper look.</p>
 </td></tr>
 
-<!-- Section articles -->
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-2563EB" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #2563EB; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://github.com/sickn33/antigravity-awesome-skills" style="text-decoration: none;">
-          <img src="https://avatars.githubusercontent.com/u/184072420?v=4" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
-        <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #f59e0b;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">GitHub Trending (AI/ML) &middot; 11 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://github.com/sickn33/antigravity-awesome-skills" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            antigravity-awesome-skills
-          </h3>
-        </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-An open-source project is gaining traction: antigravity-awesome-skills. It is a momentum signal, though maintainability should remain the real gate.
-        </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Scan the antigravity-awesome-skills list for tools you haven&#39;t tried, then bookmark the top two.
-        </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Open-source note: Validate issue velocity and ownership before integrating.
-        </p>
-        <!-- Read link -->
-        <a href="https://github.com/sickn33/antigravity-awesome-skills" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-2563EB" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #2563EB; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://github.com/Leey21/awesome-ai-research-writing" style="text-decoration: none;">
-          <img src="https://avatars.githubusercontent.com/u/112166430?v=4" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+          <img src="https://avatars.githubusercontent.com/u/112166430?v=4" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
         <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #f59e0b;">Intermediate</span>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">GitHub Trending (AI/ML) &middot; 11 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">GitHub Trending (AI/ML) &middot; 11 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
         <a href="https://github.com/Leey21/awesome-ai-research-writing" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
             awesome-ai-research-writing
           </h3>
         </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-New research explores awesome-ai-research-writing. It is a momentum signal, though maintainability should remain the real gate.
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+A new paper on awesome-ai-research-writing introduces methods that may influence downstream tooling. Momentum behind awesome-ai-research-writing is real, but maintenance quality should gate adoption decisions.
         </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Scan the awesome-ai-research-writing list for tools you haven&#39;t tried, then bookmark the top two.
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Pick two tools from the awesome-ai-research-writing list you haven&#39;t used and try one this week.
         </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Open-source note: Momentum is promising, but maintenance quality should decide adoption.
-        </p>
-        <!-- Read link -->
-        <a href="https://github.com/Leey21/awesome-ai-research-writing" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
       </td>
     </tr>
   </table>
 </td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-2563EB" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #2563EB; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://github.com/dwzhu-pku/PaperBanana" style="text-decoration: none;">
-          <img src="https://avatars.githubusercontent.com/u/52273452?v=4" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+        <a href="https://github.com/sickn33/antigravity-awesome-skills" style="text-decoration: none;">
+          <img src="https://avatars.githubusercontent.com/u/184072420?v=4" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
         <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #f59e0b;">Intermediate</span>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">GitHub Trending (AI/ML) &middot; 02 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">GitHub Trending (AI/ML) &middot; 11 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://github.com/dwzhu-pku/PaperBanana" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            PaperBanana
+        <a href="https://github.com/sickn33/antigravity-awesome-skills" style="text-decoration: none;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+            antigravity-awesome-skills
           </h3>
         </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-PaperBanana: Automating Academic Illustration For AI Scientists. It is a momentum signal, though maintainability should remain the real gate.
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+antigravity-awesome-skills is picking up momentum in the open-source community. Momentum behind antigravity-awesome-skills is real, but maintenance quality should gate adoption decisions.
         </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Check PaperBanana issue tracker activity and license before forking or integrating.
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Pick two tools from the antigravity-awesome-skills list you haven&#39;t used and try one this week.
         </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Star velocity tells you whats popular, not whats reliable. Check the issue backlog before the star count.
-        </p>
-        <!-- Read link -->
-        <a href="https://github.com/dwzhu-pku/PaperBanana" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
       </td>
     </tr>
   </table>
 </td></tr>
 
-<!-- Section header (id for TOC deep links) -->
-<tr><td id="lab-notes" class="mobile-pad" style="padding: 32px 20px 14px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #475569; letter-spacing: 1.5px; text-transform: uppercase;">
-    🔬&ensp;Lab Notes
+<tr><td id="ship-it-playbooks" class="mobile-pad" style="padding: 28px 20px 12px;">
+  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
+    📚&ensp;Ship-It Playbooks
   </span>
-  <div style="width: 36px; height: 3px; background-color: #475569; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #6B7280; font-style: italic; line-height: 1.4;">Research and model updates with downstream product impact.</p>
+  <div style="width: 32px; height: 2px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
+  <p class="text-dim" style="margin: 4px 0 0; font-size: 12px; color: #6B7280; line-height: 1.4;">Practical implementation guides you can adapt quickly.</p>
 </td></tr>
 
-<!-- Section articles -->
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-334155" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #475569; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://arxiv.org/abs/2602.09112" style="text-decoration: none;">
-          <img src="https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 160px; object-fit: cover; display: block;">
+        <a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" style="text-decoration: none;">
+          <img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-1-10.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
         <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Researcher</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #f59e0b;">Intermediate</span>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">arXiv CS.AI &middot; 11 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=www.marktechpost.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">MarkTechPost &middot; 11 Feb</span>
+          </td>
+        </tr>
+        </table>
+        <!-- Title -->
+        <a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" style="text-decoration: none;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+            NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving
+          </h3>
+        </a>
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+A new paper on NVIDIA Researchers Introduce KVTC Transform introduces methods that may influence downstream tooling. The NVIDIA Researchers Introduce KVTC Transform development is a useful signal for teams shipping AI products.
+        </p>
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Follow the NVIDIA Researchers Introduce KVTC Transform guide, but adapt one step to fit your actual production constraints.
+        </p>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <a href="https://dev.to/_a3bbad10ef970ace62034/your-coding-agent-doesnt-need-a-bigger-context-window-it-needs-coworkers-5016" style="text-decoration: none;">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fchyzlc8pi7zk7w9kxafb.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
+        <tr>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
+          </td>
+          <td>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=dev.to&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">Dev.to AI &middot; 11 Feb</span>
+          </td>
+        </tr>
+        </table>
+        <!-- Title -->
+        <a href="https://dev.to/_a3bbad10ef970ace62034/your-coding-agent-doesnt-need-a-bigger-context-window-it-needs-coworkers-5016" style="text-decoration: none;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+            Your Coding Agent Doesn&#39;t Need a Bigger Context Window. It Needs Coworkers.
+          </h3>
+        </a>
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+The author has been building with Claude Code for months. The author has been building with Claude Code for months.
+        </p>
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Follow the Your Coding Agent Doesn&#39;t Need a Bigger guide, but adapt one step to fit your actual production constraints.
+        </p>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+
+<tr><td id="lab-notes" class="mobile-pad" style="padding: 28px 20px 12px;">
+  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
+    🔬&ensp;Lab Notes
+  </span>
+  <div style="width: 32px; height: 2px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
+  <p class="text-dim" style="margin: 4px 0 0; font-size: 12px; color: #6B7280; line-height: 1.4;">Research and model updates with downstream product impact.</p>
+</td></tr>
+
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <a href="https://arxiv.org/abs/2602.09112" style="text-decoration: none;">
+          <img src="https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png" alt="" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
+        <tr>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
+          </td>
+          <td>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">arXiv CS.AI &middot; 11 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
         <a href="https://arxiv.org/abs/2602.09112" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
             A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation
           </h3>
         </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-New research results are in: A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation. It signals where methods are moving, but confidence depends on broader replication.
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+Results from A Small-Scale System point to where methods may shift in the next cycle. The A Small-Scale System results point a direction, but production confidence needs independent replication.
         </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Skim the A Small-Scale System abstract and results, then decide if a deeper read is worth the time.
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Skim the A Small-Scale System abstract and results table — decide in 10 minutes if it warrants a deep read.
         </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          Smaller and cheaper usually beats bigger and smarter for most production use cases. Watch this space.
-        </p>
-        <!-- Read link -->
-        <a href="https://arxiv.org/abs/2602.09112" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
       </td>
     </tr>
   </table>
 </td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card sec-334155" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #475569; border-bottom: 3px solid #D1D5DB; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.05);">
+<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
     <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta badges -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+      <td style="padding: 14px 18px;">
+        <!-- Meta: difficulty badge + source -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
         <tr>
-          <td style="padding-right: 5px;">
-            <span class="badge-t" style="display: inline-block; padding: 2px 8px; background-color: #EEF2FF; color: #4338CA; font-size: 10px; font-weight: 600; border-radius: 10px;">Builder</span>
-          </td>
-          <td style="padding-right: 5px;">
-            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 500; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #22c55e;">Beginner</span>
+          <td style="padding-right: 8px;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
           </td>
           <td>
-            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=blog.nethuml.xyz&amp;sz=16" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 4px;">Hacker News (AI) &middot; 08 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=blog.nethuml.xyz&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">Hacker News (AI) &middot; 08 Feb</span>
           </td>
         </tr>
         </table>
         <!-- Title -->
         <a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 10px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
             A timeline of claims about AI/LLMs
           </h3>
         </a>
-        <!-- Summary paragraph: what_happened + why_it_matters -->
-        <p class="text-body" style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-A model update shifts the conversation: A timeline of claims about AI/LLMs. It can shift model choice tradeoffs on quality, latency, and cost.
+        <!-- Summary -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
+A timeline of claims about AI/LLMs enters the model landscape with tradeoffs worth benchmarking. A timeline of claims about AI/LLMs changes the cost-quality tradeoff landscape — benchmark before committing.
         </p>
-        <!-- Action item -->
-        <p class="action-c" style="margin: 0 0 8px; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Compare A timeline of claims about AI/LLMs cost-quality tradeoffs against your current model before switching.
+        <!-- Action -->
+        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Benchmark A timeline of claims about AI/LLMs on your actual workload — check cost, latency, and quality delta.
         </p>
-        <!-- Editorial take -->
-        <p class="take-c" style="margin: 0 0 12px; font-size: 12px; color: #6B7280; font-style: italic; line-height: 1.5;">
-          New model, same question: does it beat your current setup on your actual workload, at an acceptable cost?
-        </p>
-        <!-- Read link -->
-        <a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" style="font-size: 13px; font-weight: 600; color: #0F4C5C; text-decoration: none;">
-          Read article &#x2192;
-        </a>
       </td>
     </tr>
   </table>
 </td></tr>
 
 <!-- ========== FOOTER ========== -->
-<tr><td style="padding: 32px 24px 16px;">
+<tr><td style="padding: 28px 24px 12px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="hr-line" style="border-top: 1px solid #E2E8F0;">
     <tr><td style="padding-top: 20px; text-align: center;">
-      <!-- Share this issue (competitor-aligned: The Batch, LWiA use share + forward) -->
-      <p style="margin: 0 0 14px; font-size: 12px; color: #6B7280; font-weight: 600;">Share this issue</p>
-      <p style="margin: 0 0 18px; font-size: 13px; line-height: 1.6;">
-        <a href="mailto:?subject=Inference%20%E2%80%94%2011%20Feb%202026&body=Read%20this%20week%27s%20AI%20briefing%3A%20https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-11.html" style="color: #0F4C5C; text-decoration: none; margin-right: 12px;">Forward</a>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-11.html&text=Inference%20%E2%80%94%2011 Feb 2026%20AI%20briefing" style="color: #0F4C5C; text-decoration: none; margin-right: 12px;">X</a>
+      <!-- Feedback -->
+      <p style="margin: 0 0 16px; font-size: 13px; color: #374151; font-weight: 600;">Was this issue useful?</p>
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 20px;">
+      <tr>
+        <td style="padding-right: 8px;">
+          <a href="mailto:inference.feedback@gmail.com?subject=Feedback%3A%2011 Feb 2026%20-%20Yes" style="display: inline-block; padding: 8px 20px; font-size: 13px; font-weight: 600; color: #166534; background-color: #DCFCE7; border: 1px solid #bbf7d0; border-radius: 8px; text-decoration: none;">Yes</a>
+        </td>
+        <td>
+          <a href="mailto:inference.feedback@gmail.com?subject=Feedback%3A%2011 Feb 2026%20-%20No" style="display: inline-block; padding: 8px 20px; font-size: 13px; font-weight: 600; color: #991B1B; background-color: #FEE2E2; border: 1px solid #fecaca; border-radius: 8px; text-decoration: none;">Not really</a>
+        </td>
+      </tr>
+      </table>
+      <!-- Read in browser -->
+      <p style="margin: 0 0 16px; font-size: 12px; color: #6B7280; line-height: 1.6;">
+        <a href="https://matthewpaver.github.io/ai-weekly/" style="display: inline-block; padding: 9px 18px; background-color: #0F4C5C; color: #FFFFFF !important; text-decoration: none; font-weight: 600; border-radius: 8px; font-size: 13px;">Read in browser</a>
+      </p>
+      <!-- Share -->
+      <p style="margin: 0 0 14px; font-size: 12px; line-height: 1.6; color: #6B7280;">
+        Share: &nbsp;
+        <a href="mailto:?subject=Inference%20%E2%80%94%2011%20Feb%202026&body=Read%20this%20week%27s%20AI%20briefing%3A%20https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-11.html" style="color: #0F4C5C; text-decoration: none;">Forward</a> &nbsp;&middot;&nbsp;
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-11.html&text=Inference%20%E2%80%94%2011 Feb 2026%20AI%20briefing" style="color: #0F4C5C; text-decoration: none;">X</a> &nbsp;&middot;&nbsp;
         <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-11.html" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
       </p>
-      <!-- Primary CTA -->
-      <p class="text-faint" style="margin: 0 0 6px; font-size: 12px; color: #6B7280; line-height: 1.6;">
-        <a href="https://matthewpaver.github.io/ai-weekly/" style="display: inline-block; padding: 10px 20px; background-color: #0F4C5C; color: #FFFFFF !important; text-decoration: none; font-weight: 600; border-radius: 8px; font-size: 13px;">Read in browser</a>
-      </p>
-      <p class="text-faint" style="margin: 12px 0 6px; font-size: 12px; color: #6B7280; line-height: 1.6;">
+      <!-- Links -->
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #6B7280; line-height: 1.6;">
         Curated from 25+ sources &nbsp;&middot;&nbsp;
         <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues" style="color: #0F4C5C; text-decoration: none;">Past issues</a> &nbsp;&middot;&nbsp;
         <a href="https://matthewpaver.github.io/ai-weekly/" style="color: #0F4C5C; text-decoration: none;">Subscribe</a>
       </p>
-      <p class="text-faint" style="margin: 0; font-size: 11px; color: #6B7280;">
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #6B7280;">
         Built by <a href="https://github.com/MatthewPaver" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Matthew Paver</a> &nbsp;&middot;&nbsp;
         <a href="https://www.linkedin.com/in/matthew-paver-534262166/" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
       </p>
-      <p class="text-faint" style="margin: 14px 0 0; font-size: 11px; color: #64748B;">
-        You're receiving Inference because you subscribed at matthewpaver.github.io/ai-weekly
+      <!-- Unsubscribe & legal -->
+      <p class="text-faint" style="margin: 14px 0 0; font-size: 10px; color: #94A3B8; line-height: 1.5;">
+        You're receiving this because you subscribed at matthewpaver.github.io/ai-weekly<br>
+        <a href="mailto:inference.feedback@gmail.com?subject=Unsubscribe%2011 Feb 2026" style="color: #94A3B8; text-decoration: underline;">Unsubscribe</a>
       </p>
     </td></tr>
   </table>
