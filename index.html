@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Weekly — Curated AI Trends, Tools & Research</title>
-    <meta name="description" content="Your weekly briefing on AI trends, tools, and research. Curated from 15+ sources and published every Monday.">
-    <meta property="og:title" content="AI Weekly Newsletter">
-    <meta property="og:description" content="Your weekly briefing on AI trends, tools, and research">
+    <title>Inference — The Signal in the Noise</title>
+    <meta name="description" content="Your weekly briefing on AI trends, tools, and research. Curated from 25+ sources and published every Monday.">
+    <meta property="og:title" content="Inference — AI Newsletter">
+    <meta property="og:description" content="The signal in the noise. Curated AI trends, tools, and research.">
     <meta property="og:type" content="website">
-    <link rel="alternate" type="application/rss+xml" title="AI Weekly RSS" href="data/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Inference RSS" href="feed.xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -227,12 +227,20 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 12px;
+            margin-bottom: 6px;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+            font-style: italic;
         }
 
         .hero p {
-            font-size: 1.05rem;
-            color: var(--text-secondary);
+            font-size: 0.95rem;
+            color: var(--text-muted);
             max-width: 500px;
             margin: 0 auto 28px;
         }
@@ -304,6 +312,27 @@
             border: 1px solid var(--diff-advanced-border);
         }
         .diff-tag.advanced::before { background: var(--advanced); }
+
+        /* ===== Editorial intro ===== */
+        .editorial-intro {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 24px 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .editorial-intro blockquote {
+            border-left: 3px solid var(--accent);
+            padding: 12px 20px;
+            margin: 0;
+            background: var(--accent-soft);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-style: italic;
+        }
 
         /* ===== Filter bar ===== */
         .filter-bar {
@@ -696,8 +725,9 @@
             <span class="pulse"></span>
             Updated Weekly
         </div>
-        <h1>AI Weekly</h1>
-        <p>Your curated briefing on AI trends, tools, and research — from 15+ sources, every Monday.</p>
+        <h1>Inference</h1>
+        <div class="tagline">The signal in the noise</div>
+        <p>Your curated AI briefing — trends, tools, and research from 25+ sources, every Monday.</p>
 
         <div class="hero-stats">
             <div class="stat">
@@ -705,7 +735,7 @@
                 <div class="stat-label">Articles</div>
             </div>
             <div class="stat">
-                <div class="stat-value" id="source-count">15+</div>
+                <div class="stat-value" id="source-count">25+</div>
                 <div class="stat-label">Sources</div>
             </div>
             <div class="stat">
@@ -721,20 +751,20 @@
         </div>
     </header>
 
-    <!-- Filter bar -->
+    <!-- Filter bar — dynamically populated from data -->
     <nav class="filter-bar" id="filter-bar">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="Industry">Industry</button>
-        <button class="filter-btn" data-filter="Community">Community</button>
-        <button class="filter-btn" data-filter="Tools">Tools</button>
-        <button class="filter-btn" data-filter="Repos">Repos</button>
-        <button class="filter-btn" data-filter="Tutorials">Tutorials</button>
-        <button class="filter-btn" data-filter="Research">Research</button>
-        <div class="filter-sep"></div>
+        <!-- Topic buttons injected by JS based on actual sections -->
+        <div class="filter-sep" id="filter-sep"></div>
         <button class="filter-btn" data-diff="Beginner">Beginner</button>
         <button class="filter-btn" data-diff="Intermediate">Intermediate</button>
         <button class="filter-btn" data-diff="Advanced">Advanced</button>
     </nav>
+
+    <!-- Editorial intro -->
+    <div class="editorial-intro" id="editorial-intro" style="display:none">
+        <blockquote id="intro-text"></blockquote>
+    </div>
 
     <!-- Newsletter content -->
     <main class="content" id="newsletter-content">
@@ -781,7 +811,7 @@
                 <a href="https://github.com/MatthewPaver/ai-weekly" target="_blank" rel="noopener" class="btn btn-primary">
                     &#9733; Watch on GitHub
                 </a>
-                <a href="data/feed.xml" class="btn btn-secondary">
+                <a href="feed.xml" class="btn btn-secondary" title="Copy this link into your favourite RSS reader (Feedly, Inoreader, etc.)">
                     &#128225; RSS Feed
                 </a>
             </div>
@@ -803,27 +833,27 @@
         'use strict';
 
         // ---- Theme Toggle ----
-        const html = document.documentElement;
-        const themeBtn = document.getElementById('theme-toggle');
-        const savedTheme = localStorage.getItem('ai-weekly-theme');
+        var html = document.documentElement;
+        var themeBtn = document.getElementById('theme-toggle');
+        var savedTheme = localStorage.getItem('inference-theme');
 
         if (savedTheme) {
             html.setAttribute('data-theme', savedTheme);
         }
 
-        themeBtn.addEventListener('click', () => {
-            const current = html.getAttribute('data-theme');
-            const next = current === 'light' ? 'dark' : 'light';
+        themeBtn.addEventListener('click', function() {
+            var current = html.getAttribute('data-theme');
+            var next = current === 'light' ? 'dark' : 'light';
             html.setAttribute('data-theme', next);
-            localStorage.setItem('ai-weekly-theme', next);
+            localStorage.setItem('inference-theme', next);
         });
 
         // ---- Load Newsletter ----
         async function loadNewsletter() {
             try {
-                const resp = await fetch('data/latest.json');
+                var resp = await fetch('data/latest.json');
                 if (!resp.ok) throw new Error('Failed to load');
-                const data = await resp.json();
+                var data = await resp.json();
                 renderNewsletter(data);
             } catch (e) {
                 document.getElementById('newsletter-content').innerHTML =
@@ -837,17 +867,62 @@
             return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         }
 
+        function buildDynamicFilters(data) {
+            // Collect unique topics from all articles across sections
+            var topicSet = {};
+            data.sections.forEach(function(section) {
+                // Use section title as a filter, mapping to its topic list
+                var topics = section.topics || [];
+                topics.forEach(function(t) { topicSet[t] = section.title; });
+            });
+
+            // Build unique section-level filters (deduped by title)
+            var sectionFilters = [];
+            var seenTitles = {};
+            data.sections.forEach(function(section) {
+                if (!seenTitles[section.title]) {
+                    seenTitles[section.title] = true;
+                    sectionFilters.push({
+                        title: section.title,
+                        topics: section.topics || []
+                    });
+                }
+            });
+
+            // Inject topic filter buttons before the separator
+            var filterBar = document.getElementById('filter-bar');
+            var sep = document.getElementById('filter-sep');
+
+            sectionFilters.forEach(function(sf) {
+                var btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.setAttribute('data-filter', sf.topics.join(','));
+                // Short label — strip emoji-like prefix from title
+                btn.textContent = sf.title;
+                filterBar.insertBefore(btn, sep);
+            });
+        }
+
         function renderNewsletter(data) {
-            const container = document.getElementById('newsletter-content');
+            var container = document.getElementById('newsletter-content');
 
             // Update stats
             document.getElementById('article-count').textContent = data.total_articles;
+            document.getElementById('source-count').textContent = data.source_count + '+';
             document.getElementById('section-count').textContent = data.sections.length;
 
-            let html = '<div class="issue-date">Issue: <strong>' + escapeHtml(data.date) + '</strong></div>';
+            // Show editorial intro if present
+            if (data.intro) {
+                document.getElementById('intro-text').textContent = data.intro;
+                document.getElementById('editorial-intro').style.display = '';
+            }
+
+            // Build dynamic filter buttons from actual data
+            buildDynamicFilters(data);
+
+            var html = '<div class="issue-date">Issue: <strong>' + escapeHtml(data.date) + '</strong></div>';
 
             data.sections.forEach(function(section, i) {
-                // Store each topic individually as data attributes
                 var topicList = (section.topics || []).join(',');
 
                 html += '<div class="section" data-topics="' + escapeHtml(topicList) + '" style="animation-delay:' + (i * 0.05) + 's">' +
@@ -933,11 +1008,17 @@
             var articles = document.querySelectorAll('.article');
             var visibleCount = 0;
 
+            // Parse the active topic filter — it's a comma-separated list of topics
+            var activeTopics = [];
+            if (activeTopicFilter !== 'all') {
+                activeTopics = activeTopicFilter.split(',');
+            }
+
             articles.forEach(function(article) {
                 var topic = article.getAttribute('data-topic');
                 var diff = article.getAttribute('data-diff');
 
-                var showTopic = (activeTopicFilter === 'all') || (topic === activeTopicFilter);
+                var showTopic = (activeTopicFilter === 'all') || (activeTopics.indexOf(topic) !== -1);
                 var showDiff = (activeDiffFilters.size === 0) || activeDiffFilters.has(diff);
 
                 var show = showTopic && showDiff;
@@ -959,16 +1040,12 @@
         }
 
         // ---- Load saved preferences ----
-        var savedTopic = localStorage.getItem('ai-weekly-filter-topic');
-        var savedDiffs = localStorage.getItem('ai-weekly-filter-diffs');
+        var savedTopic = localStorage.getItem('inference-filter-topic');
+        var savedDiffs = localStorage.getItem('inference-filter-diffs');
 
         if (savedTopic && savedTopic !== 'all') {
             activeTopicFilter = savedTopic;
-            document.querySelectorAll('.filter-btn[data-filter]').forEach(function(b) {
-                b.classList.remove('active');
-            });
-            var targetBtn = document.querySelector('.filter-btn[data-filter="' + savedTopic + '"]');
-            if (targetBtn) targetBtn.classList.add('active');
+            // We'll apply the active state after dynamic buttons are built
         }
 
         if (savedDiffs) {
@@ -985,8 +1062,22 @@
         var origApply = applyFilters;
         applyFilters = function() {
             origApply();
-            localStorage.setItem('ai-weekly-filter-topic', activeTopicFilter);
-            localStorage.setItem('ai-weekly-filter-diffs', JSON.stringify(Array.from(activeDiffFilters)));
+            localStorage.setItem('inference-filter-topic', activeTopicFilter);
+            localStorage.setItem('inference-filter-diffs', JSON.stringify(Array.from(activeDiffFilters)));
+
+            // Restore active state on dynamically-added topic buttons
+            document.querySelectorAll('.filter-btn[data-filter]').forEach(function(b) {
+                b.classList.remove('active');
+            });
+            var activeBtn = document.querySelector('.filter-btn[data-filter="' + activeTopicFilter + '"]');
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+            } else {
+                // If saved filter no longer exists, fall back to "all"
+                activeTopicFilter = 'all';
+                var allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+                if (allBtn) allBtn.classList.add('active');
+            }
         };
 
         // ---- Init ----
