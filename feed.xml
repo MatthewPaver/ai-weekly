@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 21:23:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 21:51:41 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Glean’s fight to own the AI layer inside every company]]></title>
@@ -24,12 +24,12 @@
       
     </item>
     <item>
-      <title><![CDATA[Your Coding Agent Doesn't Need a Bigger Context Window. It Needs Coworkers.]]></title>
-      <link>https://dev.to/_a3bbad10ef970ace62034/your-coding-agent-doesnt-need-a-bigger-context-window-it-needs-coworkers-5016</link>
-      <description><![CDATA[Research on Your Coding Agent Doesn't Need a Bigger introduces methods that could influence applied work if results hold (via Dev.to AI).]]></description>
+      <title><![CDATA[Revo AI Email Assistant]]></title>
+      <link>https://dev.to/minimal-architect/revo-ai-email-assistant-2e8i</link>
+      <description><![CDATA[Revo AI Email Assistant is a development worth monitoring for near-term product and tooling decisions (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 21:00:58 +0000</pubDate>
-      <author>정재혁</author>
+      <pubDate>Wed, 11 Feb 2026 21:40:13 +0000</pubDate>
+      <author>tech_minimalist</author>
     </item>
     <item>
       <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
@@ -40,12 +40,12 @@
       <author>Russ Webb, Jason Ramapuram</author>
     </item>
     <item>
-      <title><![CDATA[awesome-ai-research-writing]]></title>
-      <link>https://github.com/Leey21/awesome-ai-research-writing</link>
-      <description><![CDATA[Elevate your AI research writing, no more tedious polishing ✨. Currently at 5,442 stars with ~454 stars/day growth.]]></description>
+      <title><![CDATA[antigravity-awesome-skills]]></title>
+      <link>https://github.com/sickn33/antigravity-awesome-skills</link>
+      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Currently at 8,459 stars with ~302 stars/day growth.]]></description>
       <category>Repos</category>
-      <pubDate>Wed, 11 Feb 2026 04:11:48 +0000</pubDate>
-      <author>Leey21</author>
+      <pubDate>Wed, 11 Feb 2026 06:57:37 +0000</pubDate>
+      <author>sickn33</author>
     </item>
     <item>
       <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
@@ -80,12 +80,12 @@
       <author>Asif Razzaq</author>
     </item>
     <item>
-      <title><![CDATA[antigravity-awesome-skills]]></title>
-      <link>https://github.com/sickn33/antigravity-awesome-skills</link>
-      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Currently at 8,456 stars with ~302 stars/day growth.]]></description>
+      <title><![CDATA[PaperBanana]]></title>
+      <link>https://github.com/dwzhu-pku/PaperBanana</link>
+      <description><![CDATA[PaperBanana: Automating Academic Illustration For AI Scientists. Currently at 3,325 stars with ~277 stars/day growth.]]></description>
       <category>Repos</category>
-      <pubDate>Wed, 11 Feb 2026 06:57:37 +0000</pubDate>
-      <author>sickn33</author>
+      <pubDate>Mon, 02 Feb 2026 23:13:42 +0000</pubDate>
+      <author>dwzhu-pku</author>
     </item>
   </channel>
 </rss>

@@ -3,7 +3,7 @@
   "total_articles": 10,
   "source_count": 25,
   "read_time_minutes": 4,
-  "intro": "Midweek briefing: company moves and product decisions led the cycle. It leans builder-first, with concrete things to test quickly. We reviewed 25+ sources so you do not have to.",
+  "intro": "Company moves and product decisions led this week.",
   "pulse_board": [
     {
       "label": "Dominant theme",
@@ -23,24 +23,37 @@
     }
   ],
   "issue_menu": [
-    "\ud83c\udf10 Industry Radar (2)",
-    "\ud83d\udee0\ufe0f Builder's Bench (2)",
-    "\u2b50 Open Source Watch (2)",
-    "\ud83d\udcda Ship-It Playbooks (2)",
-    "\ud83d\udd2c Lab Notes (2)"
+    {
+      "icon": "\ud83c\udf10",
+      "title": "Industry Radar",
+      "count": 2,
+      "label": "\ud83c\udf10 Industry Radar (2)"
+    },
+    {
+      "icon": "\u2b50",
+      "title": "Open Source Watch",
+      "count": 2,
+      "label": "\u2b50 Open Source Watch (2)"
+    },
+    {
+      "icon": "\ud83d\udcda",
+      "title": "Ship-It Playbooks",
+      "count": 2,
+      "label": "\ud83d\udcda Ship-It Playbooks (2)"
+    },
+    {
+      "icon": "\ud83d\udd2c",
+      "title": "Lab Notes",
+      "count": 2,
+      "label": "\ud83d\udd2c Lab Notes (2)"
+    }
   ],
   "briefing": [
     {
-      "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
-      "url": "https://arxiv.org/abs/2602.09112",
-      "note": "Results from A Small-Scale System point to where methods may shift in the next cycle. Why it matters: The A Small-Scale System results point a direction, but production confidence needs independent replication.",
-      "track": "Researcher"
-    },
-    {
-      "title": "Here are the brands bringing ads to ChatGPT",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
-      "note": "Monetization changes around Here are the brands bringing ads may affect pricing, UX, or data-handling assumptions. Why it matters: Budget, compliance, and vendor assumptions tied to Here are the brands bringing ads may need a fresh review.",
-      "track": "Leader"
+      "title": "The two patterns by which agents connect sandboxes",
+      "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
+      "note": "The two patterns by which agents connect adds a new option to the builder toolkit \u2014 worth a scoped evaluation. Why it matters: Adopting The two patterns by which agents connect could speed delivery if integration friction stays low.",
+      "track": "Builder"
     }
   ],
   "editors_note": {
@@ -61,16 +74,10 @@
   },
   "quick_hits": [
     {
-      "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
-      "url": "https://arxiv.org/abs/2602.09112",
-      "note": "Results from A Small-Scale System point to where methods may shift in the next cycle. Why it matters: The A Small-Scale System results point a direction, but production confidence needs independent replication.",
-      "track": "Researcher"
-    },
-    {
-      "title": "Here are the brands bringing ads to ChatGPT",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
-      "note": "Monetization changes around Here are the brands bringing ads may affect pricing, UX, or data-handling assumptions. Why it matters: Budget, compliance, and vendor assumptions tied to Here are the brands bringing ads may need a fresh review.",
-      "track": "Leader"
+      "title": "The two patterns by which agents connect sandboxes",
+      "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
+      "note": "The two patterns by which agents connect adds a new option to the builder toolkit \u2014 worth a scoped evaluation. Why it matters: Adopting The two patterns by which agents connect could speed delivery if integration friction stays low.",
+      "track": "Builder"
     }
   ],
   "sections": [
@@ -122,52 +129,6 @@
       ]
     },
     {
-      "title": "Builder's Bench",
-      "icon": "\ud83d\udee0\ufe0f",
-      "deck": "New tooling worth evaluating in an actual workflow this week.",
-      "color": "0F4C5C",
-      "badge": "Builders Bench",
-      "topics": [
-        "Tools"
-      ],
-      "articles": [
-        {
-          "title": "Transformers.js v4 Preview: Now Available on NPM!",
-          "url": "https://huggingface.co/blog/transformersjs-v4",
-          "source": "Hugging Face Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
-          "authors": "",
-          "published": "09 Feb",
-          "thumbnail": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
-          "summary": "Transformers.js v4 Preview ships a new release worth testing if it overlaps with your current toolchain (via Hugging Face Blog).",
-          "what_happened": "Transformers.js v4 Preview shipped this week, opening a new option for teams evaluating alternatives.",
-          "why_it_matters": "Teams evaluating alternatives now have Transformers.js v4 Preview as a concrete option to benchmark against.",
-          "what_to_do": "Install Transformers.js v4 Preview, run it against one real task, and log latency and output quality.",
-          "our_take": "Version bumps only matter if they reduce friction in your actual workflow \u2014 test before celebrating.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tools"
-        },
-        {
-          "title": "The two patterns by which agents connect sandboxes",
-          "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
-          "source": "LangChain Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
-          "authors": "Harrison Chase",
-          "published": "10 Feb",
-          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png",
-          "summary": "Research on The two patterns by which agents connect introduces methods that could influence applied work if results hold (via LangChain Blog).",
-          "what_happened": "The two patterns by which agents connect adds a new option to the builder toolkit \u2014 worth a scoped evaluation.",
-          "why_it_matters": "Adopting The two patterns by which agents connect could speed delivery if integration friction stays low.",
-          "what_to_do": "Spin up The two patterns by which agents connect in a 2-hour proof of concept \u2014 compare output against your current tool.",
-          "our_take": "Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        }
-      ]
-    },
-    {
       "title": "Open Source Watch",
       "icon": "\u2b50",
       "deck": "Repos with momentum that might deserve a deeper look.",
@@ -178,23 +139,6 @@
       ],
       "articles": [
         {
-          "title": "awesome-ai-research-writing",
-          "url": "https://github.com/Leey21/awesome-ai-research-writing",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "Leey21",
-          "published": "11 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/112166430?v=4",
-          "summary": "Elevate your AI research writing, no more tedious polishing \u2728. Currently at 5,442 stars with ~454 stars/day growth.",
-          "what_happened": "A new paper on awesome-ai-research-writing introduces methods that may influence downstream tooling.",
-          "why_it_matters": "Momentum behind awesome-ai-research-writing is real, but maintenance quality should gate adoption decisions.",
-          "what_to_do": "Pick two tools from the awesome-ai-research-writing list you haven't used and try one this week.",
-          "our_take": "Momentum behind awesome-ai-research-writing is promising, but maintenance quality should decide adoption.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        },
-        {
           "title": "antigravity-awesome-skills",
           "url": "https://github.com/sickn33/antigravity-awesome-skills",
           "source": "GitHub Trending (AI/ML)",
@@ -202,11 +146,28 @@
           "authors": "sickn33",
           "published": "11 Feb",
           "thumbnail": "https://avatars.githubusercontent.com/u/184072420?v=4",
-          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Currently at 8,456 stars with ~302 stars/day growth.",
-          "what_happened": "antigravity-awesome-skills is picking up momentum in the open-source community.",
+          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Currently at 8,459 stars with ~302 stars/day growth.",
+          "what_happened": "Antigravity-awesome-skills is picking up momentum in the open-source community.",
           "why_it_matters": "Momentum behind antigravity-awesome-skills is real, but maintenance quality should gate adoption decisions.",
           "what_to_do": "Pick two tools from the antigravity-awesome-skills list you haven't used and try one this week.",
-          "our_take": "Validate antigravity-awesome-skills issue velocity and bus factor before integrating into production.",
+          "our_take": "Curated lists are great for discovery but terrible for decision-making. Pick one tool and actually ship with it.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Repos"
+        },
+        {
+          "title": "PaperBanana",
+          "url": "https://github.com/dwzhu-pku/PaperBanana",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
+          "authors": "dwzhu-pku",
+          "published": "02 Feb",
+          "thumbnail": "https://avatars.githubusercontent.com/u/52273452?v=4",
+          "summary": "PaperBanana: Automating Academic Illustration For AI Scientists. Currently at 3,325 stars with ~277 stars/day growth.",
+          "what_happened": "PaperBanana: Automating Academic Illustration For AI Scientists.",
+          "why_it_matters": "Momentum behind PaperBanana is real, but maintenance quality should gate adoption decisions.",
+          "what_to_do": "Review PaperBanana issue tracker, last commit date, and license before considering adoption.",
+          "our_take": "Star velocity tells you whats popular, not whats reliable. Check the issue backlog before the star count.",
           "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Repos"
@@ -241,18 +202,18 @@
           "topic": "Tutorials"
         },
         {
-          "title": "Your Coding Agent Doesn't Need a Bigger Context Window. It Needs Coworkers.",
-          "url": "https://dev.to/_a3bbad10ef970ace62034/your-coding-agent-doesnt-need-a-bigger-context-window-it-needs-coworkers-5016",
+          "title": "Revo AI Email Assistant",
+          "url": "https://dev.to/minimal-architect/revo-ai-email-assistant-2e8i",
           "source": "Dev.to AI",
           "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
-          "authors": "\uc815\uc7ac\ud601",
+          "authors": "tech_minimalist",
           "published": "11 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fchyzlc8pi7zk7w9kxafb.png",
-          "summary": "Research on Your Coding Agent Doesn't Need a Bigger introduces methods that could influence applied work if results hold (via Dev.to AI).",
-          "what_happened": "The author has been building with Claude Code for months.",
-          "why_it_matters": "The author has been building with Claude Code for months.",
-          "what_to_do": "Follow the Your Coding Agent Doesn't Need a Bigger guide, but adapt one step to fit your actual production constraints.",
-          "our_take": "Adapt one proven pattern from Your Coding Agent Doesn't Need a Bigger instead of copying the whole stack.",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fimage.pollinations.ai%2Fprompt%2FStudio_photography_of_Revo_AI_Email_Assistant_ultra_minimalist_tech_concept%2Cshot_on_Leica_M11%2C85mm_lens%2Cf%2F1.8%2Csoft_cinematic_lighting%2Cdark_clean_background%2C8k%3Fwidth%3D1280%26height%3D720%26nologo%3Dtrue%26seed%3D592248%26model%3Dflux-realism",
+          "summary": "Revo AI Email Assistant is a development worth monitoring for near-term product and tooling decisions (via Dev.to AI).",
+          "what_happened": "A hands-on guide to Revo AI Email Assistant offers patterns you can adapt to your own stack.",
+          "why_it_matters": "The Revo AI Email Assistant development is a useful signal for teams shipping AI products.",
+          "what_to_do": "Follow the Revo AI Email Assistant guide, but adapt one step to fit your actual production constraints.",
+          "our_take": "Adapt one proven pattern from Revo AI Email Assistant instead of copying the whole stack.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
           "topic": "Tutorials"
