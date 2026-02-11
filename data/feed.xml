@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Weekly Newsletter</title>
+    <link>https://matthewpaver.github.io/ai-weekly/</link>
+    <description>Curated AI trends, tools, and research — updated every Monday.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Feb 2026 06:12:28 +0000</lastBuildDate>
+    <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[With co-founders leaving and an IPO looming, Elon Musk turns talk to the moon]]></title>
+      <link>https://techcrunch.com/2026/02/10/with-co-founders-leaving-and-an-ipo-looming-elon-musk-turns-talk-to-the-moon/</link>
+      <description><![CDATA[According to The New York Times, which reports that it heard the meeting, Musk told employees that xAI needs a lunar manufacturing facility, a factory on the moon that will build AI satellites and fling them into space via a giant catapult.]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 11 Feb 2026 05:23:26 +0000</pubDate>
+      <author>Connie Loizos</author>
+    </item>
+    <item>
+      <title><![CDATA[OpenAI policy exec who opposed chatbot’s “adult mode” reportedly fired on discrimination claim]]></title>
+      <link>https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/</link>
+      <description><![CDATA[The executive has denied the allegation that she engaged in discrimination.]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 11 Feb 2026 02:15:27 +0000</pubDate>
+      <author>Lucas Ropek</author>
+    </item>
+    <item>
+      <title><![CDATA[Okay, now exactly half of xAI’s founding team has left the company]]></title>
+      <link>https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/</link>
+      <description><![CDATA[Whatever the cause of the departures, the cumulative impact is alarming. There is a lot of work left to do at xAI, and an IPO will bring more scrutiny than the lab has ever faced before.]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 11 Feb 2026 01:50:00 +0000</pubDate>
+      <author>Russell Brandom</author>
+    </item>
+    <item>
+      <title><![CDATA[Transformers.js v4 Preview: Now Available on NPM!]]></title>
+      <link>https://huggingface.co/blog/transformersjs-v4</link>
+      <description><![CDATA[Transformers.js v4 Preview: Now Available on NPM!. Published on the Hugging Face blog covering open-source ML tools and models.]]></description>
+      <category>Tools</category>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[Introducing SyGra Studio]]></title>
+      <link>https://huggingface.co/blog/ServiceNow-AI/sygra-studio</link>
+      <description><![CDATA[Introducing SyGra Studio.]]></description>
+      <category>Tools</category>
+      <pubDate>Thu, 05 Feb 2026 16:52:28 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3’s Top Model]]></title>
+      <link>https://huggingface.co/blog/nvidia/nemotron-colembed-v2</link>
+      <description><![CDATA[Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3’s Top Model.]]></description>
+      <category>Tools</category>
+      <pubDate>Wed, 04 Feb 2026 15:00:40 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[How to Model The Expected Value of Marketing Campaigns]]></title>
+      <link>https://towardsdatascience.com/how-to-model-the-expected-value-of-marketing-campaigns/</link>
+      <description><![CDATA[The approach that takes companies to the next level of data maturity The post How to Model The Expected Value of Marketing Campaigns appeared first on Towards Data Science .]]></description>
+      <category>Tutorials</category>
+      <pubDate>Tue, 10 Feb 2026 15:00:00 +0000</pubDate>
+      <author>Rodrigo Almeida</author>
+    </item>
+    <item>
+      <title><![CDATA[Implementing the Snake Game in Python]]></title>
+      <link>https://towardsdatascience.com/implementing-the-snake-game-in-python/</link>
+      <description><![CDATA[An easy step-by-step guide to building the snake game from scratch The post Implementing the Snake Game in Python appeared first on Towards Data Science .]]></description>
+      <category>Tutorials</category>
+      <pubDate>Tue, 10 Feb 2026 13:30:00 +0000</pubDate>
+      <author>Mahnoor Javed</author>
+    </item>
+    <item>
+      <title><![CDATA[How to Personalize Claude Code]]></title>
+      <link>https://towardsdatascience.com/how-to-personalize-claude-code/</link>
+      <description><![CDATA[Learn how to get more out of Claude code by giving it access to more information. The post How to Personalize Claude Code appeared first on Towards Data Science .]]></description>
+      <category>Tutorials</category>
+      <pubDate>Tue, 10 Feb 2026 12:00:00 +0000</pubDate>
+      <author>Eivind Kjosbakken</author>
+    </item>
+    <item>
+      <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
+      <link>https://arxiv.org/abs/2602.09112</link>
+      <description><![CDATA[What research can be pursued with small models trained to complete true programs?]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Russ Webb, Jason Ramapuram</author>
+    </item>
+    <item>
+      <title><![CDATA[Uncertainty-Aware Multimodal Emotion Recognition through Dirichlet Parameterization]]></title>
+      <link>https://arxiv.org/abs/2602.09121</link>
+      <description><![CDATA[In this work, we present a lightweight and privacy-preserving Multimodal Emotion Recognition (MER) framework designed for deployment on edge devices. To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Remi Grzeczkowicz, Eric Soriano, Ali Janati et al.</author>
+    </item>
+    <item>
+      <title><![CDATA[PABU: Progress-Aware Belief Update for Efficient LLM Agents]]></title>
+      <link>https://arxiv.org/abs/2602.09138</link>
+      <description><![CDATA[Large Language Model (LLM) agents commonly condition actions on full action-observation histories, which introduce task-irrelevant information that easily leads to redundant actions and higher inference cost.]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Haitao Jiang, Lin Ge, Hengrui Cai et al.</author>
+    </item>
+    <item>
+      <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
+      <link>https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/</link>
+      <description><![CDATA[A timeline of claims about AI/LLMs. Published by Hacker News (AI).]]></description>
+      <category>Models</category>
+      <pubDate>Sun, 08 Feb 2026 13:02:08 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[India's Sarvan AI LLM launches Indic-language focused models]]></title>
+      <link>https://x.com/SarvamAI</link>
+      <description><![CDATA[India's Sarvan AI LLM launches Indic-language focused models. Published by Hacker News (AI).]]></description>
+      <category>Models</category>
+      <pubDate>Sun, 08 Feb 2026 04:52:43 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[ONNX Based Generative AI LLMs in Java with Project Babylon by Adam Sotona [video]]]></title>
+      <link>https://www.youtube.com/watch?v=fJwKvE2AxIo</link>
+      <description><![CDATA[ONNX Based Generative AI LLMs in Java with Project Babylon by Adam Sotona [video]. Published by Hacker News (AI).]]></description>
+      <category>Models</category>
+      <pubDate>Thu, 05 Feb 2026 18:33:58 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[tensorflow/tensorflow]]></title>
+      <link>https://github.com/tensorflow/tensorflow</link>
+      <description><![CDATA[An Open Source Machine Learning Framework for Everyone (193,688 stars, C++).]]></description>
+      <category>Repos</category>
+      <pubDate>Wed, 11 Feb 2026 06:12:27 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[Significant-Gravitas/AutoGPT]]></title>
+      <link>https://github.com/Significant-Gravitas/AutoGPT</link>
+      <description><![CDATA[AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters. (181,780 stars, Python).]]></description>
+      <category>Repos</category>
+      <pubDate>Wed, 11 Feb 2026 06:12:27 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[ollama/ollama]]></title>
+      <link>https://github.com/ollama/ollama</link>
+      <description><![CDATA[Get up and running with Kimi-K2.5, GLM-4.7, DeepSeek, gpt-oss, Qwen, Gemma and other models.]]></description>
+      <category>Repos</category>
+      <pubDate>Wed, 11 Feb 2026 06:12:27 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[Amazon may launch a marketplace where media sites can sell their content to AI companies]]></title>
+      <link>https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/</link>
+      <description><![CDATA[A new report claims the e-commerce giant is looking to create a pipeline of licensable content between media publishers and AI companies.]]></description>
+      <category>Industry</category>
+      <pubDate>Tue, 10 Feb 2026 23:16:28 +0000</pubDate>
+      <author>Lucas Ropek</author>
+    </item>
+    <item>
+      <title><![CDATA[A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions]]></title>
+      <link>https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/</link>
+      <description><![CDATA[In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced models, to speed up his work. But he grew frustrated with the chatbot’s coding abilities and its gushing, meandering replies. Then he came across a post on Reddit about….]]></description>
+      <category>Industry</category>
+      <pubDate>Tue, 10 Feb 2026 17:00:24 +0000</pubDate>
+      <author>Michelle Kim</author>
+    </item>
+    <item>
+      <title><![CDATA[Why the Moltbook frenzy was like Pokémon]]></title>
+      <link>https://www.technologyreview.com/2026/02/09/1132537/a-lesson-from-pokemon/</link>
+      <description><![CDATA[Lots of influential people in tech last week were describing Moltbook, an online hangout populated by AI agents interacting with one another, as a glimpse into the future.]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 09 Feb 2026 17:02:56 +0000</pubDate>
+      <author>James O'Donnell</author>
+    </item>
+    <item>
+      <title><![CDATA[Making AI Work, MIT Technology Review’s new AI newsletter, is here]]></title>
+      <link>https://www.technologyreview.com/2026/02/09/1132462/ai-newsletter-professional-applications/</link>
+      <description><![CDATA[For years, our newsroom has explored AI’s limitations and potential dangers, as well as its growing energy needs. And our reporters have looked closely at how generative tools are being used for tasks such as coding and running scientific experiments. But how is AI actually being used in fields like health care, climate tech, education,….]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 09 Feb 2026 11:30:00 +0000</pubDate>
+      <author>Abby Ivory-Ganja</author>
+    </item>
+    <item>
+      <title><![CDATA[Moltbook was peak AI theater]]></title>
+      <link>https://www.technologyreview.com/2026/02/06/1132448/moltbook-was-peak-ai-theater/</link>
+      <description><![CDATA[For a few days this week the hottest new hangout on the internet was a vibe-coded Reddit clone called Moltbook, which billed itself as a social network for bots. As the website’s tagline puts it: “Where AI agents share, discuss, and upvote. Humans welcome to observe.” We observed!]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 06 Feb 2026 16:38:11 +0000</pubDate>
+      <author>Will Douglas Heaven</author>
+    </item>
+    <item>
+      <title><![CDATA[Bringing ChatGPT to GenAI.mil]]></title>
+      <link>https://openai.com/index/bringing-chatgpt-to-genaimil</link>
+      <description><![CDATA[OpenAI for Government announces the deployment of a custom ChatGPT on GenAI.mil, bringing secure, safety-forward AI to U.S.]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 09 Feb 2026 11:00:00 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[Testing ads in ChatGPT]]></title>
+      <link>https://openai.com/index/testing-ads-in-chatgpt</link>
+      <description><![CDATA[OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 09 Feb 2026 11:00:00 +0000</pubDate>
+      
+    </item>
+  </channel>
+</rss>

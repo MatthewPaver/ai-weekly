@@ -1,171 +1,63 @@
 {
   "date": "11 Feb 2026",
-  "total_articles": 30,
-  "source_count": 16,
+  "total_articles": 25,
+  "source_count": 15,
   "sections": [
     {
-      "title": "Research & Papers",
-      "icon": "\ud83d\udd2c",
+      "title": "Industry & Community",
+      "icon": "\ud83c\udf10",
       "topics": [
-        "Research",
-        "Models"
+        "Industry",
+        "Community"
       ],
       "articles": [
         {
-          "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
-          "url": "https://arxiv.org/abs/2602.09112",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Russ Webb, Jason Ramapuram",
+          "title": "With co-founders leaving and an IPO looming, Elon Musk turns talk to the moon",
+          "url": "https://techcrunch.com/2026/02/10/with-co-founders-leaving-and-an-ipo-looming-elon-musk-turns-talk-to-the-moon/",
+          "source": "TechCrunch AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
+          "authors": "Connie Loizos",
           "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "What research can be pursued with small models trained to complete true programs?",
+          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2256968212.jpg?w=1024",
+          "summary": "According to The New York Times, which reports that it heard the meeting, Musk told employees that xAI needs a lunar manufacturing facility, a factory on the moon that will build AI satellites and fling them into space via a giant catapult.",
           "difficulty": "Intermediate",
-          "topic": "Research"
+          "topic": "Industry"
         },
         {
-          "title": "Uncertainty-Aware Multimodal Emotion Recognition through Dirichlet Parameterization",
-          "url": "https://arxiv.org/abs/2602.09121",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Remi Grzeczkowicz, Eric Soriano, Ali Janati et al.",
+          "title": "OpenAI policy exec who opposed chatbot\u2019s \u201cadult mode\u201d reportedly fired on discrimination claim",
+          "url": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
+          "source": "TechCrunch AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
+          "authors": "Lucas Ropek",
           "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "In this work, we present a lightweight and privacy-preserving Multimodal Emotion Recognition (MER) framework designed for deployment on edge devices. To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.",
+          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024",
+          "summary": "The executive has denied the allegation that she engaged in discrimination.",
           "difficulty": "Intermediate",
-          "topic": "Research"
+          "topic": "Industry"
         },
         {
-          "title": "PABU: Progress-Aware Belief Update for Efficient LLM Agents",
-          "url": "https://arxiv.org/abs/2602.09138",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Haitao Jiang, Lin Ge, Hengrui Cai et al.",
+          "title": "Okay, now exactly half of xAI\u2019s founding team has left the company",
+          "url": "https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/",
+          "source": "TechCrunch AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
+          "authors": "Russell Brandom",
           "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "Large Language Model (LLM) agents commonly condition actions on full action-observation histories, which introduce task-irrelevant information that easily leads to redundant actions and higher inference cost.",
+          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2223576505.jpg?resize=1200,800",
+          "summary": "Whatever the cause of the departures, the cumulative impact is alarming. There is a lot of work left to do at xAI, and an IPO will bring more scrutiny than the lab has ever faced before.",
           "difficulty": "Intermediate",
-          "topic": "Research"
+          "topic": "Industry"
         },
         {
-          "title": "Ask HN: Is it time to fork HN into AI/LLM and \"Everything else/other?\"",
-          "url": "https://news.ycombinator.com/item?id=44571740",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=16",
-          "authors": "",
-          "published": "15 Jul",
-          "thumbnail": "",
-          "summary": "I would very much like to enjoy HN the way I did years ago, as a place where I&#x27;d discover things that I never otherwise would have come across.<p>The increasing AI&#x2F;LLM domination of the site has made it much less appealing to me.",
+          "title": "Amazon may launch a marketplace where media sites can sell their content to AI companies",
+          "url": "https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/",
+          "source": "TechCrunch AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
+          "authors": "Lucas Ropek",
+          "published": "10 Feb",
+          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2198353077.jpg?w=1024",
+          "summary": "A new report claims the e-commerce giant is looking to create a pipeline of licensable content between media publishers and AI companies.",
           "difficulty": "Intermediate",
-          "topic": "Models"
-        },
-        {
-          "title": "Coconut by Meta AI \u2013 Better LLM Reasoning with Chain of Continuous Thought?",
-          "url": "https://aipapersacademy.com/chain-of-continuous-thought/",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=aipapersacademy.com&sz=16",
-          "authors": "",
-          "published": "31 Dec",
-          "thumbnail": "https://aipapersacademy.com/wp-content/uploads/2024/12/A-coconut-related-to-AI-reasoning.jpg",
-          "summary": "Read more about *Coconut by Meta AI \u2013 Better LLM Reasoning with Chain of Continuous Thought?* from Hacker News (AI).",
-          "difficulty": "Intermediate",
-          "topic": "Models"
-        },
-        {
-          "title": "Show HN: Countless.dev \u2013 A website to compare every AI model: LLMs, TTSs, STTs",
-          "url": "https://countless.dev/",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=countless.dev&sz=16",
-          "authors": "",
-          "published": "07 Dec",
-          "thumbnail": "https://countless.dev/preview.png",
-          "summary": "Read more about *Show HN: Countless.dev \u2013 A website to compare every AI model: LLMs, TTSs, STTs* from Hacker News (AI).",
-          "difficulty": "Intermediate",
-          "topic": "Models"
-        },
-        {
-          "title": "CoMMa: Contribution-Aware Medical Multi-Agents From A Game-Theoretic Perspective",
-          "url": "https://arxiv.org/abs/2602.09159",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Yichen Wu, Yujin Oh, Sangjoon Park et al.",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "Recent multi-agent frameworks have broadened the ability to tackle oncology decision support tasks that require reasoning over dynamic, heterogeneous patient data.",
-          "difficulty": "Intermediate",
-          "topic": "Research"
-        },
-        {
-          "title": "FlyAOC: Evaluating Agentic Ontology Curation of Drosophila Scientific Knowledge Bases",
-          "url": "https://arxiv.org/abs/2602.09163",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Xingjian Zhang, Sophia Moylan, Ziyang Xiong et al.",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "Scientific knowledge bases accelerate discovery by curating findings from primary literature into structured, queryable formats for both human researchers and emerging AI systems.",
-          "difficulty": "Intermediate",
-          "topic": "Research"
-        },
-        {
-          "title": "Overview of PAN 2026: Voight-Kampff Generative AI Detection, Text Watermarking, Multi-Author Writing Style Analysis, Generative Plagiarism Detection, and Reasoning Trajectory Detection",
-          "url": "https://arxiv.org/abs/2602.09147",
-          "source": "arXiv CS.CL",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Janek Bevendorff, Maik Frobe, Andre Greiner-Petter et al.",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "The goal of the PAN workshop is to advance computational stylometry and text forensics via objective and reproducible evaluation.",
-          "difficulty": "Intermediate",
-          "topic": "Research"
-        },
-        {
-          "title": "Measuring Inclusion in Interaction: Inclusion Analytics for Human-AI Collaborative Learning",
-          "url": "https://arxiv.org/abs/2602.09269",
-          "source": "arXiv CS.CL",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Jaeyoon Choi, Nia Nixon",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "Inclusion, equity, and access are widely valued in AI and education, yet are often assessed through coarse sample descriptors or post-hoc self-reports that miss how inclusion is shaped moment by moment in collaborative problem solving (CPS).",
-          "difficulty": "Intermediate",
-          "topic": "Research"
-        },
-        {
-          "title": "Effective Reasoning Chains Reduce Intrinsic Dimensionality",
-          "url": "https://arxiv.org/abs/2602.09276",
-          "source": "arXiv CS.CL",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Archiki Prasad, Mandar Joshi, Kenton Lee et al.",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "Chain-of-thought (CoT) reasoning and its variants have substantially improved the performance of language models on complex reasoning tasks, yet the precise mechanisms by which different strategies facilitate generalization remain poorly understood.",
-          "difficulty": "Intermediate",
-          "topic": "Research"
-        },
-        {
-          "title": "Don't Shoot The Breeze: Topic Continuity Model Using Nonlinear Naive Bayes With Attention",
-          "url": "https://arxiv.org/abs/2602.09312",
-          "source": "arXiv CS.CL",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Shu-Ting Pi, Pradeep Bagavan, Yejia Li et al.",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "Utilizing Large Language Models (LLM) as chatbots in diverse business scenarios often presents the challenge of maintaining topic continuity. Abrupt shifts in topics can lead to poor user experiences and inefficient utilization of computational resources.",
-          "difficulty": "Intermediate",
-          "topic": "Research"
-        },
-        {
-          "title": "Beyond Uniform Credit: Causal Credit Assignment for Policy Optimization",
-          "url": "https://arxiv.org/abs/2602.09331",
-          "source": "arXiv CS.CL",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Mykola Khandoga, Rui Yuan, Vinay Kumar Sankarapu",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "Policy gradient methods for language model reasoning, such as GRPO and DAPO, assign uniform credit to all generated tokens - the filler phrase \"Let me think\" receives the same gradient update as the critical calculation \"23 + 45 = 68.\" We propose counterfactual importance weighting: mask reasoning spans, measure the drop in answer probability, and upweight tokens accordingly during policy gradient updates.",
-          "difficulty": "Intermediate",
-          "topic": "Research"
+          "topic": "Industry"
         },
         {
           "title": "A \u201cQuitGPT\u201d campaign is urging people to cancel their ChatGPT subscriptions",
@@ -177,7 +69,19 @@
           "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/260205_chatgpt_boycott_hero.jpg?resize=1200,600",
           "summary": "In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced models, to speed up his work. But he grew frustrated with the chatbot\u2019s coding abilities and its gushing, meandering replies. Then he came across a post on Reddit about\u2026.",
           "difficulty": "Intermediate",
-          "topic": "Research"
+          "topic": "Industry"
+        },
+        {
+          "title": "Why the Moltbook frenzy was like Pok\u00e9mon",
+          "url": "https://www.technologyreview.com/2026/02/09/1132537/a-lesson-from-pokemon/",
+          "source": "MIT Technology Review AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=www.technologyreview.com&sz=16",
+          "authors": "James O'Donnell",
+          "published": "09 Feb",
+          "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/moltbook-head3.jpg?resize=1200,600",
+          "summary": "Lots of influential people in tech last week were describing Moltbook, an online hangout populated by AI agents interacting with one another, as a glimpse into the future.",
+          "difficulty": "Intermediate",
+          "topic": "Industry"
         }
       ]
     },
@@ -196,7 +100,7 @@
           "authors": "",
           "published": "09 Feb",
           "thumbnail": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
-          "summary": "Read more about *Transformers.js v4 Preview: Now Available on NPM!* from Hugging Face Blog.",
+          "summary": "Transformers.js v4 Preview: Now Available on NPM!. Published on the Hugging Face blog covering open-source ML tools and models.",
           "difficulty": "Intermediate",
           "topic": "Tools"
         },
@@ -208,7 +112,7 @@
           "authors": "",
           "published": "05 Feb",
           "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/603c6bf03249b99991dbcbd0/-W1T8msBfqXne33HFAgp7.png",
-          "summary": "Read more about *Introducing SyGra Studio* from Hugging Face Blog.",
+          "summary": "Introducing SyGra Studio.",
           "difficulty": "Intermediate",
           "topic": "Tools"
         },
@@ -220,31 +124,7 @@
           "authors": "",
           "published": "04 Feb",
           "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-colembed-v2.png",
-          "summary": "Read more about *Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3\u2019s Top Model* from Hugging Face Blog.",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        },
-        {
-          "title": "Community Evals: Because we're done trusting black-box leaderboards over the community",
-          "url": "https://huggingface.co/blog/community-evals",
-          "source": "Hugging Face Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
-          "authors": "",
-          "published": "04 Feb",
-          "thumbnail": "https://huggingface.co/blog/assets/eval-results/thumbnail.png",
-          "summary": "Read more about *Community Evals: Because we're done trusting black-box leaderboards over the community* from Hugging Face Blog.",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        },
-        {
-          "title": "H Company's new Holo2 model takes the lead in UI Localization",
-          "url": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
-          "source": "Hugging Face Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
-          "authors": "",
-          "published": "03 Feb",
-          "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/auDwTiJd-MAHohSeCMzZs.png",
-          "summary": "Read more about *H Company's new Holo2 model takes the lead in UI Localization* from Hugging Face Blog.",
+          "summary": "Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3\u2019s Top Model.",
           "difficulty": "Intermediate",
           "topic": "Tools"
         }
@@ -341,72 +221,72 @@
       ]
     },
     {
-      "title": "Industry & Community",
-      "icon": "\ud83c\udf10",
+      "title": "Research & Papers",
+      "icon": "\ud83d\udd2c",
       "topics": [
-        "Industry",
-        "Community"
+        "Research",
+        "Models"
       ],
       "articles": [
         {
-          "title": "With co-founders leaving and an IPO looming, Elon Musk turns talk to the moon",
-          "url": "https://techcrunch.com/2026/02/10/with-co-founders-leaving-and-an-ipo-looming-elon-musk-turns-talk-to-the-moon/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Connie Loizos",
+          "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
+          "url": "https://arxiv.org/abs/2602.09112",
+          "source": "arXiv CS.AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
+          "authors": "Russ Webb, Jason Ramapuram",
           "published": "11 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2256968212.jpg?w=1024",
-          "summary": "According to The New York Times, which reports that it heard the meeting, Musk told employees that xAI needs a lunar manufacturing facility, a factory on the moon that will build AI satellites and fling them into space via a giant catapult.",
+          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+          "summary": "What research can be pursued with small models trained to complete true programs?",
           "difficulty": "Intermediate",
-          "topic": "Industry"
+          "topic": "Research"
         },
         {
-          "title": "OpenAI policy exec who opposed chatbot\u2019s \u201cadult mode\u201d reportedly fired on discrimination claim",
-          "url": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Lucas Ropek",
+          "title": "Uncertainty-Aware Multimodal Emotion Recognition through Dirichlet Parameterization",
+          "url": "https://arxiv.org/abs/2602.09121",
+          "source": "arXiv CS.AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
+          "authors": "Remi Grzeczkowicz, Eric Soriano, Ali Janati et al.",
           "published": "11 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024",
-          "summary": "The executive has denied the allegation that she engaged in discrimination.",
+          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+          "summary": "In this work, we present a lightweight and privacy-preserving Multimodal Emotion Recognition (MER) framework designed for deployment on edge devices. To demonstrate framework's versatility, our implementation uses three modalities - speech, text and facial imagery.",
           "difficulty": "Intermediate",
-          "topic": "Industry"
+          "topic": "Research"
         },
         {
-          "title": "Okay, now exactly half of xAI\u2019s founding team has left the company",
-          "url": "https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Russell Brandom",
+          "title": "PABU: Progress-Aware Belief Update for Efficient LLM Agents",
+          "url": "https://arxiv.org/abs/2602.09138",
+          "source": "arXiv CS.AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
+          "authors": "Haitao Jiang, Lin Ge, Hengrui Cai et al.",
           "published": "11 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2223576505.jpg?resize=1200,800",
-          "summary": "Whatever the cause of the departures, the cumulative impact is alarming. There is a lot of work left to do at xAI, and an IPO will bring more scrutiny than the lab has ever faced before.",
+          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+          "summary": "Large Language Model (LLM) agents commonly condition actions on full action-observation histories, which introduce task-irrelevant information that easily leads to redundant actions and higher inference cost.",
           "difficulty": "Intermediate",
-          "topic": "Industry"
+          "topic": "Research"
         },
         {
-          "title": "Amazon may launch a marketplace where media sites can sell their content to AI companies",
-          "url": "https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Lucas Ropek",
-          "published": "10 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2198353077.jpg?w=1024",
-          "summary": "A new report claims the e-commerce giant is looking to create a pipeline of licensable content between media publishers and AI companies.",
+          "title": "A timeline of claims about AI/LLMs",
+          "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
+          "source": "Hacker News (AI)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=blog.nethuml.xyz&sz=16",
+          "authors": "",
+          "published": "08 Feb",
+          "thumbnail": "",
+          "summary": "A timeline of claims about AI/LLMs. Published by Hacker News (AI).",
           "difficulty": "Intermediate",
-          "topic": "Industry"
+          "topic": "Models"
         },
         {
-          "title": "An ice dance duo skated to AI music at the Olympics",
-          "url": "https://techcrunch.com/2026/02/10/olympics-czech-ice-dancers-duo-ai-music/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Amanda Silberling",
-          "published": "10 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2260763822.jpg?resize=1200,800",
-          "summary": "Czech ice dancers Katerina Mrazkova and Daniel Mrazek are learning the hard way that LLMs sometimes spit out straight-up plagiarism.",
+          "title": "India's Sarvan AI LLM launches Indic-language focused models",
+          "url": "https://x.com/SarvamAI",
+          "source": "Hacker News (AI)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=x.com&sz=16",
+          "authors": "",
+          "published": "08 Feb",
+          "thumbnail": "https://pbs.twimg.com/profile_images/2021450761734062080/XMvWk_lJ_200x200.png",
+          "summary": "India's Sarvan AI LLM launches Indic-language focused models. Published by Hacker News (AI).",
           "difficulty": "Intermediate",
-          "topic": "Industry"
+          "topic": "Models"
         }
       ]
     }
