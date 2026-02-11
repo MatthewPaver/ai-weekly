@@ -4,33 +4,34 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Inference: weekly AI briefing with practical signal for builders, leaders, and researchers." />
-  <title>Inference — 11 Feb 2026</title>
+  <title>Inference - 11 Feb 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f5f7fb;
+      --bg: #f4f7f8;
       --surface: #ffffff;
-      --surface-2: #eef2ff;
-      --text: #0f172a;
-      --muted: #475569;
-      --line: #dbe3ef;
-      --brand: #6366f1;
-      --brand-2: #a855f7;
-      --brand-3: #ec4899;
-      --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+      --surface-2: #ebf4f4;
+      --text: #12212b;
+      --muted: #4a616e;
+      --line: #d7e2e2;
+      --brand: #0f766e;
+      --brand-2: #0f4c5c;
+      --brand-3: #c2410c;
+      --shadow: 0 12px 28px rgba(15, 31, 40, 0.09);
+      --radius: 18px;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0b1220;
-        --surface: #121a2d;
-        --surface-2: #1a2440;
-        --text: #e2e8f0;
-        --muted: #a8b6ca;
-        --line: #25314c;
-        --shadow: 0 12px 24px rgba(2, 6, 23, 0.4);
+        --bg: #08131a;
+        --surface: #0f1d26;
+        --surface-2: #112531;
+        --text: #e6eff4;
+        --muted: #9eb4c0;
+        --line: #1f3743;
+        --shadow: 0 16px 34px rgba(2, 8, 12, 0.55);
       }
     }
 
@@ -38,37 +39,48 @@
 
     body {
       margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.14), transparent 32%),
-        radial-gradient(circle at 100% 0%, rgba(168, 85, 247, 0.12), transparent 26%),
-        var(--bg);
-      line-height: 1.55;
+        radial-gradient(circle at 0% 0%, rgba(15, 118, 110, 0.17), transparent 34%),
+        radial-gradient(circle at 100% 0%, rgba(194, 65, 12, 0.11), transparent 28%),
+        linear-gradient(180deg, #f8fbfb 0%, var(--bg) 100%);
+      line-height: 1.56;
     }
 
     a { color: inherit; }
 
     .top-bar {
-      height: 3px;
-      background: linear-gradient(90deg, var(--brand) 0%, var(--brand-2) 55%, var(--brand-3) 100%);
+      height: 4px;
+      background: linear-gradient(90deg, var(--brand-2) 0%, var(--brand) 58%, var(--brand-3) 100%);
     }
 
     .wrap {
-      width: min(1120px, 94vw);
+      width: min(1140px, 94vw);
       margin: 0 auto;
     }
 
     .hero {
       margin-top: 18px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background:
-        linear-gradient(135deg, #0f172a 0%, #312e81 55%, #6366f1 100%);
+      border: 1px solid color-mix(in srgb, var(--brand), white 70%);
+      border-radius: 22px;
+      background: linear-gradient(125deg, #0b1c2b 0%, #0f4c5c 54%, #0f766e 100%);
       color: #fff;
       padding: 24px;
       box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
     }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(140deg, rgba(255,255,255,0.14), transparent 45%);
+      pointer-events: none;
+    }
+
+    .hero > * { position: relative; z-index: 1; }
 
     .hero-top {
       display: flex;
@@ -85,23 +97,23 @@
     }
 
     .logo {
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
     }
 
     .brand h1 {
       margin: 0;
-      font-size: 1.1rem;
-      letter-spacing: 0.24em;
+      font-size: 1.12rem;
+      letter-spacing: 0.23em;
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 700;
     }
 
     .hero-sub {
       margin: 2px 0 0;
-      color: rgba(255, 255, 255, 0.74);
+      color: rgba(255, 255, 255, 0.76);
       font-size: 0.9rem;
     }
 
@@ -113,13 +125,16 @@
 
     .nav a {
       font-size: 0.82rem;
-      color: rgba(255, 255, 255, 0.92);
+      color: rgba(255, 255, 255, 0.95);
       text-decoration: none;
       border: 1px solid rgba(255, 255, 255, 0.24);
       border-radius: 999px;
       padding: 6px 11px;
-      backdrop-filter: blur(4px);
+      background: rgba(255, 255, 255, 0.08);
+      transition: transform .16s ease, background .16s ease;
     }
+
+    .nav a:hover { background: rgba(255,255,255,.16); transform: translateY(-1px); }
 
     .hero-stats {
       display: flex;
@@ -130,33 +145,36 @@
 
     .chip {
       font-size: 0.78rem;
-      color: rgba(255, 255, 255, 0.92);
-      background: rgba(255, 255, 255, 0.13);
-      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.26);
       border-radius: 999px;
       padding: 6px 10px;
     }
 
     .content {
-      margin: 18px 0 40px;
+      margin: 18px 0 42px;
       display: grid;
       grid-template-columns: 1.9fr 1fr;
       gap: 16px;
+      align-items: start;
     }
 
     .card {
       background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 16px;
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
+      animation: rise .45s ease both;
     }
 
     .intro {
-      padding: 16px 18px;
+      padding: 17px 18px;
       color: var(--muted);
       font-size: 0.98rem;
       border-left: 4px solid var(--brand);
       margin-bottom: 14px;
+      background: linear-gradient(90deg, rgba(15,118,110,.08), transparent);
     }
 
     .menu {
@@ -169,18 +187,19 @@
 
     .menu a {
       text-decoration: none;
-      color: var(--brand);
+      color: var(--brand-2);
       font-size: 0.84rem;
+      font-weight: 600;
       padding: 6px 9px;
       border-radius: 999px;
-      border: 1px solid color-mix(in srgb, var(--brand), transparent 70%);
+      border: 1px solid color-mix(in srgb, var(--brand), transparent 72%);
       background: color-mix(in srgb, var(--brand), transparent 92%);
     }
 
     .section-head {
       margin: 0;
       font-size: 0.8rem;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.13em;
       color: var(--muted);
       text-transform: uppercase;
       font-weight: 700;
@@ -189,11 +208,12 @@
     .lead {
       overflow: hidden;
       margin-bottom: 14px;
+      border-color: color-mix(in srgb, var(--brand), transparent 66%);
     }
 
     .lead-media {
       width: 100%;
-      height: 280px;
+      height: 300px;
       object-fit: cover;
       background: var(--surface-2);
       display: block;
@@ -201,6 +221,7 @@
 
     .lead-body {
       padding: 18px;
+      background: linear-gradient(180deg, color-mix(in srgb, var(--brand), transparent 94%), transparent 35%);
     }
 
     .meta-row {
@@ -223,17 +244,19 @@
 
     .lead h2 {
       margin: 0 0 9px;
-      font-size: 1.45rem;
-      line-height: 1.35;
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: 1.55rem;
+      line-height: 1.34;
     }
 
     .lead p {
       margin: 0 0 10px;
       color: var(--muted);
+      font-size: 0.97rem;
     }
 
     .action {
-      color: var(--brand);
+      color: var(--brand-2);
       font-weight: 600;
     }
 
@@ -244,7 +267,9 @@
       margin-top: 4px;
     }
 
-    .quick {
+    .quick,
+    .editors,
+    .pulse {
       padding: 16px;
       margin-bottom: 14px;
     }
@@ -273,21 +298,12 @@
       font-size: 0.93rem;
     }
 
-    .editors {
-      padding: 16px;
-      margin-bottom: 14px;
-    }
-
     .editors ul {
       margin: 10px 0 0;
       padding-left: 18px;
       color: var(--muted);
       display: grid;
       gap: 8px;
-    }
-
-    .pulse {
-      padding: 16px;
     }
 
     .pulse table {
@@ -323,6 +339,7 @@
       border-radius: 14px;
       box-shadow: var(--shadow);
       overflow: hidden;
+      animation: rise .45s ease both;
     }
 
     .section-title {
@@ -352,6 +369,12 @@
       border-radius: 12px;
       overflow: hidden;
       background: color-mix(in srgb, var(--surface-2), transparent 42%);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .story:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 24px rgba(9, 30, 38, 0.12);
     }
 
     .story img {
@@ -366,8 +389,9 @@
 
     .story h3 {
       margin: 8px 0;
-      font-size: 1rem;
-      line-height: 1.4;
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: 1.04rem;
+      line-height: 1.38;
     }
 
     .story p {
@@ -377,7 +401,7 @@
     }
 
     .story a {
-      color: var(--brand);
+      color: var(--brand-2);
       font-weight: 600;
       text-decoration: none;
       font-size: 0.9rem;
@@ -391,14 +415,19 @@
     }
 
     .footer a {
-      color: var(--brand);
+      color: var(--brand-2);
       text-decoration: none;
       margin: 0 6px;
     }
 
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     @media (max-width: 960px) {
       .content { grid-template-columns: 1fr; }
-      .lead-media { height: 220px; }
+      .lead-media { height: 230px; }
     }
   </style>
 </head>
@@ -441,6 +470,7 @@
           <a href="#🌐-industry-radar">🌐 Industry Radar (3)</a>
           <a href="#🛠️-builders-bench">🛠️ Builder&#39;s Bench (2)</a>
           <a href="#⭐-open-source-watch">⭐ Open Source Watch (3)</a>
+          <a href="#📚-ship-it-playbooks">📚 Ship-It Playbooks (2)</a>
           <a href="#🔬-lab-notes">🔬 Lab Notes (2)</a>
         </section>
 
@@ -450,7 +480,7 @@
             <p class="section-head">Top Story</p>
             <div class="meta-row">
               <span class="badge">Leader</span>
-              <span class="badge">The Verge AI · 11 Feb</span>
+              <span class="badge">The Verge AI - 11 Feb</span>
             </div>
             <h2><a href="https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible" target="_blank" rel="noopener">Here are the brands bringing ads to ChatGPT</a></h2>
             <p>OpenAI officially launched its advertising pilot in ChatGPT, leaving us with a better idea of the kinds of products we might see stuffed beneath our conversations with the AI. Several companies have announced plans to show ads inside ChatGPT - placements that will reportedly cost them a pretty penny - ranging from major retailers.</p>
@@ -471,7 +501,7 @@
                   <h3><a href="https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/" target="_blank" rel="noopener">Senior engineers, including co-founders, exit xAI amid controversy</a></h3>
                   <p>At least nine engineers, including two cofounders, have announced their exits from xAI in the past week, fueling online speculation and raising questions about stability at Musk’s. It reflects competitive movement that product teams should factor into planning.</p>
                   <p class="action">Add Senior engineers, including co-founders to your next leadership sync as a planning input.</p>
-<p class="take">Internal governance problems at major vendors should trigger a vendor-risk review, not just headlines.</p>                  <a href="https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Internal governance problems at major vendors should trigger a vendor-risk review, not just headlines.</p>                  <a href="https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
               <article class="story">
@@ -483,7 +513,7 @@
                   <h3><a href="https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/" target="_blank" rel="noopener">Yet another co-founder departs Elon Musk&#39;s xAI</a></h3>
                   <p>Tony Wu leaves a company now entangled with social media, space-based IPOs. He’s now ex-xAI Yet another co-founder departs Elon Musk’s xAI Tony Wu leaves a company now entangled with social media, space-based IPOs.</p>
                   <p class="action">Monitor Yet another co-founder departs Elon Musk&#39;s for downstream API or pricing changes that could affect your roadmap.</p>
-<p class="take">Signal check: Ars Technica AI reinforces that strategic positioning is shifting faster than normal.</p>                  <a href="https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Signal check: Ars Technica AI reinforces that strategic positioning is shifting faster than normal.</p>                  <a href="https://arstechnica.com/ai/2026/02/grok-maker-xai-loses-another-co-founder/" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
               <article class="story">
@@ -495,7 +525,7 @@
                   <h3><a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" target="_blank" rel="noopener">A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions</a></h3>
                   <p>In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced. User sentiment can shift retention and pricing assumptions faster than roadmap cycles.</p>
                   <p class="action">Monitor A “QuitGPT” campaign is urging people for downstream API or pricing changes that could affect your roadmap.</p>
-<p class="take">Signal check: Treat this as a planning input, not just a headline (MIT Technology Review AI).</p>                  <a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Signal check: Treat this as a planning input, not just a headline (MIT Technology Review AI).</p>                  <a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
             </div>
@@ -512,7 +542,7 @@
                   <h3><a href="https://huggingface.co/blog/transformersjs-v4" target="_blank" rel="noopener">Transformers.js v4 Preview: Now Available on NPM!</a></h3>
                   <p>Back to Articles Transformers.js v4 Preview: Now Available on NPM! This is likely an execution signal for teams evaluating near-term rollout options.</p>
                   <p class="action">Set up Transformers.js v4 Preview in a test environment and compare against your current tooling.</p>
-<p class="take">Version bumps only matter if they reduce friction in your actual workflow — test before celebrating.</p>                  <a href="https://huggingface.co/blog/transformersjs-v4" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Version bumps only matter if they reduce friction in your actual workflow — test before celebrating.</p>                  <a href="https://huggingface.co/blog/transformersjs-v4" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
               <article class="story">
@@ -524,7 +554,7 @@
                   <h3><a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" target="_blank" rel="noopener">The two patterns by which agents connect sandboxes</a></h3>
                   <p>A new tool or framework update warrants evaluation: The two patterns by which agents connect sandboxes. It may improve delivery speed if integration overhead stays manageable.</p>
                   <p class="action">Evaluate The two patterns by which agents connect against your current stack — run a time-boxed proof of concept this sprint.</p>
-<p class="take">Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.</p>                  <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.</p>                  <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
             </div>
@@ -541,7 +571,7 @@
                   <h3><a href="https://github.com/sickn33/antigravity-awesome-skills" target="_blank" rel="noopener">antigravity-awesome-skills</a></h3>
                   <p>The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.</p>
                   <p class="action">Scan the antigravity-awesome-skills list for tools you haven&#39;t tried, then bookmark the top two.</p>
-<p class="take">Open-source note: Validate issue velocity and ownership before integrating.</p>                  <a href="https://github.com/sickn33/antigravity-awesome-skills" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Open-source note: Validate issue velocity and ownership before integrating.</p>                  <a href="https://github.com/sickn33/antigravity-awesome-skills" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
               <article class="story">
@@ -551,9 +581,9 @@
                     <span class="badge">Intermediate</span>
                   </div>
                   <h3><a href="https://github.com/Leey21/awesome-ai-research-writing" target="_blank" rel="noopener">awesome-ai-research-writing</a></h3>
-                  <p>Elevate your AI research writing, no more tedious polishing ✨. (5,435 stars, 417 forks) Only 12 days old with ~453 stars/day.</p>
+                  <p>Elevate your AI research writing, no more tedious polishing ✨. (5,436 stars, 417 forks) Only 12 days old with ~453 stars/day.</p>
                   <p class="action">Scan the awesome-ai-research-writing list for tools you haven&#39;t tried, then bookmark the top two.</p>
-<p class="take">Open-source note: Momentum is promising, but maintenance quality should decide adoption.</p>                  <a href="https://github.com/Leey21/awesome-ai-research-writing" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Open-source note: Momentum is promising, but maintenance quality should decide adoption.</p>                  <a href="https://github.com/Leey21/awesome-ai-research-writing" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
               <article class="story">
@@ -565,7 +595,36 @@
                   <h3><a href="https://github.com/dwzhu-pku/PaperBanana" target="_blank" rel="noopener">PaperBanana</a></h3>
                   <p>PaperBanana: Automating Academic Illustration For AI Scientists. (3,320 stars, 162 forks, JavaScript) Only 12 days old with ~277 stars/day.</p>
                   <p class="action">Check PaperBanana issue tracker activity and license before forking or integrating.</p>
-<p class="take">Star velocity tells you what&#39;s popular, not what&#39;s reliable. Check the issue backlog before the star count.</p>                  <a href="https://github.com/dwzhu-pku/PaperBanana" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Star velocity tells you what&#39;s popular, not what&#39;s reliable. Check the issue backlog before the star count.</p>                  <a href="https://github.com/dwzhu-pku/PaperBanana" target="_blank" rel="noopener">Read article -></a>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section" id="ship-it-playbooks" style="--accent: #0E7490;">
+            <h2 class="section-title">📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">Practical implementation guides you can adapt quickly.</p>            <div class="stories">
+              <article class="story">
+<img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-1-10.png" alt="" />                <div class="story-body">
+                  <div class="meta-row">
+                    <span class="badge">Builder</span>
+                    <span class="badge">Intermediate</span>
+                  </div>
+                  <h3><a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" target="_blank" rel="noopener">NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving</a></h3>
+                  <p>Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency.</p>
+                  <p class="action">Adapt the core pattern from NVIDIA Researchers Introduce KVTC Transform to one real task in your current project this week.</p>
+<p class="take">Operator note: Use this as a blueprint and trim to your production constraints.</p>                  <a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" target="_blank" rel="noopener">Read article -></a>
+                </div>
+              </article>
+              <article class="story">
+<img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fyzcf1fdnzoahhqyhrygc.png" alt="" />                <div class="story-body">
+                  <div class="meta-row">
+                    <span class="badge">Builder</span>
+                    <span class="badge">Beginner</span>
+                  </div>
+                  <h3><a href="https://dev.to/ecangir/-282g" target="_blank" rel="noopener">[Boost]</a></h3>
+                  <p>AI Agents, Source Context, and Prompt History: A New Software Development Paradigm Emir Cangir ・ Feb 11 #agents #ai #llm #softwaredevelopment. It is a useful signal for teams shipping AI products.</p>
+                  <p class="action">Adapt the core pattern from [Boost] to one real task in your current project this week.</p>
+<p class="take">Operator note: The strongest value is in adapting one proven pattern, not copying the whole stack.</p>                  <a href="https://dev.to/ecangir/-282g" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
             </div>
@@ -582,7 +641,7 @@
                   <h3><a href="https://arxiv.org/abs/2602.09112" target="_blank" rel="noopener">A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation</a></h3>
                   <p>What research can be pursued with small models trained to complete true programs? It signals where methods are moving, but confidence depends on broader replication.</p>
                   <p class="action">Skim the A Small-Scale System abstract and results, then decide if a deeper read is worth the time.</p>
-<p class="take">Smaller and cheaper usually beats bigger and smarter for most production use cases. Watch this space.</p>                  <a href="https://arxiv.org/abs/2602.09112" target="_blank" rel="noopener">Read article →</a>
+<p class="take">Smaller and cheaper usually beats bigger and smarter for most production use cases. Watch this space.</p>                  <a href="https://arxiv.org/abs/2602.09112" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
               <article class="story">
@@ -594,7 +653,7 @@
                   <h3><a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" target="_blank" rel="noopener">A timeline of claims about AI/LLMs</a></h3>
                   <p>A timeline of claims about AI/LLMs Nethum Lamahewage included in Tech February 8, 2026 3921 words 19 minutes Contents Introduction Background Why? It can shift model choice tradeoffs on quality, latency, and cost.</p>
                   <p class="action">Compare A timeline of claims about AI/LLMs cost-quality tradeoffs against your current model before switching.</p>
-<p class="take">New model, same question: does it beat your current setup on your actual workload, at an acceptable cost?</p>                  <a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" target="_blank" rel="noopener">Read article →</a>
+<p class="take">New model, same question: does it beat your current setup on your actual workload, at an acceptable cost?</p>                  <a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" target="_blank" rel="noopener">Read article -></a>
                 </div>
               </article>
             </div>
@@ -607,16 +666,12 @@
           <p class="section-head">Fast Signals</p>
           <ul>
             <li>
-              <strong><a href="https://arxiv.org/abs/2602.09112" target="_blank" rel="noopener">A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation</a> · Researcher</strong>
+              <strong><a href="https://arxiv.org/abs/2602.09112" target="_blank" rel="noopener">A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation</a> - Researcher</strong>
               What research can be pursued with small models trained to complete true programs?. Why it matters: It signals where methods are moving, but confidence depends on broader replication.
             </li>
             <li>
-              <strong><a href="https://huggingface.co/blog/transformersjs-v4" target="_blank" rel="noopener">Transformers.js v4 Preview: Now Available on NPM!</a> · Builder</strong>
+              <strong><a href="https://huggingface.co/blog/transformersjs-v4" target="_blank" rel="noopener">Transformers.js v4 Preview: Now Available on NPM!</a> - Builder</strong>
               Back to Articles Transformers.js v4 Preview: Now Available on NPM. Why it matters: This is likely an execution signal for teams evaluating near-term rollout options.
-            </li>
-            <li>
-              <strong><a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" target="_blank" rel="noopener">NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving</a> · Builder</strong>
-              Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. Why it matters: As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major.
             </li>
           </ul>
         </section>
@@ -631,36 +686,15 @@
           </ul>
         </section>
 
-        <section class="pulse card">
-          <p class="section-head">Weekly Pulse</p>
-          <table aria-label="Weekly pulse">
-            <tr>
-              <td>Dominant theme</td>
-              <td>Industry led coverage (6 stories).</td>
-            </tr>
-            <tr>
-              <td>Builder pick</td>
-              <td>[Transformers.js v4 Preview: Now Available on NPM!](https://huggingface.co/blog/transformersjs-v4)</td>
-            </tr>
-            <tr>
-              <td>Leader watch</td>
-              <td>[Here are the brands bringing ads to ChatGPT](https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible)</td>
-            </tr>
-            <tr>
-              <td>Research watch</td>
-              <td>[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation](https://arxiv.org/abs/2602.09112)</td>
-            </tr>
-          </table>
-        </section>
       </aside>
     </div>
 
     <footer class="footer">
-      Curated from 25+ sources.
       <a href="/">Archive</a>
-      <a href="/email.html">Email view</a>
+      <a href="/latest.html">Latest</a>
+      <a href="/email.html">Email</a>
       <a href="/feed.xml">RSS</a>
-      <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues">Repo issues</a>
+      <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues">Issues on GitHub</a>
     </footer>
   </div>
 </body>

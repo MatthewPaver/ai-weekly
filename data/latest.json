@@ -7,7 +7,7 @@
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (6 stories)."
+      "value": "Industry led coverage (5 stories)."
     },
     {
       "label": "Builder pick",
@@ -26,6 +26,7 @@
     "\ud83c\udf10 Industry Radar (3)",
     "\ud83d\udee0\ufe0f Builder's Bench (2)",
     "\u2b50 Open Source Watch (3)",
+    "\ud83d\udcda Ship-It Playbooks (2)",
     "\ud83d\udd2c Lab Notes (2)"
   ],
   "briefing": [
@@ -39,12 +40,6 @@
       "title": "Transformers.js v4 Preview: Now Available on NPM!",
       "url": "https://huggingface.co/blog/transformersjs-v4",
       "note": "Back to Articles Transformers.js v4 Preview: Now Available on NPM. Why it matters: This is likely an execution signal for teams evaluating near-term rollout options.",
-      "track": "Builder"
-    },
-    {
-      "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
-      "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
-      "note": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. Why it matters: As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major.",
       "track": "Builder"
     }
   ],
@@ -75,12 +70,6 @@
       "title": "Transformers.js v4 Preview: Now Available on NPM!",
       "url": "https://huggingface.co/blog/transformersjs-v4",
       "note": "Back to Articles Transformers.js v4 Preview: Now Available on NPM. Why it matters: This is likely an execution signal for teams evaluating near-term rollout options.",
-      "track": "Builder"
-    },
-    {
-      "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
-      "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
-      "note": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. Why it matters: As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major.",
       "track": "Builder"
     }
   ],
@@ -121,7 +110,7 @@
           "authors": "Kyle Orland",
           "published": "10 Feb",
           "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2025/07/xai-grok-1152x648-1752596823.jpg",
-          "summary": "Tony Wu leaves a company now entangled with social media, space-based IPOs. He\u2019s now ex-xAI Yet another co-founder departs Elon Musk\u2019s xAI Tony Wu leaves a company now entangled with social media, space-based IPOs. Kyle Orland \u2013 Feb 10, 2026 1:54 pm | 74 xAI finds itself with one fewer co-founder than it had last week.",
+          "summary": "Tony Wu leaves a company now entangled with social media, space-based IPOs. He\u2019s now ex-xAI Yet another co-founder departs Elon Musk\u2019s xAI Tony Wu leaves a company now entangled with social media, space-based IPOs. Kyle Orland \u2013 Feb 10, 2026 1:54 pm | 75 xAI finds itself with one fewer co-founder than it had last week.",
           "what_happened": "Tony Wu leaves a company now entangled with social media, space-based IPOs.",
           "why_it_matters": "He\u2019s now ex-xAI Yet another co-founder departs Elon Musk\u2019s xAI Tony Wu leaves a company now entangled with social media, space-based IPOs.",
           "what_to_do": "Monitor Yet another co-founder departs Elon Musk's for downstream API or pricing changes that could affect your roadmap.",
@@ -213,7 +202,7 @@
           "authors": "sickn33",
           "published": "11 Feb",
           "thumbnail": "https://avatars.githubusercontent.com/u/184072420?v=4",
-          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,431 stars, 1,733 forks, Python) Created 27 days ago, averaging ~312 stars/day.",
+          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,432 stars, 1,733 forks, Python) Created 27 days ago, averaging ~312 stars/day.",
           "what_happened": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor.",
           "why_it_matters": "Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.",
           "what_to_do": "Scan the antigravity-awesome-skills list for tools you haven't tried, then bookmark the top two.",
@@ -230,9 +219,9 @@
           "authors": "Leey21",
           "published": "11 Feb",
           "thumbnail": "https://avatars.githubusercontent.com/u/112166430?v=4",
-          "summary": "Elevate your AI research writing, no more tedious polishing \u2728. (5,435 stars, 417 forks) Only 12 days old with ~453 stars/day.",
+          "summary": "Elevate your AI research writing, no more tedious polishing \u2728. (5,436 stars, 417 forks) Only 12 days old with ~453 stars/day.",
           "what_happened": "Elevate your AI research writing, no more tedious polishing \u2728.",
-          "why_it_matters": "(5,435 stars, 417 forks) Only 12 days old with ~453 stars/day.",
+          "why_it_matters": "(5,436 stars, 417 forks) Only 12 days old with ~453 stars/day.",
           "what_to_do": "Scan the awesome-ai-research-writing list for tools you haven't tried, then bookmark the top two.",
           "our_take": "Open-source note: Momentum is promising, but maintenance quality should decide adoption.",
           "audience_track": "Builder",
@@ -255,6 +244,52 @@
           "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Repos"
+        }
+      ]
+    },
+    {
+      "title": "Ship-It Playbooks",
+      "icon": "\ud83d\udcda",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "color": "0E7490",
+      "badge": "Ship It Playbooks",
+      "topics": [
+        "Tutorials"
+      ],
+      "articles": [
+        {
+          "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
+          "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
+          "source": "MarkTechPost",
+          "source_icon": "https://www.google.com/s2/favicons?domain=www.marktechpost.com&sz=16",
+          "authors": "Asif Razzaq",
+          "published": "11 Feb",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-1-10.png",
+          "summary": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.",
+          "what_happened": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management.",
+          "why_it_matters": "As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency.",
+          "what_to_do": "Adapt the core pattern from NVIDIA Researchers Introduce KVTC Transform to one real task in your current project this week.",
+          "our_take": "Operator note: Use this as a blueprint and trim to your production constraints.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Tutorials"
+        },
+        {
+          "title": "[Boost]",
+          "url": "https://dev.to/ecangir/-282g",
+          "source": "Dev.to AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
+          "authors": "Emir Cangir",
+          "published": "11 Feb",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fyzcf1fdnzoahhqyhrygc.png",
+          "summary": "AI Agents, Source Context, and Prompt History: A New Software Development Paradigm Emir Cangir \u30fb Feb 11 #agents #ai #llm #softwaredevelopment.",
+          "what_happened": "AI Agents, Source Context, and Prompt History: A New Software Development Paradigm Emir Cangir \u30fb Feb 11 #agents #ai #llm #softwaredevelopment.",
+          "why_it_matters": "It is a useful signal for teams shipping AI products.",
+          "what_to_do": "Adapt the core pattern from [Boost] to one real task in your current project this week.",
+          "our_take": "Operator note: The strongest value is in adapting one proven pattern, not copying the whole stack.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
         }
       ]
     },
