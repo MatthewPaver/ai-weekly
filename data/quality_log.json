@@ -1,0 +1,15 @@
+[
+  {
+    "articles_collected": 63,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 25,
+    "after_filters": 1,
+    "articles_final": 10,
+    "sections": 5,
+    "lead_story": "OpenAI disbands mission alignment team, which focused on \u2018sa",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-11T23:41:55.607336+00:00"
+  }
+]

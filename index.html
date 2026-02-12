@@ -3,8 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Inference archive of AI weekly issues." />
-  <title>Inference - Archive</title>
+  <meta name="description" content="Inference Weekly — archive of 1 AI newsletter issue for builders, leaders, and researchers." />
+  <title>Inference Weekly — Archive</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Inference Weekly — Archive" />
+  <meta property="og:description" content="Browse 1 issue of curated AI signal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/" />
+  <meta property="og:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://matthewpaver.github.io/ai-weekly/" />
+  <link rel="alternate" type="application/rss+xml" title="Inference Weekly" href="https://matthewpaver.github.io/ai-weekly/feed.xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -40,6 +51,10 @@
       }
     }
 
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
+
     * { box-sizing: border-box; }
 
     body {
@@ -51,6 +66,21 @@
         linear-gradient(180deg, #f8fbfb 0%, var(--bg) 100%);
       color: var(--text);
       line-height: 1.56;
+    }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: auto;
+      padding: 8px 16px; background: var(--brand); color: #fff;
+      border-radius: 0 0 8px 0; font-size: 0.85rem; font-weight: 600;
+      text-decoration: none; z-index: 100;
+    }
+    .skip-link:focus { left: 0; top: 0; }
+
+    .copyright {
+      font-size: 0.75rem;
+      color: var(--muted);
+      opacity: 0.7;
+      margin-top: 8px;
     }
 
     a {
@@ -168,11 +198,21 @@
     }
 
     .card {
-      background: var(--surface);
+      background: color-mix(in srgb, var(--surface), transparent 4%);
       border: 1px solid var(--line);
+      border-top: 1px solid rgba(255,255,255,0.7);
       border-radius: 18px;
-      box-shadow: var(--shadow);
+      box-shadow: 0 1px 2px rgba(15,31,40,0.06), 0 12px 28px rgba(15,31,40,0.09);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       animation: rise .45s ease both;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .card {
+        border-top-color: rgba(255,255,255,0.06);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 12px 28px rgba(0,0,0,0.35);
+      }
     }
 
     .latest {
@@ -365,6 +405,27 @@
       margin: 0 6px;
     }
 
+    .subscribe-card {
+      background: linear-gradient(125deg, #0b1c2b 0%, #0f4c5c 54%, #0f766e 100%);
+      color: #fff;
+      padding: 20px;
+    }
+    .subscribe-card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+    .subscribe-card p { margin: 0 0 12px; font-size: 0.88rem; opacity: 0.85; }
+    .subscribe-form { display: flex; gap: 6px; }
+    .subscribe-form input {
+      flex: 1; padding: 9px 12px; border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px; background: rgba(255,255,255,0.12); color: #fff;
+      font: inherit; font-size: 0.88rem;
+    }
+    .subscribe-form input::placeholder { color: rgba(255,255,255,0.6); }
+    .subscribe-form button {
+      padding: 9px 16px; border: none; border-radius: 8px;
+      background: #fff; color: #0f4c5c; font: inherit; font-size: 0.88rem;
+      font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #e6f4f2; }
+
     @keyframes rise {
       from { opacity: 0; transform: translateY(8px); }
       to { opacity: 1; transform: translateY(0); }
@@ -383,6 +444,7 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="top-bar"></div>
 
   <div class="wrap">
@@ -399,16 +461,16 @@
         <span class="chip">Archive</span>
         <span class="chip">1 issue</span>
         <span class="chip">Latest: 11 Feb 2026</span>
-        <span class="chip">Generated 2026-02-11 21:51 UTC</span>
+        <span class="chip">Generated 2026-02-11 23:41 UTC</span>
       </div>
     </header>
 
-    <section class="layout">
+    <section class="layout" id="main-content">
       <article class="card latest">
         <p class="kicker">Latest issue</p>
         <h2>Inference — 11 Feb 2026</h2>
         <p>Company moves and product decisions led this week.</p>
-        <p><strong>Transformers.js v4 Preview: Now Available on NPM!</strong></p>
+        <p><strong>OpenAI disbands mission alignment team, which focused on ‘safe’ and ‘trustworthy’ AI development</strong></p>
         <div class="meta">10 stories - ~4 min read - 4 sections</div>
         <div class="cta-row">
           <a class="btn primary" href="/issues/2026-02-11.html">Read web issue</a>
@@ -416,13 +478,24 @@
         </div>
       </article>
 
-      <aside class="card side">
-        <p><strong>Feeds and links</strong></p>
-        <p><a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS feed</a></p>
-        <p><a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest web page</a></p>
-        <p><a href="https://matthewpaver.github.io/ai-weekly/email.html">Email rendering</a></p>
-        <p><a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues">Issue files on GitHub</a></p>
-      </aside>
+      <div style="display: grid; gap: 14px; align-content: start;">
+        <aside class="card subscribe-card">
+          <h3>Get Inference Weekly</h3>
+          <p>AI signal for builders and leaders — free, weekly.</p>
+          <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/inference" method="post" target="_blank">
+            <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </aside>
+
+        <aside class="card side">
+          <p><strong>Feeds and links</strong></p>
+          <p><a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS feed</a></p>
+          <p><a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest web page</a></p>
+          <p><a href="https://matthewpaver.github.io/ai-weekly/email.html">Email rendering</a></p>
+          <p><a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues">Issue files on GitHub</a></p>
+        </aside>
+      </div>
     </section>
 
     <section class="card archive">
@@ -430,9 +503,9 @@
       <input id="search" class="search" type="search" placeholder="Search by date, title, or keyword" aria-label="Search issues" />
 
       <div id="issues" class="issues-grid">
-        <article class="issue latest-flag" data-search="11 feb 2026 inference — 11 feb 2026 transformers.js v4 preview: now available on npm! company moves and product decisions led this week.">
+        <article class="issue latest-flag" data-search="11 feb 2026 inference — 11 feb 2026 openai disbands mission alignment team, which focused on ‘safe’ and ‘trustworthy’ ai development company moves and product decisions led this week.">
           <time datetime="2026-02-11">11 Feb 2026</time>
-          <h3>Transformers.js v4 Preview: Now Available on NPM!</h3>
+          <h3>OpenAI disbands mission alignment team, which focused on ‘safe’ and ‘trustworthy’ AI development</h3>
           <div class="meta">10 stories - ~4 min - 4 sections</div>
           <p class="summary">Company moves and product decisions led this week.</p>
           <div class="links">
@@ -450,6 +523,7 @@
       <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a>
       <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
       <a href="https://github.com/MatthewPaver/ai-weekly-newsletter">Source</a>
+      <p class="copyright">Editorial analysis &copy; 2026 Matthew Paver. Original articles &copy; respective authors and publications.</p>
     </footer>
   </div>
 

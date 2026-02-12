@@ -7,15 +7,15 @@
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (2 stories)."
+      "value": "Industry led coverage (3 stories)."
     },
     {
       "label": "Builder pick",
-      "value": "[Transformers.js v4 Preview: Now Available on NPM!](https://huggingface.co/blog/transformersjs-v4)"
+      "value": "[LangSmith is Now Available in Google Cloud Marketplace](https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/)"
     },
     {
       "label": "Leader watch",
-      "value": "[Here are the brands bringing ads to ChatGPT](https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible)"
+      "value": "[OpenAI disbands mission alignment team, which focused on \u2018safe\u2019 and \u2018trustworthy\u2019 AI development](https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/)"
     },
     {
       "label": "Research watch",
@@ -30,16 +30,16 @@
       "label": "\ud83c\udf10 Industry Radar (2)"
     },
     {
+      "icon": "\ud83d\udee0\ufe0f",
+      "title": "Builder's Bench",
+      "count": 2,
+      "label": "\ud83d\udee0\ufe0f Builder's Bench (2)"
+    },
+    {
       "icon": "\u2b50",
       "title": "Open Source Watch",
       "count": 2,
       "label": "\u2b50 Open Source Watch (2)"
-    },
-    {
-      "icon": "\ud83d\udcda",
-      "title": "Ship-It Playbooks",
-      "count": 2,
-      "label": "\ud83d\udcda Ship-It Playbooks (2)"
     },
     {
       "icon": "\ud83d\udd2c",
@@ -50,33 +50,34 @@
   ],
   "briefing": [
     {
-      "title": "The two patterns by which agents connect sandboxes",
-      "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
-      "note": "The two patterns by which agents connect adds a new option to the builder toolkit \u2014 worth a scoped evaluation. Why it matters: Adopting The two patterns by which agents connect could speed delivery if integration friction stays low.",
+      "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
+      "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
+      "note": "Researchers published new findings on KVTC Transform Coding Pipeline with potential applied implications. Why it matters: Keep KVTC Transform Coding Pipeline on your radar \u2014 it may influence tooling or vendor decisions soon.",
       "track": "Builder"
     }
   ],
   "editors_note": {
     "headline": "Editor's Desk",
-    "hook": "The headline is Transformers.js v4 Preview: Now Available on NPM, but the real question is what it means for your vendor assumptions and Q2 plans.",
-    "spotlight": "Transformers.js v4 Preview: Now Available on NPM! \u2014 it's the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation deserves more attention than it's getting.",
-    "risk": "Keep an eye on Here are the brands bringing ads to ChatGPT \u2014 it could shift budgets or vendor assumptions."
+    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking OpenAI disbands mission alignment team, you're already behind.",
+    "hook": "The headline is OpenAI disbands mission alignment team, but the real question is what it means for your vendor assumptions and Q2 plans.",
+    "spotlight": "OpenAI disbands mission alignment team, which focused on \u2018safe\u2019 and \u2018trustworthy\u2019 AI development \u2014 it's the most likely to change near-term decisions for teams shipping AI products.",
+    "underhyped": "LangSmith is Now Available in Google Cloud Marketplace deserves more attention than it's getting.",
+    "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
-    "title": "Transformers.js v4 Preview: Now Available on NPM!",
-    "url": "https://huggingface.co/blog/transformersjs-v4",
-    "source": "Hugging Face Blog",
-    "track": "Builder",
-    "what_happened": "Transformers.js v4 Preview shipped this week, opening a new option for teams evaluating alternatives.",
-    "our_take": "Version bumps only matter if they reduce friction in your actual workflow \u2014 test before celebrating.",
-    "what_to_do": "Install Transformers.js v4 Preview, run it against one real task, and log latency and output quality."
+    "title": "OpenAI disbands mission alignment team, which focused on \u2018safe\u2019 and \u2018trustworthy\u2019 AI development",
+    "url": "https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/",
+    "source": "TechCrunch AI",
+    "track": "Leader",
+    "what_happened": "A strategic move around OpenAI is worth factoring into near-term planning.",
+    "our_take": "Treat this as a planning input, not an alarm. The second-order effects matter more than the news itself.",
+    "what_to_do": "Add OpenAI as a discussion item in your next strategy or planning meeting."
   },
   "quick_hits": [
     {
-      "title": "The two patterns by which agents connect sandboxes",
-      "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
-      "note": "The two patterns by which agents connect adds a new option to the builder toolkit \u2014 worth a scoped evaluation. Why it matters: Adopting The two patterns by which agents connect could speed delivery if integration friction stays low.",
+      "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
+      "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
+      "note": "Researchers published new findings on KVTC Transform Coding Pipeline with potential applied implications. Why it matters: Keep KVTC Transform Coding Pipeline on your radar \u2014 it may influence tooling or vendor decisions soon.",
       "track": "Builder"
     }
   ],
@@ -91,40 +92,88 @@
         "Industry",
         "Community"
       ],
+      "tier": "leader",
       "articles": [
         {
-          "title": "Here are the brands bringing ads to ChatGPT",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
+          "title": "Anthropic says it&#8217;ll try to keep its data centers from raising electricity costs",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge",
           "source": "The Verge AI",
           "source_icon": "https://www.google.com/s2/favicons?domain=www.theverge.com&sz=16",
-          "authors": "Emma Roth",
+          "authors": "Justine Calma",
           "published": "11 Feb",
-          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25462010/STK155_OPEN_AI_CVirginia_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-          "summary": "Strategic shift around Here are the brands bringing ads may affect vendor costs and compliance posture (via The Verge AI).",
-          "what_happened": "Monetization changes around Here are the brands bringing ads may affect pricing, UX, or data-handling assumptions.",
-          "why_it_matters": "Budget, compliance, and vendor assumptions tied to Here are the brands bringing ads may need a fresh review.",
-          "what_to_do": "Bring Here are the brands bringing ads to your next planning sync \u2014 it may affect Q2 priorities.",
-          "our_take": "Treat Here are the brands bringing ads as a planning input \u2014 the second-order effects matter more than the headline.",
+          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "summary": "Keep Anthropic on your radar \u2014 it could affect planning or tooling decisions soon (via The Verge AI).",
+          "what_happened": "Industry activity around Anthropic may shift competitive dynamics this quarter.",
+          "why_it_matters": "Industry changes involving Anthropic are likely to affect near-term planning cycles.",
+          "what_to_do": "Model how Anthropic pricing changes would hit your current vendor spend.",
+          "our_take": "Pricing changes from major vendors ripple downstream fast. Model your exposure now, not after the bill lands.",
           "audience_track": "Leader",
           "difficulty": "Intermediate",
           "topic": "Industry"
         },
         {
-          "title": "Glean\u2019s fight to own the AI layer inside every company",
-          "url": "https://techcrunch.com/podcast/glean-arvind-jain-equity-podcast-own-the-ai-layer-inside-every-company/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Theresa Loconsolo, Rebecca Bellan",
+          "title": "I Loved My OpenClaw AI Agent\u2014Until It Turned on Me",
+          "url": "https://www.wired.com/story/malevolent-ai-agent-openclaw-clawdbot/",
+          "source": "Wired AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=www.wired.com&sz=16",
+          "authors": "Will Knight",
           "published": "11 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/Arvind-Jain-headshot.jpg?resize=1200,900",
-          "summary": "Glean\u2019s fight is a development worth monitoring for near-term product and tooling decisions (via TechCrunch AI).",
-          "what_happened": "The Glean\u2019s fight development has implications for vendor strategy and competitive positioning.",
-          "why_it_matters": "The Glean\u2019s fight shift affects competitive positioning \u2014 factor it into Q2 planning.",
-          "what_to_do": "Bring Glean\u2019s fight to your next planning sync \u2014 it may affect Q2 priorities.",
-          "our_take": "Strategic positioning around Glean\u2019s fight is shifting faster than most roadmap cycles account for.",
-          "audience_track": "Leader",
+          "thumbnail": "https://media.wired.com/photos/698b9f87637ddfa3960c874e/191:100/w_1280,c_limit/AI-Lab-Chaotic-Fun-Clawdbot-Business.jpg",
+          "summary": "New findings around Loved My OpenClaw AI Agent may shape tooling choices once validated by independent teams (via Wired AI).",
+          "what_happened": "A strategic move around Loved My OpenClaw AI Agent is worth factoring into near-term planning.",
+          "why_it_matters": "Strategic moves around Loved My OpenClaw AI Agent may reshape vendor dynamics for downstream teams.",
+          "what_to_do": "Monitor Loved My OpenClaw AI Agent for follow-on product or pricing changes over the next month.",
+          "our_take": "The market is sending a signal. Teams that read it early get a head start.",
+          "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Industry"
+        }
+      ]
+    },
+    {
+      "title": "Builder's Bench",
+      "icon": "\ud83d\udee0\ufe0f",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "color": "0F4C5C",
+      "badge": "Builders Bench",
+      "topics": [
+        "Tools"
+      ],
+      "tier": "builder",
+      "articles": [
+        {
+          "title": "LangSmith is Now Available in Google Cloud Marketplace",
+          "url": "https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/",
+          "source": "LangChain Blog",
+          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
+          "authors": "LangChain Accounts",
+          "published": "10 Feb",
+          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/header2.png",
+          "summary": "LangSmith ships a new release worth testing if it overlaps with your current toolchain (via LangChain Blog).",
+          "what_happened": "LangSmith shipped this week, opening a new option for teams evaluating alternatives.",
+          "why_it_matters": "Teams evaluating alternatives now have LangSmith as a concrete option to benchmark against.",
+          "what_to_do": "Spin up LangSmith in a 2-hour proof of concept \u2014 compare output against your current tool.",
+          "our_take": "Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Tools"
+        },
+        {
+          "title": "Transformers.js v4 Preview: Now Available on NPM!",
+          "url": "https://huggingface.co/blog/transformersjs-v4",
+          "source": "Hugging Face Blog",
+          "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
+          "authors": "",
+          "published": "09 Feb",
+          "thumbnail": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
+          "summary": "A fresh release of Transformers.js v4 is now available for teams ready to evaluate alternatives (via Hugging Face Blog).",
+          "what_happened": "A new release of Transformers.js v4 is now available, giving teams a fresh option to test.",
+          "why_it_matters": "The Transformers.js v4 release gives teams a new baseline to compare against existing tools.",
+          "what_to_do": "Add Transformers.js v4 to a test branch and run your existing suite against it this week.",
+          "our_take": "Don't upgrade on day one. Wait for the first patch, then test on a branch.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tools"
         }
       ]
     },
@@ -137,24 +186,8 @@
       "topics": [
         "Repos"
       ],
+      "tier": "builder",
       "articles": [
-        {
-          "title": "antigravity-awesome-skills",
-          "url": "https://github.com/sickn33/antigravity-awesome-skills",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "sickn33",
-          "published": "11 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/184072420?v=4",
-          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Currently at 8,459 stars with ~302 stars/day growth.",
-          "what_happened": "Antigravity-awesome-skills is picking up momentum in the open-source community.",
-          "why_it_matters": "Momentum behind antigravity-awesome-skills is real, but maintenance quality should gate adoption decisions.",
-          "what_to_do": "Pick two tools from the antigravity-awesome-skills list you haven't used and try one this week.",
-          "our_take": "Curated lists are great for discovery but terrible for decision-making. Pick one tool and actually ship with it.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        },
         {
           "title": "PaperBanana",
           "url": "https://github.com/dwzhu-pku/PaperBanana",
@@ -163,60 +196,31 @@
           "authors": "dwzhu-pku",
           "published": "02 Feb",
           "thumbnail": "https://avatars.githubusercontent.com/u/52273452?v=4",
-          "summary": "PaperBanana: Automating Academic Illustration For AI Scientists. Currently at 3,325 stars with ~277 stars/day growth.",
+          "summary": "PaperBanana: Automating Academic Illustration For AI Scientists. Currently at 3,327 stars with ~277 stars/day growth.",
           "what_happened": "PaperBanana: Automating Academic Illustration For AI Scientists.",
-          "why_it_matters": "Momentum behind PaperBanana is real, but maintenance quality should gate adoption decisions.",
-          "what_to_do": "Review PaperBanana issue tracker, last commit date, and license before considering adoption.",
-          "our_take": "Star velocity tells you whats popular, not whats reliable. Check the issue backlog before the star count.",
+          "why_it_matters": "Community interest in PaperBanana is growing \u2014 check repo health before committing.",
+          "what_to_do": "Check PaperBanana for recent activity, open issues, and license compatibility this week.",
+          "our_take": "Popularity and production-readiness are different things. Check the last commit date and open issues first.",
           "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Repos"
-        }
-      ]
-    },
-    {
-      "title": "Ship-It Playbooks",
-      "icon": "\ud83d\udcda",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "color": "0F4C5C",
-      "badge": "Ship It Playbooks",
-      "topics": [
-        "Tutorials"
-      ],
-      "articles": [
-        {
-          "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
-          "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
-          "source": "MarkTechPost",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.marktechpost.com&sz=16",
-          "authors": "Asif Razzaq",
-          "published": "11 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-1-10.png",
-          "summary": "NVIDIA Researchers Introduce KVTC Transform is a development worth monitoring for near-term product and tooling decisions (via MarkTechPost).",
-          "what_happened": "A new paper on NVIDIA Researchers Introduce KVTC Transform introduces methods that may influence downstream tooling.",
-          "why_it_matters": "The NVIDIA Researchers Introduce KVTC Transform development is a useful signal for teams shipping AI products.",
-          "what_to_do": "Follow the NVIDIA Researchers Introduce KVTC Transform guide, but adapt one step to fit your actual production constraints.",
-          "our_take": "Use NVIDIA Researchers Introduce KVTC Transform as a blueprint, then trim to fit your production constraints.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tutorials"
         },
         {
-          "title": "Revo AI Email Assistant",
-          "url": "https://dev.to/minimal-architect/revo-ai-email-assistant-2e8i",
-          "source": "Dev.to AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
-          "authors": "tech_minimalist",
+          "title": "antigravity-awesome-skills",
+          "url": "https://github.com/sickn33/antigravity-awesome-skills",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
+          "authors": "sickn33",
           "published": "11 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fimage.pollinations.ai%2Fprompt%2FStudio_photography_of_Revo_AI_Email_Assistant_ultra_minimalist_tech_concept%2Cshot_on_Leica_M11%2C85mm_lens%2Cf%2F1.8%2Csoft_cinematic_lighting%2Cdark_clean_background%2C8k%3Fwidth%3D1280%26height%3D720%26nologo%3Dtrue%26seed%3D592248%26model%3Dflux-realism",
-          "summary": "Revo AI Email Assistant is a development worth monitoring for near-term product and tooling decisions (via Dev.to AI).",
-          "what_happened": "A hands-on guide to Revo AI Email Assistant offers patterns you can adapt to your own stack.",
-          "why_it_matters": "The Revo AI Email Assistant development is a useful signal for teams shipping AI products.",
-          "what_to_do": "Follow the Revo AI Email Assistant guide, but adapt one step to fit your actual production constraints.",
-          "our_take": "Adapt one proven pattern from Revo AI Email Assistant instead of copying the whole stack.",
+          "thumbnail": "https://avatars.githubusercontent.com/u/184072420?v=4",
+          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Currently at 8,470 stars with ~302 stars/day growth.",
+          "what_happened": "Growing traction for antigravity-awesome-skills on GitHub suggests rising builder interest.",
+          "why_it_matters": "Community interest in antigravity-awesome-skills is growing \u2014 check repo health before committing.",
+          "what_to_do": "Pick two tools from the antigravity-awesome-skills list you haven't used and try one this week.",
+          "our_take": "Curated lists are great for discovery but terrible for decision-making. Pick one tool and actually ship with it.",
           "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
+          "difficulty": "Intermediate",
+          "topic": "Repos"
         }
       ]
     },
@@ -230,6 +234,7 @@
         "Research",
         "Models"
       ],
+      "tier": "leader",
       "articles": [
         {
           "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
@@ -239,10 +244,10 @@
           "authors": "Russ Webb, Jason Ramapuram",
           "published": "11 Feb",
           "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "A Small-Scale System is a development worth monitoring for near-term product and tooling decisions (via arXiv CS.AI).",
-          "what_happened": "Results from A Small-Scale System point to where methods may shift in the next cycle.",
-          "why_it_matters": "The A Small-Scale System results point a direction, but production confidence needs independent replication.",
-          "what_to_do": "Skim the A Small-Scale System abstract and results table \u2014 decide in 10 minutes if it warrants a deep read.",
+          "summary": "Keep Small on your radar \u2014 it could affect planning or tooling decisions soon (via arXiv CS.AI).",
+          "what_happened": "The Small findings offer clues about where the field is heading next.",
+          "why_it_matters": "The research around Small is early but directionally useful for applied teams.",
+          "what_to_do": "Read the Small abstract. If the problem matches yours, read the method. Otherwise, skip it.",
           "our_take": "Smaller and cheaper usually beats bigger and smarter for most production use cases. Watch this space.",
           "audience_track": "Researcher",
           "difficulty": "Intermediate",
@@ -256,10 +261,10 @@
           "authors": "",
           "published": "08 Feb",
           "thumbnail": "",
-          "summary": "A timeline of claims about AI/LLMs is a development worth monitoring for near-term product and tooling decisions (via Hacker News).",
-          "what_happened": "A timeline of claims about AI/LLMs enters the model landscape with tradeoffs worth benchmarking.",
-          "why_it_matters": "A timeline of claims about AI/LLMs changes the cost-quality tradeoff landscape \u2014 benchmark before committing.",
-          "what_to_do": "Benchmark A timeline of claims about AI/LLMs on your actual workload \u2014 check cost, latency, and quality delta.",
+          "summary": "LLMs is a development worth monitoring for near-term product and tooling decisions (via Hacker News).",
+          "what_happened": "LLMs enters the model landscape with tradeoffs worth benchmarking.",
+          "why_it_matters": "LLMs changes the cost-quality tradeoff landscape \u2014 benchmark before committing.",
+          "what_to_do": "Benchmark LLMs on your actual workload \u2014 check cost, latency, and quality delta.",
           "our_take": "New model, same question: does it beat your current setup on your actual workload, at an acceptable cost?",
           "audience_track": "Builder",
           "difficulty": "Beginner",

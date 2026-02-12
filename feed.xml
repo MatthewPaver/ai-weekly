@@ -5,87 +5,87 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 21:51:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 23:41:55 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[Glean’s fight to own the AI layer inside every company]]></title>
-      <link>https://techcrunch.com/podcast/glean-arvind-jain-equity-podcast-own-the-ai-layer-inside-every-company/</link>
-      <description><![CDATA[Glean’s fight is a development worth monitoring for near-term product and tooling decisions (via TechCrunch AI).]]></description>
+      <title><![CDATA[OpenAI disbands mission alignment team, which focused on ‘safe’ and ‘trustworthy’ AI development]]></title>
+      <link>https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/</link>
+      <description><![CDATA[The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).]]></description>
       <category>Industry</category>
-      <pubDate>Wed, 11 Feb 2026 21:07:28 +0000</pubDate>
-      <author>Theresa Loconsolo, Rebecca Bellan</author>
+      <pubDate>Wed, 11 Feb 2026 21:57:18 +0000</pubDate>
+      <author>Lucas Ropek</author>
     </item>
     <item>
       <title><![CDATA[Transformers.js v4 Preview: Now Available on NPM!]]></title>
       <link>https://huggingface.co/blog/transformersjs-v4</link>
-      <description><![CDATA[Transformers.js v4 Preview ships a new release worth testing if it overlaps with your current toolchain (via Hugging Face Blog).]]></description>
+      <description><![CDATA[A fresh release of Transformers.js v4 is now available for teams ready to evaluate alternatives (via Hugging Face Blog).]]></description>
       <category>Tools</category>
       <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[Revo AI Email Assistant]]></title>
-      <link>https://dev.to/minimal-architect/revo-ai-email-assistant-2e8i</link>
-      <description><![CDATA[Revo AI Email Assistant is a development worth monitoring for near-term product and tooling decisions (via Dev.to AI).]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 21:40:13 +0000</pubDate>
-      <author>tech_minimalist</author>
-    </item>
-    <item>
-      <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
-      <link>https://arxiv.org/abs/2602.09112</link>
-      <description><![CDATA[A Small-Scale System is a development worth monitoring for near-term product and tooling decisions (via arXiv CS.AI).]]></description>
-      <category>Research</category>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Russ Webb, Jason Ramapuram</author>
-    </item>
-    <item>
-      <title><![CDATA[antigravity-awesome-skills]]></title>
-      <link>https://github.com/sickn33/antigravity-awesome-skills</link>
-      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Currently at 8,459 stars with ~302 stars/day growth.]]></description>
-      <category>Repos</category>
-      <pubDate>Wed, 11 Feb 2026 06:57:37 +0000</pubDate>
-      <author>sickn33</author>
-    </item>
-    <item>
-      <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
-      <link>https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/</link>
-      <description><![CDATA[A timeline of claims about AI/LLMs is a development worth monitoring for near-term product and tooling decisions (via Hacker News).]]></description>
-      <category>Models</category>
-      <pubDate>Sun, 08 Feb 2026 13:02:08 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[Here are the brands bringing ads to ChatGPT]]></title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible</link>
-      <description><![CDATA[Strategic shift around Here are the brands bringing ads may affect vendor costs and compliance posture (via The Verge AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Wed, 11 Feb 2026 11:08:03 +0000</pubDate>
-      <author>Emma Roth</author>
-    </item>
-    <item>
-      <title><![CDATA[The two patterns by which agents connect sandboxes]]></title>
-      <link>https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/</link>
-      <description><![CDATA[Research on The two patterns by which agents connect introduces methods that could influence applied work if results hold (via LangChain Blog).]]></description>
-      <category>Tools</category>
-      <pubDate>Tue, 10 Feb 2026 16:32:35 +0000</pubDate>
-      <author>Harrison Chase</author>
-    </item>
-    <item>
       <title><![CDATA[NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving]]></title>
       <link>https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/</link>
-      <description><![CDATA[NVIDIA Researchers Introduce KVTC Transform is a development worth monitoring for near-term product and tooling decisions (via MarkTechPost).]]></description>
+      <description><![CDATA[The KVTC Transform Coding Pipeline news is worth a closer look for teams making near-term tool or vendor calls (via MarkTechPost).]]></description>
       <category>Tutorials</category>
       <pubDate>Wed, 11 Feb 2026 04:38:57 +0000</pubDate>
       <author>Asif Razzaq</author>
     </item>
     <item>
+      <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
+      <link>https://arxiv.org/abs/2602.09112</link>
+      <description><![CDATA[Keep Small on your radar — it could affect planning or tooling decisions soon (via arXiv CS.AI).]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Russ Webb, Jason Ramapuram</author>
+    </item>
+    <item>
       <title><![CDATA[PaperBanana]]></title>
       <link>https://github.com/dwzhu-pku/PaperBanana</link>
-      <description><![CDATA[PaperBanana: Automating Academic Illustration For AI Scientists. Currently at 3,325 stars with ~277 stars/day growth.]]></description>
+      <description><![CDATA[PaperBanana: Automating Academic Illustration For AI Scientists. Currently at 3,327 stars with ~277 stars/day growth.]]></description>
       <category>Repos</category>
       <pubDate>Mon, 02 Feb 2026 23:13:42 +0000</pubDate>
       <author>dwzhu-pku</author>
+    </item>
+    <item>
+      <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
+      <link>https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/</link>
+      <description><![CDATA[LLMs is a development worth monitoring for near-term product and tooling decisions (via Hacker News).]]></description>
+      <category>Models</category>
+      <pubDate>Sun, 08 Feb 2026 13:02:08 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[Anthropic says it&#8217;ll try to keep its data centers from raising electricity costs]]></title>
+      <link>https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge</link>
+      <description><![CDATA[Keep Anthropic on your radar — it could affect planning or tooling decisions soon (via The Verge AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 11 Feb 2026 17:37:02 +0000</pubDate>
+      <author>Justine Calma</author>
+    </item>
+    <item>
+      <title><![CDATA[LangSmith is Now Available in Google Cloud Marketplace]]></title>
+      <link>https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/</link>
+      <description><![CDATA[LangSmith ships a new release worth testing if it overlaps with your current toolchain (via LangChain Blog).]]></description>
+      <category>Tools</category>
+      <pubDate>Tue, 10 Feb 2026 02:47:44 +0000</pubDate>
+      <author>LangChain Accounts</author>
+    </item>
+    <item>
+      <title><![CDATA[antigravity-awesome-skills]]></title>
+      <link>https://github.com/sickn33/antigravity-awesome-skills</link>
+      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Currently at 8,470 stars with ~302 stars/day growth.]]></description>
+      <category>Repos</category>
+      <pubDate>Wed, 11 Feb 2026 06:57:37 +0000</pubDate>
+      <author>sickn33</author>
+    </item>
+    <item>
+      <title><![CDATA[I Loved My OpenClaw AI Agent—Until It Turned on Me]]></title>
+      <link>https://www.wired.com/story/malevolent-ai-agent-openclaw-clawdbot/</link>
+      <description><![CDATA[New findings around Loved My OpenClaw AI Agent may shape tooling choices once validated by independent teams (via Wired AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 11 Feb 2026 19:00:00 +0000</pubDate>
+      <author>Will Knight</author>
     </item>
   </channel>
 </rss>
