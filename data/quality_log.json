@@ -11,5 +11,70 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-11T23:41:55.607336+00:00"
+  },
+  {
+    "articles_collected": 63,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 25,
+    "after_filters": 0,
+    "articles_final": 12,
+    "sections": 2,
+    "lead_story": "OpenAI disbands mission alignment team",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-12T02:09:47.226278+00:00"
+  },
+  {
+    "articles_collected": 63,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 25,
+    "after_filters": 0,
+    "articles_final": 13,
+    "sections": 3,
+    "lead_story": "OpenAI disbands mission alignment team",
+    "smoke_test": false,
+    "status": "fail",
+    "timestamp": "2026-02-12T02:12:12.300801+00:00"
+  },
+  {
+    "articles_collected": 63,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 25,
+    "after_filters": 0,
+    "articles_final": 13,
+    "sections": 3,
+    "lead_story": "OpenAI disbands mission alignment team",
+    "smoke_test": false,
+    "status": "fail",
+    "timestamp": "2026-02-12T02:12:12.301495+00:00"
+  },
+  {
+    "articles_collected": 63,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 63,
+    "after_filters": 33,
+    "articles_final": 11,
+    "sections": 3,
+    "lead_story": "OpenAI disbands mission alignment team",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-12T02:19:13.453007+00:00"
+  },
+  {
+    "articles_collected": 63,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 52,
+    "after_filters": 22,
+    "articles_final": 10,
+    "sections": 3,
+    "lead_story": "AI Industry Rivals Are Teaming Up on a Startup Accelerator",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-12T02:40:09.593435+00:00"
   }
 ]

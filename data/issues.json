@@ -1,6 +1,20 @@
 {
   "issues": [
     {
+      "slug": "2026-02-12",
+      "date_iso": "2026-02-12",
+      "date_label": "12 Feb 2026",
+      "title": "Inference \u2014 12 Feb 2026",
+      "lead_title": "Testing ads in ChatGPT",
+      "summary": "Tooling releases carried the strongest signal.",
+      "total_articles": 10,
+      "read_time_minutes": 4,
+      "section_count": 3,
+      "web_path": "/issues/2026-02-12.html",
+      "repo_md_path": "/issues/2026-02-12.md",
+      "is_latest": true
+    },
+    {
       "slug": "2026-02-11",
       "date_iso": "2026-02-11",
       "date_label": "11 Feb 2026",
@@ -12,7 +26,7 @@
       "section_count": 4,
       "web_path": "/issues/2026-02-11.html",
       "repo_md_path": "/issues/2026-02-11.md",
-      "is_latest": true
+      "is_latest": false
     }
   ]
 }
