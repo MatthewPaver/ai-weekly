@@ -10,7 +10,7 @@
       "total_articles": 10,
       "read_time_minutes": 4,
       "section_count": 3,
-      "web_path": "/issues/2026-02-12.html",
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-12.html",
       "repo_md_path": "/issues/2026-02-12.md",
       "is_latest": true
     },
@@ -24,7 +24,7 @@
       "total_articles": 10,
       "read_time_minutes": 4,
       "section_count": 4,
-      "web_path": "/issues/2026-02-11.html",
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-11.html",
       "repo_md_path": "/issues/2026-02-11.md",
       "is_latest": false
     }
