@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Inference Weekly — 12 Feb 2026: 14 curated AI stories for builders, leaders, and researchers." />
-  <title>Inference Weekly — 12 Feb 2026</title>
+  <meta name="description" content="Inference Weekly — 13 Feb 2026: 14 curated AI stories for builders, leaders, and researchers." />
+  <title>Inference Weekly — 13 Feb 2026</title>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Inference Weekly — 12 Feb 2026" />
-  <meta property="og:description" content="This week&#39;s signal: OpenAI disbands mission alignment team — and what it means for your roadmap." />
+  <meta property="og:title" content="Inference Weekly — 13 Feb 2026" />
+  <meta property="og:description" content="This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/latest.html" />
   <meta property="og:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
@@ -16,8 +16,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Inference Weekly — 12 Feb 2026" />
-  <meta name="twitter:description" content="This week&#39;s signal: OpenAI disbands mission alignment team — and what it means for your roadmap." />
+  <meta name="twitter:title" content="Inference Weekly — 13 Feb 2026" />
+  <meta name="twitter:description" content="This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap." />
   <meta name="twitter:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
 
   <!-- Canonical + RSS -->
@@ -29,7 +29,7 @@
   <style>
     /* Match email design: WCAG AA contrast (4.5:1+ normal text), no blending into background */
     :root {
-      --bg: #F8FAFB;
+      --bg: #FAFAF9;
       --surface: #ffffff;
       --surface-2: #E5E7EB;
       --text: #111827;
@@ -219,9 +219,8 @@
     .card {
       background: var(--surface);
       border: 1px solid var(--line);
-      border-left: 4px solid var(--brand-2);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06);
       animation: rise .4s ease both;
     }
 
@@ -229,7 +228,6 @@
       .card {
         background: #1E293B;
         border-color: #334155;
-        border-left-color: #0F766E;
       }
     }
 
@@ -276,7 +274,6 @@
       padding: 10px 12px;
       border-radius: 10px;
       border: 1px solid var(--line);
-      border-left: 3px solid var(--brand-2);
       background: color-mix(in srgb, var(--surface-2), transparent 50%);
       transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
     }
@@ -372,7 +369,7 @@
       .badge-track { background: #0c4a6e !important; color: #7dd3fc !important; border-color: #0369a1 !important; }
     }
 
-    .section-promise { font-weight: 600; font-style: italic; color: var(--brand); font-size: 0.82rem; }
+    .section-promise { font-weight: 600; font-style: italic; color: var(--brand); font-size: 0.88rem; }
 
     .testimonial { margin: 12px 0 0; font-style: italic; font-size: 0.88rem; opacity: 0.9; line-height: 1.5; }
     .testimonial footer { font-style: normal; font-size: 0.78rem; opacity: 0.75; margin-top: 4px; }
@@ -391,7 +388,8 @@
     .lead p {
       margin: 0 0 8px;
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 1rem;
+      max-width: 60ch;
     }
 
     .action {
@@ -486,7 +484,7 @@
     .sections {
       margin-top: 8px;
       display: grid;
-      gap: 12px;
+      gap: 16px;
     }
 
     .section {
@@ -509,10 +507,18 @@
 
     .section-title {
       margin: 0;
-      padding: 12px 14px;
+      padding: 14px 16px;
       font-size: 0.98rem;
-      border-left: 4px solid var(--brand-2);
-      background: linear-gradient(90deg, color-mix(in srgb, var(--brand-2), transparent 88%), transparent);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px; border-radius: 8px;
+      background: var(--brand-2); color: #fff;
+      font-size: 0.78rem; font-weight: 700; flex-shrink: 0;
     }
 
     .section-deck {
@@ -532,7 +538,7 @@
     .story {
       border: 1px solid var(--line);
       border-top: 1px solid rgba(255,255,255,0.5);
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
       background: color-mix(in srgb, var(--surface-2), transparent 30%);
       box-shadow: 0 2px 4px rgba(15,31,40,0.04), 0 8px 16px rgba(15,31,40,0.07);
@@ -540,9 +546,9 @@
     }
 
     .story:hover {
-      transform: translateY(-3px) scale(1.01);
-      box-shadow: 0 4px 8px rgba(15,31,40,0.06), 0 16px 32px rgba(15,31,40,0.12);
-      border-color: color-mix(in srgb, var(--brand), transparent 60%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(15,31,40,0.12);
+      border-color: color-mix(in srgb, var(--brand), transparent 50%);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -575,7 +581,7 @@
     .story p {
       margin: 0 0 6px;
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 0.94rem;
     }
 
     .story a {
@@ -659,16 +665,149 @@
       margin-top: 8px;
     }
 
+    /* Learn This Week card */
+    .learn-card {
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .learn-title {
+      display: block;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--link);
+      margin: 6px 0 8px;
+      line-height: 1.35;
+    }
+    .learn-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      font-size: 0.78rem;
+      margin: 0 0 8px;
+    }
+    .learn-provider {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .badge-level {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      border-radius: 10px;
+    }
+    .badge-level-beginner { background: #DCFCE7; color: #166534; }
+    .badge-level-intermediate { background: #FEF3C7; color: #92400E; }
+    .badge-level-advanced { background: #FEE2E2; color: #991B1B; }
+    .badge-free { display: inline-block; padding: 2px 8px; font-size: 0.7rem; font-weight: 600; border-radius: 10px; background: #E0F2FE; color: #0C4A6E; }
+    .badge-paid { display: inline-block; padding: 2px 8px; font-size: 0.7rem; font-weight: 600; border-radius: 10px; background: #F3E8FF; color: #6B21A8; }
+    .learn-duration {
+      color: var(--muted);
+    }
+    .learn-note {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .badge-level-beginner { background: #14532d; color: #86efac; }
+      .badge-level-intermediate { background: #78350f; color: #fde68a; }
+      .badge-level-advanced { background: #7f1d1d; color: #fca5a5; }
+      .badge-free { background: #0c4a6e; color: #bae6fd; }
+      .badge-paid { background: #581c87; color: #e9d5ff; }
+    }
+
+    /* Prompt of the Week card */
+    .prompt-card {
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .prompt-text {
+      margin: 8px 0;
+      padding: 10px 14px;
+      border-left: 3px solid var(--brand-2);
+      background: color-mix(in srgb, var(--brand-2), transparent 92%);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .prompt-meta {
+      display: flex;
+      gap: 8px;
+      font-size: 0.78rem;
+      margin: 0 0 6px;
+    }
+    .prompt-context {
+      font-weight: 600;
+      color: var(--brand-2);
+    }
+    .prompt-tool {
+      color: var(--muted);
+    }
+    .prompt-tip {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* Reading progress bar */
+    .reading-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--brand) 0%, var(--brand-2) 100%);
+      z-index: 1000;
+      transition: width .1s linear;
+    }
+
+    /* Staggered card entrance */
     @keyframes rise {
       from { opacity: 0; transform: translateY(6px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    .story { animation: rise .4s ease both; }
+    .story:nth-child(1) { animation-delay: 0s; }
+    .story:nth-child(2) { animation-delay: 0.08s; }
+    .story:nth-child(3) { animation-delay: 0.16s; }
+    .story:nth-child(4) { animation-delay: 0.24s; }
+
+    /* Badge entrance pop */
+    @keyframes badgePop {
+      0% { transform: scale(0.7); opacity: 0; }
+      70% { transform: scale(1.08); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .badge-level, .badge-free, .badge-paid,
+    .meta-row .badge { animation: badgePop .3s ease both; animation-delay: 0.2s; }
+
+    /* Pulse glow on Weekly Pulse header */
+    @keyframes pulseGlow {
+      0%, 100% { text-shadow: 0 0 0 transparent; }
+      50% { text-shadow: 0 0 8px color-mix(in srgb, var(--brand-2), transparent 60%); }
+    }
+    .pulse .section-head { animation: pulseGlow 3s ease-in-out infinite; }
+
+    /* Section number entrance */
+    @keyframes numPop {
+      from { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+      to { transform: scale(1) rotate(0); opacity: 1; }
+    }
+    .section-num { animation: numPop .4s ease both; }
 
     @media (prefers-reduced-motion: reduce) {
       * {
         animation: none !important;
         transition: none !important;
       }
+      .reading-progress { display: none; }
     }
 
     @media (max-width: 600px) {
@@ -688,6 +827,7 @@
   </style>
 </head>
 <body>
+  <div class="reading-progress" id="reading-progress"></div>
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="top-bar"></div>
 
@@ -711,8 +851,8 @@
       </div>
 
       <div class="hero-stats">
-        <span class="chip">Issue #3</span>
-        <span class="chip">12 Feb 2026</span>
+        <span class="chip">Issue #4</span>
+        <span class="chip">13 Feb 2026</span>
         <span class="chip">14 stories</span>
         <span class="chip">~5 min read</span>
         <span class="chip">25+ sources</span>
@@ -721,7 +861,7 @@
 
     <div class="content">
       <main id="main-content">
-        <section class="intro card">This week&#39;s signal: OpenAI disbands mission alignment team — and what it means for your roadmap.</section>
+        <section class="intro card">This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap.</section>
 
         <section class="menu card" aria-label="In this issue">
           <p class="section-head">In This Issue</p>
@@ -736,13 +876,13 @@
 <span class="menu-deck">The moves that change product plans, budgets, and positioning.</span>              </span>
               <span class="menu-count">2</span>
             </a>
-            <a class="menu-item" href="#open-source-watch">
+            <a class="menu-item" href="#builders-bench">
               <span class="menu-num">02</span>
-              <span class="menu-icon">⭐</span>
+              <span class="menu-icon">🛠️</span>
               <span class="menu-text">
-                <span class="menu-label">Open Source Watch</span>
-<span class="menu-deck">Repos with momentum that might deserve a deeper look.</span><span class="menu-deck section-promise">Repos with momentum.</span>              </span>
-              <span class="menu-count">3</span>
+                <span class="menu-label">Builder&#39;s Bench</span>
+<span class="menu-deck">New tooling worth evaluating in an actual workflow this week.</span>              </span>
+              <span class="menu-count">2</span>
             </a>
             <a class="menu-item" href="#lab-notes">
               <span class="menu-num">03</span>
@@ -750,145 +890,131 @@
               <span class="menu-text">
                 <span class="menu-label">Lab Notes</span>
 <span class="menu-deck">Research and model updates with downstream product impact.</span>              </span>
-              <span class="menu-count">2</span>
+              <span class="menu-count">1</span>
             </a>
           </div>
         </section>
 
         <article class="lead card">
-          <img class="lead-media" src="https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2198379368.jpg?resize=1200,800" alt="OpenAI disbands mission alignment team" />
           <div class="lead-body">
             <p class="section-head">Top Story</p>
             <div class="meta-row">
-              <span class="badge">TechCrunch AI - 11 Feb</span>
+              <span class="badge">OpenAI Blog - 09 Feb</span>
 <span class="badge badge-difficulty-beginner">Beginner</span><span class="badge badge-track">Leader</span>            </div>
-            <h2><a href="https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/" target="_blank" rel="noopener">OpenAI disbands mission alignment team</a></h2>
-            <p>A strategic move around OpenAI is worth factoring into near-term planning. Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.</p>
-            <p class="action">Action: Add OpenAI as a discussion item in your next strategy or planning meeting.</p>
-<p class="take">Treat this as a planning input, not an alarm. The second-order effects matter more than the news itself.</p>          </div>
+            <h2><a href="https://openai.com/index/testing-ads-in-chatgpt" target="_blank" rel="noopener">Testing ads in ChatGPT</a></h2>
+            <p><strong style="color: var(--text);">Testing is introducing ad-supported revenue, which could shift the user experience.</strong> Policy or pricing changes around Testing could ripple into your cost model and compliance posture.</p>
+            <p class="action">Action: Add Testing as a discussion item in your next strategy or planning meeting.</p>
+<p class="take">Teams that factor Testing into next quarter early usually gain execution room later.</p>          </div>
         </article>
 
         <div class="share-row">
-          <a class="share-btn" href="https://twitter.com/intent/tweet?text=Inference%20Weekly%20%E2%80%94%2012%20Feb%202026&url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on X</a>
+          <a class="share-btn" href="https://twitter.com/intent/tweet?text=Inference%20Weekly%20%E2%80%94%2013%20Feb%202026&url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on X</a>
           <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on LinkedIn</a>
-          <a class="share-btn" href="mailto:?subject=Inference%20Weekly%20%E2%80%94%2012%20Feb%202026&body=Check%20out%20this%20week's%20AI%20briefing%3A%20https://matthewpaver.github.io/ai-weekly/latest.html">Forward via Email</a>
+          <a class="share-btn" href="mailto:?subject=Inference%20Weekly%20%E2%80%94%2013%20Feb%202026&body=Check%20out%20this%20week's%20AI%20briefing%3A%20https://matthewpaver.github.io/ai-weekly/latest.html">Forward via Email</a>
         </div>
 
         <!-- This week: one-line editorial (competitors use top summary, not a long block) -->
         <section class="editors-main card reveal" aria-label="This week">
           <p class="section-head">This week</p>
-          <p class="editors-thesis">This week&#39;s signal is clear: business model decisions are moving faster than product roadmaps. If you&#39;re not tracking OpenAI disbands mission alignment team, you&#39;re already behind.</p>
+          <p class="editors-thesis">This week&#39;s signal is clear: business model decisions are moving faster than product roadmaps. If you&#39;re not tracking Testing ads in ChatGPT, you&#39;re already behind.</p>
         </section>
 
         <div class="sections">
           <section class="section reveal" id="industry-radar" data-tier="leader">
-            <h2 class="section-title">🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
+            <h2 class="section-title"><span class="section-num">1</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
 <p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
               <article class="story">
-<img src="https://wp.technologyreview.com/wp-content/uploads/2026/02/260205_chatgpt_boycott_hero.jpg?resize=1200,600" alt="A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions" loading="lazy" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" target="_blank" rel="noopener">A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions</a></h3>
-                  <p>A departure at QuitGPT may shift priorities for teams depending on the roadmap. User dissatisfaction with QuitGPT could force product changes that affect your integration.</p>
-                  <p class="action">Set a reminder to check QuitGPT for downstream changes in 2 weeks.</p>
-                  <a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" target="_blank" rel="noopener">Read article -></a>
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2225076517_resize-1152x648.jpg" alt="OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=arstechnica.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">Ars Technica AI</span>
+                    <span>
+                      <span class="badge badge-difficulty-beginner">Beginner</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <h3><a href="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" target="_blank" rel="noopener">OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips</a></h3>
+                  <p><strong style="color: var(--text);">A strategic move around OpenAI is worth factoring into near-term planning.</strong> Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.</p>
+                  <p class="action">Monitor OpenAI for follow-on product or pricing changes over the next month.</p>
+                  <a href="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" data-title="A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" data-title="OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="Anthropic says it’ll try to keep its data centers from raising electricity costs" loading="lazy" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Leader</span>                  </div>
-                  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge" target="_blank" rel="noopener">Anthropic says it’ll try to keep its data centers from raising electricity costs</a></h3>
-                  <p>Industry activity around Anthropic may shift competitive dynamics this quarter. Industry changes involving Anthropic are likely to affect near-term planning cycles.</p>
-                  <p class="action">Model how Anthropic pricing changes would hit your current vendor spend.</p>
-                  <a href="https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge" target="_blank" rel="noopener">Read article -></a>
+<img src="https://spectrum.ieee.org/media-library/image.jpg?id=63854297&amp;width=1200&amp;height=600&amp;coordinates=0%2C15%2C0%2C15" alt="ChatGPT’s Translation Skills Parallel Most Human Translators" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=spectrum.ieee.org&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">IEEE Spectrum AI</span>
+                    <span>
+                      <span class="badge badge-difficulty-beginner">Beginner</span>
+<span class="badge badge-track">Leader</span>                    </span>
+                  </div>
+                  <h3><a href="https://spectrum.ieee.org/chatgpt-translate-skills-human-comparison" target="_blank" rel="noopener">ChatGPT’s Translation Skills Parallel Most Human Translators</a></h3>
+                  <p><strong style="color: var(--text);">A strategic move around ChatGPT is worth factoring into near-term planning.</strong> Strategic moves around ChatGPT may reshape vendor dynamics for downstream teams.</p>
+                  <p class="action">Add ChatGPT as a discussion item in your next strategy or planning meeting.</p>
+                  <a href="https://spectrum.ieee.org/chatgpt-translate-skills-human-comparison" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge" data-title="Anthropic says it’ll try to keep its data centers from raising electricity costs" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://spectrum.ieee.org/chatgpt-translate-skills-human-comparison" data-title="ChatGPT’s Translation Skills Parallel Most Human Translators" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
             </div>
           </section>
-          <section class="section reveal" id="open-source-watch" data-tier="builder">
-            <h2 class="section-title">⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(3)</span></h2>
-<p class="section-deck">Repos with momentum that might deserve a deeper look. <span class="section-promise">Repos with momentum.</span></p>            <div class="stories">
+          <section class="section reveal" id="builders-bench" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
               <article class="story">
-<img src="https://avatars.githubusercontent.com/u/52273452?v=4" alt="PaperBanana" loading="lazy" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-difficulty-advanced">Advanced</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://github.com/dwzhu-pku/PaperBanana" target="_blank" rel="noopener">PaperBanana</a></h3>
-                  <p>PaperBanana: Automating Academic Illustration For AI Scientists. Community interest in PaperBanana is growing — check repo health before committing.</p>
-                  <p class="action">Check PaperBanana for recent activity, open issues, and license compatibility this week.</p>
-                  <a href="https://github.com/dwzhu-pku/PaperBanana" target="_blank" rel="noopener">Read article -></a>
+<img src="https://blog.langchain.com/content/images/size/w1200/2026/02/On-Agent-Frameworks--1-.png" alt="On Agent Frameworks and Agent Observability" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=blog.langchain.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">LangChain Blog</span>
+                    <span>
+                      <span class="badge badge-difficulty-intermediate">Intermediate</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <h3><a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">On Agent Frameworks and Agent Observability</a></h3>
+                  <p><strong style="color: var(--text);">On Agent Frameworks brings fresh capabilities for teams looking to improve their pipeline.</strong> The open release of On Agent Frameworks adds a viable alternative to proprietary options.</p>
+                  <p class="action">Try On Agent Frameworks on your most common use case — measure the gap vs your current setup.</p>
+                  <a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://github.com/dwzhu-pku/PaperBanana" data-title="PaperBanana" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" data-title="On Agent Frameworks and Agent Observability" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img src="https://avatars.githubusercontent.com/u/184072420?v=4" alt="antigravity-awesome-skills" loading="lazy" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://github.com/sickn33/antigravity-awesome-skills" target="_blank" rel="noopener">antigravity-awesome-skills</a></h3>
-                  <p>Growing traction for antigravity-awesome-skills on GitHub suggests rising builder interest. Community interest in antigravity-awesome-skills is growing — check repo health before committing.</p>
-                  <p class="action">Pick two tools from the antigravity-awesome-skills list you haven&#39;t used and try one this week.</p>
-                  <a href="https://github.com/sickn33/antigravity-awesome-skills" target="_blank" rel="noopener">Read article -></a>
+                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">Hacker News (AI)</span>
+                    <span>
+                      <span class="badge badge-difficulty-beginner">Beginner</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <h3><a href="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" target="_blank" rel="noopener">Show HN: I&#39;m 75, building an OSS Virtual Protest Protocol for digital activism</a></h3>
+                  <p><strong style="color: var(--text);">Show HN brings fresh capabilities for teams looking to improve their pipeline.</strong> The Show HN release addresses gaps that many builder teams have flagged.</p>
+                  <p class="action">Try Show HN on a non-critical task this week and log the results.</p>
+                  <a href="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://github.com/sickn33/antigravity-awesome-skills" data-title="antigravity-awesome-skills" aria-label="Like this article">👍 Like</button>
-                  </p>
-                </div>
-              </article>
-              <article class="story">
-<img src="https://avatars.githubusercontent.com/u/34802794?v=4" alt="marketingskills" loading="lazy" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener">marketingskills</a></h3>
-                  <p>Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.</p>
-                  <p class="action">Check marketingskills for recent activity, open issues, and license compatibility this week.</p>
-                  <a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener">Read article -></a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://github.com/coreyhaines31/marketingskills" data-title="marketingskills" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" data-title="Show HN: I&#39;m 75, building an OSS Virtual Protest Protocol for digital activism" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
             </div>
           </section>
           <section class="section reveal" id="lab-notes" data-tier="leader">
-            <h2 class="section-title">🔬 Lab Notes <span style="font-weight:500;opacity:.7">(2)</span></h2>
+            <h2 class="section-title"><span class="section-num">3</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">Research and model updates with downstream product impact.</p>            <div class="stories">
               <article class="story">
-<img src="https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png" alt="A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation" loading="lazy" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-difficulty-advanced">Advanced</span>
-<span class="badge badge-track">Researcher</span>                  </div>
-                  <h3><a href="https://arxiv.org/abs/2602.09112" target="_blank" rel="noopener">A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation</a></h3>
-                  <p>The Small findings offer clues about where the field is heading next. The research around Small is early but directionally useful for applied teams.</p>
-                  <p class="action">Read the Small abstract. If the problem matches yours, read the method. Otherwise, skip it.</p>
-                  <a href="https://arxiv.org/abs/2602.09112" target="_blank" rel="noopener">Read article -></a>
+<img src="https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png" alt="Latent Generative Solvers for Generalizable Long-Term Physics Simulation" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">arXiv CS.AI</span>
+                    <span>
+                      <span class="badge badge-difficulty-advanced">Advanced</span>
+<span class="badge badge-track">Researcher</span>                    </span>
+                  </div>
+                  <h3><a href="https://arxiv.org/abs/2602.11229" target="_blank" rel="noopener">Latent Generative Solvers for Generalizable Long-Term Physics Simulation</a></h3>
+                  <p><strong style="color: var(--text);">Results from Latent Generative Solvers point to where methods may shift in the next cycle.</strong> The Latent Generative Solvers results point a direction, but production confidence needs independent replication.</p>
+                  <p class="action">Skim the Latent Generative Solvers abstract and results table — decide in 10 minutes if it warrants a deep read.</p>
+                  <a href="https://arxiv.org/abs/2602.11229" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://arxiv.org/abs/2602.09112" data-title="A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation" aria-label="Like this article">👍 Like</button>
-                  </p>
-                </div>
-              </article>
-              <article class="story">
-                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" target="_blank" rel="noopener">A timeline of claims about AI/LLMs</a></h3>
-                  <p>LLMs enters the model landscape with tradeoffs worth benchmarking. LLMs changes the cost-quality tradeoff landscape — benchmark before committing.</p>
-                  <p class="action">Benchmark LLMs on your actual workload — check cost, latency, and quality delta.</p>
-                  <a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" target="_blank" rel="noopener">Read article -></a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" data-title="A timeline of claims about AI/LLMs" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://arxiv.org/abs/2602.11229" data-title="Latent Generative Solvers for Generalizable Long-Term Physics Simulation" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
@@ -902,20 +1028,20 @@
           <p class="section-head">Fast Signals</p>
           <ul>
             <li>
-              <strong><a href="https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/" target="_blank" rel="noopener">LangSmith is Now Available in Google Cloud Marketplace</a></strong>
-              LangSmith shipped this week, opening a new option for teams evaluating alternatives. Why it matters: Teams evaluating alternatives now have LangSmith as a concrete option to benchmark against.
+              <strong><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Custom Kernels for All from Codex and Claude</a></strong>
+              A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.
             </li>
             <li>
-              <strong><a href="https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/" target="_blank" rel="noopener">NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving</a></strong>
-              Researchers published new findings on KVTC Transform Coding Pipeline with potential applied implications. Why it matters: Keep KVTC Transform Coding Pipeline on your radar — it may influence tooling or vendor decisions soon.
+              <strong><a href="https://arxiv.org/abs/2602.11229" target="_blank" rel="noopener">Latent Generative Solvers for Generalizable Long-Term Physics Simulation</a></strong>
+              Results from Latent Generative Solvers point to where methods may shift in the next cycle. Why it matters: The Latent Generative Solvers results point a direction, but production confidence needs independent.
             </li>
             <li>
-              <strong><a href="https://huggingface.co/blog/transformersjs-v4" target="_blank" rel="noopener">Transformers.js v4 Preview: Now Available on NPM!</a></strong>
-              A new release of Transformers.js v4 is now available, giving teams a fresh option to test. Why it matters: The Transformers.js v4 release gives teams a new baseline to compare against existing tools.
+              <strong><a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener">marketingskills</a></strong>
+              Marketing skills for Claude Code and AI agents. Why it matters: CRO, copywriting, SEO, analytics, and growth engineering.
             </li>
             <li>
-              <strong><a href="https://dev.to/formulahendry/vs-code-acp-client-extension-conect-to-claude-gemini-codex-opencode-qwen-code-and-so-on-3552" target="_blank" rel="noopener">VS Code ACP Client extension: conect to Claude, Gemini, Codex, OpenCode, Qwen Code and so on</a></strong>
-              A step-by-step guide on VS Code ACP Client provides a template for your own projects. Why it matters: VS Code ACP Client is worth a closer look for teams making near-term technology choices.
+              <strong><a href="https://dev.to/olivier-coreprose/feldman-v-affable-avenue-lessons-from-an-ai-hallucinated-default-judgment-in-federal-court-30pc" target="_blank" rel="noopener">Feldman v Affable Avenue: Lessons from an AI-Hallucinated Default Judgment in Federal Court</a></strong>
+              A step-by-step guide on Feldman provides a template for your own projects. Why it matters: Feldman is worth a closer look for teams making near-term technology choices.
             </li>
           </ul>
         </section>
@@ -925,21 +1051,41 @@
           <table>
             <tr>
               <td>Dominant theme</td>
-              <td>Industry led coverage (5 stories).</td>
+              <td>Industry led coverage (8 stories).</td>
             </tr>
             <tr>
               <td>Builder pick</td>
-              <td><a href="https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions</a></td>
+              <td><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Custom Kernels for All from Codex and Claude</a></td>
             </tr>
             <tr>
               <td>Leader watch</td>
-              <td><a href="https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">OpenAI disbands mission alignment team</a></td>
+              <td><a href="https://openai.com/index/testing-ads-in-chatgpt" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Testing ads in ChatGPT</a></td>
             </tr>
             <tr>
               <td>Research watch</td>
-              <td><a href="https://arxiv.org/abs/2602.09112" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation</a></td>
+              <td><a href="https://arxiv.org/abs/2602.11229" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Latent Generative Solvers for Generalizable Long-Term Physics Simulation</a></td>
             </tr>
           </table>
+        </section>
+
+        <section class="learn-card card">
+          <p class="section-head">Learn This Week</p>
+          <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/" target="_blank" rel="noopener" class="learn-title">LangChain for LLM Application Development</a>
+          <p class="learn-meta">
+            <span class="learn-provider">DeepLearning.AI</span>
+            <span class="badge-level badge-level-intermediate">Intermediate</span>
+<span class="badge-free">Free</span><span class="learn-duration">1 hour</span>          </p>
+          <p class="learn-note">Build LLM-powered apps with chains, memory, and agents. Practical and concise.</p>
+        </section>
+
+        <section class="prompt-card card">
+          <p class="section-head">Prompt of the Week</p>
+          <blockquote class="prompt-text">"I&#39;m building a [type] application. List the top 5 security risks specific to this architecture and how to mitigate each one."</blockquote>
+          <p class="prompt-meta">
+            <span class="prompt-context">Security</span>
+            <span class="prompt-tool">Claude / ChatGPT</span>
+          </p>
+          <p class="prompt-tip">Be specific about your stack (e.g., &#39;RAG app with vector DB and public API&#39;).</p>
         </section>
       </aside>
     </div>
@@ -952,15 +1098,15 @@
         <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address" />
         <button type="submit">Subscribe</button>
       </form>
-<p class="conversion-hook">This week's pick: <a href="https://github.com/dwzhu-pku/PaperBanana" target="_blank" rel="noopener">PaperBanana</a></p>    </section>
+<p class="conversion-hook">This week's pick: <a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">On Agent Frameworks and Agent Observability</a></p>    </section>
 
     <!-- Feedback card at bottom: Formspree or Formsubmit.co (free) -->
     <section class="card feedback-card reveal" style="margin: 24px 0; padding: 24px;">
       <h3 style="margin: 0 0 6px; font-size: 1.15rem; color: var(--text);">One quick question</h3>
       <p style="margin: 0 0 16px; font-size: 0.9rem; color: var(--muted);">Your feedback shapes what we cover next.</p>
       <form id="feedback-form" class="feedback-form" action="https://formsubmit.co/9f7fb1b5db732b04fdea60e73e14ef65" method="post" style="max-width: 420px;">
-        <input type="hidden" name="issue_date" value="12 Feb 2026" />
-        <input type="hidden" name="_subject" value="Inference feedback — 12 Feb 2026" />
+        <input type="hidden" name="issue_date" value="13 Feb 2026" />
+        <input type="hidden" name="_subject" value="Inference feedback — 13 Feb 2026" />
         <label for="feedback-rating" style="display: block; margin-bottom: 6px; font-size: 14px; color: var(--muted);">Rating</label>
         <select id="feedback-rating" name="rating" required style="width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; background: var(--surface); color: var(--text);">
           <option value="">— Choose —</option>
@@ -1007,6 +1153,25 @@
       entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+  })();
+  </script>
+
+  <!-- Reading progress bar -->
+  <script>
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() {
+          var h = document.documentElement.scrollHeight - window.innerHeight;
+          bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
   })();
   </script>
 
@@ -1089,9 +1254,9 @@
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Inference Weekly — 12 Feb 2026",
-    "description": "This week&#39;s signal: OpenAI disbands mission alignment team — and what it means for your roadmap.",
-    "datePublished": "12 Feb 2026",
+    "headline": "Inference Weekly — 13 Feb 2026",
+    "description": "This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap.",
+    "datePublished": "13 Feb 2026",
     "publisher": {
       "@type": "Organization",
       "name": "Inference Weekly",

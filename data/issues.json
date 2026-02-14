@@ -1,18 +1,46 @@
 {
   "issues": [
     {
+      "slug": "2026-02-14",
+      "date_iso": "2026-02-14",
+      "date_label": "14 Feb 2026",
+      "title": "Inference \u2014 14 Feb 2026",
+      "lead_title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
+      "summary": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in \u2014 and what it means for your roadmap.",
+      "total_articles": 10,
+      "read_time_minutes": 4,
+      "section_count": 2,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html",
+      "repo_md_path": "/issues/2026-02-14.md",
+      "is_latest": true
+    },
+    {
+      "slug": "2026-02-13",
+      "date_iso": "2026-02-13",
+      "date_label": "13 Feb 2026",
+      "title": "Inference \u2014 13 Feb 2026",
+      "lead_title": "Testing ads in ChatGPT",
+      "summary": "This week's signal: Testing ads in ChatGPT \u2014 and what it means for your roadmap.",
+      "total_articles": 14,
+      "read_time_minutes": 5,
+      "section_count": 3,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-13.html",
+      "repo_md_path": "/issues/2026-02-13.md",
+      "is_latest": false
+    },
+    {
       "slug": "2026-02-12",
       "date_iso": "2026-02-12",
       "date_label": "12 Feb 2026",
       "title": "Inference \u2014 12 Feb 2026",
-      "lead_title": "Testing ads in ChatGPT",
-      "summary": "Tooling releases carried the strongest signal.",
-      "total_articles": 10,
-      "read_time_minutes": 4,
+      "lead_title": "OpenAI disbands mission alignment team",
+      "summary": "This week's signal: OpenAI disbands mission alignment team \u2014 and what it means for your roadmap.",
+      "total_articles": 14,
+      "read_time_minutes": 5,
       "section_count": 3,
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-12.html",
       "repo_md_path": "/issues/2026-02-12.md",
-      "is_latest": true
+      "is_latest": false
     },
     {
       "slug": "2026-02-11",

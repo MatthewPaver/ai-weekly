@@ -5,87 +5,87 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Feb 2026 02:40:09 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 09:32:24 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[AI Industry Rivals Are Teaming Up on a Startup Accelerator]]></title>
-      <link>https://www.wired.com/story/ai-industry-rivals-are-teaming-up-on-a-startup-accelerator/</link>
-      <description><![CDATA[Major tech companies like OpenAI, Anthropic, and Google are collaborating to create F/ai, a startup accelerator focused on AI innovation.]]></description>
+      <title><![CDATA[I spent two days gigging at RentAHuman and didn't make a single cent]]></title>
+      <link>https://arstechnica.com/ai/2026/02/i-spent-two-days-gigging-at-rentahuman-and-didnt-make-a-single-cent/</link>
+      <description><![CDATA[RentAHuman is a development worth monitoring for near-term product and tooling decisions (via Ars Technica AI).]]></description>
       <category>Industry</category>
-      <pubDate>Wed, 11 Feb 2026 10:55:24 +0000</pubDate>
-      <author>Joel Khalili</author>
+      <pubDate>Fri, 13 Feb 2026 14:41:21 +0000</pubDate>
+      <author>Reece Rogers, wired.com</author>
     </item>
     <item>
-      <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
-      <link>https://arxiv.org/abs/2602.09112</link>
-      <description><![CDATA[A new system called Cadmus is introduced for autoregressive program synthesis, enabling controlled experimentation with small models trained to complete true programs.]]></description>
-      <category>Models</category>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Russ Webb, Jason Ramapuram</author>
+      <title><![CDATA[Why I Built ClawTick: Cloud Scheduling for AI Agents]]></title>
+      <link>https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8</link>
+      <description><![CDATA[New findings around Built ClawTick may shape tooling choices once validated by independent teams (via Dev.to AI).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Sat, 14 Feb 2026 09:16:28 +0000</pubDate>
+      <author>clawtick</author>
     </item>
     <item>
-      <title><![CDATA[Is a secure AI assistant possible?]]></title>
-      <link>https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/</link>
-      <description><![CDATA[MIT Technology Review discusses the risks associated with AI agents, particularly LLMs (Large Language Models), which can make errors even when confined to chat interfaces and pose significant dangers once given access to external tools like web browsers or email.]]></description>
-      <category>Tools</category>
-      <pubDate>Wed, 11 Feb 2026 20:08:35 +0000</pubDate>
-      <author>Grace Huckins</author>
-    </item>
-    <item>
-      <title><![CDATA[The two patterns by which agents connect sandboxes]]></title>
-      <link>https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/</link>
-      <description><![CDATA[More agents are requiring dedicated workspaces to run code, install packages, and access resources efficiently.]]></description>
-      <category>Tools</category>
-      <pubDate>Tue, 10 Feb 2026 16:32:35 +0000</pubDate>
-      <author>Harrison Chase</author>
-    </item>
-    <item>
-      <title><![CDATA[How Do You Define an AI Companion?]]></title>
-      <link>https://spectrum.ieee.org/ai-companion-relationships</link>
-      <description><![CDATA[AI companions are gaining popularity among users who seek emotional support and personal assistance from AI models, leading to the growth of apps like Character.ai and Replika.]]></description>
-      <category>Models</category>
-      <pubDate>Wed, 11 Feb 2026 14:00:02 +0000</pubDate>
-      <author>Gwendolyn Rak</author>
-    </item>
-    <item>
-      <title><![CDATA[Testing ads in ChatGPT]]></title>
-      <link>https://openai.com/index/testing-ads-in-chatgpt</link>
-      <description><![CDATA[OpenAI is launching ad-supported services within its AI assistant ChatGPT, offering clear labels, independent answers, strong privacy measures, and user control.]]></description>
-      <category>Tools</category>
-      <pubDate>Mon, 09 Feb 2026 11:00:00 +0000</pubDate>
+      <title><![CDATA[Introducing Lockdown Mode and Elevated Risk labels in ChatGPT]]></title>
+      <link>https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt</link>
+      <description><![CDATA[Lockdown Mode ships a new release worth testing if it overlaps with your current toolchain (via OpenAI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 13 Feb 2026 10:00:00 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[Accelerating Mathematical and Scientific Discovery with Gemini Deep Think]]></title>
-      <link>https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/</link>
-      <description><![CDATA[Google DeepMind's advanced AI model, Deep Think, has achieved a gold medal in the International Mathematical Olympiad by processing complex mathematical problems.]]></description>
-      <category>Research</category>
-      <pubDate>Mon, 09 Feb 2026 16:12:06 +0000</pubDate>
+      <title><![CDATA[Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows]]></title>
+      <link>https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/</link>
+      <description><![CDATA[Research on Exa Instant introduces methods that could influence applied work if results hold (via MarkTechPost).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Fri, 13 Feb 2026 21:29:53 +0000</pubDate>
+      <author>Asif Razzaq</author>
+    </item>
+    <item>
+      <title><![CDATA[Why top talent is walking away from OpenAI and xAI]]></title>
+      <link>https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/</link>
+      <description><![CDATA[The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 13 Feb 2026 21:00:00 +0000</pubDate>
+      <author>Theresa Loconsolo</author>
+    </item>
+    <item>
+      <title><![CDATA[OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK]]></title>
+      <link>https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/</link>
+      <description><![CDATA[The OpenAI Is Nuking Its news is worth a closer look for teams making near-term tool or vendor calls (via Wired AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 13 Feb 2026 21:56:18 +0000</pubDate>
+      <author>Zeyi Yang</author>
+    </item>
+    <item>
+      <title><![CDATA[Airbnb plans to bake in AI features for search, discovery and support]]></title>
+      <link>https://techcrunch.com/2026/02/13/airbnb-plans-to-bake-in-ai-features-for-search-discovery-and-support/</link>
+      <description><![CDATA[The Airbnb news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Sat, 14 Feb 2026 02:40:42 +0000</pubDate>
+      <author>Ivan Mehta</author>
+    </item>
+    <item>
+      <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
+      <link>https://arstechnica.com/tech-policy/2026/02/santa-monica-deploys-ai-powered-parking-cameras-to-protect-bike-lanes/</link>
+      <description><![CDATA[Keep Aided on your radar — it could affect planning or tooling decisions soon (via Ars Technica AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 13 Feb 2026 23:03:08 +0000</pubDate>
+      <author>Cyrus Farivar</author>
+    </item>
+    <item>
+      <title><![CDATA[GPT-5.2 derives a new result in theoretical physics]]></title>
+      <link>https://openai.com/index/new-result-theoretical-physics</link>
+      <description><![CDATA[GPT is a development worth monitoring for near-term product and tooling decisions (via OpenAI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 13 Feb 2026 11:00:00 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[Import AI 444: LLM societies; Huawei makes kernels with AI; ChipBench]]></title>
-      <link>https://importai.substack.com/p/import-ai-444-llm-societies-huawei</link>
-      <description><![CDATA[A new study by Import AI suggests that large language models (LLMs) can simulate multiple personalities to answer questions, indicating a deeper understanding of human behavior.]]></description>
-      <category>Models</category>
-      <pubDate>Mon, 09 Feb 2026 14:03:34 +0000</pubDate>
-      <author>Jack Clark</author>
-    </item>
-    <item>
-      <title><![CDATA[Why the Moltbook frenzy was like Pokémon]]></title>
-      <link>https://www.technologyreview.com/2026/02/09/1132537/a-lesson-from-pokemon/</link>
-      <description><![CDATA[Moltbook, an online platform where AI agents interact, was compared to Pokémon due to its dynamic and evolving nature.]]></description>
-      <category>Tools</category>
-      <pubDate>Mon, 09 Feb 2026 17:02:56 +0000</pubDate>
-      <author>James O'Donnell</author>
-    </item>
-    <item>
-      <title><![CDATA[How and When the Memory Chip Shortage Will End]]></title>
-      <link>https://spectrum.ieee.org/dram-shortage</link>
-      <description><![CDATA[The shortage in computer memory, particularly DRAM used for AI accelerators, is driving up prices and affecting other markets.]]></description>
+      <title><![CDATA[Beyond rate limits: scaling access to Codex and Sora]]></title>
+      <link>https://openai.com/index/beyond-rate-limits</link>
+      <description><![CDATA[The Beyond news is worth a closer look for teams making near-term tool or vendor calls (via OpenAI Blog).]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 10 Feb 2026 14:00:02 +0000</pubDate>
-      <author>Samuel K. Moore</author>
+      <pubDate>Fri, 13 Feb 2026 09:00:00 +0000</pubDate>
+      
     </item>
   </channel>
 </rss>

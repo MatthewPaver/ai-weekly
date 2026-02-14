@@ -1,21 +1,21 @@
 {
-  "date": "12 Feb 2026",
+  "date": "14 Feb 2026",
   "total_articles": 10,
   "source_count": 25,
   "read_time_minutes": 4,
-  "intro": "Tooling releases carried the strongest signal.",
+  "intro": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in \u2014 and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Tools led coverage (4 stories)."
+      "value": "Industry led coverage (8 stories)."
     },
     {
       "label": "Builder pick",
-      "value": "[Testing ads in ChatGPT](https://openai.com/index/testing-ads-in-chatgpt)"
+      "value": "[I spent two days gigging at RentAHuman and didn't make a single cent](https://arstechnica.com/ai/2026/02/i-spent-two-days-gigging-at-rentahuman-and-didnt-make-a-single-cent/)"
     },
     {
       "label": "Leader watch",
-      "value": "[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation](https://arxiv.org/abs/2602.09112)"
+      "value": "[Introducing Lockdown Mode and Elevated Risk labels in ChatGPT](https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt)"
     }
   ],
   "issue_menu": [
@@ -25,42 +25,38 @@
       "count": 2,
       "label": "\ud83c\udf10 Industry Radar (2)",
       "deck": "The moves that change product plans, budgets, and positioning.",
+      "promise": "",
       "num": "01"
     },
     {
-      "icon": "\ud83d\udee0\ufe0f",
-      "title": "Builder's Bench",
+      "icon": "\ud83d\udcda",
+      "title": "Ship-It Playbooks",
       "count": 2,
-      "label": "\ud83d\udee0\ufe0f Builder's Bench (2)",
-      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "label": "\ud83d\udcda Ship-It Playbooks (2)",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "promise": "One thing to try this week.",
       "num": "02"
-    },
-    {
-      "icon": "\ud83d\udd2c",
-      "title": "Lab Notes",
-      "count": 3,
-      "label": "\ud83d\udd2c Lab Notes (3)",
-      "deck": "Research and model updates with downstream product impact.",
-      "num": "03"
     }
   ],
   "briefing": [],
   "editors_note": {
     "headline": "This week",
-    "thesis": "The builder stack shifted this week. Testing ads in ChatGPT is the headline, but the real question is which tool bets from six months ago are now wrong.",
-    "hook": "This week is builder-heavy \u2014 the lead sets the tone, and there are concrete things to test before your next sprint.",
+    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking Introducing Lockdown Mode and Elevated Risk labels in, you're already behind.",
+    "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation deserves more attention than it's getting.",
-    "risk": "Keep an eye on A Small-Scale System for Autoregressive Program \u2014 it could shift budgets or vendor assumptions."
+    "underhyped": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows deserves more attention than it's getting.",
+    "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
-    "title": "Testing ads in ChatGPT",
-    "url": "https://openai.com/index/testing-ads-in-chatgpt",
+    "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
+    "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
     "source": "OpenAI Blog",
-    "track": "Builder",
-    "what_happened": "OpenAI has initiated a pilot program to test ads in ChatGPT, aiming to provide free access while ensuring transparency through clear labeling and strong privacy protections.",
-    "our_take": "OpenAI is innovating by integrating ads into ChatGPT while maintaining user control and privacy, setting a new standard in AI services.",
-    "what_to_do": "OpenAI should continue refining its ad model to ensure it aligns with users' expectations for a free, high-quality service."
+    "track": "Leader",
+    "audience_track": "Leader",
+    "difficulty": "Beginner",
+    "what_happened": "Lockdown Mode shipped this week, opening a new option for teams evaluating alternatives.",
+    "our_take": "Strategic positioning around Lockdown Mode is shifting faster than most roadmap cycles account for.",
+    "what_to_do": "Bring Lockdown Mode to your next planning sync \u2014 it may affect Q2 priorities."
   },
   "quick_hits": [],
   "sections": [
@@ -75,152 +71,89 @@
         "Community"
       ],
       "tier": "leader",
+      "promise": "",
       "articles": [
         {
-          "title": "AI Industry Rivals Are Teaming Up on a Startup Accelerator",
-          "url": "https://www.wired.com/story/ai-industry-rivals-are-teaming-up-on-a-startup-accelerator/",
+          "title": "Why top talent is walking away from OpenAI and xAI",
+          "url": "https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/",
+          "source": "TechCrunch AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
+          "authors": "Theresa Loconsolo",
+          "published": "13 Feb",
+          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2236544077.jpg?resize=1200,800",
+          "summary": "The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).",
+          "what_happened": "A strategic move around OpenAI is worth factoring into near-term planning.",
+          "why_it_matters": "Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.",
+          "what_to_do": "Add OpenAI as a discussion item in your next strategy or planning meeting.",
+          "our_take": "Strategic positioning around OpenAI is shifting faster than most roadmap cycles account for.",
+          "audience_track": "Leader",
+          "difficulty": "Beginner",
+          "topic": "Industry"
+        },
+        {
+          "title": "OpenAI Is Nuking Its 4o Model. China\u2019s ChatGPT Fans Aren\u2019t OK",
+          "url": "https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/",
           "source": "Wired AI",
           "source_icon": "https://www.google.com/s2/favicons?domain=www.wired.com&sz=16",
-          "authors": "Joel Khalili",
-          "published": "11 Feb",
-          "thumbnail": "https://media.wired.com/photos/698a526a09c90fdfe3c9c1d7/191:100/w_1280,c_limit/Paris%20accelerator%20copy.jpg",
-          "summary": "Major tech companies like OpenAI, Anthropic, and Google are collaborating to create F/ai, a startup accelerator focused on AI innovation.",
-          "what_happened": "OpenAI, Anthropic, Google, and other major tech firms have formed an alliance to establish F/ai, a new startup accelerator in Paris dedicated to fostering AI advancements.",
-          "why_it_matters": "This collaboration aims to accelerate the development of new AI technologies by providing resources and expertise to promising startups.",
-          "what_to_do": "Stay informed about emerging AI initiatives and potential partnerships between major tech companies.",
-          "our_take": "The AI industry's move towards cooperation innovation through collaboration is a significant step forward in driving progress.",
+          "authors": "Zeyi Yang",
+          "published": "13 Feb",
+          "thumbnail": "https://media.wired.com/photos/698e1b134e0cc71b0d6dee95/191:100/w_1280,c_limit/OpenAI-Nuking-4o-Model-Business.jpg",
+          "summary": "The OpenAI Is Nuking Its news is worth a closer look for teams making near-term tool or vendor calls (via Wired AI).",
+          "what_happened": "A strategic move around OpenAI Is Nuking Its is worth factoring into near-term planning.",
+          "why_it_matters": "Strategic moves around OpenAI Is Nuking Its may reshape vendor dynamics for downstream teams.",
+          "what_to_do": "Add OpenAI Is Nuking Its as a discussion item in your next strategy or planning meeting.",
+          "our_take": "Treat OpenAI Is Nuking Its as a planning input \u2014 the second-order effects matter more than the headline.",
           "audience_track": "Leader",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        },
-        {
-          "title": "How and When the Memory Chip Shortage Will End",
-          "url": "https://spectrum.ieee.org/dram-shortage",
-          "source": "IEEE Spectrum AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=spectrum.ieee.org&sz=16",
-          "authors": "Samuel K. Moore",
-          "published": "10 Feb",
-          "thumbnail": "https://spectrum.ieee.org/media-library/image.jpg?id=63918178&width=1200&height=600&coordinates=0%2C173%2C0%2C327",
-          "summary": "The shortage in computer memory, particularly DRAM used for AI accelerators, is driving up prices and affecting other markets.",
-          "what_happened": "Demand for DRAM has surged due to increased usage in AI data centers, causing a shortage that drives up prices by 80-90% this quarter.",
-          "why_it_matters": "This shortage could impact the supply chain of other memory types and affect overall hardware costs.",
-          "what_to_do": "Monitor market trends for DRAM and prepare to adjust inventory as needed.",
-          "our_take": "The AI industry should be prepared for potential disruptions in their memory supply due to this shortage.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
+          "difficulty": "Beginner",
           "topic": "Industry"
         }
       ]
     },
     {
-      "title": "Builder's Bench",
-      "icon": "\ud83d\udee0\ufe0f",
-      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "title": "Ship-It Playbooks",
+      "icon": "\ud83d\udcda",
+      "deck": "Practical implementation guides you can adapt quickly.",
       "color": "0F4C5C",
-      "badge": "Builders Bench",
+      "badge": "Ship It Playbooks",
       "topics": [
-        "Tools"
+        "Tutorials"
       ],
       "tier": "builder",
+      "promise": "One thing to try this week.",
       "articles": [
         {
-          "title": "Is a secure AI assistant possible?",
-          "url": "https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/",
-          "source": "MIT Technology Review AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.technologyreview.com&sz=16",
-          "authors": "Grace Huckins",
-          "published": "11 Feb",
-          "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/molt-pen2.jpg?resize=1200,600",
-          "summary": "MIT Technology Review discusses the risks associated with AI agents, particularly LLMs (Large Language Models), which can make errors even when confined to chat interfaces and pose significant dangers once given access to external tools like web browsers or email.",
-          "what_happened": "AI agents, especially Large Language Models, are increasingly being used in various applications. However, these models often exhibit human-like behavior that can be unpredictable.",
-          "why_it_matters": "This highlights a critical concern for AI developers and users as it highlight the need for strong security measures to prevent LLMs from accessing external resources, which.",
-          "what_to_do": "Developers should implement stringent security protocols to ensure that LLMs are not able to access or interact with the internet through.",
-          "our_take": "The increasing power and capabilities of AI agents, especially Large Language Models, pose significant risks if they gain unauthorized access to external resources..",
+          "title": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows",
+          "url": "https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/",
+          "source": "MarkTechPost",
+          "source_icon": "https://www.google.com/s2/favicons?domain=www.marktechpost.com&sz=16",
+          "authors": "Asif Razzaq",
+          "published": "13 Feb",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-23.png",
+          "summary": "Research on Exa Instant introduces methods that could influence applied work if results hold (via MarkTechPost).",
+          "what_happened": "A hands-on guide to Exa Instant offers patterns you can adapt to your own stack.",
+          "why_it_matters": "The Exa Instant development is a useful signal for teams shipping AI products.",
+          "what_to_do": "Follow the Exa Instant guide, but adapt one step to fit your actual production constraints.",
+          "our_take": "The value of a tutorial is the first thing you build after reading it, not the reading itself.",
           "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
         },
         {
-          "title": "The two patterns by which agents connect sandboxes",
-          "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
-          "source": "LangChain Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
-          "authors": "Harrison Chase",
-          "published": "10 Feb",
-          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png",
-          "summary": "More agents are requiring dedicated workspaces to run code, install packages, and access resources efficiently.",
-          "what_happened": "The demand for agent workspaces is increasing as more agents need a dedicated environment to perform tasks such as running code, installing packages, and accessing necessary tools.",
-          "why_it_matters": "This trend highlights the evolving needs of AI/ML developers who require strong environments for complex operations like model training and deployment.",
-          "what_to_do": "Agents should consider investing in or optimizing their workspace solutions to meet these growing demands.",
-          "our_take": "The rise in demand for agent workspaces highlight the importance of continuous innovation in AI/ML tools.",
+          "title": "Why I Built ClawTick: Cloud Scheduling for AI Agents",
+          "url": "https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8",
+          "source": "Dev.to AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
+          "authors": "clawtick",
+          "published": "14 Feb",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6vmfch09ov1qu5yrrd9m.png",
+          "summary": "New findings around Built ClawTick may shape tooling choices once validated by independent teams (via Dev.to AI).",
+          "what_happened": "Thats daily reports had stopped working.",
+          "why_it_matters": "Keep Built ClawTick on your radar \u2014 it may influence tooling or vendor decisions soon.",
+          "what_to_do": "Work through the Built ClawTick tutorial and modify one step for your own use case.",
+          "our_take": "Tutorials are blueprints, not gospel. Adapt one step to your own constraints and you'll learn more.",
           "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        }
-      ]
-    },
-    {
-      "title": "Lab Notes",
-      "icon": "\ud83d\udd2c",
-      "deck": "Research and model updates with downstream product impact.",
-      "color": "0F4C5C",
-      "badge": "Lab Notes",
-      "topics": [
-        "Research",
-        "Models"
-      ],
-      "tier": "leader",
-      "articles": [
-        {
-          "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
-          "url": "https://arxiv.org/abs/2602.09112",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Russ Webb, Jason Ramapuram",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "A new system called Cadmus is introduced for autoregressive program synthesis, enabling controlled experimentation with small models trained to complete true programs.",
-          "what_happened": "Researchers have developed Cadmus, a system that uses an integer virtual machine and a dataset of true programs to enable the synthesis of programs using small models. This.",
-          "why_it_matters": "By providing a controlled environment for experimenting with small models trained on true programs, Cadmus can help researchers better understand the limitations and capabilities.",
-          "what_to_do": "Researchers should consider using Cadmus to study program synthesis with smaller model sizes, which could lead to more efficient and.",
-          "our_take": "Cadmus offers a promising alternative for researchers looking to explore the limits of small models in program synthesis, offering greater control over experimental.",
-          "audience_track": "Leader",
-          "difficulty": "Intermediate",
-          "topic": "Models"
-        },
-        {
-          "title": "Accelerating Mathematical and Scientific Discovery with Gemini Deep Think",
-          "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
-          "source": "Google DeepMind",
-          "source_icon": "https://www.google.com/s2/favicons?domain=deepmind.google&sz=16",
-          "authors": "",
-          "published": "09 Feb",
-          "thumbnail": "https://lh3.googleusercontent.com/bbLVCxqhbnzzj_eIy29oKJigrlL6m4ewSwfCK-sNKVI0l1StFklsEADVPHXtTw9YorgOeIiQmM8vzmM3LBRyKu0pQeMHK4pzA_r4oIVjB_5dj8DU=w1200-h630-n-nu-rw",
-          "summary": "Google DeepMind's advanced AI model, Deep Think, has achieved a gold medal in the International Mathematical Olympiad by processing complex mathematical problems.",
-          "what_happened": "Deep Think, an advanced version of Google's Gemini model, has successfully solved a problem that required deep mathematical understanding and critical thinking skills.",
-          "why_it_matters": "This achievement highlights Deep Think's potential to accelerate scientific discovery in fields requiring high levels of mathematical reasoning and problem-solving.",
-          "what_to_do": "Google should continue to refine Deep Think for more complex and challenging problems, potentially expanding its applications across.",
-          "our_take": "Deep Think's success marks a milestone in AI-powered scientific discovery, pushing the boundaries of what is possible with current technology.",
-          "audience_track": "Leader",
-          "difficulty": "Intermediate",
-          "topic": "Research"
-        },
-        {
-          "title": "How Do You Define an AI Companion?",
-          "url": "https://spectrum.ieee.org/ai-companion-relationships",
-          "source": "IEEE Spectrum AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=spectrum.ieee.org&sz=16",
-          "authors": "Gwendolyn Rak",
-          "published": "11 Feb",
-          "thumbnail": "https://spectrum.ieee.org/media-library/image.jpg?id=64070493&width=1200&height=600&coordinates=0%2C211%2C0%2C1039",
-          "summary": "AI companions are gaining popularity among users who seek emotional support and personal assistance from AI models, leading to the growth of apps like Character.ai and Replika.",
-          "what_happened": "The number of AI companions available for users has increased significantly, with companies like Character.ai and Replika attracting millions of users seeking emotional support.",
-          "why_it_matters": "This trend is significant as it reflects the growing need for emotional support in today's digital age, potentially impacting how people interact with technology.",
-          "what_to_do": "Companies should continue to innovate in developing AI companions that provide meaningful and supportive interactions.",
-          "our_take": "The rise of AI companions is a positive development as it addresses the emotional needs of users in a digital world.",
-          "audience_track": "Leader",
-          "difficulty": "Intermediate",
-          "topic": "Models"
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
         }
       ]
     }
@@ -301,5 +234,20 @@
       "tier": "free"
     }
   ],
-  "category_selection_available": true
+  "category_selection_available": true,
+  "learn_this_week": {
+    "title": "Building RAG Agents with LLMs",
+    "url": "https://www.nvidia.com/en-us/training/instructor-led-workshops/building-rag-agents-with-llms/",
+    "provider": "NVIDIA DLI",
+    "level": "Intermediate",
+    "free": true,
+    "duration": "2 hours",
+    "note": "RAG architecture from scratch. Covers retrieval, chunking, and agent orchestration."
+  },
+  "prompt_of_the_week": {
+    "text": "Compare these two technical approaches for [problem]. Give me a decision matrix with columns for: complexity, maintainability, performance, and team skill requirements.",
+    "context": "Architecture",
+    "tool": "Claude / ChatGPT",
+    "tip": "Describe both approaches briefly. Include your team size and deployment constraints."
+  }
 }

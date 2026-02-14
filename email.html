@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
-  <title>Inference — 12 Feb 2026</title>
+  <title>Inference — 14 Feb 2026</title>
   <!--[if !mso]><!-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!--<![endif]-->
@@ -16,8 +16,14 @@
       <o:PixelsPerInch>96</o:PixelsPerInch>
     </o:OfficeDocumentSettings>
   </xml></noscript>
+  <style>
+    body, table, td, a, h1, h2, h3, p, span {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif !important;
+    }
+  </style>
   <![endif]-->
   <style>
+    /* Design tokens: brand #0F4C5C, #0F766E; accent #C2410C; bg #FAFAF9. See docs/DESIGN_AUDIT.md */
     /* Reset */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
@@ -61,10 +67,20 @@
       .badge-difficulty-advanced { background-color: #7f1d1d !important; color: #fca5a5 !important; border-color: #ef4444 !important; }
       .cta-btn { background-color: #0F766E !important; }
       .footer-bg { background-color: #0B1220 !important; }
+      .subscribe-cta { background-color: #1E293B !important; border-color: #334155 !important; }
     }
+
+    /* Outlook 365 dark mode */
+    [data-ogsc] .body-bg { background-color: #111827 !important; }
+    [data-ogsc] .card { background-color: #1E293B !important; border-color: #334155 !important; }
+    [data-ogsc] .lead-card { background-color: #1E293B !important; border-color: #334155 !important; }
+    [data-ogsc] .text-dark { color: #F1F5F9 !important; }
+    [data-ogsc] .text-body { color: #E2E8F0 !important; }
+    [data-ogsc] .text-dim { color: #94A3B8 !important; }
+    [data-ogsc] .cta-btn { background-color: #0F766E !important; }
   </style>
 </head>
-<body class="body-bg" style="margin: 0; padding: 0; background-color: #F8FAFB; width: 100%;">
+<body class="body-bg" style="margin: 0; padding: 0; background-color: #FAFAF9; width: 100%;">
 
 <!-- Top accent bar -->
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 3px; background: linear-gradient(90deg, #0F4C5C 0%, #0F766E 58%, #C2410C 100%);">
@@ -72,12 +88,12 @@
 </table>
 
 <!-- Preheader -->
-<div style="display: none; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #F8FAFB;">
-Testing ads in ChatGPT — 10 curated AI stories &middot; ~4 min read&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+<div style="display: none; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #FAFAF9;">
+Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes. — Introducing Lockdown Mode and Elevated Risk labels in ChatGPT — 10 curated AI stories &middot; ~4 min read&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
 </div>
 
 <!-- Outer wrapper -->
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="body-bg" style="background-color: #F8FAFB;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="body-bg" style="background-color: #FAFAF9;">
 <tr><td align="center" style="padding: 0;">
 
 <!-- ========== HEADER (compact, single row) ========== -->
@@ -99,14 +115,14 @@ Testing ads in ChatGPT — 10 curated AI stories &middot; ~4 min read&nbsp;&zwnj
         <td style="vertical-align: middle;">
           <span style="font-size: 18px; font-weight: 800; color: #FFFFFF; letter-spacing: 4px; text-transform: uppercase; line-height: 1;">INFERENCE</span>
           <br>
-          <span style="font-size: 11px; color: rgba(255,255,255,0.72); font-weight: 400;">The signal in the noise.</span>
+          <span style="font-size: 11px; color: rgba(255,255,255,0.72); font-weight: 400;">Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes.</span>
         </td>
       </tr>
       </table>
     </td>
     <td class="hero-meta" style="vertical-align: middle; text-align: right;">
       <span style="font-size: 11px; color: rgba(255,255,255,0.85);">
-#3 &middot; 12 Feb 2026 &middot; 10 stories &middot; ~4 min
+#4 &middot; 14 Feb 2026 &middot; 10 stories &middot; ~4 min
       </span>
     </td>
   </tr>
@@ -119,45 +135,35 @@ Testing ads in ChatGPT — 10 curated AI stories &middot; ~4 min read&nbsp;&zwnj
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrapper" style="max-width: 600px; margin: 0 auto;">
 
 <!-- Personalised greeting (Buttondown: subscriber.metadata.first_name with default so no dashboard config needed) -->
-<tr><td class="mobile-pad" style="padding: 16px 20px 4px;"><p style="margin: 0; font-size: 15px; color: #374151;">Hi {{ subscriber.metadata.first_name|default:"there" }},</p></td></tr>
+<tr><td class="mobile-pad" style="padding: 18px 20px 6px;"><p style="margin: 0; font-size: 15px; color: #374151;">Hi {{ subscriber.metadata.first_name|default:"there" }},</p></td></tr>
 
 <!-- In this issue: vertical TOC, one row per category (scannable like Smashing / Morning Brew) -->
-<tr><td class="mobile-pad" style="padding: 16px 20px 12px;">
+<tr><td class="mobile-pad" style="padding: 18px 20px 14px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0F4C5C;">
   <tr><td style="padding: 14px 18px 10px;">
     <p style="margin: 0 0 12px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.2px; text-transform: uppercase;">In this issue</p>
-    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-12.html#industry-radar" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #E2E8F0;">
+    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html#industry-radar" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #E2E8F0;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
       <tr>
-        <td style="width: 28px; vertical-align: top; padding-top: 1px;"><span style="font-size: 11px; font-weight: 700; color: #4B5563;">01</span></td>
-        <td style="vertical-align: top;">
+        <td style="width: 26px; vertical-align: top; padding-top: 2px;">
+          <span style="display: inline-block; width: 22px; height: 22px; border-radius: 11px; background-color: #E0F2FE; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; color: #0F4C5C;">2</span>
+        </td>
+        <td style="vertical-align: top; padding-left: 4px;">
           <span style="font-size: 14px; font-weight: 600; color: #111827;">🌐 Industry Radar</span>
-          <span style="font-size: 12px; color: #4B5563;"> &nbsp;&middot;&nbsp; 2 stories</span>
 <br><span style="font-size: 12px; color: #4B5563; line-height: 1.4;">The moves that change product plans, budgets, and positioning.</span>        </td>
         <td style="width: 24px; vertical-align: middle; text-align: right;"><span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
-    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-12.html#builders-bench" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #E2E8F0;">
+    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html#ship-it-playbooks" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; ">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
       <tr>
-        <td style="width: 28px; vertical-align: top; padding-top: 1px;"><span style="font-size: 11px; font-weight: 700; color: #4B5563;">02</span></td>
-        <td style="vertical-align: top;">
-          <span style="font-size: 14px; font-weight: 600; color: #111827;">🛠️ Builder&#39;s Bench</span>
-          <span style="font-size: 12px; color: #4B5563;"> &nbsp;&middot;&nbsp; 2 stories</span>
-<br><span style="font-size: 12px; color: #4B5563; line-height: 1.4;">New tooling worth evaluating in an actual workflow this week.</span>        </td>
-        <td style="width: 24px; vertical-align: middle; text-align: right;"><span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
-      </tr>
-      </table>
-    </a>
-    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-12.html#lab-notes" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; ">
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-      <tr>
-        <td style="width: 28px; vertical-align: top; padding-top: 1px;"><span style="font-size: 11px; font-weight: 700; color: #4B5563;">03</span></td>
-        <td style="vertical-align: top;">
-          <span style="font-size: 14px; font-weight: 600; color: #111827;">🔬 Lab Notes</span>
-          <span style="font-size: 12px; color: #4B5563;"> &nbsp;&middot;&nbsp; 3 stories</span>
-<br><span style="font-size: 12px; color: #4B5563; line-height: 1.4;">Research and model updates with downstream product impact.</span>        </td>
+        <td style="width: 26px; vertical-align: top; padding-top: 2px;">
+          <span style="display: inline-block; width: 22px; height: 22px; border-radius: 11px; background-color: #E0F2FE; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; color: #0F4C5C;">2</span>
+        </td>
+        <td style="vertical-align: top; padding-left: 4px;">
+          <span style="font-size: 14px; font-weight: 600; color: #111827;">📚 Ship-It Playbooks</span>
+<br><span style="font-size: 12px; color: #4B5563; line-height: 1.4;">Practical implementation guides you can adapt quickly.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">One thing to try this week.</span>        </td>
         <td style="width: 24px; vertical-align: middle; text-align: right;"><span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
@@ -166,30 +172,62 @@ Testing ads in ChatGPT — 10 curated AI stories &middot; ~4 min read&nbsp;&zwnj
   </table>
 </td></tr>
 
+<!-- ========== WEEKLY PULSE ========== -->
+<tr><td class="mobile-pad" style="padding: 20px 20px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0;">
+  <tr><td style="padding: 14px 18px 8px;">
+    <p style="margin: 0 0 10px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.2px; text-transform: uppercase;">Weekly Pulse</p>
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+      <td class="text-dim" style="padding: 5px 10px 5px 0; font-size: 12px; font-weight: 600; color: #4B5563; white-space: nowrap; vertical-align: top; width: 30%;">Dominant theme</td>
+      <td class="text-body" style="padding: 5px 0; font-size: 12px; color: #374151; line-height: 1.5;">Industry led coverage (8 stories).</td>
+    </tr>
+    <tr>
+      <td class="text-dim" style="padding: 5px 10px 5px 0; font-size: 12px; font-weight: 600; color: #4B5563; white-space: nowrap; vertical-align: top; width: 30%;">Builder pick</td>
+      <td class="text-body" style="padding: 5px 0; font-size: 12px; color: #374151; line-height: 1.5;"><a href="https://arstechnica.com/ai/2026/02/i-spent-two-days-gigging-at-rentahuman-and-didnt-make-a-single-cent/" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">I spent two days gigging at RentAHuman and didn't make a single cent</a></td>
+    </tr>
+    <tr>
+      <td class="text-dim" style="padding: 5px 10px 5px 0; font-size: 12px; font-weight: 600; color: #4B5563; white-space: nowrap; vertical-align: top; width: 30%;">Leader watch</td>
+      <td class="text-body" style="padding: 5px 0; font-size: 12px; color: #374151; line-height: 1.5;"><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></td>
+    </tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
 <!-- ========== LEAD STORY ========== -->
-<tr><td class="mobile-pad" style="padding: 16px 20px 0;">
+<tr><td class="mobile-pad" style="padding: 20px 20px 0;">
   <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">TOP STORY</p>
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="lead-card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="lead-card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E2E8F0; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="text-decoration: none;">
+          <img src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" width="600" class="card-img" style="width: 100%; max-width: 600px; height: 200px; object-fit: cover; display: block;">
+        </a>
+      </td>
+    </tr>
     <tr>
       <td style="padding: 18px 22px 0;">
-        <span class="text-faint" style="font-size: 11px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=openai.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">OpenAI Blog &middot; 09 Feb</span>
-        <a href="https://openai.com/index/testing-ads-in-chatgpt" style="text-decoration: none;">
+        <span class="text-faint" style="font-size: 11px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=openai.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">OpenAI Blog &middot; 13 Feb</span>
+        <span class="badge-d badge-difficulty-beginner" style="display: inline-block; margin-left: 6px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
+        <span style="display: inline-block; margin-left: 4px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #e0f2fe; color: #0c4a6e; border: 1px solid #bae6fd;">Leader</span>
+        <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="text-decoration: none;">
           <h2 class="lead-title text-dark" style="margin: 8px 0 12px; font-size: 22px; font-weight: 700; color: #111827; line-height: 1.3;">
-            Testing ads in ChatGPT
+            Introducing Lockdown Mode and Elevated Risk labels in ChatGPT
           </h2>
         </a>
       </td>
     </tr>
     <tr>
       <td style="padding: 0 22px;">
-        <p class="text-body" style="margin: 0 0 12px; font-size: 15px; line-height: 1.65; color: #374151;">
-OpenAI has initiated a pilot program to test ads in ChatGPT, aiming to provide free access while ensuring transparency through clear labeling and strong privacy protections. This move aims to balance revenue generation with user experience by offering ad-supported features within the AI platform&#39;s core functionality.
+        <p class="text-body" style="margin: 0 0 12px; font-size: 16px; line-height: 1.6; color: #374151;">
+<strong style="color: #111827;">Lockdown Mode shipped this week, opening a new option for teams evaluating alternatives.</strong> Teams evaluating alternatives now have Lockdown Mode as a concrete option to benchmark against.
         </p>
         <p class="action-c" style="margin: 0 0 8px; font-size: 14px; color: #0F4C5C; line-height: 1.55;">
-          <strong>Action:</strong> OpenAI should continue refining its ad model to ensure it aligns with users&#39; expectations for a free, high-quality service.
+          <strong>Action:</strong> Bring Lockdown Mode to your next planning sync — it may affect Q2 priorities.
         </p>
         <p class="take-c" style="margin: 0; font-size: 13px; color: #4B5563; font-style: italic; line-height: 1.5;">
-          OpenAI is innovating by integrating ads into ChatGPT while maintaining user control and privacy, setting a new standard in AI services.
+          Strategic positioning around Lockdown Mode is shifting faster than most roadmap cycles account for.
         </p>
       </td>
     </tr>
@@ -197,8 +235,8 @@ OpenAI has initiated a pilot program to test ads in ChatGPT, aiming to provide f
       <td style="padding: 16px 22px 20px;">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="cta-btn" style="border-radius: 8px; background-color: #0F4C5C;">
-            <a href="https://openai.com/index/testing-ads-in-chatgpt" style="display: inline-block; padding: 10px 22px; font-size: 13px; font-weight: 600; color: #FFFFFF; text-decoration: none; border-radius: 8px;">
+          <td class="cta-btn" style="border-radius: 10px; background-color: #0F4C5C;">
+            <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="display: inline-block; padding: 13px 28px; font-size: 14px; font-weight: 700; color: #FFFFFF; text-decoration: none; border-radius: 10px; letter-spacing: 0.3px;">
               Read full story &#x2192;
             </a>
           </td>
@@ -209,319 +247,252 @@ OpenAI has initiated a pilot program to test ads in ChatGPT, aiming to provide f
   </table>
 </td></tr>
 
+<!-- ========== FAST SIGNALS (Quick Hits) ========== -->
+
+<!-- ========== LEARN THIS WEEK ========== -->
+<tr><td class="mobile-pad" style="padding: 16px 20px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #7C3AED;">
+  <tr><td style="padding: 14px 18px;">
+    <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #7C3AED; letter-spacing: 1.2px; text-transform: uppercase;">Learn This Week</p>
+    <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/" style="font-weight: 700; font-size: 15px; color: #0F4C5C; text-decoration: none; line-height: 1.35;">LangChain for LLM Application Development</a>
+    <p style="margin: 6px 0 0; font-size: 12px; color: #6B7280;">
+      <span style="font-weight: 600; color: #374151;">DeepLearning.AI</span>
+      <span style="display: inline-block; margin-left: 6px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E;">Intermediate</span>
+<span style="display: inline-block; margin-left: 4px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #E0F2FE; color: #0C4A6E;">Free</span>&nbsp;&middot;&nbsp;1 hour    </p>
+    <p style="margin: 8px 0 0; font-size: 13px; color: #4B5563; line-height: 1.5;">Build LLM-powered apps with chains, memory, and agents. Practical and concise.</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ========== PROMPT OF THE WEEK ========== -->
+<tr><td class="mobile-pad" style="padding: 16px 20px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0891B2;">
+  <tr><td style="padding: 14px 18px;">
+    <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #0891B2; letter-spacing: 1.2px; text-transform: uppercase;">Prompt of the Week</p>
+    <p style="margin: 0 0 8px; padding: 10px 14px; background-color: #F0FDFA; border-radius: 8px; font-size: 14px; font-style: italic; color: #1F2937; line-height: 1.5;">"I&#39;m building a [type] application. List the top 5 security risks specific to this architecture and how to mitigate each one."</p>
+    <p style="margin: 0 0 4px; font-size: 12px; color: #6B7280;">
+      <span style="font-weight: 600; color: #0891B2;">Security</span>
+      &nbsp;&middot;&nbsp;Claude / ChatGPT
+    </p>
+    <p style="margin: 4px 0 0; font-size: 11px; color: #9CA3AF; font-style: italic;">Tip: Be specific about your stack (e.g., &#39;RAG app with vector DB and public API&#39;).</p>
+  </td></tr>
+  </table>
+</td></tr>
+
 <!-- ========== THIS WEEK (one-line editorial; competitors use top summary, not a long block) ========== -->
 <tr><td class="mobile-pad" style="padding: 20px 20px 0;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 4px solid #0F4C5C;">
     <tr><td style="padding: 16px 18px;">
       <p style="margin: 0 0 6px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">This week</p>
-      <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #1F2937; font-style: italic;">The builder stack shifted this week. Testing ads in ChatGPT is the headline, but the real question is which tool bets from six months ago are now wrong.</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #1F2937; font-style: italic;">This week&#39;s signal is clear: business model decisions are moving faster than product roadmaps. If you&#39;re not tracking Introducing Lockdown Mode and Elevated Risk labels in, you&#39;re already behind.</p>
     </td></tr>
   </table>
 </td></tr>
 
 <!-- ========== SECTIONS ========== -->
 
-<tr><td id="industry-radar" class="mobile-pad" style="padding: 28px 20px 12px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
-    🌐&ensp;Industry Radar
-  </span>
-  <div style="width: 32px; height: 2px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 4px 0 0; font-size: 12px; color: #4B5563; line-height: 1.4;">The moves that change product plans, budgets, and positioning.</p>
+<!-- Section divider -->
+<tr><td style="padding: 20px 20px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="50%" style="margin: 0 auto;">
+    <tr><td style="border-top: 1px solid #D1D5DB; height: 1px; font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+  </table>
 </td></tr>
 
-<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
+<tr><td id="industry-radar" class="mobile-pad" style="padding: 20px 20px 14px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="width: 30px; height: 30px; border-radius: 8px; background-color: #0F4C5C; text-align: center; vertical-align: middle; padding: 0;">
+      <span style="font-size: 13px; font-weight: 700; color: #FFFFFF; line-height: 30px;">1</span>
+    </td>
+    <td style="padding-left: 10px; vertical-align: middle;">
+      <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
+        🌐&ensp;Industry Radar
+      </span>
+    </td>
+  </tr>
+  </table>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #4B5563; line-height: 1.5;">The moves that change product plans, budgets, and positioning.</p>
+</td></tr>
+
+<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E5E7EB; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://www.wired.com/story/ai-industry-rivals-are-teaming-up-on-a-startup-accelerator/" style="text-decoration: none;">
-          <img src="https://media.wired.com/photos/698a526a09c90fdfe3c9c1d7/191:100/w_1280,c_limit/Paris%20accelerator%20copy.jpg" alt="AI Industry Rivals Are Teaming Up on a Startup Accelerator" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
+        <a href="https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/" style="text-decoration: none;">
+          <img src="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2236544077.jpg?resize=1200,800" alt="Why top talent is walking away from OpenAI and xAI" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 14px 18px;">
-        <!-- Meta: difficulty badge + source -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
+      <td style="padding: 16px 20px;">
+        <!-- Meta: source first (credibility), badges right -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
-          <td style="padding-right: 8px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
+          <td style="vertical-align: middle;">
+            <span class="text-faint" style="font-size: 11px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=techcrunch.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px; border-radius: 3px;">TechCrunch AI &middot; 13 Feb</span>
           </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=www.wired.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">Wired AI &middot; 11 Feb</span>
-          </td>
+          <td style="text-align: right; vertical-align: middle;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
+<span style="display: inline-block; margin-left: 4px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #e0f2fe; color: #0c4a6e; border: 1px solid #bae6fd;">Leader</span>          </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://www.wired.com/story/ai-industry-rivals-are-teaming-up-on-a-startup-accelerator/" style="text-decoration: none;">
+        <a href="https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            AI Industry Rivals Are Teaming Up on a Startup Accelerator
+            Why top talent is walking away from OpenAI and xAI
           </h3>
         </a>
-        <!-- Summary -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-OpenAI, Anthropic, Google, and other major tech firms have formed an alliance to establish F/ai, a new startup accelerator in Paris dedicated to fostering AI advancements. This collaboration aims to accelerate the development of new AI technologies by providing resources and expertise to promising startups.
+        <!-- Summary: bold-first-sentence (TLDR pattern) -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4B5563;">
+<strong style="color: #374151;">A strategic move around OpenAI is worth factoring into near-term planning.</strong> Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.
         </p>
         <!-- Action -->
-        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Stay informed about emerging AI initiatives and potential partnerships between major tech companies.
+        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Add OpenAI as a discussion item in your next strategy or planning meeting.
         </p>
       </td>
     </tr>
   </table>
 </td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
+<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E5E7EB; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://spectrum.ieee.org/dram-shortage" style="text-decoration: none;">
-          <img src="https://spectrum.ieee.org/media-library/image.jpg?id=63918178&amp;width=1200&amp;height=600&amp;coordinates=0%2C173%2C0%2C327" alt="How and When the Memory Chip Shortage Will End" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
+        <a href="https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/" style="text-decoration: none;">
+          <img src="https://media.wired.com/photos/698e1b134e0cc71b0d6dee95/191:100/w_1280,c_limit/OpenAI-Nuking-4o-Model-Business.jpg" alt="OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 14px 18px;">
-        <!-- Meta: difficulty badge + source -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
+      <td style="padding: 16px 20px;">
+        <!-- Meta: source first (credibility), badges right -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
-          <td style="padding-right: 8px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
+          <td style="vertical-align: middle;">
+            <span class="text-faint" style="font-size: 11px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=www.wired.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px; border-radius: 3px;">Wired AI &middot; 13 Feb</span>
           </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=spectrum.ieee.org&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">IEEE Spectrum AI &middot; 10 Feb</span>
-          </td>
+          <td style="text-align: right; vertical-align: middle;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
+<span style="display: inline-block; margin-left: 4px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #e0f2fe; color: #0c4a6e; border: 1px solid #bae6fd;">Leader</span>          </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://spectrum.ieee.org/dram-shortage" style="text-decoration: none;">
+        <a href="https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            How and When the Memory Chip Shortage Will End
+            OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK
           </h3>
         </a>
-        <!-- Summary -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-Demand for DRAM has surged due to increased usage in AI data centers, causing a shortage that drives up prices by 80-90% this quarter. This shortage could impact the supply chain of other memory types and affect overall hardware costs.
+        <!-- Summary: bold-first-sentence (TLDR pattern) -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4B5563;">
+<strong style="color: #374151;">A strategic move around OpenAI Is Nuking Its is worth factoring into near-term planning.</strong> Strategic moves around OpenAI Is Nuking Its may reshape vendor dynamics for downstream teams.
         </p>
         <!-- Action -->
-        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Monitor market trends for DRAM and prepare to adjust inventory as needed.
-        </p>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-
-<tr><td id="builders-bench" class="mobile-pad" style="padding: 28px 20px 12px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
-    🛠️&ensp;Builder&#39;s Bench
-  </span>
-  <div style="width: 32px; height: 2px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 4px 0 0; font-size: 12px; color: #4B5563; line-height: 1.4;">New tooling worth evaluating in an actual workflow this week.</p>
-</td></tr>
-
-<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/" style="text-decoration: none;">
-          <img src="https://wp.technologyreview.com/wp-content/uploads/2026/02/molt-pen2.jpg?resize=1200,600" alt="Is a secure AI assistant possible?" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 14px 18px;">
-        <!-- Meta: difficulty badge + source -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
-        <tr>
-          <td style="padding-right: 8px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=www.technologyreview.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">MIT Technology Review AI &middot; 11 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            Is a secure AI assistant possible?
-          </h3>
-        </a>
-        <!-- Summary -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-AI agents, especially Large Language Models, are increasingly being used in various applications. However, these models often exhibit human-like behavior that can be unpredictable. This highlights a critical concern for AI developers and users as it highlight the need for strong security measures to prevent LLMs from accessing external resources, which.
-        </p>
-        <!-- Action -->
-        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Developers should implement stringent security protocols to ensure that LLMs are not able to access or interact with the internet through.
-        </p>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" style="text-decoration: none;">
-          <img src="https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png" alt="The two patterns by which agents connect sandboxes" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 14px 18px;">
-        <!-- Meta: difficulty badge + source -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
-        <tr>
-          <td style="padding-right: 8px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=blog.langchain.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">LangChain Blog &middot; 10 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            The two patterns by which agents connect sandboxes
-          </h3>
-        </a>
-        <!-- Summary -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-The demand for agent workspaces is increasing as more agents need a dedicated environment to perform tasks such as running code, installing packages, and accessing necessary tools. This trend highlights the evolving needs of AI/ML developers who require strong environments for complex operations like model training and deployment.
-        </p>
-        <!-- Action -->
-        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Agents should consider investing in or optimizing their workspace solutions to meet these growing demands.
+        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Add OpenAI Is Nuking Its as a discussion item in your next strategy or planning meeting.
         </p>
       </td>
     </tr>
   </table>
 </td></tr>
 
-<tr><td id="lab-notes" class="mobile-pad" style="padding: 28px 20px 12px;">
-  <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
-    🔬&ensp;Lab Notes
-  </span>
-  <div style="width: 32px; height: 2px; background-color: #0F4C5C; border-radius: 2px; margin-top: 6px;"></div>
-  <p class="text-dim" style="margin: 4px 0 0; font-size: 12px; color: #4B5563; line-height: 1.4;">Research and model updates with downstream product impact.</p>
+<!-- Section divider -->
+<tr><td style="padding: 20px 20px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="50%" style="margin: 0 auto;">
+    <tr><td style="border-top: 1px solid #D1D5DB; height: 1px; font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+  </table>
 </td></tr>
 
-<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
+<tr><td id="ship-it-playbooks" class="mobile-pad" style="padding: 20px 20px 14px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="width: 30px; height: 30px; border-radius: 8px; background-color: #0F4C5C; text-align: center; vertical-align: middle; padding: 0;">
+      <span style="font-size: 13px; font-weight: 700; color: #FFFFFF; line-height: 30px;">2</span>
+    </td>
+    <td style="padding-left: 10px; vertical-align: middle;">
+      <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
+        📚&ensp;Ship-It Playbooks
+      </span>
+    </td>
+  </tr>
+  </table>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #4B5563; line-height: 1.5;">Practical implementation guides you can adapt quickly. <span style="font-style: italic; color: #0F766E; font-weight: 600;">One thing to try this week.</span></p>
+</td></tr>
+
+<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E5E7EB; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://arxiv.org/abs/2602.09112" style="text-decoration: none;">
-          <img src="https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png" alt="A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
+        <a href="https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/" style="text-decoration: none;">
+          <img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-23.png" alt="Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 14px 18px;">
-        <!-- Meta: difficulty badge + source -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
+      <td style="padding: 16px 20px;">
+        <!-- Meta: source first (credibility), badges right -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
-          <td style="padding-right: 8px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
+          <td style="vertical-align: middle;">
+            <span class="text-faint" style="font-size: 11px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=www.marktechpost.com&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px; border-radius: 3px;">MarkTechPost &middot; 13 Feb</span>
           </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">arXiv CS.AI &middot; 11 Feb</span>
-          </td>
+          <td style="text-align: right; vertical-align: middle;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
+<span style="display: inline-block; margin-left: 4px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #e0f2fe; color: #0c4a6e; border: 1px solid #bae6fd;">Builder</span>          </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://arxiv.org/abs/2602.09112" style="text-decoration: none;">
+        <a href="https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation
+            Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows
           </h3>
         </a>
-        <!-- Summary -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-Researchers have developed Cadmus, a system that uses an integer virtual machine and a dataset of true programs to enable the synthesis of programs using small models. This. By providing a controlled environment for experimenting with small models trained on true programs, Cadmus can help researchers better understand the limitations and capabilities.
+        <!-- Summary: bold-first-sentence (TLDR pattern) -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4B5563;">
+<strong style="color: #374151;">A hands-on guide to Exa Instant offers patterns you can adapt to your own stack.</strong> The Exa Instant development is a useful signal for teams shipping AI products.
         </p>
         <!-- Action -->
-        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Researchers should consider using Cadmus to study program synthesis with smaller model sizes, which could lead to more efficient and.
+        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Follow the Exa Instant guide, but adapt one step to fit your actual production constraints.
         </p>
       </td>
     </tr>
   </table>
 </td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
+<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 12px; border: 1px solid #E5E7EB; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" style="text-decoration: none;">
-          <img src="https://lh3.googleusercontent.com/bbLVCxqhbnzzj_eIy29oKJigrlL6m4ewSwfCK-sNKVI0l1StFklsEADVPHXtTw9YorgOeIiQmM8vzmM3LBRyKu0pQeMHK4pzA_r4oIVjB_5dj8DU=w1200-h630-n-nu-rw" alt="Accelerating Mathematical and Scientific Discovery with Gemini Deep Think" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
+        <a href="https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8" style="text-decoration: none;">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6vmfch09ov1qu5yrrd9m.png" alt="Why I Built ClawTick: Cloud Scheduling for AI Agents" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
         </a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 14px 18px;">
-        <!-- Meta: difficulty badge + source -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
+      <td style="padding: 16px 20px;">
+        <!-- Meta: source first (credibility), badges right -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
-          <td style="padding-right: 8px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
+          <td style="vertical-align: middle;">
+            <span class="text-faint" style="font-size: 11px; color: #6B7280;"><img src="https://www.google.com/s2/favicons?domain=dev.to&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px; border-radius: 3px;">Dev.to AI &middot; 14 Feb</span>
           </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=deepmind.google&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">Google DeepMind &middot; 09 Feb</span>
-          </td>
+          <td style="text-align: right; vertical-align: middle;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
+<span style="display: inline-block; margin-left: 4px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #e0f2fe; color: #0c4a6e; border: 1px solid #bae6fd;">Builder</span>          </td>
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" style="text-decoration: none;">
+        <a href="https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            Accelerating Mathematical and Scientific Discovery with Gemini Deep Think
+            Why I Built ClawTick: Cloud Scheduling for AI Agents
           </h3>
         </a>
-        <!-- Summary -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-Deep Think, an advanced version of Google&#39;s Gemini model, has successfully solved a problem that required deep mathematical understanding and critical thinking skills. This achievement highlights Deep Think&#39;s potential to accelerate scientific discovery in fields requiring high levels of mathematical reasoning and problem-solving.
+        <!-- Summary: bold-first-sentence (TLDR pattern) -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4B5563;">
+<strong style="color: #374151;">Thats daily reports had stopped working.</strong> Keep Built ClawTick on your radar — it may influence tooling or vendor decisions soon.
         </p>
         <!-- Action -->
-        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Google should continue to refine Deep Think for more complex and challenging problems, potentially expanding its applications across.
-        </p>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 8px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0; border-left: 3px solid #0F4C5C; overflow: hidden;">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://spectrum.ieee.org/ai-companion-relationships" style="text-decoration: none;">
-          <img src="https://spectrum.ieee.org/media-library/image.jpg?id=64070493&amp;width=1200&amp;height=600&amp;coordinates=0%2C211%2C0%2C1039" alt="How Do You Define an AI Companion?" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 140px; object-fit: cover; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 14px 18px;">
-        <!-- Meta: difficulty badge + source -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 6px;">
-        <tr>
-          <td style="padding-right: 8px;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
-          </td>
-          <td>
-            <span class="text-faint" style="font-size: 10px; color: #4B5563;"><img src="https://www.google.com/s2/favicons?domain=spectrum.ieee.org&amp;sz=16" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px;">IEEE Spectrum AI &middot; 11 Feb</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://spectrum.ieee.org/ai-companion-relationships" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #111827; line-height: 1.35;">
-            How Do You Define an AI Companion?
-          </h3>
-        </a>
-        <!-- Summary -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 14px; line-height: 1.6; color: #4B5563;">
-The number of AI companions available for users has increased significantly, with companies like Character.ai and Replika attracting millions of users seeking emotional support. This trend is significant as it reflects the growing need for emotional support in today&#39;s digital age, potentially impacting how people interact with technology.
-        </p>
-        <!-- Action -->
-        <p class="action-c" style="margin: 0; font-size: 13px; color: #0F4C5C; line-height: 1.5;">
-          <strong>&#x25B8;</strong> Companies should continue to innovate in developing AI companions that provide meaningful and supportive interactions.
+        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
+          <strong>&#x25B8;</strong> Work through the Built ClawTick tutorial and modify one step for your own use case.
         </p>
       </td>
     </tr>
@@ -537,25 +508,32 @@ The number of AI companions available for users has increased significantly, wit
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 20px;">
       <tr>
         <td style="padding-right: 8px;">
-          <a href="mailto:inference.feedback@gmail.com?subject=Feedback%3A%2012 Feb 2026%20-%20Yes" style="display: inline-block; padding: 8px 20px; font-size: 13px; font-weight: 600; color: #166534; background-color: #DCFCE7; border: 1px solid #bbf7d0; border-radius: 8px; text-decoration: none;">Yes</a>
+          <a href="mailto:inference.feedback@gmail.com?subject=Feedback%3A%2014 Feb 2026%20-%20Yes" style="display: inline-block; padding: 8px 20px; font-size: 13px; font-weight: 600; color: #166534; background-color: #DCFCE7; border: 1px solid #bbf7d0; border-radius: 8px; text-decoration: none;">Yes</a>
         </td>
         <td>
-          <a href="mailto:inference.feedback@gmail.com?subject=Feedback%3A%2012 Feb 2026%20-%20No" style="display: inline-block; padding: 8px 20px; font-size: 13px; font-weight: 600; color: #991B1B; background-color: #FEE2E2; border: 1px solid #fecaca; border-radius: 8px; text-decoration: none;">Not really</a>
+          <a href="mailto:inference.feedback@gmail.com?subject=Feedback%3A%2014 Feb 2026%20-%20No" style="display: inline-block; padding: 8px 20px; font-size: 13px; font-weight: 600; color: #991B1B; background-color: #FEE2E2; border: 1px solid #fecaca; border-radius: 8px; text-decoration: none;">Not really</a>
         </td>
       </tr>
       </table>
       <!-- Read in browser (and optional like/feedback forms) -->
       <p style="margin: 0 0 16px; font-size: 12px; color: #4B5563; line-height: 1.6;">
-        <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-12.html" style="display: inline-block; padding: 9px 18px; background-color: #0F4C5C; color: #FFFFFF !important; text-decoration: none; font-weight: 600; border-radius: 8px; font-size: 13px;">Read in browser</a>
+        <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html" style="display: inline-block; padding: 12px 24px; background-color: #0F4C5C; color: #FFFFFF !important; text-decoration: none; font-weight: 700; border-radius: 10px; font-size: 14px; letter-spacing: 0.3px;">Read in browser &#x2192;</a>
       </p>
       <p style="margin: 0 0 16px; font-size: 11px; color: #4B5563;">Like an article or give detailed feedback? Open the link above — the web version has a short feedback form at the bottom.</p>
       <!-- Share -->
       <p style="margin: 0 0 14px; font-size: 12px; line-height: 1.6; color: #4B5563;">
         Share: &nbsp;
-        <a href="mailto:?subject=Inference%20%E2%80%94%2012%20Feb%202026&body=Read%20this%20week%27s%20AI%20briefing%3A%20https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-12.html" style="color: #0F4C5C; text-decoration: none;">Forward</a> &nbsp;&middot;&nbsp;
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-12.html&text=Inference%20%E2%80%94%2012 Feb 2026%20AI%20briefing" style="color: #0F4C5C; text-decoration: none;">X</a> &nbsp;&middot;&nbsp;
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-12.html" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
+        <a href="mailto:?subject=Inference%20%E2%80%94%2014%20Feb%202026&body=Read%20this%20week%27s%20AI%20briefing%3A%20https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-14.html" style="color: #0F4C5C; text-decoration: none;">Forward</a> &nbsp;&middot;&nbsp;
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-14.html&text=Inference%20%E2%80%94%2014 Feb 2026%20AI%20briefing" style="color: #0F4C5C; text-decoration: none;">X</a> &nbsp;&middot;&nbsp;
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-14.html" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
       </p>
+      <!-- Subscribe CTA (brand promise, who reads, social proof, testimonial) -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 16px; background-color: #F0FDFA; border-radius: 10px; border: 1px solid #CCFBF1;">
+      <tr><td style="padding: 16px 18px; text-align: center;">
+        <p style="margin: 0 0 8px; font-size: 14px; font-weight: 600; color: #0F4C5C;">Get Inference Weekly</p>
+        <p style="margin: 0 0 10px; font-size: 12px; color: #374151;">Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes.</p>
+<p style="margin: 0 0 6px; font-size: 11px; color: #4B5563;">Builders, product leads, and researchers who ship AI products.</p>      </td></tr>
+      </table>
       <!-- Links -->
       <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #4B5563; line-height: 1.6;">
         Curated from 25+ sources &nbsp;&middot;&nbsp;
@@ -569,7 +547,7 @@ The number of AI companions available for users has increased significantly, wit
       <!-- Unsubscribe & legal -->
       <p class="text-faint" style="margin: 14px 0 0; font-size: 10px; color: #94A3B8; line-height: 1.5;">
         You're receiving this because you subscribed at matthewpaver.github.io/ai-weekly<br>
-        <a href="mailto:inference.feedback@gmail.com?subject=Unsubscribe%2012 Feb 2026" style="color: #94A3B8; text-decoration: underline;">Unsubscribe</a>
+        <a href="mailto:inference.feedback@gmail.com?subject=Unsubscribe%2014 Feb 2026" style="color: #94A3B8; text-decoration: underline;">Unsubscribe</a>
       </p>
     </td></tr>
   </table>
