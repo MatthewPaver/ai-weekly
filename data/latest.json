@@ -3,7 +3,7 @@
   "total_articles": 14,
   "source_count": 28,
   "read_time_minutes": 5,
-  "intro": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in \u2014 and what it means for your roadmap.",
+  "intro": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT \u2014 and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
@@ -38,6 +38,16 @@
       "deck": "Repos with momentum that might deserve a deeper look.",
       "promise": "Repos with momentum.",
       "num": "02"
+    },
+    {
+      "icon": "\ud83d\udcda",
+      "title": "Ship-It Playbooks",
+      "count": 3,
+      "read_time_minutes": 1,
+      "label": "\ud83d\udcda Ship-It Playbooks (3)",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "promise": "One thing to try this week.",
+      "num": "03"
     }
   ],
   "briefing": [
@@ -51,12 +61,6 @@
       "title": "ClawRouter",
       "url": "https://github.com/BlockRunAI/ClawRouter",
       "note": "Growing traction for ClawRouter on GitHub suggests rising builder interest. Why it matters: Community interest in ClawRouter is growing \u2014 check repo health before committing.",
-      "track": "Builder"
-    },
-    {
-      "title": "A timeline of claims about AI/LLMs",
-      "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
-      "note": "LLMs is now available for testing \u2014 compare against your current baseline. Why it matters: LLMs changes the cost-quality tradeoff landscape \u2014 benchmark before committing.",
       "track": "Builder"
     }
   ],
@@ -90,12 +94,6 @@
       "title": "ClawRouter",
       "url": "https://github.com/BlockRunAI/ClawRouter",
       "note": "Growing traction for ClawRouter on GitHub suggests rising builder interest. Why it matters: Community interest in ClawRouter is growing \u2014 check repo health before committing.",
-      "track": "Builder"
-    },
-    {
-      "title": "A timeline of claims about AI/LLMs",
-      "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
-      "note": "LLMs is now available for testing \u2014 compare against your current baseline. Why it matters: LLMs changes the cost-quality tradeoff landscape \u2014 benchmark before committing.",
       "track": "Builder"
     }
   ],
@@ -147,11 +145,11 @@
           "title": "ClawRouter",
           "url": "https://github.com/BlockRunAI/ClawRouter",
           "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
           "authors": "BlockRunAI",
           "published": "14 Feb",
           "thumbnail": "https://avatars.githubusercontent.com/u/250889376?v=4",
-          "summary": "The agent-native LLM router powering OpenClaw \u2014 by BlockRun. Currently at 2,421 stars with ~242 stars/day growth.",
+          "summary": "The agent-native LLM router powering OpenClaw \u2014 by BlockRun. Currently at 2,429 stars with ~221 stars/day growth.",
           "what_happened": "Growing traction for ClawRouter on GitHub suggests rising builder interest.",
           "why_it_matters": "Community interest in ClawRouter is growing \u2014 check repo health before committing.",
           "what_to_do": "Check ClawRouter for recent activity, open issues, and license compatibility this week.",
@@ -159,6 +157,71 @@
           "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Repos"
+        }
+      ]
+    },
+    {
+      "title": "Ship-It Playbooks",
+      "icon": "\ud83d\udcda",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "color": "0F4C5C",
+      "badge": "Ship It Playbooks",
+      "topics": [
+        "Tutorials"
+      ],
+      "tier": "builder",
+      "promise": "One thing to try this week.",
+      "articles": [
+        {
+          "title": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows",
+          "url": "https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/",
+          "source": "MarkTechPost",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
+          "authors": "Asif Razzaq",
+          "published": "13 Feb",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-23.png",
+          "summary": "Research on Exa Instant introduces methods that could influence applied work if results hold (via MarkTechPost).",
+          "what_happened": "New tutorial content on Exa Instant walks through a practical implementation.",
+          "why_it_matters": "The Exa Instant development is a useful signal for teams shipping AI products.",
+          "what_to_do": "Follow the Exa Instant guide, but adapt one step to fit your actual production constraints.",
+          "our_take": "The value of a tutorial is the first thing you build after reading it, not the reading itself.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
+        },
+        {
+          "title": "Lost in the Middle: Why Bigger Context Windows Don\u2019t Always Improve LLM Performance",
+          "url": "https://dev.to/razu381/lost-in-the-middle-why-bigger-context-windows-dont-always-improve-llm-performance-35j8",
+          "source": "Dev.to AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
+          "authors": "razu381",
+          "published": "14 Feb",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhzkx4vwkxolakcwotg2w.png",
+          "summary": "Keep Lost on your radar \u2014 it could affect planning or tooling decisions soon (via Dev.to AI).",
+          "what_happened": "New tutorial content on Lost walks through a practical implementation.",
+          "why_it_matters": "Lost is worth a closer look for teams making near-term technology choices.",
+          "what_to_do": "Use the Lost guide as a template \u2014 build one thing from it this week.",
+          "our_take": "Adapt one proven pattern from Lost instead of copying the whole stack.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
+        },
+        {
+          "title": "Show HN: Busted \u2013 eBPF tool that monitors what your AI agents send",
+          "url": "https://github.com/barakber/busted",
+          "source": "Hacker News (AI)",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
+          "authors": "",
+          "published": "09 Feb",
+          "thumbnail": "",
+          "summary": "The Show HN paper offers techniques that applied teams should track for downstream impact (via Hacker News).",
+          "what_happened": "A hands-on guide to Show HN offers patterns you can adapt to your own stack.",
+          "why_it_matters": "Show HN is worth a closer look for teams making near-term technology choices.",
+          "what_to_do": "Use the Show HN guide as a template \u2014 build one thing from it this week.",
+          "our_take": "Use Show HN as a blueprint, then trim to fit your production constraints.",
+          "audience_track": "Builder",
+          "difficulty": "Advanced",
+          "topic": "Tutorials"
         }
       ]
     }
@@ -241,13 +304,13 @@
   ],
   "category_selection_available": true,
   "learn_this_week": {
-    "title": "Full Stack Deep Learning",
-    "url": "https://fullstackdeeplearning.com/",
-    "provider": "FSDL",
-    "level": "Advanced",
+    "title": "Deep Learning Specialization",
+    "url": "https://www.coursera.org/specializations/deep-learning",
+    "provider": "Coursera / DeepLearning.AI",
+    "level": "Intermediate",
     "free": false,
-    "duration": "Self-paced",
-    "note": "Production ML engineering. Materials free, cohort paid. Best-in-class for builders."
+    "duration": "5 months",
+    "note": "Five courses covering the full deep learning stack. Audit free, cert paid."
   },
   "prompt_of_the_week": {
     "text": "Compare these two technical approaches for [problem]. Give me a decision matrix with columns for: complexity, maintainability, performance, and team skill requirements.",

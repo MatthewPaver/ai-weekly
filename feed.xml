@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Feb 2026 16:26:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 20:08:48 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips]]></title>
@@ -24,27 +24,27 @@
       
     </item>
     <item>
-      <title><![CDATA[How We Cut AI Costs by 73% While Improving Quality: Building Cost-Effective LLM Features]]></title>
-      <link>https://dev.to/freelancingsolutions/how-we-cut-ai-costs-by-73-while-improving-quality-building-cost-effective-llm-features-275p</link>
-      <description><![CDATA[Keep We Cut AI Costs on your radar — it could affect planning or tooling decisions soon (via Dev.to AI).]]></description>
+      <title><![CDATA[Lost in the Middle: Why Bigger Context Windows Don’t Always Improve LLM Performance]]></title>
+      <link>https://dev.to/razu381/lost-in-the-middle-why-bigger-context-windows-dont-always-improve-llm-performance-35j8</link>
+      <description><![CDATA[Keep Lost on your radar — it could affect planning or tooling decisions soon (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Sat, 14 Feb 2026 16:10:10 +0000</pubDate>
-      <author>mobius-crypt</author>
+      <pubDate>Sat, 14 Feb 2026 19:55:02 +0000</pubDate>
+      <author>razu381</author>
     </item>
     <item>
       <title><![CDATA[ClawRouter]]></title>
       <link>https://github.com/BlockRunAI/ClawRouter</link>
-      <description><![CDATA[The agent-native LLM router powering OpenClaw — by BlockRun. Currently at 2,421 stars with ~242 stars/day growth.]]></description>
+      <description><![CDATA[The agent-native LLM router powering OpenClaw — by BlockRun. Currently at 2,429 stars with ~221 stars/day growth.]]></description>
       <category>Repos</category>
-      <pubDate>Sat, 14 Feb 2026 15:13:22 +0000</pubDate>
+      <pubDate>Sat, 14 Feb 2026 18:53:00 +0000</pubDate>
       <author>BlockRunAI</author>
     </item>
     <item>
-      <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
-      <link>https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/</link>
-      <description><![CDATA[LLMs is a development worth monitoring for near-term product and tooling decisions (via Hacker News).]]></description>
-      <category>Models</category>
-      <pubDate>Sun, 08 Feb 2026 13:02:08 +0000</pubDate>
+      <title><![CDATA[Show HN: Busted – eBPF tool that monitors what your AI agents send]]></title>
+      <link>https://github.com/barakber/busted</link>
+      <description><![CDATA[The Show HN paper offers techniques that applied teams should track for downstream impact (via Hacker News).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Mon, 09 Feb 2026 11:33:29 +0000</pubDate>
       
     </item>
     <item>
@@ -104,12 +104,12 @@
       <author>Last Week in AI</author>
     </item>
     <item>
-      <title><![CDATA[Is a secure AI assistant possible?]]></title>
-      <link>https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/</link>
-      <description><![CDATA[The Is a secure AI assistant possible news is worth a closer look for teams making near-term tool or vendor calls (via MIT Technology Review AI).]]></description>
+      <title><![CDATA[What’s next for Chinese open-source AI]]></title>
+      <link>https://www.technologyreview.com/2026/02/12/1132811/whats-next-for-chinese-open-source-ai/</link>
+      <description><![CDATA[Open access to What gives teams a new self-hosted option to evaluate (via MIT Technology Review AI).]]></description>
       <category>Industry</category>
-      <pubDate>Wed, 11 Feb 2026 20:08:35 +0000</pubDate>
-      <author>Grace Huckins</author>
+      <pubDate>Thu, 12 Feb 2026 10:00:00 +0000</pubDate>
+      <author>Caiwei Chen</author>
     </item>
     <item>
       <title><![CDATA[Introducing Lockdown Mode and Elevated Risk labels in ChatGPT]]></title>

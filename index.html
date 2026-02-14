@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#F5F5F4" />
   <meta name="description" content="Inference Weekly — archive of 4 AI newsletter issues for builders, leaders, and researchers." />
   <title>Inference Weekly — Archive</title>
 
@@ -210,11 +211,9 @@
       transition: box-shadow .2s ease, border-color .2s ease;
     }
 
-    @media (prefers-color-scheme: dark) {
-      .card {
-        border-color: #334155;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 14px rgba(0,0,0,0.15);
-      }
+    html.theme-dark .card {
+      border-color: #334155;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 14px rgba(0,0,0,0.15);
     }
 
     .latest {
@@ -490,7 +489,7 @@
     <header class="hero">
       <div class="brand">
         <img class="logo" src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="" role="presentation" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" width="44" height="44" />
-        <svg class="logo logo-fallback" width="44" height="44" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none;"><rect width="52" height="52" rx="14" fill="url(#inf-ag)"/><path d="M26 14v24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="38" r="2.5" fill="#fff"/><defs><linearGradient id="inf-ag" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#0F4C5C"/><stop offset=".5" stop-color="#0F766E"/><stop offset="1" stop-color="#0F4C5C"/></linearGradient></defs></svg>
+        <svg class="logo logo-fallback" width="44" height="44" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none;"><rect width="52" height="52" rx="14" fill="url(#inf-logo-g)"/><path d="M26 14v24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="38" r="2.5" fill="#fff"/><defs><linearGradient id="inf-logo-g" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#0F4C5C"/><stop offset=".5" stop-color="#0F766E"/><stop offset="1" stop-color="#0F4C5C"/></linearGradient></defs></svg>
         <div>
           <h1>Inference</h1>
           <p class="hero-sub">New issue every Monday</p>
@@ -509,9 +508,9 @@
       <article class="card latest">
         <p class="kicker">Latest issue</p>
         <h2>Inference — 14 Feb 2026</h2>
-        <p>This week&#39;s signal: Introducing Lockdown Mode and Elevated Risk labels in — and what it means for your roadmap.</p>
+        <p>This week&#39;s signal: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT — and what it means for your roadmap.</p>
         <p><strong>Custom Kernels for All from Codex and Claude</strong></p>
-        <div class="meta">14 stories - ~5 min read - 2 sections</div>
+        <div class="meta">14 stories - ~5 min read - 3 sections</div>
         <div class="cta-row">
           <a class="btn primary" href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html">Read web issue</a>
 <a class="btn secondary" href="https://matthewpaver.github.io/ai-weekly/email.html">Email version</a>        </div>
@@ -531,7 +530,7 @@
       <input id="search" class="search" type="search" placeholder="Search by date, title, or keyword" aria-label="Search issues" />
 
       <div id="issues" class="issues-grid">
-        <article class="issue has-badge latest-flag" data-search="14 feb 2026 inference — 14 feb 2026 custom kernels for all from codex and claude this week&#39;s signal: introducing lockdown mode and elevated risk labels in — and what it means for your roadmap.">
+        <article class="issue has-badge latest-flag" data-search="14 feb 2026 inference — 14 feb 2026 custom kernels for all from codex and claude this week&#39;s signal: introducing lockdown mode and elevated risk labels in chatgpt — and what it means for your roadmap.">
           <div class="issue-badge" aria-hidden="true">
             <span class="issue-num">#4</span>
             <span>Issue</span>
@@ -539,8 +538,8 @@
           <div>
             <time datetime="2026-02-14">14 Feb 2026</time>
             <h3>Custom Kernels for All from Codex and Claude</h3>
-            <div class="meta">14 stories - ~5 min - 2 sections</div>
-            <p class="summary">This week&#39;s signal: Introducing Lockdown Mode and Elevated Risk labels in — and what it means for your roadmap.</p>
+            <div class="meta">14 stories - ~5 min - 3 sections</div>
+            <p class="summary">This week&#39;s signal: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT — and what it means for your roadmap.</p>
             <div class="links">
               <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html">Read issue</a>
             </div>
@@ -597,8 +596,8 @@
     </section>
 
     <footer class="footer">
-      <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a>
-      <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a>
+      <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a> ·
+      <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a> ·
       <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
       <p class="copyright">Editorial analysis &copy; 2026 Matthew Paver. Original articles &copy; respective authors and publications.</p>
     </footer>

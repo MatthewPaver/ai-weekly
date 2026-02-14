@@ -271,5 +271,59 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-14T16:26:42.557721+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 32,
+    "after_filters": 5,
+    "after_accessibility": 34,
+    "after_selection": 14,
+    "articles_final": 14,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 32
+      },
+      {
+        "stage": "quality_gates",
+        "after": 5
+      },
+      {
+        "stage": "accessibility",
+        "after": 34
+      },
+      {
+        "stage": "selection",
+        "after": 14
+      },
+      {
+        "stage": "summary_quality",
+        "after": 14
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "Import AI",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog"
+    ],
+    "sections": 3,
+    "lead_story": "Custom Kernels for All from Codex and Claude",
+    "total_articles": 14,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-14T20:08:48.218019+00:00"
   }
 ]
