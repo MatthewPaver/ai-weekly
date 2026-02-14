@@ -193,5 +193,44 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-14T09:32:24.819122+00:00"
+  },
+  {
+    "articles_collected": 60,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 26,
+    "after_filters": 4,
+    "articles_final": 14,
+    "sections": 4,
+    "lead_story": "Introducing Lockdown Mode and Elevated Risk labels in ChatGP",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-14T11:17:20.581153+00:00"
+  },
+  {
+    "articles_collected": 60,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 26,
+    "after_filters": 4,
+    "articles_final": 14,
+    "sections": 3,
+    "lead_story": "Introducing Lockdown Mode and Elevated Risk labels in ChatGP",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-14T11:18:10.019562+00:00"
+  },
+  {
+    "articles_collected": 60,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 26,
+    "after_filters": 2,
+    "articles_final": 14,
+    "sections": 3,
+    "lead_story": "Introducing Lockdown Mode and Elevated Risk labels in ChatGP",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-14T11:51:40.858700+00:00"
   }
 ]

@@ -1,17 +1,17 @@
 {
   "date": "14 Feb 2026",
-  "total_articles": 10,
+  "total_articles": 14,
   "source_count": 25,
-  "read_time_minutes": 4,
+  "read_time_minutes": 5,
   "intro": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in \u2014 and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (8 stories)."
+      "value": "Industry led coverage (9 stories)."
     },
     {
       "label": "Builder pick",
-      "value": "[I spent two days gigging at RentAHuman and didn't make a single cent](https://arstechnica.com/ai/2026/02/i-spent-two-days-gigging-at-rentahuman-and-didnt-make-a-single-cent/)"
+      "value": "[Custom Kernels for All from Codex and Claude](https://huggingface.co/blog/custom-cuda-kernels-agent-skills)"
     },
     {
       "label": "Leader watch",
@@ -29,22 +29,50 @@
       "num": "01"
     },
     {
-      "icon": "\ud83d\udcda",
-      "title": "Ship-It Playbooks",
+      "icon": "\ud83d\udee0\ufe0f",
+      "title": "Builder's Bench",
       "count": 2,
-      "label": "\ud83d\udcda Ship-It Playbooks (2)",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "promise": "One thing to try this week.",
+      "label": "\ud83d\udee0\ufe0f Builder's Bench (2)",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "promise": "",
       "num": "02"
+    },
+    {
+      "icon": "\u2b50",
+      "title": "Open Source Watch",
+      "count": 1,
+      "label": "\u2b50 Open Source Watch (1)",
+      "deck": "Repos with momentum that might deserve a deeper look.",
+      "promise": "Repos with momentum.",
+      "num": "03"
     }
   ],
-  "briefing": [],
+  "briefing": [
+    {
+      "title": "Custom Kernels for All from Codex and Claude",
+      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+      "note": "A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.",
+      "track": "Builder"
+    },
+    {
+      "title": "ClawRouter",
+      "url": "https://github.com/BlockRunAI/ClawRouter",
+      "note": "Growing traction for ClawRouter on GitHub suggests rising builder interest. Why it matters: Community interest in ClawRouter is growing \u2014 check repo health before committing.",
+      "track": "Builder"
+    },
+    {
+      "title": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows",
+      "url": "https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/",
+      "note": "New tutorial content on Exa Instant walks through a practical implementation. Why it matters: The Exa Instant development is a useful signal for teams shipping AI products.",
+      "track": "Builder"
+    }
+  ],
   "editors_note": {
     "headline": "This week",
     "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking Introducing Lockdown Mode and Elevated Risk labels in, you're already behind.",
     "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows deserves more attention than it's getting.",
+    "underhyped": "Custom Kernels for All from Codex and Claude deserves more attention than it's getting.",
     "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
@@ -54,11 +82,30 @@
     "track": "Leader",
     "audience_track": "Leader",
     "difficulty": "Beginner",
-    "what_happened": "Lockdown Mode shipped this week, opening a new option for teams evaluating alternatives.",
-    "our_take": "Strategic positioning around Lockdown Mode is shifting faster than most roadmap cycles account for.",
+    "what_happened": "Lockdown Mode just shipped; we're adding it to the list of options to benchmark this quarter.",
+    "our_take": "Treat Lockdown Mode as a planning input \u2014 the second-order effects matter more than the headline.",
     "what_to_do": "Bring Lockdown Mode to your next planning sync \u2014 it may affect Q2 priorities."
   },
-  "quick_hits": [],
+  "quick_hits": [
+    {
+      "title": "Custom Kernels for All from Codex and Claude",
+      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+      "note": "A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.",
+      "track": "Builder"
+    },
+    {
+      "title": "ClawRouter",
+      "url": "https://github.com/BlockRunAI/ClawRouter",
+      "note": "Growing traction for ClawRouter on GitHub suggests rising builder interest. Why it matters: Community interest in ClawRouter is growing \u2014 check repo health before committing.",
+      "track": "Builder"
+    },
+    {
+      "title": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows",
+      "url": "https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/",
+      "note": "New tutorial content on Exa Instant walks through a practical implementation. Why it matters: The Exa Instant development is a useful signal for teams shipping AI products.",
+      "track": "Builder"
+    }
+  ],
   "sections": [
     {
       "title": "Industry Radar",
@@ -82,78 +129,109 @@
           "published": "13 Feb",
           "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2236544077.jpg?resize=1200,800",
           "summary": "The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).",
-          "what_happened": "A strategic move around OpenAI is worth factoring into near-term planning.",
-          "why_it_matters": "Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.",
+          "what_happened": "The OpenAI development has implications for vendor strategy and competitive positioning.",
+          "why_it_matters": "The OpenAI shift affects competitive positioning \u2014 factor it into Q2 planning.",
           "what_to_do": "Add OpenAI as a discussion item in your next strategy or planning meeting.",
-          "our_take": "Strategic positioning around OpenAI is shifting faster than most roadmap cycles account for.",
+          "our_take": "Teams that factor OpenAI into next quarter early usually gain execution room later.",
           "audience_track": "Leader",
           "difficulty": "Beginner",
           "topic": "Industry"
         },
         {
-          "title": "OpenAI Is Nuking Its 4o Model. China\u2019s ChatGPT Fans Aren\u2019t OK",
-          "url": "https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/",
-          "source": "Wired AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.wired.com&sz=16",
-          "authors": "Zeyi Yang",
-          "published": "13 Feb",
-          "thumbnail": "https://media.wired.com/photos/698e1b134e0cc71b0d6dee95/191:100/w_1280,c_limit/OpenAI-Nuking-4o-Model-Business.jpg",
-          "summary": "The OpenAI Is Nuking Its news is worth a closer look for teams making near-term tool or vendor calls (via Wired AI).",
-          "what_happened": "A strategic move around OpenAI Is Nuking Its is worth factoring into near-term planning.",
-          "why_it_matters": "Strategic moves around OpenAI Is Nuking Its may reshape vendor dynamics for downstream teams.",
-          "what_to_do": "Add OpenAI Is Nuking Its as a discussion item in your next strategy or planning meeting.",
-          "our_take": "Treat OpenAI Is Nuking Its as a planning input \u2014 the second-order effects matter more than the headline.",
-          "audience_track": "Leader",
+          "title": "OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips",
+          "url": "https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/",
+          "source": "Ars Technica AI",
+          "source_icon": "https://www.google.com/s2/favicons?domain=arstechnica.com&sz=16",
+          "authors": "Benj Edwards",
+          "published": "12 Feb",
+          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2225076517_resize-1152x648.jpg",
+          "summary": "The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via Ars Technica AI).",
+          "what_happened": "Industry activity around OpenAI may shift competitive dynamics this quarter.",
+          "why_it_matters": "Industry changes involving OpenAI are likely to affect near-term planning cycles.",
+          "what_to_do": "Monitor OpenAI for follow-on product or pricing changes over the next month.",
+          "our_take": "Strategic positioning around OpenAI is shifting faster than most roadmap cycles account for.",
+          "audience_track": "Builder",
           "difficulty": "Beginner",
           "topic": "Industry"
         }
       ]
     },
     {
-      "title": "Ship-It Playbooks",
-      "icon": "\ud83d\udcda",
-      "deck": "Practical implementation guides you can adapt quickly.",
+      "title": "Builder's Bench",
+      "icon": "\ud83d\udee0\ufe0f",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
       "color": "0F4C5C",
-      "badge": "Ship It Playbooks",
+      "badge": "Builders Bench",
       "topics": [
-        "Tutorials"
+        "Tools"
       ],
       "tier": "builder",
-      "promise": "One thing to try this week.",
+      "promise": "",
       "articles": [
         {
-          "title": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows",
-          "url": "https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/",
-          "source": "MarkTechPost",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.marktechpost.com&sz=16",
-          "authors": "Asif Razzaq",
+          "title": "On Agent Frameworks and Agent Observability",
+          "url": "https://blog.langchain.com/on-agent-frameworks-and-agent-observability/",
+          "source": "LangChain Blog",
+          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
+          "authors": "LangChain Accounts",
           "published": "13 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-23.png",
-          "summary": "Research on Exa Instant introduces methods that could influence applied work if results hold (via MarkTechPost).",
-          "what_happened": "A hands-on guide to Exa Instant offers patterns you can adapt to your own stack.",
-          "why_it_matters": "The Exa Instant development is a useful signal for teams shipping AI products.",
-          "what_to_do": "Follow the Exa Instant guide, but adapt one step to fit your actual production constraints.",
-          "our_take": "The value of a tutorial is the first thing you build after reading it, not the reading itself.",
+          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/On-Agent-Frameworks--1-.png",
+          "summary": "The On Agent Frameworks paper offers techniques that applied teams should track for downstream impact (via LangChain Blog).",
+          "what_happened": "On Agent Frameworks adds a new option to the builder toolkit \u2014 worth a scoped evaluation.",
+          "why_it_matters": "The open release of On Agent Frameworks adds a viable alternative to proprietary options.",
+          "what_to_do": "Try On Agent Frameworks on your most common use case \u2014 measure the gap vs your current setup.",
+          "our_take": "Evaluate the docs and community, not just the feature list. That's what determines staying power.",
           "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
+          "difficulty": "Intermediate",
+          "topic": "Tools"
         },
         {
-          "title": "Why I Built ClawTick: Cloud Scheduling for AI Agents",
-          "url": "https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8",
-          "source": "Dev.to AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
-          "authors": "clawtick",
-          "published": "14 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6vmfch09ov1qu5yrrd9m.png",
-          "summary": "New findings around Built ClawTick may shape tooling choices once validated by independent teams (via Dev.to AI).",
-          "what_happened": "Thats daily reports had stopped working.",
-          "why_it_matters": "Keep Built ClawTick on your radar \u2014 it may influence tooling or vendor decisions soon.",
-          "what_to_do": "Work through the Built ClawTick tutorial and modify one step for your own use case.",
-          "our_take": "Tutorials are blueprints, not gospel. Adapt one step to your own constraints and you'll learn more.",
+          "title": "Show HN: I'm 75, building an OSS Virtual Protest Protocol for digital activism",
+          "url": "https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md",
+          "source": "Hacker News (AI)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
+          "authors": "",
+          "published": "07 Feb",
+          "thumbnail": "",
+          "summary": "Keep Show HN on your radar \u2014 it could affect planning or tooling decisions soon (via Hacker News).",
+          "what_happened": "A new tool release around Show HN targets gaps in current developer workflows.",
+          "why_it_matters": "The Show HN release addresses gaps that many builder teams have flagged.",
+          "what_to_do": "Try Show HN on a non-critical task this week and log the results.",
+          "our_take": "Don't adopt tools based on hype. Run it against your ugliest edge case first.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
-          "topic": "Tutorials"
+          "topic": "Tools"
+        }
+      ]
+    },
+    {
+      "title": "Open Source Watch",
+      "icon": "\u2b50",
+      "deck": "Repos with momentum that might deserve a deeper look.",
+      "color": "0F4C5C",
+      "badge": "Open Source Watch",
+      "topics": [
+        "Repos"
+      ],
+      "tier": "builder",
+      "promise": "Repos with momentum.",
+      "articles": [
+        {
+          "title": "ClawRouter",
+          "url": "https://github.com/BlockRunAI/ClawRouter",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
+          "authors": "BlockRunAI",
+          "published": "14 Feb",
+          "thumbnail": "https://avatars.githubusercontent.com/u/250889376?v=4",
+          "summary": "The agent-native LLM router powering OpenClaw \u2014 by BlockRun. Currently at 2,405 stars with ~240 stars/day growth.",
+          "what_happened": "Growing traction for ClawRouter on GitHub suggests rising builder interest.",
+          "why_it_matters": "Community interest in ClawRouter is growing \u2014 check repo health before committing.",
+          "what_to_do": "Check ClawRouter for recent activity, open issues, and license compatibility this week.",
+          "our_take": "Popularity and production-readiness are different things. Check the last commit date and open issues first.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Repos"
         }
       ]
     }

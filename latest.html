@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Inference Weekly — 14 Feb 2026: 10 curated AI stories for builders, leaders, and researchers." />
+  <meta name="description" content="Inference Weekly — 14 Feb 2026: 14 curated AI stories for builders, leaders, and researchers." />
   <title>Inference Weekly — 14 Feb 2026</title>
 
   <!-- Open Graph -->
@@ -27,13 +27,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    /* Design tokens: see docs/DESIGN_AUDIT.md. Brand #0F4C5C, #0F766E; accent #B45309; WCAG AA. */
+    /* Design tokens: see docs/DESIGN_AUDIT.md. Brand #0F4C5C, #0F766E; accent #B45309; WCAG AA. Strong contrast for readability. */
     :root {
       --bg: #FAFAF9;
       --surface: #ffffff;
       --surface-2: #E5E7EB;
-      --text: #111827;
-      --muted: #4B5563;
+      --text: #0F172A;
+      --muted: #374151;
       --line: #D1D5DB;
       --brand: #0F766E;
       --brand-2: #0F4C5C;
@@ -220,7 +220,7 @@
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 12px;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
       animation: rise .4s ease both;
     }
 
@@ -331,7 +331,8 @@
     .lead {
       overflow: hidden;
       margin-bottom: 12px;
-      border-color: color-mix(in srgb, var(--brand), transparent 66%);
+      border: 1px solid color-mix(in srgb, var(--brand-2), transparent 50%);
+      box-shadow: 0 2px 8px rgba(15, 76, 92, 0.08), 0 4px 16px rgba(0,0,0,0.06);
     }
 
     .lead-media {
@@ -364,8 +365,18 @@
       border-radius: 999px;
       padding: 3px 7px;
       border: 1px solid var(--line);
-      background: var(--surface-2);
-      color: var(--muted);
+    }
+    .badge-source {
+      font-size: 0.68rem;
+      padding: 2px 6px;
+    }
+    .source-icon {
+      vertical-align: middle;
+      margin-right: 2px;
+      border-radius: 2px;
+      width: 10px;
+      height: 10px;
+      object-fit: contain;
     }
     /* Difficulty: Beginner (green), Intermediate (amber), Advanced (red) — visible variety */
     .badge-difficulty-beginner { background: #dcfce7 !important; color: #166534 !important; border-color: #bbf7d0 !important; }
@@ -852,10 +863,10 @@
       </div>
 
       <div class="hero-stats">
-        <span class="chip">Issue #4</span>
+        <span class="chip">Issue #5</span>
         <span class="chip">14 Feb 2026</span>
-        <span class="chip">10 stories</span>
-        <span class="chip">~4 min read</span>
+        <span class="chip">14 stories</span>
+        <span class="chip">~5 min read</span>
         <span class="chip">25+ sources</span>
       </div>
     </header>
@@ -877,28 +888,35 @@
 <span class="menu-deck">The moves that change product plans, budgets, and positioning.</span>              </span>
               <span class="menu-count">2</span>
             </a>
-            <a class="menu-item" href="#ship-it-playbooks">
+            <a class="menu-item" href="#builders-bench">
               <span class="menu-num">02</span>
-              <span class="menu-icon">📚</span>
+              <span class="menu-icon">🛠️</span>
               <span class="menu-text">
-                <span class="menu-label">Ship-It Playbooks</span>
-<span class="menu-deck">Practical implementation guides you can adapt quickly.</span><span class="menu-deck section-promise">One thing to try this week.</span>              </span>
+                <span class="menu-label">Builder&#39;s Bench</span>
+<span class="menu-deck">New tooling worth evaluating in an actual workflow this week.</span>              </span>
               <span class="menu-count">2</span>
+            </a>
+            <a class="menu-item" href="#open-source-watch">
+              <span class="menu-num">03</span>
+              <span class="menu-icon">⭐</span>
+              <span class="menu-text">
+                <span class="menu-label">Open Source Watch</span>
+<span class="menu-deck">Repos with momentum that might deserve a deeper look.</span><span class="menu-deck section-promise">Repos with momentum.</span>              </span>
+              <span class="menu-count">1</span>
             </a>
           </div>
         </section>
 
         <article class="lead card">
-          <img class="lead-media" src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" />
           <div class="lead-body">
             <p class="section-head">Top Story</p>
             <div class="meta-row">
-              <span class="badge">OpenAI Blog - 13 Feb</span>
+              <span class="badge badge-source"><img src="https://www.google.com/s2/favicons?domain=openai.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">OpenAI Blog · 13 Feb</span>
 <span class="badge badge-difficulty-beginner">Beginner</span><span class="badge badge-track">Leader</span>            </div>
             <h2><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></h2>
-            <p><strong style="color: var(--text);">Lockdown Mode shipped this week, opening a new option for teams evaluating alternatives.</strong> Teams evaluating alternatives now have Lockdown Mode as a concrete option to benchmark against.</p>
+            <p><strong style="color: var(--text);">Lockdown Mode just shipped; we&#39;re adding it to the list of options to benchmark this quarter.</strong> Worth a side-by-side with what you&#39;re using now — Lockdown Mode could change the tradeoffs.</p>
             <p class="action">Action: Bring Lockdown Mode to your next planning sync — it may affect Q2 priorities.</p>
-<p class="take">Strategic positioning around Lockdown Mode is shifting faster than most roadmap cycles account for.</p>          </div>
+<p class="take">Treat Lockdown Mode as a planning input — the second-order effects matter more than the headline.</p>          </div>
         </article>
 
         <div class="share-row">
@@ -920,13 +938,13 @@
               <article class="story">
 <img src="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2236544077.jpg?resize=1200,800" alt="Why top talent is walking away from OpenAI and xAI" loading="lazy" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=techcrunch.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">TechCrunch AI</span>
+                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=techcrunch.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">TechCrunch AI</span>
                     <span>
                       <span class="badge badge-difficulty-beginner">Beginner</span>
 <span class="badge badge-track">Leader</span>                    </span>
                   </div>
                   <h3><a href="https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/" target="_blank" rel="noopener">Why top talent is walking away from OpenAI and xAI</a></h3>
-                  <p><strong style="color: var(--text);">A strategic move around OpenAI is worth factoring into near-term planning.</strong> Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.</p>
+                  <p><strong style="color: var(--text);">The OpenAI development has implications for vendor strategy and competitive positioning.</strong> The OpenAI shift affects competitive positioning — factor it into Q2 planning.</p>
                   <p class="action">Add OpenAI as a discussion item in your next strategy or planning meeting.</p>
                   <a href="https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
@@ -935,58 +953,80 @@
                 </div>
               </article>
               <article class="story">
-<img src="https://media.wired.com/photos/698e1b134e0cc71b0d6dee95/191:100/w_1280,c_limit/OpenAI-Nuking-4o-Model-Business.jpg" alt="OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK" loading="lazy" />                <div class="story-body">
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2225076517_resize-1152x648.jpg" alt="OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips" loading="lazy" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=www.wired.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">Wired AI</span>
+                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=arstechnica.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">Ars Technica AI</span>
                     <span>
                       <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Leader</span>                    </span>
+<span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <h3><a href="https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/" target="_blank" rel="noopener">OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK</a></h3>
-                  <p><strong style="color: var(--text);">A strategic move around OpenAI Is Nuking Its is worth factoring into near-term planning.</strong> Strategic moves around OpenAI Is Nuking Its may reshape vendor dynamics for downstream teams.</p>
-                  <p class="action">Add OpenAI Is Nuking Its as a discussion item in your next strategy or planning meeting.</p>
-                  <a href="https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/" target="_blank" rel="noopener">Read article -></a>
+                  <h3><a href="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" target="_blank" rel="noopener">OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips</a></h3>
+                  <p><strong style="color: var(--text);">Industry activity around OpenAI may shift competitive dynamics this quarter.</strong> Industry changes involving OpenAI are likely to affect near-term planning cycles.</p>
+                  <p class="action">Monitor OpenAI for follow-on product or pricing changes over the next month.</p>
+                  <a href="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/" data-title="OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" data-title="OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
             </div>
           </section>
-          <section class="section reveal" id="ship-it-playbooks" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">2</span> 📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(2)</span></h2>
-<p class="section-deck">Practical implementation guides you can adapt quickly. <span class="section-promise">One thing to try this week.</span></p>            <div class="stories">
+          <section class="section reveal" id="builders-bench" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
               <article class="story">
-<img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-23.png" alt="Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows" loading="lazy" />                <div class="story-body">
+<img src="https://blog.langchain.com/content/images/size/w1200/2026/02/On-Agent-Frameworks--1-.png" alt="On Agent Frameworks and Agent Observability" loading="lazy" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=www.marktechpost.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">MarkTechPost</span>
+                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=blog.langchain.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">LangChain Blog</span>
                     <span>
-                      <span class="badge badge-difficulty-beginner">Beginner</span>
+                      <span class="badge badge-difficulty-intermediate">Intermediate</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <h3><a href="https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/" target="_blank" rel="noopener">Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows</a></h3>
-                  <p><strong style="color: var(--text);">A hands-on guide to Exa Instant offers patterns you can adapt to your own stack.</strong> The Exa Instant development is a useful signal for teams shipping AI products.</p>
-                  <p class="action">Follow the Exa Instant guide, but adapt one step to fit your actual production constraints.</p>
-                  <a href="https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/" target="_blank" rel="noopener">Read article -></a>
+                  <h3><a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">On Agent Frameworks and Agent Observability</a></h3>
+                  <p><strong style="color: var(--text);">On Agent Frameworks adds a new option to the builder toolkit — worth a scoped evaluation.</strong> The open release of On Agent Frameworks adds a viable alternative to proprietary options.</p>
+                  <p class="action">Try On Agent Frameworks on your most common use case — measure the gap vs your current setup.</p>
+                  <a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/" data-title="Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" data-title="On Agent Frameworks and Agent Observability" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6vmfch09ov1qu5yrrd9m.png" alt="Why I Built ClawTick: Cloud Scheduling for AI Agents" loading="lazy" />                <div class="story-body">
+                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=dev.to&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">Dev.to AI</span>
+                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">Hacker News (AI)</span>
                     <span>
                       <span class="badge badge-difficulty-beginner">Beginner</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <h3><a href="https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8" target="_blank" rel="noopener">Why I Built ClawTick: Cloud Scheduling for AI Agents</a></h3>
-                  <p><strong style="color: var(--text);">Thats daily reports had stopped working.</strong> Keep Built ClawTick on your radar — it may influence tooling or vendor decisions soon.</p>
-                  <p class="action">Work through the Built ClawTick tutorial and modify one step for your own use case.</p>
-                  <a href="https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8" target="_blank" rel="noopener">Read article -></a>
+                  <h3><a href="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" target="_blank" rel="noopener">Show HN: I&#39;m 75, building an OSS Virtual Protest Protocol for digital activism</a></h3>
+                  <p><strong style="color: var(--text);">A new tool release around Show HN targets gaps in current developer workflows.</strong> The Show HN release addresses gaps that many builder teams have flagged.</p>
+                  <p class="action">Try Show HN on a non-critical task this week and log the results.</p>
+                  <a href="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8" data-title="Why I Built ClawTick: Cloud Scheduling for AI Agents" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" data-title="Show HN: I&#39;m 75, building an OSS Virtual Protest Protocol for digital activism" aria-label="Like this article">👍 Like</button>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section reveal" id="open-source-watch" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">3</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(1)</span></h2>
+<p class="section-deck">Repos with momentum that might deserve a deeper look. <span class="section-promise">Repos with momentum.</span></p>            <div class="stories">
+              <article class="story">
+<img src="https://avatars.githubusercontent.com/u/250889376?v=4" alt="ClawRouter" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">GitHub Trending (AI/ML)</span>
+                    <span>
+                      <span class="badge badge-difficulty-intermediate">Intermediate</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <h3><a href="https://github.com/BlockRunAI/ClawRouter" target="_blank" rel="noopener">ClawRouter</a></h3>
+                  <p><strong style="color: var(--text);">Growing traction for ClawRouter on GitHub suggests rising builder interest.</strong> Community interest in ClawRouter is growing — check repo health before committing.</p>
+                  <p class="action">Check ClawRouter for recent activity, open issues, and license compatibility this week.</p>
+                  <a href="https://github.com/BlockRunAI/ClawRouter" target="_blank" rel="noopener">Read article -></a>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://github.com/BlockRunAI/ClawRouter" data-title="ClawRouter" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
@@ -996,61 +1036,50 @@
       </main>
 
       <aside>
-
-        <section class="pulse card">
-          <p class="section-head">Weekly Pulse</p>
-          <table>
-            <tr>
-              <td>Dominant theme</td>
-              <td>Industry led coverage (8 stories).</td>
-            </tr>
-            <tr>
-              <td>Builder pick</td>
-              <td><a href="https://arstechnica.com/ai/2026/02/i-spent-two-days-gigging-at-rentahuman-and-didnt-make-a-single-cent/" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">I spent two days gigging at RentAHuman and didn't make a single cent</a></td>
-            </tr>
-            <tr>
-              <td>Leader watch</td>
-              <td><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></td>
-            </tr>
-          </table>
+        <section class="quick card">
+          <p class="section-head">Fast Signals</p>
+          <ul>
+            <li>
+              <strong><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Custom Kernels for All from Codex and Claude</a></strong>
+              A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.
+            </li>
+            <li>
+              <strong><a href="https://github.com/BlockRunAI/ClawRouter" target="_blank" rel="noopener">ClawRouter</a></strong>
+              Growing traction for ClawRouter on GitHub suggests rising builder interest. Why it matters: Community interest in ClawRouter is growing — check repo health before committing.
+            </li>
+            <li>
+              <strong><a href="https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/" target="_blank" rel="noopener">Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows</a></strong>
+              New tutorial content on Exa Instant walks through a practical implementation. Why it matters: The Exa Instant development is a useful signal for teams shipping AI products.
+            </li>
+          </ul>
         </section>
 
         <section class="learn-card card">
           <p class="section-head">Learn This Week</p>
-          <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/" target="_blank" rel="noopener" class="learn-title">LangChain for LLM Application Development</a>
+          <a href="https://www.nvidia.com/en-us/training/instructor-led-workshops/building-rag-agents-with-llms/" target="_blank" rel="noopener" class="learn-title">Building RAG Agents with LLMs</a>
           <p class="learn-meta">
-            <span class="learn-provider">DeepLearning.AI</span>
+            <span class="learn-provider">NVIDIA DLI</span>
             <span class="badge-level badge-level-intermediate">Intermediate</span>
-<span class="badge-free">Free</span><span class="learn-duration">1 hour</span>          </p>
-          <p class="learn-note">Build LLM-powered apps with chains, memory, and agents. Practical and concise.</p>
+<span class="badge-free">Free</span><span class="learn-duration">2 hours</span>          </p>
+          <p class="learn-note">RAG architecture from scratch. Covers retrieval, chunking, and agent orchestration.</p>
         </section>
 
         <section class="prompt-card card">
           <p class="section-head">Prompt of the Week</p>
-          <blockquote class="prompt-text">"I&#39;m building a [type] application. List the top 5 security risks specific to this architecture and how to mitigate each one."</blockquote>
+          <blockquote class="prompt-text">"Compare these two technical approaches for [problem]. Give me a decision matrix with columns for: complexity, maintainability, performance, and team skill requirements."</blockquote>
           <p class="prompt-meta">
-            <span class="prompt-context">Security</span>
+            <span class="prompt-context">Architecture</span>
             <span class="prompt-tool">Claude / ChatGPT</span>
           </p>
-          <p class="prompt-tip">Be specific about your stack (e.g., &#39;RAG app with vector DB and public API&#39;).</p>
+          <p class="prompt-tip">Describe both approaches briefly. Include your team size and deployment constraints.</p>
         </section>
       </aside>
     </div>
 
-    <!-- Bottom subscribe CTA -->
-    <section class="subscribe-card card reveal" style="margin: 16px 0;">
-      <h3>Enjoyed this issue?</h3>
-      <p>Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes.</p>
-      <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/inference" method="post" target="_blank">
-        <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address" />
-        <button type="submit">Subscribe</button>
-      </form>
-<p class="social-proof" style="margin: 10px 0 0; font-size: 0.85rem; opacity: 0.9;">Builders, product leads, and researchers who ship AI products.</p>    </section>
-
     <!-- Feedback card at bottom: Formspree or Formsubmit.co (free) -->
     <section class="card feedback-card reveal" style="margin: 24px 0; padding: 24px;">
       <h3 style="margin: 0 0 6px; font-size: 1.15rem; color: var(--text);">One quick question</h3>
-      <p style="margin: 0 0 16px; font-size: 0.9rem; color: var(--muted);">Your feedback shapes what we cover next.</p>
+      <p style="margin: 0 0 16px; font-size: 0.9rem; color: var(--muted);">What should we cover next? Your feedback shapes the next issue.</p>
       <form id="feedback-form" class="feedback-form" action="https://formsubmit.co/9f7fb1b5db732b04fdea60e73e14ef65" method="post" style="max-width: 420px;">
         <input type="hidden" name="issue_date" value="14 Feb 2026" />
         <input type="hidden" name="_subject" value="Inference feedback — 14 Feb 2026" />

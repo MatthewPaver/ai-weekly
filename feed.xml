@@ -5,30 +5,22 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Feb 2026 09:32:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 11:51:40 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[I spent two days gigging at RentAHuman and didn't make a single cent]]></title>
-      <link>https://arstechnica.com/ai/2026/02/i-spent-two-days-gigging-at-rentahuman-and-didnt-make-a-single-cent/</link>
-      <description><![CDATA[RentAHuman is a development worth monitoring for near-term product and tooling decisions (via Ars Technica AI).]]></description>
+      <title><![CDATA[OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips]]></title>
+      <link>https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/</link>
+      <description><![CDATA[The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via Ars Technica AI).]]></description>
       <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 14:41:21 +0000</pubDate>
-      <author>Reece Rogers, wired.com</author>
+      <pubDate>Thu, 12 Feb 2026 22:56:02 +0000</pubDate>
+      <author>Benj Edwards</author>
     </item>
     <item>
-      <title><![CDATA[Why I Built ClawTick: Cloud Scheduling for AI Agents]]></title>
-      <link>https://dev.to/clawtick/why-i-built-clawtick-cloud-scheduling-for-ai-agents-34c8</link>
-      <description><![CDATA[New findings around Built ClawTick may shape tooling choices once validated by independent teams (via Dev.to AI).]]></description>
-      <category>Tutorials</category>
-      <pubDate>Sat, 14 Feb 2026 09:16:28 +0000</pubDate>
-      <author>clawtick</author>
-    </item>
-    <item>
-      <title><![CDATA[Introducing Lockdown Mode and Elevated Risk labels in ChatGPT]]></title>
-      <link>https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt</link>
-      <description><![CDATA[Lockdown Mode ships a new release worth testing if it overlaps with your current toolchain (via OpenAI Blog).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 10:00:00 +0000</pubDate>
+      <title><![CDATA[Custom Kernels for All from Codex and Claude]]></title>
+      <link>https://huggingface.co/blog/custom-cuda-kernels-agent-skills</link>
+      <description><![CDATA[The Custom Kernels news is worth a closer look for teams making near-term tool or vendor calls (via Hugging Face Blog).]]></description>
+      <category>Tools</category>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
       
     </item>
     <item>
@@ -40,52 +32,92 @@
       <author>Asif Razzaq</author>
     </item>
     <item>
+      <title><![CDATA[ClawRouter]]></title>
+      <link>https://github.com/BlockRunAI/ClawRouter</link>
+      <description><![CDATA[The agent-native LLM router powering OpenClaw — by BlockRun. Currently at 2,405 stars with ~240 stars/day growth.]]></description>
+      <category>Repos</category>
+      <pubDate>Sat, 14 Feb 2026 06:43:48 +0000</pubDate>
+      <author>BlockRunAI</author>
+    </item>
+    <item>
+      <title><![CDATA[Show HN: I'm 75, building an OSS Virtual Protest Protocol for digital activism]]></title>
+      <link>https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md</link>
+      <description><![CDATA[Keep Show HN on your radar — it could affect planning or tooling decisions soon (via Hacker News).]]></description>
+      <category>Tools</category>
+      <pubDate>Sat, 07 Feb 2026 12:32:09 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[9 fun questions to try asking Google Photos]]></title>
+      <link>https://blog.google/products-and-platforms/products/photos/ask-button-ask-photos-tips/</link>
+      <description><![CDATA[Google Photos is a development worth monitoring for near-term product and tooling decisions (via Google AI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Tue, 10 Feb 2026 17:00:00 +0000</pubDate>
+      <author>Molly McHugh-Johnson</author>
+    </item>
+    <item>
+      <title><![CDATA[On Agent Frameworks and Agent Observability]]></title>
+      <link>https://blog.langchain.com/on-agent-frameworks-and-agent-observability/</link>
+      <description><![CDATA[The On Agent Frameworks paper offers techniques that applied teams should track for downstream impact (via LangChain Blog).]]></description>
+      <category>Tools</category>
+      <pubDate>Fri, 13 Feb 2026 02:23:40 +0000</pubDate>
+      <author>LangChain Accounts</author>
+    </item>
+    <item>
+      <title><![CDATA[Gemini 3 Deep Think: Advancing science, research and engineering]]></title>
+      <link>https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/</link>
+      <description><![CDATA[The Gemini news is worth a closer look for teams making near-term tool or vendor calls (via Google DeepMind).]]></description>
+      <category>Industry</category>
+      <pubDate>Thu, 12 Feb 2026 16:15:09 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[ChatGPT’s Translation Skills Parallel Most Human Translators]]></title>
+      <link>https://spectrum.ieee.org/chatgpt-translate-skills-human-comparison</link>
+      <description><![CDATA[The ChatGPT news is worth a closer look for teams making near-term tool or vendor calls (via IEEE Spectrum AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Thu, 12 Feb 2026 16:00:03 +0000</pubDate>
+      <author>Michelle Hampson</author>
+    </item>
+    <item>
+      <title><![CDATA[Import AI 444: LLM societies; Huawei makes kernels with AI; ChipBench]]></title>
+      <link>https://importai.substack.com/p/import-ai-444-llm-societies-huawei</link>
+      <description><![CDATA[Keep Import AI on your radar — it could affect planning or tooling decisions soon (via Import AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 09 Feb 2026 14:03:34 +0000</pubDate>
+      <author>Jack Clark</author>
+    </item>
+    <item>
+      <title><![CDATA[LWiAI Podcast #233 - Moltbot, Genie 3, Qwen3-Max-Thinking]]></title>
+      <link>https://lastweekin.ai/p/lwiai-podcast-233-moltbot-genie-3</link>
+      <description><![CDATA[The LWiAI Podcast news is worth a closer look for teams making near-term tool or vendor calls (via Last Week in AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 06 Feb 2026 05:06:04 +0000</pubDate>
+      <author>Last Week in AI</author>
+    </item>
+    <item>
+      <title><![CDATA[Is a secure AI assistant possible?]]></title>
+      <link>https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/</link>
+      <description><![CDATA[The Is a secure AI assistant possible news is worth a closer look for teams making near-term tool or vendor calls (via MIT Technology Review AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 11 Feb 2026 20:08:35 +0000</pubDate>
+      <author>Grace Huckins</author>
+    </item>
+    <item>
+      <title><![CDATA[Introducing Lockdown Mode and Elevated Risk labels in ChatGPT]]></title>
+      <link>https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt</link>
+      <description><![CDATA[Lockdown Mode ships a new release worth testing if it overlaps with your current toolchain (via OpenAI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 13 Feb 2026 10:00:00 +0000</pubDate>
+      
+    </item>
+    <item>
       <title><![CDATA[Why top talent is walking away from OpenAI and xAI]]></title>
       <link>https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/</link>
       <description><![CDATA[The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).]]></description>
       <category>Industry</category>
       <pubDate>Fri, 13 Feb 2026 21:00:00 +0000</pubDate>
       <author>Theresa Loconsolo</author>
-    </item>
-    <item>
-      <title><![CDATA[OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK]]></title>
-      <link>https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/</link>
-      <description><![CDATA[The OpenAI Is Nuking Its news is worth a closer look for teams making near-term tool or vendor calls (via Wired AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 21:56:18 +0000</pubDate>
-      <author>Zeyi Yang</author>
-    </item>
-    <item>
-      <title><![CDATA[Airbnb plans to bake in AI features for search, discovery and support]]></title>
-      <link>https://techcrunch.com/2026/02/13/airbnb-plans-to-bake-in-ai-features-for-search-discovery-and-support/</link>
-      <description><![CDATA[The Airbnb news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Sat, 14 Feb 2026 02:40:42 +0000</pubDate>
-      <author>Ivan Mehta</author>
-    </item>
-    <item>
-      <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
-      <link>https://arstechnica.com/tech-policy/2026/02/santa-monica-deploys-ai-powered-parking-cameras-to-protect-bike-lanes/</link>
-      <description><![CDATA[Keep Aided on your radar — it could affect planning or tooling decisions soon (via Ars Technica AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 23:03:08 +0000</pubDate>
-      <author>Cyrus Farivar</author>
-    </item>
-    <item>
-      <title><![CDATA[GPT-5.2 derives a new result in theoretical physics]]></title>
-      <link>https://openai.com/index/new-result-theoretical-physics</link>
-      <description><![CDATA[GPT is a development worth monitoring for near-term product and tooling decisions (via OpenAI Blog).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 11:00:00 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[Beyond rate limits: scaling access to Codex and Sora]]></title>
-      <link>https://openai.com/index/beyond-rate-limits</link>
-      <description><![CDATA[The Beyond news is worth a closer look for teams making near-term tool or vendor calls (via OpenAI Blog).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 09:00:00 +0000</pubDate>
-      
     </item>
   </channel>
 </rss>
