@@ -1,13 +1,13 @@
 {
   "date": "14 Feb 2026",
   "total_articles": 14,
-  "source_count": 25,
+  "source_count": 28,
   "read_time_minutes": 5,
   "intro": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in \u2014 and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (9 stories)."
+      "value": "Industry led coverage (8 stories)."
     },
     {
       "label": "Builder pick",
@@ -20,39 +20,32 @@
   ],
   "issue_menu": [
     {
-      "icon": "\ud83c\udf10",
-      "title": "Industry Radar",
-      "count": 2,
-      "label": "\ud83c\udf10 Industry Radar (2)",
-      "deck": "The moves that change product plans, budgets, and positioning.",
-      "promise": "",
-      "num": "01"
-    },
-    {
       "icon": "\ud83d\udee0\ufe0f",
       "title": "Builder's Bench",
-      "count": 2,
-      "label": "\ud83d\udee0\ufe0f Builder's Bench (2)",
+      "count": 1,
+      "read_time_minutes": 1,
+      "label": "\ud83d\udee0\ufe0f Builder's Bench (1)",
       "deck": "New tooling worth evaluating in an actual workflow this week.",
       "promise": "",
-      "num": "02"
+      "num": "01"
     },
     {
       "icon": "\u2b50",
       "title": "Open Source Watch",
       "count": 1,
+      "read_time_minutes": 1,
       "label": "\u2b50 Open Source Watch (1)",
       "deck": "Repos with momentum that might deserve a deeper look.",
       "promise": "Repos with momentum.",
-      "num": "03"
+      "num": "02"
     }
   ],
   "briefing": [
     {
-      "title": "Custom Kernels for All from Codex and Claude",
-      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
-      "note": "A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.",
-      "track": "Builder"
+      "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
+      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+      "note": "Lockdown Mode just shipped; we're adding it to the list of options to benchmark this quarter. Why it matters: Worth a side-by-side with what you're using now \u2014 Lockdown Mode could change the tradeoffs.",
+      "track": "Leader"
     },
     {
       "title": "ClawRouter",
@@ -61,37 +54,37 @@
       "track": "Builder"
     },
     {
-      "title": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows",
-      "url": "https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/",
-      "note": "New tutorial content on Exa Instant walks through a practical implementation. Why it matters: The Exa Instant development is a useful signal for teams shipping AI products.",
+      "title": "A timeline of claims about AI/LLMs",
+      "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
+      "note": "LLMs is now available for testing \u2014 compare against your current baseline. Why it matters: LLMs changes the cost-quality tradeoff landscape \u2014 benchmark before committing.",
       "track": "Builder"
     }
   ],
   "editors_note": {
     "headline": "This week",
-    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking Introducing Lockdown Mode and Elevated Risk labels in, you're already behind.",
-    "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
+    "thesis": "We're watching Custom Kernels for All from Codex and Claude \u2014 it's the one most likely to affect vendor and roadmap decisions this quarter.",
+    "hook": "We're flagging the lead for leadership \u2014 it's the one most likely to shift budgets or priorities.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "Custom Kernels for All from Codex and Claude deserves more attention than it's getting.",
-    "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
+    "underhyped": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT deserves more attention than it's getting.",
+    "risk": "Keep an eye on Introducing Lockdown Mode and Elevated Risk labels in \u2014 it could shift budgets or vendor assumptions."
   },
   "lead_story": {
-    "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
-    "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
-    "source": "OpenAI Blog",
-    "track": "Leader",
-    "audience_track": "Leader",
-    "difficulty": "Beginner",
-    "what_happened": "Lockdown Mode just shipped; we're adding it to the list of options to benchmark this quarter.",
-    "our_take": "Treat Lockdown Mode as a planning input \u2014 the second-order effects matter more than the headline.",
-    "what_to_do": "Bring Lockdown Mode to your next planning sync \u2014 it may affect Q2 priorities."
+    "title": "Custom Kernels for All from Codex and Claude",
+    "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+    "source": "Hugging Face Blog",
+    "track": "Builder",
+    "audience_track": "Builder",
+    "difficulty": "Intermediate",
+    "what_happened": "A new tool release around Custom Kernels targets gaps in current developer workflows.",
+    "our_take": "Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.",
+    "what_to_do": "Allocate one afternoon to test Custom Kernels against your top use case."
   },
   "quick_hits": [
     {
-      "title": "Custom Kernels for All from Codex and Claude",
-      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
-      "note": "A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.",
-      "track": "Builder"
+      "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
+      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+      "note": "Lockdown Mode just shipped; we're adding it to the list of options to benchmark this quarter. Why it matters: Worth a side-by-side with what you're using now \u2014 Lockdown Mode could change the tradeoffs.",
+      "track": "Leader"
     },
     {
       "title": "ClawRouter",
@@ -100,62 +93,13 @@
       "track": "Builder"
     },
     {
-      "title": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows",
-      "url": "https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/",
-      "note": "New tutorial content on Exa Instant walks through a practical implementation. Why it matters: The Exa Instant development is a useful signal for teams shipping AI products.",
+      "title": "A timeline of claims about AI/LLMs",
+      "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
+      "note": "LLMs is now available for testing \u2014 compare against your current baseline. Why it matters: LLMs changes the cost-quality tradeoff landscape \u2014 benchmark before committing.",
       "track": "Builder"
     }
   ],
   "sections": [
-    {
-      "title": "Industry Radar",
-      "icon": "\ud83c\udf10",
-      "deck": "The moves that change product plans, budgets, and positioning.",
-      "color": "0F4C5C",
-      "badge": "Industry Radar",
-      "topics": [
-        "Industry",
-        "Community"
-      ],
-      "tier": "leader",
-      "promise": "",
-      "articles": [
-        {
-          "title": "Why top talent is walking away from OpenAI and xAI",
-          "url": "https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Theresa Loconsolo",
-          "published": "13 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2236544077.jpg?resize=1200,800",
-          "summary": "The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).",
-          "what_happened": "The OpenAI development has implications for vendor strategy and competitive positioning.",
-          "why_it_matters": "The OpenAI shift affects competitive positioning \u2014 factor it into Q2 planning.",
-          "what_to_do": "Add OpenAI as a discussion item in your next strategy or planning meeting.",
-          "our_take": "Teams that factor OpenAI into next quarter early usually gain execution room later.",
-          "audience_track": "Leader",
-          "difficulty": "Beginner",
-          "topic": "Industry"
-        },
-        {
-          "title": "OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips",
-          "url": "https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/",
-          "source": "Ars Technica AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arstechnica.com&sz=16",
-          "authors": "Benj Edwards",
-          "published": "12 Feb",
-          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2225076517_resize-1152x648.jpg",
-          "summary": "The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via Ars Technica AI).",
-          "what_happened": "Industry activity around OpenAI may shift competitive dynamics this quarter.",
-          "why_it_matters": "Industry changes involving OpenAI are likely to affect near-term planning cycles.",
-          "what_to_do": "Monitor OpenAI for follow-on product or pricing changes over the next month.",
-          "our_take": "Strategic positioning around OpenAI is shifting faster than most roadmap cycles account for.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Industry"
-        }
-      ]
-    },
     {
       "title": "Builder's Bench",
       "icon": "\ud83d\udee0\ufe0f",
@@ -184,23 +128,6 @@
           "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Tools"
-        },
-        {
-          "title": "Show HN: I'm 75, building an OSS Virtual Protest Protocol for digital activism",
-          "url": "https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "",
-          "published": "07 Feb",
-          "thumbnail": "",
-          "summary": "Keep Show HN on your radar \u2014 it could affect planning or tooling decisions soon (via Hacker News).",
-          "what_happened": "A new tool release around Show HN targets gaps in current developer workflows.",
-          "why_it_matters": "The Show HN release addresses gaps that many builder teams have flagged.",
-          "what_to_do": "Try Show HN on a non-critical task this week and log the results.",
-          "our_take": "Don't adopt tools based on hype. Run it against your ugliest edge case first.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tools"
         }
       ]
     },
@@ -224,7 +151,7 @@
           "authors": "BlockRunAI",
           "published": "14 Feb",
           "thumbnail": "https://avatars.githubusercontent.com/u/250889376?v=4",
-          "summary": "The agent-native LLM router powering OpenClaw \u2014 by BlockRun. Currently at 2,405 stars with ~240 stars/day growth.",
+          "summary": "The agent-native LLM router powering OpenClaw \u2014 by BlockRun. Currently at 2,421 stars with ~242 stars/day growth.",
           "what_happened": "Growing traction for ClawRouter on GitHub suggests rising builder interest.",
           "why_it_matters": "Community interest in ClawRouter is growing \u2014 check repo health before committing.",
           "what_to_do": "Check ClawRouter for recent activity, open issues, and license compatibility this week.",
@@ -314,13 +241,13 @@
   ],
   "category_selection_available": true,
   "learn_this_week": {
-    "title": "Building RAG Agents with LLMs",
-    "url": "https://www.nvidia.com/en-us/training/instructor-led-workshops/building-rag-agents-with-llms/",
-    "provider": "NVIDIA DLI",
-    "level": "Intermediate",
-    "free": true,
-    "duration": "2 hours",
-    "note": "RAG architecture from scratch. Covers retrieval, chunking, and agent orchestration."
+    "title": "Full Stack Deep Learning",
+    "url": "https://fullstackdeeplearning.com/",
+    "provider": "FSDL",
+    "level": "Advanced",
+    "free": false,
+    "duration": "Self-paced",
+    "note": "Production ML engineering. Materials free, cohort paid. Best-in-class for builders."
   },
   "prompt_of_the_week": {
     "text": "Compare these two technical approaches for [problem]. Give me a decision matrix with columns for: complexity, maintainability, performance, and team skill requirements.",

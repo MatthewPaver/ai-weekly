@@ -5,13 +5,14 @@
       "date_iso": "2026-02-14",
       "date_label": "14 Feb 2026",
       "title": "Inference \u2014 14 Feb 2026",
-      "lead_title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
+      "lead_title": "Custom Kernels for All from Codex and Claude",
       "summary": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in \u2014 and what it means for your roadmap.",
       "total_articles": 14,
       "read_time_minutes": 5,
-      "section_count": 3,
+      "section_count": 2,
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html",
       "repo_md_path": "/issues/2026-02-14.md",
+      "cover_image_url": "https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png",
       "is_latest": true
     },
     {
@@ -26,6 +27,7 @@
       "section_count": 3,
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-13.html",
       "repo_md_path": "/issues/2026-02-13.md",
+      "cover_image_url": "",
       "is_latest": false
     },
     {
@@ -40,6 +42,7 @@
       "section_count": 3,
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-12.html",
       "repo_md_path": "/issues/2026-02-12.md",
+      "cover_image_url": "",
       "is_latest": false
     },
     {
@@ -54,6 +57,7 @@
       "section_count": 4,
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-11.html",
       "repo_md_path": "/issues/2026-02-11.md",
+      "cover_image_url": "",
       "is_latest": false
     }
   ]

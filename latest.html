@@ -27,38 +27,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    /* Design tokens: see docs/DESIGN_AUDIT.md. Brand #0F4C5C, #0F766E; accent #B45309; WCAG AA. Strong contrast for readability. */
+    /* Design tokens: light and dark as separate pages. WCAG AA contrast throughout (4.5:1+ normal text, 3:1+ large). */
     :root {
       --bg: #FAFAF9;
       --surface: #ffffff;
       --surface-2: #E5E7EB;
       --text: #0F172A;
-      --muted: #374151;
-      --line: #D1D5DB;
+      --muted: #1F2937;
+      --line: #9CA3AF;
       --brand: #0F766E;
       --brand-2: #0F4C5C;
       --brand-3: #B45309;
       --ink: #0F172A;
-      --link: #0C5C54;
-      --link-hover: #0F766E;
+      --link: #0B5345;
+      --link-hover: #0D6B5C;
       --focus: #B45309;
       --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.08);
       --radius: 10px;
     }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0F172A;
-        --surface: #1E293B;
-        --surface-2: #334155;
-        --text: #F1F5F9;
-        --muted: #94A3B8;
-        --line: #475569;
-        --link: #5EEAD4;
-        --link-hover: #99F6E4;
-        --focus: #FBBF24;
-        --shadow: 0 4px 16px rgba(0,0,0,0.3);
-      }
+    /* Dark page: applied when theme_mode is 'dark' (separate latest-dark.html). */
+    html.theme-dark {
+      color-scheme: dark;
+    }
+    html.theme-dark :root {
+      --bg: #0F172A;
+      --surface: #1E293B;
+      --surface-2: #334155;
+      --text: #F8FAFC;
+      --muted: #CBD5E1;
+      --line: #64748B;
+      --link: #67E8F9;
+      --link-hover: #99F6E4;
+      --focus: #FBBF24;
+      --shadow: 0 4px 16px rgba(0,0,0,0.3);
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -97,7 +99,7 @@
     aside a,
     .footer a {
       color: var(--link);
-      text-decoration-color: color-mix(in srgb, var(--link), transparent 52%);
+      text-decoration-color: color-mix(in srgb, var(--link), transparent 40%);
     }
 
     main a:hover,
@@ -169,7 +171,7 @@
 
     .hero-sub {
       margin: 2px 0 0;
-      color: rgba(255, 255, 255, 0.72);
+      color: rgba(255, 255, 255, 0.92);
       font-size: 11px;
     }
 
@@ -201,9 +203,9 @@
 
     .chip {
       font-size: 0.72rem;
-      color: rgba(255, 255, 255, 0.9);
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.28);
       border-radius: 999px;
       padding: 3px 8px;
     }
@@ -216,18 +218,21 @@
       align-items: start;
     }
 
+    /* Sync-style cards: softer elevation, rounded corners, fluid hover */
     .card {
       background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 20%);
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.05);
       animation: rise .4s ease both;
+      transition: box-shadow .2s ease, border-color .2s ease;
     }
 
     @media (prefers-color-scheme: dark) {
       .card {
         background: #1E293B;
         border-color: #334155;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 14px rgba(0,0,0,0.15);
       }
     }
 
@@ -243,9 +248,6 @@
     .menu {
       padding: 14px 16px;
       margin-bottom: 12px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
 
     .menu .section-head { margin-bottom: 6px; }
@@ -261,7 +263,6 @@
       font-size: 0.75rem !important;
       color: var(--muted) !important;
       margin: 0 0 12px !important;
-      opacity: 0.88;
     }
 
     .menu-grid {
@@ -278,17 +279,19 @@
       color: var(--text);
       font-size: 0.88rem;
       font-weight: 500;
-      padding: 10px 12px;
-      border-radius: 10px;
-      border: 1px solid var(--line);
-      background: color-mix(in srgb, var(--surface-2), transparent 50%);
-      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--line), transparent 30%);
+      background: var(--surface);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+      transition: transform .2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow .2s ease, background .2s ease, border-color .2s ease;
     }
 
     .menu-item:hover {
-      transform: translateY(-1px);
-      background: color-mix(in srgb, var(--brand), transparent 88%);
-      box-shadow: 0 4px 12px rgba(15,31,40,0.08);
+      transform: translateY(-2px);
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+      box-shadow: 0 4px 14px rgba(15,31,40,0.08);
+      border-color: color-mix(in srgb, var(--brand), transparent 70%);
     }
 
     .menu-num {
@@ -314,10 +317,11 @@
       min-width: 22px; height: 22px;
       display: flex; align-items: center; justify-content: center;
       border-radius: 999px;
-      background: color-mix(in srgb, var(--brand), transparent 85%);
+      background: color-mix(in srgb, var(--brand), transparent 80%);
       color: var(--brand-2);
       flex-shrink: 0;
     }
+    html.theme-dark .menu-count { color: var(--link); background: color-mix(in srgb, var(--link), transparent 80%); }
 
     .section-head {
       margin: 0;
@@ -331,20 +335,27 @@
     .lead {
       overflow: hidden;
       margin-bottom: 12px;
-      border: 1px solid color-mix(in srgb, var(--brand-2), transparent 50%);
-      box-shadow: 0 2px 8px rgba(15, 76, 92, 0.08), 0 4px 16px rgba(0,0,0,0.06);
+      border-radius: 16px;
+      border: 1px solid color-mix(in srgb, var(--brand-2), transparent 55%);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(15, 76, 92, 0.08);
+      transition: box-shadow .25s ease;
+    }
+
+    .lead:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 12px 32px rgba(15, 76, 92, 0.12);
     }
 
     .lead-media {
       width: 100%;
-      height: 280px;
+      height: 260px;
       object-fit: cover;
+      object-position: center 50%;
       background: var(--surface-2);
       display: block;
-      transition: transform .4s ease;
+      transition: transform .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
-    .lead:hover .lead-media { transform: scale(1.03); }
+    .lead:hover .lead-media { transform: scale(1.02); }
 
     .lead-body {
       padding: 16px;
@@ -367,16 +378,19 @@
       border: 1px solid var(--line);
     }
     .badge-source {
-      font-size: 0.68rem;
-      padding: 2px 6px;
+      font-size: 0.6rem;
+      padding: 1px 5px;
+      line-height: 1.2;
     }
     .source-icon {
       vertical-align: middle;
       margin-right: 2px;
-      border-radius: 2px;
-      width: 10px;
-      height: 10px;
+      border-radius: 1px;
+      width: 6px;
+      height: 6px;
       object-fit: contain;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
     }
     /* Difficulty: Beginner (green), Intermediate (amber), Advanced (red) — visible variety */
     .badge-difficulty-beginner { background: #dcfce7 !important; color: #166534 !important; border-color: #bbf7d0 !important; }
@@ -507,15 +521,15 @@
 
     .section {
       background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 15%);
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.04);
       overflow: hidden;
     }
 
     @media (prefers-color-scheme: dark) {
       .section {
-        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.18), 0 4px 14px rgba(0,0,0,0.12);
       }
     }
 
@@ -549,39 +563,58 @@
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
 
+    /* Story cards: Sync-style — image fused with card, rounded top only, soft lift on hover */
     .story {
-      border: 1px solid var(--line);
-      border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--line), transparent 25%);
+      border-radius: 14px;
       overflow: hidden;
-      background: var(--surface-2);
-      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      background: var(--surface);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform .22s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow .22s ease, border-color .2s ease;
     }
 
     .story:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(15,31,40,0.12);
-      border-color: color-mix(in srgb, var(--brand), transparent 50%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(15,31,40,0.1), 0 4px 12px rgba(0,0,0,0.06);
+      border-color: color-mix(in srgb, var(--brand), transparent 60%);
     }
 
     @media (prefers-color-scheme: dark) {
       .story {
-        box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.1);
       }
       .story:hover {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 4px 12px rgba(0,0,0,0.15);
       }
     }
 
     .story img {
       width: 100%;
-      height: 130px;
+      height: 140px;
+      max-height: 140px;
       object-fit: cover;
+      object-position: center 40%;
       display: block;
       background: var(--surface-2);
+      border-radius: 14px 14px 0 0;
     }
 
-    .story-body { padding: 10px; }
+    .story-body { padding: 12px 14px; }
+
+    .story-context {
+      margin: 0 0 8px;
+      font-size: 0.8rem;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+    .badge-section {
+      font-size: 0.65rem;
+      padding: 2px 6px;
+      background: color-mix(in srgb, var(--brand), transparent 85%);
+      color: var(--brand-2);
+      border-color: color-mix(in srgb, var(--brand), transparent 60%);
+    }
+    html.theme-dark .badge-section { background: color-mix(in srgb, var(--link), transparent 75%); color: var(--link); }
 
     .story h3 {
       margin: 6px 0;
@@ -673,7 +706,6 @@
     .copyright {
       font-size: 0.75rem;
       color: var(--muted);
-      opacity: 0.7;
       margin-top: 8px;
     }
 
@@ -847,18 +879,18 @@
     <header class="hero">
       <div class="hero-top">
         <div class="brand">
-          <img class="logo" src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="Inference logo" />
+          <img class="logo" src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="" role="presentation" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" width="44" height="44" />
+          <svg class="logo logo-fallback" width="44" height="44" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none;"><rect width="52" height="52" rx="14" fill="url(#inf-logo-g)"/><path d="M26 14v24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="38" r="2.5" fill="#fff"/><defs><linearGradient id="inf-logo-g" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#0F4C5C"/><stop offset=".5" stop-color="#0F766E"/><stop offset="1" stop-color="#0F4C5C"/></linearGradient></defs></svg>
           <div>
             <h1>Inference</h1>
-            <p class="hero-sub">Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes.</p>
+            <p class="hero-sub">Signal in the noise.</p>
           </div>
         </div>
 
         <nav class="nav" aria-label="Issue navigation">
           <a href="https://matthewpaver.github.io/ai-weekly/">Archive</a>
           <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a>
-          <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email View</a>
-          <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
+<a href="https://matthewpaver.github.io/ai-weekly/latest-dark.html">Dark</a><a href="https://matthewpaver.github.io/ai-weekly/email.html">Email View</a>          <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
         </nav>
       </div>
 
@@ -867,56 +899,48 @@
         <span class="chip">14 Feb 2026</span>
         <span class="chip">14 stories</span>
         <span class="chip">~5 min read</span>
-        <span class="chip">25+ sources</span>
+        <span class="chip">28+ sources</span>
       </div>
+      <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; opacity: 0.85;">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
     </header>
 
     <div class="content">
       <main id="main-content">
-        <section class="intro card">This week&#39;s signal: Introducing Lockdown Mode and Elevated Risk labels in — and what it means for your roadmap.</section>
-
         <section class="menu card" aria-label="In this issue">
           <p class="section-head">In This Issue</p>
           <p class="menu-intro">What’s in this issue — each category has a short description so you can skim before you read.</p>
           <p class="difficulty-legend">Reading level: <span class="badge badge-difficulty-beginner">Beginner</span> <span class="badge badge-difficulty-intermediate">Intermediate</span> <span class="badge badge-difficulty-advanced">Advanced</span></p>
           <div class="menu-grid">
-            <a class="menu-item" href="#industry-radar">
-              <span class="menu-num">01</span>
-              <span class="menu-icon">🌐</span>
-              <span class="menu-text">
-                <span class="menu-label">Industry Radar</span>
-<span class="menu-deck">The moves that change product plans, budgets, and positioning.</span>              </span>
-              <span class="menu-count">2</span>
-            </a>
             <a class="menu-item" href="#builders-bench">
-              <span class="menu-num">02</span>
+              <span class="menu-num">01</span>
               <span class="menu-icon">🛠️</span>
               <span class="menu-text">
                 <span class="menu-label">Builder&#39;s Bench</span>
 <span class="menu-deck">New tooling worth evaluating in an actual workflow this week.</span>              </span>
-              <span class="menu-count">2</span>
+              <span class="menu-count">1 · ~1 min</span>
             </a>
             <a class="menu-item" href="#open-source-watch">
-              <span class="menu-num">03</span>
+              <span class="menu-num">02</span>
               <span class="menu-icon">⭐</span>
               <span class="menu-text">
                 <span class="menu-label">Open Source Watch</span>
 <span class="menu-deck">Repos with momentum that might deserve a deeper look.</span><span class="menu-deck section-promise">Repos with momentum.</span>              </span>
-              <span class="menu-count">1</span>
+              <span class="menu-count">1 · ~1 min</span>
             </a>
           </div>
         </section>
 
         <article class="lead card">
+          <img class="lead-media" src="https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png" alt="Custom Kernels for All from Codex and Claude" />
           <div class="lead-body">
             <p class="section-head">Top Story</p>
             <div class="meta-row">
-              <span class="badge badge-source"><img src="https://www.google.com/s2/favicons?domain=openai.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">OpenAI Blog · 13 Feb</span>
-<span class="badge badge-difficulty-beginner">Beginner</span><span class="badge badge-track">Leader</span>            </div>
-            <h2><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></h2>
-            <p><strong style="color: var(--text);">Lockdown Mode just shipped; we&#39;re adding it to the list of options to benchmark this quarter.</strong> Worth a side-by-side with what you&#39;re using now — Lockdown Mode could change the tradeoffs.</p>
-            <p class="action">Action: Bring Lockdown Mode to your next planning sync — it may affect Q2 priorities.</p>
-<p class="take">Treat Lockdown Mode as a planning input — the second-order effects matter more than the headline.</p>          </div>
+              <span class="badge badge-source"><img src="https://www.google.com/s2/favicons?domain=huggingface.co&amp;sz=16" alt="" width="6" height="6" class="source-icon">Hugging Face Blog · 13 Feb</span>
+<span class="badge badge-difficulty-intermediate">Intermediate</span><span class="badge badge-track">Builder</span>            </div>
+            <h2><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Custom Kernels for All from Codex and Claude</a></h2>
+            <p><strong style="color: var(--text);">A new tool release around Custom Kernels targets gaps in current developer workflows.</strong><br>Custom Kernels is worth evaluating if your current tools are hitting limits.</p>
+            <p class="action">Action: Allocate one afternoon to test Custom Kernels against your top use case.</p>
+<p class="take">Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.</p>          </div>
         </article>
 
         <div class="share-row">
@@ -925,105 +949,47 @@
           <a class="share-btn" href="mailto:?subject=Inference%20Weekly%20%E2%80%94%2014%20Feb%202026&body=Check%20out%20this%20week's%20AI%20briefing%3A%20https://matthewpaver.github.io/ai-weekly/latest.html">Forward via Email</a>
         </div>
 
-        <!-- This week: one-line editorial (competitors use top summary, not a long block) -->
-        <section class="editors-main card reveal" aria-label="This week">
-          <p class="section-head">This week</p>
-          <p class="editors-thesis">This week&#39;s signal is clear: business model decisions are moving faster than product roadmaps. If you&#39;re not tracking Introducing Lockdown Mode and Elevated Risk labels in, you&#39;re already behind.</p>
-        </section>
-
         <div class="sections">
-          <section class="section reveal" id="industry-radar" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">1</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
-<p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
-              <article class="story">
-<img src="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2236544077.jpg?resize=1200,800" alt="Why top talent is walking away from OpenAI and xAI" loading="lazy" />                <div class="story-body">
-                  <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=techcrunch.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">TechCrunch AI</span>
-                    <span>
-                      <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Leader</span>                    </span>
-                  </div>
-                  <h3><a href="https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/" target="_blank" rel="noopener">Why top talent is walking away from OpenAI and xAI</a></h3>
-                  <p><strong style="color: var(--text);">The OpenAI development has implications for vendor strategy and competitive positioning.</strong> The OpenAI shift affects competitive positioning — factor it into Q2 planning.</p>
-                  <p class="action">Add OpenAI as a discussion item in your next strategy or planning meeting.</p>
-                  <a href="https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/" target="_blank" rel="noopener">Read article -></a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/" data-title="Why top talent is walking away from OpenAI and xAI" aria-label="Like this article">👍 Like</button>
-                  </p>
-                </div>
-              </article>
-              <article class="story">
-<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2225076517_resize-1152x648.jpg" alt="OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips" loading="lazy" />                <div class="story-body">
-                  <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=arstechnica.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">Ars Technica AI</span>
-                    <span>
-                      <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                    </span>
-                  </div>
-                  <h3><a href="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" target="_blank" rel="noopener">OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips</a></h3>
-                  <p><strong style="color: var(--text);">Industry activity around OpenAI may shift competitive dynamics this quarter.</strong> Industry changes involving OpenAI are likely to affect near-term planning cycles.</p>
-                  <p class="action">Monitor OpenAI for follow-on product or pricing changes over the next month.</p>
-                  <a href="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" target="_blank" rel="noopener">Read article -></a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" data-title="OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips" aria-label="Like this article">👍 Like</button>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
           <section class="section reveal" id="builders-bench" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span></h2>
+            <h2 class="section-title"><span class="section-num">1</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
               <article class="story">
 <img src="https://blog.langchain.com/content/images/size/w1200/2026/02/On-Agent-Frameworks--1-.png" alt="On Agent Frameworks and Agent Observability" loading="lazy" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=blog.langchain.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">LangChain Blog</span>
+                    <span class="badge badge-source"><img src="https://www.google.com/s2/favicons?domain=blog.langchain.com&amp;sz=16" alt="" width="6" height="6" class="source-icon">LangChain Blog</span>
                     <span>
+                      <span class="badge badge-section">🛠️ Builder&#39;s Bench</span>
                       <span class="badge badge-difficulty-intermediate">Intermediate</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
+                  <p class="story-context" aria-label="Context">In <strong>Builder&#39;s Bench</strong>: New tooling worth evaluating in an actual workflow this week.</p>
                   <h3><a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">On Agent Frameworks and Agent Observability</a></h3>
-                  <p><strong style="color: var(--text);">On Agent Frameworks adds a new option to the builder toolkit — worth a scoped evaluation.</strong> The open release of On Agent Frameworks adds a viable alternative to proprietary options.</p>
-                  <p class="action">Try On Agent Frameworks on your most common use case — measure the gap vs your current setup.</p>
+                  <p><strong style="color: var(--text);">On Agent Frameworks adds a new option to the builder toolkit, worth a scoped evaluation.</strong><br>The open release of On Agent Frameworks adds a viable alternative to proprietary options.</p>
+                  <p class="action">Action: Try On Agent Frameworks on your most common use case, measure the gap vs your current setup.</p>
                   <a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" data-title="On Agent Frameworks and Agent Observability" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
-              <article class="story">
-                <div class="story-body">
-                  <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">Hacker News (AI)</span>
-                    <span>
-                      <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                    </span>
-                  </div>
-                  <h3><a href="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" target="_blank" rel="noopener">Show HN: I&#39;m 75, building an OSS Virtual Protest Protocol for digital activism</a></h3>
-                  <p><strong style="color: var(--text);">A new tool release around Show HN targets gaps in current developer workflows.</strong> The Show HN release addresses gaps that many builder teams have flagged.</p>
-                  <p class="action">Try Show HN on a non-critical task this week and log the results.</p>
-                  <a href="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" target="_blank" rel="noopener">Read article -></a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" data-title="Show HN: I&#39;m 75, building an OSS Virtual Protest Protocol for digital activism" aria-label="Like this article">👍 Like</button>
-                  </p>
-                </div>
-              </article>
             </div>
           </section>
           <section class="section reveal" id="open-source-watch" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">3</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(1)</span></h2>
+            <h2 class="section-title"><span class="section-num">2</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">Repos with momentum that might deserve a deeper look. <span class="section-promise">Repos with momentum.</span></p>            <div class="stories">
               <article class="story">
 <img src="https://avatars.githubusercontent.com/u/250889376?v=4" alt="ClawRouter" loading="lazy" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge badge-source" style="font-size: 0.68rem;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="10" height="10" class="source-icon">GitHub Trending (AI/ML)</span>
+                    <span class="badge badge-source"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="6" height="6" class="source-icon">GitHub Trending (AI/ML)</span>
                     <span>
+                      <span class="badge badge-section">⭐ Open Source Watch</span>
                       <span class="badge badge-difficulty-intermediate">Intermediate</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
+                  <p class="story-context" aria-label="Context">In <strong>Open Source Watch</strong>: Repos with momentum that might deserve a deeper look.</p>
                   <h3><a href="https://github.com/BlockRunAI/ClawRouter" target="_blank" rel="noopener">ClawRouter</a></h3>
-                  <p><strong style="color: var(--text);">Growing traction for ClawRouter on GitHub suggests rising builder interest.</strong> Community interest in ClawRouter is growing — check repo health before committing.</p>
-                  <p class="action">Check ClawRouter for recent activity, open issues, and license compatibility this week.</p>
+                  <p><strong style="color: var(--text);">Growing traction for ClawRouter on GitHub suggests rising builder interest.</strong><br>Community interest in ClawRouter is growing, check repo health before committing.</p>
+                  <p class="action">Action: Check ClawRouter for recent activity, open issues, and license compatibility this week.</p>
                   <a href="https://github.com/BlockRunAI/ClawRouter" target="_blank" rel="noopener">Read article -></a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://github.com/BlockRunAI/ClawRouter" data-title="ClawRouter" aria-label="Like this article">👍 Like</button>
@@ -1036,42 +1002,15 @@
       </main>
 
       <aside>
-        <section class="quick card">
-          <p class="section-head">Fast Signals</p>
-          <ul>
-            <li>
-              <strong><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Custom Kernels for All from Codex and Claude</a></strong>
-              A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.
-            </li>
-            <li>
-              <strong><a href="https://github.com/BlockRunAI/ClawRouter" target="_blank" rel="noopener">ClawRouter</a></strong>
-              Growing traction for ClawRouter on GitHub suggests rising builder interest. Why it matters: Community interest in ClawRouter is growing — check repo health before committing.
-            </li>
-            <li>
-              <strong><a href="https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/" target="_blank" rel="noopener">Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows</a></strong>
-              New tutorial content on Exa Instant walks through a practical implementation. Why it matters: The Exa Instant development is a useful signal for teams shipping AI products.
-            </li>
+        <section class="card also-this-week" style="padding: 14px;">
+          <p class="section-head" style="margin: 0 0 10px; font-size: 0.75rem;">Also this week</p>
+          <ul style="margin: 0 0 12px; padding-left: 1.2em; font-size: 0.88rem; color: var(--text);">
+            <li style="margin-bottom: 4px;"><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener" style="color: var(--link);">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></li>
+            <li style="margin-bottom: 4px;"><a href="https://github.com/BlockRunAI/ClawRouter" target="_blank" rel="noopener" style="color: var(--link);">ClawRouter</a></li>
+            <li style="margin-bottom: 4px;"><a href="https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/" target="_blank" rel="noopener" style="color: var(--link);">A timeline of claims about AI/LLMs</a></li>
           </ul>
-        </section>
-
-        <section class="learn-card card">
-          <p class="section-head">Learn This Week</p>
-          <a href="https://www.nvidia.com/en-us/training/instructor-led-workshops/building-rag-agents-with-llms/" target="_blank" rel="noopener" class="learn-title">Building RAG Agents with LLMs</a>
-          <p class="learn-meta">
-            <span class="learn-provider">NVIDIA DLI</span>
-            <span class="badge-level badge-level-intermediate">Intermediate</span>
-<span class="badge-free">Free</span><span class="learn-duration">2 hours</span>          </p>
-          <p class="learn-note">RAG architecture from scratch. Covers retrieval, chunking, and agent orchestration.</p>
-        </section>
-
-        <section class="prompt-card card">
-          <p class="section-head">Prompt of the Week</p>
-          <blockquote class="prompt-text">"Compare these two technical approaches for [problem]. Give me a decision matrix with columns for: complexity, maintainability, performance, and team skill requirements."</blockquote>
-          <p class="prompt-meta">
-            <span class="prompt-context">Architecture</span>
-            <span class="prompt-tool">Claude / ChatGPT</span>
-          </p>
-          <p class="prompt-tip">Describe both approaches briefly. Include your team size and deployment constraints.</p>
+          <p style="margin: 0 0 8px; font-size: 0.85rem; color: var(--muted);"><a href="https://fullstackdeeplearning.com/" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Full Stack Deep Learning</a> · FSDL · Paid · Self-paced</p>
+          <p style="margin: 0; font-size: 0.82rem; color: var(--muted);">Prompt: <em>"Compare these two technical approaches for [problem]. Give me a decision matrix wit…"</em></p>
         </section>
       </aside>
     </div>
@@ -1109,12 +1048,14 @@
     <footer class="footer">
       <a href="https://matthewpaver.github.io/ai-weekly/">Archive</a>
       <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a>
-      <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a>
-      <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
-      <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues">Issues on GitHub</a>
+<a href="https://matthewpaver.github.io/ai-weekly/latest-dark.html">Dark</a><a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a>      <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
+      <p class="footer-social-proof" style="margin-top: 12px; font-size: 12px; opacity: 0.9;">
+Who reads this: Builders, product leads, and researchers who ship AI products.      </p>
       <p class="copyright">Editorial analysis &copy; 2026 Matthew Paver. Original articles &copy; respective authors and publications.</p>
     </footer>
   </div>
+
+  <!-- Light/Dark are separate pages (latest.html / latest-dark.html); no toggle -->
 
 
   <!-- Scroll-triggered reveal -->

@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Feb 2026 11:51:40 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 16:26:42 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips]]></title>
@@ -24,27 +24,27 @@
       
     </item>
     <item>
-      <title><![CDATA[Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows]]></title>
-      <link>https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/</link>
-      <description><![CDATA[Research on Exa Instant introduces methods that could influence applied work if results hold (via MarkTechPost).]]></description>
+      <title><![CDATA[How We Cut AI Costs by 73% While Improving Quality: Building Cost-Effective LLM Features]]></title>
+      <link>https://dev.to/freelancingsolutions/how-we-cut-ai-costs-by-73-while-improving-quality-building-cost-effective-llm-features-275p</link>
+      <description><![CDATA[Keep We Cut AI Costs on your radar — it could affect planning or tooling decisions soon (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Fri, 13 Feb 2026 21:29:53 +0000</pubDate>
-      <author>Asif Razzaq</author>
+      <pubDate>Sat, 14 Feb 2026 16:10:10 +0000</pubDate>
+      <author>mobius-crypt</author>
     </item>
     <item>
       <title><![CDATA[ClawRouter]]></title>
       <link>https://github.com/BlockRunAI/ClawRouter</link>
-      <description><![CDATA[The agent-native LLM router powering OpenClaw — by BlockRun. Currently at 2,405 stars with ~240 stars/day growth.]]></description>
+      <description><![CDATA[The agent-native LLM router powering OpenClaw — by BlockRun. Currently at 2,421 stars with ~242 stars/day growth.]]></description>
       <category>Repos</category>
-      <pubDate>Sat, 14 Feb 2026 06:43:48 +0000</pubDate>
+      <pubDate>Sat, 14 Feb 2026 15:13:22 +0000</pubDate>
       <author>BlockRunAI</author>
     </item>
     <item>
-      <title><![CDATA[Show HN: I'm 75, building an OSS Virtual Protest Protocol for digital activism]]></title>
-      <link>https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md</link>
-      <description><![CDATA[Keep Show HN on your radar — it could affect planning or tooling decisions soon (via Hacker News).]]></description>
-      <category>Tools</category>
-      <pubDate>Sat, 07 Feb 2026 12:32:09 +0000</pubDate>
+      <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
+      <link>https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/</link>
+      <description><![CDATA[LLMs is a development worth monitoring for near-term product and tooling decisions (via Hacker News).]]></description>
+      <category>Models</category>
+      <pubDate>Sun, 08 Feb 2026 13:02:08 +0000</pubDate>
       
     </item>
     <item>
@@ -62,6 +62,14 @@
       <category>Tools</category>
       <pubDate>Fri, 13 Feb 2026 02:23:40 +0000</pubDate>
       <author>LangChain Accounts</author>
+    </item>
+    <item>
+      <title><![CDATA[Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows]]></title>
+      <link>https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/</link>
+      <description><![CDATA[Research on Exa Instant introduces methods that could influence applied work if results hold (via MarkTechPost).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Fri, 13 Feb 2026 21:29:53 +0000</pubDate>
+      <author>Asif Razzaq</author>
     </item>
     <item>
       <title><![CDATA[Gemini 3 Deep Think: Advancing science, research and engineering]]></title>
@@ -110,14 +118,6 @@
       <category>Industry</category>
       <pubDate>Fri, 13 Feb 2026 10:00:00 +0000</pubDate>
       
-    </item>
-    <item>
-      <title><![CDATA[Why top talent is walking away from OpenAI and xAI]]></title>
-      <link>https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/</link>
-      <description><![CDATA[The OpenAI news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 21:00:00 +0000</pubDate>
-      <author>Theresa Loconsolo</author>
     </item>
   </channel>
 </rss>

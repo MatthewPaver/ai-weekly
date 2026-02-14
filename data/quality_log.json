@@ -232,5 +232,44 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-14T11:51:40.858700+00:00"
+  },
+  {
+    "articles_collected": 59,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 26,
+    "after_filters": 3,
+    "articles_final": 14,
+    "sections": 3,
+    "lead_story": "Why top talent is walking away from OpenAI and xAI",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-14T15:33:23.671261+00:00"
+  },
+  {
+    "articles_collected": 68,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 35,
+    "after_filters": 8,
+    "articles_final": 8,
+    "sections": 3,
+    "lead_story": "Airbnb says a third of its customer support is now handled b",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-14T15:55:25.281622+00:00"
+  },
+  {
+    "articles_collected": 68,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 29,
+    "after_filters": 3,
+    "articles_final": 14,
+    "sections": 2,
+    "lead_story": "Custom Kernels for All from Codex and Claude",
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-14T16:26:42.557721+00:00"
   }
 ]
