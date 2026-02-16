@@ -1,10 +1,25 @@
 {
   "issues": [
     {
+      "slug": "2026-02-16",
+      "date_iso": "2026-02-16",
+      "date_label": "16 Feb 2026",
+      "title": "Inference 16 Feb 2026",
+      "lead_title": "Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India",
+      "summary": "Big news this week: Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India, and what it means for your roadmap.",
+      "total_articles": 14,
+      "read_time_minutes": 5,
+      "section_count": 2,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-16.html",
+      "repo_md_path": "/issues/2026-02-16.md",
+      "cover_image_url": "https://techcrunch.com/wp-content/uploads/2026/02/fractal-analytics.jpg?resize=1200,800",
+      "is_latest": true
+    },
+    {
       "slug": "2026-02-14",
       "date_iso": "2026-02-14",
       "date_label": "14 Feb 2026",
-      "title": "Inference \u2014 14 Feb 2026",
+      "title": "Inference 14 Feb 2026",
       "lead_title": "Custom Kernels for All from Codex and Claude",
       "summary": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT \u2014 and what it means for your roadmap.",
       "total_articles": 14,
@@ -13,13 +28,13 @@
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html",
       "repo_md_path": "/issues/2026-02-14.md",
       "cover_image_url": "https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png",
-      "is_latest": true
+      "is_latest": false
     },
     {
       "slug": "2026-02-13",
       "date_iso": "2026-02-13",
       "date_label": "13 Feb 2026",
-      "title": "Inference \u2014 13 Feb 2026",
+      "title": "Inference 13 Feb 2026",
       "lead_title": "Testing ads in ChatGPT",
       "summary": "This week's signal: Testing ads in ChatGPT \u2014 and what it means for your roadmap.",
       "total_articles": 14,
@@ -34,7 +49,7 @@
       "slug": "2026-02-12",
       "date_iso": "2026-02-12",
       "date_label": "12 Feb 2026",
-      "title": "Inference \u2014 12 Feb 2026",
+      "title": "Inference 12 Feb 2026",
       "lead_title": "OpenAI disbands mission alignment team",
       "summary": "This week's signal: OpenAI disbands mission alignment team \u2014 and what it means for your roadmap.",
       "total_articles": 14,
@@ -49,7 +64,7 @@
       "slug": "2026-02-11",
       "date_iso": "2026-02-11",
       "date_label": "11 Feb 2026",
-      "title": "Inference \u2014 11 Feb 2026",
+      "title": "Inference 11 Feb 2026",
       "lead_title": "OpenAI disbands mission alignment team, which focused on \u2018safe\u2019 and \u2018trustworthy\u2019 AI development",
       "summary": "Company moves and product decisions led this week.",
       "total_articles": 10,

@@ -325,5 +325,111 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-14T20:08:48.218019+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 42,
+    "after_filters": 15,
+    "after_accessibility": 15,
+    "after_selection": 14,
+    "articles_final": 14,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 42
+      },
+      {
+        "stage": "quality_gates",
+        "after": 15
+      },
+      {
+        "stage": "accessibility",
+        "after": 15
+      },
+      {
+        "stage": "selection",
+        "after": 14
+      },
+      {
+        "stage": "summary_quality",
+        "after": 14
+      }
+    ],
+    "sources_used": [
+      "Dev.to AI",
+      "Hacker News (AI)",
+      "InfoQ",
+      "Last Week in AI",
+      "TechCrunch AI",
+      "The Register",
+      "The Verge AI",
+      "arXiv CS.AI"
+    ],
+    "sections": 4,
+    "lead_story": "Fractal Analytics\u2019 muted IPO debut signals persistent AI fea",
+    "total_articles": 14,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T12:31:42.513456+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 29,
+    "after_filters": 7,
+    "after_accessibility": 27,
+    "after_selection": 14,
+    "articles_final": 14,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 29
+      },
+      {
+        "stage": "quality_gates",
+        "after": 7
+      },
+      {
+        "stage": "accessibility",
+        "after": 27
+      },
+      {
+        "stage": "selection",
+        "after": 14
+      },
+      {
+        "stage": "summary_quality",
+        "after": 14
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "GitHub Trending (AI/ML)",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 2,
+    "lead_story": "Fractal Analytics\u2019 muted IPO debut signals persistent AI fea",
+    "total_articles": 14,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T14:56:15.031672+00:00"
   }
 ]

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#F5F5F4" />
-  <meta name="description" content="Inference Weekly — archive of 4 AI newsletter issues for builders, leaders, and researchers." />
-  <title>Inference Weekly — Archive</title>
+  <meta name="theme-color" content="#FAFAF9" id="meta-theme-color" />
+  <meta name="description" content="Inference Weekly: archive of 5 AI newsletter issues for builders, leaders, and researchers." />
+  <title>Inference Weekly: Archive</title>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Inference Weekly — Archive" />
-  <meta property="og:description" content="Browse 4 issues of curated AI signal." />
+  <meta property="og:title" content="Inference Weekly: Archive" />
+  <meta property="og:description" content="Browse 5 issues of curated AI signal." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/" />
   <meta property="og:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
@@ -26,33 +26,36 @@
   <style>
     /* Strong contrast (WCAG AA). Design ref: docs/DESIGN_REFERENCE.md. */
     :root {
-      --bg: #F5F5F4;
+      --bg: #FAFAF9;
       --surface: #ffffff;
-      --surface-2: #E7E5E4;
+      --surface-2: #E5E7EB;
       --text: #0F172A;
-      --muted: #374151;
-      --line: #D6D3D1;
-      --brand: #0f766e;
-      --brand-2: #0f4c5c;
-      --brand-3: #c2410c;
-      --link: #0b4f63;
-      --link-hover: #083947;
-      --focus: #c2410c;
-      --shadow: 0 2px 8px rgba(0,0,0,0.06);
+      --muted: #1F2937;
+      --line: #8B95A5;
+      --brand: #0F766E;
+      --brand-2: #0F4C5C;
+      --brand-3: #B45309;
+      --link: #0B5345;
+      --link-hover: #0D6B5C;
+      --focus: #B45309;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.08);
     }
 
-    html.theme-dark { color-scheme: dark; }
-    html.theme-dark :root {
-      --bg: #08131a;
-      --surface: #0f1d26;
-      --surface-2: #122531;
-      --text: #e6eff4;
-      --muted: #c1d0d8;
-      --line: #2d4a59;
-      --link: #7dd3fc;
-      --link-hover: #bae6fd;
-      --focus: #f59e0b;
-      --shadow: 0 16px 34px rgba(2, 8, 12, 0.55);
+    html.theme-dark {
+      color-scheme: dark;
+      --bg: #0F172A;
+      --surface: #1E293B;
+      --surface-2: #334155;
+      --text: #F8FAFC;
+      --muted: #CBD5E1;
+      --line: #64748B;
+      --brand: #2DD4BF;
+      --brand-2: #67E8F9;
+      --brand-3: #FBBF24;
+      --link: #67E8F9;
+      --link-hover: #99F6E4;
+      --focus: #FBBF24;
+      --shadow: 0 4px 16px rgba(0,0,0,0.3);
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -67,9 +70,16 @@
       background:
         radial-gradient(circle at 0% 0%, rgba(15, 118, 110, 0.17), transparent 34%),
         radial-gradient(circle at 100% 0%, rgba(194, 65, 12, 0.11), transparent 28%),
-        linear-gradient(180deg, #f8fbfb 0%, var(--bg) 100%);
+        var(--bg);
       color: var(--text);
       line-height: 1.56;
+    }
+
+    html.theme-dark body {
+      background:
+        radial-gradient(circle at 0% 0%, rgba(15, 118, 110, 0.08), transparent 34%),
+        radial-gradient(circle at 100% 0%, rgba(194, 65, 12, 0.05), transparent 28%),
+        var(--bg);
     }
 
     .skip-link {
@@ -83,7 +93,6 @@
     .copyright {
       font-size: 0.75rem;
       color: var(--muted);
-      opacity: 0.7;
       margin-top: 8px;
     }
 
@@ -98,6 +107,7 @@
     .issue .links a,
     .footer a {
       color: var(--link);
+      text-decoration-color: rgba(11,83,69,0.48);
       text-decoration-color: color-mix(in srgb, var(--link), transparent 52%);
     }
 
@@ -130,6 +140,7 @@
 
     .hero {
       margin-top: 18px;
+      border: 1px solid rgba(15,118,110,0.3);
       border: 1px solid color-mix(in srgb, var(--brand), white 70%);
       border-radius: 0;
       background: linear-gradient(125deg, #0b1c2b 0%, #0f4c5c 54%, #0f766e 100%);
@@ -204,6 +215,7 @@
     /* Sync-style cards: softer elevation, 14px radius, fluid hover */
     .card {
       background: var(--surface);
+      border: 1px solid rgba(139,149,165,0.8);
       border: 1px solid color-mix(in srgb, var(--line), transparent 20%);
       border-radius: 14px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05);
@@ -283,7 +295,9 @@
 
     .btn.secondary {
       color: var(--link);
+      background: #E7EFEE;
       background: color-mix(in srgb, var(--brand), transparent 92%);
+      border-color: #B9D5D2;
       border-color: color-mix(in srgb, var(--brand), transparent 72%);
     }
 
@@ -322,6 +336,7 @@
     }
 
     .search::placeholder {
+      color: rgba(31,41,55,0.9);
       color: color-mix(in srgb, var(--muted), transparent 10%);
     }
 
@@ -333,6 +348,7 @@
     }
 
     .issue {
+      border: 1px solid rgba(139,149,165,0.75);
       border: 1px solid color-mix(in srgb, var(--line), transparent 25%);
       border-radius: 14px;
       padding: 14px;
@@ -370,6 +386,7 @@
     .issue:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+      border-color: #9CC5C1;
       border-color: color-mix(in srgb, var(--brand), transparent 60%);
     }
 
@@ -498,8 +515,8 @@
 
       <div class="stats">
         <span class="chip">Archive</span>
-        <span class="chip">4 issues</span>
-        <span class="chip">Latest: 14 Feb 2026</span>
+        <span class="chip">5 issues</span>
+        <span class="chip">Latest: 16 Feb 2026</span>
         <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">Dark</button>
       </div>
     </header>
@@ -507,12 +524,12 @@
     <section class="layout" id="main-content">
       <article class="card latest">
         <p class="kicker">Latest issue</p>
-        <h2>Inference — 14 Feb 2026</h2>
-        <p>This week&#39;s signal: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT — and what it means for your roadmap.</p>
-        <p><strong>Custom Kernels for All from Codex and Claude</strong></p>
-        <div class="meta">14 stories - ~5 min read - 3 sections</div>
+        <h2>Inference 16 Feb 2026</h2>
+        <p>Big news this week: Fractal Analytics’ muted IPO debut signals persistent AI fears in India, and what it means for your roadmap.</p>
+        <p><strong>Fractal Analytics’ muted IPO debut signals persistent AI fears in India</strong></p>
+        <div class="meta">14 stories · ~5 min read · 2 sections</div>
         <div class="cta-row">
-          <a class="btn primary" href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html">Read web issue</a>
+          <a class="btn primary" href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-16.html">Read web issue</a>
 <a class="btn secondary" href="https://matthewpaver.github.io/ai-weekly/email.html">Email version</a>        </div>
       </article>
 
@@ -530,7 +547,22 @@
       <input id="search" class="search" type="search" placeholder="Search by date, title, or keyword" aria-label="Search issues" />
 
       <div id="issues" class="issues-grid">
-        <article class="issue has-badge latest-flag" data-search="14 feb 2026 inference — 14 feb 2026 custom kernels for all from codex and claude this week&#39;s signal: introducing lockdown mode and elevated risk labels in chatgpt — and what it means for your roadmap.">
+        <article class="issue has-badge latest-flag" data-search="16 feb 2026 inference 16 feb 2026 fractal analytics’ muted ipo debut signals persistent ai fears in india big news this week: fractal analytics’ muted ipo debut signals persistent ai fears in india, and what it means for your roadmap.">
+          <div class="issue-badge" aria-hidden="true">
+            <span class="issue-num">#5</span>
+            <span>Issue</span>
+          </div>
+          <div>
+            <time datetime="2026-02-16">16 Feb 2026</time>
+            <h3>Fractal Analytics’ muted IPO debut signals persistent AI fears in India</h3>
+            <div class="meta">14 stories · ~5 min · 2 sections</div>
+            <p class="summary">Big news this week: Fractal Analytics’ muted IPO debut signals persistent AI fears in India, and what it means for your roadmap.</p>
+            <div class="links">
+              <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-16.html">Read issue</a>
+            </div>
+          </div>
+        </article>
+        <article class="issue has-badge" data-search="14 feb 2026 inference 14 feb 2026 custom kernels for all from codex and claude this week&#39;s signal: introducing lockdown mode and elevated risk labels in chatgpt — and what it means for your roadmap.">
           <div class="issue-badge" aria-hidden="true">
             <span class="issue-num">#4</span>
             <span>Issue</span>
@@ -538,14 +570,14 @@
           <div>
             <time datetime="2026-02-14">14 Feb 2026</time>
             <h3>Custom Kernels for All from Codex and Claude</h3>
-            <div class="meta">14 stories - ~5 min - 3 sections</div>
+            <div class="meta">14 stories · ~5 min · 3 sections</div>
             <p class="summary">This week&#39;s signal: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT — and what it means for your roadmap.</p>
             <div class="links">
               <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-14.html">Read issue</a>
             </div>
           </div>
         </article>
-        <article class="issue has-badge" data-search="13 feb 2026 inference — 13 feb 2026 testing ads in chatgpt this week&#39;s signal: testing ads in chatgpt — and what it means for your roadmap.">
+        <article class="issue has-badge" data-search="13 feb 2026 inference 13 feb 2026 testing ads in chatgpt this week&#39;s signal: testing ads in chatgpt — and what it means for your roadmap.">
           <div class="issue-badge" aria-hidden="true">
             <span class="issue-num">#3</span>
             <span>Issue</span>
@@ -553,14 +585,14 @@
           <div>
             <time datetime="2026-02-13">13 Feb 2026</time>
             <h3>Testing ads in ChatGPT</h3>
-            <div class="meta">14 stories - ~5 min - 3 sections</div>
+            <div class="meta">14 stories · ~5 min · 3 sections</div>
             <p class="summary">This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap.</p>
             <div class="links">
               <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-13.html">Read issue</a>
             </div>
           </div>
         </article>
-        <article class="issue has-badge" data-search="12 feb 2026 inference — 12 feb 2026 openai disbands mission alignment team this week&#39;s signal: openai disbands mission alignment team — and what it means for your roadmap.">
+        <article class="issue has-badge" data-search="12 feb 2026 inference 12 feb 2026 openai disbands mission alignment team this week&#39;s signal: openai disbands mission alignment team — and what it means for your roadmap.">
           <div class="issue-badge" aria-hidden="true">
             <span class="issue-num">#2</span>
             <span>Issue</span>
@@ -568,14 +600,14 @@
           <div>
             <time datetime="2026-02-12">12 Feb 2026</time>
             <h3>OpenAI disbands mission alignment team</h3>
-            <div class="meta">14 stories - ~5 min - 3 sections</div>
+            <div class="meta">14 stories · ~5 min · 3 sections</div>
             <p class="summary">This week&#39;s signal: OpenAI disbands mission alignment team — and what it means for your roadmap.</p>
             <div class="links">
               <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-12.html">Read issue</a>
             </div>
           </div>
         </article>
-        <article class="issue has-badge" data-search="11 feb 2026 inference — 11 feb 2026 openai disbands mission alignment team, which focused on ‘safe’ and ‘trustworthy’ ai development company moves and product decisions led this week.">
+        <article class="issue has-badge" data-search="11 feb 2026 inference 11 feb 2026 openai disbands mission alignment team, which focused on ‘safe’ and ‘trustworthy’ ai development company moves and product decisions led this week.">
           <div class="issue-badge" aria-hidden="true">
             <span class="issue-num">#1</span>
             <span>Issue</span>
@@ -583,7 +615,7 @@
           <div>
             <time datetime="2026-02-11">11 Feb 2026</time>
             <h3>OpenAI disbands mission alignment team, which focused on ‘safe’ and ‘trustworthy’ AI development</h3>
-            <div class="meta">10 stories - ~4 min - 4 sections</div>
+            <div class="meta">10 stories · ~4 min · 4 sections</div>
             <p class="summary">Company moves and product decisions led this week.</p>
             <div class="links">
               <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-11.html">Read issue</a>
@@ -606,13 +638,18 @@
   <script>
     (function() {
       var btn = document.getElementById('theme-toggle');
+      var meta = document.getElementById('meta-theme-color');
       if (btn) {
         function apply() {
           var isDark = document.documentElement.classList.toggle('theme-dark');
           try { localStorage.setItem('inference-theme', isDark ? 'dark' : 'light'); } catch(e) {}
           btn.textContent = isDark ? 'Light' : 'Dark';
+          if (meta) meta.content = isDark ? '#0F172A' : '#FAFAF9';
         }
-        if (document.documentElement.classList.contains('theme-dark')) btn.textContent = 'Light';
+        if (document.documentElement.classList.contains('theme-dark')) {
+          btn.textContent = 'Light';
+          if (meta) meta.content = '#0F172A';
+        }
         btn.addEventListener('click', apply);
       }
     })();

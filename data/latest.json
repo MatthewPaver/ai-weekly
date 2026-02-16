@@ -1,34 +1,29 @@
 {
-  "date": "14 Feb 2026",
+  "date": "16 Feb 2026",
+  "issue_number": 6,
   "total_articles": 14,
   "source_count": 28,
   "read_time_minutes": 5,
-  "intro": "This week's signal: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT \u2014 and what it means for your roadmap.",
+  "intro": "Big news this week: Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India, and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (8 stories)."
+      "value": "Industry led coverage (10 stories)."
     },
     {
       "label": "Builder pick",
-      "value": "[Custom Kernels for All from Codex and Claude](https://huggingface.co/blog/custom-cuda-kernels-agent-skills)"
+      "value": "[OpenClaw founder Peter Steinberger is joining OpenAI](https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai)"
     },
     {
       "label": "Leader watch",
-      "value": "[Introducing Lockdown Mode and Elevated Risk labels in ChatGPT](https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt)"
+      "value": "[Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India](https://techcrunch.com/2026/02/16/fractal-analytics-muted-ipo-debut-signals-persistent-ai-fears-in-india/)"
+    },
+    {
+      "label": "Research watch",
+      "value": "[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory](https://arxiv.org/abs/2602.12316)"
     }
   ],
   "issue_menu": [
-    {
-      "icon": "\ud83d\udee0\ufe0f",
-      "title": "Builder's Bench",
-      "count": 1,
-      "read_time_minutes": 1,
-      "label": "\ud83d\udee0\ufe0f Builder's Bench (1)",
-      "deck": "New tooling worth evaluating in an actual workflow this week.",
-      "promise": "",
-      "num": "01"
-    },
     {
       "icon": "\u2b50",
       "title": "Open Source Watch",
@@ -37,25 +32,25 @@
       "label": "\u2b50 Open Source Watch (1)",
       "deck": "Repos with momentum that might deserve a deeper look.",
       "promise": "Repos with momentum.",
-      "num": "02"
+      "num": "01"
     },
     {
-      "icon": "\ud83d\udcda",
-      "title": "Ship-It Playbooks",
-      "count": 3,
+      "icon": "\ud83d\udd2c",
+      "title": "Lab Notes",
+      "count": 1,
       "read_time_minutes": 1,
-      "label": "\ud83d\udcda Ship-It Playbooks (3)",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "promise": "One thing to try this week.",
-      "num": "03"
+      "label": "\ud83d\udd2c Lab Notes (1)",
+      "deck": "Research and model updates with downstream product impact.",
+      "promise": "",
+      "num": "02"
     }
   ],
   "briefing": [
     {
-      "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
-      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
-      "note": "Lockdown Mode just shipped; we're adding it to the list of options to benchmark this quarter. Why it matters: Worth a side-by-side with what you're using now \u2014 Lockdown Mode could change the tradeoffs.",
-      "track": "Leader"
+      "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
+      "url": "https://arxiv.org/abs/2602.12316",
+      "note": "New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate. Why it matters: If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.",
+      "track": "Researcher"
     },
     {
       "title": "ClawRouter",
@@ -66,29 +61,29 @@
   ],
   "editors_note": {
     "headline": "This week",
-    "thesis": "We're watching Custom Kernels for All from Codex and Claude \u2014 it's the one most likely to affect vendor and roadmap decisions this quarter.",
-    "hook": "We're flagging the lead for leadership \u2014 it's the one most likely to shift budgets or priorities.",
+    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India, you're already behind.",
+    "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT deserves more attention than it's getting.",
-    "risk": "Keep an eye on Introducing Lockdown Mode and Elevated Risk labels in \u2014 it could shift budgets or vendor assumptions."
+    "underhyped": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory deserves more attention than it's getting.",
+    "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
-    "title": "Custom Kernels for All from Codex and Claude",
-    "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
-    "source": "Hugging Face Blog",
-    "track": "Builder",
-    "audience_track": "Builder",
-    "difficulty": "Intermediate",
-    "what_happened": "A new tool release around Custom Kernels targets gaps in current developer workflows.",
-    "our_take": "Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.",
-    "what_to_do": "Allocate one afternoon to test Custom Kernels against your top use case."
+    "title": "Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India",
+    "url": "https://techcrunch.com/2026/02/16/fractal-analytics-muted-ipo-debut-signals-persistent-ai-fears-in-india/",
+    "source": "TechCrunch AI",
+    "track": "Leader",
+    "audience_track": "Leader",
+    "difficulty": "Beginner",
+    "what_happened": "The Fractal Analytics development has implications for vendor strategy and competitive positioning.",
+    "our_take": "Strategic positioning around Fractal Analytics is shifting faster than most roadmap cycles account for.",
+    "what_to_do": "Add Fractal Analytics as a discussion item in your next strategy or planning meeting."
   },
   "quick_hits": [
     {
-      "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
-      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
-      "note": "Lockdown Mode just shipped; we're adding it to the list of options to benchmark this quarter. Why it matters: Worth a side-by-side with what you're using now \u2014 Lockdown Mode could change the tradeoffs.",
-      "track": "Leader"
+      "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
+      "url": "https://arxiv.org/abs/2602.12316",
+      "note": "New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate. Why it matters: If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.",
+      "track": "Researcher"
     },
     {
       "title": "ClawRouter",
@@ -98,37 +93,6 @@
     }
   ],
   "sections": [
-    {
-      "title": "Builder's Bench",
-      "icon": "\ud83d\udee0\ufe0f",
-      "deck": "New tooling worth evaluating in an actual workflow this week.",
-      "color": "0F4C5C",
-      "badge": "Builders Bench",
-      "topics": [
-        "Tools"
-      ],
-      "tier": "builder",
-      "promise": "",
-      "articles": [
-        {
-          "title": "On Agent Frameworks and Agent Observability",
-          "url": "https://blog.langchain.com/on-agent-frameworks-and-agent-observability/",
-          "source": "LangChain Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
-          "authors": "LangChain Accounts",
-          "published": "13 Feb",
-          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/On-Agent-Frameworks--1-.png",
-          "summary": "The On Agent Frameworks paper offers techniques that applied teams should track for downstream impact (via LangChain Blog).",
-          "what_happened": "On Agent Frameworks adds a new option to the builder toolkit \u2014 worth a scoped evaluation.",
-          "why_it_matters": "The open release of On Agent Frameworks adds a viable alternative to proprietary options.",
-          "what_to_do": "Try On Agent Frameworks on your most common use case \u2014 measure the gap vs your current setup.",
-          "our_take": "Evaluate the docs and community, not just the feature list. That's what determines staying power.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        }
-      ]
-    },
     {
       "title": "Open Source Watch",
       "icon": "\u2b50",
@@ -147,9 +111,9 @@
           "source": "GitHub Trending (AI/ML)",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
           "authors": "BlockRunAI",
-          "published": "14 Feb",
+          "published": "16 Feb",
           "thumbnail": "https://avatars.githubusercontent.com/u/250889376?v=4",
-          "summary": "The agent-native LLM router powering OpenClaw \u2014 by BlockRun. Currently at 2,429 stars with ~221 stars/day growth.",
+          "summary": "ClawRouter is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).",
           "what_happened": "Growing traction for ClawRouter on GitHub suggests rising builder interest.",
           "why_it_matters": "Community interest in ClawRouter is growing \u2014 check repo health before committing.",
           "what_to_do": "Check ClawRouter for recent activity, open issues, and license compatibility this week.",
@@ -161,67 +125,34 @@
       ]
     },
     {
-      "title": "Ship-It Playbooks",
-      "icon": "\ud83d\udcda",
-      "deck": "Practical implementation guides you can adapt quickly.",
+      "title": "Lab Notes",
+      "icon": "\ud83d\udd2c",
+      "deck": "Research and model updates with downstream product impact.",
       "color": "0F4C5C",
-      "badge": "Ship It Playbooks",
+      "badge": "Lab Notes",
       "topics": [
-        "Tutorials"
+        "Research",
+        "Models"
       ],
-      "tier": "builder",
-      "promise": "One thing to try this week.",
+      "tier": "leader",
+      "promise": "",
       "articles": [
         {
-          "title": "Exa AI Introduces Exa Instant: A Sub-200ms Neural Search Engine Designed to Eliminate Bottlenecks for Real-Time Agentic Workflows",
-          "url": "https://www.marktechpost.com/2026/02/13/exa-ai-introduces-exa-instant-a-sub-200ms-neural-search-engine-designed-to-eliminate-bottlenecks-for-real-time-agentic-workflows/",
-          "source": "MarkTechPost",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
-          "authors": "Asif Razzaq",
-          "published": "13 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-23.png",
-          "summary": "Research on Exa Instant introduces methods that could influence applied work if results hold (via MarkTechPost).",
-          "what_happened": "New tutorial content on Exa Instant walks through a practical implementation.",
-          "why_it_matters": "The Exa Instant development is a useful signal for teams shipping AI products.",
-          "what_to_do": "Follow the Exa Instant guide, but adapt one step to fit your actual production constraints.",
-          "our_take": "The value of a tutorial is the first thing you build after reading it, not the reading itself.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "Lost in the Middle: Why Bigger Context Windows Don\u2019t Always Improve LLM Performance",
-          "url": "https://dev.to/razu381/lost-in-the-middle-why-bigger-context-windows-dont-always-improve-llm-performance-35j8",
-          "source": "Dev.to AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
-          "authors": "razu381",
-          "published": "14 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhzkx4vwkxolakcwotg2w.png",
-          "summary": "Keep Lost on your radar \u2014 it could affect planning or tooling decisions soon (via Dev.to AI).",
-          "what_happened": "New tutorial content on Lost walks through a practical implementation.",
-          "why_it_matters": "Lost is worth a closer look for teams making near-term technology choices.",
-          "what_to_do": "Use the Lost guide as a template \u2014 build one thing from it this week.",
-          "our_take": "Adapt one proven pattern from Lost instead of copying the whole stack.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "Show HN: Busted \u2013 eBPF tool that monitors what your AI agents send",
-          "url": "https://github.com/barakber/busted",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
-          "authors": "",
-          "published": "09 Feb",
-          "thumbnail": "",
-          "summary": "The Show HN paper offers techniques that applied teams should track for downstream impact (via Hacker News).",
-          "what_happened": "A hands-on guide to Show HN offers patterns you can adapt to your own stack.",
-          "why_it_matters": "Show HN is worth a closer look for teams making near-term technology choices.",
-          "what_to_do": "Use the Show HN guide as a template \u2014 build one thing from it this week.",
-          "our_take": "Use Show HN as a blueprint, then trim to fit your production constraints.",
-          "audience_track": "Builder",
+          "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
+          "url": "https://arxiv.org/abs/2602.12316",
+          "source": "arXiv CS.AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png",
+          "authors": "Pepijn Cobben, Xuanqiang Angelo Huang, Thao Amelia Pham et al.",
+          "published": "16 Feb",
+          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+          "summary": "New performance numbers for HarmBench need independent validation before changing production decisions (via arXiv CS.AI).",
+          "what_happened": "New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate.",
+          "why_it_matters": "If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.",
+          "what_to_do": "Compare the HarmBench eval setup to yours \u2014 check if the benchmark conditions match your workload.",
+          "our_take": "Benchmark wins look impressive on paper, but production workloads rarely match evaluation conditions.",
+          "audience_track": "Researcher",
           "difficulty": "Advanced",
-          "topic": "Tutorials"
+          "topic": "Research"
         }
       ]
     }
@@ -304,18 +235,18 @@
   ],
   "category_selection_available": true,
   "learn_this_week": {
-    "title": "Deep Learning Specialization",
-    "url": "https://www.coursera.org/specializations/deep-learning",
-    "provider": "Coursera / DeepLearning.AI",
-    "level": "Intermediate",
-    "free": false,
-    "duration": "5 months",
-    "note": "Five courses covering the full deep learning stack. Audit free, cert paid."
+    "title": "Google Machine Learning Crash Course",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "provider": "Google AI",
+    "level": "Beginner",
+    "free": true,
+    "duration": "15 hours",
+    "note": "Interactive exercises with TensorFlow. Google's internal ML training, now public."
   },
   "prompt_of_the_week": {
-    "text": "Compare these two technical approaches for [problem]. Give me a decision matrix with columns for: complexity, maintainability, performance, and team skill requirements.",
-    "context": "Architecture",
+    "text": "Rewrite this API documentation to be developer-friendly. Keep it accurate but make it scannable with clear examples.",
+    "context": "Documentation",
     "tool": "Claude / ChatGPT",
-    "tip": "Describe both approaches briefly. Include your team size and deployment constraints."
+    "tip": "Paste the existing docs. Specify your audience (junior devs, senior engineers, etc.)."
   }
 }
