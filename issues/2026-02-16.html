@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#FAFAF9" id="meta-theme-color" />
-  <meta name="description" content="Inference Weekly · 16 Feb 2026: 8 curated AI stories for builders, leaders, and researchers." />
+  <meta name="description" content="Inference Weekly · 16 Feb 2026: 9 curated AI stories for builders, leaders, and researchers." />
   <title>Inference Weekly · 16 Feb 2026</title>
 
   <!-- Open Graph -->
   <meta property="og:title" content="Inference Weekly · 16 Feb 2026" />
-  <meta property="og:description" content="Big news this week: GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory, and what it means for your roadmap." />
+  <meta property="og:description" content="Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/latest.html" />
   <meta property="og:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
@@ -18,7 +18,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Inference Weekly · 16 Feb 2026" />
-  <meta name="twitter:description" content="Big news this week: GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory, and what it means for your roadmap." />
+  <meta name="twitter:description" content="Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap." />
   <meta name="twitter:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
 
   <!-- Canonical + RSS -->
@@ -881,12 +881,106 @@
     }
     .section-num { animation: numPop .4s ease both; }
 
+    /* Smooth scroll for anchor links (TOC → sections) */
+    html { scroll-behavior: smooth; }
+
+    /* Glassmorphism nav bar (Mobbin / Linear-inspired) */
+    .wrap > nav.nav {
+      backdrop-filter: blur(12px) saturate(1.2);
+      -webkit-backdrop-filter: blur(12px) saturate(1.2);
+      background: rgba(15, 23, 42, 0.75);
+    }
+
+    /* Staggered story card delays (up to 6) */
+    .story:nth-child(5) { animation-delay: 0.32s; }
+    .story:nth-child(6) { animation-delay: 0.40s; }
+
+    /* Subtle gradient border glow on lead card hover (Stripe-style) */
+    .lead::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, rgba(15,118,110,0.3), rgba(180,83,9,0.2), transparent);
+      opacity: 0;
+      transition: opacity .3s ease;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .lead { position: relative; }
+    .lead:hover::before { opacity: 1; }
+
+    /* Smooth scale on thumbnail hover */
+    .story img {
+      transition: transform .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .story:hover img { transform: scale(1.03); }
+
+    /* Feedback card polish */
+    .feedback-card {
+      background: linear-gradient(135deg, var(--surface) 0%, rgba(15,118,110,0.03) 100%);
+      border-left: 3px solid var(--brand);
+    }
+    .emoji-rating {
+      display: flex;
+      gap: 8px;
+      margin: 0 0 16px;
+    }
+    .emoji-rating button {
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+      border: 2px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      cursor: pointer;
+      transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+    }
+    .emoji-rating button:hover {
+      transform: scale(1.15);
+      border-color: var(--brand);
+      box-shadow: 0 4px 12px rgba(15,76,92,0.15);
+    }
+    .emoji-rating button.selected {
+      border-color: var(--brand);
+      background: rgba(15,118,110,0.08);
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+      transform: scale(1.1);
+    }
+    html.theme-dark .emoji-rating button {
+      background: var(--surface-2);
+      border-color: #475569;
+    }
+    html.theme-dark .emoji-rating button:hover,
+    html.theme-dark .emoji-rating button.selected {
+      border-color: var(--link);
+      background: rgba(103,232,249,0.1);
+    }
+
+    /* Like button enhanced */
+    .like-btn {
+      transition: transform .15s ease, color .15s ease, border-color .15s ease, background .15s ease;
+    }
+    .like-btn:hover:not(:disabled) {
+      transform: scale(1.05);
+      background: rgba(15,118,110,0.06);
+      background: color-mix(in srgb, var(--brand), transparent 94%);
+    }
+    .like-btn.liked {
+      color: var(--brand);
+      border-color: var(--brand);
+      background: rgba(15,118,110,0.08);
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+    }
+
     @media (prefers-reduced-motion: reduce) {
       * {
         animation: none !important;
         transition: none !important;
       }
+      html { scroll-behavior: auto; }
       .reading-progress { display: none; }
+      .lead::before { display: none; }
     }
 
     @media (max-width: 600px) {
@@ -948,8 +1042,8 @@
       <div class="hero-stats">
         <span class="chip">Issue #6</span>
         <span class="chip">16 Feb 2026</span>
-        <span class="chip">8 stories</span>
-        <span class="chip">~3 min read</span>
+        <span class="chip">9 stories</span>
+        <span class="chip">~4 min read</span>
       </div>
       <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; opacity: 0.85;">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
     </header>
@@ -985,8 +1079,16 @@
 <span class="menu-deck">Repos with momentum that might deserve a deeper look.</span><span class="menu-deck section-promise">Repos with momentum.</span>              </span>
               <span class="menu-count">1 · ~1 min</span>
             </a>
-            <a class="menu-item" href="#lab-notes">
+            <a class="menu-item" href="#ship-it-playbooks">
               <span class="menu-num">04</span>
+              <span class="menu-icon">📚</span>
+              <span class="menu-text">
+                <span class="menu-label">Ship-It Playbooks</span>
+<span class="menu-deck">Practical implementation guides you can adapt quickly.</span><span class="menu-deck section-promise">One thing to try this week.</span>              </span>
+              <span class="menu-count">2 · ~1 min</span>
+            </a>
+            <a class="menu-item" href="#lab-notes">
+              <span class="menu-num">05</span>
               <span class="menu-icon">🔬</span>
               <span class="menu-text">
                 <span class="menu-label">Lab Notes</span>
@@ -997,16 +1099,16 @@
         </section>
 
         <article class="lead card">
-          <img class="lead-media" src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" width="800" height="200" decoding="async" fetchpriority="high" />
+          <img class="lead-media" src="https://techcrunch.com/wp-content/uploads/2026/02/Ricursive-Intelligence-founders.png?resize=1200,943" alt="How Ricursive Intelligence raised $335M at a $4B valuation in 4 months" width="800" height="200" decoding="async" fetchpriority="high" />
           <div class="lead-body">
             <p class="section-head">Top Story</p>
             <div class="meta-row">
-              <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">OpenAI Blog · 13 Feb</span>
+              <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">TechCrunch AI · 16 Feb</span>
 <span class="badge badge-difficulty-beginner">Beginner</span><span class="badge badge-track">Leader</span>            </div>
-            <h2><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></h2>
-            <p><strong style="color: var(--text);">ChatGPT launched with features aimed at the current gap in existing toolchains.</strong><br>If you&#39;re shopping for alternatives, ChatGPT belongs on the shortlist.</p>
-            <p class="action">Action: Add ChatGPT as a discussion item in your next strategy or planning meeting.</p>
-<p class="take">Teams that factor ChatGPT into next quarter early usually gain execution room later.</p>          </div>
+            <h2><a href="https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/" target="_blank" rel="noopener">How Ricursive Intelligence raised $335M at a $4B valuation in 4 months</a></h2>
+            <p><strong style="color: var(--text);">An investment round for Ricursive Intelligence signals growing market interest in the space.</strong><br>Industry changes involving Ricursive Intelligence are likely to affect near-term planning cycles.</p>
+            <p class="action">Action: Flag Ricursive Intelligence for your leadership team, it may shift near-term priorities.</p>
+<p class="take">Teams that factor Ricursive Intelligence into next quarter early usually gain execution room later.</p>          </div>
         </article>
 
         <div class="share-row">
@@ -1039,21 +1141,21 @@
                 </div>
               </article>
               <article class="story">
-<img src="https://media.wired.com/photos/698e1b134e0cc71b0d6dee95/191:100/w_1280,c_limit/OpenAI-Nuking-4o-Model-Business.jpg" alt="OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK" width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
+<img src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/wired.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Wired AI</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">OpenAI Blog</span>
                     <span>
                       <span class="badge badge-section">🌐 Industry Radar</span>
                       <span class="badge badge-difficulty-beginner">Beginner</span>
 <span class="badge badge-track">Leader</span>                    </span>
                   </div>
                   <p class="story-context" aria-label="Context">In <strong>Industry Radar</strong>: The moves that change product plans, budgets, and positioning.</p>
-                  <h3><a href="https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/" target="_blank" rel="noopener">OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK</a></h3>
-                  <p><strong style="color: var(--text);">A strategic move around OpenAI is worth factoring into near-term planning.</strong><br>Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.</p>
-                  <p class="action">Action: Add OpenAI as a discussion item in your next strategy or planning meeting.</p>
-                  <a href="https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/" target="_blank" rel="noopener">Read article &#x2192;</a>
+                  <h3><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></h3>
+                  <p><strong style="color: var(--text);">ChatGPT launched with features aimed at the current gap in existing toolchains.</strong><br>If you&#39;re shopping for alternatives, ChatGPT belongs on the shortlist.</p>
+                  <p class="action">Action: Add ChatGPT as a discussion item in your next strategy or planning meeting.</p>
+                  <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/" data-title="OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK" aria-label="Like this article">👍 Like</button>
+                    <button type="button" class="like-btn" data-url="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" data-title="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" aria-label="Like this article">👍 Like</button>
                   </p>
                 </div>
               </article>
@@ -1126,8 +1228,51 @@
               </article>
             </div>
           </section>
+          <section class="section reveal" id="ship-it-playbooks" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">4</span> 📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">Practical implementation guides you can adapt quickly.</p>            <div class="stories">
+              <article class="story">
+<img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3toziwgaf2bwkhwmuft3.png" alt="I Ran a Safety Scan on My Claude Code Setup — Here&#39;s What I Found" width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Dev.to AI</span>
+                    <span>
+                      <span class="badge badge-section">📚 Ship-It Playbooks</span>
+                      <span class="badge badge-difficulty-beginner">Beginner</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <p class="story-context" aria-label="Context">In <strong>Ship-It Playbooks</strong>: Practical implementation guides you can adapt quickly.</p>
+                  <h3><a href="https://dev.to/yurukusa/i-ran-a-safety-scan-on-my-claude-code-setup-heres-what-i-found-4ig0" target="_blank" rel="noopener">I Ran a Safety Scan on My Claude Code Setup — Here&#39;s What I Found</a></h3>
+                  <p><strong style="color: var(--text);">The author has been running Claude Code autonomously for 200+ hours.</strong><br>The Safety Scan development is a useful signal for teams shipping AI products.</p>
+                  <p class="action">Action: Follow the Safety Scan guide, but adapt one step to fit your actual production constraints.</p>
+                  <a href="https://dev.to/yurukusa/i-ran-a-safety-scan-on-my-claude-code-setup-heres-what-i-found-4ig0" target="_blank" rel="noopener">Read article &#x2192;</a>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://dev.to/yurukusa/i-ran-a-safety-scan-on-my-claude-code-setup-heres-what-i-found-4ig0" data-title="I Ran a Safety Scan on My Claude Code Setup — Here&#39;s What I Found" aria-label="Like this article">👍 Like</button>
+                  </p>
+                </div>
+              </article>
+              <article class="story">
+<img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png" alt="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters ..." width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">MarkTechPost</span>
+                    <span>
+                      <span class="badge badge-section">📚 Ship-It Playbooks</span>
+                      <span class="badge badge-difficulty-beginner">Beginner</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <p class="story-context" aria-label="Context">In <strong>Ship-It Playbooks</strong>: Practical implementation guides you can adapt quickly.</p>
+                  <h3><a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents</a></h3>
+                  <p><strong style="color: var(--text);">Alibaba Cloud just updated the open-source landscape.</strong><br>Strong numbers from Alibaba Qwen Team could reset your baseline, but only if they hold on production data.</p>
+                  <p class="action">Action: Work through the Alibaba Qwen Team tutorial and modify one step for your own use case.</p>
+                  <a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Read article &#x2192;</a>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" data-title="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents" aria-label="Like this article">👍 Like</button>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
           <section class="section reveal" id="lab-notes" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">4</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
+            <h2 class="section-title"><span class="section-num">5</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">Research and model updates with downstream product impact.</p>            <div class="stories">
               <article class="story">
                 <div class="story-body">
@@ -1156,9 +1301,6 @@
       <aside>
         <section class="card also-this-week" style="padding: 14px;">
           <p class="section-head" style="margin: 0 0 10px; font-size: 0.75rem;">Also this week</p>
-          <ul style="margin: 0 0 12px; padding-left: 1.2em; font-size: 0.88rem; color: var(--text);">
-            <li style="margin-bottom: 4px;"><a href="https://dev.to/getusait45420/buy-verified-paypal-accounts-to-build-customer-trust-4amk" target="_blank" rel="noopener" style="color: var(--link);">Buy Verified PayPal Accounts to Build Customer Trust</a></li>
-          </ul>
           <p style="margin: 0 0 8px; font-size: 0.85rem; color: var(--muted);"><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Google Machine Learning Crash Course</a> · Google AI · Free · 15 hours</p>
           <div style="margin: 12px 0 0; padding: 10px; background: var(--surface); border-radius: 8px; border-left: 3px solid var(--brand);">
             <p style="margin: 0 0 4px; font-size: 0.7rem; font-weight: 700; color: var(--brand); letter-spacing: 0.8px; text-transform: uppercase;">Prompt of the Week · Documentation</p>
@@ -1172,24 +1314,23 @@
 
     <!-- Feedback card at bottom: Formspree or Formsubmit.co (free) -->
     <section class="card feedback-card reveal" style="margin: 24px 0; padding: 24px;">
-      <h3 style="margin: 0 0 6px; font-size: 1.15rem; color: var(--text);">One quick question</h3>
-      <p style="margin: 0 0 16px; font-size: 0.9rem; color: var(--muted);">What should we cover next? Your feedback shapes the next issue.</p>
-      <form id="feedback-form" class="feedback-form" action="https://formsubmit.co/inference.feedback@gmail.com" method="post" style="max-width: 420px;">
+      <h3 style="margin: 0 0 4px; font-size: 1.15rem; color: var(--text);">How was this issue?</h3>
+      <p style="margin: 0 0 14px; font-size: 0.88rem; color: var(--muted);">Your feedback shapes the next edition.</p>
+      <form id="feedback-form" class="feedback-form" action="https://formsubmit.co/inference.feedback@gmail.com" method="post" style="max-width: 480px;">
         <input type="hidden" name="issue_date" value="16 Feb 2026" />
         <input type="hidden" name="_subject" value="Inference feedback · 16 Feb 2026" />
-        <label for="feedback-rating" style="display: block; margin-bottom: 6px; font-size: 14px; color: var(--muted);">Rating</label>
-        <select id="feedback-rating" name="rating" required style="width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; background: var(--surface); color: var(--text);">
-          <option value="">— Choose —</option>
-          <option value="Great">Great</option>
-          <option value="Good">Good</option>
-          <option value="Okay">Okay</option>
-          <option value="Not useful">Not useful</option>
-        </select>
-        <label for="feedback-comment" style="display: block; margin-bottom: 6px; font-size: 14px; color: var(--muted);">Comment (optional)</label>
-        <textarea id="feedback-comment" name="comment" rows="2" placeholder="Anything we could do better?" style="width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; resize: vertical; background: var(--surface); color: var(--text);"></textarea>
+        <input type="hidden" id="feedback-rating-value" name="rating" value="" />
+        <!-- Emoji reaction buttons (no dropdown) -->
+        <div class="emoji-rating" role="radiogroup" aria-label="Rate this issue">
+          <button type="button" data-value="Loved it" aria-label="Loved it" title="Loved it">🤩</button>
+          <button type="button" data-value="Great" aria-label="Great" title="Great">👍</button>
+          <button type="button" data-value="Okay" aria-label="Okay" title="Okay">😐</button>
+          <button type="button" data-value="Not useful" aria-label="Not useful" title="Not useful">👎</button>
+        </div>
+        <textarea id="feedback-comment" name="comment" rows="2" placeholder="What should we cover next? (optional)" style="width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; resize: vertical; background: var(--surface); color: var(--text); box-sizing: border-box;"></textarea>
         <div id="feedback-recaptcha" class="recaptcha-placeholder" style="min-height: 1px;"></div>
-        <button type="submit" id="feedback-submit" style="padding: 10px 20px; font-size: 14px; font-weight: 600; background: var(--brand); color: white; border: none; border-radius: 8px; cursor: pointer;">Send feedback</button>
-        <p id="feedback-thanks" style="display: none; margin: 12px 0 0; color: var(--brand); font-weight: 500;">Thanks for your feedback.</p>
+        <button type="submit" id="feedback-submit" style="padding: 10px 24px; font-size: 14px; font-weight: 600; background: var(--brand); color: white; border: none; border-radius: 8px; cursor: pointer; transition: opacity .15s ease;" disabled>Send feedback</button>
+        <p id="feedback-thanks" style="display: none; margin: 12px 0 0; color: var(--brand); font-weight: 600; font-size: 0.95rem;">Thanks — your feedback is noted! 🙏</p>
       </form>
       <!-- Hidden form for likes; JS fills article_url and article_title on button click -->
       <form id="like-form" action="https://formsubmit.co/inference.feedback@gmail.com" method="post" style="display: none;">
@@ -1283,32 +1424,46 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
       });
     }
 
+    /* ---- Emoji feedback form ---- */
     var feedbackForm = document.getElementById('feedback-form');
     if (feedbackForm) {
+      var ratingInput = document.getElementById('feedback-rating-value');
+      var submitBtn = document.getElementById('feedback-submit');
+      var emojiButtons = feedbackForm.querySelectorAll('.emoji-rating button');
+      emojiButtons.forEach(function(eb) {
+        eb.addEventListener('click', function() {
+          emojiButtons.forEach(function(b) { b.classList.remove('selected'); });
+          eb.classList.add('selected');
+          ratingInput.value = eb.getAttribute('data-value');
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+        });
+      });
       feedbackForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        var btn = document.getElementById('feedback-submit');
+        if (!ratingInput.value) return;
+        submitBtn.disabled = true;
         var thanks = document.getElementById('feedback-thanks');
-        if (btn) btn.disabled = true;
         getRecaptchaToken('feedback').then(function(token) {
           var input = document.createElement('input');
           input.type = 'hidden'; input.name = 'g-recaptcha-response'; input.value = token;
           feedbackForm.appendChild(input);
           var formData = new FormData(feedbackForm);
           fetch(feedbackForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
-            .then(function() { if (thanks) thanks.style.display = 'block'; feedbackForm.reset(); })
-            .catch(function() { if (btn) btn.disabled = false; });
+            .then(function() {
+              if (thanks) { thanks.style.display = 'block'; }
+              feedbackForm.querySelectorAll('.emoji-rating, textarea, #feedback-submit').forEach(function(el) { el.style.display = 'none'; });
+            })
+            .catch(function() { submitBtn.disabled = false; });
         });
       });
     }
 
+    /* ---- Like buttons with local persistence + count display ---- */
     var likeForm = document.getElementById('like-form');
     var LIKED_KEY = 'inference_liked_urls';
     function getLikedUrls() {
-      try {
-        var raw = localStorage.getItem(LIKED_KEY);
-        return raw ? JSON.parse(raw) : [];
-      } catch (e) { return []; }
+      try { return JSON.parse(localStorage.getItem(LIKED_KEY) || '[]'); } catch (e) { return []; }
     }
     function setLiked(url) {
       var urls = getLikedUrls();
@@ -1319,7 +1474,8 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
       document.querySelectorAll('.like-btn').forEach(function(btn) {
         var url = btn.getAttribute('data-url');
         if (url && likedUrls.indexOf(url) !== -1) {
-          btn.textContent = '✓ Liked';
+          btn.innerHTML = '&#x2764;&#xFE0F; Liked';
+          btn.classList.add('liked');
           btn.disabled = true;
         }
         btn.addEventListener('click', function() {
@@ -1333,7 +1489,11 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
             recaptchaEl.value = token;
             var formData = new FormData(likeForm);
             fetch(likeForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
-              .then(function() { btn.textContent = '✓ Liked'; setLiked(url); })
+              .then(function() {
+                btn.innerHTML = '&#x2764;&#xFE0F; Liked';
+                btn.classList.add('liked');
+                setLiked(url);
+              })
               .catch(function() { btn.disabled = false; });
           });
         });
@@ -1348,7 +1508,7 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     "headline": "Inference Weekly · 16 Feb 2026",
-    "description": "Big news this week: GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory, and what it means for your roadmap.",
+    "description": "Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap.",
     "datePublished": "2026-02-16",
     "publisher": {
       "@type": "Organization",

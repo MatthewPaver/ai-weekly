@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 18:09:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 18:56:27 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
@@ -24,12 +24,12 @@
       
     </item>
     <item>
-      <title><![CDATA[Buy Verified PayPal Accounts to Build Customer Trust]]></title>
-      <link>https://dev.to/getusait45420/buy-verified-paypal-accounts-to-build-customer-trust-4amk</link>
-      <description><![CDATA[Looking to buy verified PayPal accounts?]]></description>
+      <title><![CDATA[I Ran a Safety Scan on My Claude Code Setup — Here's What I Found]]></title>
+      <link>https://dev.to/yurukusa/i-ran-a-safety-scan-on-my-claude-code-setup-heres-what-i-found-4ig0</link>
+      <description><![CDATA[Safety Scan is a development worth monitoring for near-term product and tooling decisions (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Mon, 16 Feb 2026 18:00:34 +0000</pubDate>
-      <author>Buy Verified PayPal Accounts to Build Customer Tru</author>
+      <pubDate>Mon, 16 Feb 2026 18:50:06 +0000</pubDate>
+      <author>Yurukusa</author>
     </item>
     <item>
       <title><![CDATA[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory]]></title>
@@ -44,16 +44,16 @@
       <link>https://github.com/zeroclaw-labs/zeroclaw</link>
       <description><![CDATA[Zeroclaw is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).]]></description>
       <category>Repos</category>
-      <pubDate>Mon, 16 Feb 2026 17:36:17 +0000</pubDate>
+      <pubDate>Mon, 16 Feb 2026 18:48:04 +0000</pubDate>
       <author>zeroclaw-labs</author>
     </item>
     <item>
-      <title><![CDATA[Gemini 3 Deep Think: Advancing science, research and engineering]]></title>
-      <link>https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/</link>
-      <description><![CDATA[Gemini is a development worth monitoring for near-term product and tooling decisions (via Google DeepMind).]]></description>
+      <title><![CDATA[Helping kids and teens learn and grow online on Safer Internet Day]]></title>
+      <link>https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2026-kids-teens/</link>
+      <description><![CDATA[Helping is a development worth monitoring for near-term product and tooling decisions (via Google AI Blog).]]></description>
       <category>Industry</category>
-      <pubDate>Thu, 12 Feb 2026 16:15:09 +0000</pubDate>
-      
+      <pubDate>Tue, 10 Feb 2026 02:30:00 +0000</pubDate>
+      <author>Mindy Brooks, Jennifer Flannery O'Connor</author>
     </item>
     <item>
       <title><![CDATA[Join us for Interrupt: The Agent Conference]]></title>
@@ -64,6 +64,22 @@
       <author>LangChain Accounts</author>
     </item>
     <item>
+      <title><![CDATA[Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents]]></title>
+      <link>https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/</link>
+      <description><![CDATA[The Alibaba Qwen Team model release is worth benchmarking against your current baseline (via MarkTechPost).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Mon, 16 Feb 2026 18:53:19 +0000</pubDate>
+      <author>Asif Razzaq</author>
+    </item>
+    <item>
+      <title><![CDATA[Gemini 3 Deep Think: Advancing science, research and engineering]]></title>
+      <link>https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/</link>
+      <description><![CDATA[Gemini is a development worth monitoring for near-term product and tooling decisions (via Google DeepMind).]]></description>
+      <category>Industry</category>
+      <pubDate>Thu, 12 Feb 2026 16:15:09 +0000</pubDate>
+      
+    </item>
+    <item>
       <title><![CDATA[ChatGPT’s Translation Skills Parallel Most Human Translators]]></title>
       <link>https://spectrum.ieee.org/chatgpt-translate-skills-human-comparison</link>
       <description><![CDATA[ChatGPT is a development worth monitoring for near-term product and tooling decisions (via IEEE Spectrum AI).]]></description>
@@ -72,12 +88,12 @@
       <author>Michelle Hampson</author>
     </item>
     <item>
-      <title><![CDATA[Is a secure AI assistant possible?]]></title>
-      <link>https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/</link>
-      <description><![CDATA[AI agents are a risky business.]]></description>
+      <title><![CDATA[AI is already making online crimes easier. It could get much worse.]]></title>
+      <link>https://www.technologyreview.com/2026/02/12/1132386/ai-already-making-online-swindles-easier/</link>
+      <description><![CDATA[AI is already making online crimes is a development worth monitoring for near-term product and tooling decisions (via MIT Technology Review AI).]]></description>
       <category>Industry</category>
-      <pubDate>Wed, 11 Feb 2026 20:08:35 +0000</pubDate>
-      <author>Grace Huckins</author>
+      <pubDate>Thu, 12 Feb 2026 11:00:00 +0000</pubDate>
+      <author>Rhiannon Williams</author>
     </item>
     <item>
       <title><![CDATA[Introducing Lockdown Mode and Elevated Risk labels in ChatGPT]]></title>
@@ -88,12 +104,12 @@
       
     </item>
     <item>
-      <title><![CDATA[Flapping Airplanes on the future of AI: ‘We want to try really radically different things’]]></title>
-      <link>https://techcrunch.com/2026/02/16/flapping-airplanes-on-the-future-of-ai-we-want-to-try-really-radically-different-things/</link>
-      <description><![CDATA[Flapping Airplanes is a development worth monitoring for near-term product and tooling decisions (via TechCrunch AI).]]></description>
+      <title><![CDATA[How Ricursive Intelligence raised $335M at a $4B valuation in 4 months]]></title>
+      <link>https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/</link>
+      <description><![CDATA[Ricursive Intelligence is a development worth monitoring for near-term product and tooling decisions (via TechCrunch AI).]]></description>
       <category>Industry</category>
-      <pubDate>Mon, 16 Feb 2026 14:00:00 +0000</pubDate>
-      <author>Russell Brandom</author>
+      <pubDate>Mon, 16 Feb 2026 17:00:00 +0000</pubDate>
+      <author>Julie Bort</author>
     </item>
     <item>
       <title><![CDATA[OpenClaw founder Peter Steinberger is joining OpenAI]]></title>
@@ -112,12 +128,28 @@
       <author>Zeyi Yang</author>
     </item>
     <item>
+      <title><![CDATA[Flapping Airplanes on the future of AI: ‘We want to try really radically different things’]]></title>
+      <link>https://techcrunch.com/2026/02/16/flapping-airplanes-on-the-future-of-ai-we-want-to-try-really-radically-different-things/</link>
+      <description><![CDATA[Flapping Airplanes is a development worth monitoring for near-term product and tooling decisions (via TechCrunch AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 16 Feb 2026 14:00:00 +0000</pubDate>
+      <author>Russell Brandom</author>
+    </item>
+    <item>
       <title><![CDATA[After spooking Hollywood, ByteDance will tweak safeguards on new AI model]]></title>
       <link>https://www.theverge.com/ai-artificial-intelligence/879644/bytedance-seedance-safeguards-ai-video-copyright-infringement</link>
       <description><![CDATA[The Hollywood model release is worth benchmarking against your current baseline (via The Verge AI).]]></description>
       <category>Industry</category>
       <pubDate>Mon, 16 Feb 2026 06:29:24 +0000</pubDate>
       <author>Jess Weatherbed</author>
+    </item>
+    <item>
+      <title><![CDATA[Google’s AI Overviews Can Scam You. Here’s How to Stay Safe]]></title>
+      <link>https://www.wired.com/story/googles-ai-overviews-can-scam-you-heres-how-to-stay-safe/</link>
+      <description><![CDATA[Hands-on coverage of Google provides actionable steps for teams building in this space (via Wired AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Sun, 15 Feb 2026 11:30:00 +0000</pubDate>
+      <author>David Nield</author>
     </item>
   </channel>
 </rss>

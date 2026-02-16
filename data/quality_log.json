@@ -606,5 +606,117 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-16T18:09:50.611851+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 35,
+    "after_filters": 8,
+    "after_accessibility": 8,
+    "after_selection": 8,
+    "articles_final": 8,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 35
+      },
+      {
+        "stage": "quality_gates",
+        "after": 8
+      },
+      {
+        "stage": "accessibility",
+        "after": 8
+      },
+      {
+        "stage": "selection",
+        "after": 8
+      },
+      {
+        "stage": "summary_quality",
+        "after": 8
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dark Reading",
+      "Dev.to AI",
+      "InfoQ",
+      "MarkTechPost"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 3,
+    "lead_story": "Google DeepMind Proposes New Framework for Intelligent AI De",
+    "total_articles": 8,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T18:54:51.533269+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 27,
+    "after_filters": 6,
+    "after_accessibility": 30,
+    "after_selection": 18,
+    "articles_final": 18,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 27
+      },
+      {
+        "stage": "quality_gates",
+        "after": 6
+      },
+      {
+        "stage": "accessibility",
+        "after": 30
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 18
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 5,
+    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
+    "total_articles": 18,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T18:56:27.979484+00:00"
   }
 ]
