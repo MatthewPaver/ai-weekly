@@ -1,14 +1,14 @@
 {
   "date": "16 Feb 2026",
   "issue_number": 6,
-  "total_articles": 8,
-  "source_count": 14,
-  "read_time_minutes": 3,
+  "total_articles": 9,
+  "source_count": 15,
+  "read_time_minutes": 4,
   "intro": "Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (13 stories)."
+      "value": "Industry led coverage (12 stories)."
     },
     {
       "label": "Builder pick",
@@ -55,6 +55,16 @@
       "num": "03"
     },
     {
+      "icon": "\ud83d\udcda",
+      "title": "Ship-It Playbooks",
+      "count": 2,
+      "read_time_minutes": 1,
+      "label": "\ud83d\udcda Ship-It Playbooks (2)",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "promise": "One thing to try this week.",
+      "num": "04"
+    },
+    {
       "icon": "\ud83d\udd2c",
       "title": "Lab Notes",
       "count": 1,
@@ -62,17 +72,10 @@
       "label": "\ud83d\udd2c Lab Notes (1)",
       "deck": "Research and model updates with downstream product impact.",
       "promise": "",
-      "num": "04"
+      "num": "05"
     }
   ],
-  "briefing": [
-    {
-      "title": "Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents",
-      "url": "https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/",
-      "note": "Alibaba Cloud just updated the open-source landscape. Why it matters: Strong numbers from Alibaba Qwen Team could reset your baseline \u2014 but only if they hold on production data.",
-      "track": "Builder"
-    }
-  ],
+  "briefing": [],
   "editors_note": {
     "headline": "This week",
     "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, you're already behind.",
@@ -92,14 +95,7 @@
     "our_take": "Teams that factor Ricursive Intelligence into next quarter early usually gain execution room later.",
     "what_to_do": "Flag Ricursive Intelligence for your leadership team \u2014 it may shift near-term priorities."
   },
-  "quick_hits": [
-    {
-      "title": "Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents",
-      "url": "https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/",
-      "note": "Alibaba Cloud just updated the open-source landscape. Why it matters: Strong numbers from Alibaba Qwen Team could reset your baseline \u2014 but only if they hold on production data.",
-      "track": "Builder"
-    }
-  ],
+  "quick_hits": [],
   "sections": [
     {
       "title": "Industry Radar",
@@ -113,6 +109,7 @@
       ],
       "tier": "leader",
       "promise": "",
+      "read_time_minutes": 1,
       "articles": [
         {
           "title": "OpenClaw founder Peter Steinberger is joining OpenAI",
@@ -161,6 +158,7 @@
       ],
       "tier": "builder",
       "promise": "",
+      "read_time_minutes": 1,
       "articles": [
         {
           "title": "Custom Kernels for All from Codex and Claude",
@@ -170,7 +168,7 @@
           "authors": "",
           "published": "13 Feb",
           "thumbnail": "https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png",
-          "summary": "The Custom Kernels news is worth a closer look for teams making near-term tool or vendor calls (via Hugging Face Blog).",
+          "summary": "Custom Kernels is a development worth monitoring for near-term product and tooling decisions (via Hugging Face Blog).",
           "what_happened": "A new tool release around Custom Kernels targets gaps in current developer workflows.",
           "why_it_matters": "Custom Kernels is worth evaluating if your current tools are hitting limits.",
           "what_to_do": "Allocate one afternoon to test Custom Kernels against your top use case.",
@@ -209,6 +207,7 @@
       ],
       "tier": "builder",
       "promise": "Repos with momentum.",
+      "read_time_minutes": 1,
       "articles": [
         {
           "title": "zeroclaw",
@@ -230,6 +229,55 @@
       ]
     },
     {
+      "title": "Ship-It Playbooks",
+      "icon": "\ud83d\udcda",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "color": "0F4C5C",
+      "badge": "Ship It Playbooks",
+      "topics": [
+        "Tutorials"
+      ],
+      "tier": "builder",
+      "promise": "One thing to try this week.",
+      "read_time_minutes": 1,
+      "articles": [
+        {
+          "title": "Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents",
+          "url": "https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/",
+          "source": "MarkTechPost",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
+          "authors": "Asif Razzaq",
+          "published": "16 Feb",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png",
+          "summary": "The Alibaba Qwen Team model release is worth benchmarking against your current baseline (via MarkTechPost).",
+          "what_happened": "Alibaba Cloud just updated the open-source landscape.",
+          "why_it_matters": "Strong numbers from Alibaba Qwen Team could reset your baseline \u2014 but only if they hold on production data.",
+          "what_to_do": "Work through the Alibaba Qwen Team tutorial and modify one step for your own use case.",
+          "our_take": "Tutorials are blueprints, not gospel. Adapt one step to your own constraints and you'll learn more.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
+        },
+        {
+          "title": "Save 60% on LLM API Costs with TOON Format in NestJS",
+          "url": "https://dev.to/papaiatis/save-60-on-llm-api-costs-with-toon-format-in-nestjs-20ej",
+          "source": "Dev.to AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
+          "authors": "Atis Papai",
+          "published": "16 Feb",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffv7gd48i651w3t76pasx.png",
+          "summary": "Your API response size directly impacts costs.",
+          "what_happened": "Your API response size directly impacts costs.",
+          "why_it_matters": "The LLM API development is a useful signal for teams shipping AI products.",
+          "what_to_do": "Follow the LLM API guide, but adapt one step to fit your actual production constraints.",
+          "our_take": "The value of a tutorial is the first thing you build after reading it, not the reading itself.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
+        }
+      ]
+    },
+    {
       "title": "Lab Notes",
       "icon": "\ud83d\udd2c",
       "deck": "Research and model updates with downstream product impact.",
@@ -241,6 +289,7 @@
       ],
       "tier": "leader",
       "promise": "",
+      "read_time_minutes": 1,
       "articles": [
         {
           "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",

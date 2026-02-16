@@ -5,19 +5,6 @@
     "retry_count": 0,
     "after_dedup": 25,
     "after_filters": 0,
-    "articles_final": 12,
-    "sections": 2,
-    "lead_story": "OpenAI disbands mission alignment team",
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-12T02:09:47.226278+00:00"
-  },
-  {
-    "articles_collected": 63,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 25,
-    "after_filters": 0,
     "articles_final": 13,
     "sections": 3,
     "lead_story": "OpenAI disbands mission alignment team",
@@ -825,5 +812,66 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-16T19:06:43.703378+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 24,
+    "after_filters": 2,
+    "after_accessibility": 29,
+    "after_selection": 18,
+    "articles_final": 18,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 24
+      },
+      {
+        "stage": "quality_gates",
+        "after": 2
+      },
+      {
+        "stage": "accessibility",
+        "after": 29
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 18
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 5,
+    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
+    "total_articles": 18,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T19:58:12.421064+00:00"
   }
 ]
