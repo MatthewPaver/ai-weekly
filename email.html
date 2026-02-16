@@ -48,40 +48,43 @@
       .lead-title { font-size: 19px !important; }
       .sec-label { font-size: 11px !important; }
       .art-title { font-size: 16px !important; }
-      .card-img { height: auto !important; max-height: 200px !important; object-fit: contain !important; }
+      .card-img { height: auto !important; max-height: 180px !important; object-fit: cover !important; }
     }
 
-    /* Dark mode */
+    /* Dark mode — high contrast for readability */
     @media (prefers-color-scheme: dark) {
       body, .body-bg { background-color: #0F172A !important; }
       .card { background-color: #1E293B !important; border-color: #334155 !important; }
       .lead-card { background-color: #1E293B !important; border-color: #334155 !important; }
-      .text-dark, h1, h2, h3, .art-title { color: #F1F5F9 !important; }
-      .text-body, td p, .text-body strong { color: #DCE8EF !important; }
-      .text-dim { color: #B0BEC5 !important; }
+      .text-dark, h1, h2, h3, .art-title { color: #F8FAFC !important; }
+      .text-body, td p, .text-body strong { color: #E2E8F0 !important; }
+      .text-dim { color: #CBD5E1 !important; }
       .text-faint { color: #94A3B8 !important; }
-      .sec-label { color: #67E8F9 !important; }
+      .sec-label { color: #5EEAD4 !important; }
       .hr-line { border-color: #334155 !important; }
-      .badge-d { background-color: #1F2937 !important; color: #DCE8EF !important; border-color: #475569 !important; }
-      .action-c { color: #67E8F9 !important; }
-      .take-c { color: #C2D4DE !important; }
-      .card { border-left-color: #67E8F9 !important; }
+      .badge-d { background-color: #1F2937 !important; color: #E2E8F0 !important; border-color: #475569 !important; }
+      .action-c { color: #5EEAD4 !important; }
+      .take-c { color: #CBD5E1 !important; }
+      .card { border-left-color: #5EEAD4 !important; }
+      a { color: #67E8F9 !important; }
       .badge-difficulty-beginner { background-color: #14532d !important; color: #86efac !important; border-color: #22c55e !important; }
       .badge-difficulty-intermediate { background-color: #78350f !important; color: #fde68a !important; border-color: #f59e0b !important; }
       .badge-difficulty-advanced { background-color: #7f1d1d !important; color: #fca5a5 !important; border-color: #ef4444 !important; }
       .cta-btn { background-color: #0F766E !important; }
       .footer-bg { background-color: #0B1220 !important; }
       .subscribe-cta { background-color: #1E293B !important; border-color: #334155 !important; }
-      .card-img { background-color: #334155 !important; }
     }
 
     /* Outlook 365 dark mode */
     [data-ogsc] .body-bg { background-color: #111827 !important; }
     [data-ogsc] .card { background-color: #1E293B !important; border-color: #334155 !important; }
     [data-ogsc] .lead-card { background-color: #1E293B !important; border-color: #334155 !important; }
-    [data-ogsc] .text-dark { color: #F1F5F9 !important; }
+    [data-ogsc] .text-dark { color: #F8FAFC !important; }
     [data-ogsc] .text-body { color: #E2E8F0 !important; }
-    [data-ogsc] .text-dim { color: #B0BEC5 !important; }
+    [data-ogsc] .text-dim { color: #CBD5E1 !important; }
+    [data-ogsc] .text-faint { color: #94A3B8 !important; }
+    [data-ogsc] .action-c { color: #5EEAD4 !important; }
+    [data-ogsc] a { color: #67E8F9 !important; }
     [data-ogsc] .cta-btn { background-color: #0F766E !important; }
   </style>
 </head>
@@ -140,15 +143,15 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrapper" style="max-width: 600px; margin: 0 auto;">
 
 <!-- Personalised greeting (Buttondown: subscriber.metadata.first_name with default so no dashboard config needed) -->
-<tr><td class="mobile-pad" style="padding: 18px 20px 6px;"><p style="margin: 0; font-size: 15px; color: #374151;">Hi {{ subscriber.metadata.first_name|default:"there" }},</p></td></tr>
+<tr><td class="mobile-pad" style="padding: 18px 20px 6px;"><p style="margin: 0; font-size: 15px; color: #111827;">Hi {{ subscriber.metadata.first_name|default:"there" }},</p></td></tr>
 
 <!-- In this issue: vertical TOC, one row per category (scannable like Smashing / Morning Brew) -->
 <tr><td class="mobile-pad" style="padding: 18px 20px 14px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #E2E8F0; border-left: 4px solid #0F4C5C;">
   <tr><td style="padding: 14px 18px;">
     <p style="margin: 0 0 6px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.2px; text-transform: uppercase;">In this issue</p>
-    <p style="margin: 0 0 12px; font-size: 12px; color: #374151; line-height: 1.45;">What's inside this issue, at a glance. Each section has a short description so you can jump to what matters.</p>
-    <p style="margin: 0 0 12px; font-size: 11px; color: #374151;">Reading level: <span style="display: inline-block; padding: 2px 6px; font-size: 10px; font-weight: 600; border-radius: 6px; background-color: #DCFCE7; color: #166534;">Beginner</span> <span style="display: inline-block; padding: 2px 6px; font-size: 10px; font-weight: 600; border-radius: 6px; background-color: #FEF3C7; color: #92400E;">Intermediate</span> <span style="display: inline-block; padding: 2px 6px; font-size: 10px; font-weight: 600; border-radius: 6px; background-color: #FEE2E2; color: #991B1B;">Advanced</span></p>
+    <p style="margin: 0 0 12px; font-size: 12px; color: #111827; line-height: 1.45;">What's inside this issue, at a glance. Each section has a short description so you can jump to what matters.</p>
+    <p style="margin: 0 0 12px; font-size: 11px; color: #111827;">Reading level: <span style="display: inline-block; padding: 2px 6px; font-size: 10px; font-weight: 600; border-radius: 6px; background-color: #DCFCE7; color: #166534;">Beginner</span> <span style="display: inline-block; padding: 2px 6px; font-size: 10px; font-weight: 600; border-radius: 6px; background-color: #FEF3C7; color: #92400E;">Intermediate</span> <span style="display: inline-block; padding: 2px 6px; font-size: 10px; font-weight: 600; border-radius: 6px; background-color: #FEE2E2; color: #991B1B;">Advanced</span></p>
     <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-16.html#industry-radar" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #E2E8F0;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
       <tr>
@@ -157,8 +160,8 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
           <span style="font-size: 14px; font-weight: 600; color: #111827;">🌐 Industry Radar</span>
-<br><span style="font-size: 12px; color: #374151; line-height: 1.4;">The moves that change product plans, budgets, and positioning.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #374151;">2 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+<br><span style="font-size: 12px; color: #111827; line-height: 1.4;">The moves that change product plans, budgets, and positioning.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #111827;">2 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
@@ -170,8 +173,8 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
           <span style="font-size: 14px; font-weight: 600; color: #111827;">🛠️ Builder&#39;s Bench</span>
-<br><span style="font-size: 12px; color: #374151; line-height: 1.4;">New tooling worth evaluating in an actual workflow this week.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #374151;">2 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+<br><span style="font-size: 12px; color: #111827; line-height: 1.4;">New tooling worth evaluating in an actual workflow this week.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #111827;">2 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
@@ -183,8 +186,8 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
           <span style="font-size: 14px; font-weight: 600; color: #111827;">⭐ Open Source Watch</span>
-<br><span style="font-size: 12px; color: #374151; line-height: 1.4;">Repos with momentum that might deserve a deeper look.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">Repos with momentum.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #374151;">1 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+<br><span style="font-size: 12px; color: #111827; line-height: 1.4;">Repos with momentum that might deserve a deeper look.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">Repos with momentum.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #111827;">1 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
@@ -196,8 +199,8 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
           <span style="font-size: 14px; font-weight: 600; color: #111827;">📚 Ship-It Playbooks</span>
-<br><span style="font-size: 12px; color: #374151; line-height: 1.4;">Practical implementation guides you can adapt quickly.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">One thing to try this week.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #374151;">2 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+<br><span style="font-size: 12px; color: #111827; line-height: 1.4;">Practical implementation guides you can adapt quickly.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">One thing to try this week.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #111827;">2 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
@@ -209,8 +212,8 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
           <span style="font-size: 14px; font-weight: 600; color: #111827;">🔬 Lab Notes</span>
-<br><span style="font-size: 12px; color: #374151; line-height: 1.4;">Research and model updates with downstream product impact.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #374151;">1 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+<br><span style="font-size: 12px; color: #111827; line-height: 1.4;">Research and model updates with downstream product impact.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span style="font-size: 12px; color: #111827;">1 · ~1 min</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
@@ -225,13 +228,13 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/" style="text-decoration: none;">
-          <img src="https://techcrunch.com/wp-content/uploads/2026/02/Ricursive-Intelligence-founders.png?resize=1200,943" alt="How Ricursive Intelligence raised $335M at a $4B valuation in 4 months" width="600" class="card-img" style="width: 100%; max-width: 600px; height: auto; max-height: 260px; object-fit: contain; display: block; background-color: #F3F4F6;">
+          <img src="https://techcrunch.com/wp-content/uploads/2026/02/Ricursive-Intelligence-founders.png?resize=1200,943" alt="How Ricursive Intelligence raised $335M at a $4B valuation in 4 months" width="600" class="card-img" style="width: 100%; max-width: 600px; height: 200px; object-fit: cover; object-position: top center; display: block;">
         </a>
       </td>
     </tr>
     <tr>
       <td style="padding: 18px 22px 0;">
-        <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">TechCrunch AI &middot; 16 Feb</span>
+        <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">TechCrunch AI &middot; 16 Feb</span>
         <span class="badge-d badge-difficulty-beginner" style="display: inline-block; margin-left: 6px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
         <span style="display: inline-block; margin-left: 4px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #e0f2fe; color: #0c4a6e; border: 1px solid #bae6fd;">Leader</span>
         <a href="https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/" style="text-decoration: none;">
@@ -243,12 +246,12 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     </tr>
     <tr>
       <td style="padding: 0 22px;">
-        <p class="text-body" style="margin: 0 0 12px; font-size: 16px; line-height: 1.6; color: #374151;">
+        <p class="text-body" style="margin: 0 0 12px; font-size: 16px; line-height: 1.6; color: #111827;">
 <strong style="color: #111827;">An investment round for Ricursive Intelligence signals growing market interest in the space.</strong><br>Industry changes involving Ricursive Intelligence are likely to affect near-term planning cycles.        </p>
         <p class="action-c" style="margin: 0 0 8px; font-size: 14px; color: #0F4C5C; line-height: 1.55;">
           <strong>Action:</strong> Flag Ricursive Intelligence for your leadership team, it may shift near-term priorities.
         </p>
-        <p class="take-c" style="margin: 0; font-size: 13px; color: #374151; font-style: italic; line-height: 1.5;">
+        <p class="take-c" style="margin: 0; font-size: 13px; color: #111827; font-style: italic; line-height: 1.5;">
           Teams that factor Ricursive Intelligence into next quarter early usually gain execution room later.
         </p>
       </td>
@@ -277,11 +280,11 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
   <tr><td style="padding: 14px 18px;">
     <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #0F766E; letter-spacing: 1.2px; text-transform: uppercase;">Learn This Week</p>
     <a href="https://developers.google.com/machine-learning/crash-course" style="font-weight: 700; font-size: 15px; color: #0F4C5C; text-decoration: none; line-height: 1.35;">Google Machine Learning Crash Course</a>
-    <p style="margin: 6px 0 0; font-size: 12px; color: #374151;">
-      <span style="font-weight: 600; color: #374151;">Google AI</span>
+    <p style="margin: 6px 0 0; font-size: 12px; color: #111827;">
+      <span style="font-weight: 600; color: #111827;">Google AI</span>
       <span style="display: inline-block; margin-left: 6px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534;">Beginner</span>
 <span style="display: inline-block; margin-left: 4px; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #E0F2FE; color: #0C4A6E;">Free</span>&nbsp;&middot;&nbsp;15 hours    </p>
-    <p style="margin: 8px 0 0; font-size: 13px; color: #374151; line-height: 1.5;">Interactive exercises with TensorFlow. Google&#39;s internal ML training, now public.</p>
+    <p style="margin: 8px 0 0; font-size: 13px; color: #111827; line-height: 1.5;">Interactive exercises with TensorFlow. Google&#39;s internal ML training, now public.</p>
   </td></tr>
   </table>
 </td></tr>
@@ -293,11 +296,11 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.2px; text-transform: uppercase;">Prompt of the Week</p>
     <p style="margin: 0 0 8px; padding: 10px 14px; background-color: #F0FDFA; border-radius: 8px; font-size: 14px; font-style: italic; color: #1F2937; line-height: 1.5;">"Rewrite this API documentation to be developer-friendly. Keep it accurate but make it scannable with clear examples."</p>
     <p style="margin: 0 0 8px; font-size: 13px; color: #1F2937; line-height: 1.5;"><strong style="color: #0F4C5C;">Why it works:</strong> Bad docs are the #1 reason developers abandon tools. Asking for &#39;scannable with clear examples&#39; targets the two things devs actually need: quick answers and copy-pasteable code.</p>
-    <p style="margin: 0 0 4px; font-size: 12px; color: #374151;">
+    <p style="margin: 0 0 4px; font-size: 12px; color: #111827;">
       <span style="font-weight: 600; color: #0F4C5C;">Documentation</span>
       &nbsp;&middot;&nbsp;Claude / ChatGPT
     </p>
-    <p style="margin: 4px 0 0; font-size: 11px; color: #374151; font-style: italic;">Tip: Paste the existing docs. Specify your audience (junior devs, senior engineers, etc.).</p>
+    <p style="margin: 4px 0 0; font-size: 11px; color: #111827; font-style: italic;">Tip: Paste the existing docs. Specify your audience (junior devs, senior engineers, etc.).</p>
   </td></tr>
   </table>
 </td></tr>
@@ -324,7 +327,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #374151; line-height: 1.5;">The moves that change product plans, budgets, and positioning.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #111827; line-height: 1.5;">The moves that change product plans, budgets, and positioning.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
@@ -332,7 +335,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" style="text-decoration: none;">
-          <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="OpenClaw founder Peter Steinberger is joining OpenAI" width="596" class="card-img" style="width: 100%; max-width: 596px; height: auto; max-height: 200px; object-fit: contain; display: block; background-color: #F3F4F6;">
+          <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="OpenClaw founder Peter Steinberger is joining OpenAI" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 150px; object-fit: cover; object-position: top center; display: block;">
         </a>
       </td>
     </tr>
@@ -342,7 +345,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">The Verge AI &middot; 15 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">The Verge AI &middot; 15 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
@@ -371,7 +374,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="text-decoration: none;">
-          <img src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" width="596" class="card-img" style="width: 100%; max-width: 596px; height: auto; max-height: 200px; object-fit: contain; display: block; background-color: #F3F4F6;">
+          <img src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 150px; object-fit: cover; object-position: top center; display: block;">
         </a>
       </td>
     </tr>
@@ -381,7 +384,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">OpenAI Blog &middot; 13 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">OpenAI Blog &middot; 13 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
@@ -426,7 +429,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #374151; line-height: 1.5;">New tooling worth evaluating in an actual workflow this week.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #111827; line-height: 1.5;">New tooling worth evaluating in an actual workflow this week.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
@@ -434,7 +437,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" style="text-decoration: none;">
-          <img src="https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png" alt="Custom Kernels for All from Codex and Claude" width="596" class="card-img" style="width: 100%; max-width: 596px; height: auto; max-height: 200px; object-fit: contain; display: block; background-color: #F3F4F6;">
+          <img src="https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png" alt="Custom Kernels for All from Codex and Claude" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 150px; object-fit: cover; object-position: top center; display: block;">
         </a>
       </td>
     </tr>
@@ -444,7 +447,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">Hugging Face Blog &middot; 13 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">Hugging Face Blog &middot; 13 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
@@ -473,7 +476,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" style="text-decoration: none;">
-          <img src="https://blog.langchain.com/content/images/size/w1200/2026/02/interrupt-on-sale.png" alt="Join us for Interrupt: The Agent Conference" width="596" class="card-img" style="width: 100%; max-width: 596px; height: auto; max-height: 200px; object-fit: contain; display: block; background-color: #F3F4F6;">
+          <img src="https://blog.langchain.com/content/images/size/w1200/2026/02/interrupt-on-sale.png" alt="Join us for Interrupt: The Agent Conference" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 150px; object-fit: cover; object-position: top center; display: block;">
         </a>
       </td>
     </tr>
@@ -483,7 +486,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">LangChain Blog &middot; 12 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">LangChain Blog &middot; 12 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
@@ -528,7 +531,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #374151; line-height: 1.5;">Repos with momentum that might deserve a deeper look.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #111827; line-height: 1.5;">Repos with momentum that might deserve a deeper look.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
@@ -536,7 +539,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://github.com/zeroclaw-labs/zeroclaw" style="text-decoration: none;">
-          <img src="https://avatars.githubusercontent.com/u/261820148?v=4" alt="zeroclaw" width="596" class="card-img" style="width: 100%; max-width: 596px; height: auto; max-height: 200px; object-fit: contain; display: block; background-color: #F3F4F6;">
+          <img src="https://avatars.githubusercontent.com/u/261820148?v=4" alt="zeroclaw" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 150px; object-fit: cover; object-position: top center; display: block;">
         </a>
       </td>
     </tr>
@@ -546,7 +549,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">GitHub Trending (AI/ML) &middot; 16 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">GitHub Trending (AI/ML) &middot; 16 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid #fde68a;">Intermediate</span>
@@ -591,7 +594,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #374151; line-height: 1.5;">Practical implementation guides you can adapt quickly.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #111827; line-height: 1.5;">Practical implementation guides you can adapt quickly.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
@@ -599,7 +602,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" style="text-decoration: none;">
-          <img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png" alt="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents" width="596" class="card-img" style="width: 100%; max-width: 596px; height: auto; max-height: 200px; object-fit: contain; display: block; background-color: #F3F4F6;">
+          <img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png" alt="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 150px; object-fit: cover; object-position: top center; display: block;">
         </a>
       </td>
     </tr>
@@ -609,7 +612,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">MarkTechPost &middot; 16 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">MarkTechPost &middot; 16 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
@@ -638,7 +641,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     <tr>
       <td style="padding: 0; line-height: 0;">
         <a href="https://dev.to/darbogach/i-built-an-open-source-security-scanner-for-ai-agents-heres-what-i-found-scanning-my-own-g9h" style="text-decoration: none;">
-          <img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgfj378qi8qw39krartjk.png" alt="I Built an Open-Source Security Scanner for AI Agents — Here&#39;s What I Found Scanning My Own" width="596" class="card-img" style="width: 100%; max-width: 596px; height: auto; max-height: 200px; object-fit: contain; display: block; background-color: #F3F4F6;">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgfj378qi8qw39krartjk.png" alt="I Built an Open-Source Security Scanner for AI Agents — Here&#39;s What I Found Scanning My Own" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 150px; object-fit: cover; object-position: top center; display: block;">
         </a>
       </td>
     </tr>
@@ -648,7 +651,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">Dev.to AI &middot; 16 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">Dev.to AI &middot; 16 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid #bbf7d0;">Beginner</span>
@@ -693,7 +696,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #374151; line-height: 1.5;">Research and model updates with downstream product impact.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #111827; line-height: 1.5;">Research and model updates with downstream product impact.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
@@ -704,7 +707,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 10px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">arXiv CS.AI &middot; 16 Feb</span>
+            <span class="text-faint" style="font-size: 10px; color: #111827;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; image-rendering: crisp-edges;" onerror="this.style.display='none'">arXiv CS.AI &middot; 16 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-advanced" style="display: inline-block; padding: 2px 8px; font-size: 10px; font-weight: 600; border-radius: 10px; background-color: #FEE2E2; color: #991B1B; border: 1px solid #fecaca;">Advanced</span>
@@ -734,7 +737,7 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="hr-line" style="border-top: 1px solid #E2E8F0;">
     <tr><td style="padding-top: 20px; text-align: center;">
       <!-- Read in browser -->
-      <p style="margin: 0 0 16px; font-size: 12px; color: #374151; line-height: 1.6;">
+      <p style="margin: 0 0 16px; font-size: 12px; color: #111827; line-height: 1.6;">
         <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-16.html" style="display: inline-block; padding: 12px 24px; background-color: #0F4C5C; color: #FFFFFF !important; text-decoration: none; font-weight: 700; border-radius: 10px; font-size: 14px; letter-spacing: 0.3px;">Read in browser &#x2192;</a>
       </p>
       <!-- Share (Forward, X, LinkedIn — issue_url_encoded and share_* from generate.py) -->
@@ -745,22 +748,22 @@ How Ricursive Intelligence raised $335M at a $4B valuation in 4 months · 9 stor
         <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-16.html" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
       </p>
       <!-- Links (order matches web: Archive · Latest · Email · RSS) -->
-      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #374151; line-height: 1.6;">
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #111827; line-height: 1.6;">
         <a href="https://matthewpaver.github.io/ai-weekly/" style="color: #0F4C5C; text-decoration: none;">Archive</a> &nbsp;&middot;&nbsp;
         <a href="https://matthewpaver.github.io/ai-weekly/latest.html" style="color: #0F4C5C; text-decoration: none;">Latest</a> &nbsp;&middot;&nbsp;
         <a href="https://matthewpaver.github.io/ai-weekly/email.html" style="color: #0F4C5C; text-decoration: none;">Email</a> &nbsp;&middot;&nbsp;
         <a href="https://matthewpaver.github.io/ai-weekly/feed.xml" style="color: #0F4C5C; text-decoration: none;">RSS</a>
       </p>
-      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #374151;">
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #111827;">
 Who reads this: Builders, product leads, and researchers who ship AI products.      </p>
-      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #374151;">
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #111827;">
         Built by <a href="https://github.com/MatthewPaver" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Matthew Paver</a> &nbsp;&middot;&nbsp;
         <a href="https://www.linkedin.com/in/matthew-paver-534262166/" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
       </p>
       <!-- Unsubscribe & legal -->
-      <p class="text-faint" style="margin: 14px 0 0; font-size: 10px; color: #374151; line-height: 1.5;">
+      <p class="text-faint" style="margin: 14px 0 0; font-size: 10px; color: #111827; line-height: 1.5;">
         You're receiving this because you subscribed at matthewpaver.github.io/ai-weekly<br>
-        <a href="mailto:inference.feedback@gmail.com?subject=Unsubscribe%2016 Feb 2026" style="color: #374151; text-decoration: underline;">Unsubscribe</a>
+        <a href="mailto:inference.feedback@gmail.com?subject=Unsubscribe%2016 Feb 2026" style="color: #111827; text-decoration: underline;">Unsubscribe</a>
       </p>
     </td></tr>
   </table>
