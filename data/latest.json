@@ -1,14 +1,14 @@
 {
   "date": "16 Feb 2026",
   "issue_number": 6,
-  "total_articles": 7,
-  "source_count": 28,
-  "read_time_minutes": 5,
+  "total_articles": 8,
+  "source_count": 13,
+  "read_time_minutes": 3,
   "intro": "Big news this week: GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory, and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (10 stories)."
+      "value": "Industry led coverage (9 stories)."
     },
     {
       "label": "Builder pick",
@@ -35,6 +35,16 @@
       "num": "01"
     },
     {
+      "icon": "\ud83d\udee0\ufe0f",
+      "title": "Builder's Bench",
+      "count": 2,
+      "read_time_minutes": 1,
+      "label": "\ud83d\udee0\ufe0f Builder's Bench (2)",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "promise": "",
+      "num": "02"
+    },
+    {
       "icon": "\u2b50",
       "title": "Open Source Watch",
       "count": 1,
@@ -42,7 +52,7 @@
       "label": "\u2b50 Open Source Watch (1)",
       "deck": "Repos with momentum that might deserve a deeper look.",
       "promise": "Repos with momentum.",
-      "num": "02"
+      "num": "03"
     },
     {
       "icon": "\ud83d\udd2c",
@@ -52,26 +62,14 @@
       "label": "\ud83d\udd2c Lab Notes (1)",
       "deck": "Research and model updates with downstream product impact.",
       "promise": "",
-      "num": "03"
+      "num": "04"
     }
   ],
   "briefing": [
     {
-      "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
-      "url": "https://arxiv.org/abs/2602.12316",
-      "note": "New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate. Why it matters: If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.",
-      "track": "Researcher"
-    },
-    {
-      "title": "Custom Kernels for All from Codex and Claude",
-      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
-      "note": "A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.",
-      "track": "Builder"
-    },
-    {
-      "title": "Join us for Interrupt: The Agent Conference",
-      "url": "https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/",
-      "note": "A new tool release around Interrupt targets gaps in current developer workflows. Why it matters: This year, wes coming next for agents\u2014and how.",
+      "title": "Buy Verified PayPal Accounts to Build Customer Trust",
+      "url": "https://dev.to/getusait45420/buy-verified-paypal-accounts-to-build-customer-trust-4amk",
+      "note": "Looking to buy verified PayPal accounts?. Why it matters: The PayPal development is a useful signal for teams shipping AI products.",
       "track": "Builder"
     }
   ],
@@ -96,21 +94,9 @@
   },
   "quick_hits": [
     {
-      "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
-      "url": "https://arxiv.org/abs/2602.12316",
-      "note": "New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate. Why it matters: If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.",
-      "track": "Researcher"
-    },
-    {
-      "title": "Custom Kernels for All from Codex and Claude",
-      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
-      "note": "A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.",
-      "track": "Builder"
-    },
-    {
-      "title": "Join us for Interrupt: The Agent Conference",
-      "url": "https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/",
-      "note": "A new tool release around Interrupt targets gaps in current developer workflows. Why it matters: This year, wes coming next for agents\u2014and how.",
+      "title": "Buy Verified PayPal Accounts to Build Customer Trust",
+      "url": "https://dev.to/getusait45420/buy-verified-paypal-accounts-to-build-customer-trust-4amk",
+      "note": "Looking to buy verified PayPal accounts?. Why it matters: The PayPal development is a useful signal for teams shipping AI products.",
       "track": "Builder"
     }
   ],
@@ -165,6 +151,54 @@
       ]
     },
     {
+      "title": "Builder's Bench",
+      "icon": "\ud83d\udee0\ufe0f",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "color": "0F4C5C",
+      "badge": "Builders Bench",
+      "topics": [
+        "Tools"
+      ],
+      "tier": "builder",
+      "promise": "",
+      "articles": [
+        {
+          "title": "Custom Kernels for All from Codex and Claude",
+          "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+          "source": "Hugging Face Blog",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png",
+          "authors": "",
+          "published": "13 Feb",
+          "thumbnail": "https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png",
+          "summary": "The Custom Kernels news is worth a closer look for teams making near-term tool or vendor calls (via Hugging Face Blog).",
+          "what_happened": "A new tool release around Custom Kernels targets gaps in current developer workflows.",
+          "why_it_matters": "Custom Kernels is worth evaluating if your current tools are hitting limits.",
+          "what_to_do": "Allocate one afternoon to test Custom Kernels against your top use case.",
+          "our_take": "Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Tools"
+        },
+        {
+          "title": "Join us for Interrupt: The Agent Conference",
+          "url": "https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/",
+          "source": "LangChain Blog",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png",
+          "authors": "LangChain Accounts",
+          "published": "12 Feb",
+          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/interrupt-on-sale.png",
+          "summary": "Interrupt is a development worth monitoring for near-term product and tooling decisions (via LangChain Blog).",
+          "what_happened": "A new tool release around Interrupt targets gaps in current developer workflows.",
+          "why_it_matters": "This year, wes coming next for agents\u2014and how.",
+          "what_to_do": "Try Interrupt on a non-critical task this week and log the results.",
+          "our_take": "Don't adopt tools based on hype. Run it against your ugliest edge case first.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tools"
+        }
+      ]
+    },
+    {
       "title": "Open Source Watch",
       "icon": "\u2b50",
       "deck": "Repos with momentum that might deserve a deeper look.",
@@ -215,7 +249,7 @@
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png",
           "authors": "Pepijn Cobben, Xuanqiang Angelo Huang, Thao Amelia Pham et al.",
           "published": "16 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+          "thumbnail": "",
           "summary": "New performance numbers for HarmBench need independent validation before changing production decisions (via arXiv CS.AI).",
           "what_happened": "New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate.",
           "why_it_matters": "If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.",
@@ -318,6 +352,7 @@
     "text": "Rewrite this API documentation to be developer-friendly. Keep it accurate but make it scannable with clear examples.",
     "context": "Documentation",
     "tool": "Claude / ChatGPT",
+    "why": "Bad docs are the #1 reason developers abandon tools. Asking for 'scannable with clear examples' targets the two things devs actually need: quick answers and copy-pasteable code.",
     "tip": "Paste the existing docs. Specify your audience (junior devs, senior engineers, etc.)."
   }
 }

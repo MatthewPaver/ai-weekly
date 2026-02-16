@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 17:50:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 18:09:50 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
@@ -22,6 +22,14 @@
       <category>Tools</category>
       <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
       
+    </item>
+    <item>
+      <title><![CDATA[Buy Verified PayPal Accounts to Build Customer Trust]]></title>
+      <link>https://dev.to/getusait45420/buy-verified-paypal-accounts-to-build-customer-trust-4amk</link>
+      <description><![CDATA[Looking to buy verified PayPal accounts?]]></description>
+      <category>Tutorials</category>
+      <pubDate>Mon, 16 Feb 2026 18:00:34 +0000</pubDate>
+      <author>Buy Verified PayPal Accounts to Build Customer Tru</author>
     </item>
     <item>
       <title><![CDATA[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory]]></title>
@@ -110,14 +118,6 @@
       <category>Industry</category>
       <pubDate>Mon, 16 Feb 2026 06:29:24 +0000</pubDate>
       <author>Jess Weatherbed</author>
-    </item>
-    <item>
-      <title><![CDATA[I spent two days gigging at RentAHuman and didn't make a single cent]]></title>
-      <link>https://arstechnica.com/ai/2026/02/i-spent-two-days-gigging-at-rentahuman-and-didnt-make-a-single-cent/</link>
-      <description><![CDATA[RentAHuman is a development worth monitoring for near-term product and tooling decisions (via Ars Technica AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 14:41:21 +0000</pubDate>
-      <author>Reece Rogers, wired.com</author>
     </item>
   </channel>
 </rss>
