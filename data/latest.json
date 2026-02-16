@@ -1,14 +1,14 @@
 {
   "date": "16 Feb 2026",
   "issue_number": 6,
-  "total_articles": 9,
-  "source_count": 15,
-  "read_time_minutes": 4,
+  "total_articles": 8,
+  "source_count": 14,
+  "read_time_minutes": 3,
   "intro": "Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (12 stories)."
+      "value": "Industry led coverage (13 stories)."
     },
     {
       "label": "Builder pick",
@@ -55,16 +55,6 @@
       "num": "03"
     },
     {
-      "icon": "\ud83d\udcda",
-      "title": "Ship-It Playbooks",
-      "count": 2,
-      "read_time_minutes": 1,
-      "label": "\ud83d\udcda Ship-It Playbooks (2)",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "promise": "One thing to try this week.",
-      "num": "04"
-    },
-    {
       "icon": "\ud83d\udd2c",
       "title": "Lab Notes",
       "count": 1,
@@ -72,10 +62,17 @@
       "label": "\ud83d\udd2c Lab Notes (1)",
       "deck": "Research and model updates with downstream product impact.",
       "promise": "",
-      "num": "05"
+      "num": "04"
     }
   ],
-  "briefing": [],
+  "briefing": [
+    {
+      "title": "Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents",
+      "url": "https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/",
+      "note": "Alibaba Cloud just updated the open-source landscape. Why it matters: Strong numbers from Alibaba Qwen Team could reset your baseline \u2014 but only if they hold on production data.",
+      "track": "Builder"
+    }
+  ],
   "editors_note": {
     "headline": "This week",
     "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, you're already behind.",
@@ -95,7 +92,14 @@
     "our_take": "Teams that factor Ricursive Intelligence into next quarter early usually gain execution room later.",
     "what_to_do": "Flag Ricursive Intelligence for your leadership team \u2014 it may shift near-term priorities."
   },
-  "quick_hits": [],
+  "quick_hits": [
+    {
+      "title": "Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents",
+      "url": "https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/",
+      "note": "Alibaba Cloud just updated the open-source landscape. Why it matters: Strong numbers from Alibaba Qwen Team could reset your baseline \u2014 but only if they hold on production data.",
+      "track": "Builder"
+    }
+  ],
   "sections": [
     {
       "title": "Industry Radar",
@@ -216,7 +220,7 @@
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
           "authors": "zeroclaw-labs",
           "published": "16 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/261820148?v=4",
+          "thumbnail": "",
           "summary": "Zeroclaw is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).",
           "what_happened": "Zeroclaw is picking up momentum in the open-source community.",
           "why_it_matters": "Momentum behind zeroclaw is real, but maintenance quality should gate adoption decisions.",
@@ -225,55 +229,6 @@
           "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Repos"
-        }
-      ]
-    },
-    {
-      "title": "Ship-It Playbooks",
-      "icon": "\ud83d\udcda",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "color": "0F4C5C",
-      "badge": "Ship It Playbooks",
-      "topics": [
-        "Tutorials"
-      ],
-      "tier": "builder",
-      "promise": "One thing to try this week.",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents",
-          "url": "https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/",
-          "source": "MarkTechPost",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
-          "authors": "Asif Razzaq",
-          "published": "16 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png",
-          "summary": "The Alibaba Qwen Team model release is worth benchmarking against your current baseline (via MarkTechPost).",
-          "what_happened": "Alibaba Cloud just updated the open-source landscape.",
-          "why_it_matters": "Strong numbers from Alibaba Qwen Team could reset your baseline \u2014 but only if they hold on production data.",
-          "what_to_do": "Work through the Alibaba Qwen Team tutorial and modify one step for your own use case.",
-          "our_take": "Tutorials are blueprints, not gospel. Adapt one step to your own constraints and you'll learn more.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "Getting Started with Ollama: From Installation to Testing",
-          "url": "https://dev.to/raziq_din_bd0274cc2ac748b/getting-started-with-ollama-from-installation-to-testing-281o",
-          "source": "Dev.to AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
-          "authors": "Raziq Din",
-          "published": "16 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fmmxmm62eyipto5uqvp0e.png",
-          "summary": "Getting Started is a development worth monitoring for near-term product and tooling decisions (via Dev.to AI).",
-          "what_happened": "A hands-on guide to Getting Started offers patterns you can adapt to your own stack.",
-          "why_it_matters": "Getting Started is worth a closer look for teams making near-term technology choices.",
-          "what_to_do": "Use the Getting Started guide as a template \u2014 build one thing from it this week.",
-          "our_take": "Use this as a starting point, then trim to fit your production reality.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
         }
       ]
     },

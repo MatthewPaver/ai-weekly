@@ -1,19 +1,6 @@
 [
   {
     "articles_collected": 63,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 43,
-    "after_filters": 16,
-    "articles_final": 14,
-    "sections": 5,
-    "lead_story": "Bringing ChatGPT to GenAI.mil",
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-12T03:20:29.819845+00:00"
-  },
-  {
-    "articles_collected": 63,
     "relaxed_history": true,
     "retry_count": 0,
     "after_dedup": 29,
@@ -1065,5 +1052,65 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-16T21:08:02.692565+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 24,
+    "after_filters": 4,
+    "after_accessibility": 28,
+    "after_selection": 18,
+    "articles_final": 18,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 24
+      },
+      {
+        "stage": "quality_gates",
+        "after": 4
+      },
+      {
+        "stage": "accessibility",
+        "after": 28
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 18
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 4,
+    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
+    "total_articles": 18,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T21:55:53.131962+00:00"
   }
 ]
