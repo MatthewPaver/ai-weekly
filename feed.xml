@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 20:33:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 21:08:02 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
@@ -24,12 +24,12 @@
       
     </item>
     <item>
-      <title><![CDATA[I Built a Multi-Agent Think Tank for Personal Productivity — Here's the Architecture]]></title>
-      <link>https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec</link>
-      <description><![CDATA[Research on Multi introduces methods that could influence applied work if results hold (via Dev.to AI).]]></description>
+      <title><![CDATA[Getting Started with Ollama: From Installation to Testing]]></title>
+      <link>https://dev.to/raziq_din_bd0274cc2ac748b/getting-started-with-ollama-from-installation-to-testing-281o</link>
+      <description><![CDATA[Getting Started is a development worth monitoring for near-term product and tooling decisions (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Mon, 16 Feb 2026 20:30:10 +0000</pubDate>
-      <author>atulya dharmaraj</author>
+      <pubDate>Mon, 16 Feb 2026 21:04:35 +0000</pubDate>
+      <author>Raziq Din</author>
     </item>
     <item>
       <title><![CDATA[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory]]></title>
@@ -44,7 +44,7 @@
       <link>https://github.com/zeroclaw-labs/zeroclaw</link>
       <description><![CDATA[Zeroclaw is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).]]></description>
       <category>Repos</category>
-      <pubDate>Mon, 16 Feb 2026 20:14:41 +0000</pubDate>
+      <pubDate>Mon, 16 Feb 2026 20:58:54 +0000</pubDate>
       <author>zeroclaw-labs</author>
     </item>
     <item>

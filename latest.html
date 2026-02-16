@@ -457,6 +457,8 @@
     .badge-difficulty-advanced { background: #fee2e2 !important; color: #991b1b !important; border-color: #fecaca !important; }
     .badge-track { background: #e0f2fe !important; color: #0c4a6e !important; border-color: #bae6fd !important; }
     html.theme-dark .badge-track { background: #0c4a6e !important; color: #7dd3fc !important; border-color: #0369a1 !important; }
+    .badge-pick { background: linear-gradient(135deg, #fef3c7, #fde68a) !important; color: #92400e !important; border-color: #f59e0b !important; font-weight: 700 !important; }
+    html.theme-dark .badge-pick { background: linear-gradient(135deg, #78350f, #92400e) !important; color: #fde68a !important; border-color: #f59e0b !important; }
 
     .section-promise { font-weight: 600; font-style: italic; color: var(--brand); font-size: 0.88rem; }
 
@@ -670,12 +672,6 @@
 
     .story-body { padding: 20px; }
 
-    .story-context {
-      margin: 0 0 8px;
-      font-size: 0.8rem;
-      line-height: 1.4;
-      color: var(--muted);
-    }
     .badge-section {
       font-size: 0.68rem;
       padding: 2px 6px;
@@ -915,9 +911,6 @@
     }
     .section-num { animation: numPop .4s ease both; }
 
-    /* Smooth scroll for anchor links (TOC → sections) */
-    html { scroll-behavior: smooth; }
-
     /* Glassmorphism nav bar (Mobbin / Linear-inspired) */
     .wrap > nav.nav {
       backdrop-filter: blur(12px) saturate(1.2);
@@ -1036,6 +1029,11 @@
         scrollbar-width: thin;
         scrollbar-color: var(--line) transparent;
       }
+      /* Compact sidebar TOC items */
+      aside .menu { padding: 14px; margin-bottom: 12px; }
+      aside .menu .menu-item { padding: 8px 10px; font-size: 0.82rem; }
+      aside .menu .menu-icon { font-size: 0.95rem; }
+      aside .menu .menu-count { width: 20px; height: 20px; font-size: 0.68rem; min-width: 20px; }
     }
 
     /* Scroll-spy: active menu item highlight */
@@ -1185,70 +1183,24 @@
         <span class="chip">9 stories</span>
         <span class="chip">~4 min read</span>
       </div>
-      <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; color: var(--muted);">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
+      <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; color: rgba(255,255,255,0.7);">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
     </header>
 
     <div class="content">
       <main id="main-content">
-        <section class="menu card" aria-label="In this issue">
-          <p class="section-head">In This Issue</p>
-          <p class="menu-intro">What's inside this issue, at a glance. Each section has a short description so you can jump to what matters.</p>
-          <p class="difficulty-legend">Reading level: <span class="badge badge-difficulty-beginner">Beginner</span> <span class="badge badge-difficulty-intermediate">Intermediate</span> <span class="badge badge-difficulty-advanced">Advanced</span></p>
-          <div class="menu-grid">
-            <a class="menu-item" href="#industry-radar">
-              <span class="menu-num">01</span>
-              <span class="menu-icon">🌐</span>
-              <span class="menu-text">
-                <span class="menu-label">Industry Radar</span>
-<span class="menu-deck">The moves that change product plans, budgets, and positioning.</span>              </span>
-              <span class="menu-count">2</span>
-            </a>
-            <a class="menu-item" href="#builders-bench">
-              <span class="menu-num">02</span>
-              <span class="menu-icon">🛠️</span>
-              <span class="menu-text">
-                <span class="menu-label">Builder&#39;s Bench</span>
-<span class="menu-deck">New tooling worth evaluating in an actual workflow this week.</span>              </span>
-              <span class="menu-count">2</span>
-            </a>
-            <a class="menu-item" href="#open-source-watch">
-              <span class="menu-num">03</span>
-              <span class="menu-icon">⭐</span>
-              <span class="menu-text">
-                <span class="menu-label">Open Source Watch</span>
-<span class="menu-deck">Repos with momentum that might deserve a deeper look.</span><span class="menu-deck section-promise">Repos with momentum.</span>              </span>
-              <span class="menu-count">1</span>
-            </a>
-            <a class="menu-item" href="#ship-it-playbooks">
-              <span class="menu-num">04</span>
-              <span class="menu-icon">📚</span>
-              <span class="menu-text">
-                <span class="menu-label">Ship-It Playbooks</span>
-<span class="menu-deck">Practical implementation guides you can adapt quickly.</span><span class="menu-deck section-promise">One thing to try this week.</span>              </span>
-              <span class="menu-count">2</span>
-            </a>
-            <a class="menu-item" href="#lab-notes">
-              <span class="menu-num">05</span>
-              <span class="menu-icon">🔬</span>
-              <span class="menu-text">
-                <span class="menu-label">Lab Notes</span>
-<span class="menu-deck">Research and model updates with downstream product impact.</span>              </span>
-              <span class="menu-count">1</span>
-            </a>
-          </div>
-        </section>
-
         <article class="lead card">
           <img class="lead-media" src="https://techcrunch.com/wp-content/uploads/2026/02/Ricursive-Intelligence-founders.png?resize=1200,943" alt="How Ricursive Intelligence raised $335M at a $4B valuation in 4 months" decoding="async" fetchpriority="high" />
           <div class="lead-body">
             <p class="section-head">Top Story</p>
             <div class="meta-row">
+              <span class="badge badge-pick">Editor's Pick</span>
               <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">TechCrunch AI · 16 Feb</span>
 <span class="badge badge-difficulty-beginner">Beginner</span><span class="badge badge-track">Leader</span>            </div>
             <h2><a href="https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/" target="_blank" rel="noopener">How Ricursive Intelligence raised $335M at a $4B valuation in 4 months</a></h2>
             <p><strong style="color: var(--text);">An investment round for Ricursive Intelligence signals growing market interest in the space.</strong><br>Industry changes involving Ricursive Intelligence are likely to affect near-term planning cycles.</p>
             <p class="action">Action: Flag Ricursive Intelligence for your leadership team, it may shift near-term priorities.</p>
-<p class="take">Teams that factor Ricursive Intelligence into next quarter early usually gain execution room later.</p>          </div>
+<p class="take">Teams that factor Ricursive Intelligence into next quarter early usually gain execution room later.</p>            <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+          </div>
         </article>
 
         <div class="share-row">
@@ -1270,14 +1222,15 @@
                       <span class="badge badge-difficulty-intermediate">Intermediate</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <p class="story-context" aria-label="Context">In <strong>Industry Radar</strong>: The moves that change product plans, budgets, and positioning.</p>
                   <h3><a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" target="_blank" rel="noopener">OpenClaw founder Peter Steinberger is joining OpenAI</a></h3>
                   <p><strong style="color: var(--text);">The OpenClaw development has implications for vendor strategy and competitive positioning.</strong><br>The OpenClaw shift affects competitive positioning, factor it into Q2 planning.</p>
                   <p class="action">Action: Set a reminder to check OpenClaw for downstream changes in 2 weeks.</p>
-                  <a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" data-title="OpenClaw founder Peter Steinberger is joining OpenAI" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
@@ -1290,14 +1243,15 @@
                       <span class="badge badge-difficulty-beginner">Beginner</span>
 <span class="badge badge-track">Leader</span>                    </span>
                   </div>
-                  <p class="story-context" aria-label="Context">In <strong>Industry Radar</strong>: The moves that change product plans, budgets, and positioning.</p>
                   <h3><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></h3>
                   <p><strong style="color: var(--text);">ChatGPT launched with features aimed at the current gap in existing toolchains.</strong><br>If you&#39;re shopping for alternatives, ChatGPT belongs on the shortlist.</p>
                   <p class="action">Action: Add ChatGPT as a discussion item in your next strategy or planning meeting.</p>
-                  <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" data-title="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
@@ -1315,14 +1269,15 @@
                       <span class="badge badge-difficulty-intermediate">Intermediate</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <p class="story-context" aria-label="Context">In <strong>Builder&#39;s Bench</strong>: New tooling worth evaluating in an actual workflow this week.</p>
                   <h3><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Custom Kernels for All from Codex and Claude</a></h3>
                   <p><strong style="color: var(--text);">A new tool release around Custom Kernels targets gaps in current developer workflows.</strong><br>Custom Kernels is worth evaluating if your current tools are hitting limits.</p>
                   <p class="action">Action: Allocate one afternoon to test Custom Kernels against your top use case.</p>
-                  <a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" data-title="Custom Kernels for All from Codex and Claude" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
@@ -1335,14 +1290,15 @@
                       <span class="badge badge-difficulty-beginner">Beginner</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <p class="story-context" aria-label="Context">In <strong>Builder&#39;s Bench</strong>: New tooling worth evaluating in an actual workflow this week.</p>
                   <h3><a href="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" target="_blank" rel="noopener">Join us for Interrupt: The Agent Conference</a></h3>
                   <p><strong style="color: var(--text);">A new tool release around Interrupt targets gaps in current developer workflows.</strong><br>This year, wes coming next for agents—and how.</p>
                   <p class="action">Action: Try Interrupt on a non-critical task this week and log the results.</p>
-                  <a href="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" data-title="Join us for Interrupt: The Agent Conference" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
@@ -1360,14 +1316,15 @@
                       <span class="badge badge-difficulty-intermediate">Intermediate</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <p class="story-context" aria-label="Context">In <strong>Open Source Watch</strong>: Repos with momentum that might deserve a deeper look.</p>
                   <h3><a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noopener">zeroclaw</a></h3>
                   <p><strong style="color: var(--text);">Zeroclaw is picking up momentum in the open-source community.</strong><br>Momentum behind zeroclaw is real, but maintenance quality should gate adoption decisions.</p>
                   <p class="action">Action: Review zeroclaw issue tracker, last commit date, and license before considering adoption.</p>
-                  <a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://github.com/zeroclaw-labs/zeroclaw" data-title="zeroclaw" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://github.com/zeroclaw-labs/zeroclaw" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
@@ -1385,19 +1342,20 @@
                       <span class="badge badge-difficulty-beginner">Beginner</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <p class="story-context" aria-label="Context">In <strong>Ship-It Playbooks</strong>: Practical implementation guides you can adapt quickly.</p>
                   <h3><a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents</a></h3>
                   <p><strong style="color: var(--text);">Alibaba Cloud just updated the open-source landscape.</strong><br>Strong numbers from Alibaba Qwen Team could reset your baseline, but only if they hold on production data.</p>
                   <p class="action">Action: Work through the Alibaba Qwen Team tutorial and modify one step for your own use case.</p>
-                  <a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" data-title="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img class="lazy" data-src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxrgxijitjhu2ru84e5bk.png" alt="I Built a Multi-Agent Think Tank for Personal Productivity — Here&#39;s the Architecture" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fmmxmm62eyipto5uqvp0e.png" alt="Getting Started with Ollama: From Installation to Testing" decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
                     <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">Dev.to AI</span>
                     <span>
@@ -1405,14 +1363,15 @@
                       <span class="badge badge-difficulty-beginner">Beginner</span>
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
-                  <p class="story-context" aria-label="Context">In <strong>Ship-It Playbooks</strong>: Practical implementation guides you can adapt quickly.</p>
-                  <h3><a href="https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec" target="_blank" rel="noopener">I Built a Multi-Agent Think Tank for Personal Productivity — Here&#39;s the Architecture</a></h3>
-                  <p><strong style="color: var(--text);">Three AI agents analyze my life.</strong><br>One synthesizes their insights into actionable moves.</p>
-                  <p class="action">Action: Follow the Multi guide, but adapt one step to fit your actual production constraints.</p>
-                  <a href="https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
-                    <button type="button" class="like-btn" data-url="https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec" data-title="I Built a Multi-Agent Think Tank for Personal Productivity — Here&#39;s the Architecture" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec" style="font-size: 12px; color: var(--muted);">0 likes</span>
+                  <h3><a href="https://dev.to/raziq_din_bd0274cc2ac748b/getting-started-with-ollama-from-installation-to-testing-281o" target="_blank" rel="noopener">Getting Started with Ollama: From Installation to Testing</a></h3>
+                  <p><strong style="color: var(--text);">A hands-on guide to Getting Started offers patterns you can adapt to your own stack.</strong><br>Getting Started is worth a closer look for teams making near-term technology choices.</p>
+                  <p class="action">Action: Use the Getting Started guide as a template, build one thing from it this week.</p>
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://dev.to/raziq_din_bd0274cc2ac748b/getting-started-with-ollama-from-installation-to-testing-281o" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://dev.to/raziq_din_bd0274cc2ac748b/getting-started-with-ollama-from-installation-to-testing-281o" data-title="Getting Started with Ollama: From Installation to Testing" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
@@ -1430,14 +1389,15 @@
                       <span class="badge badge-difficulty-advanced">Advanced</span>
 <span class="badge badge-track">Researcher</span>                    </span>
                   </div>
-                  <p class="story-context" aria-label="Context">In <strong>Lab Notes</strong>: Research and model updates with downstream product impact.</p>
                   <h3><a href="https://arxiv.org/abs/2602.12316" target="_blank" rel="noopener">GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory</a></h3>
                   <p><strong style="color: var(--text);">New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate.</strong><br>If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.</p>
                   <p class="action">Action: Compare the HarmBench eval setup to yours, check if the benchmark conditions match your workload.</p>
-                  <a href="https://arxiv.org/abs/2602.12316" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://arxiv.org/abs/2602.12316" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
                     <button type="button" class="like-btn" data-url="https://arxiv.org/abs/2602.12316" data-title="GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://arxiv.org/abs/2602.12316" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
@@ -1447,6 +1407,47 @@
       </main>
 
       <aside>
+        <nav class="menu card" aria-label="In this issue">
+          <p class="section-head">In This Issue</p>
+          <div class="menu-grid" style="grid-template-columns: 1fr;">
+            <a class="menu-item" href="#industry-radar">
+              <span class="menu-icon">🌐</span>
+              <span class="menu-text">
+                <span class="menu-label">Industry Radar</span>
+              </span>
+              <span class="menu-count">2</span>
+            </a>
+            <a class="menu-item" href="#builders-bench">
+              <span class="menu-icon">🛠️</span>
+              <span class="menu-text">
+                <span class="menu-label">Builder&#39;s Bench</span>
+              </span>
+              <span class="menu-count">2</span>
+            </a>
+            <a class="menu-item" href="#open-source-watch">
+              <span class="menu-icon">⭐</span>
+              <span class="menu-text">
+                <span class="menu-label">Open Source Watch</span>
+              </span>
+              <span class="menu-count">1</span>
+            </a>
+            <a class="menu-item" href="#ship-it-playbooks">
+              <span class="menu-icon">📚</span>
+              <span class="menu-text">
+                <span class="menu-label">Ship-It Playbooks</span>
+              </span>
+              <span class="menu-count">2</span>
+            </a>
+            <a class="menu-item" href="#lab-notes">
+              <span class="menu-icon">🔬</span>
+              <span class="menu-text">
+                <span class="menu-label">Lab Notes</span>
+              </span>
+              <span class="menu-count">1</span>
+            </a>
+          </div>
+        </nav>
+
         <section class="card also-this-week" style="padding: 14px;">
           <p class="section-head" style="margin: 0 0 10px; font-size: 0.75rem;">Also this week</p>
           <p style="margin: 0 0 8px; font-size: 0.85rem; color: var(--muted);"><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Google Machine Learning Crash Course</a> · Google AI · Free · 15 hours</p>
