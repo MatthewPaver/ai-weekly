@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 20:24:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 20:33:07 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
@@ -24,12 +24,12 @@
       
     </item>
     <item>
-      <title><![CDATA[I Built an Open-Source Security Scanner for AI Agents — Here's What I Found Scanning My Own]]></title>
-      <link>https://dev.to/darbogach/i-built-an-open-source-security-scanner-for-ai-agents-heres-what-i-found-scanning-my-own-g9h</link>
-      <description><![CDATA[Open going open lowers the bar for experimentation and custom deployments (via Dev.to AI).]]></description>
+      <title><![CDATA[I Built a Multi-Agent Think Tank for Personal Productivity — Here's the Architecture]]></title>
+      <link>https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec</link>
+      <description><![CDATA[Research on Multi introduces methods that could influence applied work if results hold (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Mon, 16 Feb 2026 20:08:07 +0000</pubDate>
-      <author>Dar Fazulyanov</author>
+      <pubDate>Mon, 16 Feb 2026 20:30:10 +0000</pubDate>
+      <author>atulya dharmaraj</author>
     </item>
     <item>
       <title><![CDATA[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory]]></title>

@@ -404,8 +404,7 @@
 
     .lead-media {
       width: 100%;
-      aspect-ratio: 16 / 9;
-      max-height: 240px;
+      height: 180px;
       object-fit: cover;
       object-position: top center;
       background: var(--surface-2);
@@ -461,11 +460,11 @@
 
     .section-promise { font-weight: 600; font-style: italic; color: var(--brand); font-size: 0.88rem; }
 
-    .testimonial { margin: 12px 0 0; font-style: italic; font-size: 0.88rem; opacity: 0.9; line-height: 1.5; }
+    .testimonial { margin: 12px 0 0; font-style: italic; font-size: 0.88rem; color: var(--muted); line-height: 1.5; }
     .testimonial footer { font-style: normal; font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
 
-    .social-proof { margin: 8px 0 0; font-size: 0.82rem; opacity: 0.8; }
-    .conversion-hook { margin: 10px 0 0; font-size: 0.82rem; opacity: 0.85; }
+    .social-proof { margin: 8px 0 0; font-size: 0.82rem; color: var(--muted); }
+    .conversion-hook { margin: 10px 0 0; font-size: 0.82rem; color: var(--muted); }
     .conversion-hook a { color: #fff; text-decoration: underline; }
 
     .lead h2 {
@@ -661,8 +660,7 @@
 
     .story img {
       width: 100%;
-      aspect-ratio: 16 / 9;
-      max-height: 180px;
+      height: 140px;
       object-fit: cover;
       object-position: top center;
       display: block;
@@ -735,7 +733,7 @@
       text-align: center;
     }
     .subscribe-card h3 { margin: 0 0 6px; font-size: 1.1rem; }
-    .subscribe-card p { margin: 0 0 12px; font-size: 0.88rem; opacity: 0.85; }
+    .subscribe-card p { margin: 0 0 12px; font-size: 0.88rem; color: var(--muted); }
     .subscribe-form { display: flex; gap: 6px; max-width: 380px; margin: 0 auto; }
     .subscribe-form input {
       flex: 1; padding: 9px 12px; border: 1px solid rgba(255,255,255,0.3);
@@ -1113,16 +1111,6 @@
     }
 
     /* Section read time chip */
-    .section-time {
-      font-size: 0.72rem;
-      font-weight: 500;
-      color: var(--muted);
-      background: color-mix(in srgb, var(--surface-2), transparent 40%);
-      padding: 2px 8px;
-      border-radius: 999px;
-      margin-left: auto;
-    }
-
     @media (prefers-reduced-motion: reduce) {
       * {
         animation: none !important;
@@ -1140,8 +1128,8 @@
 
     @media (max-width: 960px) {
       .content { grid-template-columns: 1fr; }
-      .lead-media { max-height: 200px; }
-      .story img { max-height: 160px; }
+      .lead-media { height: 150px; }
+      .story img { height: 120px; }
       /* On mobile, reorder so sidebar content appears after lead, before sections */
       .content { display: flex; flex-direction: column; }
       .content main { order: 1; }
@@ -1197,7 +1185,7 @@
         <span class="chip">9 stories</span>
         <span class="chip">~4 min read</span>
       </div>
-      <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; opacity: 0.85;">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
+      <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; color: var(--muted);">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
     </header>
 
     <div class="content">
@@ -1213,7 +1201,7 @@
               <span class="menu-text">
                 <span class="menu-label">Industry Radar</span>
 <span class="menu-deck">The moves that change product plans, budgets, and positioning.</span>              </span>
-              <span class="menu-count">2 · ~1 min</span>
+              <span class="menu-count">2</span>
             </a>
             <a class="menu-item" href="#builders-bench">
               <span class="menu-num">02</span>
@@ -1221,7 +1209,7 @@
               <span class="menu-text">
                 <span class="menu-label">Builder&#39;s Bench</span>
 <span class="menu-deck">New tooling worth evaluating in an actual workflow this week.</span>              </span>
-              <span class="menu-count">2 · ~1 min</span>
+              <span class="menu-count">2</span>
             </a>
             <a class="menu-item" href="#open-source-watch">
               <span class="menu-num">03</span>
@@ -1229,7 +1217,7 @@
               <span class="menu-text">
                 <span class="menu-label">Open Source Watch</span>
 <span class="menu-deck">Repos with momentum that might deserve a deeper look.</span><span class="menu-deck section-promise">Repos with momentum.</span>              </span>
-              <span class="menu-count">1 · ~1 min</span>
+              <span class="menu-count">1</span>
             </a>
             <a class="menu-item" href="#ship-it-playbooks">
               <span class="menu-num">04</span>
@@ -1237,7 +1225,7 @@
               <span class="menu-text">
                 <span class="menu-label">Ship-It Playbooks</span>
 <span class="menu-deck">Practical implementation guides you can adapt quickly.</span><span class="menu-deck section-promise">One thing to try this week.</span>              </span>
-              <span class="menu-count">2 · ~1 min</span>
+              <span class="menu-count">2</span>
             </a>
             <a class="menu-item" href="#lab-notes">
               <span class="menu-num">05</span>
@@ -1245,13 +1233,13 @@
               <span class="menu-text">
                 <span class="menu-label">Lab Notes</span>
 <span class="menu-deck">Research and model updates with downstream product impact.</span>              </span>
-              <span class="menu-count">1 · ~1 min</span>
+              <span class="menu-count">1</span>
             </a>
           </div>
         </section>
 
         <article class="lead card">
-          <img class="lead-media" src="https://techcrunch.com/wp-content/uploads/2026/02/Ricursive-Intelligence-founders.png?resize=1200,943" alt="How Ricursive Intelligence raised $335M at a $4B valuation in 4 months" width="800" height="200" decoding="async" fetchpriority="high" />
+          <img class="lead-media" src="https://techcrunch.com/wp-content/uploads/2026/02/Ricursive-Intelligence-founders.png?resize=1200,943" alt="How Ricursive Intelligence raised $335M at a $4B valuation in 4 months" decoding="async" fetchpriority="high" />
           <div class="lead-body">
             <p class="section-head">Top Story</p>
             <div class="meta-row">
@@ -1271,10 +1259,10 @@
 
         <div class="sections">
           <section class="section" data-sal="slide-up" id="industry-radar" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">1</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span><span class="section-time">~1 min</span></h2>
+            <h2 class="section-title"><span class="section-num">1</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
 <p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="OpenClaw founder Peter Steinberger is joining OpenAI" width="640" height="360" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="OpenClaw founder Peter Steinberger is joining OpenAI" decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
                     <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">The Verge AI</span>
                     <span>
@@ -1289,12 +1277,12 @@
                   <a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
                     <button type="button" class="like-btn" data-url="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" data-title="OpenClaw founder Peter Steinberger is joining OpenAI" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" style="font-size: 12px; color: var(--muted);">0</span>
+                    <span class="like-count" data-url="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img class="lazy" data-src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" width="640" height="360" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
                     <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">OpenAI Blog</span>
                     <span>
@@ -1309,17 +1297,17 @@
                   <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
                     <button type="button" class="like-btn" data-url="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" data-title="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="font-size: 12px; color: var(--muted);">0</span>
+                    <span class="like-count" data-url="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
             </div>
           </section>
           <section class="section" data-sal="slide-up" id="builders-bench" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span><span class="section-time">~1 min</span></h2>
+            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span></h2>
 <p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png" alt="Custom Kernels for All from Codex and Claude" width="640" height="360" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png" alt="Custom Kernels for All from Codex and Claude" decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
                     <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">Hugging Face Blog</span>
                     <span>
@@ -1334,12 +1322,12 @@
                   <a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
                     <button type="button" class="like-btn" data-url="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" data-title="Custom Kernels for All from Codex and Claude" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" style="font-size: 12px; color: var(--muted);">0</span>
+                    <span class="like-count" data-url="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img class="lazy" data-src="https://blog.langchain.com/content/images/size/w1200/2026/02/interrupt-on-sale.png" alt="Join us for Interrupt: The Agent Conference" width="640" height="360" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://blog.langchain.com/content/images/size/w1200/2026/02/interrupt-on-sale.png" alt="Join us for Interrupt: The Agent Conference" decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
                     <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">LangChain Blog</span>
                     <span>
@@ -1354,17 +1342,17 @@
                   <a href="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
                     <button type="button" class="like-btn" data-url="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" data-title="Join us for Interrupt: The Agent Conference" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" style="font-size: 12px; color: var(--muted);">0</span>
+                    <span class="like-count" data-url="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
             </div>
           </section>
           <section class="section" data-sal="slide-up" id="open-source-watch" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">3</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(1)</span><span class="section-time">~1 min</span></h2>
+            <h2 class="section-title"><span class="section-num">3</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">Repos with momentum that might deserve a deeper look.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://avatars.githubusercontent.com/u/261820148?v=4" alt="zeroclaw" width="640" height="360" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://avatars.githubusercontent.com/u/261820148?v=4" alt="zeroclaw" decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
                     <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">GitHub Trending (AI/ML)</span>
                     <span>
@@ -1379,17 +1367,17 @@
                   <a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
                     <button type="button" class="like-btn" data-url="https://github.com/zeroclaw-labs/zeroclaw" data-title="zeroclaw" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://github.com/zeroclaw-labs/zeroclaw" style="font-size: 12px; color: var(--muted);">0</span>
+                    <span class="like-count" data-url="https://github.com/zeroclaw-labs/zeroclaw" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
             </div>
           </section>
           <section class="section" data-sal="slide-up" id="ship-it-playbooks" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">4</span> 📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(2)</span><span class="section-time">~1 min</span></h2>
+            <h2 class="section-title"><span class="section-num">4</span> 📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(2)</span></h2>
 <p class="section-deck">Practical implementation guides you can adapt quickly.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png" alt="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters ..." width="640" height="360" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png" alt="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters ..." decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
                     <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">MarkTechPost</span>
                     <span>
@@ -1404,12 +1392,12 @@
                   <a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
                     <button type="button" class="like-btn" data-url="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" data-title="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" style="font-size: 12px; color: var(--muted);">0</span>
+                    <span class="like-count" data-url="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img class="lazy" data-src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgfj378qi8qw39krartjk.png" alt="I Built an Open-Source Security Scanner for AI Agents — Here&#39;s What I Found S..." width="640" height="360" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxrgxijitjhu2ru84e5bk.png" alt="I Built a Multi-Agent Think Tank for Personal Productivity — Here&#39;s the Architecture" decoding="async" />                <div class="story-body">
                   <div class="meta-row" style="justify-content: space-between;">
                     <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">Dev.to AI</span>
                     <span>
@@ -1418,20 +1406,20 @@
 <span class="badge badge-track">Builder</span>                    </span>
                   </div>
                   <p class="story-context" aria-label="Context">In <strong>Ship-It Playbooks</strong>: Practical implementation guides you can adapt quickly.</p>
-                  <h3><a href="https://dev.to/darbogach/i-built-an-open-source-security-scanner-for-ai-agents-heres-what-i-found-scanning-my-own-g9h" target="_blank" rel="noopener">I Built an Open-Source Security Scanner for AI Agents — Here&#39;s What I Found Scanning My Own</a></h3>
-                  <p><strong style="color: var(--text);">Open weights for Open give teams a self-hosted option to benchmark.</strong><br>Open being open gives teams use to negotiate or self-host.</p>
-                  <p class="action">Action: Work through the Open tutorial and modify one step for your own use case.</p>
-                  <a href="https://dev.to/darbogach/i-built-an-open-source-security-scanner-for-ai-agents-heres-what-i-found-scanning-my-own-g9h" target="_blank" rel="noopener">Read article &#x2192;</a>
+                  <h3><a href="https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec" target="_blank" rel="noopener">I Built a Multi-Agent Think Tank for Personal Productivity — Here&#39;s the Architecture</a></h3>
+                  <p><strong style="color: var(--text);">Three AI agents analyze my life.</strong><br>One synthesizes their insights into actionable moves.</p>
+                  <p class="action">Action: Follow the Multi guide, but adapt one step to fit your actual production constraints.</p>
+                  <a href="https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
-                    <button type="button" class="like-btn" data-url="https://dev.to/darbogach/i-built-an-open-source-security-scanner-for-ai-agents-heres-what-i-found-scanning-my-own-g9h" data-title="I Built an Open-Source Security Scanner for AI Agents — Here&#39;s What I Found Scanning My Own" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://dev.to/darbogach/i-built-an-open-source-security-scanner-for-ai-agents-heres-what-i-found-scanning-my-own-g9h" style="font-size: 12px; color: var(--muted);">0</span>
+                    <button type="button" class="like-btn" data-url="https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec" data-title="I Built a Multi-Agent Think Tank for Personal Productivity — Here&#39;s the Architecture" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <span class="like-count" data-url="https://dev.to/atulya_dharmaraj_e4d671dd/i-built-a-multi-agent-think-tank-for-personal-productivity-heres-the-architecture-5bec" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
             </div>
           </section>
           <section class="section" data-sal="slide-up" id="lab-notes" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">5</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span><span class="section-time">~1 min</span></h2>
+            <h2 class="section-title"><span class="section-num">5</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">Research and model updates with downstream product impact.</p>            <div class="stories">
               <article class="story">
                 <div class="story-body">
@@ -1449,7 +1437,7 @@
                   <a href="https://arxiv.org/abs/2602.12316" target="_blank" rel="noopener">Read article &#x2192;</a>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px; display: flex; align-items: center; gap: 6px;">
                     <button type="button" class="like-btn" data-url="https://arxiv.org/abs/2602.12316" data-title="GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                    <span class="like-count" data-url="https://arxiv.org/abs/2602.12316" style="font-size: 12px; color: var(--muted);">0</span>
+                    <span class="like-count" data-url="https://arxiv.org/abs/2602.12316" style="font-size: 12px; color: var(--muted);">0 likes</span>
                   </p>
                 </div>
               </article>
@@ -1523,7 +1511,7 @@
       <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a> ·
       <button type="button" class="theme-toggle" aria-label="Toggle dark mode" onclick="document.getElementById('theme-toggle').click()">Dark</button> ·<a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a> ·
       <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
-      <p class="footer-social-proof" style="margin-top: 12px; font-size: 12px; opacity: 0.9;">
+      <p class="footer-social-proof" style="margin-top: 12px; font-size: 12px; color: var(--muted);">
 Who reads this: Builders, product leads, and researchers who ship AI products.      </p>
       <p class="copyright">Editorial analysis &copy; 2026 Matthew Paver. Original articles &copy; respective authors and publications.</p>
     </footer>
@@ -1751,7 +1739,7 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
       var counts = getCounts();
       var n = counts[url] || 0;
       document.querySelectorAll('.like-count[data-url="' + url + '"]').forEach(function(el) {
-        el.textContent = n;
+        el.textContent = n === 1 ? '1 like' : n + ' likes';
       });
     }
 
