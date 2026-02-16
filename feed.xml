@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 21:55:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 22:22:53 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
@@ -24,12 +24,12 @@
       
     </item>
     <item>
-      <title><![CDATA[Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents]]></title>
-      <link>https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/</link>
-      <description><![CDATA[The Alibaba Qwen Team model release is worth benchmarking against your current baseline (via MarkTechPost).]]></description>
+      <title><![CDATA[Why Software Alone Can’t Scale Operations — The Rise of Multi-Agent Systems]]></title>
+      <link>https://dev.to/aiaddict25709/why-software-alone-cant-scale-operations-the-rise-of-multi-agent-systems-22p3</link>
+      <description><![CDATA[Research on Multi introduces methods that could influence applied work if results hold (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Mon, 16 Feb 2026 18:53:19 +0000</pubDate>
-      <author>Asif Razzaq</author>
+      <pubDate>Mon, 16 Feb 2026 22:04:57 +0000</pubDate>
+      <author>AIaddict25709</author>
     </item>
     <item>
       <title><![CDATA[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory]]></title>
@@ -62,6 +62,14 @@
       <category>Tools</category>
       <pubDate>Thu, 12 Feb 2026 17:42:03 +0000</pubDate>
       <author>LangChain Accounts</author>
+    </item>
+    <item>
+      <title><![CDATA[Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents]]></title>
+      <link>https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/</link>
+      <description><![CDATA[The Alibaba Qwen Team model release is worth benchmarking against your current baseline (via MarkTechPost).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Mon, 16 Feb 2026 18:53:19 +0000</pubDate>
+      <author>Asif Razzaq</author>
     </item>
     <item>
       <title><![CDATA[Gemini 3 Deep Think: Advancing science, research and engineering]]></title>
@@ -112,12 +120,12 @@
       <author>Terrence O’Brien</author>
     </item>
     <item>
-      <title><![CDATA[OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK]]></title>
-      <link>https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/</link>
-      <description><![CDATA[The OpenAI model release is worth benchmarking against your current baseline (via Wired AI).]]></description>
+      <title><![CDATA[Google’s AI Overviews Can Scam You. Here’s How to Stay Safe]]></title>
+      <link>https://www.wired.com/story/googles-ai-overviews-can-scam-you-heres-how-to-stay-safe/</link>
+      <description><![CDATA[Hands-on coverage of Google provides actionable steps for teams building in this space (via Wired AI).]]></description>
       <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 21:56:18 +0000</pubDate>
-      <author>Zeyi Yang</author>
+      <pubDate>Sun, 15 Feb 2026 11:30:00 +0000</pubDate>
+      <author>David Nield</author>
     </item>
     <item>
       <title><![CDATA[Flapping Airplanes on the future of AI: ‘We want to try really radically different things’]]></title>
@@ -136,20 +144,12 @@
       <author>Jess Weatherbed</author>
     </item>
     <item>
-      <title><![CDATA[Google’s AI Overviews Can Scam You. Here’s How to Stay Safe]]></title>
-      <link>https://www.wired.com/story/googles-ai-overviews-can-scam-you-heres-how-to-stay-safe/</link>
-      <description><![CDATA[Hands-on coverage of Google provides actionable steps for teams building in this space (via Wired AI).]]></description>
+      <title><![CDATA[OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK]]></title>
+      <link>https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/</link>
+      <description><![CDATA[The OpenAI model release is worth benchmarking against your current baseline (via Wired AI).]]></description>
       <category>Industry</category>
-      <pubDate>Sun, 15 Feb 2026 11:30:00 +0000</pubDate>
-      <author>David Nield</author>
-    </item>
-    <item>
-      <title><![CDATA[Zillow Has Gone Wild—for AI]]></title>
-      <link>https://www.wired.com/story/backchannel-how-artificial-intelligence-changed-zillow/</link>
-      <description><![CDATA[Zillow Has Gone Wild is a development worth monitoring for near-term product and tooling decisions (via Wired AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 13 Feb 2026 16:14:25 +0000</pubDate>
-      <author>Steven Levy</author>
+      <pubDate>Fri, 13 Feb 2026 21:56:18 +0000</pubDate>
+      <author>Zeyi Yang</author>
     </item>
   </channel>
 </rss>
