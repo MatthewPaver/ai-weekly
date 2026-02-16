@@ -5,22 +5,22 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 14:56:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 17:50:16 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips]]></title>
-      <link>https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/</link>
-      <description><![CDATA[The OpenAI model release is worth benchmarking against your current baseline (via Ars Technica AI).]]></description>
+      <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
+      <link>https://arstechnica.com/tech-policy/2026/02/santa-monica-deploys-ai-powered-parking-cameras-to-protect-bike-lanes/</link>
+      <description><![CDATA[Aided is a development worth monitoring for near-term product and tooling decisions (via Ars Technica AI).]]></description>
       <category>Industry</category>
-      <pubDate>Thu, 12 Feb 2026 22:56:02 +0000</pubDate>
-      <author>Benj Edwards</author>
+      <pubDate>Fri, 13 Feb 2026 23:03:08 +0000</pubDate>
+      <author>Cyrus Farivar</author>
     </item>
     <item>
-      <title><![CDATA[OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments]]></title>
-      <link>https://huggingface.co/blog/openenv-turing</link>
-      <description><![CDATA[The OpenEnv news is worth a closer look for teams making near-term tool or vendor calls (via Hugging Face Blog).]]></description>
+      <title><![CDATA[Custom Kernels for All from Codex and Claude]]></title>
+      <link>https://huggingface.co/blog/custom-cuda-kernels-agent-skills</link>
+      <description><![CDATA[The Custom Kernels news is worth a closer look for teams making near-term tool or vendor calls (via Hugging Face Blog).]]></description>
       <category>Tools</category>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
       
     </item>
     <item>
@@ -32,12 +32,12 @@
       <author>Pepijn Cobben, Xuanqiang Angelo Huang, Thao Amelia Pham et al.</author>
     </item>
     <item>
-      <title><![CDATA[ClawRouter]]></title>
-      <link>https://github.com/BlockRunAI/ClawRouter</link>
-      <description><![CDATA[ClawRouter is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).]]></description>
+      <title><![CDATA[zeroclaw]]></title>
+      <link>https://github.com/zeroclaw-labs/zeroclaw</link>
+      <description><![CDATA[Zeroclaw is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).]]></description>
       <category>Repos</category>
-      <pubDate>Mon, 16 Feb 2026 04:22:46 +0000</pubDate>
-      <author>BlockRunAI</author>
+      <pubDate>Mon, 16 Feb 2026 17:36:17 +0000</pubDate>
+      <author>zeroclaw-labs</author>
     </item>
     <item>
       <title><![CDATA[Gemini 3 Deep Think: Advancing science, research and engineering]]></title>
@@ -50,7 +50,7 @@
     <item>
       <title><![CDATA[Join us for Interrupt: The Agent Conference]]></title>
       <link>https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/</link>
-      <description><![CDATA[Join is a development worth monitoring for near-term product and tooling decisions (via LangChain Blog).]]></description>
+      <description><![CDATA[Interrupt is a development worth monitoring for near-term product and tooling decisions (via LangChain Blog).]]></description>
       <category>Tools</category>
       <pubDate>Thu, 12 Feb 2026 17:42:03 +0000</pubDate>
       <author>LangChain Accounts</author>
@@ -80,12 +80,12 @@
       
     </item>
     <item>
-      <title><![CDATA[Fractal Analytics’ muted IPO debut signals persistent AI fears in India]]></title>
-      <link>https://techcrunch.com/2026/02/16/fractal-analytics-muted-ipo-debut-signals-persistent-ai-fears-in-india/</link>
-      <description><![CDATA[The Fractal Analytics news is worth a closer look for teams making near-term tool or vendor calls (via TechCrunch AI).]]></description>
+      <title><![CDATA[Flapping Airplanes on the future of AI: ‘We want to try really radically different things’]]></title>
+      <link>https://techcrunch.com/2026/02/16/flapping-airplanes-on-the-future-of-ai-we-want-to-try-really-radically-different-things/</link>
+      <description><![CDATA[Flapping Airplanes is a development worth monitoring for near-term product and tooling decisions (via TechCrunch AI).]]></description>
       <category>Industry</category>
-      <pubDate>Mon, 16 Feb 2026 11:51:25 +0000</pubDate>
-      <author>Jagmeet Singh</author>
+      <pubDate>Mon, 16 Feb 2026 14:00:00 +0000</pubDate>
+      <author>Russell Brandom</author>
     </item>
     <item>
       <title><![CDATA[OpenClaw founder Peter Steinberger is joining OpenAI]]></title>
@@ -98,18 +98,10 @@
     <item>
       <title><![CDATA[OpenAI Is Nuking Its 4o Model. China’s ChatGPT Fans Aren’t OK]]></title>
       <link>https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/</link>
-      <description><![CDATA[Model updates around OK may change which options make sense for your workload (via Wired AI).]]></description>
+      <description><![CDATA[The OpenAI model release is worth benchmarking against your current baseline (via Wired AI).]]></description>
       <category>Industry</category>
       <pubDate>Fri, 13 Feb 2026 21:56:18 +0000</pubDate>
       <author>Zeyi Yang</author>
-    </item>
-    <item>
-      <title><![CDATA[Flapping Airplanes on the future of AI: ‘We want to try really radically different things’]]></title>
-      <link>https://techcrunch.com/2026/02/16/flapping-airplanes-on-the-future-of-ai-we-want-to-try-really-radically-different-things/</link>
-      <description><![CDATA[Flapping Airplanes is a development worth monitoring for near-term product and tooling decisions (via TechCrunch AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Mon, 16 Feb 2026 14:00:00 +0000</pubDate>
-      <author>Russell Brandom</author>
     </item>
     <item>
       <title><![CDATA[After spooking Hollywood, ByteDance will tweak safeguards on new AI model]]></title>
@@ -118,6 +110,14 @@
       <category>Industry</category>
       <pubDate>Mon, 16 Feb 2026 06:29:24 +0000</pubDate>
       <author>Jess Weatherbed</author>
+    </item>
+    <item>
+      <title><![CDATA[I spent two days gigging at RentAHuman and didn't make a single cent]]></title>
+      <link>https://arstechnica.com/ai/2026/02/i-spent-two-days-gigging-at-rentahuman-and-didnt-make-a-single-cent/</link>
+      <description><![CDATA[RentAHuman is a development worth monitoring for near-term product and tooling decisions (via Ars Technica AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 13 Feb 2026 14:41:21 +0000</pubDate>
+      <author>Reece Rogers, wired.com</author>
     </item>
   </channel>
 </rss>

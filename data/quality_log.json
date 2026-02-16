@@ -431,5 +431,121 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-16T14:56:15.031672+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 34,
+    "after_filters": 7,
+    "after_accessibility": 22,
+    "after_selection": 14,
+    "articles_final": 14,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 34
+      },
+      {
+        "stage": "quality_gates",
+        "after": 7
+      },
+      {
+        "stage": "accessibility",
+        "after": 22
+      },
+      {
+        "stage": "selection",
+        "after": 14
+      },
+      {
+        "stage": "summary_quality",
+        "after": 14
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "GitHub Trending (AI/ML)",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 4,
+    "lead_story": "Introducing Lockdown Mode and Elevated Risk labels in ChatGP",
+    "total_articles": 14,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T17:43:55.621623+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 33,
+    "after_filters": 6,
+    "after_accessibility": 22,
+    "after_selection": 14,
+    "articles_final": 14,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 33
+      },
+      {
+        "stage": "quality_gates",
+        "after": 6
+      },
+      {
+        "stage": "accessibility",
+        "after": 22
+      },
+      {
+        "stage": "selection",
+        "after": 14
+      },
+      {
+        "stage": "summary_quality",
+        "after": 14
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "GitHub Trending (AI/ML)",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 3,
+    "lead_story": "Introducing Lockdown Mode and Elevated Risk labels in ChatGP",
+    "total_articles": 14,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T17:50:16.990346+00:00"
   }
 ]

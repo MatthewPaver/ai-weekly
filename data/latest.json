@@ -1,10 +1,10 @@
 {
   "date": "16 Feb 2026",
   "issue_number": 6,
-  "total_articles": 14,
+  "total_articles": 7,
   "source_count": 28,
   "read_time_minutes": 5,
-  "intro": "Big news this week: Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India, and what it means for your roadmap.",
+  "intro": "Big news this week: GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory, and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Leader watch",
-      "value": "[Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India](https://techcrunch.com/2026/02/16/fractal-analytics-muted-ipo-debut-signals-persistent-ai-fears-in-india/)"
+      "value": "[Introducing Lockdown Mode and Elevated Risk labels in ChatGPT](https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt)"
     },
     {
       "label": "Research watch",
@@ -25,6 +25,16 @@
   ],
   "issue_menu": [
     {
+      "icon": "\ud83c\udf10",
+      "title": "Industry Radar",
+      "count": 2,
+      "read_time_minutes": 1,
+      "label": "\ud83c\udf10 Industry Radar (2)",
+      "deck": "The moves that change product plans, budgets, and positioning.",
+      "promise": "",
+      "num": "01"
+    },
+    {
       "icon": "\u2b50",
       "title": "Open Source Watch",
       "count": 1,
@@ -32,7 +42,7 @@
       "label": "\u2b50 Open Source Watch (1)",
       "deck": "Repos with momentum that might deserve a deeper look.",
       "promise": "Repos with momentum.",
-      "num": "01"
+      "num": "02"
     },
     {
       "icon": "\ud83d\udd2c",
@@ -42,7 +52,7 @@
       "label": "\ud83d\udd2c Lab Notes (1)",
       "deck": "Research and model updates with downstream product impact.",
       "promise": "",
-      "num": "02"
+      "num": "03"
     }
   ],
   "briefing": [
@@ -53,30 +63,36 @@
       "track": "Researcher"
     },
     {
-      "title": "ClawRouter",
-      "url": "https://github.com/BlockRunAI/ClawRouter",
-      "note": "Growing traction for ClawRouter on GitHub suggests rising builder interest. Why it matters: Community interest in ClawRouter is growing \u2014 check repo health before committing.",
+      "title": "Custom Kernels for All from Codex and Claude",
+      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+      "note": "A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.",
+      "track": "Builder"
+    },
+    {
+      "title": "Join us for Interrupt: The Agent Conference",
+      "url": "https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/",
+      "note": "A new tool release around Interrupt targets gaps in current developer workflows. Why it matters: This year, wes coming next for agents\u2014and how.",
       "track": "Builder"
     }
   ],
   "editors_note": {
     "headline": "This week",
-    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India, you're already behind.",
-    "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
+    "thesis": "We're watching Introducing Lockdown Mode and Elevated Risk labels in ChatGPT \u2014 it's the one most likely to affect vendor and roadmap decisions this quarter.",
+    "hook": "We're flagging the lead for leadership \u2014 it's the one most likely to shift budgets or priorities.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
     "underhyped": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory deserves more attention than it's getting.",
     "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
-    "title": "Fractal Analytics\u2019 muted IPO debut signals persistent AI fears in India",
-    "url": "https://techcrunch.com/2026/02/16/fractal-analytics-muted-ipo-debut-signals-persistent-ai-fears-in-india/",
-    "source": "TechCrunch AI",
+    "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
+    "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+    "source": "OpenAI Blog",
     "track": "Leader",
     "audience_track": "Leader",
     "difficulty": "Beginner",
-    "what_happened": "The Fractal Analytics development has implications for vendor strategy and competitive positioning.",
-    "our_take": "Strategic positioning around Fractal Analytics is shifting faster than most roadmap cycles account for.",
-    "what_to_do": "Add Fractal Analytics as a discussion item in your next strategy or planning meeting."
+    "what_happened": "ChatGPT launched with features aimed at the current gap in existing toolchains.",
+    "our_take": "Teams that factor ChatGPT into next quarter early usually gain execution room later.",
+    "what_to_do": "Add ChatGPT as a discussion item in your next strategy or planning meeting."
   },
   "quick_hits": [
     {
@@ -86,13 +102,68 @@
       "track": "Researcher"
     },
     {
-      "title": "ClawRouter",
-      "url": "https://github.com/BlockRunAI/ClawRouter",
-      "note": "Growing traction for ClawRouter on GitHub suggests rising builder interest. Why it matters: Community interest in ClawRouter is growing \u2014 check repo health before committing.",
+      "title": "Custom Kernels for All from Codex and Claude",
+      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+      "note": "A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.",
+      "track": "Builder"
+    },
+    {
+      "title": "Join us for Interrupt: The Agent Conference",
+      "url": "https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/",
+      "note": "A new tool release around Interrupt targets gaps in current developer workflows. Why it matters: This year, wes coming next for agents\u2014and how.",
       "track": "Builder"
     }
   ],
   "sections": [
+    {
+      "title": "Industry Radar",
+      "icon": "\ud83c\udf10",
+      "deck": "The moves that change product plans, budgets, and positioning.",
+      "color": "0F4C5C",
+      "badge": "Industry Radar",
+      "topics": [
+        "Industry",
+        "Community"
+      ],
+      "tier": "leader",
+      "promise": "",
+      "articles": [
+        {
+          "title": "OpenClaw founder Peter Steinberger is joining OpenAI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai",
+          "source": "The Verge AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png",
+          "authors": "Terrence O\u2019Brien",
+          "published": "15 Feb",
+          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "summary": "OpenClaw is a development worth monitoring for near-term product and tooling decisions (via The Verge AI).",
+          "what_happened": "The OpenClaw development has implications for vendor strategy and competitive positioning.",
+          "why_it_matters": "The OpenClaw shift affects competitive positioning \u2014 factor it into Q2 planning.",
+          "what_to_do": "Set a reminder to check OpenClaw for downstream changes in 2 weeks.",
+          "our_take": "Competitive dynamics are shifting \u2014 pay attention to who benefits and who gets squeezed.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Industry"
+        },
+        {
+          "title": "OpenAI Is Nuking Its 4o Model. China\u2019s ChatGPT Fans Aren\u2019t OK",
+          "url": "https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/",
+          "source": "Wired AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/wired.com.png",
+          "authors": "Zeyi Yang",
+          "published": "13 Feb",
+          "thumbnail": "https://media.wired.com/photos/698e1b134e0cc71b0d6dee95/191:100/w_1280,c_limit/OpenAI-Nuking-4o-Model-Business.jpg",
+          "summary": "The OpenAI model release is worth benchmarking against your current baseline (via Wired AI).",
+          "what_happened": "A strategic move around OpenAI is worth factoring into near-term planning.",
+          "why_it_matters": "Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.",
+          "what_to_do": "Add OpenAI as a discussion item in your next strategy or planning meeting.",
+          "our_take": "Strategic positioning around OpenAI is shifting faster than most roadmap cycles account for.",
+          "audience_track": "Leader",
+          "difficulty": "Beginner",
+          "topic": "Industry"
+        }
+      ]
+    },
     {
       "title": "Open Source Watch",
       "icon": "\u2b50",
@@ -106,18 +177,18 @@
       "promise": "Repos with momentum.",
       "articles": [
         {
-          "title": "ClawRouter",
-          "url": "https://github.com/BlockRunAI/ClawRouter",
+          "title": "zeroclaw",
+          "url": "https://github.com/zeroclaw-labs/zeroclaw",
           "source": "GitHub Trending (AI/ML)",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
-          "authors": "BlockRunAI",
+          "authors": "zeroclaw-labs",
           "published": "16 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/250889376?v=4",
-          "summary": "ClawRouter is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).",
-          "what_happened": "Growing traction for ClawRouter on GitHub suggests rising builder interest.",
-          "why_it_matters": "Community interest in ClawRouter is growing \u2014 check repo health before committing.",
-          "what_to_do": "Check ClawRouter for recent activity, open issues, and license compatibility this week.",
-          "our_take": "Popularity and production-readiness are different things. Check the last commit date and open issues first.",
+          "thumbnail": "https://avatars.githubusercontent.com/u/261820148?v=4",
+          "summary": "Zeroclaw is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).",
+          "what_happened": "Zeroclaw is picking up momentum in the open-source community.",
+          "why_it_matters": "Momentum behind zeroclaw is real, but maintenance quality should gate adoption decisions.",
+          "what_to_do": "Review zeroclaw issue tracker, last commit date, and license before considering adoption.",
+          "our_take": "Star velocity tells you whats popular, not whats reliable. Check the issue backlog before the star count.",
           "audience_track": "Builder",
           "difficulty": "Intermediate",
           "topic": "Repos"
