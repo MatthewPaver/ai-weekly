@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 19:58:12 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 20:10:36 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
@@ -24,12 +24,12 @@
       
     </item>
     <item>
-      <title><![CDATA[Save 60% on LLM API Costs with TOON Format in NestJS]]></title>
-      <link>https://dev.to/papaiatis/save-60-on-llm-api-costs-with-toon-format-in-nestjs-20ej</link>
-      <description><![CDATA[Your API response size directly impacts costs.]]></description>
+      <title><![CDATA[I Built an Open-Source Security Scanner for AI Agents — Here's What I Found Scanning My Own]]></title>
+      <link>https://dev.to/darbogach/i-built-an-open-source-security-scanner-for-ai-agents-heres-what-i-found-scanning-my-own-g9h</link>
+      <description><![CDATA[Open going open lowers the bar for experimentation and custom deployments (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Mon, 16 Feb 2026 19:52:46 +0000</pubDate>
-      <author>Atis Papai</author>
+      <pubDate>Mon, 16 Feb 2026 20:08:07 +0000</pubDate>
+      <author>Dar Fazulyanov</author>
     </item>
     <item>
       <title><![CDATA[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory]]></title>
@@ -44,7 +44,7 @@
       <link>https://github.com/zeroclaw-labs/zeroclaw</link>
       <description><![CDATA[Zeroclaw is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).]]></description>
       <category>Repos</category>
-      <pubDate>Mon, 16 Feb 2026 19:55:50 +0000</pubDate>
+      <pubDate>Mon, 16 Feb 2026 20:07:22 +0000</pubDate>
       <author>zeroclaw-labs</author>
     </item>
     <item>
