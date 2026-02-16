@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#FAFAF9" id="meta-theme-color" />
-  <meta name="description" content="Inference Weekly · 16 Feb 2026: 9 curated AI stories for builders, leaders, and researchers." />
+  <meta name="description" content="Inference Weekly · 16 Feb 2026: 8 curated AI stories for builders, leaders, and researchers." />
   <title>Inference Weekly · 16 Feb 2026</title>
 
   <!-- Open Graph -->
@@ -78,12 +78,20 @@
       margin: 0;
       font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--text);
-      background: var(--bg);
+      background:
+        radial-gradient(ellipse 80% 50% at 20% -10%, rgba(15, 118, 110, 0.07), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(180, 83, 9, 0.04), transparent),
+        var(--bg);
       line-height: 1.56;
     }
 
     /* Dark body bg only on the dark page (theme-dark class set via JS) */
-    html.theme-dark body { background: #0F172A; }
+    html.theme-dark body {
+      background:
+        radial-gradient(ellipse 80% 50% at 20% -10%, rgba(45, 212, 191, 0.06), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(251, 191, 36, 0.03), transparent),
+        #0F172A;
+    }
 
     .skip-link {
       position: absolute; left: -9999px; top: auto;
@@ -138,9 +146,21 @@
       border-radius: 0;
       background: linear-gradient(135deg, #0F172A 0%, #0F4C5C 50%, #0F766E 100%);
       color: #fff;
-      padding: 18px 22px;
+      padding: 24px 28px;
       position: relative;
       overflow: hidden;
+    }
+
+    /* Noise texture overlay on hero for analog depth (Linear-inspired) */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      z-index: 0;
     }
 
     .hero > * { position: relative; z-index: 1; }
@@ -267,7 +287,7 @@
     }
 
     .intro {
-      padding: 14px 16px;
+      padding: 18px 20px;
       color: var(--muted);
       font-size: 0.95rem;
       border-left: 3px solid var(--brand);
@@ -276,7 +296,7 @@
     }
 
     .menu {
-      padding: 14px 16px;
+      padding: 18px 20px;
       margin-bottom: 12px;
     }
 
@@ -445,8 +465,10 @@
     .lead h2 {
       margin: 0 0 8px;
       font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 1.45rem;
-      line-height: 1.34;
+      font-size: 1.55rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
     }
 
     .lead p {
@@ -488,7 +510,7 @@
     .quick,
     .editors,
     .pulse {
-      padding: 14px;
+      padding: 18px;
       margin-bottom: 12px;
     }
 
@@ -549,7 +571,7 @@
     .sections {
       margin-top: 12px;
       display: grid;
-      gap: 24px;
+      gap: 32px;
     }
 
     .section {
@@ -567,18 +589,29 @@
 
     .section-title {
       margin: 0;
-      padding: 14px 16px;
+      padding: 18px 20px;
       font-size: 0.98rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, color-mix(in srgb, var(--brand), transparent 40%), transparent);
     }
 
     .section-num {
       display: inline-flex; align-items: center; justify-content: center;
-      width: 28px; height: 28px; border-radius: 8px;
-      background: var(--brand-2); color: #fff;
-      font-size: 0.78rem; font-weight: 700; flex-shrink: 0;
+      width: 32px; height: 32px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand-2), var(--brand));
+      color: #fff;
+      font-size: 0.82rem; font-weight: 700; flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(15, 76, 92, 0.2);
     }
 
     .section-deck {
@@ -589,9 +622,9 @@
     }
 
     .stories {
-      padding: 0 14px 16px;
+      padding: 0 16px 20px;
       display: grid;
-      gap: 16px;
+      gap: 20px;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
@@ -630,7 +663,7 @@
       border-radius: 14px 14px 0 0;
     }
 
-    .story-body { padding: 16px 16px; }
+    .story-body { padding: 20px; }
 
     .story-context {
       margin: 0 0 8px;
@@ -653,8 +686,9 @@
       margin: 8px 0;
       font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 1.05rem;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 1.35;
+      letter-spacing: -0.005em;
     }
 
     .story p {
@@ -895,20 +929,39 @@
     .story:nth-child(5) { animation-delay: 0.32s; }
     .story:nth-child(6) { animation-delay: 0.40s; }
 
-    /* Subtle gradient border glow on lead card hover (Stripe-style) */
+    /* Animated gradient border on lead card (Stripe + Linear inspired) */
+    @property --border-angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+    .lead { position: relative; }
     .lead::before {
       content: '';
       position: absolute;
       inset: -1px;
-      border-radius: 15px;
-      background: linear-gradient(135deg, rgba(15,118,110,0.3), rgba(180,83,9,0.2), transparent);
-      opacity: 0;
-      transition: opacity .3s ease;
-      z-index: -1;
+      border-radius: 17px;
+      padding: 1px;
+      background: conic-gradient(
+        from var(--border-angle),
+        var(--brand) 0%,
+        var(--brand-2) 33%,
+        var(--brand-3) 66%,
+        var(--brand) 100%
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
       pointer-events: none;
+      z-index: 0;
+      opacity: 0.5;
+      animation: rotateBorder 8s linear infinite;
     }
-    .lead { position: relative; }
-    .lead:hover::before { opacity: 1; }
+    .lead:hover::before { opacity: 0.8; }
+    @keyframes rotateBorder {
+      to { --border-angle: 360deg; }
+    }
 
     /* Smooth scale on thumbnail hover */
     .story img {
@@ -973,6 +1026,101 @@
       background: color-mix(in srgb, var(--brand), transparent 92%);
     }
 
+    /* Sticky sidebar TOC on desktop (Stripe docs inspired) */
+    @media (min-width: 961px) {
+      aside {
+        position: sticky;
+        top: 24px;
+        max-height: calc(100vh - 48px);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--line) transparent;
+      }
+    }
+
+    /* Scroll-spy: active menu item highlight */
+    .menu-item.active {
+      background: color-mix(in srgb, var(--brand), transparent 88%);
+      border-color: var(--brand);
+    }
+    .menu-item.active .menu-label { font-weight: 700; }
+
+    /* Keyboard focus indicator on stories */
+    .story:focus-visible, .lead:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 4px;
+      border-radius: 16px;
+    }
+    .story[tabindex], .lead[tabindex] { outline: none; }
+
+    /* Floating keyboard hint */
+    .kbd-hint {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 0.72rem;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 6px 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 50;
+      pointer-events: none;
+    }
+    .kbd-hint.visible { opacity: 0.7; pointer-events: auto; }
+    .kbd-hint:hover { opacity: 1; }
+    @media (max-width: 768px) { .kbd-hint { display: none; } }
+
+    /* Floating back-to-top with progress ring */
+    .scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border: none;
+      background: var(--surface);
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12), 0 0 0 1px color-mix(in srgb, var(--line), transparent 50%);
+      cursor: pointer;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s ease;
+      pointer-events: none;
+    }
+    .scroll-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .scroll-top:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.16), 0 0 0 1px var(--brand);
+    }
+    .scroll-top-arrow {
+      position: absolute;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* Section read time chip */
+    .section-time {
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--muted);
+      background: color-mix(in srgb, var(--surface-2), transparent 40%);
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-left: auto;
+    }
+
     @media (prefers-reduced-motion: reduce) {
       * {
         animation: none !important;
@@ -980,7 +1128,8 @@
       }
       html { scroll-behavior: auto; }
       .reading-progress { display: none; }
-      .lead::before { display: none; }
+      .lead::before { animation: none; opacity: 0.4; }
+      .scroll-top { transition: none; }
     }
 
     @media (max-width: 600px) {
@@ -1042,8 +1191,8 @@
       <div class="hero-stats">
         <span class="chip">Issue #6</span>
         <span class="chip">16 Feb 2026</span>
-        <span class="chip">9 stories</span>
-        <span class="chip">~4 min read</span>
+        <span class="chip">8 stories</span>
+        <span class="chip">~3 min read</span>
       </div>
       <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; opacity: 0.85;">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
     </header>
@@ -1079,16 +1228,8 @@
 <span class="menu-deck">Repos with momentum that might deserve a deeper look.</span><span class="menu-deck section-promise">Repos with momentum.</span>              </span>
               <span class="menu-count">1 · ~1 min</span>
             </a>
-            <a class="menu-item" href="#ship-it-playbooks">
-              <span class="menu-num">04</span>
-              <span class="menu-icon">📚</span>
-              <span class="menu-text">
-                <span class="menu-label">Ship-It Playbooks</span>
-<span class="menu-deck">Practical implementation guides you can adapt quickly.</span><span class="menu-deck section-promise">One thing to try this week.</span>              </span>
-              <span class="menu-count">2 · ~1 min</span>
-            </a>
             <a class="menu-item" href="#lab-notes">
-              <span class="menu-num">05</span>
+              <span class="menu-num">04</span>
               <span class="menu-icon">🔬</span>
               <span class="menu-text">
                 <span class="menu-label">Lab Notes</span>
@@ -1119,7 +1260,7 @@
 
         <div class="sections">
           <section class="section reveal" id="industry-radar" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">1</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
+            <h2 class="section-title"><span class="section-num">1</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span><span class="section-time">~1 min</span></h2>
 <p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
               <article class="story">
 <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="OpenClaw founder Peter Steinberger is joining OpenAI" width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
@@ -1162,7 +1303,7 @@
             </div>
           </section>
           <section class="section reveal" id="builders-bench" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span></h2>
+            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span><span class="section-time">~1 min</span></h2>
 <p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
               <article class="story">
 <img src="https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png" alt="Custom Kernels for All from Codex and Claude" width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
@@ -1205,7 +1346,7 @@
             </div>
           </section>
           <section class="section reveal" id="open-source-watch" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">3</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(1)</span></h2>
+            <h2 class="section-title"><span class="section-num">3</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(1)</span><span class="section-time">~1 min</span></h2>
 <p class="section-deck">Repos with momentum that might deserve a deeper look.</p>            <div class="stories">
               <article class="story">
 <img src="https://avatars.githubusercontent.com/u/261820148?v=4" alt="zeroclaw" width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
@@ -1228,51 +1369,8 @@
               </article>
             </div>
           </section>
-          <section class="section reveal" id="ship-it-playbooks" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">4</span> 📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(2)</span></h2>
-<p class="section-deck">Practical implementation guides you can adapt quickly.</p>            <div class="stories">
-              <article class="story">
-<img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3toziwgaf2bwkhwmuft3.png" alt="I Ran a Safety Scan on My Claude Code Setup — Here&#39;s What I Found" width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
-                  <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Dev.to AI</span>
-                    <span>
-                      <span class="badge badge-section">📚 Ship-It Playbooks</span>
-                      <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                    </span>
-                  </div>
-                  <p class="story-context" aria-label="Context">In <strong>Ship-It Playbooks</strong>: Practical implementation guides you can adapt quickly.</p>
-                  <h3><a href="https://dev.to/yurukusa/i-ran-a-safety-scan-on-my-claude-code-setup-heres-what-i-found-4ig0" target="_blank" rel="noopener">I Ran a Safety Scan on My Claude Code Setup — Here&#39;s What I Found</a></h3>
-                  <p><strong style="color: var(--text);">The author has been running Claude Code autonomously for 200+ hours.</strong><br>The Safety Scan development is a useful signal for teams shipping AI products.</p>
-                  <p class="action">Action: Follow the Safety Scan guide, but adapt one step to fit your actual production constraints.</p>
-                  <a href="https://dev.to/yurukusa/i-ran-a-safety-scan-on-my-claude-code-setup-heres-what-i-found-4ig0" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://dev.to/yurukusa/i-ran-a-safety-scan-on-my-claude-code-setup-heres-what-i-found-4ig0" data-title="I Ran a Safety Scan on My Claude Code Setup — Here&#39;s What I Found" aria-label="Like this article">👍 Like</button>
-                  </p>
-                </div>
-              </article>
-              <article class="story">
-<img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png" alt="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters ..." width="640" height="360" loading="lazy" decoding="async" />                <div class="story-body">
-                  <div class="meta-row" style="justify-content: space-between;">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">MarkTechPost</span>
-                    <span>
-                      <span class="badge badge-section">📚 Ship-It Playbooks</span>
-                      <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                    </span>
-                  </div>
-                  <p class="story-context" aria-label="Context">In <strong>Ship-It Playbooks</strong>: Practical implementation guides you can adapt quickly.</p>
-                  <h3><a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents</a></h3>
-                  <p><strong style="color: var(--text);">Alibaba Cloud just updated the open-source landscape.</strong><br>Strong numbers from Alibaba Qwen Team could reset your baseline, but only if they hold on production data.</p>
-                  <p class="action">Action: Work through the Alibaba Qwen Team tutorial and modify one step for your own use case.</p>
-                  <a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Read article &#x2192;</a>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" data-title="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents" aria-label="Like this article">👍 Like</button>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
           <section class="section reveal" id="lab-notes" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">5</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
+            <h2 class="section-title"><span class="section-num">4</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span><span class="section-time">~1 min</span></h2>
 <p class="section-deck">Research and model updates with downstream product impact.</p>            <div class="stories">
               <article class="story">
                 <div class="story-body">
@@ -1301,6 +1399,9 @@
       <aside>
         <section class="card also-this-week" style="padding: 14px;">
           <p class="section-head" style="margin: 0 0 10px; font-size: 0.75rem;">Also this week</p>
+          <ul style="margin: 0 0 12px; padding-left: 1.2em; font-size: 0.88rem; color: var(--text);">
+            <li style="margin-bottom: 4px;"><a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener" style="color: var(--link);">Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents</a></li>
+          </ul>
           <p style="margin: 0 0 8px; font-size: 0.85rem; color: var(--muted);"><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Google Machine Learning Crash Course</a> · Google AI · Free · 15 hours</p>
           <div style="margin: 12px 0 0; padding: 10px; background: var(--surface); border-radius: 8px; border-left: 3px solid var(--brand);">
             <p style="margin: 0 0 4px; font-size: 0.7rem; font-weight: 700; color: var(--brand); letter-spacing: 0.8px; text-transform: uppercase;">Prompt of the Week · Documentation</p>
@@ -1340,6 +1441,20 @@
         <input type="hidden" name="g-recaptcha-response" id="like-recaptcha" value="" />
       </form>
     </section>
+
+    <!-- Back to top with reading progress ring -->
+    <button class="scroll-top" id="scroll-top" aria-label="Back to top">
+      <svg viewBox="0 0 36 36" width="36" height="36">
+        <circle cx="18" cy="18" r="16" fill="none" stroke="var(--line)" stroke-width="2" opacity="0.3"/>
+        <circle cx="18" cy="18" r="16" fill="none" stroke="var(--brand)" stroke-width="2"
+          stroke-dasharray="100.53" stroke-dashoffset="100.53" stroke-linecap="round"
+          transform="rotate(-90 18 18)" id="progress-ring"/>
+      </svg>
+      <span class="scroll-top-arrow">&#8593;</span>
+    </button>
+
+    <!-- Keyboard shortcuts hint (desktop only) -->
+    <div class="kbd-hint" id="kbd-hint">Press <strong>j</strong>/<strong>k</strong> to navigate, <strong>t</strong> for top</div>
 
     <footer class="footer">
       <a href="https://matthewpaver.github.io/ai-weekly/">Archive</a> ·
@@ -1390,22 +1505,108 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
   })();
   </script>
 
-  <!-- Reading progress bar -->
+  <!-- Reading progress bar + scroll-top progress ring -->
   <script>
   (function() {
     var bar = document.getElementById('reading-progress');
-    if (!bar || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var btn = document.getElementById('scroll-top');
+    var ring = document.getElementById('progress-ring');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var circumference = ring ? 2 * Math.PI * 16 : 0;
+    if (ring) ring.style.strokeDasharray = circumference;
+
     var ticking = false;
     window.addEventListener('scroll', function() {
       if (!ticking) {
         requestAnimationFrame(function() {
           var h = document.documentElement.scrollHeight - window.innerHeight;
-          bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+          var pct = h > 0 ? window.scrollY / h : 0;
+          if (bar && !reducedMotion) bar.style.width = (pct * 100) + '%';
+          if (ring) ring.style.strokeDashoffset = circumference * (1 - pct);
+          if (btn) btn.classList.toggle('visible', window.scrollY > 400);
           ticking = false;
         });
         ticking = true;
       }
     }, { passive: true });
+
+    if (btn) {
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  })();
+  </script>
+
+  <!-- Scroll-spy: highlight current section in sidebar TOC -->
+  <script>
+  (function() {
+    var sections = document.querySelectorAll('.section[id]');
+    var menuItems = document.querySelectorAll('.menu-item');
+    if (!sections.length || !menuItems.length) return;
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.getAttribute('id');
+          menuItems.forEach(function(item) {
+            item.classList.toggle('active', item.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+    sections.forEach(function(s) { observer.observe(s); });
+  })();
+  </script>
+
+  <!-- Keyboard navigation (j/k for stories, t for top, 1-9 for sections) -->
+  <script>
+  (function() {
+    var stories = document.querySelectorAll('.story, .lead');
+    var sections = document.querySelectorAll('.section[id]');
+    var hint = document.getElementById('kbd-hint');
+    var current = -1;
+    var hintShown = false;
+
+    // Make stories focusable
+    stories.forEach(function(s) { s.setAttribute('tabindex', '-1'); });
+
+    // Show keyboard hint briefly on first scroll (desktop only)
+    if (hint && window.innerWidth > 768) {
+      var scrollCount = 0;
+      var hintHandler = function() {
+        scrollCount++;
+        if (scrollCount > 2 && !hintShown) {
+          hintShown = true;
+          hint.classList.add('visible');
+          setTimeout(function() { hint.classList.remove('visible'); }, 4000);
+          window.removeEventListener('scroll', hintHandler);
+        }
+      };
+      window.addEventListener('scroll', hintHandler, { passive: true });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      var tag = e.target.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+
+      if (e.key === 'j') {
+        current = Math.min(current + 1, stories.length - 1);
+        stories[current].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        stories[current].focus({ preventScroll: true });
+      } else if (e.key === 'k') {
+        current = Math.max(current - 1, 0);
+        stories[current].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        stories[current].focus({ preventScroll: true });
+      } else if (e.key === 't') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        current = -1;
+      } else if (e.key >= '1' && e.key <= '9') {
+        var idx = parseInt(e.key) - 1;
+        if (sections[idx]) sections[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
   })();
   </script>
 

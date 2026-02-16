@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 18:56:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 19:06:43 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Aided by AI, California beach town broadens hunt for bike lane blockers]]></title>
@@ -24,12 +24,12 @@
       
     </item>
     <item>
-      <title><![CDATA[I Ran a Safety Scan on My Claude Code Setup — Here's What I Found]]></title>
-      <link>https://dev.to/yurukusa/i-ran-a-safety-scan-on-my-claude-code-setup-heres-what-i-found-4ig0</link>
-      <description><![CDATA[Safety Scan is a development worth monitoring for near-term product and tooling decisions (via Dev.to AI).]]></description>
+      <title><![CDATA[Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents]]></title>
+      <link>https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/</link>
+      <description><![CDATA[The Alibaba Qwen Team model release is worth benchmarking against your current baseline (via MarkTechPost).]]></description>
       <category>Tutorials</category>
-      <pubDate>Mon, 16 Feb 2026 18:50:06 +0000</pubDate>
-      <author>Yurukusa</author>
+      <pubDate>Mon, 16 Feb 2026 18:53:19 +0000</pubDate>
+      <author>Asif Razzaq</author>
     </item>
     <item>
       <title><![CDATA[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory]]></title>
@@ -44,7 +44,7 @@
       <link>https://github.com/zeroclaw-labs/zeroclaw</link>
       <description><![CDATA[Zeroclaw is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).]]></description>
       <category>Repos</category>
-      <pubDate>Mon, 16 Feb 2026 18:48:04 +0000</pubDate>
+      <pubDate>Mon, 16 Feb 2026 19:03:02 +0000</pubDate>
       <author>zeroclaw-labs</author>
     </item>
     <item>
@@ -62,14 +62,6 @@
       <category>Tools</category>
       <pubDate>Thu, 12 Feb 2026 17:42:03 +0000</pubDate>
       <author>LangChain Accounts</author>
-    </item>
-    <item>
-      <title><![CDATA[Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents]]></title>
-      <link>https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/</link>
-      <description><![CDATA[The Alibaba Qwen Team model release is worth benchmarking against your current baseline (via MarkTechPost).]]></description>
-      <category>Tutorials</category>
-      <pubDate>Mon, 16 Feb 2026 18:53:19 +0000</pubDate>
-      <author>Asif Razzaq</author>
     </item>
     <item>
       <title><![CDATA[Gemini 3 Deep Think: Advancing science, research and engineering]]></title>
@@ -150,6 +142,14 @@
       <category>Industry</category>
       <pubDate>Sun, 15 Feb 2026 11:30:00 +0000</pubDate>
       <author>David Nield</author>
+    </item>
+    <item>
+      <title><![CDATA[Zillow Has Gone Wild—for AI]]></title>
+      <link>https://www.wired.com/story/backchannel-how-artificial-intelligence-changed-zillow/</link>
+      <description><![CDATA[Zillow Has Gone Wild is a development worth monitoring for near-term product and tooling decisions (via Wired AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 13 Feb 2026 16:14:25 +0000</pubDate>
+      <author>Steven Levy</author>
     </item>
   </channel>
 </rss>
