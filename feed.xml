@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Feb 2026 16:40:20 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 22:27:55 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Lawsuit: ChatGPT told student he was "meant for greatness"—then came psychosis]]></title>
@@ -32,12 +32,12 @@
       <author>Peli Grietzer</author>
     </item>
     <item>
-      <title><![CDATA[voicebox]]></title>
-      <link>https://github.com/jamiepine/voicebox</link>
-      <description><![CDATA[Not a fire drill, but voicebox is the kind of thing that compounds if you ignore it (via GitHub Trending (AI/ML)).]]></description>
+      <title><![CDATA[zeroclaw]]></title>
+      <link>https://github.com/zeroclaw-labs/zeroclaw</link>
+      <description><![CDATA[Depending on your setup, zeroclaw might save you time or headaches down the line (via GitHub Trending (AI/ML)).]]></description>
       <category>Repos</category>
-      <pubDate>Sat, 21 Feb 2026 21:46:30 +0000</pubDate>
-      <author>jamiepine</author>
+      <pubDate>Sun, 22 Feb 2026 20:59:13 +0000</pubDate>
+      <author>zeroclaw-labs</author>
     </item>
     <item>
       <title><![CDATA[“No technology has me dreaming bigger than AI”]]></title>
@@ -56,14 +56,6 @@
       <author>LangChain Accounts</author>
     </item>
     <item>
-      <title><![CDATA[zeroclaw]]></title>
-      <link>https://github.com/zeroclaw-labs/zeroclaw</link>
-      <description><![CDATA[Depending on your setup, zeroclaw might save you time or headaches down the line (via GitHub Trending (AI/ML)).]]></description>
-      <category>Repos</category>
-      <pubDate>Sun, 22 Feb 2026 16:27:33 +0000</pubDate>
-      <author>zeroclaw-labs</author>
-    </item>
-    <item>
       <title><![CDATA[Accelerating discovery in India through AI-powered science and education]]></title>
       <link>https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/</link>
       <description><![CDATA[Not a fire drill, but Accelerating is the kind of thing that compounds if you ignore it (via Google DeepMind).]]></description>
@@ -72,12 +64,20 @@
       
     </item>
     <item>
-      <title><![CDATA[Tech Is Taking Over Olympic Curling]]></title>
-      <link>https://spectrum.ieee.org/olympics-curling-robot-ai</link>
-      <description><![CDATA[If Tech Is Taking Over Olympic Curling pans out, it could change how teams approach their current stack (via IEEE Spectrum AI).]]></description>
+      <title><![CDATA[voicebox]]></title>
+      <link>https://github.com/jamiepine/voicebox</link>
+      <description><![CDATA[Not a fire drill, but voicebox is the kind of thing that compounds if you ignore it (via GitHub Trending (AI/ML)).]]></description>
+      <category>Repos</category>
+      <pubDate>Sat, 21 Feb 2026 21:46:30 +0000</pubDate>
+      <author>jamiepine</author>
+    </item>
+    <item>
+      <title><![CDATA[LWiAI Podcast #234 - Opus 4.6, GPT-5.3-Codex, Seedance 2.0, GLM-5]]></title>
+      <link>https://lastweekin.ai/p/lwiai-podcast-234-opus-46-gpt-53</link>
+      <description><![CDATA[Depending on your setup, LWiAI Podcast might save you time or headaches down the line (via Last Week in AI).]]></description>
       <category>Industry</category>
-      <pubDate>Wed, 18 Feb 2026 15:00:02 +0000</pubDate>
-      <author>Elie Dolgin</author>
+      <pubDate>Tue, 17 Feb 2026 04:43:31 +0000</pubDate>
+      <author>Last Week in AI</author>
     </item>
     <item>
       <title><![CDATA[Microsoft has a new plan to prove what’s real and what’s AI online]]></title>
@@ -102,14 +102,6 @@
       <category>Industry</category>
       <pubDate>Sat, 21 Feb 2026 21:38:01 +0000</pubDate>
       <author>Anthony Ha</author>
-    </item>
-    <item>
-      <title><![CDATA[Suspect in Tumbler Ridge school shooting described violent scenarios to ChatGPT]]></title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/882814/tumbler-ridge-school-shooting-chatgpt</link>
-      <description><![CDATA[If Tumbler Ridge pans out, it could change how teams approach their current stack (via The Verge AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Sat, 21 Feb 2026 10:22:57 +0000</pubDate>
-      <author>Terrence O’Brien</author>
     </item>
   </channel>
 </rss>
