@@ -1,102 +1,144 @@
 {
-  "date": "16 Feb 2026",
-  "issue_number": 6,
-  "total_articles": 9,
-  "source_count": 15,
-  "read_time_minutes": 4,
-  "intro": "Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap.",
+  "date": "22 Feb 2026",
+  "issue_number": 3,
+  "total_articles": 8,
+  "source_count": 11,
+  "read_time_minutes": 3,
+  "intro": "Big news this week: New in Agent Builder: all new agent chat, file uploads + tool registry, and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (12 stories)."
+      "value": "Industry led coverage (10 stories)."
     },
     {
       "label": "Builder pick",
-      "value": "[OpenClaw founder Peter Steinberger is joining OpenAI](https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai)"
+      "value": "[New in Agent Builder: all new agent chat, file uploads + tool registry](https://blog.langchain.com/new-in-agent-builder-all-new-agent-chat-file-uploads-tool-registry/)"
     },
     {
       "label": "Leader watch",
-      "value": "[How Ricursive Intelligence raised $335M at a $4B valuation in 4 months](https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/)"
-    },
-    {
-      "label": "Research watch",
-      "value": "[GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory](https://arxiv.org/abs/2602.12316)"
+      "value": "[Introducing OpenAI for India](https://openai.com/index/openai-for-india)"
     }
   ],
   "issue_menu": [
     {
-      "icon": "\ud83c\udf10",
-      "title": "Industry Radar",
-      "count": 2,
+      "icon": "\ud83d\udcda",
+      "title": "Ship-It Playbooks",
+      "count": 3,
       "read_time_minutes": 1,
-      "label": "\ud83c\udf10 Industry Radar (2)",
-      "deck": "The moves that change product plans, budgets, and positioning.",
-      "promise": "",
+      "label": "\ud83d\udcda Ship-It Playbooks (3)",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "promise": "One thing to try this week.",
       "num": "01"
     },
     {
-      "icon": "\ud83d\udee0\ufe0f",
-      "title": "Builder's Bench",
-      "count": 2,
+      "icon": "\ud83c\udf10",
+      "title": "Industry Radar",
+      "count": 3,
       "read_time_minutes": 1,
-      "label": "\ud83d\udee0\ufe0f Builder's Bench (2)",
-      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "label": "\ud83c\udf10 Industry Radar (3)",
+      "deck": "The moves that change product plans, budgets, and positioning.",
       "promise": "",
       "num": "02"
     },
     {
-      "icon": "\u2b50",
-      "title": "Open Source Watch",
+      "icon": "\ud83d\udee0\ufe0f",
+      "title": "Builder's Bench",
       "count": 1,
       "read_time_minutes": 1,
-      "label": "\u2b50 Open Source Watch (1)",
-      "deck": "Repos with momentum that might deserve a deeper look.",
-      "promise": "Repos with momentum.",
-      "num": "03"
-    },
-    {
-      "icon": "\ud83d\udcda",
-      "title": "Ship-It Playbooks",
-      "count": 2,
-      "read_time_minutes": 1,
-      "label": "\ud83d\udcda Ship-It Playbooks (2)",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "promise": "One thing to try this week.",
-      "num": "04"
-    },
-    {
-      "icon": "\ud83d\udd2c",
-      "title": "Lab Notes",
-      "count": 1,
-      "read_time_minutes": 1,
-      "label": "\ud83d\udd2c Lab Notes (1)",
-      "deck": "Research and model updates with downstream product impact.",
+      "label": "\ud83d\udee0\ufe0f Builder's Bench (1)",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
       "promise": "",
-      "num": "05"
+      "num": "03"
     }
   ],
   "briefing": [],
   "editors_note": {
     "headline": "This week",
-    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, you're already behind.",
-    "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
+    "thesis": "We're watching New in Agent Builder \u2014 it's the one most likely to affect vendor and roadmap decisions this quarter.",
+    "hook": "We're flagging the lead for leadership \u2014 it's the one most likely to shift budgets or priorities.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory deserves more attention than it's getting.",
-    "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
+    "underhyped": "Introducing OpenAI for India deserves more attention than it's getting.",
+    "risk": "Keep an eye on Introducing OpenAI for India \u2014 it could shift budgets or vendor assumptions."
   },
   "lead_story": {
-    "title": "How Ricursive Intelligence raised $335M at a $4B valuation in 4 months",
-    "url": "https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/",
-    "source": "TechCrunch AI",
-    "track": "Leader",
-    "audience_track": "Leader",
+    "title": "New in Agent Builder: all new agent chat, file uploads + tool registry",
+    "url": "https://blog.langchain.com/new-in-agent-builder-all-new-agent-chat-file-uploads-tool-registry/",
+    "source": "LangChain Blog",
+    "track": "Builder",
+    "audience_track": "Builder",
     "difficulty": "Beginner",
-    "what_happened": "An investment round for Ricursive Intelligence signals growing market interest in the space.",
-    "our_take": "Teams that factor Ricursive Intelligence into next quarter early usually gain execution room later.",
-    "what_to_do": "Flag Ricursive Intelligence for your leadership team \u2014 it may shift near-term priorities."
+    "what_happened": "Agent Builder is introducing ad-supported revenue, which could shift the user experience.",
+    "our_take": "Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.",
+    "what_to_do": "Allocate one afternoon to test Agent Builder against your top use case."
   },
   "quick_hits": [],
   "sections": [
+    {
+      "title": "Ship-It Playbooks",
+      "icon": "\ud83d\udcda",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "color": "0F4C5C",
+      "badge": "Ship It Playbooks",
+      "topics": [
+        "Tutorials"
+      ],
+      "tier": "builder",
+      "promise": "One thing to try this week.",
+      "read_time_minutes": 1,
+      "articles": [
+        {
+          "title": "America Spent $100 Billion Trying to Stop Chinese AI. It Didn't Work.",
+          "url": "https://dev.to/mothasa/america-spent-100-billion-trying-to-stop-chinese-ai-it-didnt-work-5df7",
+          "source": "Dev.to AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
+          "authors": "Moth",
+          "published": "22 Feb",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhuggtjtuitwkkatgox4q.png",
+          "summary": "Depending on your setup, America Spent might save you time or headaches down the line (via Dev.to AI).",
+          "what_happened": "New tutorial content on America Spent walks through a practical implementation.",
+          "why_it_matters": "If America Spent keeps this trajectory, it'll matter for your next build-vs-buy decision.",
+          "what_to_do": "Work through the America Spent tutorial and modify one step for your own use case.",
+          "our_take": "Adapt one proven pattern from America Spent instead of copying the whole stack.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
+        },
+        {
+          "title": "A Coding Guide to High-Quality Image Generation, Control, and Editing Using HuggingFace Diffusers",
+          "url": "https://www.marktechpost.com/2026/02/20/a-coding-guide-to-high-quality-image-generation-control-and-editing-using-huggingface-diffusers/",
+          "source": "MarkTechPost",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
+          "authors": "Asif Razzaq",
+          "published": "21 Feb",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-48.png",
+          "summary": "The HuggingFace tutorial bridges common knowledge gaps \u2014 worth bookmarking for reference (via MarkTechPost).",
+          "what_happened": "A step-by-step guide on HuggingFace provides a template for your own projects.",
+          "why_it_matters": "Worth bookmarking HuggingFace \u2014 the ripple effects tend to show up a quarter later.",
+          "what_to_do": "Work through the HuggingFace tutorial and modify one step for your own use case.",
+          "our_take": "Use HuggingFace as a blueprint, then trim to fit your production constraints.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
+        },
+        {
+          "title": "Can we leverage AI/LLMs for self-learning?",
+          "url": "https://techne98.com/blog/can-we-use-ai-for-self-learning/",
+          "source": "Hacker News (AI)",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/hn.algolia.com.png",
+          "authors": "",
+          "published": "18 Feb",
+          "thumbnail": "https://techne98.com/og.png",
+          "summary": "Depending on your setup, LLMs might save you time or headaches down the line (via Hacker News (AI)).",
+          "what_happened": "A hands-on guide to LLMs offers patterns you can adapt to your own stack.",
+          "why_it_matters": "LLMs is one of those things that sounds minor until it changes your shortlist.",
+          "what_to_do": "Follow the LLMs guide, but adapt one step to fit your actual production constraints.",
+          "our_take": "The value of a tutorial is the first thing you build after reading it, not the reading itself.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials"
+        }
+      ]
+    },
     {
       "title": "Industry Radar",
       "icon": "\ud83c\udf10",
@@ -112,35 +154,52 @@
       "read_time_minutes": 1,
       "articles": [
         {
-          "title": "OpenClaw founder Peter Steinberger is joining OpenAI",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai",
-          "source": "The Verge AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png",
-          "authors": "Terrence O\u2019Brien",
-          "published": "15 Feb",
-          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-          "summary": "OpenClaw is a development worth monitoring for near-term product and tooling decisions (via The Verge AI).",
-          "what_happened": "The OpenClaw development has implications for vendor strategy and competitive positioning.",
-          "why_it_matters": "The OpenClaw shift affects competitive positioning \u2014 factor it into Q2 planning.",
-          "what_to_do": "Set a reminder to check OpenClaw for downstream changes in 2 weeks.",
-          "our_take": "Competitive dynamics are shifting \u2014 pay attention to who benefits and who gets squeezed.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        },
-        {
-          "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
-          "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+          "title": "Introducing OpenAI for India",
+          "url": "https://openai.com/index/openai-for-india",
           "source": "OpenAI Blog",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png",
           "authors": "",
-          "published": "13 Feb",
-          "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&h=900&fit=fill",
-          "summary": "A fresh release of ChatGPT is now available for teams ready to evaluate alternatives (via OpenAI Blog).",
-          "what_happened": "ChatGPT launched with features aimed at the current gap in existing toolchains.",
-          "why_it_matters": "If you're shopping for alternatives, ChatGPT belongs on the shortlist.",
-          "what_to_do": "Add ChatGPT as a discussion item in your next strategy or planning meeting.",
-          "our_take": "Strategic positioning around ChatGPT is shifting faster than most roadmap cycles account for.",
+          "published": "18 Feb",
+          "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/G2A5VZHbNARmo6atQ2xdG/7adb24136736bce440fc6548952b4ee3/OpenAI_For_India.png?w=1600&h=900&fit=fill",
+          "summary": "A fresh release of OpenAI is now available for teams ready to evaluate alternatives (via OpenAI Blog).",
+          "what_happened": "OpenAI launched with features aimed at the current gap in existing toolchains.",
+          "why_it_matters": "If you're shopping for alternatives, OpenAI belongs on the shortlist.",
+          "what_to_do": "Add OpenAI as a discussion item in your next strategy or planning meeting.",
+          "our_take": "Teams that factor OpenAI into next quarter early usually gain execution room later.",
+          "audience_track": "Leader",
+          "difficulty": "Beginner",
+          "topic": "Industry"
+        },
+        {
+          "title": "Amazon blames human employees for an AI coding agent\u2019s mistake",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake",
+          "source": "The Verge AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png",
+          "authors": "Robert Hart",
+          "published": "20 Feb",
+          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB371_AMAZON_WEB_SERVICES_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "summary": "Not a fire drill, but Amazon is the kind of thing that compounds if you ignore it (via The Verge AI).",
+          "what_happened": "Industry activity around Amazon may shift competitive dynamics this quarter.",
+          "why_it_matters": "Industry changes involving Amazon tend to filter into budget and vendor conversations.",
+          "what_to_do": "Monitor Amazon for follow-on product or pricing changes over the next month.",
+          "our_take": "Treat Amazon as a planning input \u2014 the second-order effects matter more than the headline.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Industry"
+        },
+        {
+          "title": "AI Safety Meets the War Machine",
+          "url": "https://www.wired.com/story/backchannel-anthropic-dispute-with-the-pentagon/",
+          "source": "Wired AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/wired.com.png",
+          "authors": "Steven Levy",
+          "published": "20 Feb",
+          "thumbnail": "https://media.wired.com/photos/6994edaec3ca16022bd2b3d5/191:100/w_1280,c_limit/Backchannel-Anthropic-vs-Pentagon-Business--2221448096.jpg",
+          "summary": "Not a fire drill, but AI Safety Meets is the kind of thing that compounds if you ignore it (via Wired AI).",
+          "what_happened": "The AI Safety Meets news could ripple into vendor strategy and pricing conversations.",
+          "why_it_matters": "The AI Safety Meets shift affects competitive positioning \u2014 worth flagging at your next planning sync.",
+          "what_to_do": "Flag AI Safety Meets for your leadership team \u2014 it may shift near-term priorities.",
+          "our_take": "Strategic positioning around AI Safety Meets is shifting faster than most roadmap cycles account for.",
           "audience_track": "Leader",
           "difficulty": "Beginner",
           "topic": "Industry"
@@ -161,152 +220,21 @@
       "read_time_minutes": 1,
       "articles": [
         {
-          "title": "Custom Kernels for All from Codex and Claude",
-          "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+          "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
+          "url": "https://huggingface.co/blog/unsloth-jobs",
           "source": "Hugging Face Blog",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png",
           "authors": "",
-          "published": "13 Feb",
-          "thumbnail": "https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png",
-          "summary": "Custom Kernels is a development worth monitoring for near-term product and tooling decisions (via Hugging Face Blog).",
-          "what_happened": "A new tool release around Custom Kernels targets gaps in current developer workflows.",
-          "why_it_matters": "Custom Kernels is worth evaluating if your current tools are hitting limits.",
-          "what_to_do": "Allocate one afternoon to test Custom Kernels against your top use case.",
-          "our_take": "Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        },
-        {
-          "title": "Join us for Interrupt: The Agent Conference",
-          "url": "https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/",
-          "source": "LangChain Blog",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png",
-          "authors": "LangChain Accounts",
-          "published": "12 Feb",
-          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/interrupt-on-sale.png",
-          "summary": "Interrupt is a development worth monitoring for near-term product and tooling decisions (via LangChain Blog).",
-          "what_happened": "A new tool release around Interrupt targets gaps in current developer workflows.",
-          "why_it_matters": "This year, wes coming next for agents\u2014and how.",
-          "what_to_do": "Try Interrupt on a non-critical task this week and log the results.",
+          "published": "20 Feb",
+          "thumbnail": "https://huggingface.co/blog/assets/unsloth-jobs/thumbnail.png",
+          "summary": "Model updates around FREE may change which options make sense for your workload (via Hugging Face Blog).",
+          "what_happened": "FREE brings fresh capabilities for teams looking to improve their pipeline.",
+          "why_it_matters": "The FREE release addresses gaps that many builder teams have flagged.",
+          "what_to_do": "Try FREE on a non-critical task this week and log the results.",
           "our_take": "Don't adopt tools based on hype. Run it against your ugliest edge case first.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
           "topic": "Tools"
-        }
-      ]
-    },
-    {
-      "title": "Open Source Watch",
-      "icon": "\u2b50",
-      "deck": "Repos with momentum that might deserve a deeper look.",
-      "color": "0F4C5C",
-      "badge": "Open Source Watch",
-      "topics": [
-        "Repos"
-      ],
-      "tier": "builder",
-      "promise": "Repos with momentum.",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "zeroclaw",
-          "url": "https://github.com/zeroclaw-labs/zeroclaw",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
-          "authors": "zeroclaw-labs",
-          "published": "16 Feb",
-          "thumbnail": "",
-          "summary": "Zeroclaw is a development worth monitoring for near-term product and tooling decisions (via GitHub Trending (AI/ML)).",
-          "what_happened": "Zeroclaw is picking up momentum in the open-source community.",
-          "why_it_matters": "Momentum behind zeroclaw is real, but maintenance quality should gate adoption decisions.",
-          "what_to_do": "Review zeroclaw issue tracker, last commit date, and license before considering adoption.",
-          "our_take": "Star velocity tells you whats popular, not whats reliable. Check the issue backlog before the star count.",
-          "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        }
-      ]
-    },
-    {
-      "title": "Ship-It Playbooks",
-      "icon": "\ud83d\udcda",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "color": "0F4C5C",
-      "badge": "Ship It Playbooks",
-      "topics": [
-        "Tutorials"
-      ],
-      "tier": "builder",
-      "promise": "One thing to try this week.",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents",
-          "url": "https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/",
-          "source": "MarkTechPost",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
-          "authors": "Asif Razzaq",
-          "published": "16 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png",
-          "summary": "The Alibaba Qwen Team model release is worth benchmarking against your current baseline (via MarkTechPost).",
-          "what_happened": "Alibaba Cloud just updated the open-source landscape.",
-          "why_it_matters": "Strong numbers from Alibaba Qwen Team could reset your baseline \u2014 but only if they hold on production data.",
-          "what_to_do": "Work through the Alibaba Qwen Team tutorial and modify one step for your own use case.",
-          "our_take": "Tutorials are blueprints, not gospel. Adapt one step to your own constraints and you'll learn more.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "Why Software Alone Can\u2019t Scale Operations \u2014 The Rise of Multi-Agent Systems",
-          "url": "https://dev.to/aiaddict25709/why-software-alone-cant-scale-operations-the-rise-of-multi-agent-systems-22p3",
-          "source": "Dev.to AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
-          "authors": "AIaddict25709",
-          "published": "16 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkrp5mbstcf66rpbs6jsb.png",
-          "summary": "Research on Multi introduces methods that could influence applied work if results hold (via Dev.to AI).",
-          "what_happened": "A hands-on guide to Multi offers patterns you can adapt to your own stack.",
-          "why_it_matters": "The Multi development is a useful signal for teams shipping AI products.",
-          "what_to_do": "Follow the Multi guide, but adapt one step to fit your actual production constraints.",
-          "our_take": "The value of a tutorial is the first thing you build after reading it, not the reading itself.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        }
-      ]
-    },
-    {
-      "title": "Lab Notes",
-      "icon": "\ud83d\udd2c",
-      "deck": "Research and model updates with downstream product impact.",
-      "color": "0F4C5C",
-      "badge": "Lab Notes",
-      "topics": [
-        "Research",
-        "Models"
-      ],
-      "tier": "leader",
-      "promise": "",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
-          "url": "https://arxiv.org/abs/2602.12316",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png",
-          "authors": "Pepijn Cobben, Xuanqiang Angelo Huang, Thao Amelia Pham et al.",
-          "published": "16 Feb",
-          "thumbnail": "",
-          "summary": "New performance numbers for HarmBench need independent validation before changing production decisions (via arXiv CS.AI).",
-          "what_happened": "New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate.",
-          "why_it_matters": "If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.",
-          "what_to_do": "Compare the HarmBench eval setup to yours \u2014 check if the benchmark conditions match your workload.",
-          "our_take": "Benchmark wins look impressive on paper, but production workloads rarely match evaluation conditions.",
-          "audience_track": "Researcher",
-          "difficulty": "Advanced",
-          "topic": "Research"
         }
       ]
     }
@@ -389,19 +317,19 @@
   ],
   "category_selection_available": true,
   "learn_this_week": {
-    "title": "Google Machine Learning Crash Course",
-    "url": "https://developers.google.com/machine-learning/crash-course",
-    "provider": "Google AI",
+    "title": "Machine Learning Specialization",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "provider": "Coursera / Stanford",
     "level": "Beginner",
-    "free": true,
-    "duration": "15 hours",
-    "note": "Interactive exercises with TensorFlow. Google's internal ML training, now public."
+    "free": false,
+    "duration": "2 months",
+    "note": "Andrew Ng's refreshed ML curriculum. The gold standard intro. Audit free, cert paid."
   },
   "prompt_of_the_week": {
-    "text": "Rewrite this API documentation to be developer-friendly. Keep it accurate but make it scannable with clear examples.",
-    "context": "Documentation",
+    "text": "Generate a week's worth of social media posts about [topic] in the voice of a technical thought leader \u2014 concise, opinionated, no fluff.",
+    "context": "Content",
     "tool": "Claude / ChatGPT",
-    "why": "Bad docs are the #1 reason developers abandon tools. Asking for 'scannable with clear examples' targets the two things devs actually need: quick answers and copy-pasteable code.",
-    "tip": "Paste the existing docs. Specify your audience (junior devs, senior engineers, etc.)."
+    "why": "Technical audiences punish generic content. Specifying 'opinionated, no fluff' constrains the model away from safe, bland takes \u2014 the output reads more like a real practitioner's voice.",
+    "tip": "Replace [topic] with your area. Add 2-3 example posts you admire for tone matching."
   }
 }

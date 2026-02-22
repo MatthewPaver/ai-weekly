@@ -1,70 +1,5 @@
 [
   {
-    "articles_collected": 63,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 35,
-    "after_filters": 14,
-    "articles_final": 13,
-    "sections": 4,
-    "lead_story": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-Wo",
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-13T13:58:10.430853+00:00"
-  },
-  {
-    "articles_collected": 63,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 25,
-    "after_filters": 3,
-    "articles_final": 14,
-    "sections": 5,
-    "lead_story": "OpenAI sidesteps Nvidia with unusually fast coding model on ",
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-13T14:20:22.467454+00:00"
-  },
-  {
-    "articles_collected": 63,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 24,
-    "after_filters": 2,
-    "articles_final": 14,
-    "sections": 5,
-    "lead_story": "OpenAI sidesteps Nvidia with unusually fast coding model on ",
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-13T14:20:51.307279+00:00"
-  },
-  {
-    "articles_collected": 63,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 24,
-    "after_filters": 2,
-    "articles_final": 14,
-    "sections": 5,
-    "lead_story": "OpenAI sidesteps Nvidia with unusually fast coding model on ",
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-13T14:21:12.393658+00:00"
-  },
-  {
-    "articles_collected": 63,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 24,
-    "after_filters": 2,
-    "articles_final": 14,
-    "sections": 3,
-    "lead_story": "Testing ads in ChatGPT",
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-13T14:23:48.295637+00:00"
-  },
-  {
     "articles_collected": 60,
     "relaxed_history": false,
     "retry_count": 0,
@@ -1207,5 +1142,308 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-16T22:22:53.526131+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 25,
+    "after_filters": 4,
+    "after_accessibility": 29,
+    "after_selection": 18,
+    "articles_final": 18,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 25
+      },
+      {
+        "stage": "quality_gates",
+        "after": 4
+      },
+      {
+        "stage": "accessibility",
+        "after": 29
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 18
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 5,
+    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
+    "total_articles": 18,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T23:04:25.113282+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 24,
+    "after_filters": 3,
+    "after_accessibility": 29,
+    "after_selection": 18,
+    "articles_final": 18,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 24
+      },
+      {
+        "stage": "quality_gates",
+        "after": 3
+      },
+      {
+        "stage": "accessibility",
+        "after": 29
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 18
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 5,
+    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
+    "total_articles": 18,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T23:08:26.365186+00:00"
+  },
+  {
+    "articles_collected": 72,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 24,
+    "after_filters": 3,
+    "after_accessibility": 29,
+    "after_selection": 18,
+    "articles_final": 18,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 24
+      },
+      {
+        "stage": "quality_gates",
+        "after": 3
+      },
+      {
+        "stage": "accessibility",
+        "after": 29
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 18
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI",
+      "arXiv CS.AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 5,
+    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
+    "total_articles": 18,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-16T23:13:53.718281+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 52,
+    "after_filters": 33,
+    "after_accessibility": 33,
+    "after_selection": 18,
+    "articles_final": 16,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 52
+      },
+      {
+        "stage": "quality_gates",
+        "after": 33
+      },
+      {
+        "stage": "accessibility",
+        "after": 33
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 16
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "Import AI",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "arXiv CS.AI": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 5,
+    "lead_story": "Google VP warns that two types of AI startups may not surviv",
+    "total_articles": 16,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-22T01:00:54.560262+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 42,
+    "after_filters": 23,
+    "after_accessibility": 23,
+    "after_selection": 18,
+    "articles_final": 15,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 42
+      },
+      {
+        "stage": "quality_gates",
+        "after": 23
+      },
+      {
+        "stage": "accessibility",
+        "after": 23
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 15
+      }
+    ],
+    "sources_used": [
+      "Dev.to AI",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "arXiv CS.AI": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 3,
+    "lead_story": "New in Agent Builder: all new agent chat, file uploads + too",
+    "total_articles": 15,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-22T01:31:27.231184+00:00"
   }
 ]
