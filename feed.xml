@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Feb 2026 16:07:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 16:40:20 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Lawsuit: ChatGPT told student he was "meant for greatness"—then came psychosis]]></title>
@@ -16,6 +16,38 @@
       <author>Cyrus Farivar</author>
     </item>
     <item>
+      <title><![CDATA[GGML and llama.cpp join HF to ensure the long-term progress of Local AI]]></title>
+      <link>https://huggingface.co/blog/ggml-joins-hf</link>
+      <description><![CDATA[GGML adds a data point to a trend that's getting harder to ignore (via Hugging Face Blog).]]></description>
+      <category>Tools</category>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[After Orthogonality: Virtue-Ethical Agency and AI Alignment]]></title>
+      <link>https://thegradient.pub/virtue-ethics-ai-alignment/</link>
+      <description><![CDATA[Depending on your setup, Ethical Agency might save you time or headaches down the line (via The Gradient).]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 18 Feb 2026 23:25:52 +0000</pubDate>
+      <author>Peli Grietzer</author>
+    </item>
+    <item>
+      <title><![CDATA[voicebox]]></title>
+      <link>https://github.com/jamiepine/voicebox</link>
+      <description><![CDATA[Not a fire drill, but voicebox is the kind of thing that compounds if you ignore it (via GitHub Trending (AI/ML)).]]></description>
+      <category>Repos</category>
+      <pubDate>Sat, 21 Feb 2026 21:46:30 +0000</pubDate>
+      <author>jamiepine</author>
+    </item>
+    <item>
+      <title><![CDATA[“No technology has me dreaming bigger than AI”]]></title>
+      <link>https://blog.google/company-news/inside-google/message-ceo/sundar-pichai-ai-impact-summit-2026/</link>
+      <description><![CDATA[Not a fire drill, but No technology has me dreaming is the kind of thing that compounds if you ignore it (via Google AI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Thu, 19 Feb 2026 04:30:00 +0000</pubDate>
+      <author>Sundar Pichai</author>
+    </item>
+    <item>
       <title><![CDATA[Agent Observability Powers Agent Evaluation]]></title>
       <link>https://blog.langchain.com/agent-observability-powers-agent-evaluation/</link>
       <description><![CDATA[You cant validate improvements without systematic evaluation.]]></description>
@@ -24,76 +56,60 @@
       <author>LangChain Accounts</author>
     </item>
     <item>
-      <title><![CDATA[Building a Global AI Design Studio: RAG, Vector Search, and the Physics of Localization]]></title>
-      <link>https://dev.to/thirupathi_pyati/building-a-global-ai-design-studio-rag-vector-search-and-the-physics-of-localization-2b79</link>
-      <description><![CDATA[If Building pans out, it could change how teams approach their current stack (via Dev.to AI).]]></description>
-      <category>Tutorials</category>
-      <pubDate>Sun, 22 Feb 2026 15:56:38 +0000</pubDate>
-      <author>Thirupathi Pyati</author>
+      <title><![CDATA[zeroclaw]]></title>
+      <link>https://github.com/zeroclaw-labs/zeroclaw</link>
+      <description><![CDATA[Depending on your setup, zeroclaw might save you time or headaches down the line (via GitHub Trending (AI/ML)).]]></description>
+      <category>Repos</category>
+      <pubDate>Sun, 22 Feb 2026 16:27:33 +0000</pubDate>
+      <author>zeroclaw-labs</author>
     </item>
     <item>
-      <title><![CDATA[A new way to express yourself: Gemini can now create music]]></title>
-      <link>https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/</link>
-      <description><![CDATA[If Gemini pans out, it could change how teams approach their current stack (via Google AI Blog).]]></description>
+      <title><![CDATA[Accelerating discovery in India through AI-powered science and education]]></title>
+      <link>https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/</link>
+      <description><![CDATA[Not a fire drill, but Accelerating is the kind of thing that compounds if you ignore it (via Google DeepMind).]]></description>
       <category>Industry</category>
-      <pubDate>Wed, 18 Feb 2026 16:00:00 +0000</pubDate>
-      <author>Joël Yawili, Myriam Hamed Torres</author>
-    </item>
-    <item>
-      <title><![CDATA[A New Google AI Research Proposes Deep-Thinking Ratio to Improve LLM Accuracy While Cutting Total Inference Costs by Half]]></title>
-      <link>https://www.marktechpost.com/2026/02/21/a-new-google-ai-research-proposes-deep-thinking-ratio-to-improve-llm-accuracy-while-cutting-total-inference-costs-by-half/</link>
-      <description><![CDATA[The LLM story has enough signal to track — file it for your next planning round (via MarkTechPost).]]></description>
-      <category>Tutorials</category>
-      <pubDate>Sun, 22 Feb 2026 04:53:19 +0000</pubDate>
-      <author>Asif Razzaq</author>
-    </item>
-    <item>
-      <title><![CDATA[Show HN: Universal ROS bridge for AI agents – control robots with LLMs]]></title>
-      <link>https://github.com/webthree549-bot/agent-ros-bridge</link>
-      <description><![CDATA[Depending on your setup, Universal ROS might save you time or headaches down the line (via Hacker News).]]></description>
-      <category>Tools</category>
-      <pubDate>Sat, 21 Feb 2026 01:04:09 +0000</pubDate>
+      <pubDate>Tue, 17 Feb 2026 13:42:20 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[UK council faces data breach claim after mishandling trans complaints]]></title>
-      <link>https://go.theregister.com/feed/www.theregister.com/2026/02/22/cornwall_council_complaints_breach/</link>
-      <description><![CDATA[Security developments around UK council faces data breach claim may require patching or posture changes for affected teams (via The Register).]]></description>
-      <category>Infra</category>
-      <pubDate>Sun, 22 Feb 2026 09:34:09 +0000</pubDate>
-      <author>Connor Jones</author>
+      <title><![CDATA[Tech Is Taking Over Olympic Curling]]></title>
+      <link>https://spectrum.ieee.org/olympics-curling-robot-ai</link>
+      <description><![CDATA[If Tech Is Taking Over Olympic Curling pans out, it could change how teams approach their current stack (via IEEE Spectrum AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 18 Feb 2026 15:00:02 +0000</pubDate>
+      <author>Elie Dolgin</author>
     </item>
     <item>
-      <title><![CDATA['God-Like' Attack Machines: AI Agents Ignore Security Policies]]></title>
-      <link>https://www.darkreading.com/application-security/ai-agents-ignore-security-policies</link>
-      <description><![CDATA[Security developments around Like' Attack Machines may require patching or posture changes for affected teams (via Dark Reading).]]></description>
-      <category>Security</category>
-      <pubDate>Fri, 20 Feb 2026 18:31:58 +0000</pubDate>
-      <author>Robert Lemos</author>
+      <title><![CDATA[Microsoft has a new plan to prove what’s real and what’s AI online]]></title>
+      <link>https://www.technologyreview.com/2026/02/19/1133360/microsoft-has-a-new-plan-to-prove-whats-real-and-whats-ai-online/</link>
+      <description><![CDATA[AI-enabled deception now permeates our online lives.]]></description>
+      <category>Industry</category>
+      <pubDate>Thu, 19 Feb 2026 16:00:00 +0000</pubDate>
+      <author>James O'Donnell</author>
     </item>
     <item>
-      <title><![CDATA[Lessons From AI Hacking: Every Model, Every Layer Is Risky]]></title>
-      <link>https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky</link>
-      <description><![CDATA[The Lessons From AI Hacking model release is worth benchmarking against your current baseline (via Dark Reading).]]></description>
-      <category>Security</category>
-      <pubDate>Fri, 20 Feb 2026 18:02:02 +0000</pubDate>
-      <author>Robert Lemos</author>
+      <title><![CDATA[Advancing independent research on AI alignment]]></title>
+      <link>https://openai.com/index/advancing-independent-research-ai-alignment</link>
+      <description><![CDATA[Not a fire drill, but Advancing independent research is the kind of thing that compounds if you ignore it (via OpenAI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Thu, 19 Feb 2026 10:00:00 +0000</pubDate>
+      
     </item>
     <item>
-      <title><![CDATA[Databricks Introduces Lakebase, a PostgreSQL Database for AI Workloads]]></title>
-      <link>https://www.infoq.com/news/2026/02/databricks-lakebase-postgresql/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
-      <description><![CDATA[Strategic shift around Lakebase, a PostgreSQL Database may affect vendor costs and compliance posture (via InfoQ).]]></description>
-      <category>Infra</category>
-      <pubDate>Sun, 22 Feb 2026 10:25:00 +0000</pubDate>
-      <author>Renato Losio</author>
+      <title><![CDATA[Sam Altman would like to remind you that humans use a lot of energy, too]]></title>
+      <link>https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/</link>
+      <description><![CDATA[If Sam Altman pans out, it could change how teams approach their current stack (via TechCrunch AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Sat, 21 Feb 2026 21:38:01 +0000</pubDate>
+      <author>Anthony Ha</author>
     </item>
     <item>
-      <title><![CDATA[OpenAI Introduces Harness Engineering: Codex Agents Power Large‑Scale Software Development]]></title>
-      <link>https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
-      <description><![CDATA[Infrastructure changes around Harness Engineering affect cost and reliability calculus for production teams (via InfoQ).]]></description>
-      <category>Infra</category>
-      <pubDate>Sat, 21 Feb 2026 15:14:00 +0000</pubDate>
-      <author>Leela Kumili</author>
+      <title><![CDATA[Suspect in Tumbler Ridge school shooting described violent scenarios to ChatGPT]]></title>
+      <link>https://www.theverge.com/ai-artificial-intelligence/882814/tumbler-ridge-school-shooting-chatgpt</link>
+      <description><![CDATA[If Tumbler Ridge pans out, it could change how teams approach their current stack (via The Verge AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Sat, 21 Feb 2026 10:22:57 +0000</pubDate>
+      <author>Terrence O’Brien</author>
     </item>
   </channel>
 </rss>

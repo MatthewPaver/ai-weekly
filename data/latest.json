@@ -1,14 +1,14 @@
 {
   "date": "22 Feb 2026",
   "issue_number": 3,
-  "total_articles": 11,
-  "source_count": 9,
-  "read_time_minutes": 4,
-  "intro": "This week: Lawsuit: ChatGPT told student he was \"meant for greatness\"\u2014then came psychosis.",
+  "total_articles": 8,
+  "source_count": 12,
+  "read_time_minutes": 3,
+  "intro": "Big news this week: Lawsuit: ChatGPT told student he was \"meant for greatness\"\u2014then came psychosis, and what it means for your roadmap.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Infra led coverage (3 stories)."
+      "value": "Industry led coverage (8 stories)."
     },
     {
       "label": "Builder pick",
@@ -17,62 +17,59 @@
     {
       "label": "Leader watch",
       "value": "[Lawsuit: ChatGPT told student he was \"meant for greatness\"\u2014then came psychosis](https://arstechnica.com/tech-policy/2026/02/before-psychosis-chatgpt-told-man-he-was-an-oracle-new-lawsuit-alleges/)"
+    },
+    {
+      "label": "Research watch",
+      "value": "[After Orthogonality: Virtue-Ethical Agency and AI Alignment](https://thegradient.pub/virtue-ethics-ai-alignment/)"
     }
   ],
   "issue_menu": [
     {
-      "icon": "\ud83d\udcda",
-      "title": "Ship-It Playbooks",
+      "icon": "\u2b50",
+      "title": "Open Source Watch",
       "count": 2,
       "read_time_minutes": 1,
-      "label": "\ud83d\udcda Ship-It Playbooks (2)",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "promise": "One thing to try this week.",
+      "label": "\u2b50 Open Source Watch (2)",
+      "deck": "Repos with momentum that might deserve a deeper look.",
+      "promise": "Repos with momentum.",
       "num": "01"
     },
     {
-      "icon": "\u2601\ufe0f",
-      "title": "Infra",
-      "count": 3,
+      "icon": "\ud83d\udd2c",
+      "title": "Lab Notes",
+      "count": 1,
       "read_time_minutes": 1,
-      "label": "\u2601\ufe0f Infra (3)",
-      "deck": "Cloud, scale, and infrastructure that matters to AI builders.",
+      "label": "\ud83d\udd2c Lab Notes (1)",
+      "deck": "Research and model updates with downstream product impact.",
       "promise": "",
       "num": "02"
     },
     {
-      "icon": "\ud83d\udd12",
-      "title": "Security",
-      "count": 2,
+      "icon": "\ud83c\udf10",
+      "title": "Industry Radar",
+      "count": 3,
       "read_time_minutes": 1,
-      "label": "\ud83d\udd12 Security (2)",
-      "deck": "Security and compliance signals that affect how you build and run AI systems.",
+      "label": "\ud83c\udf10 Industry Radar (3)",
+      "deck": "The moves that change product plans, budgets, and positioning.",
       "promise": "",
       "num": "03"
     },
     {
-      "icon": "\ud83c\udf10",
-      "title": "Industry Radar",
-      "count": 2,
+      "icon": "\ud83d\udee0\ufe0f",
+      "title": "Builder's Bench",
+      "count": 1,
       "read_time_minutes": 1,
-      "label": "\ud83c\udf10 Industry Radar (2)",
-      "deck": "The moves that change product plans, budgets, and positioning.",
+      "label": "\ud83d\udee0\ufe0f Builder's Bench (1)",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
       "promise": "",
       "num": "04"
     }
   ],
-  "briefing": [
-    {
-      "title": "Show HN: Universal ROS bridge for AI agents \u2013 control robots with LLMs",
-      "url": "https://github.com/webthree549-bot/agent-ros-bridge",
-      "note": "A new tool release around Universal ROS targets gaps in current developer workflows. Why it matters: Universal ROS is worth evaluating if your current tools are hitting limits.",
-      "track": "Builder"
-    }
-  ],
+  "briefing": [],
   "editors_note": {
     "headline": "This week",
-    "thesis": "Agent Observability Powers Agent Evaluation leads this week. The rest is context.",
-    "hook": "Start with the lead \u2014 the rest supports it.",
+    "thesis": "We're watching Agent Observability Powers Agent Evaluation \u2014 it's the one most likely to affect vendor and roadmap decisions this quarter.",
+    "hook": "We're flagging the lead for leadership \u2014 it's the one most likely to shift budgets or priorities.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
     "underhyped": "Lawsuit: ChatGPT told student he was \"meant for greatness\"\u2014then came psychosis deserves more attention than it's getting.",
     "risk": "Keep an eye on Lawsuit: ChatGPT told student he was \"meant for greatness\"\u2014then came psychosis \u2014 it could shift budgets or vendor assumptions."
@@ -86,178 +83,89 @@
     "difficulty": "Beginner",
     "what_happened": "You cant validate improvements without systematic evaluation.",
     "our_take": "Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.",
-    "what_to_do": "Spin up Agent Observability Powers Agent Evaluation in a 2-hour proof of concept \u2014 compare output against your current tool."
+    "what_to_do": "Spin up Agent Observability in a 2-hour proof of concept \u2014 compare output against your current tool."
   },
-  "quick_hits": [
-    {
-      "title": "Show HN: Universal ROS bridge for AI agents \u2013 control robots with LLMs",
-      "url": "https://github.com/webthree549-bot/agent-ros-bridge",
-      "note": "A new tool release around Universal ROS targets gaps in current developer workflows. Why it matters: Universal ROS is worth evaluating if your current tools are hitting limits.",
-      "track": "Builder"
-    }
-  ],
+  "quick_hits": [],
   "sections": [
     {
-      "title": "Ship-It Playbooks",
-      "icon": "\ud83d\udcda",
-      "deck": "Practical implementation guides you can adapt quickly.",
+      "title": "Open Source Watch",
+      "icon": "\u2b50",
+      "deck": "Repos with momentum that might deserve a deeper look.",
       "color": "0F4C5C",
-      "badge": "Ship It Playbooks",
+      "badge": "Open Source Watch",
       "topics": [
-        "Tutorials"
+        "Repos"
       ],
       "tier": "builder",
-      "promise": "One thing to try this week.",
+      "promise": "Repos with momentum.",
       "read_time_minutes": 1,
       "articles": [
         {
-          "title": "A New Google AI Research Proposes Deep-Thinking Ratio to Improve LLM Accuracy While Cutting Total Inference Costs by Half",
-          "url": "https://www.marktechpost.com/2026/02/21/a-new-google-ai-research-proposes-deep-thinking-ratio-to-improve-llm-accuracy-while-cutting-total-inference-costs-by-half/",
-          "source": "MarkTechPost",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
-          "authors": "Asif Razzaq",
-          "published": "22 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-50.png",
-          "summary": "The LLM story has enough signal to track \u2014 file it for your next planning round (via MarkTechPost).",
-          "what_happened": "Researchers published new findings on LLM with potential applied implications.",
-          "why_it_matters": "LLM is one of those things that sounds minor until it changes your shortlist.",
-          "what_to_do": "Work through the LLM tutorial and modify one step for your own use case.",
-          "our_take": "Use LLM as a blueprint, then trim to fit your production constraints.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "Building a Global AI Design Studio: RAG, Vector Search, and the Physics of Localization",
-          "url": "https://dev.to/thirupathi_pyati/building-a-global-ai-design-studio-rag-vector-search-and-the-physics-of-localization-2b79",
-          "source": "Dev.to AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
-          "authors": "Thirupathi Pyati",
-          "published": "22 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fra1tg1fp2l5ujo0kybky.png",
-          "summary": "If Building pans out, it could change how teams approach their current stack (via Dev.to AI).",
-          "what_happened": "A step-by-step guide on Building provides a template for your own projects.",
-          "why_it_matters": "The Building news won't break anything today, but it sets up choices you'll face soon.",
-          "what_to_do": "Work through the Building tutorial and modify one step for your own use case.",
-          "our_take": "Adapt one proven pattern from Building instead of copying the whole stack.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        }
-      ]
-    },
-    {
-      "title": "Infra",
-      "icon": "\u2601\ufe0f",
-      "deck": "Cloud, scale, and infrastructure that matters to AI builders.",
-      "color": "0F4C5C",
-      "badge": "Infra",
-      "topics": [
-        "Infra"
-      ],
-      "tier": "builder",
-      "promise": "",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "Databricks Introduces Lakebase, a PostgreSQL Database for AI Workloads",
-          "url": "https://www.infoq.com/news/2026/02/databricks-lakebase-postgresql/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "source": "InfoQ",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/infoq.com.png",
-          "authors": "Renato Losio",
+          "title": "zeroclaw",
+          "url": "https://github.com/zeroclaw-labs/zeroclaw",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
+          "authors": "zeroclaw-labs",
           "published": "22 Feb",
           "thumbnail": "",
-          "summary": "Strategic shift around Lakebase, a PostgreSQL Database may affect vendor costs and compliance posture (via InfoQ).",
-          "what_happened": "Monetization changes around Lakebase, a PostgreSQL Database may affect pricing, UX, or data-handling assumptions.",
-          "why_it_matters": "Budget, compliance, and vendor assumptions tied to Lakebase, a PostgreSQL Database may need a fresh review.",
-          "what_to_do": "Review Lakebase, a PostgreSQL Database and decide on one concrete follow-up action by end of week.",
-          "our_take": "Add Lakebase, a PostgreSQL Database to your next ops or architecture sync if it touches your pipeline.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Infra"
-        },
-        {
-          "title": "OpenAI Introduces Harness Engineering: Codex Agents Power Large\u2011Scale Software Development",
-          "url": "https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "source": "InfoQ",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/infoq.com.png",
-          "authors": "Leela Kumili",
-          "published": "21 Feb",
-          "thumbnail": "",
-          "summary": "Infrastructure changes around Harness Engineering affect cost and reliability calculus for production teams (via InfoQ).",
-          "what_happened": "Not urgent, but Harness Engineering is the kind of thing that shows up again in a month.",
-          "why_it_matters": "Worth bookmarking Harness Engineering \u2014 the ripple effects tend to show up a quarter later.",
-          "what_to_do": "Review Harness Engineering and decide on one concrete follow-up action by end of week.",
-          "our_take": "Worth a quick check against your stack \u2014 Harness Engineering could affect cost or scale assumptions.",
+          "summary": "Depending on your setup, zeroclaw might save you time or headaches down the line (via GitHub Trending (AI/ML)).",
+          "what_happened": "Growing traction for zeroclaw on GitHub suggests rising builder interest.",
+          "why_it_matters": "Momentum behind zeroclaw is real, but maintenance quality should gate adoption decisions.",
+          "what_to_do": "Review zeroclaw issue tracker, last commit date, and license before considering adoption.",
+          "our_take": "Star velocity tells you whats popular, not whats reliable. Check the issue backlog before the star count.",
           "audience_track": "Builder",
           "difficulty": "Intermediate",
-          "topic": "Infra"
+          "topic": "Repos"
         },
         {
-          "title": "UK council faces data breach claim after mishandling trans complaints",
-          "url": "https://go.theregister.com/feed/www.theregister.com/2026/02/22/cornwall_council_complaints_breach/",
-          "source": "The Register",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theregister.com.png",
-          "authors": "Connor Jones",
-          "published": "22 Feb",
-          "thumbnail": "https://regmedia.co.uk/2022/04/12/shutterstock_cornwall.jpg",
-          "summary": "Security developments around UK council faces data breach claim may require patching or posture changes for affected teams (via The Register).",
-          "what_happened": "The UK council faces data breach claim story is worth a skim \u2014 small signals like this tend to add up.",
-          "why_it_matters": "Worth bookmarking UK council faces data breach claim \u2014 the ripple effects tend to show up a quarter later.",
-          "what_to_do": "Review UK council faces data breach claim and decide on one concrete follow-up action by end of week.",
-          "our_take": "Worth a quick check against your stack \u2014 UK council faces data breach claim could affect cost or scale assumptions.",
+          "title": "voicebox",
+          "url": "https://github.com/jamiepine/voicebox",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
+          "authors": "jamiepine",
+          "published": "21 Feb",
+          "thumbnail": "",
+          "summary": "Not a fire drill, but voicebox is the kind of thing that compounds if you ignore it (via GitHub Trending (AI/ML)).",
+          "what_happened": "Voicebox is picking up momentum in the open-source community.",
+          "why_it_matters": "Community interest in voicebox is growing \u2014 check repo health before committing.",
+          "what_to_do": "Check voicebox for recent activity, open issues, and license compatibility this week.",
+          "our_take": "Popularity and production-readiness are different things. Check the last commit date and open issues first.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
-          "topic": "Infra"
+          "topic": "Repos"
         }
       ]
     },
     {
-      "title": "Security",
-      "icon": "\ud83d\udd12",
-      "deck": "Security and compliance signals that affect how you build and run AI systems.",
+      "title": "Lab Notes",
+      "icon": "\ud83d\udd2c",
+      "deck": "Research and model updates with downstream product impact.",
       "color": "0F4C5C",
-      "badge": "Security",
+      "badge": "Lab Notes",
       "topics": [
-        "Security"
+        "Research",
+        "Models"
       ],
-      "tier": "builder",
+      "tier": "leader",
       "promise": "",
       "read_time_minutes": 1,
       "articles": [
         {
-          "title": "Lessons From AI Hacking: Every Model, Every Layer Is Risky",
-          "url": "https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky",
-          "source": "Dark Reading",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/darkreading.com.png",
-          "authors": "Robert Lemos",
-          "published": "20 Feb",
+          "title": "After Orthogonality: Virtue-Ethical Agency and AI Alignment",
+          "url": "https://thegradient.pub/virtue-ethics-ai-alignment/",
+          "source": "The Gradient",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/thegradient.pub.png",
+          "authors": "Peli Grietzer",
+          "published": "18 Feb",
           "thumbnail": "",
-          "summary": "The Lessons From AI Hacking model release is worth benchmarking against your current baseline (via Dark Reading).",
-          "what_happened": "Quick read on Lessons From AI Hacking \u2014 may or may not matter depending on your stack.",
-          "why_it_matters": "Worth bookmarking Lessons From AI Hacking \u2014 the ripple effects tend to show up a quarter later.",
-          "what_to_do": "Spend 15 minutes on Lessons From AI Hacking \u2014 decide if it warrants a deeper look or can be shelved.",
-          "our_take": "Interesting, but not urgent unless it directly affects something you're shipping this month.",
-          "audience_track": "Builder",
+          "summary": "Depending on your setup, Ethical Agency might save you time or headaches down the line (via The Gradient).",
+          "what_happened": "Results from Ethical Agency point to where methods may shift in the next cycle.",
+          "why_it_matters": "If Ethical Agency findings replicate, they could change how teams approach related problems.",
+          "what_to_do": "Spend 10 minutes on the Ethical Agency results \u2014 if nothing applies to your work, move on.",
+          "our_take": "Research signals are useful for direction-setting, not for production bets. Keep it on the watch list.",
+          "audience_track": "Researcher",
           "difficulty": "Beginner",
-          "topic": "Security"
-        },
-        {
-          "title": "'God-Like' Attack Machines: AI Agents Ignore Security Policies",
-          "url": "https://www.darkreading.com/application-security/ai-agents-ignore-security-policies",
-          "source": "Dark Reading",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/darkreading.com.png",
-          "authors": "Robert Lemos",
-          "published": "20 Feb",
-          "thumbnail": "",
-          "summary": "Security developments around Like' Attack Machines may require patching or posture changes for affected teams (via Dark Reading).",
-          "what_happened": "Not urgent, but Like' Attack Machines is the kind of thing that shows up again in a month.",
-          "why_it_matters": "Worth bookmarking Like' Attack Machines \u2014 the ripple effects tend to show up a quarter later.",
-          "what_to_do": "Review Like' Attack Machines and decide on one concrete follow-up action by end of week.",
-          "our_take": "Security signal from Like' Attack Machines; assign an owner and add to backlog if it affects your posture.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Security"
+          "topic": "Research"
         }
       ]
     },
@@ -285,29 +193,78 @@
           "thumbnail": "",
           "summary": "AI Injury Attorneys target the chatbot design itself.",
           "what_happened": "AI Injury Attorneys target the chatbot design itself.",
-          "why_it_matters": "Legal or governance pressure on Lawsuit can quickly become vendor risk for dependent teams.",
-          "what_to_do": "Flag Lawsuit for your leadership team \u2014 it may shift near-term priorities.",
+          "why_it_matters": "Legal or governance pressure on ChatGPT can quickly become vendor risk for dependent teams.",
+          "what_to_do": "Add ChatGPT as a discussion item in your next strategy or planning meeting.",
           "our_take": "Internal governance problems at major vendors should trigger a vendor-risk review, not just headlines.",
           "audience_track": "Leader",
           "difficulty": "Beginner",
           "topic": "Industry"
         },
         {
-          "title": "A new way to express yourself: Gemini can now create music",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
-          "source": "Google AI Blog",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/blog.google.png",
-          "authors": "Jo\u00ebl Yawili, Myriam Hamed Torres",
-          "published": "18 Feb",
-          "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/0217_KeywordHeaderFinalc.width-1300.png",
-          "summary": "If Gemini pans out, it could change how teams approach their current stack (via Google AI Blog).",
-          "what_happened": "A move around Gemini is worth flagging for your next planning sync.",
-          "why_it_matters": "Moves around Gemini may reshape vendor dynamics for teams downstream.",
-          "what_to_do": "Add Gemini as a discussion item in your next strategy or planning meeting.",
-          "our_take": "Strategic positioning around Gemini is shifting faster than most roadmap cycles account for.",
+          "title": "Advancing independent research on AI alignment",
+          "url": "https://openai.com/index/advancing-independent-research-ai-alignment",
+          "source": "OpenAI Blog",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png",
+          "authors": "",
+          "published": "19 Feb",
+          "thumbnail": "",
+          "summary": "Not a fire drill, but Advancing independent research is the kind of thing that compounds if you ignore it (via OpenAI Blog).",
+          "what_happened": "A new paper on Advancing independent research introduces methods that may influence downstream tooling.",
+          "why_it_matters": "The Advancing independent research shift affects competitive positioning \u2014 worth flagging at your next planning sync.",
+          "what_to_do": "Bring Advancing independent research to your next planning sync \u2014 it may affect Q2 priorities.",
+          "our_take": "Treat Advancing independent research as a planning input \u2014 the second-order effects matter more than the headline.",
           "audience_track": "Leader",
           "difficulty": "Beginner",
           "topic": "Industry"
+        },
+        {
+          "title": "Suspect in Tumbler Ridge school shooting described violent scenarios to ChatGPT",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/882814/tumbler-ridge-school-shooting-chatgpt",
+          "source": "The Verge AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png",
+          "authors": "Terrence O\u2019Brien",
+          "published": "21 Feb",
+          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/gettyimages-2260625085.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "summary": "If Tumbler Ridge pans out, it could change how teams approach their current stack (via The Verge AI).",
+          "what_happened": "Tumbler Ridge is in the news \u2014 add it to your next strategy or vendor sync.",
+          "why_it_matters": "Worth a slot on your next leadership review \u2014 Tumbler Ridge could shift the math.",
+          "what_to_do": "Bring Tumbler Ridge to your next planning sync \u2014 it may affect Q2 priorities.",
+          "our_take": "Strategic positioning around Tumbler Ridge is shifting faster than most roadmap cycles account for.",
+          "audience_track": "Leader",
+          "difficulty": "Beginner",
+          "topic": "Industry"
+        }
+      ]
+    },
+    {
+      "title": "Builder's Bench",
+      "icon": "\ud83d\udee0\ufe0f",
+      "deck": "New tooling worth evaluating in an actual workflow this week.",
+      "color": "0F4C5C",
+      "badge": "Builders Bench",
+      "topics": [
+        "Tools"
+      ],
+      "tier": "builder",
+      "promise": "",
+      "read_time_minutes": 1,
+      "articles": [
+        {
+          "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
+          "url": "https://huggingface.co/blog/ggml-joins-hf",
+          "source": "Hugging Face Blog",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png",
+          "authors": "",
+          "published": "20 Feb",
+          "thumbnail": "https://huggingface.co/blog/assets/ggml-joins-hf/ggml-joins-hf.png",
+          "summary": "GGML adds a data point to a trend that's getting harder to ignore (via Hugging Face Blog).",
+          "what_happened": "The GGML tooling fills a gap \u2014 test it against your existing workflow before committing.",
+          "why_it_matters": "The GGML release addresses gaps that many builder teams have flagged.",
+          "what_to_do": "Try GGML on a non-critical task this week and log the results.",
+          "our_take": "Don't adopt tools based on hype. Run it against your ugliest edge case first.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tools"
         }
       ]
     }
