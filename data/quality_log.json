@@ -1,19 +1,6 @@
 [
   {
     "articles_collected": 60,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 35,
-    "after_filters": 10,
-    "articles_final": 10,
-    "sections": 2,
-    "lead_story": "Introducing Lockdown Mode and Elevated Risk labels in ChatGP",
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-14T09:32:24.819122+00:00"
-  },
-  {
-    "articles_collected": 60,
     "relaxed_history": true,
     "retry_count": 0,
     "after_dedup": 26,
@@ -1445,5 +1432,61 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-22T01:31:27.231184+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 33,
+    "after_filters": 16,
+    "after_accessibility": 16,
+    "after_selection": 16,
+    "articles_final": 11,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 33
+      },
+      {
+        "stage": "quality_gates",
+        "after": 16
+      },
+      {
+        "stage": "accessibility",
+        "after": 16
+      },
+      {
+        "stage": "selection",
+        "after": 16
+      },
+      {
+        "stage": "summary_quality",
+        "after": 11
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dark Reading",
+      "Dev.to AI",
+      "Google AI Blog",
+      "Hacker News (AI)",
+      "InfoQ",
+      "LangChain Blog",
+      "MarkTechPost",
+      "The Register"
+    ],
+    "source_errors": {
+      "Anthropic Blog": "empty feed",
+      "The Batch": "empty feed",
+      "Towards Data Science": "empty feed",
+      "arXiv CS.AI": "empty feed",
+      "Papers With Code": "empty feed"
+    },
+    "sections": 4,
+    "lead_story": "Agent Observability Powers Agent Evaluation",
+    "total_articles": 11,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-22T16:07:51.591183+00:00"
   }
 ]

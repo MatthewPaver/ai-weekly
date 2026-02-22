@@ -5,127 +5,95 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Feb 2026 01:31:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 16:07:51 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[AI Impact Summit 2026]]></title>
-      <link>https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-collection/</link>
-      <description><![CDATA[Not a fire drill, but AI Impact Summit is the kind of thing that compounds if you ignore it (via Google AI Blog).]]></description>
+      <title><![CDATA[Lawsuit: ChatGPT told student he was "meant for greatness"—then came psychosis]]></title>
+      <link>https://arstechnica.com/tech-policy/2026/02/before-psychosis-chatgpt-told-man-he-was-an-oracle-new-lawsuit-alleges/</link>
+      <description><![CDATA[AI Injury Attorneys target the chatbot design itself.]]></description>
       <category>Industry</category>
-      <pubDate>Thu, 19 Feb 2026 04:30:00 +0000</pubDate>
-      
+      <pubDate>Thu, 19 Feb 2026 22:44:25 +0000</pubDate>
+      <author>Cyrus Farivar</author>
     </item>
     <item>
-      <title><![CDATA[Train AI models with Unsloth and Hugging Face Jobs for FREE]]></title>
-      <link>https://huggingface.co/blog/unsloth-jobs</link>
-      <description><![CDATA[Model updates around FREE may change which options make sense for your workload (via Hugging Face Blog).]]></description>
+      <title><![CDATA[Agent Observability Powers Agent Evaluation]]></title>
+      <link>https://blog.langchain.com/agent-observability-powers-agent-evaluation/</link>
+      <description><![CDATA[You cant validate improvements without systematic evaluation.]]></description>
       <category>Tools</category>
-      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[America Spent $100 Billion Trying to Stop Chinese AI. It Didn't Work.]]></title>
-      <link>https://dev.to/mothasa/america-spent-100-billion-trying-to-stop-chinese-ai-it-didnt-work-5df7</link>
-      <description><![CDATA[Depending on your setup, America Spent might save you time or headaches down the line (via Dev.to AI).]]></description>
-      <category>Tutorials</category>
-      <pubDate>Sun, 22 Feb 2026 01:22:03 +0000</pubDate>
-      <author>Moth</author>
-    </item>
-    <item>
-      <title><![CDATA[A new way to express yourself: Gemini can now create music]]></title>
-      <link>https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/</link>
-      <description><![CDATA[If Gemini pans out, it could change how teams approach their current stack (via Google DeepMind).]]></description>
-      <category>Industry</category>
-      <pubDate>Wed, 18 Feb 2026 16:01:38 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[New in Agent Builder: all new agent chat, file uploads + tool registry]]></title>
-      <link>https://blog.langchain.com/new-in-agent-builder-all-new-agent-chat-file-uploads-tool-registry/</link>
-      <description><![CDATA[Business moves involving Agent Builder could ripple into pricing and vendor decisions for downstream teams (via LangChain Blog).]]></description>
-      <category>Tools</category>
-      <pubDate>Wed, 18 Feb 2026 15:55:08 +0000</pubDate>
+      <pubDate>Sun, 22 Feb 2026 03:51:44 +0000</pubDate>
       <author>LangChain Accounts</author>
     </item>
     <item>
-      <title><![CDATA[A Coding Guide to High-Quality Image Generation, Control, and Editing Using HuggingFace Diffusers]]></title>
-      <link>https://www.marktechpost.com/2026/02/20/a-coding-guide-to-high-quality-image-generation-control-and-editing-using-huggingface-diffusers/</link>
-      <description><![CDATA[The HuggingFace tutorial bridges common knowledge gaps — worth bookmarking for reference (via MarkTechPost).]]></description>
+      <title><![CDATA[Building a Global AI Design Studio: RAG, Vector Search, and the Physics of Localization]]></title>
+      <link>https://dev.to/thirupathi_pyati/building-a-global-ai-design-studio-rag-vector-search-and-the-physics-of-localization-2b79</link>
+      <description><![CDATA[If Building pans out, it could change how teams approach their current stack (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Sat, 21 Feb 2026 00:55:24 +0000</pubDate>
+      <pubDate>Sun, 22 Feb 2026 15:56:38 +0000</pubDate>
+      <author>Thirupathi Pyati</author>
+    </item>
+    <item>
+      <title><![CDATA[A new way to express yourself: Gemini can now create music]]></title>
+      <link>https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/</link>
+      <description><![CDATA[If Gemini pans out, it could change how teams approach their current stack (via Google AI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Wed, 18 Feb 2026 16:00:00 +0000</pubDate>
+      <author>Joël Yawili, Myriam Hamed Torres</author>
+    </item>
+    <item>
+      <title><![CDATA[A New Google AI Research Proposes Deep-Thinking Ratio to Improve LLM Accuracy While Cutting Total Inference Costs by Half]]></title>
+      <link>https://www.marktechpost.com/2026/02/21/a-new-google-ai-research-proposes-deep-thinking-ratio-to-improve-llm-accuracy-while-cutting-total-inference-costs-by-half/</link>
+      <description><![CDATA[The LLM story has enough signal to track — file it for your next planning round (via MarkTechPost).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Sun, 22 Feb 2026 04:53:19 +0000</pubDate>
       <author>Asif Razzaq</author>
     </item>
     <item>
-      <title><![CDATA[Google DeepMind wants to know if chatbots are just virtue signaling]]></title>
-      <link>https://www.technologyreview.com/2026/02/18/1133299/google-deepmind-wants-to-know-if-chatbots-are-just-virtue-signaling/</link>
-      <description><![CDATA[The Google DeepMind update is small but directional — good to know about before it matters (via MIT Technology Review AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Wed, 18 Feb 2026 16:00:22 +0000</pubDate>
-      <author>Will Douglas Heaven</author>
-    </item>
-    <item>
-      <title><![CDATA[Introducing OpenAI for India]]></title>
-      <link>https://openai.com/index/openai-for-india</link>
-      <description><![CDATA[A fresh release of OpenAI is now available for teams ready to evaluate alternatives (via OpenAI Blog).]]></description>
-      <category>Industry</category>
-      <pubDate>Wed, 18 Feb 2026 21:00:00 +0000</pubDate>
+      <title><![CDATA[Show HN: Universal ROS bridge for AI agents – control robots with LLMs]]></title>
+      <link>https://github.com/webthree549-bot/agent-ros-bridge</link>
+      <description><![CDATA[Depending on your setup, Universal ROS might save you time or headaches down the line (via Hacker News).]]></description>
+      <category>Tools</category>
+      <pubDate>Sat, 21 Feb 2026 01:04:09 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[Amazon blames human employees for an AI coding agent’s mistake]]></title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake</link>
-      <description><![CDATA[Not a fire drill, but Amazon is the kind of thing that compounds if you ignore it (via The Verge AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 20 Feb 2026 11:52:48 +0000</pubDate>
-      <author>Robert Hart</author>
+      <title><![CDATA[UK council faces data breach claim after mishandling trans complaints]]></title>
+      <link>https://go.theregister.com/feed/www.theregister.com/2026/02/22/cornwall_council_complaints_breach/</link>
+      <description><![CDATA[Security developments around UK council faces data breach claim may require patching or posture changes for affected teams (via The Register).]]></description>
+      <category>Infra</category>
+      <pubDate>Sun, 22 Feb 2026 09:34:09 +0000</pubDate>
+      <author>Connor Jones</author>
     </item>
     <item>
-      <title><![CDATA[AI Safety Meets the War Machine]]></title>
-      <link>https://www.wired.com/story/backchannel-anthropic-dispute-with-the-pentagon/</link>
-      <description><![CDATA[Not a fire drill, but AI Safety Meets is the kind of thing that compounds if you ignore it (via Wired AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 20 Feb 2026 17:00:00 +0000</pubDate>
-      <author>Steven Levy</author>
+      <title><![CDATA['God-Like' Attack Machines: AI Agents Ignore Security Policies]]></title>
+      <link>https://www.darkreading.com/application-security/ai-agents-ignore-security-policies</link>
+      <description><![CDATA[Security developments around Like' Attack Machines may require patching or posture changes for affected teams (via Dark Reading).]]></description>
+      <category>Security</category>
+      <pubDate>Fri, 20 Feb 2026 18:31:58 +0000</pubDate>
+      <author>Robert Lemos</author>
     </item>
     <item>
-      <title><![CDATA[Could AI Data Centers Be Moved to Outer Space?]]></title>
-      <link>https://www.wired.com/story/could-we-put-ai-data-centers-in-space/</link>
-      <description><![CDATA[Not a fire drill, but Outer Space is the kind of thing that compounds if you ignore it (via Wired AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 20 Feb 2026 12:00:00 +0000</pubDate>
-      <author>Rhett Allain</author>
+      <title><![CDATA[Lessons From AI Hacking: Every Model, Every Layer Is Risky]]></title>
+      <link>https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky</link>
+      <description><![CDATA[The Lessons From AI Hacking model release is worth benchmarking against your current baseline (via Dark Reading).]]></description>
+      <category>Security</category>
+      <pubDate>Fri, 20 Feb 2026 18:02:02 +0000</pubDate>
+      <author>Robert Lemos</author>
     </item>
     <item>
-      <title><![CDATA[The robots who predict the future]]></title>
-      <link>https://www.technologyreview.com/2026/02/18/1132579/robots-predict-future-book-review/</link>
-      <description><![CDATA[The The robots who predict the future story has enough signal to track — file it for your next planning round (via MIT Technology Review AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Wed, 18 Feb 2026 11:00:00 +0000</pubDate>
-      <author>Bryan Gardiner</author>
+      <title><![CDATA[Databricks Introduces Lakebase, a PostgreSQL Database for AI Workloads]]></title>
+      <link>https://www.infoq.com/news/2026/02/databricks-lakebase-postgresql/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
+      <description><![CDATA[Strategic shift around Lakebase, a PostgreSQL Database may affect vendor costs and compliance posture (via InfoQ).]]></description>
+      <category>Infra</category>
+      <pubDate>Sun, 22 Feb 2026 10:25:00 +0000</pubDate>
+      <author>Renato Losio</author>
     </item>
     <item>
-      <title><![CDATA[Our First Proof submissions]]></title>
-      <link>https://openai.com/index/first-proof-submissions</link>
-      <description><![CDATA[If Our First Proof pans out, it could change how teams approach their current stack (via OpenAI Blog).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 20 Feb 2026 14:30:00 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[Accelerating discovery in India through AI-powered science and education]]></title>
-      <link>https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/</link>
-      <description><![CDATA[The Accelerating story has enough signal to track — file it for your next planning round (via Google DeepMind).]]></description>
-      <category>Industry</category>
-      <pubDate>Tue, 17 Feb 2026 13:42:20 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[Can we leverage AI/LLMs for self-learning?]]></title>
-      <link>https://techne98.com/blog/can-we-use-ai-for-self-learning/</link>
-      <description><![CDATA[Depending on your setup, LLMs might save you time or headaches down the line (via Hacker News (AI)).]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 18 Feb 2026 10:33:41 +0000</pubDate>
-      
+      <title><![CDATA[OpenAI Introduces Harness Engineering: Codex Agents Power Large‑Scale Software Development]]></title>
+      <link>https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
+      <description><![CDATA[Infrastructure changes around Harness Engineering affect cost and reliability calculus for production teams (via InfoQ).]]></description>
+      <category>Infra</category>
+      <pubDate>Sat, 21 Feb 2026 15:14:00 +0000</pubDate>
+      <author>Leela Kumili</author>
     </item>
   </channel>
 </rss>

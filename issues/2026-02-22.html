@@ -4,22 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#FAFAF9" id="meta-theme-color" />
-  <meta name="description" content="Inference Weekly · 22 Feb 2026: 8 AI stories worth reading this week." />
+  <meta name="description" content="Inference Weekly · 22 Feb 2026: 11 AI stories worth reading this week." />
   <title>Inference Weekly · 22 Feb 2026</title>
 
   <!-- Open Graph -->
   <meta property="og:title" content="Inference Weekly · 22 Feb 2026" />
-  <meta property="og:description" content="Big news this week: New in Agent Builder: all new agent chat, file uploads + tool registry, and what it means for your roadmap." />
+  <meta property="og:description" content="This week: Lawsuit: ChatGPT told student he was &#34;meant for greatness&#34;—then came psychosis." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/latest.html" />
-  <meta property="og:image" content="https://blog.langchain.com/content/images/size/w1200/2026/02/LangSmith-Agent-Builder-1.1-4.png" />
+  <meta property="og:image" content="https://blog.langchain.com/content/images/size/w1200/2026/02/pic.png" />
   <meta property="og:site_name" content="Inference Weekly" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Inference Weekly · 22 Feb 2026" />
-  <meta name="twitter:description" content="Big news this week: New in Agent Builder: all new agent chat, file uploads + tool registry, and what it means for your roadmap." />
-  <meta name="twitter:image" content="https://blog.langchain.com/content/images/size/w1200/2026/02/LangSmith-Agent-Builder-1.1-4.png" />
+  <meta name="twitter:description" content="This week: Lawsuit: ChatGPT told student he was &#34;meant for greatness&#34;—then came psychosis." />
+  <meta name="twitter:image" content="https://blog.langchain.com/content/images/size/w1200/2026/02/pic.png" />
 
   <!-- Canonical + RSS -->
   <link rel="canonical" href="https://matthewpaver.github.io/ai-weekly/latest.html" />
@@ -433,23 +433,24 @@
     .badge {
       display: inline-flex;
       align-items: center;
-      font-size: 0.62rem;
+      font-size: 0.7rem;
       font-weight: 600;
       border-radius: 999px;
-      padding: 2px 6px;
+      padding: 3px 8px;
       border: 1px solid var(--line);
+      line-height: 1.3;
     }
     .badge-source {
-      font-size: 0.6rem;
-      padding: 2px 5px;
-      line-height: 1.25;
+      font-size: 0.7rem;
+      padding: 3px 7px;
+      line-height: 1.3;
     }
     .source-icon {
       vertical-align: middle;
-      margin-right: 2px;
+      margin-right: 3px;
       border-radius: 2px;
-      width: 10px;
-      height: 10px;
+      width: 14px;
+      height: 14px;
       object-fit: contain;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: crisp-edges;
@@ -668,8 +669,8 @@
     .story-body { padding: 20px; }
 
     .badge-section {
-      font-size: 0.6rem;
-      padding: 2px 5px;
+      font-size: 0.65rem;
+      padding: 2px 6px;
       background: #D7E6E4;
       background: color-mix(in srgb, var(--brand), transparent 85%);
       color: var(--brand-2);
@@ -1172,8 +1173,8 @@
       <div class="hero-stats">
         <span class="chip">Issue #3</span>
         <span class="chip">22 Feb 2026</span>
-        <span class="chip">8 stories</span>
-        <span class="chip">~3 min read</span>
+        <span class="chip">11 stories</span>
+        <span class="chip">~4 min read</span>
       </div>
       <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; color: rgba(255,255,255,0.7);">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
     </header>
@@ -1181,17 +1182,17 @@
     <div class="content">
       <main id="main-content">
         <article class="lead card">
-          <img class="lead-media" src="https://blog.langchain.com/content/images/size/w1200/2026/02/LangSmith-Agent-Builder-1.1-4.png" alt="New in Agent Builder: all new agent chat, file uploads + tool registry" decoding="async" fetchpriority="high" onerror="this.style.display='none'" />
+          <img class="lead-media" src="https://blog.langchain.com/content/images/size/w1200/2026/02/pic.png" alt="Agent Observability Powers Agent Evaluation" decoding="async" fetchpriority="high" onerror="this.style.display='none'" />
           <div class="lead-body">
             <p class="section-head">Top Story</p>
             <div class="meta-row">
               <span class="badge badge-pick">Editor's Pick</span>
-              <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">LangChain Blog · 18 Feb</span>
+              <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">LangChain Blog · 22 Feb</span>
 <span class="badge badge-difficulty-beginner">Beginner</span>            </div>
-            <h2><a href="https://blog.langchain.com/new-in-agent-builder-all-new-agent-chat-file-uploads-tool-registry/" target="_blank" rel="noopener">New in Agent Builder: all new agent chat, file uploads + tool registry</a></h2>
-            <p><strong style="color: var(--text);">Agent Builder is introducing ad-supported revenue, which could shift the user experience.</strong><br>Policy or pricing changes around Agent Builder could ripple into your cost model and compliance posture.</p>
-            <p class="action">Action: Allocate one afternoon to test Agent Builder against your top use case.</p>
-<p class="take">Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.</p>            <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+            <h2><a href="https://blog.langchain.com/agent-observability-powers-agent-evaluation/" target="_blank" rel="noopener">Agent Observability Powers Agent Evaluation</a></h2>
+            <p><strong style="color: var(--text);">You cant validate improvements without systematic evaluation.</strong><br>Adopting Agent Observability Powers Agent Evaluation could speed delivery if integration friction stays low.</p>
+            <p class="action">Action: Spin up Agent Observability Powers Agent Evaluation in a 2-hour proof of concept, compare output against your current tool.</p>
+<p class="take">Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.</p>            <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
           </div>
         </article>
 
@@ -1203,141 +1204,182 @@
 
         <div class="sections">
           <section class="section" data-sal="slide-up" id="ship-it-playbooks" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">1</span> 📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(3)</span></h2>
+            <h2 class="section-title"><span class="section-num">1</span> 📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(2)</span></h2>
 <p class="section-deck">Practical implementation guides you can adapt quickly.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhuggtjtuitwkkatgox4q.png" alt="America Spent $100 Billion Trying to Stop Chinese AI. It Didn&#39;t Work." decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-50.png" alt="A New Google AI Research Proposes Deep-Thinking Ratio to Improve LLM Accuracy..." decoding="async" />                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">Dev.to AI · 22 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">MarkTechPost · 22 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
-                  <h3><a href="https://dev.to/mothasa/america-spent-100-billion-trying-to-stop-chinese-ai-it-didnt-work-5df7" target="_blank" rel="noopener">America Spent $100 Billion Trying to Stop Chinese AI. It Didn&#39;t Work.</a></h3>
-                  <p><strong style="color: var(--text);">New tutorial content on America Spent walks through a practical implementation.</strong><br>If America Spent keeps this trajectory, it&#39;ll matter for your next build-vs-buy decision.</p>
-                  <p class="action">Action: Work through the America Spent tutorial and modify one step for your own use case.</p>
+                  <h3><a href="https://www.marktechpost.com/2026/02/21/a-new-google-ai-research-proposes-deep-thinking-ratio-to-improve-llm-accuracy-while-cutting-total-inference-costs-by-half/" target="_blank" rel="noopener">A New Google AI Research Proposes Deep-Thinking Ratio to Improve LLM Accuracy While Cutting Total Inference Costs by Half</a></h3>
+                  <p><strong style="color: var(--text);">Researchers published new findings on LLM with potential applied implications.</strong><br>LLM is one of those things that sounds minor until it changes your shortlist.</p>
+                  <p class="action">Action: Work through the LLM tutorial and modify one step for your own use case.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://dev.to/mothasa/america-spent-100-billion-trying-to-stop-chinese-ai-it-didnt-work-5df7" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <a href="https://www.marktechpost.com/2026/02/21/a-new-google-ai-research-proposes-deep-thinking-ratio-to-improve-llm-accuracy-while-cutting-total-inference-costs-by-half/" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
                   </span>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://dev.to/mothasa/america-spent-100-billion-trying-to-stop-chinese-ai-it-didnt-work-5df7" data-title="America Spent $100 Billion Trying to Stop Chinese AI. It Didn&#39;t Work." aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <button type="button" class="like-btn" data-url="https://www.marktechpost.com/2026/02/21/a-new-google-ai-research-proposes-deep-thinking-ratio-to-improve-llm-accuracy-while-cutting-total-inference-costs-by-half/" data-title="A New Google AI Research Proposes Deep-Thinking Ratio to Improve LLM Accuracy While Cutting Total Inference Costs by Half" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img class="lazy" data-src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-48.png" alt="A Coding Guide to High-Quality Image Generation, Control, and Editing Using H..." decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fra1tg1fp2l5ujo0kybky.png" alt="Building a Global AI Design Studio: RAG, Vector Search, and the Physics of Lo..." decoding="async" />                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">MarkTechPost · 21 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Dev.to AI · 22 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
-                  <h3><a href="https://www.marktechpost.com/2026/02/20/a-coding-guide-to-high-quality-image-generation-control-and-editing-using-huggingface-diffusers/" target="_blank" rel="noopener">A Coding Guide to High-Quality Image Generation, Control, and Editing Using HuggingFace Diffusers</a></h3>
-                  <p><strong style="color: var(--text);">A step-by-step guide on HuggingFace provides a template for your own projects.</strong><br>Worth bookmarking HuggingFace, the ripple effects tend to show up a quarter later.</p>
-                  <p class="action">Action: Work through the HuggingFace tutorial and modify one step for your own use case.</p>
+                  <h3><a href="https://dev.to/thirupathi_pyati/building-a-global-ai-design-studio-rag-vector-search-and-the-physics-of-localization-2b79" target="_blank" rel="noopener">Building a Global AI Design Studio: RAG, Vector Search, and the Physics of Localization</a></h3>
+                  <p><strong style="color: var(--text);">A step-by-step guide on Building provides a template for your own projects.</strong><br>The Building news won&#39;t break anything today, but it sets up choices you&#39;ll face soon.</p>
+                  <p class="action">Action: Work through the Building tutorial and modify one step for your own use case.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://www.marktechpost.com/2026/02/20/a-coding-guide-to-high-quality-image-generation-control-and-editing-using-huggingface-diffusers/" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <a href="https://dev.to/thirupathi_pyati/building-a-global-ai-design-studio-rag-vector-search-and-the-physics-of-localization-2b79" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
                   </span>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.marktechpost.com/2026/02/20/a-coding-guide-to-high-quality-image-generation-control-and-editing-using-huggingface-diffusers/" data-title="A Coding Guide to High-Quality Image Generation, Control, and Editing Using HuggingFace Diffusers" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <button type="button" class="like-btn" data-url="https://dev.to/thirupathi_pyati/building-a-global-ai-design-studio-rag-vector-search-and-the-physics-of-localization-2b79" data-title="Building a Global AI Design Studio: RAG, Vector Search, and the Physics of Localization" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section" data-sal="slide-up" id="infra" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">2</span> ☁️ Infra <span style="font-weight:500;opacity:.7">(3)</span></h2>
+<p class="section-deck">Cloud, scale, and infrastructure that matters to AI builders.</p>            <div class="stories">
+              <article class="story">
+                <div class="story-body">
+                  <div class="meta-row">
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/infoq.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">InfoQ · 22 Feb</span>
+                    <span class="badge badge-difficulty-beginner">Beginner</span>
+                  </div>
+                  <h3><a href="https://www.infoq.com/news/2026/02/databricks-lakebase-postgresql/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener">Databricks Introduces Lakebase, a PostgreSQL Database for AI Workloads</a></h3>
+                  <p><strong style="color: var(--text);">Monetization changes around Lakebase, a PostgreSQL Database may affect pricing, UX, or data-handling assumptions.</strong><br>Budget, compliance, and vendor assumptions tied to Lakebase, a PostgreSQL Database may need a fresh review.</p>
+                  <p class="action">Action: Review Lakebase, a PostgreSQL Database and decide on one concrete follow-up action by end of week.</p>
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://www.infoq.com/news/2026/02/databricks-lakebase-postgresql/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://www.infoq.com/news/2026/02/databricks-lakebase-postgresql/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" data-title="Databricks Introduces Lakebase, a PostgreSQL Database for AI Workloads" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img class="lazy" data-src="https://techne98.com/og.png" alt="Can we leverage AI/LLMs for self-learning?" decoding="async" />                <div class="story-body">
+                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/hn.algolia.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">Hacker News (AI) · 18 Feb</span>
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/infoq.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">InfoQ · 21 Feb</span>
+                    <span class="badge badge-difficulty-intermediate">Intermediate</span>
                   </div>
-                  <h3><a href="https://techne98.com/blog/can-we-use-ai-for-self-learning/" target="_blank" rel="noopener">Can we leverage AI/LLMs for self-learning?</a></h3>
-                  <p><strong style="color: var(--text);">A hands-on guide to LLMs offers patterns you can adapt to your own stack.</strong><br>LLMs is one of those things that sounds minor until it changes your shortlist.</p>
-                  <p class="action">Action: Follow the LLMs guide, but adapt one step to fit your actual production constraints.</p>
+                  <h3><a href="https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener">OpenAI Introduces Harness Engineering: Codex Agents Power Large‑Scale Software Development</a></h3>
+                  <p><strong style="color: var(--text);">Not urgent, but Harness Engineering is the kind of thing that shows up again in a month.</strong><br>Worth bookmarking Harness Engineering, the ripple effects tend to show up a quarter later.</p>
+                  <p class="action">Action: Review Harness Engineering and decide on one concrete follow-up action by end of week.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://techne98.com/blog/can-we-use-ai-for-self-learning/" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <a href="https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
                   </span>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://techne98.com/blog/can-we-use-ai-for-self-learning/" data-title="Can we leverage AI/LLMs for self-learning?" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <button type="button" class="like-btn" data-url="https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" data-title="OpenAI Introduces Harness Engineering: Codex Agents Power Large‑Scale Software Development" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                  </p>
+                </div>
+              </article>
+              <article class="story">
+<img class="lazy" data-src="https://regmedia.co.uk/2022/04/12/shutterstock_cornwall.jpg" alt="UK council faces data breach claim after mishandling trans complaints" decoding="async" />                <div class="story-body">
+                  <div class="meta-row">
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/theregister.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">The Register · 22 Feb</span>
+                    <span class="badge badge-difficulty-beginner">Beginner</span>
+                  </div>
+                  <h3><a href="https://go.theregister.com/feed/www.theregister.com/2026/02/22/cornwall_council_complaints_breach/" target="_blank" rel="noopener">UK council faces data breach claim after mishandling trans complaints</a></h3>
+                  <p><strong style="color: var(--text);">The UK council faces data breach claim story is worth a skim, small signals like this tend to add up.</strong><br>Worth bookmarking UK council faces data breach claim, the ripple effects tend to show up a quarter later.</p>
+                  <p class="action">Action: Review UK council faces data breach claim and decide on one concrete follow-up action by end of week.</p>
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://go.theregister.com/feed/www.theregister.com/2026/02/22/cornwall_council_complaints_breach/" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://go.theregister.com/feed/www.theregister.com/2026/02/22/cornwall_council_complaints_breach/" data-title="UK council faces data breach claim after mishandling trans complaints" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section" data-sal="slide-up" id="security" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">3</span> 🔒 Security <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">Security and compliance signals that affect how you build and run AI systems.</p>            <div class="stories">
+              <article class="story">
+                <div class="story-body">
+                  <div class="meta-row">
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/darkreading.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Dark Reading · 20 Feb</span>
+                    <span class="badge badge-difficulty-beginner">Beginner</span>
+                  </div>
+                  <h3><a href="https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky" target="_blank" rel="noopener">Lessons From AI Hacking: Every Model, Every Layer Is Risky</a></h3>
+                  <p><strong style="color: var(--text);">Quick read on Lessons From AI Hacking, may or may not matter depending on your stack.</strong><br>Worth bookmarking Lessons From AI Hacking, the ripple effects tend to show up a quarter later.</p>
+                  <p class="action">Action: Spend 15 minutes on Lessons From AI Hacking, decide if it warrants a deeper look or can be shelved.</p>
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky" data-title="Lessons From AI Hacking: Every Model, Every Layer Is Risky" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                  </p>
+                </div>
+              </article>
+              <article class="story">
+                <div class="story-body">
+                  <div class="meta-row">
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/darkreading.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Dark Reading · 20 Feb</span>
+                    <span class="badge badge-difficulty-beginner">Beginner</span>
+                  </div>
+                  <h3><a href="https://www.darkreading.com/application-security/ai-agents-ignore-security-policies" target="_blank" rel="noopener">&#39;God-Like&#39; Attack Machines: AI Agents Ignore Security Policies</a></h3>
+                  <p><strong style="color: var(--text);">Not urgent, but Like&#39; Attack Machines is the kind of thing that shows up again in a month.</strong><br>Worth bookmarking Like&#39; Attack Machines, the ripple effects tend to show up a quarter later.</p>
+                  <p class="action">Action: Review Like&#39; Attack Machines and decide on one concrete follow-up action by end of week.</p>
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://www.darkreading.com/application-security/ai-agents-ignore-security-policies" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://www.darkreading.com/application-security/ai-agents-ignore-security-policies" data-title="&#39;God-Like&#39; Attack Machines: AI Agents Ignore Security Policies" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
             </div>
           </section>
           <section class="section" data-sal="slide-up" id="industry-radar" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">2</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(3)</span></h2>
+            <h2 class="section-title"><span class="section-num">4</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
 <p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://images.ctfassets.net/kftzwdyauwt9/G2A5VZHbNARmo6atQ2xdG/7adb24136736bce440fc6548952b4ee3/OpenAI_For_India.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing OpenAI for India" decoding="async" />                <div class="story-body">
+                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">OpenAI Blog · 18 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arstechnica.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Ars Technica AI · 19 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
-                  <h3><a href="https://openai.com/index/openai-for-india" target="_blank" rel="noopener">Introducing OpenAI for India</a></h3>
-                  <p><strong style="color: var(--text);">OpenAI launched with features aimed at the current gap in existing toolchains.</strong><br>If you&#39;re shopping for alternatives, OpenAI belongs on the shortlist.</p>
-                  <p class="action">Action: Add OpenAI as a discussion item in your next strategy or planning meeting.</p>
+                  <h3><a href="https://arstechnica.com/tech-policy/2026/02/before-psychosis-chatgpt-told-man-he-was-an-oracle-new-lawsuit-alleges/" target="_blank" rel="noopener">Lawsuit: ChatGPT told student he was &#34;meant for greatness&#34;—then came psychosis</a></h3>
+                  <p><strong style="color: var(--text);">AI Injury Attorneys target the chatbot design itself.</strong><br>Legal or governance pressure on Lawsuit can quickly become vendor risk for dependent teams.</p>
+                  <p class="action">Action: Flag Lawsuit for your leadership team, it may shift near-term priorities.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://openai.com/index/openai-for-india" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <a href="https://arstechnica.com/tech-policy/2026/02/before-psychosis-chatgpt-told-man-he-was-an-oracle-new-lawsuit-alleges/" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
                   </span>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://openai.com/index/openai-for-india" data-title="Introducing OpenAI for India" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <button type="button" class="like-btn" data-url="https://arstechnica.com/tech-policy/2026/02/before-psychosis-chatgpt-told-man-he-was-an-oracle-new-lawsuit-alleges/" data-title="Lawsuit: ChatGPT told student he was &#34;meant for greatness&#34;—then came psychosis" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img class="lazy" data-src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB371_AMAZON_WEB_SERVICES_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="Amazon blames human employees for an AI coding agent’s mistake" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/0217_KeywordHeaderFinalc.width-1300.png" alt="A new way to express yourself: Gemini can now create music" decoding="async" />                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">The Verge AI · 20 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/blog.google.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Google AI Blog · 18 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
-                  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake" target="_blank" rel="noopener">Amazon blames human employees for an AI coding agent’s mistake</a></h3>
-                  <p><strong style="color: var(--text);">Industry activity around Amazon may shift competitive dynamics this quarter.</strong><br>Industry changes involving Amazon tend to filter into budget and vendor conversations.</p>
-                  <p class="action">Action: Monitor Amazon for follow-on product or pricing changes over the next month.</p>
+                  <h3><a href="https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/" target="_blank" rel="noopener">A new way to express yourself: Gemini can now create music</a></h3>
+                  <p><strong style="color: var(--text);">A move around Gemini is worth flagging for your next planning sync.</strong><br>Moves around Gemini may reshape vendor dynamics for teams downstream.</p>
+                  <p class="action">Action: Add Gemini as a discussion item in your next strategy or planning meeting.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <a href="https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
                   </span>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake" data-title="Amazon blames human employees for an AI coding agent’s mistake" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                  </p>
-                </div>
-              </article>
-              <article class="story">
-<img class="lazy" data-src="https://media.wired.com/photos/6994edaec3ca16022bd2b3d5/191:100/w_1280,c_limit/Backchannel-Anthropic-vs-Pentagon-Business--2221448096.jpg" alt="AI Safety Meets the War Machine" decoding="async" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/wired.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">Wired AI · 20 Feb</span>
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-                  </div>
-                  <h3><a href="https://www.wired.com/story/backchannel-anthropic-dispute-with-the-pentagon/" target="_blank" rel="noopener">AI Safety Meets the War Machine</a></h3>
-                  <p><strong style="color: var(--text);">The AI Safety Meets news could ripple into vendor strategy and pricing conversations.</strong><br>The AI Safety Meets shift affects competitive positioning, worth flagging at your next planning sync.</p>
-                  <p class="action">Action: Flag AI Safety Meets for your leadership team, it may shift near-term priorities.</p>
-                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://www.wired.com/story/backchannel-anthropic-dispute-with-the-pentagon/" target="_blank" rel="noopener">Read article &#x2192;</a>
-                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
-                  </span>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.wired.com/story/backchannel-anthropic-dispute-with-the-pentagon/" data-title="AI Safety Meets the War Machine" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
-          <section class="section" data-sal="slide-up" id="builders-bench" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">3</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(1)</span></h2>
-<p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
-              <article class="story">
-<img class="lazy" data-src="https://huggingface.co/blog/assets/unsloth-jobs/thumbnail.png" alt="Train AI models with Unsloth and Hugging Face Jobs for FREE" decoding="async" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">Hugging Face Blog · 20 Feb</span>
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-                  </div>
-                  <h3><a href="https://huggingface.co/blog/unsloth-jobs" target="_blank" rel="noopener">Train AI models with Unsloth and Hugging Face Jobs for FREE</a></h3>
-                  <p><strong style="color: var(--text);">FREE brings fresh capabilities for teams looking to improve their pipeline.</strong><br>The FREE release addresses gaps that many builder teams have flagged.</p>
-                  <p class="action">Action: Try FREE on a non-critical task this week and log the results.</p>
-                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://huggingface.co/blog/unsloth-jobs" target="_blank" rel="noopener">Read article &#x2192;</a>
-                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
-                  </span>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://huggingface.co/blog/unsloth-jobs" data-title="Train AI models with Unsloth and Hugging Face Jobs for FREE" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <button type="button" class="like-btn" data-url="https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/" data-title="A new way to express yourself: Gemini can now create music" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
@@ -1355,28 +1397,42 @@
               <span class="menu-text">
                 <span class="menu-label">Ship-It Playbooks</span>
               </span>
+              <span class="menu-count">2</span>
+            </a>
+            <a class="menu-item" href="#infra">
+              <span class="menu-icon">☁️</span>
+              <span class="menu-text">
+                <span class="menu-label">Infra</span>
+              </span>
               <span class="menu-count">3</span>
+            </a>
+            <a class="menu-item" href="#security">
+              <span class="menu-icon">🔒</span>
+              <span class="menu-text">
+                <span class="menu-label">Security</span>
+              </span>
+              <span class="menu-count">2</span>
             </a>
             <a class="menu-item" href="#industry-radar">
               <span class="menu-icon">🌐</span>
               <span class="menu-text">
                 <span class="menu-label">Industry Radar</span>
               </span>
-              <span class="menu-count">3</span>
-            </a>
-            <a class="menu-item" href="#builders-bench">
-              <span class="menu-icon">🛠️</span>
-              <span class="menu-text">
-                <span class="menu-label">Builder&#39;s Bench</span>
-              </span>
-              <span class="menu-count">1</span>
+              <span class="menu-count">2</span>
             </a>
           </div>
         </nav>
 
         <section class="card also-this-week" style="padding: 14px;">
           <p class="section-head" style="margin: 0 0 10px; font-size: 0.75rem;">Also this week</p>
-          <p style="margin: 0 0 8px; font-size: 0.85rem; color: var(--muted);"><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Machine Learning Specialization</a> · Coursera / Stanford · Paid · 2 months</p>
+          <ul style="margin: 0 0 12px; padding-left: 1.2em; font-size: 0.88rem; color: var(--text);">
+            <li style="margin-bottom: 4px;"><a href="https://github.com/webthree549-bot/agent-ros-bridge" target="_blank" rel="noopener" style="color: var(--link);">Show HN: Universal ROS bridge for AI agents – control robots with LLMs</a></li>
+          </ul>
+          <div style="margin: 0 0 12px;">
+            <p class="section-head" style="margin: 0 0 4px; font-size: 0.7rem;">📚 Learn This Week</p>
+            <p style="margin: 0 0 4px; font-size: 0.85rem; color: var(--muted);"><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Machine Learning Specialization</a> · Coursera / Stanford · Paid · 2 months</p>
+            <span class="badge badge-difficulty-beginner">Beginner</span>
+<p style="margin: 4px 0 0; font-size: 0.78rem; color: var(--muted); line-height: 1.4;">Andrew Ng&#39;s refreshed ML curriculum. The gold standard intro. Audit free, cert paid.</p>          </div>
           <div style="margin: 12px 0 0; padding: 10px; background: var(--surface); border-radius: 8px; border-left: 3px solid var(--brand);">
             <p style="margin: 0 0 4px; font-size: 0.7rem; font-weight: 700; color: var(--brand); letter-spacing: 0.8px; text-transform: uppercase;">Prompt of the Week · Content</p>
             <p style="margin: 0 0 6px; font-size: 0.82rem; color: var(--text); font-style: italic; line-height: 1.4;">"Generate a week&#39;s worth of social media posts about [topic] in the voice of a technical thought leader — concise, opinionated, no fluff."</p>
@@ -1728,7 +1784,7 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     "headline": "Inference Weekly · 22 Feb 2026",
-    "description": "Big news this week: New in Agent Builder: all new agent chat, file uploads + tool registry, and what it means for your roadmap.",
+    "description": "This week: Lawsuit: ChatGPT told student he was &#34;meant for greatness&#34;—then came psychosis.",
     "datePublished": "2026-02-22",
     "publisher": {
       "@type": "Organization",
