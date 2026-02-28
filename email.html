@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
-  <title>Inference · 22 Feb 2026</title>
+  <title>Inference · 25 Feb 2026</title>
+  <link rel="icon" href="https://matthewpaver.github.io/ai-weekly/assets/favicon.ico" sizes="any">
   <!--[if !mso]><!-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!--<![endif]-->
@@ -33,8 +34,9 @@
     /* Typography — strong contrast for readability (WCAG AA). Aligned with web --text/#0F172A --muted/#1F2937. */
     body, td, p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     .text-body { color: #1F2937 !important; }
-    .text-dim { color: #374151 !important; }
-    .text-faint { color: #374151 !important; }
+    /* Source/meta text: #5B6370 for ~5.5:1 contrast (WCAG; REVIEW_EMAIL_AND_WEB) */
+    .text-dim { color: #5B6370 !important; }
+    .text-faint { color: #5B6370 !important; }
 
     /* Links */
     a { color: #0B5345; text-decoration: none; }
@@ -98,7 +100,7 @@
 
 <!-- Preheader -->
 <div style="display: none; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #FAFAF9;">
-Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot; Signal in the noise.&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+OpenAI announces Frontier Alliance Partners · 9 stories &middot; ~4 min &middot; Signal in the noise.&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
 </div>
 
 <!-- Outer wrapper -->
@@ -124,14 +126,14 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         <td style="vertical-align: middle;">
           <span style="font-size: 18px; font-weight: 800; color: #FFFFFF; letter-spacing: 4px; text-transform: uppercase; line-height: 1;">INFERENCE</span>
           <br>
-          <span style="font-size: 11px; color: rgba(255,255,255,0.72); font-weight: 400;">Signal in the noise.</span>
+          <span style="font-size: 11px; color: rgba(255,255,255,0.72); font-weight: 400;">Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes.</span>
         </td>
       </tr>
       </table>
     </td>
     <td class="hero-meta" style="vertical-align: middle; text-align: right;">
       <span style="font-size: 11px; color: rgba(255,255,255,0.85);">
-#3 &middot; 22 Feb 2026 &middot; 8 stories &middot; ~3 min
+#3 &middot; 25 Feb 2026 &middot; 9 stories &middot; ~4 min
       </span>
     </td>
   </tr>
@@ -144,63 +146,89 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrapper" style="max-width: 600px; margin: 0 auto;">
 
 <!-- Personalised greeting (Buttondown: subscriber.metadata.first_name with default so no dashboard config needed) -->
-<tr><td class="mobile-pad" style="padding: 18px 20px 6px;"><p class="text-dark" style="margin: 0; font-size: 15px; color: #0F172A;">Hi {{ subscriber.metadata.first_name|default:"there" }},</p></td></tr>
+<tr><td class="mobile-pad" style="padding: 18px 20px 6px;"><p class="text-dark" style="margin: 0; font-size: 15px; color: #0F172A;">Hi {{ subscriber.metadata.first_name|default:"there" }},</p><p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #5B6370; font-weight: 500;">This week: vendor moves and leadership signals.</p></td></tr>
 
-<!-- In this issue: vertical TOC, one row per category (scannable like Smashing / Morning Brew) -->
+<!-- This week at a glance: vertical TOC, one row per category (scannable like Smashing / Morning Brew) -->
 <tr><td class="mobile-pad" style="padding: 18px 20px 14px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #F0FDFA; border-radius: 14px; border: 1px solid #94A3B8; border-left: 4px solid #0F4C5C; box-shadow: 0 1px 4px rgba(0,0,0,0.08);">
   <tr><td style="padding: 14px 18px;">
-    <p class="sec-label" style="margin: 0 0 6px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.2px; text-transform: uppercase;">In this issue</p>
-    <p class="text-dim" style="margin: 0 0 12px; font-size: 12px; color: #374151; line-height: 1.45;">Quick overview — tap to jump.</p>
-    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-22.html#open-source-watch" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #CBD5E1;">
+    <p class="sec-label" style="margin: 0 0 6px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.2px; text-transform: uppercase;">This week at a glance</p>
+    <p class="text-dim" style="margin: 0 0 12px; font-size: 12px; color: #5B6370; line-height: 1.45;">Quick overview — tap to jump.</p>
+    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-25.html#open-source-picks" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #CBD5E1;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
       <tr>
         <td style="width: 26px; vertical-align: top; padding-top: 2px;">
           <span style="display: inline-block; width: 22px; height: 22px; border-radius: 11px; background-color: #0F4C5C; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; color: #FFFFFF;">1</span>
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
-          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">⭐ Open Source Watch</span>
-<br><span class="text-dim" style="font-size: 12px; color: #374151; line-height: 1.4;">Repos with momentum that might deserve a deeper look.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">Repos with momentum.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">2</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">⭐ Open-source picks</span>
+<br><span class="text-dim" style="font-size: 12px; color: #5B6370; line-height: 1.4;">Open-source projects worth a closer look.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">What&#39;s gaining traction.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dim" style="font-size: 11px; color: #5B6370;">~1 min</span> <span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">1</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
-    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-22.html#lab-notes" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #CBD5E1;">
+    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-25.html#ship-it-playbooks" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #CBD5E1;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
       <tr>
         <td style="width: 26px; vertical-align: top; padding-top: 2px;">
           <span style="display: inline-block; width: 22px; height: 22px; border-radius: 11px; background-color: #0F4C5C; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; color: #FFFFFF;">2</span>
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
-          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">🔬 Lab Notes</span>
-<br><span class="text-dim" style="font-size: 12px; color: #374151; line-height: 1.4;">Research and model updates with downstream product impact.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">1</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">📚 Ship-It Playbooks</span>
+<br><span class="text-dim" style="font-size: 12px; color: #5B6370; line-height: 1.4;">Practical implementation guides you can adapt quickly.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">One thing to try this week.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dim" style="font-size: 11px; color: #5B6370;">~1 min</span> <span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">2</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
-    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-22.html#industry-radar" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #CBD5E1;">
+    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-25.html#research-worth-your-time" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #CBD5E1;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
       <tr>
         <td style="width: 26px; vertical-align: top; padding-top: 2px;">
           <span style="display: inline-block; width: 22px; height: 22px; border-radius: 11px; background-color: #0F4C5C; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; color: #FFFFFF;">3</span>
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
-          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">🌐 Industry Radar</span>
-<br><span class="text-dim" style="font-size: 12px; color: #374151; line-height: 1.4;">The moves that change product plans, budgets, and positioning.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">3</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">🔬 Research worth your time</span>
+<br><span class="text-dim" style="font-size: 12px; color: #5B6370; line-height: 1.4;">Research updates with practical product impact.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">Read this if you build.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dim" style="font-size: 11px; color: #5B6370;">~1 min</span> <span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">1</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
-    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-22.html#builders-bench" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; ">
+    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-25.html#infra" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #CBD5E1;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
       <tr>
         <td style="width: 26px; vertical-align: top; padding-top: 2px;">
           <span style="display: inline-block; width: 22px; height: 22px; border-radius: 11px; background-color: #0F4C5C; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; color: #FFFFFF;">4</span>
         </td>
         <td style="vertical-align: top; padding-left: 4px;">
-          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">🛠️ Builder&#39;s Bench</span>
-<br><span class="text-dim" style="font-size: 12px; color: #374151; line-height: 1.4;">New tooling worth evaluating in an actual workflow this week.</span>        </td>
-        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">1</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">☁️ Infra</span>
+<br><span class="text-dim" style="font-size: 12px; color: #5B6370; line-height: 1.4;">Cloud, scale, and infrastructure that matters to AI builders.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">Infra that scales.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dim" style="font-size: 11px; color: #5B6370;">~1 min</span> <span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">1</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+      </tr>
+      </table>
+    </a>
+    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-25.html#what-changed-in-industry" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; border-bottom: 1px solid #CBD5E1;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td style="width: 26px; vertical-align: top; padding-top: 2px;">
+          <span style="display: inline-block; width: 22px; height: 22px; border-radius: 11px; background-color: #0F4C5C; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; color: #FFFFFF;">5</span>
+        </td>
+        <td style="vertical-align: top; padding-left: 4px;">
+          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">🌐 What changed in industry</span>
+<br><span class="text-dim" style="font-size: 12px; color: #5B6370; line-height: 1.4;">Company moves, launches, and policy shifts that could affect your roadmap.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">What changed and why it matters.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dim" style="font-size: 11px; color: #5B6370;">~1 min</span> <span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">2</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
+      </tr>
+      </table>
+    </a>
+    <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-25.html#tools-to-try" style="display: block; text-decoration: none; color: inherit; padding: 10px 0; ">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td style="width: 26px; vertical-align: top; padding-top: 2px;">
+          <span style="display: inline-block; width: 22px; height: 22px; border-radius: 11px; background-color: #0F4C5C; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; color: #FFFFFF;">6</span>
+        </td>
+        <td style="vertical-align: top; padding-left: 4px;">
+          <span class="text-dark" style="font-size: 14px; font-weight: 600; color: #0F172A;">🛠️ Tools to try</span>
+<br><span class="text-dim" style="font-size: 12px; color: #5B6370; line-height: 1.4;">Tools worth testing in a real workflow this week.</span><br><span style="font-size: 11px; color: #0F766E; font-style: italic; font-weight: 600;">One practical thing to ship.</span>        </td>
+        <td style="vertical-align: middle; text-align: right; white-space: nowrap;"><span class="text-dim" style="font-size: 11px; color: #5B6370;">~1 min</span> <span class="text-dark" style="font-size: 12px; color: #0F172A; font-weight: 600;">1</span> <span style="font-size: 14px; color: #0F4C5C;">&#8594;</span></td>
       </tr>
       </table>
     </a>
@@ -213,19 +241,12 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
   <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">TOP STORY</p>
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="lead-card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
     <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://blog.langchain.com/agent-observability-powers-agent-evaluation/" style="text-decoration: none;">
-          <img src="https://blog.langchain.com/content/images/size/w1200/2026/02/pic.png" alt="Agent Observability Powers Agent Evaluation" width="600" class="card-img" style="width: 100%; max-width: 600px; height: 220px; object-fit: cover; object-position: center center; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
       <td style="padding: 18px 22px 0;">
-        <span class="text-faint" style="font-size: 11px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 14px; height: 14px; image-rendering: crisp-edges;" onerror="this.style.display='none'">LangChain Blog &middot; 22 Feb</span>
-        <span class="badge-d badge-difficulty-beginner" style="display: inline-block; margin-left: 6px; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
-        <a href="https://blog.langchain.com/agent-observability-powers-agent-evaluation/" style="text-decoration: none;">
+        <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">OpenAI Blog &middot; 23 Feb</span>
+        <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; margin-left: 6px; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid transparent;">Intermediate</span>
+        <a href="https://openai.com/index/frontier-alliance-partners" style="text-decoration: none;">
           <h2 class="lead-title text-dark" style="margin: 8px 0 12px; font-size: 22px; font-weight: 700; color: #0F172A; line-height: 1.3;">
-            Agent Observability Powers Agent Evaluation
+            OpenAI announces Frontier Alliance Partners
           </h2>
         </a>
       </td>
@@ -233,12 +254,12 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
     <tr>
       <td style="padding: 0 22px;">
         <p class="text-body" style="margin: 0 0 12px; font-size: 16px; line-height: 1.6; color: #1F2937;">
-<strong class="text-dark" style="color: #0F172A;">You cant validate improvements without systematic evaluation.</strong><br>Adopting Agent Observability could speed delivery if integration friction stays low.        </p>
+<strong class="text-dark" style="color: #0F172A;">OpenAI launched with features aimed at the current gap in existing toolchains.</strong><br>Industry moves around OpenAI tend to show up in vendor and budget conversations; get ahead of it.        </p>
         <p class="action-c" style="margin: 0 0 8px; font-size: 14px; color: #0F4C5C; line-height: 1.55;">
-          <strong>Action:</strong> Spin up Agent Observability in a 2-hour proof of concept, compare output against your current tool.
+          <strong>Action:</strong> Monitor OpenAI for follow-on product or pricing changes over the next month.
         </p>
         <p class="take-c" style="margin: 0; font-size: 13px; color: #1F2937; font-style: italic; line-height: 1.5;">
-          Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.
+          The market is sending a signal. Teams that read it early get a head start.
         </p>
       </td>
     </tr>
@@ -247,7 +268,7 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         <table role="presentation" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td class="cta-btn" style="border-radius: 10px; background-color: #0F4C5C;">
-            <a href="https://blog.langchain.com/agent-observability-powers-agent-evaluation/" style="display: inline-block; padding: 13px 28px; font-size: 14px; font-weight: 700; color: #FFFFFF; text-decoration: none; border-radius: 10px; letter-spacing: 0.3px;">
+            <a href="https://openai.com/index/frontier-alliance-partners" style="display: inline-block; padding: 13px 28px; font-size: 14px; font-weight: 700; color: #FFFFFF; text-decoration: none; border-radius: 10px; letter-spacing: 0.3px;">
               Read full story &#x2192;
             </a>
           </td>
@@ -286,8 +307,18 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
       <span class="sec-label" style="font-weight: 600; color: #0F4C5C;">Content</span>
       &nbsp;&middot;&nbsp;Claude / ChatGPT
     </p>
-    <p class="text-dim" style="margin: 4px 0 0; font-size: 11px; color: #374151; font-style: italic;">Tip: Replace [topic] with your area. Add 2-3 example posts you admire for tone matching.</p>
+    <p class="text-dim" style="margin: 4px 0 0; font-size: 11px; color: #5B6370; font-style: italic;">Tip: Replace [topic] with your area. Add 2-3 example posts you admire for tone matching.</p>
   </td></tr>
+  </table>
+</td></tr>
+
+<!-- ========== ONE TO TEST THIS WEEK ========== -->
+<tr><td class="mobile-pad" style="padding: 16px 20px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; border-left: 4px solid #0F4C5C;">
+  <tr><td style="padding: 14px 18px;">
+    <p style="margin: 0 0 8px; font-size: 10px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.2px; text-transform: uppercase;">One to test this week</p>
+    <a href="https://github.com/AlexsJones/llmfit" style="font-weight: 700; font-size: 15px; color: #0F4C5C; text-decoration: none; line-height: 1.35;">llmfit</a>
+<p class="text-body" style="margin: 8px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">The llmfit repo is active and well-maintained — worth a test drive.</p>  </td></tr>
   </table>
 </td></tr>
 
@@ -300,7 +331,7 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
   </table>
 </td></tr>
 
-<tr><td id="open-source-watch" class="mobile-pad" style="padding: 20px 20px 14px;">
+<tr><td id="open-source-picks" class="mobile-pad" style="padding: 20px 20px 14px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0">
   <tr>
     <td style="width: 30px; height: 30px; border-radius: 8px; background-color: #0F4C5C; text-align: center; vertical-align: middle; padding: 0;">
@@ -308,12 +339,12 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
     </td>
     <td style="padding-left: 10px; vertical-align: middle;">
       <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
-        ⭐&ensp;Open Source Watch <span style="font-weight: 500; opacity: 0.85;">(2)</span>
+        ⭐&ensp;Open-source picks <span style="font-weight: 500; opacity: 0.85;">(1)</span>
       </span>
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">Repos with momentum that might deserve a deeper look.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">Open-source projects worth a closer look.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
@@ -324,39 +355,7 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 11px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 14px; height: 14px; image-rendering: crisp-edges;" onerror="this.style.display='none'">GitHub Trending (AI/ML) &middot; 22 Feb</span>
-          </td>
-          <td style="text-align: right; vertical-align: middle;">
-            <span class="badge-d badge-difficulty-intermediate" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #FEF3C7; color: #92400E; border: 1px solid transparent;">Intermediate</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://github.com/zeroclaw-labs/zeroclaw" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
-            zeroclaw
-          </h3>
-        </a>
-        <!-- Summary: bold-first-sentence (TLDR pattern) -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
-<strong class="text-dark" style="color: #0F172A;">Zeroclaw is picking up momentum in the open-source community.</strong><br>Momentum behind zeroclaw is real, but maintenance quality should gate adoption decisions.        </p>
-        <!-- Action (matches web: "Action: ...") -->
-        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
-          <strong>Action:</strong> Review zeroclaw issue tracker, last commit date, and license before considering adoption.
-        </p>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta: source first (credibility), badges right -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
-        <tr>
-          <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 11px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 14px; height: 14px; image-rendering: crisp-edges;" onerror="this.style.display='none'">GitHub Trending (AI/ML) &middot; 21 Feb</span>
+            <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">GitHub Trending (AI/ML) &middot; 24 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
@@ -364,17 +363,17 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://github.com/jamiepine/voicebox" style="text-decoration: none;">
+        <a href="https://github.com/AlexsJones/llmfit" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
-            voicebox
+            llmfit
           </h3>
         </a>
         <!-- Summary: bold-first-sentence (TLDR pattern) -->
         <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
-<strong class="text-dark" style="color: #0F172A;">Growing traction for voicebox on GitHub suggests rising builder interest.</strong><br>Community interest in voicebox is growing, check repo health before committing.        </p>
+<strong class="text-dark" style="color: #0F172A;">The llmfit repo is active and well-maintained - worth a test drive.</strong><br>Llmfit traction suggests builder demand, but longevity depends on maintainer commitment.        </p>
         <!-- Action (matches web: "Action: ...") -->
         <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
-          <strong>Action:</strong> Check voicebox for recent activity, open issues, and license compatibility this week.
+          <strong>Action:</strong> Star llmfit for later, but check maintainer activity and issue backlog before depending on it.
         </p>
       </td>
     </tr>
@@ -388,7 +387,7 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
   </table>
 </td></tr>
 
-<tr><td id="lab-notes" class="mobile-pad" style="padding: 20px 20px 14px;">
+<tr><td id="ship-it-playbooks" class="mobile-pad" style="padding: 20px 20px 14px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0">
   <tr>
     <td style="width: 30px; height: 30px; border-radius: 8px; background-color: #0F4C5C; text-align: center; vertical-align: middle; padding: 0;">
@@ -396,23 +395,30 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
     </td>
     <td style="padding-left: 10px; vertical-align: middle;">
       <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
-        🔬&ensp;Lab Notes <span style="font-weight: 500; opacity: 0.85;">(1)</span>
+        📚&ensp;Ship-It Playbooks <span style="font-weight: 500; opacity: 0.85;">(2)</span>
       </span>
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">Research and model updates with downstream product impact.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">Practical implementation guides you can adapt quickly.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <a href="https://dev.to/jefe_cool/will-claude-code-be-dead-by-summer-2po5" style="text-decoration: none;">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhzrumf4x6jfgsk4vczl7.png" alt="Will Claude Code Be Dead by Summer?" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 152px; object-fit: cover; object-position: center center; display: block;">
+        </a>
+      </td>
+    </tr>
     <tr>
       <td style="padding: 16px 20px;">
         <!-- Meta: source first (credibility), badges right -->
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 11px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/thegradient.pub.png" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 14px; height: 14px; image-rendering: crisp-edges;" onerror="this.style.display='none'">The Gradient &middot; 18 Feb</span>
+            <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">Dev.to AI &middot; 25 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
@@ -420,17 +426,56 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://thegradient.pub/virtue-ethics-ai-alignment/" style="text-decoration: none;">
+        <a href="https://dev.to/jefe_cool/will-claude-code-be-dead-by-summer-2po5" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
-            After Orthogonality: Virtue-Ethical Agency and AI Alignment
+            Will Claude Code Be Dead by Summer?
           </h3>
         </a>
         <!-- Summary: bold-first-sentence (TLDR pattern) -->
         <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
-<strong class="text-dark" style="color: #0F172A;">Results from Ethical Agency point to where methods may shift in the next cycle.</strong><br>If Ethical Agency findings replicate, they could change how teams approach related problems.        </p>
+<strong class="text-dark" style="color: #0F172A;">Not the binary, but the relevance.</strong><br>The Claude Code Be Dead walkthrough could save you a few hours of trial and error.        </p>
         <!-- Action (matches web: "Action: ...") -->
         <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
-          <strong>Action:</strong> Spend 10 minutes on the Ethical Agency results, if nothing applies to your work, move on.
+          <strong>Action:</strong> Clone the Claude Code Be Dead example, run it locally, then change one thing to match your project.
+        </p>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <a href="https://www.marktechpost.com/2026/02/24/alibaba-qwen-team-releases-qwen-3-5-medium-model-series-a-production-powerhouse-proving-that-smaller-ai-models-are-smarter/" style="text-decoration: none;">
+          <img src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-60-1024x731.png" alt="Alibaba Qwen Team Releases Qwen 3.5 Medium Model Series: A Production Powerhouse Proving that Smaller AI Models are Smarter" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 152px; object-fit: cover; object-position: center center; display: block;">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 20px;">
+        <!-- Meta: source first (credibility), badges right -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
+        <tr>
+          <td style="vertical-align: middle;">
+            <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">MarkTechPost &middot; 24 Feb</span>
+          </td>
+          <td style="text-align: right; vertical-align: middle;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
+          </td>
+        </tr>
+        </table>
+        <!-- Title -->
+        <a href="https://www.marktechpost.com/2026/02/24/alibaba-qwen-team-releases-qwen-3-5-medium-model-series-a-production-powerhouse-proving-that-smaller-ai-models-are-smarter/" style="text-decoration: none;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
+            Alibaba Qwen Team Releases Qwen 3.5 Medium Model Series: A Production Powerhouse Proving that Smaller AI Models are Smarter
+          </h3>
+        </a>
+        <!-- Summary: bold-first-sentence (TLDR pattern) -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
+<strong class="text-dark" style="color: #0F172A;">This Alibaba Qwen Team guide covers the parts most tutorials skip over.</strong><br>Hands-on Alibaba Qwen Team content like this is more useful than reading the API docs alone.        </p>
+        <!-- Action (matches web: "Action: ...") -->
+        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
+          <strong>Action:</strong> Pick the hardest step in the Alibaba Qwen Team tutorial and work backwards from there.
         </p>
       </td>
     </tr>
@@ -444,7 +489,7 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
   </table>
 </td></tr>
 
-<tr><td id="industry-radar" class="mobile-pad" style="padding: 20px 20px 14px;">
+<tr><td id="research-worth-your-time" class="mobile-pad" style="padding: 20px 20px 14px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0">
   <tr>
     <td style="width: 30px; height: 30px; border-radius: 8px; background-color: #0F4C5C; text-align: center; vertical-align: middle; padding: 0;">
@@ -452,12 +497,12 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
     </td>
     <td style="padding-left: 10px; vertical-align: middle;">
       <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
-        🌐&ensp;Industry Radar <span style="font-weight: 500; opacity: 0.85;">(3)</span>
+        🔬&ensp;Research worth your time <span style="font-weight: 500; opacity: 0.85;">(1)</span>
       </span>
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">The moves that change product plans, budgets, and positioning.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">Research updates with practical product impact.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
@@ -468,85 +513,7 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 11px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arstechnica.com.png" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 14px; height: 14px; image-rendering: crisp-edges;" onerror="this.style.display='none'">Ars Technica AI &middot; 19 Feb</span>
-          </td>
-          <td style="text-align: right; vertical-align: middle;">
-            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://arstechnica.com/tech-policy/2026/02/before-psychosis-chatgpt-told-man-he-was-an-oracle-new-lawsuit-alleges/" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
-            Lawsuit: ChatGPT told student he was &#34;meant for greatness&#34;—then came psychosis
-          </h3>
-        </a>
-        <!-- Summary: bold-first-sentence (TLDR pattern) -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
-<strong class="text-dark" style="color: #0F172A;">AI Injury Attorneys target the chatbot design itself.</strong><br>Legal or governance pressure on ChatGPT can quickly become vendor risk for dependent teams.        </p>
-        <!-- Action (matches web: "Action: ...") -->
-        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
-          <strong>Action:</strong> Add ChatGPT as a discussion item in your next strategy or planning meeting.
-        </p>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://openai.com/index/advancing-independent-research-ai-alignment" style="text-decoration: none;">
-          <img src="https://images.ctfassets.net/kftzwdyauwt9/41XPFki1MAJlOqfx50Lr9n/8e7423403b90a3d12e4d3844d83a77dd/SEO_Card__1_.png?w=1600&amp;h=900&amp;fit=fill" alt="Advancing independent research on AI alignment" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 152px; object-fit: cover; object-position: center center; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta: source first (credibility), badges right -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
-        <tr>
-          <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 11px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 14px; height: 14px; image-rendering: crisp-edges;" onerror="this.style.display='none'">OpenAI Blog &middot; 19 Feb</span>
-          </td>
-          <td style="text-align: right; vertical-align: middle;">
-            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
-          </td>
-        </tr>
-        </table>
-        <!-- Title -->
-        <a href="https://openai.com/index/advancing-independent-research-ai-alignment" style="text-decoration: none;">
-          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
-            Advancing independent research on AI alignment
-          </h3>
-        </a>
-        <!-- Summary: bold-first-sentence (TLDR pattern) -->
-        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
-<strong class="text-dark" style="color: #0F172A;">A new paper on Advancing independent research introduces methods that may influence downstream tooling.</strong><br>Add Advancing independent research to your next ops or budget sync, pricing or policy could hit renewals or roadmap.        </p>
-        <!-- Action (matches web: "Action: ...") -->
-        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
-          <strong>Action:</strong> Bring Advancing independent research to your next planning sync, it may affect Q2 priorities.
-        </p>
-      </td>
-    </tr>
-  </table>
-</td></tr>
-<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <a href="https://www.technologyreview.com/2026/02/19/1133360/microsoft-has-a-new-plan-to-prove-whats-real-and-whats-ai-online/" style="text-decoration: none;">
-          <img src="https://wp.technologyreview.com/wp-content/uploads/2026/02/false-mirror-cr-smoke2.jpg?resize=1200,600" alt="Microsoft has a new plan to prove what’s real and what’s AI online" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 152px; object-fit: cover; object-position: center center; display: block;">
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 16px 20px;">
-        <!-- Meta: source first (credibility), badges right -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
-        <tr>
-          <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 11px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/technologyreview.com.png" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 14px; height: 14px; image-rendering: crisp-edges;" onerror="this.style.display='none'">MIT Technology Review AI &middot; 19 Feb</span>
+            <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">arXiv CS.AI &middot; 24 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-advanced" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #FEE2E2; color: #991B1B; border: 1px solid transparent;">Advanced</span>
@@ -554,17 +521,17 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://www.technologyreview.com/2026/02/19/1133360/microsoft-has-a-new-plan-to-prove-whats-real-and-whats-ai-online/" style="text-decoration: none;">
+        <a href="https://arxiv.org/abs/2602.18582" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
-            Microsoft has a new plan to prove what’s real and what’s AI online
+            Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications
           </h3>
         </a>
         <!-- Summary: bold-first-sentence (TLDR pattern) -->
         <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
-<strong class="text-dark" style="color: #0F172A;">AI-enabled deception now permeates our online lives.</strong><br>Add Microsoft to your next ops or budget sync, pricing or policy could hit renewals or roadmap.        </p>
+<strong class="text-dark" style="color: #0F172A;">The Hierarchical Reward Design findings offer clues about where the field is heading next.</strong><br>The Hierarchical Reward Design results point a direction, but production confidence needs independent replication.        </p>
         <!-- Action (matches web: "Action: ...") -->
         <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
-          <strong>Action:</strong> Add Microsoft as a discussion item in your next strategy or planning meeting.
+          <strong>Action:</strong> Skim the Hierarchical Reward Design abstract and results table - decide in 10 minutes if it warrants a deep read.
         </p>
       </td>
     </tr>
@@ -578,7 +545,7 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
   </table>
 </td></tr>
 
-<tr><td id="builders-bench" class="mobile-pad" style="padding: 20px 20px 14px;">
+<tr><td id="infra" class="mobile-pad" style="padding: 20px 20px 14px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0">
   <tr>
     <td style="width: 30px; height: 30px; border-radius: 8px; background-color: #0F4C5C; text-align: center; vertical-align: middle; padding: 0;">
@@ -586,20 +553,76 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
     </td>
     <td style="padding-left: 10px; vertical-align: middle;">
       <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
-        🛠️&ensp;Builder&#39;s Bench <span style="font-weight: 500; opacity: 0.85;">(1)</span>
+        ☁️&ensp;Infra <span style="font-weight: 500; opacity: 0.85;">(1)</span>
       </span>
     </td>
   </tr>
   </table>
-  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">New tooling worth evaluating in an actual workflow this week.</p>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">Cloud, scale, and infrastructure that matters to AI builders.</p>
+</td></tr>
+
+<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+    <tr>
+      <td style="padding: 16px 20px;">
+        <!-- Meta: source first (credibility), badges right -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
+        <tr>
+          <td style="vertical-align: middle;">
+            <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/infoq.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">InfoQ &middot; 24 Feb</span>
+          </td>
+          <td style="text-align: right; vertical-align: middle;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
+          </td>
+        </tr>
+        </table>
+        <!-- Title -->
+        <a href="https://www.infoq.com/news/2026/02/apple-ferret-ui-lite-on-device/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" style="text-decoration: none;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
+            Apple Researchers Introduce Ferret-UI Lite, an On-Device AI Model for Seeing and Controlling UIs
+          </h3>
+        </a>
+        <!-- Summary: bold-first-sentence (TLDR pattern) -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
+<strong class="text-dark" style="color: #0F172A;">A new paper on Ferret-UI Lite, an On-Device AI Model introduces methods that may influence downstream tooling.</strong><br>No immediate action needed, but Ferret-UI Lite, an On-Device AI Model shifts the background assumptions a bit.        </p>
+        <!-- Action (matches web: "Action: ...") -->
+        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
+          <strong>Action:</strong> Review Ferret-UI Lite, an On-Device AI Model and decide on one concrete follow-up action by end of week.
+        </p>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+
+<!-- Section divider -->
+<tr><td style="padding: 20px 20px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="50%" style="margin: 0 auto;">
+    <tr><td style="border-top: 1px solid #9CA3AF; height: 1px; font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+  </table>
+</td></tr>
+
+<tr><td id="what-changed-in-industry" class="mobile-pad" style="padding: 20px 20px 14px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="width: 30px; height: 30px; border-radius: 8px; background-color: #0F4C5C; text-align: center; vertical-align: middle; padding: 0;">
+      <span style="font-size: 13px; font-weight: 700; color: #FFFFFF; line-height: 30px;">5</span>
+    </td>
+    <td style="padding-left: 10px; vertical-align: middle;">
+      <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
+        🌐&ensp;What changed in industry <span style="font-weight: 500; opacity: 0.85;">(2)</span>
+      </span>
+    </td>
+  </tr>
+  </table>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">Company moves, launches, and policy shifts that could affect your roadmap.</p>
 </td></tr>
 
 <tr><td class="mobile-pad" style="padding: 0 20px 10px;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <a href="https://huggingface.co/blog/ggml-joins-hf" style="text-decoration: none;">
-          <img src="https://huggingface.co/blog/assets/ggml-joins-hf/ggml-joins-hf.png" alt="GGML and llama.cpp join HF to ensure the long-term progress of Local AI" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 152px; object-fit: cover; object-position: center center; display: block;">
+        <a href="https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit" style="text-decoration: none;">
+          <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25739950/247386_Elon_Musk_Open_AI_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="OpenAI defeats xAI’s trade secrets lawsuit" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 152px; object-fit: cover; object-position: center center; display: block;">
         </a>
       </td>
     </tr>
@@ -609,7 +632,7 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
         <tr>
           <td style="vertical-align: middle;">
-            <span class="text-faint" style="font-size: 11px; color: #374151;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 14px; height: 14px; image-rendering: crisp-edges;" onerror="this.style.display='none'">Hugging Face Blog &middot; 20 Feb</span>
+            <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">The Verge AI &middot; 24 Feb</span>
           </td>
           <td style="text-align: right; vertical-align: middle;">
             <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
@@ -617,17 +640,119 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
         </tr>
         </table>
         <!-- Title -->
-        <a href="https://huggingface.co/blog/ggml-joins-hf" style="text-decoration: none;">
+        <a href="https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit" style="text-decoration: none;">
           <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
-            GGML and llama.cpp join HF to ensure the long-term progress of Local AI
+            OpenAI defeats xAI’s trade secrets lawsuit
           </h3>
         </a>
         <!-- Summary: bold-first-sentence (TLDR pattern) -->
         <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
-<strong class="text-dark" style="color: #0F172A;">The GGML tooling fills a gap, test it against your existing workflow before committing.</strong><br>The GGML release addresses gaps that many builder teams have flagged.        </p>
+<strong class="text-dark" style="color: #0F172A;">A legal dispute involving OpenAI may create compliance exposure for dependent teams.</strong><br>Legal exposure around OpenAI should trigger a vendor-risk review for teams with dependencies.        </p>
         <!-- Action (matches web: "Action: ...") -->
         <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
-          <strong>Action:</strong> Try GGML on a non-critical task this week and log the results.
+          <strong>Action:</strong> Add OpenAI as a discussion item in your next strategy or planning meeting.
+        </p>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <a href="https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/" style="text-decoration: none;">
+          <img src="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2194795244.jpg?w=1024" alt="Anthropic won’t budge as Pentagon escalates AI dispute" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 152px; object-fit: cover; object-position: center center; display: block;">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 20px;">
+        <!-- Meta: source first (credibility), badges right -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
+        <tr>
+          <td style="vertical-align: middle;">
+            <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">TechCrunch AI &middot; 24 Feb</span>
+          </td>
+          <td style="text-align: right; vertical-align: middle;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
+          </td>
+        </tr>
+        </table>
+        <!-- Title -->
+        <a href="https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/" style="text-decoration: none;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
+            Anthropic won’t budge as Pentagon escalates AI dispute
+          </h3>
+        </a>
+        <!-- Summary: bold-first-sentence (TLDR pattern) -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
+<strong class="text-dark" style="color: #0F172A;">A move around Anthropic is worth a slot in your next ops or leadership review.</strong><br>Pricing or policy changes from Anthropic could affect your next renewal or roadmap; worth a slot in the sync.        </p>
+        <!-- Action (matches web: "Action: ...") -->
+        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
+          <strong>Action:</strong> Flag Anthropic for your leadership team - it may shift near-term priorities.
+        </p>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+
+<!-- Section divider -->
+<tr><td style="padding: 20px 20px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="50%" style="margin: 0 auto;">
+    <tr><td style="border-top: 1px solid #9CA3AF; height: 1px; font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+  </table>
+</td></tr>
+
+<tr><td id="tools-to-try" class="mobile-pad" style="padding: 20px 20px 14px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="width: 30px; height: 30px; border-radius: 8px; background-color: #0F4C5C; text-align: center; vertical-align: middle; padding: 0;">
+      <span style="font-size: 13px; font-weight: 700; color: #FFFFFF; line-height: 30px;">6</span>
+    </td>
+    <td style="padding-left: 10px; vertical-align: middle;">
+      <span class="sec-label" style="font-size: 12px; font-weight: 700; color: #0F4C5C; letter-spacing: 1.5px; text-transform: uppercase;">
+        🛠️&ensp;Tools to try <span style="font-weight: 500; opacity: 0.85;">(1)</span>
+      </span>
+    </td>
+  </tr>
+  </table>
+  <p class="text-dim" style="margin: 6px 0 0; font-size: 13px; color: #1F2937; line-height: 1.5;">Tools worth testing in a real workflow this week.</p>
+</td></tr>
+
+<tr><td class="mobile-pad" style="padding: 0 20px 10px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="card" style="background-color: #FFFFFF; border-radius: 14px; border: 1px solid #CBD5E1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <a href="https://blog.langchain.com/how-we-built-agent-builders-memory-system/" style="text-decoration: none;">
+          <img src="https://blog.langchain.com/content/images/2026/02/69690e0c0c3471f7cd4eaf42_create-agents.png" alt="How we built Agent Builder’s memory system" width="596" class="card-img" style="width: 100%; max-width: 596px; height: 152px; object-fit: cover; object-position: center center; display: block;">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 20px;">
+        <!-- Meta: source first (credibility), badges right -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 8px;">
+        <tr>
+          <td style="vertical-align: middle;">
+            <span class="text-faint" style="font-size: 11px; color: #5B6370;"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px; width: 12px; height: 12px; image-rendering: auto;" onerror="this.style.display='none'">LangChain Blog &middot; 22 Feb</span>
+          </td>
+          <td style="text-align: right; vertical-align: middle;">
+            <span class="badge-d badge-difficulty-beginner" style="display: inline-block; padding: 3px 7px; font-size: 11px; font-weight: 600; border-radius: 10px; background-color: #DCFCE7; color: #166534; border: 1px solid transparent;">Beginner</span>
+          </td>
+        </tr>
+        </table>
+        <!-- Title -->
+        <a href="https://blog.langchain.com/how-we-built-agent-builders-memory-system/" style="text-decoration: none;">
+          <h3 class="art-title text-dark" style="margin: 0 0 8px; font-size: 17px; font-weight: 700; color: #0F172A; line-height: 1.35;">
+            How we built Agent Builder’s memory system
+          </h3>
+        </a>
+        <!-- Summary: bold-first-sentence (TLDR pattern) -->
+        <p class="text-body" style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #1F2937;">
+<strong class="text-dark" style="color: #0F172A;">If Agent Builder delivers on its claims, it could simplify a few steps in your current setup.</strong><br>Adopting Agent Builder could speed delivery if integration friction stays low.        </p>
+        <!-- Action (matches web: "Action: ...") -->
+        <p class="action-c" style="margin: 0; font-size: 14px; color: #0F4C5C; line-height: 1.5;">
+          <strong>Action:</strong> Allocate one afternoon to test Agent Builder against your top use case.
         </p>
       </td>
     </tr>
@@ -640,32 +765,32 @@ Agent Observability Powers Agent Evaluation · 8 stories &middot; ~3 min &middot
     <tr><td style="padding-top: 20px; text-align: center;">
       <!-- Read in browser -->
       <p class="text-body" style="margin: 0 0 16px; font-size: 12px; color: #1F2937; line-height: 1.6;">
-        <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-22.html" style="display: inline-block; padding: 12px 24px; background-color: #0F4C5C; color: #FFFFFF !important; text-decoration: none; font-weight: 700; border-radius: 10px; font-size: 14px; letter-spacing: 0.3px;">Read in browser &#x2192;</a>
+        <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-25.html" style="display: inline-block; padding: 12px 24px; background-color: #0F4C5C; color: #FFFFFF !important; text-decoration: none; font-weight: 700; border-radius: 10px; font-size: 14px; letter-spacing: 0.3px;">Read in browser &#x2192;</a>
       </p>
       <!-- Share (Forward, X, LinkedIn — issue_url_encoded and share_* from generate.py) -->
       <p style="margin: 0 0 14px; font-size: 12px; line-height: 1.6; color: #1F2937;">
         Share: &nbsp;
-        <a href="mailto:?subject=Inference%20Weekly%2022%20Feb%202026&body=Read%20this%20week%27s%20AI%20briefing%3A%20https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-22.html" style="color: #0F4C5C; text-decoration: none;">Forward</a> &nbsp;&middot;&nbsp;
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-22.html&text=Inference%20Weekly%2022%20Feb%202026%20AI%20briefing" style="color: #0F4C5C; text-decoration: none;">X</a> &nbsp;&middot;&nbsp;
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-22.html" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
+        <a href="mailto:?subject=Inference%20Weekly%2025%20Feb%202026&body=Read%20this%20week%27s%20AI%20briefing%3A%20https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-25.html" style="color: #0F4C5C; text-decoration: none;">Forward</a> &nbsp;&middot;&nbsp;
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-25.html&text=Inference%20Weekly%2025%20Feb%202026%20AI%20briefing" style="color: #0F4C5C; text-decoration: none;">X</a> &nbsp;&middot;&nbsp;
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmatthewpaver.github.io%2Fai-weekly%2Fissues%2F2026-02-25.html" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
       </p>
       <!-- Links (order matches web: Archive · Latest · Email · RSS) -->
-      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #374151; line-height: 1.6;">
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #5B6370; line-height: 1.6;">
         <a href="https://matthewpaver.github.io/ai-weekly/" style="color: #0F4C5C; text-decoration: none;">Archive</a> &nbsp;&middot;&nbsp;
         <a href="https://matthewpaver.github.io/ai-weekly/latest.html" style="color: #0F4C5C; text-decoration: none;">Latest</a> &nbsp;&middot;&nbsp;
         <a href="https://matthewpaver.github.io/ai-weekly/email.html" style="color: #0F4C5C; text-decoration: none;">Email</a> &nbsp;&middot;&nbsp;
         <a href="https://matthewpaver.github.io/ai-weekly/feed.xml" style="color: #0F4C5C; text-decoration: none;">RSS</a>
       </p>
-      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #374151;">
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #5B6370;">
 Who reads this: Builders, product leads, and researchers who ship AI products.      </p>
-      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #374151;">
+      <p class="text-faint" style="margin: 0 0 6px; font-size: 11px; color: #5B6370;">
         Built by <a href="https://github.com/MatthewPaver" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Matthew Paver</a> &nbsp;&middot;&nbsp;
         <a href="https://www.linkedin.com/in/matthew-paver-534262166/" style="color: #0F4C5C; text-decoration: none;">LinkedIn</a>
       </p>
       <!-- Unsubscribe & legal -->
-      <p class="text-faint" style="margin: 14px 0 0; font-size: 10px; color: #374151; line-height: 1.5;">
+      <p class="text-faint" style="margin: 14px 0 0; font-size: 10px; color: #5B6370; line-height: 1.5;">
         You're receiving this because you subscribed at matthewpaver.github.io/ai-weekly<br>
-        <a href="mailto:inference.feedback@gmail.com?subject=Unsubscribe%2022 Feb 2026" style="color: #0F4C5C; text-decoration: underline;">Unsubscribe</a>
+        <a href="mailto:inference.feedback@gmail.com?subject=Unsubscribe%2025 Feb 2026" style="color: #0F4C5C; text-decoration: underline;">Unsubscribe</a>
       </p>
     </td></tr>
   </table>

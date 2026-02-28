@@ -4,33 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#FAFAF9" id="meta-theme-color" />
-  <meta name="description" content="Inference Weekly · 16 Feb 2026: 9 curated AI stories for builders, leaders, and researchers." />
-  <title>Inference Weekly · 16 Feb 2026</title>
+  <meta name="description" content="Inference Weekly · 23 Feb 2026: 6 AI stories worth reading this week." />
+  <title>Inference Weekly · 23 Feb 2026</title>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Inference Weekly · 16 Feb 2026" />
-  <meta property="og:description" content="Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap." />
+  <meta property="og:title" content="Inference Weekly · 23 Feb 2026" />
+  <meta property="og:description" content="Big news this week: Epistemic Traps: Rational Misalignment Driven by Model Misspecification, and what it means for your roadmap." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/latest.html" />
-  <meta property="og:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
+  <meta property="og:image" content="https://media.wired.com/photos/699879d490ce1a01f1ba1ac0/191:100/w_1280,c_limit/GettyImages-2250413446.jpg" />
   <meta property="og:site_name" content="Inference Weekly" />
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Inference Weekly · 16 Feb 2026" />
-  <meta name="twitter:description" content="Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap." />
-  <meta name="twitter:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Inference Weekly · 23 Feb 2026" />
+  <meta name="twitter:description" content="Big news this week: Epistemic Traps: Rational Misalignment Driven by Model Misspecification, and what it means for your roadmap." />
+  <meta name="twitter:image" content="https://media.wired.com/photos/699879d490ce1a01f1ba1ac0/191:100/w_1280,c_limit/GettyImages-2250413446.jpg" />
 
   <!-- Canonical + RSS -->
   <link rel="canonical" href="https://matthewpaver.github.io/ai-weekly/latest.html" />
   <link rel="alternate" type="application/rss+xml" title="Inference Weekly" href="https://matthewpaver.github.io/ai-weekly/feed.xml" />
-  <link rel="icon" type="image/png" href="https://matthewpaver.github.io/ai-weekly/assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Local scroll-reveal styles (no CDN dependency) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Sal.js: lightweight scroll-reveal animations (~3KB) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sal@1.1.8/dist/sal.css" />
   <script>
-    (function(){try{if(localStorage.getItem('inference-theme')==='dark'){document.documentElement.classList.add('theme-dark');document.getElementById('meta-theme-color').content='#0F172A';}}catch(e){}})();
+    (function(){try{var m=document.getElementById('meta-theme-color');if(localStorage.getItem('inference-theme')==='dark'){document.documentElement.classList.add('theme-dark');if(m)m.content='#0F172A';}}catch(e){}})();
   </script>
   <style>
     /* Design tokens: light default, dark via JS toggle. WCAG AA contrast throughout (4.5:1+ normal text, 3:1+ large). */
@@ -40,7 +40,7 @@
       --surface-2: #E5E7EB;
       --text: #0F172A;
       --muted: #1F2937;
-      --line: #6B7280;
+      --line: #5B6370;
       --brand: #0F766E;
       --brand-2: #0F4C5C;
       --brand-3: #B45309;
@@ -190,10 +190,11 @@
 
     .brand h1 {
       margin: 0;
+      font-family: "Space Grotesk", "Inter", sans-serif;
       font-size: 18px;
       letter-spacing: 4px;
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 700;
     }
 
     .hero-sub {
@@ -404,7 +405,7 @@
 
     .lead-media {
       width: 100%;
-      height: 152px;
+      height: 220px;
       object-fit: cover;
       object-position: center center;
       background: var(--surface-2);
@@ -432,51 +433,57 @@
     .badge {
       display: inline-flex;
       align-items: center;
-      font-size: 0.62rem;
+      font-size: 0.7rem;
       font-weight: 600;
       border-radius: 999px;
-      padding: 2px 6px;
+      padding: 3px 8px;
       border: 1px solid var(--line);
+      line-height: 1.3;
     }
+    /* Source + date: attribution style (not a competing pill) — subtle so it reads as metadata */
     .badge-source {
-      font-size: 0.6rem;
-      padding: 2px 5px;
-      line-height: 1.25;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 2px 8px;
+      line-height: 1.35;
+      background: color-mix(in srgb, var(--muted), transparent 92%);
+      color: var(--muted);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 60%);
+    }
+    html.theme-dark .badge-source {
+      background: color-mix(in srgb, var(--muted), transparent 88%);
+      color: var(--muted);
+      border-color: color-mix(in srgb, var(--line), transparent 50%);
     }
     .source-icon {
       vertical-align: middle;
-      margin-right: 2px;
-      border-radius: 2px;
-      width: 10px;
-      height: 10px;
+      margin-right: 4px;
+      border-radius: 3px;
+      width: 14px;
+      height: 14px;
       object-fit: contain;
-      image-rendering: auto;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
     }
     /* Difficulty: Beginner (green), Intermediate (amber), Advanced (red) — visible variety */
     .badge-difficulty-beginner { background: #dcfce7 !important; color: #166534 !important; border-color: transparent !important; }
     .badge-difficulty-intermediate { background: #fef3c7 !important; color: #92400e !important; border-color: transparent !important; }
     .badge-difficulty-advanced { background: #fee2e2 !important; color: #991b1b !important; border-color: transparent !important; }
+    html.theme-dark .badge-difficulty-beginner { background: #14532d !important; color: #86efac !important; }
+    html.theme-dark .badge-difficulty-intermediate { background: #78350f !important; color: #fde68a !important; }
+    html.theme-dark .badge-difficulty-advanced { background: #7f1d1d !important; color: #fca5a5 !important; }
     .badge-track { background: #e0f2fe !important; color: #0c4a6e !important; border-color: transparent !important; }
     html.theme-dark .badge-track { background: #0c4a6e !important; color: #7dd3fc !important; border-color: #0369a1 !important; }
     .badge-pick { background: linear-gradient(135deg, #fef3c7, #fde68a) !important; color: #92400e !important; border-color: #f59e0b !important; font-weight: 700 !important; }
     html.theme-dark .badge-pick { background: linear-gradient(135deg, #78350f, #92400e) !important; color: #fde68a !important; border-color: #f59e0b !important; }
 
-    .section-promise { font-weight: 600; font-style: italic; color: var(--brand); font-size: 0.88rem; }
-
-    .testimonial { margin: 12px 0 0; font-style: italic; font-size: 0.88rem; color: var(--muted); line-height: 1.5; }
-    .testimonial footer { font-style: normal; font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
-
-    .social-proof { margin: 8px 0 0; font-size: 0.82rem; color: var(--muted); }
-    .conversion-hook { margin: 10px 0 0; font-size: 0.82rem; color: var(--muted); }
-    .conversion-hook a { color: #fff; text-decoration: underline; }
-
     .lead h2 {
       margin: 0 0 8px;
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: "Space Grotesk", "Inter", sans-serif;
       font-size: 1.55rem;
       font-weight: 600;
       line-height: 1.25;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.02em;
     }
 
     .lead p {
@@ -598,6 +605,7 @@
     .section-title {
       margin: 0;
       padding: 18px 20px;
+      font-family: "Space Grotesk", "Inter", sans-serif;
       font-size: 0.98rem;
       font-weight: 600;
       letter-spacing: -0.01em;
@@ -674,8 +682,8 @@
     .story-body { padding: 20px; }
 
     .badge-section {
-      font-size: 0.6rem;
-      padding: 2px 5px;
+      font-size: 0.65rem;
+      padding: 2px 6px;
       background: #D7E6E4;
       background: color-mix(in srgb, var(--brand), transparent 85%);
       color: var(--brand-2);
@@ -686,11 +694,11 @@
 
     .story h3 {
       margin: 8px 0;
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: "Space Grotesk", "Inter", sans-serif;
       font-size: 1.05rem;
       font-weight: 600;
       line-height: 1.35;
-      letter-spacing: -0.005em;
+      letter-spacing: -0.01em;
     }
 
     .story p {
@@ -764,18 +772,8 @@
     .like-btn.liked .like-icon { fill: var(--brand); stroke: var(--brand); transform: scale(1.15); }
 
     /* Tier gating placeholder (hidden until tiers_enabled) */
-    .tier-gate { display: none; }
-
-    /* Scroll-triggered reveal (local IntersectionObserver, no external dependency) */
-    [data-sal] {
-      opacity: 0;
-      transform: translateY(12px);
-      transition: opacity .4s ease, transform .4s ease;
-    }
-    [data-sal].sal-in {
-      opacity: 1;
-      transform: none;
-    }
+    /* Scroll-triggered reveal (Sal.js handles animation; fallback for no-JS) */
+    [data-sal] { transition-duration: 0.4s; }
     .no-js [data-sal] { opacity: 1; transform: none; }
 
     .copyright {
@@ -1135,13 +1133,12 @@
 
     @media (max-width: 960px) {
       .content { grid-template-columns: 1fr; }
-      .lead-media { height: 128px; }
+      .lead-media { height: 168px; }
       .story img { height: 128px; }
-      /* On mobile, reorder so sidebar content appears after lead, before sections */
+      /* On mobile, move TOC above main content so readers see navigation first */
       .content { display: flex; flex-direction: column; }
+      .content aside { order: -1; }
       .content main { order: 1; }
-      .content .mobile-early { order: 0; }
-      .content aside { order: 2; }
       .menu-grid { grid-template-columns: 1fr; }
       /* Bigger tap targets on mobile (WCAG 2.5.5: 44x44px min) */
       .share-btn { padding: 10px 16px; font-size: 0.88rem; }
@@ -1174,7 +1171,7 @@
           <svg class="logo logo-fallback" width="44" height="44" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none;"><rect width="52" height="52" rx="14" fill="url(#inf-logo-g)"/><path d="M26 14v24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="38" r="2.5" fill="#fff"/><defs><linearGradient id="inf-logo-g" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#0F4C5C"/><stop offset=".5" stop-color="#0F766E"/><stop offset="1" stop-color="#0F4C5C"/></linearGradient></defs></svg>
           <div>
             <h1>Inference</h1>
-            <p class="hero-sub">Signal in the noise.</p>
+            <p class="hero-sub">Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes.</p>
           </div>
         </div>
 
@@ -1187,202 +1184,121 @@
       </div>
 
       <div class="hero-stats">
-        <span class="chip">Issue #6</span>
-        <span class="chip">16 Feb 2026</span>
-        <span class="chip">9 stories</span>
-        <span class="chip">~4 min read</span>
+        <span class="chip">Issue #3</span>
+        <span class="chip">23 Feb 2026</span>
+        <span class="chip">6 stories</span>
+        <span class="chip">~3 min read</span>
       </div>
       <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; color: rgba(255,255,255,0.7);">Who reads this: Builders, product leads, and researchers who ship AI products.</p>
     </header>
 
     <div class="content">
       <main id="main-content">
+        <p class="intro" style="margin: 0 0 16px; font-size: 0.95rem; color: var(--muted); font-weight: 500;">This week: vendor moves and leadership signals.</p>
         <article class="lead card">
-          <img class="lead-media" src="https://techcrunch.com/wp-content/uploads/2026/02/Ricursive-Intelligence-founders.png?resize=1200,943" alt="How Ricursive Intelligence raised $335M at a $4B valuation in 4 months" decoding="async" fetchpriority="high" onerror="this.style.display='none'" />
+          <img class="lead-media" src="https://media.wired.com/photos/699879d490ce1a01f1ba1ac0/191:100/w_1280,c_limit/GettyImages-2250413446.jpg" alt="How to Hide Google’s AI Overviews From Your Search Results" width="400" height="220" decoding="async" fetchpriority="high" onerror="this.style.display='none'" />
           <div class="lead-body">
             <p class="section-head">Top Story</p>
             <div class="meta-row">
               <span class="badge badge-pick">Editor's Pick</span>
-              <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">TechCrunch AI · 16 Feb</span>
-<span class="badge badge-difficulty-beginner">Beginner</span><span class="badge badge-track">Leader</span>            </div>
-            <h2><a href="https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/" target="_blank" rel="noopener">How Ricursive Intelligence raised $335M at a $4B valuation in 4 months</a></h2>
-            <p><strong style="color: var(--text);">An investment round for Ricursive Intelligence signals growing market interest in the space.</strong><br>Industry changes involving Ricursive Intelligence are likely to affect near-term planning cycles.</p>
-            <p class="action">Action: Flag Ricursive Intelligence for your leadership team, it may shift near-term priorities.</p>
-<p class="take">Treat Ricursive Intelligence as a planning input, the second-order effects matter more than the headline.</p>            <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+              <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/wired.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Wired AI · 22 Feb</span>
+<span class="badge badge-difficulty-beginner">Beginner</span>            </div>
+            <h2><a href="https://www.wired.com/story/how-to-hide-google-ai-overviews-from-your-search-results/" target="_blank" rel="noopener">How to Hide Google’s AI Overviews From Your Search Results</a></h2>
+            <p><strong style="color: var(--text);">Hide Google in the news; could affect pricing, roadmaps, or compliance this quarter, flag it.</strong><br>Pricing or policy changes from Hide Google could affect your next renewal or roadmap; worth a slot in the sync.</p>
+            <p class="action">Action: Bring Hide Google to your next planning sync, it may affect Q2 priorities.</p>
+<p class="take">Factor Hide Google into next quarter early; teams that read it early usually gain execution room.</p>            <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
           </div>
         </article>
 
         <div class="share-row">
-          <a class="share-btn" href="https://twitter.com/intent/tweet?text=Inference%20Weekly%20%E2%80%94%2016%20Feb%202026&url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on X</a>
+          <a class="share-btn" href="https://twitter.com/intent/tweet?text=Inference%20Weekly%20%E2%80%94%2023%20Feb%202026&url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on X</a>
           <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on LinkedIn</a>
-          <a class="share-btn" href="mailto:?subject=Inference%20Weekly%20%E2%80%94%2016%20Feb%202026&body=Check%20out%20this%20week's%20AI%20briefing%3A%20https://matthewpaver.github.io/ai-weekly/latest.html">Forward via Email</a>
+          <a class="share-btn" href="mailto:?subject=Inference%20Weekly%20%E2%80%94%2023%20Feb%202026&body=Check%20out%20this%20week's%20AI%20briefing%3A%20https://matthewpaver.github.io/ai-weekly/latest.html">Forward via Email</a>
         </div>
 
         <div class="sections">
-          <section class="section" data-sal="slide-up" id="industry-radar" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">1</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
-<p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
+          <section class="section" data-sal="slide-up" id="lab-notes" data-tier="leader">
+            <h2 class="section-title"><span class="section-num">1</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
+<p class="section-deck">Research and model updates with downstream product impact.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://images.ctfassets.net/kftzwdyauwt9/sz69YyLh9gs4Fm24UgsXJ/ae79311d1a85260970919e4f23dd03d6/Lockdown-Mode_SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" decoding="async" />                <div class="story-body">
+                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">OpenAI Blog · 13 Feb</span>
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Leader</span>                  </div>
-                  <h3><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Introducing Lockdown Mode and Elevated Risk labels in ChatGPT</a></h3>
-                  <p><strong style="color: var(--text);">ChatGPT launched with features aimed at the current gap in existing toolchains.</strong><br>If you&#39;re shopping for alternatives, ChatGPT belongs on the shortlist.</p>
-                  <p class="action">Action: Add ChatGPT as a discussion item in your next strategy or planning meeting.</p>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">arXiv CS.AI · 23 Feb</span>
+                    <span class="badge badge-difficulty-advanced">Advanced</span>
+                  </div>
+                  <h3><a href="https://arxiv.org/abs/2602.17676" target="_blank" rel="noopener">Epistemic Traps: Rational Misalignment Driven by Model Misspecification</a></h3>
+                  <p><strong style="color: var(--text);">Early results on Epistemic Traps are promising, but production validation is the real test.</strong><br>If Epistemic Traps findings replicate, they could change how teams approach related problems.</p>
+                  <p class="action">Action: Spend 10 minutes on the Epistemic Traps results, if nothing applies to your work, move on.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <a href="https://arxiv.org/abs/2602.17676" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
                   </span>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt" data-title="Introducing Lockdown Mode and Elevated Risk labels in ChatGPT" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <button type="button" class="like-btn" data-url="https://arxiv.org/abs/2602.17676" data-title="Epistemic Traps: Rational Misalignment Driven by Model Misspecification" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section" data-sal="slide-up" id="industry-radar" data-tier="leader">
+            <h2 class="section-title"><span class="section-num">2</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
+              <article class="story">
+<img class="lazy" data-src="https://images.ctfassets.net/kftzwdyauwt9/G2A5VZHbNARmo6atQ2xdG/7adb24136736bce440fc6548952b4ee3/OpenAI_For_India.png?w=1600&amp;h=900&amp;fit=fill" alt="Introducing OpenAI for India" width="228" height="152" decoding="async" />                <div class="story-body">
+                  <div class="meta-row">
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">OpenAI Blog · 18 Feb</span>
+                    <span class="badge badge-difficulty-beginner">Beginner</span>
+                  </div>
+                  <h3><a href="https://openai.com/index/openai-for-india" target="_blank" rel="noopener">Introducing OpenAI for India</a></h3>
+                  <p><strong style="color: var(--text);">Regional rollout for OpenAI signals where the vendor is investing; factor into multi-region plans.</strong><br>If you&#39;re shopping for alternatives, OpenAI belongs on the shortlist.</p>
+                  <p class="action">Action: Bring OpenAI to your next planning sync, it may affect Q2 priorities.</p>
+                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://openai.com/index/openai-for-india" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
+                  </span>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://openai.com/index/openai-for-india" data-title="Introducing OpenAI for India" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
               <article class="story">
-<img class="lazy" data-src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="OpenClaw founder Peter Steinberger is joining OpenAI" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://cdn.arstechnica.net/wp-content/uploads/2022/12/GettyImages-1192325886-1024x648.jpg" alt="An AI coding bot took down Amazon Web Services" width="228" height="152" decoding="async" />                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">The Verge AI · 15 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arstechnica.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Ars Technica AI · 20 Feb</span>
                     <span class="badge badge-difficulty-intermediate">Intermediate</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" target="_blank" rel="noopener">OpenClaw founder Peter Steinberger is joining OpenAI</a></h3>
-                  <p><strong style="color: var(--text);">The OpenClaw development has implications for vendor strategy and competitive positioning.</strong><br>The OpenClaw shift affects competitive positioning, factor it into Q2 planning.</p>
-                  <p class="action">Action: Set a reminder to check OpenClaw for downstream changes in 2 weeks.</p>
+                  </div>
+                  <h3><a href="https://arstechnica.com/ai/2026/02/an-ai-coding-bot-took-down-amazon-web-services/" target="_blank" rel="noopener">An AI coding bot took down Amazon Web Services</a></h3>
+                  <p><strong style="color: var(--text);">Amazon Web Services hit a serious outage; teams depending on it are re-checking runbooks and fallbacks.</strong><br>Outages tied to Amazon Web Services are a reminder to stress-test runbooks and fallbacks.</p>
+                  <p class="action">Action: Stress-test fallbacks and incident comms that touch Amazon Web Services, one hour well spent.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <a href="https://arstechnica.com/ai/2026/02/an-ai-coding-bot-took-down-amazon-web-services/" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
                   </span>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" data-title="OpenClaw founder Peter Steinberger is joining OpenAI" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <button type="button" class="like-btn" data-url="https://arstechnica.com/ai/2026/02/an-ai-coding-bot-took-down-amazon-web-services/" data-title="An AI coding bot took down Amazon Web Services" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
             </div>
           </section>
           <section class="section" data-sal="slide-up" id="builders-bench" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span></h2>
+            <h2 class="section-title"><span class="section-num">3</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png" alt="Custom Kernels for All from Codex and Claude" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://blog.langchain.com/content/images/2026/02/69690e0c0c3471f7cd4eaf42_create-agents.png" alt="How we built Agent Builder’s memory system" width="228" height="152" decoding="async" />                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">Hugging Face Blog · 13 Feb</span>
-                    <span class="badge badge-difficulty-intermediate">Intermediate</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Custom Kernels for All from Codex and Claude</a></h3>
-                  <p><strong style="color: var(--text);">A new tool release around Custom Kernels targets gaps in current developer workflows.</strong><br>Custom Kernels is worth evaluating if your current tools are hitting limits.</p>
-                  <p class="action">Action: Allocate one afternoon to test Custom Kernels against your top use case.</p>
-                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Read article &#x2192;</a>
-                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
-                  </span>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" data-title="Custom Kernels for All from Codex and Claude" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                  </p>
-                </div>
-              </article>
-              <article class="story">
-<img class="lazy" data-src="https://blog.langchain.com/content/images/size/w1200/2026/02/interrupt-on-sale.png" alt="Join us for Interrupt: The Agent Conference" decoding="async" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">LangChain Blog · 12 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">LangChain Blog · 22 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" target="_blank" rel="noopener">Join us for Interrupt: The Agent Conference</a></h3>
-                  <p><strong style="color: var(--text);">A new tool release around Interrupt targets gaps in current developer workflows.</strong><br>This year, wes coming next for agents—and how.</p>
-                  <p class="action">Action: Try Interrupt on a non-critical task this week and log the results.</p>
+                  </div>
+                  <h3><a href="https://blog.langchain.com/how-we-built-agent-builders-memory-system/" target="_blank" rel="noopener">How we built Agent Builder’s memory system</a></h3>
+                  <p><strong style="color: var(--text);">If Agent Builder delivers on its claims, it could simplify a few steps in your current setup.</strong><br>Adopting Agent Builder could speed delivery if integration friction stays low.</p>
+                  <p class="action">Action: Allocate one afternoon to test Agent Builder against your top use case.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" target="_blank" rel="noopener">Read article &#x2192;</a>
+                    <a href="https://blog.langchain.com/how-we-built-agent-builders-memory-system/" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
                   </span>
                   <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/" data-title="Join us for Interrupt: The Agent Conference" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
-          <section class="section" data-sal="slide-up" id="open-source-watch" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">3</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(1)</span></h2>
-<p class="section-deck">Repos with momentum that might deserve a deeper look.</p>            <div class="stories">
-              <article class="story">
-                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">GitHub Trending (AI/ML) · 16 Feb</span>
-                    <span class="badge badge-difficulty-intermediate">Intermediate</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noopener">zeroclaw</a></h3>
-                  <p><strong style="color: var(--text);">Zeroclaw is picking up momentum in the open-source community.</strong><br>Momentum behind zeroclaw is real, but maintenance quality should gate adoption decisions.</p>
-                  <p class="action">Action: Review zeroclaw issue tracker, last commit date, and license before considering adoption.</p>
-                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noopener">Read article &#x2192;</a>
-                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
-                  </span>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://github.com/zeroclaw-labs/zeroclaw" data-title="zeroclaw" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
-          <section class="section" data-sal="slide-up" id="ship-it-playbooks" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">4</span> 📚 Ship-It Playbooks <span style="font-weight:500;opacity:.7">(2)</span></h2>
-<p class="section-deck">Practical implementation guides you can adapt quickly.</p>            <div class="stories">
-              <article class="story">
-<img class="lazy" data-src="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-32.png" alt="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters ..." decoding="async" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">MarkTechPost · 16 Feb</span>
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents</a></h3>
-                  <p><strong style="color: var(--text);">Alibaba Cloud just updated the open-source landscape.</strong><br>Strong numbers from Alibaba Qwen Team could reset your baseline, but only if they hold on production data.</p>
-                  <p class="action">Action: Work through the Alibaba Qwen Team tutorial and modify one step for your own use case.</p>
-                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" target="_blank" rel="noopener">Read article &#x2192;</a>
-                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
-                  </span>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://www.marktechpost.com/2026/02/16/alibaba-qwen-team-releases-qwen3-5-397b-moe-model-with-17b-active-parameters-and-1m-token-context-for-ai-agents/" data-title="Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                  </p>
-                </div>
-              </article>
-              <article class="story">
-<img class="lazy" data-src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F5ryaxh3udd3acbr8vie7.png" alt="EU AI Act 2026: A Practical Compliance Guide Every Developer Should Read" decoding="async" />                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">Dev.to AI · 16 Feb</span>
-                    <span class="badge badge-difficulty-beginner">Beginner</span>
-<span class="badge badge-track">Builder</span>                  </div>
-                  <h3><a href="https://dev.to/arkforge-ceo/eu-ai-act-2026-a-practical-compliance-guide-every-developer-should-read-12kl" target="_blank" rel="noopener">EU AI Act 2026: A Practical Compliance Guide Every Developer Should Read</a></h3>
-                  <p><strong style="color: var(--text);">New tutorial content on EU AI Act walks through a practical implementation.</strong><br>Not might apply. Not eventually. Right now.</p>
-                  <p class="action">Action: Use the EU AI Act guide as a template, build one thing from it this week.</p>
-                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://dev.to/arkforge-ceo/eu-ai-act-2026-a-practical-compliance-guide-every-developer-should-read-12kl" target="_blank" rel="noopener">Read article &#x2192;</a>
-                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
-                  </span>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://dev.to/arkforge-ceo/eu-ai-act-2026-a-practical-compliance-guide-every-developer-should-read-12kl" data-title="EU AI Act 2026: A Practical Compliance Guide Every Developer Should Read" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
-          <section class="section" data-sal="slide-up" id="lab-notes" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">5</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
-<p class="section-deck">Research and model updates with downstream product impact.</p>            <div class="stories">
-              <article class="story">
-                <div class="story-body">
-                  <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png" alt="" width="10" height="10" class="source-icon" onerror="this.style.display='none'">arXiv CS.AI · 16 Feb</span>
-                    <span class="badge badge-difficulty-advanced">Advanced</span>
-<span class="badge badge-track">Researcher</span>                  </div>
-                  <h3><a href="https://arxiv.org/abs/2602.12316" target="_blank" rel="noopener">GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory</a></h3>
-                  <p><strong style="color: var(--text);">New performance numbers for HarmBench could change cost-quality tradeoffs if they replicate.</strong><br>If HarmBench numbers replicate on real workloads, current model or tool selections may need revisiting.</p>
-                  <p class="action">Action: Compare the HarmBench eval setup to yours, check if the benchmark conditions match your workload.</p>
-                  <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <a href="https://arxiv.org/abs/2602.12316" target="_blank" rel="noopener">Read article &#x2192;</a>
-                    <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
-                  </span>
-                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
-                    <button type="button" class="like-btn" data-url="https://arxiv.org/abs/2602.12316" data-title="GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
+                    <button type="button" class="like-btn" data-url="https://blog.langchain.com/how-we-built-agent-builders-memory-system/" data-title="How we built Agent Builder’s memory system" aria-label="Like this article"><svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Like</button>
                   </p>
                 </div>
               </article>
@@ -1395,6 +1311,13 @@
         <nav class="menu card" aria-label="In this issue">
           <p class="section-head">In This Issue</p>
           <div class="menu-grid" style="grid-template-columns: 1fr;">
+            <a class="menu-item" href="#lab-notes">
+              <span class="menu-icon">🔬</span>
+              <span class="menu-text">
+                <span class="menu-label">Lab Notes</span>
+              </span>
+              <span class="menu-count">1</span>
+            </a>
             <a class="menu-item" href="#industry-radar">
               <span class="menu-icon">🌐</span>
               <span class="menu-text">
@@ -1407,27 +1330,6 @@
               <span class="menu-text">
                 <span class="menu-label">Builder&#39;s Bench</span>
               </span>
-              <span class="menu-count">2</span>
-            </a>
-            <a class="menu-item" href="#open-source-watch">
-              <span class="menu-icon">⭐</span>
-              <span class="menu-text">
-                <span class="menu-label">Open Source Watch</span>
-              </span>
-              <span class="menu-count">1</span>
-            </a>
-            <a class="menu-item" href="#ship-it-playbooks">
-              <span class="menu-icon">📚</span>
-              <span class="menu-text">
-                <span class="menu-label">Ship-It Playbooks</span>
-              </span>
-              <span class="menu-count">2</span>
-            </a>
-            <a class="menu-item" href="#lab-notes">
-              <span class="menu-icon">🔬</span>
-              <span class="menu-text">
-                <span class="menu-label">Lab Notes</span>
-              </span>
               <span class="menu-count">1</span>
             </a>
           </div>
@@ -1435,12 +1337,19 @@
 
         <section class="card also-this-week" style="padding: 14px;">
           <p class="section-head" style="margin: 0 0 10px; font-size: 0.75rem;">Also this week</p>
-          <p style="margin: 0 0 8px; font-size: 0.85rem; color: var(--muted);"><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Google Machine Learning Crash Course</a> · Google AI · Free · 15 hours</p>
+          <ul style="margin: 0 0 12px; padding-left: 1.2em; font-size: 0.88rem; color: var(--text);">
+            <li style="margin-bottom: 4px;"><a href="https://dev.to/messin_tom/esp32-ai-text-to-speech-build-your-own-voice-device-i8o" target="_blank" rel="noopener" style="color: var(--link);">ESP32 AI Text-to-Speech: Build Your Own Voice Device</a></li>
+          </ul>
+          <div style="margin: 0 0 12px;">
+            <p class="section-head" style="margin: 0 0 4px; font-size: 0.7rem;">📚 Learn This Week</p>
+            <p style="margin: 0 0 4px; font-size: 0.85rem; color: var(--muted);"><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Machine Learning Specialization</a> · Coursera / Stanford · Paid · 2 months</p>
+            <span class="badge badge-difficulty-beginner">Beginner</span>
+<p style="margin: 4px 0 0; font-size: 0.78rem; color: var(--muted); line-height: 1.4;">Andrew Ng&#39;s refreshed ML curriculum. The gold standard intro. Audit free, cert paid.</p>          </div>
           <div style="margin: 12px 0 0; padding: 10px; background: var(--surface); border-radius: 8px; border-left: 3px solid var(--brand);">
-            <p style="margin: 0 0 4px; font-size: 0.7rem; font-weight: 700; color: var(--brand); letter-spacing: 0.8px; text-transform: uppercase;">Prompt of the Week · Documentation</p>
-            <p style="margin: 0 0 6px; font-size: 0.82rem; color: var(--text); font-style: italic; line-height: 1.4;">"Rewrite this API documentation to be developer-friendly. Keep it accurate but make it scannable with clear examples."</p>
-            <p style="margin: 0 0 4px; font-size: 0.78rem; color: var(--muted); line-height: 1.4;"><strong style="color: var(--brand);">Why it works:</strong> Bad docs are the #1 reason developers abandon tools. Asking for &#39;scannable with clear examples&#39; targets the two things devs actually need: quick answers and copy-pasteable code.</p>
-            <p style="margin: 0; font-size: 0.72rem; color: var(--muted); font-style: italic;">Paste the existing docs. Specify your audience (junior devs, senior engineers, etc.).</p>
+            <p style="margin: 0 0 4px; font-size: 0.7rem; font-weight: 700; color: var(--brand); letter-spacing: 0.8px; text-transform: uppercase;">Prompt of the Week · Content</p>
+            <p style="margin: 0 0 6px; font-size: 0.82rem; color: var(--text); font-style: italic; line-height: 1.4;">"Generate a week&#39;s worth of social media posts about [topic] in the voice of a technical thought leader — concise, opinionated, no fluff."</p>
+            <p style="margin: 0 0 4px; font-size: 0.78rem; color: var(--muted); line-height: 1.4;"><strong style="color: var(--brand);">Why it works:</strong> Technical audiences punish generic content. Specifying &#39;opinionated, no fluff&#39; constrains the model away from safe, bland takes — the output reads more like a real practitioner&#39;s voice.</p>
+            <p style="margin: 0; font-size: 0.72rem; color: var(--muted); font-style: italic;">Replace [topic] with your area. Add 2-3 example posts you admire for tone matching.</p>
           </div>
         </section>
       </aside>
@@ -1449,10 +1358,10 @@
     <!-- Feedback card at bottom: Formspree or Formsubmit.co (free) -->
     <section class="card feedback-card" data-sal="fade" style="margin: 24px 0; padding: 24px;">
       <h3 style="margin: 0 0 4px; font-size: 1.15rem; color: var(--text);">How was this issue?</h3>
-      <p style="margin: 0 0 14px; font-size: 0.88rem; color: var(--muted);">Your feedback shapes the next edition.</p>
+      <p style="margin: 0 0 14px; font-size: 0.88rem; color: var(--muted);">Helps me pick better stories next week.</p>
       <form id="feedback-form" class="feedback-form" action="https://formsubmit.co/inference.feedback@gmail.com" method="post" style="max-width: 480px;">
-        <input type="hidden" name="issue_date" value="16 Feb 2026" />
-        <input type="hidden" name="_subject" value="Inference feedback · 16 Feb 2026" />
+        <input type="hidden" name="issue_date" value="23 Feb 2026" />
+        <input type="hidden" name="_subject" value="Inference feedback · 23 Feb 2026" />
         <input type="hidden" id="feedback-rating-value" name="rating" value="" />
         <!-- Emoji reaction buttons (no dropdown) -->
         <div class="emoji-rating" role="radiogroup" aria-label="Rate this issue">
@@ -1531,37 +1440,21 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
   </script>
 
 
-  <!-- Scroll-triggered reveal (local, no CDN dependency) -->
-  <script>
-  (function() {
-    var nodes = document.querySelectorAll('[data-sal]');
-    if (!nodes.length) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
-      nodes.forEach(function(n) { n.classList.add('sal-in'); });
-      return;
-    }
-    var io = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('sal-in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08 });
-    nodes.forEach(function(n) { io.observe(n); });
-  })();
-  </script>
+  <!-- Sal.js: scroll-triggered animations -->
+  <script src="https://cdn.jsdelivr.net/npm/sal@1.1.8/dist/sal.js"></script>
+  <script>sal({ threshold: 0.08, once: true });</script>
 
-  <!-- vanilla-lazyload: responsive images with error fallback -->
+  <!-- vanilla-lazyload: responsive images with error fallback; fallback if CDN fails -->
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19/dist/lazyload.min.js"></script>
   <script>
-  new LazyLoad({
-    elements_selector: '.lazy',
-    threshold: 200,
-    callback_error: function(el) {
-      el.style.display = 'none';
-    }
-  });
+  (function(){
+    function fallbackLazy(){ document.querySelectorAll('.lazy[data-src]').forEach(function(el){ el.src=el.getAttribute('data-src'); }); }
+    try {
+      if (typeof LazyLoad !== 'undefined') {
+        new LazyLoad({ elements_selector: '.lazy', threshold: 200, callback_error: function(el){ el.style.display='none'; } });
+      } else { fallbackLazy(); }
+    } catch (e) { fallbackLazy(); }
+  })();
   </script>
 
   <!-- Reading progress bar + scroll-top progress ring -->
@@ -1803,9 +1696,9 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Inference Weekly · 16 Feb 2026",
-    "description": "Big news this week: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months, and what it means for your roadmap.",
-    "datePublished": "2026-02-16",
+    "headline": "Inference Weekly · 23 Feb 2026",
+    "description": "Big news this week: Epistemic Traps: Rational Misalignment Driven by Model Misspecification, and what it means for your roadmap.",
+    "datePublished": "2026-02-23",
     "publisher": {
       "@type": "Organization",
       "name": "Inference Weekly",

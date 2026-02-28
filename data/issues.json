@@ -1,6 +1,23 @@
 {
   "issues": [
     {
+      "slug": "2026-02-25",
+      "date_iso": "2026-02-25",
+      "date_label": "25 Feb 2026",
+      "title": "Inference 25 Feb 2026",
+      "lead_title": "OpenAI announces Frontier Alliance Partners",
+      "summary": "Big news this week: OpenAI defeats xAI\u2019s trade secrets lawsuit, and what it means for your roadmap.",
+      "total_articles": 9,
+      "read_time_minutes": 4,
+      "section_count": 6,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-25.html",
+      "repo_md_path": "/issues/2026-02-25.md",
+      "search_text": "This week at a glance This week If You Only Read One Thing Learn This Week Prompt of the Week \u2b50 Open-source picks \ud83d\udcda Ship-It Playbooks \ud83d\udd2c Research worth your time \u2601\ufe0f Infra \ud83c\udf10 What changed in industry \ud83d\udee0\ufe0f Tools to try OpenAI announces Frontier Alliance Partners llmfit Will Claude Code Be Dead by Summer? Alibaba Qwen Team Releases Qwen 3.5 Medium Model Series: A Production Powerhouse Proving that Smaller AI Models are Smarter Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications Apple Researchers Introduce Ferret-UI Lite, an On-Device AI Model for Seeing and Controlling UIs OpenAI defeats xAI\u2019s trade secrets lawsuit Anthropic won\u2019t budge as Pentagon escalates AI dispute How we built Agent Builder\u2019s memory system",
+      "cover_image_url": "",
+      "is_latest": true,
+      "likes": 0
+    },
+    {
       "slug": "2026-02-22",
       "date_iso": "2026-02-22",
       "date_label": "22 Feb 2026",
@@ -12,8 +29,10 @@
       "section_count": 4,
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-22.html",
       "repo_md_path": "/issues/2026-02-22.md",
+      "search_text": "This week at a glance This week If You Only Read One Thing Learn This Week Prompt of the Week \u2b50 Open-source picks \ud83d\udd2c Research worth your time \ud83c\udf10 What changed in industry \ud83d\udee0\ufe0f Tools to try Agent Observability Powers Agent Evaluation zeroclaw voicebox After Orthogonality: Virtue-Ethical Agency and AI Alignment Lawsuit: ChatGPT told student he was \"meant for greatness\"\u2014then came psychosis Advancing independent research on AI alignment Microsoft has a new plan to prove what\u2019s real and what\u2019s AI online GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
       "cover_image_url": "https://blog.langchain.com/content/images/size/w1200/2026/02/pic.png",
-      "is_latest": true
+      "is_latest": false,
+      "likes": 0
     },
     {
       "slug": "2026-02-16",
@@ -27,8 +46,10 @@
       "section_count": 5,
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-16.html",
       "repo_md_path": "/issues/2026-02-16.md",
+      "search_text": "In This Issue This week If You Only Read One Thing Learn This Week Prompt of the Week \ud83c\udf10 Industry Radar \ud83d\udee0\ufe0f Builder's Bench \u2b50 Open Source Watch \ud83d\udcda Ship-It Playbooks \ud83d\udd2c Lab Notes How Ricursive Intelligence raised $335M at a $4B valuation in 4 months Introducing Lockdown Mode and Elevated Risk labels in ChatGPT OpenClaw founder Peter Steinberger is joining OpenAI Custom Kernels for All from Codex and Claude Join us for Interrupt: The Agent Conference zeroclaw Alibaba Qwen Team Releases Qwen3.5-397B MoE Model with 17B Active Parameters and 1M Token Context for AI agents EU AI Act 2026: A Practical Compliance Guide Every Developer Should Read GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
       "cover_image_url": "https://techcrunch.com/wp-content/uploads/2026/02/Ricursive-Intelligence-founders.png?resize=1200,943",
-      "is_latest": false
+      "is_latest": false,
+      "likes": 0
     }
   ]
 }

@@ -24,11 +24,11 @@
   <!-- Canonical + RSS -->
   <link rel="canonical" href="https://matthewpaver.github.io/ai-weekly/latest.html" />
   <link rel="alternate" type="application/rss+xml" title="Inference Weekly" href="https://matthewpaver.github.io/ai-weekly/feed.xml" />
+  <link rel="icon" type="image/png" href="https://matthewpaver.github.io/ai-weekly/assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <!-- Sal.js: lightweight scroll-reveal animations (~3KB) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sal@1.1.8/dist/sal.css" />
+  <!-- Local scroll-reveal styles (no CDN dependency) -->
   <script>
     (function(){try{var m=document.getElementById('meta-theme-color');if(localStorage.getItem('inference-theme')==='dark'){document.documentElement.classList.add('theme-dark');if(m)m.content='#0F172A';}}catch(e){}})();
   </script>
@@ -442,10 +442,11 @@
     }
     /* Source + date: attribution style (not a competing pill) — subtle so it reads as metadata */
     .badge-source {
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 500;
-      padding: 2px 8px;
+      padding: 1px 7px;
       line-height: 1.35;
+      gap: 4px;
       background: color-mix(in srgb, var(--muted), transparent 92%);
       color: var(--muted);
       border: 1px solid color-mix(in srgb, var(--line), transparent 60%);
@@ -457,13 +458,14 @@
     }
     .source-icon {
       vertical-align: middle;
-      margin-right: 4px;
+      margin-right: 3px;
       border-radius: 3px;
-      width: 14px;
-      height: 14px;
+      width: 12px;
+      height: 12px;
+      min-width: 12px;
+      min-height: 12px;
       object-fit: contain;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: crisp-edges;
+      image-rendering: auto;
     }
     /* Difficulty: Beginner (green), Intermediate (amber), Advanced (red) — visible variety */
     .badge-difficulty-beginner { background: #dcfce7 !important; color: #166534 !important; border-color: transparent !important; }
@@ -772,8 +774,16 @@
     .like-btn.liked .like-icon { fill: var(--brand); stroke: var(--brand); transform: scale(1.15); }
 
     /* Tier gating placeholder (hidden until tiers_enabled) */
-    /* Scroll-triggered reveal (Sal.js handles animation; fallback for no-JS) */
-    [data-sal] { transition-duration: 0.4s; }
+    /* Scroll-triggered reveal (local IntersectionObserver, no external dependency) */
+    [data-sal] {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .4s ease, transform .4s ease;
+    }
+    [data-sal].sal-in {
+      opacity: 1;
+      transform: none;
+    }
     .no-js [data-sal] { opacity: 1; transform: none; }
 
     .copyright {
@@ -1200,11 +1210,11 @@
             <p class="section-head">Top Story</p>
             <div class="meta-row">
               <span class="badge badge-pick">Editor's Pick</span>
-              <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">LangChain Blog · 22 Feb</span>
+              <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">LangChain Blog · 22 Feb</span>
 <span class="badge badge-difficulty-beginner">Beginner</span>            </div>
             <h2><a href="https://blog.langchain.com/agent-observability-powers-agent-evaluation/" target="_blank" rel="noopener">Agent Observability Powers Agent Evaluation</a></h2>
-            <p><strong style="color: var(--text);">You cant validate improvements without systematic evaluation.</strong><br>Adopting Agent Observability could speed delivery if integration friction stays low.</p>
-            <p class="action">Action: Spin up Agent Observability in a 2-hour proof of concept, compare output against your current tool.</p>
+            <p><strong style="color: var(--text);">You can't validate improvements without systematic evaluation.</strong><br>Adopting Agent Observability could speed delivery if integration friction stays low.</p>
+            <p class="action">Action: Spin up Agent Observability in a 2-hour proof of concept - compare output against your current tool.</p>
 <p class="take">Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.</p>            <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
           </div>
         </article>
@@ -1216,13 +1226,13 @@
         </div>
 
         <div class="sections">
-          <section class="section" data-sal="slide-up" id="open-source-watch" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">1</span> ⭐ Open Source Watch <span style="font-weight:500;opacity:.7">(2)</span></h2>
+          <section class="section" data-sal="slide-up" id="open-source-picks" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">1</span> ⭐ Open-source picks <span style="font-weight:500;opacity:.7">(2)</span></h2>
 <p class="section-deck">Repos with momentum that might deserve a deeper look.</p>            <div class="stories">
               <article class="story">
                 <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">GitHub Trending (AI/ML) · 22 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">GitHub Trending (AI/ML) · 22 Feb</span>
                     <span class="badge badge-difficulty-intermediate">Intermediate</span>
                   </div>
                   <h3><a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noopener">zeroclaw</a></h3>
@@ -1240,11 +1250,11 @@
               <article class="story">
                 <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">GitHub Trending (AI/ML) · 21 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/github.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">GitHub Trending (AI/ML) · 21 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
                   <h3><a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener">voicebox</a></h3>
-                  <p><strong style="color: var(--text);">Growing traction for voicebox on GitHub suggests rising builder interest.</strong><br>Community interest in voicebox is growing, check repo health before committing.</p>
+                  <p><strong style="color: var(--text);">Growing traction for voicebox on GitHub suggests rising builder interest.</strong><br>Community interest in voicebox is growing - check repo health before committing.</p>
                   <p class="action">Action: Check voicebox for recent activity, open issues, and license compatibility this week.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
                     <a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener">Read article &#x2192;</a>
@@ -1257,18 +1267,18 @@
               </article>
             </div>
           </section>
-          <section class="section" data-sal="slide-up" id="lab-notes" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">2</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
+          <section class="section" data-sal="slide-up" id="research-worth-your-time" data-tier="leader">
+            <h2 class="section-title"><span class="section-num">2</span> 🔬 Research worth your time <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">Research and model updates with downstream product impact.</p>            <div class="stories">
               <article class="story">
                 <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/thegradient.pub.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">The Gradient · 18 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/thegradient.pub.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">The Gradient · 18 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
                   <h3><a href="https://thegradient.pub/virtue-ethics-ai-alignment/" target="_blank" rel="noopener">After Orthogonality: Virtue-Ethical Agency and AI Alignment</a></h3>
                   <p><strong style="color: var(--text);">Results from Ethical Agency point to where methods may shift in the next cycle.</strong><br>If Ethical Agency findings replicate, they could change how teams approach related problems.</p>
-                  <p class="action">Action: Spend 10 minutes on the Ethical Agency results, if nothing applies to your work, move on.</p>
+                  <p class="action">Action: Spend 10 minutes on the Ethical Agency results - if nothing applies to your work, move on.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
                     <a href="https://thegradient.pub/virtue-ethics-ai-alignment/" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
@@ -1280,13 +1290,13 @@
               </article>
             </div>
           </section>
-          <section class="section" data-sal="slide-up" id="industry-radar" data-tier="leader">
-            <h2 class="section-title"><span class="section-num">3</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(3)</span></h2>
+          <section class="section" data-sal="slide-up" id="what-changed-in-industry" data-tier="leader">
+            <h2 class="section-title"><span class="section-num">3</span> 🌐 What changed in industry <span style="font-weight:500;opacity:.7">(3)</span></h2>
 <p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
               <article class="story">
                 <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arstechnica.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Ars Technica AI · 19 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/arstechnica.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">Ars Technica AI · 19 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
                   <h3><a href="https://arstechnica.com/tech-policy/2026/02/before-psychosis-chatgpt-told-man-he-was-an-oracle-new-lawsuit-alleges/" target="_blank" rel="noopener">Lawsuit: ChatGPT told student he was &#34;meant for greatness&#34;—then came psychosis</a></h3>
@@ -1304,12 +1314,12 @@
               <article class="story">
 <img class="lazy" data-src="https://images.ctfassets.net/kftzwdyauwt9/41XPFki1MAJlOqfx50Lr9n/8e7423403b90a3d12e4d3844d83a77dd/SEO_Card__1_.png?w=1600&amp;h=900&amp;fit=fill" alt="Advancing independent research on AI alignment" width="228" height="152" decoding="async" />                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">OpenAI Blog · 19 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">OpenAI Blog · 19 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
                   <h3><a href="https://openai.com/index/advancing-independent-research-ai-alignment" target="_blank" rel="noopener">Advancing independent research on AI alignment</a></h3>
-                  <p><strong style="color: var(--text);">A new paper on Advancing independent research introduces methods that may influence downstream tooling.</strong><br>Add Advancing independent research to your next ops or budget sync, pricing or policy could hit renewals or roadmap.</p>
-                  <p class="action">Action: Bring Advancing independent research to your next planning sync, it may affect Q2 priorities.</p>
+                  <p><strong style="color: var(--text);">A new paper on Advancing independent research introduces methods that may influence downstream tooling.</strong><br>Add Advancing independent research to your next ops or budget sync - pricing or policy could hit renewals or roadmap.</p>
+                  <p class="action">Action: Bring Advancing independent research to your next planning sync - it may affect Q2 priorities.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
                     <a href="https://openai.com/index/advancing-independent-research-ai-alignment" target="_blank" rel="noopener">Read article &#x2192;</a>
                     <span style="font-size: 0.72rem; color: var(--muted);">1 min read</span>
@@ -1322,11 +1332,11 @@
               <article class="story">
 <img class="lazy" data-src="https://wp.technologyreview.com/wp-content/uploads/2026/02/false-mirror-cr-smoke2.jpg?resize=1200,600" alt="Microsoft has a new plan to prove what’s real and what’s AI online" width="228" height="152" decoding="async" />                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/technologyreview.com.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">MIT Technology Review AI · 19 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/technologyreview.com.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">MIT Technology Review AI · 19 Feb</span>
                     <span class="badge badge-difficulty-advanced">Advanced</span>
                   </div>
                   <h3><a href="https://www.technologyreview.com/2026/02/19/1133360/microsoft-has-a-new-plan-to-prove-whats-real-and-whats-ai-online/" target="_blank" rel="noopener">Microsoft has a new plan to prove what’s real and what’s AI online</a></h3>
-                  <p><strong style="color: var(--text);">AI-enabled deception now permeates our online lives.</strong><br>Add Microsoft to your next ops or budget sync, pricing or policy could hit renewals or roadmap.</p>
+                  <p><strong style="color: var(--text);">AI-enabled deception now permeates our online lives.</strong><br>Add Microsoft to your next ops or budget sync - pricing or policy could hit renewals or roadmap.</p>
                   <p class="action">Action: Add Microsoft as a discussion item in your next strategy or planning meeting.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
                     <a href="https://www.technologyreview.com/2026/02/19/1133360/microsoft-has-a-new-plan-to-prove-whats-real-and-whats-ai-online/" target="_blank" rel="noopener">Read article &#x2192;</a>
@@ -1339,17 +1349,17 @@
               </article>
             </div>
           </section>
-          <section class="section" data-sal="slide-up" id="builders-bench" data-tier="builder">
-            <h2 class="section-title"><span class="section-num">4</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(1)</span></h2>
+          <section class="section" data-sal="slide-up" id="tools-to-try" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">4</span> 🛠️ Tools to try <span style="font-weight:500;opacity:.7">(1)</span></h2>
 <p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
               <article class="story">
 <img class="lazy" data-src="https://huggingface.co/blog/assets/ggml-joins-hf/ggml-joins-hf.png" alt="GGML and llama.cpp join HF to ensure the long-term progress of Local AI" width="228" height="152" decoding="async" />                <div class="story-body">
                   <div class="meta-row">
-                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png" alt="" width="14" height="14" class="source-icon" onerror="this.style.display='none'">Hugging Face Blog · 20 Feb</span>
+                    <span class="badge badge-source"><img src="https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png" alt="" width="12" height="12" class="source-icon" onerror="this.style.display='none'">Hugging Face Blog · 20 Feb</span>
                     <span class="badge badge-difficulty-beginner">Beginner</span>
                   </div>
                   <h3><a href="https://huggingface.co/blog/ggml-joins-hf" target="_blank" rel="noopener">GGML and llama.cpp join HF to ensure the long-term progress of Local AI</a></h3>
-                  <p><strong style="color: var(--text);">The GGML tooling fills a gap, test it against your existing workflow before committing.</strong><br>The GGML release addresses gaps that many builder teams have flagged.</p>
+                  <p><strong style="color: var(--text);">The GGML tooling fills a gap - test it against your existing workflow before committing.</strong><br>The GGML release addresses gaps that many builder teams have flagged.</p>
                   <p class="action">Action: Try GGML on a non-critical task this week and log the results.</p>
                   <span style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
                     <a href="https://huggingface.co/blog/ggml-joins-hf" target="_blank" rel="noopener">Read article &#x2192;</a>
@@ -1366,34 +1376,34 @@
       </main>
 
       <aside>
-        <nav class="menu card" aria-label="In this issue">
-          <p class="section-head">In This Issue</p>
+        <nav class="menu card" aria-label="This week at a glance">
+          <p class="section-head">This week at a glance</p>
           <div class="menu-grid" style="grid-template-columns: 1fr;">
-            <a class="menu-item" href="#open-source-watch">
+            <a class="menu-item" href="#open-source-picks">
               <span class="menu-icon">⭐</span>
               <span class="menu-text">
-                <span class="menu-label">Open Source Watch</span>
+                <span class="menu-label">Open-source picks</span>
               </span>
               <span class="menu-count">2</span>
             </a>
-            <a class="menu-item" href="#lab-notes">
+            <a class="menu-item" href="#research-worth-your-time">
               <span class="menu-icon">🔬</span>
               <span class="menu-text">
-                <span class="menu-label">Lab Notes</span>
+                <span class="menu-label">Research worth your time</span>
               </span>
               <span class="menu-count">1</span>
             </a>
-            <a class="menu-item" href="#industry-radar">
+            <a class="menu-item" href="#what-changed-in-industry">
               <span class="menu-icon">🌐</span>
               <span class="menu-text">
-                <span class="menu-label">Industry Radar</span>
+                <span class="menu-label">What changed in industry</span>
               </span>
               <span class="menu-count">3</span>
             </a>
-            <a class="menu-item" href="#builders-bench">
+            <a class="menu-item" href="#tools-to-try">
               <span class="menu-icon">🛠️</span>
               <span class="menu-text">
-                <span class="menu-label">Builder&#39;s Bench</span>
+                <span class="menu-label">Tools to try</span>
               </span>
               <span class="menu-count">1</span>
             </a>
@@ -1502,9 +1512,26 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
   </script>
 
 
-  <!-- Sal.js: scroll-triggered animations -->
-  <script src="https://cdn.jsdelivr.net/npm/sal@1.1.8/dist/sal.js"></script>
-  <script>sal({ threshold: 0.08, once: true });</script>
+  <!-- Scroll-triggered reveal (local, no CDN dependency) -->
+  <script>
+  (function() {
+    var nodes = document.querySelectorAll('[data-sal]');
+    if (!nodes.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      nodes.forEach(function(n) { n.classList.add('sal-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('sal-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    nodes.forEach(function(n) { io.observe(n); });
+  })();
+  </script>
 
   <!-- vanilla-lazyload: responsive images with error fallback; fallback if CDN fails -->
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19/dist/lazyload.min.js"></script>
