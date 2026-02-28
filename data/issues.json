@@ -1,6 +1,23 @@
 {
   "issues": [
     {
+      "slug": "2026-02-28",
+      "date_iso": "2026-02-28",
+      "date_label": "28 Feb 2026",
+      "title": "Inference 28 Feb 2026",
+      "lead_title": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
+      "summary": "Leading with Joint Statement from OpenAI and Microsoft, and the rest of the week's best AI signal.",
+      "total_articles": 10,
+      "read_time_minutes": 4,
+      "section_count": 4,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-28.html",
+      "repo_md_path": "/issues/2026-02-28.md",
+      "search_text": "This week at a glance This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week \u2601\ufe0f Infra \ud83c\udf10 What changed in industry \ud83d\udee0\ufe0f Tools to try \u2b50 Open-source picks Anthropic vs. the Pentagon: What\u2019s actually at stake? MySQL 9.6 Changes Foreign Key Constraints and Cascade Handling Joint Statement from OpenAI and Microsoft Trump orders federal agencies to drop Anthropic\u2019s AI Mixture of Experts (MoEs) in Transformers How we built Agent Builder\u2019s memory system llmfit openfang",
+      "cover_image_url": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2218106494.jpg?resize=1200,800",
+      "is_latest": true,
+      "likes": 0
+    },
+    {
       "slug": "2026-02-25",
       "date_iso": "2026-02-25",
       "date_label": "25 Feb 2026",
@@ -14,7 +31,24 @@
       "repo_md_path": "/issues/2026-02-25.md",
       "search_text": "This week at a glance This week If You Only Read One Thing Learn This Week Prompt of the Week \u2b50 Open-source picks \ud83d\udcda Ship-It Playbooks \ud83d\udd2c Research worth your time \u2601\ufe0f Infra \ud83c\udf10 What changed in industry \ud83d\udee0\ufe0f Tools to try OpenAI announces Frontier Alliance Partners llmfit Will Claude Code Be Dead by Summer? Alibaba Qwen Team Releases Qwen 3.5 Medium Model Series: A Production Powerhouse Proving that Smaller AI Models are Smarter Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications Apple Researchers Introduce Ferret-UI Lite, an On-Device AI Model for Seeing and Controlling UIs OpenAI defeats xAI\u2019s trade secrets lawsuit Anthropic won\u2019t budge as Pentagon escalates AI dispute How we built Agent Builder\u2019s memory system",
       "cover_image_url": "",
-      "is_latest": true,
+      "is_latest": false,
+      "likes": 0
+    },
+    {
+      "slug": "2026-02-23",
+      "date_iso": "2026-02-23",
+      "date_label": "23 Feb 2026",
+      "title": "Inference 23 Feb 2026",
+      "lead_title": "How to Hide Google\u2019s AI Overviews From Your Search Results",
+      "summary": "Big news this week: Epistemic Traps: Rational Misalignment Driven by Model Misspecification, and what it means for your roadmap.",
+      "total_articles": 6,
+      "read_time_minutes": 3,
+      "section_count": 3,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-23.html",
+      "repo_md_path": "/issues/2026-02-23.md",
+      "search_text": "In This Issue This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week \ud83d\udd2c Lab Notes \ud83c\udf10 Industry Radar \ud83d\udee0\ufe0f Builder's Bench How to Hide Google\u2019s AI Overviews From Your Search Results Epistemic Traps: Rational Misalignment Driven by Model Misspecification Introducing OpenAI for India An AI coding bot took down Amazon Web Services How we built Agent Builder\u2019s memory system",
+      "cover_image_url": "https://media.wired.com/photos/699879d490ce1a01f1ba1ac0/191:100/w_1280,c_limit/GettyImages-2250413446.jpg",
+      "is_latest": false,
       "likes": 0
     },
     {

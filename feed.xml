@@ -5,95 +5,111 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Feb 2026 00:27:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 12:18:30 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[OpenAI defeats xAI’s trade secrets lawsuit]]></title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit</link>
-      <description><![CDATA[The OpenAI story has enough signal to track — file it for your next planning round (via The Verge AI).]]></description>
+      <title><![CDATA[Joint Statement from OpenAI and Microsoft]]></title>
+      <link>https://openai.com/index/continuing-microsoft-partnership</link>
+      <description><![CDATA[The OpenAI story has enough signal to track — file it for your next planning round (via OpenAI Blog).]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 24 Feb 2026 18:05:28 +0000</pubDate>
-      <author>Hayden Field</author>
-    </item>
-    <item>
-      <title><![CDATA[OpenAI announces Frontier Alliance Partners]]></title>
-      <link>https://openai.com/index/frontier-alliance-partners</link>
-      <description><![CDATA[Depending on your setup, OpenAI might save you time or headaches down the line (via OpenAI Blog).]]></description>
-      <category>Industry</category>
-      <pubDate>Mon, 23 Feb 2026 05:30:00 +0000</pubDate>
+      <pubDate>Fri, 27 Feb 2026 05:30:00 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications]]></title>
-      <link>https://arxiv.org/abs/2602.18582</link>
-      <description><![CDATA[If Hierarchical Reward Design pans out, it could change how teams approach their current stack (via arXiv CS.AI).]]></description>
-      <category>Research</category>
-      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Zhiqin Qian, Ryan Diaz, Sangwon Seo et al.</author>
+      <title><![CDATA[Trump orders federal agencies to drop Anthropic’s AI]]></title>
+      <link>https://www.theverge.com/policy/886489/pentagon-anthropic-trump-dod</link>
+      <description><![CDATA[Depending on your setup, Trump might save you time or headaches down the line (via The Verge AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 27 Feb 2026 16:30:47 +0000</pubDate>
+      <author>Hayden Field, Richard Lawler</author>
     </item>
     <item>
-      <title><![CDATA[Anthropic won’t budge as Pentagon escalates AI dispute]]></title>
-      <link>https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/</link>
+      <title><![CDATA[Anthropic vs. the Pentagon: What’s actually at stake?]]></title>
+      <link>https://techcrunch.com/2026/02/27/anthropic-vs-the-pentagon-whats-actually-at-stake/</link>
       <description><![CDATA[Not a fire drill, but Anthropic is the kind of thing that compounds if you ignore it (via TechCrunch AI).]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 24 Feb 2026 21:18:45 +0000</pubDate>
+      <pubDate>Fri, 27 Feb 2026 19:11:04 +0000</pubDate>
       <author>Rebecca Bellan</author>
     </item>
     <item>
-      <title><![CDATA[Meta could end up owning 10% of AMD in new chip deal]]></title>
-      <link>https://arstechnica.com/ai/2026/02/meta-could-end-up-owning-of-10-amd-in-new-chip-deal/</link>
-      <description><![CDATA[If Meta pans out, it could change how teams approach their current stack (via Ars Technica AI).]]></description>
+      <title><![CDATA[OpenAI Fires an Employee for Prediction Market Insider Trading]]></title>
+      <link>https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi/</link>
+      <description><![CDATA[If OpenAI pans out, it could change how teams approach their current stack (via Wired AI).]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 24 Feb 2026 14:10:13 +0000</pubDate>
-      <author>Michael Acton, Financial Times</author>
+      <pubDate>Fri, 27 Feb 2026 19:07:28 +0000</pubDate>
+      <author>Kate Knibbs</author>
     </item>
     <item>
-      <title><![CDATA[Apple Researchers Introduce Ferret-UI Lite, an On-Device AI Model for Seeing and Controlling UIs]]></title>
-      <link>https://www.infoq.com/news/2026/02/apple-ferret-ui-lite-on-device/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
-      <description><![CDATA[New model work on Ferret-UI Lite, an On-Device AI Model could shift the cost-quality tradeoff — benchmark against your baseline (via InfoQ).]]></description>
-      <category>Infra</category>
-      <pubDate>Tue, 24 Feb 2026 19:00:00 +0000</pubDate>
-      <author>Sergio De Simone</author>
-    </item>
-    <item>
-      <title><![CDATA[How to Hide Google’s AI Overviews From Your Search Results]]></title>
-      <link>https://www.wired.com/story/how-to-hide-google-ai-overviews-from-your-search-results/</link>
-      <description><![CDATA[Concrete enough to follow along — the Hide Google tutorial goes beyond toy examples (via Wired AI).]]></description>
+      <title><![CDATA[Google and the Massachusetts AI Hub are launching a new AI training initiative for the Commonwealth.]]></title>
+      <link>https://blog.google/company-news/outreach-and-initiatives/grow-with-google/google-ai-training-massachusetts-residents/</link>
+      <description><![CDATA[Google just dropped — worth a quick test if you're hitting limits with current tools (via Google AI Blog).]]></description>
       <category>Industry</category>
-      <pubDate>Sun, 22 Feb 2026 11:00:00 +0000</pubDate>
-      <author>Reece Rogers</author>
+      <pubDate>Thu, 26 Feb 2026 18:55:00 +0000</pubDate>
+      
     </item>
     <item>
-      <title><![CDATA[Will Claude Code Be Dead by Summer?]]></title>
-      <link>https://dev.to/jefe_cool/will-claude-code-be-dead-by-summer-2po5</link>
-      <description><![CDATA[Not the binary, but the relevance.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 25 Feb 2026 00:18:49 +0000</pubDate>
-      <author>Jeff Cameron</author>
+      <title><![CDATA[Google DeepMind Introduces Unified Latents (UL): A Machine Learning Framework that Jointly Regularizes Latents Using a Diffusion Prior and Decoder]]></title>
+      <link>https://www.marktechpost.com/2026/02/27/google-deepmind-introduces-unified-latents-ul-a-machine-learning-framework-that-jointly-regularizes-latents-using-a-diffusion-prior-and-decoder/</link>
+      <description><![CDATA[Unified Latents (UL) going open lowers the bar for experimentation and custom deployments (via MarkTechPost).]]></description>
+      <category>Industry</category>
+      <pubDate>Sat, 28 Feb 2026 03:58:20 +0000</pubDate>
+      <author>Asif Razzaq</author>
+    </item>
+    <item>
+      <title><![CDATA[Last Week in AI #336 - Sonnet 4.6, Gemini 3.1 Pro, Anthropic vs Pentagon]]></title>
+      <link>https://lastweekin.ai/p/last-week-in-ai-336-sonnet-46-gemini</link>
+      <description><![CDATA[If Week pans out, it could change how teams approach their current stack (via Last Week in AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Tue, 24 Feb 2026 11:43:23 +0000</pubDate>
+      <author>Last Week in AI</author>
+    </item>
+    <item>
+      <title><![CDATA[openfang]]></title>
+      <link>https://github.com/RightNow-AI/openfang</link>
+      <description><![CDATA[Open-source Agent Operating System. Currently at 4,646 stars with ~549 stars/day growth.]]></description>
+      <category>Repos</category>
+      <pubDate>Sat, 28 Feb 2026 01:53:22 +0000</pubDate>
+      <author>RightNow-AI</author>
     </item>
     <item>
       <title><![CDATA[llmfit]]></title>
       <link>https://github.com/AlexsJones/llmfit</link>
       <description><![CDATA[The llmfit story has enough signal to track — file it for your next planning round (via GitHub Trending (AI/ML)).]]></description>
       <category>Repos</category>
-      <pubDate>Tue, 24 Feb 2026 14:10:54 +0000</pubDate>
+      <pubDate>Sat, 28 Feb 2026 10:36:19 +0000</pubDate>
       <author>AlexsJones</author>
     </item>
     <item>
-      <title><![CDATA[Uber engineers built an AI version of their boss]]></title>
-      <link>https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/</link>
-      <description><![CDATA[If Uber pans out, it could change how teams approach their current stack (via TechCrunch AI).]]></description>
+      <title><![CDATA[Block lays off 40% of workforce as it goes all-in on AI tools]]></title>
+      <link>https://arstechnica.com/ai/2026/02/block-lays-off-40-of-workforce-as-it-goes-all-in-on-ai-tools/</link>
+      <description><![CDATA[Depending on your setup, Block might save you time or headaches down the line (via Ars Technica AI).]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 24 Feb 2026 23:09:28 +0000</pubDate>
-      <author>Kirsten Korosec</author>
+      <pubDate>Fri, 27 Feb 2026 14:19:00 +0000</pubDate>
+      <author>Peter Wells and Akila Quinio, Financial Times</author>
     </item>
     <item>
-      <title><![CDATA[Spanish ‘soonicorn’ Multiverse Computing releases free compressed AI model]]></title>
-      <link>https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/</link>
-      <description><![CDATA[The Spanish model release is worth testing against what you're running now (via TechCrunch AI).]]></description>
+      <title><![CDATA[Mixture of Experts (MoEs) in Transformers]]></title>
+      <link>https://huggingface.co/blog/moe-transformers</link>
+      <description><![CDATA[The Mixture story has enough signal to track — file it for your next planning round (via Hugging Face Blog).]]></description>
+      <category>Tools</category>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[MySQL 9.6 Changes Foreign Key Constraints and Cascade Handling]]></title>
+      <link>https://www.infoq.com/news/2026/02/mysql-foreign-keys/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
+      <description><![CDATA[Depending on your setup, MySQL might save you time or headaches down the line (via InfoQ).]]></description>
+      <category>Infra</category>
+      <pubDate>Sat, 28 Feb 2026 08:34:00 +0000</pubDate>
+      <author>Renato Losio</author>
+    </item>
+    <item>
+      <title><![CDATA[AI is rewiring how the world’s best Go players think]]></title>
+      <link>https://www.technologyreview.com/2026/02/27/1133624/ai-is-rewiring-how-the-worlds-best-go-players-think/</link>
+      <description><![CDATA[Depending on your setup, AI is rewiring how the world’s might save you time or headaches down the line (via MIT Technology Review AI).]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 24 Feb 2026 23:32:00 +0000</pubDate>
-      <author>Anna Heim</author>
+      <pubDate>Fri, 27 Feb 2026 10:00:00 +0000</pubDate>
+      <author>Michelle Kim</author>
     </item>
     <item>
       <title><![CDATA[How we built Agent Builder’s memory system]]></title>
@@ -104,19 +120,27 @@
       <author>LangChain Accounts</author>
     </item>
     <item>
-      <title><![CDATA[Alibaba Qwen Team Releases Qwen 3.5 Medium Model Series: A Production Powerhouse Proving that Smaller AI Models are Smarter]]></title>
-      <link>https://www.marktechpost.com/2026/02/24/alibaba-qwen-team-releases-qwen-3-5-medium-model-series-a-production-powerhouse-proving-that-smaller-ai-models-are-smarter/</link>
-      <description><![CDATA[The Alibaba Qwen Team scaling approach may offer lessons for teams hitting similar bottlenecks (via MarkTechPost).]]></description>
+      <title><![CDATA[Agent Economy Daily #10: The Agent Economy Stack Is Now Complete]]></title>
+      <link>https://dev.to/noopy420/agent-economy-daily-10-the-agent-economy-stack-is-now-complete-4kmh</link>
+      <description><![CDATA[Not a fire drill, but Agent Economy Daily is the kind of thing that compounds if you ignore it (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Tue, 24 Feb 2026 19:33:29 +0000</pubDate>
-      <author>Asif Razzaq</author>
+      <pubDate>Sat, 28 Feb 2026 12:13:42 +0000</pubDate>
+      <author>Neil Volner</author>
     </item>
     <item>
-      <title><![CDATA[AI Impact Summit 2026]]></title>
-      <link>https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-collection/</link>
-      <description><![CDATA[Not a fire drill, but AI Impact Summit is the kind of thing that compounds if you ignore it (via Google AI Blog).]]></description>
+      <title><![CDATA[AI Is Acing Math Exams Faster Than Scientists Write Them]]></title>
+      <link>https://spectrum.ieee.org/ai-math-benchmarks</link>
+      <description><![CDATA[Not a fire drill, but AI Is Acing Math Exams Faster Than is the kind of thing that compounds if you ignore it (via IEEE Spectrum AI).]]></description>
       <category>Industry</category>
-      <pubDate>Thu, 19 Feb 2026 04:30:00 +0000</pubDate>
+      <pubDate>Wed, 25 Feb 2026 16:00:02 +0000</pubDate>
+      <author>Benjamin Skuse</author>
+    </item>
+    <item>
+      <title><![CDATA[Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)]]></title>
+      <link>https://llm-timeline.com/</link>
+      <description><![CDATA[Interactive timeline of every major Large Language Model.]]></description>
+      <category>Models</category>
+      <pubDate>Mon, 23 Feb 2026 09:07:44 +0000</pubDate>
       
     </item>
   </channel>

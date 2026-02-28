@@ -1,60 +1,26 @@
 {
-  "date": "25 Feb 2026",
-  "issue_number": 4,
-  "total_articles": 9,
-  "source_count": 12,
+  "date": "28 Feb 2026",
+  "issue_number": 6,
+  "total_articles": 10,
+  "source_count": 16,
   "read_time_minutes": 4,
-  "intro": "The headline: OpenAI defeats xAI\u2019s trade secrets lawsuit. Plus the stories worth your time this week.",
+  "intro": "Big news this week: Joint Statement from OpenAI and Microsoft, and what it means for your roadmap.",
   "theme_line": "This week: vendor moves and leadership signals.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (8 stories)."
+      "value": "Industry led coverage (10 stories)."
     },
     {
       "label": "Builder pick",
-      "value": "[OpenAI announces Frontier Alliance Partners](https://openai.com/index/frontier-alliance-partners)"
+      "value": "[Google DeepMind Introduces Unified Latents (UL): A Machine Learning Framework that Jointly Regularizes Latents Using a Diffusion Prior and Decoder](https://www.marktechpost.com/2026/02/27/google-deepmind-introduces-unified-latents-ul-a-machine-learning-framework-that-jointly-regularizes-latents-using-a-diffusion-prior-and-decoder/)"
     },
     {
       "label": "Leader watch",
-      "value": "[OpenAI defeats xAI\u2019s trade secrets lawsuit](https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit)"
-    },
-    {
-      "label": "Research watch",
-      "value": "[Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications](https://arxiv.org/abs/2602.18582)"
+      "value": "[Joint Statement from OpenAI and Microsoft](https://openai.com/index/continuing-microsoft-partnership)"
     }
   ],
   "issue_menu": [
-    {
-      "icon": "\u2b50",
-      "title": "Open-source picks",
-      "count": 1,
-      "read_time_minutes": 1,
-      "label": "\u2b50 Open-source picks (1)",
-      "deck": "Open-source projects worth a closer look.",
-      "promise": "What's gaining traction.",
-      "num": "01"
-    },
-    {
-      "icon": "\ud83d\udcda",
-      "title": "Ship-It Playbooks",
-      "count": 2,
-      "read_time_minutes": 1,
-      "label": "\ud83d\udcda Ship-It Playbooks (2)",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "promise": "One thing to try this week.",
-      "num": "02"
-    },
-    {
-      "icon": "\ud83d\udd2c",
-      "title": "Research worth your time",
-      "count": 1,
-      "read_time_minutes": 1,
-      "label": "\ud83d\udd2c Research worth your time (1)",
-      "deck": "Research updates with practical product impact.",
-      "promise": "Read this if you build.",
-      "num": "03"
-    },
     {
       "icon": "\u2601\ufe0f",
       "title": "Infra",
@@ -63,7 +29,7 @@
       "label": "\u2601\ufe0f Infra (1)",
       "deck": "Cloud, scale, and infrastructure that matters to AI builders.",
       "promise": "Infra that scales.",
-      "num": "04"
+      "num": "01"
     },
     {
       "icon": "\ud83c\udf10",
@@ -73,155 +39,77 @@
       "label": "\ud83c\udf10 What changed in industry (2)",
       "deck": "Company moves, launches, and policy shifts that could affect your roadmap.",
       "promise": "What changed and why it matters.",
-      "num": "05"
+      "num": "02"
     },
     {
       "icon": "\ud83d\udee0\ufe0f",
       "title": "Tools to try",
-      "count": 1,
+      "count": 2,
       "read_time_minutes": 1,
-      "label": "\ud83d\udee0\ufe0f Tools to try (1)",
+      "label": "\ud83d\udee0\ufe0f Tools to try (2)",
       "deck": "Tools worth testing in a real workflow this week.",
       "promise": "One practical thing to ship.",
-      "num": "06"
+      "num": "03"
+    },
+    {
+      "icon": "\u2b50",
+      "title": "Open-source picks",
+      "count": 2,
+      "read_time_minutes": 1,
+      "label": "\u2b50 Open-source picks (2)",
+      "deck": "Open-source projects worth a closer look.",
+      "promise": "What's gaining traction.",
+      "num": "04"
     }
   ],
-  "briefing": [],
+  "briefing": [
+    {
+      "title": "Show HN: AI Timeline \u2013 171 LLMs from Transformer (2017) to GPT-5.3 (2026)",
+      "url": "https://llm-timeline.com/",
+      "note": "Interactive timeline of every major Large Language Model. Why it matters: The AI Timeline release means your model shortlist probably needs updating.",
+      "track": "Builder"
+    },
+    {
+      "title": "Agent Economy Daily #10: The Agent Economy Stack Is Now Complete",
+      "url": "https://dev.to/noopy420/agent-economy-daily-10-the-agent-economy-stack-is-now-complete-4kmh",
+      "note": "This Agent Economy Daily guide covers the parts most tutorials skip over. Why it matters: The Agent Economy Daily walkthrough could save you a few hours of trial and error.",
+      "track": "Builder"
+    }
+  ],
   "editors_note": {
     "headline": "This week",
-    "thesis": "We're watching OpenAI announces Frontier Alliance Partners \u2014 it's the one most likely to affect vendor and roadmap decisions this quarter.",
-    "hook": "We're flagging the lead for leadership \u2014 it's the one most likely to shift budgets or priorities.",
+    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. If you're not tracking Anthropic vs. the Pentagon: What\u2019s actually at stake, you're already behind.",
+    "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications deserves more attention than it's getting.",
-    "risk": "Keep an eye on OpenAI defeats xAI\u2019s trade secrets lawsuit \u2014 it could shift budgets or vendor assumptions."
+    "underhyped": "Mixture of Experts (MoEs) in Transformers deserves more attention than it's getting.",
+    "risk": "Keep an eye on Joint Statement from OpenAI and Microsoft \u2014 it could shift budgets or vendor assumptions."
   },
   "lead_story": {
-    "title": "OpenAI announces Frontier Alliance Partners",
-    "url": "https://openai.com/index/frontier-alliance-partners",
-    "source": "OpenAI Blog",
-    "track": "Builder",
-    "audience_track": "Builder",
-    "difficulty": "Intermediate",
-    "what_happened": "OpenAI launched with features aimed at the current gap in existing toolchains.",
-    "our_take": "The market is sending a signal. Teams that read it early get a head start.",
-    "what_to_do": "Monitor OpenAI for follow-on product or pricing changes over the next month."
+    "title": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
+    "url": "https://techcrunch.com/2026/02/27/anthropic-vs-the-pentagon-whats-actually-at-stake/",
+    "source": "TechCrunch AI",
+    "track": "Leader",
+    "audience_track": "Leader",
+    "difficulty": "Beginner",
+    "what_happened": "Anthropic in the news; could affect pricing, roadmaps, or compliance this quarter \u2014 flag it.",
+    "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input (TechCrunch AI).",
+    "what_to_do": "Bring Anthropic to your next planning sync \u2014 it may affect Q2 priorities."
   },
-  "quick_hits": [],
+  "quick_hits": [
+    {
+      "title": "Show HN: AI Timeline \u2013 171 LLMs from Transformer (2017) to GPT-5.3 (2026)",
+      "url": "https://llm-timeline.com/",
+      "note": "Interactive timeline of every major Large Language Model. Why it matters: The AI Timeline release means your model shortlist probably needs updating.",
+      "track": "Builder"
+    },
+    {
+      "title": "Agent Economy Daily #10: The Agent Economy Stack Is Now Complete",
+      "url": "https://dev.to/noopy420/agent-economy-daily-10-the-agent-economy-stack-is-now-complete-4kmh",
+      "note": "This Agent Economy Daily guide covers the parts most tutorials skip over. Why it matters: The Agent Economy Daily walkthrough could save you a few hours of trial and error.",
+      "track": "Builder"
+    }
+  ],
   "sections": [
-    {
-      "title": "Open-source picks",
-      "icon": "\u2b50",
-      "deck": "Open-source projects worth a closer look.",
-      "color": "0F4C5C",
-      "badge": "Open-source picks",
-      "topics": [
-        "Repos"
-      ],
-      "tier": "builder",
-      "promise": "What's gaining traction.",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "llmfit",
-          "url": "https://github.com/AlexsJones/llmfit",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
-          "authors": "AlexsJones",
-          "published": "24 Feb",
-          "thumbnail": "",
-          "summary": "The llmfit story has enough signal to track \u2014 file it for your next planning round (via GitHub Trending (AI/ML)).",
-          "what_happened": "The llmfit repo is active and well-maintained \u2014 worth a test drive.",
-          "why_it_matters": "Llmfit traction suggests builder demand, but longevity depends on maintainer commitment.",
-          "what_to_do": "Star llmfit for later, but check maintainer activity and issue backlog before depending on it.",
-          "our_take": "A trending repo is a signal, not a recommendation. Do your diligence before depending on it.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Repos"
-        }
-      ]
-    },
-    {
-      "title": "Ship-It Playbooks",
-      "icon": "\ud83d\udcda",
-      "deck": "Practical implementation guides you can adapt quickly.",
-      "color": "0F4C5C",
-      "badge": "Ship It Playbooks",
-      "topics": [
-        "Tutorials"
-      ],
-      "tier": "builder",
-      "promise": "One thing to try this week.",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "Will Claude Code Be Dead by Summer?",
-          "url": "https://dev.to/jefe_cool/will-claude-code-be-dead-by-summer-2po5",
-          "source": "Dev.to AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
-          "authors": "Jeff Cameron",
-          "published": "25 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhzrumf4x6jfgsk4vczl7.png",
-          "summary": "Not the binary, but the relevance.",
-          "what_happened": "Not the binary, but the relevance.",
-          "why_it_matters": "The Claude Code Be Dead walkthrough could save you a few hours of trial and error.",
-          "what_to_do": "Clone the Claude Code Be Dead example, run it locally, then change one thing to match your project.",
-          "our_take": "Skip the parts you already know. The useful bit is usually two-thirds of the way through.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "Alibaba Qwen Team Releases Qwen 3.5 Medium Model Series: A Production Powerhouse Proving that Smaller AI Models are Smarter",
-          "url": "https://www.marktechpost.com/2026/02/24/alibaba-qwen-team-releases-qwen-3-5-medium-model-series-a-production-powerhouse-proving-that-smaller-ai-models-are-smarter/",
-          "source": "MarkTechPost",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
-          "authors": "Asif Razzaq",
-          "published": "24 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-60-1024x731.png",
-          "summary": "The Alibaba Qwen Team scaling approach may offer lessons for teams hitting similar bottlenecks (via MarkTechPost).",
-          "what_happened": "This Alibaba Qwen Team guide covers the parts most tutorials skip over.",
-          "why_it_matters": "Hands-on Alibaba Qwen Team content like this is more useful than reading the API docs alone.",
-          "what_to_do": "Pick the hardest step in the Alibaba Qwen Team tutorial and work backwards from there.",
-          "our_take": "If you can't run the example in 15 minutes, the tutorial has a friction problem, not you.",
-          "audience_track": "Builder",
-          "difficulty": "Beginner",
-          "topic": "Tutorials"
-        }
-      ]
-    },
-    {
-      "title": "Research worth your time",
-      "icon": "\ud83d\udd2c",
-      "deck": "Research updates with practical product impact.",
-      "color": "0F4C5C",
-      "badge": "Research worth your time",
-      "topics": [
-        "Research",
-        "Models"
-      ],
-      "tier": "leader",
-      "promise": "Read this if you build.",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications",
-          "url": "https://arxiv.org/abs/2602.18582",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/arxiv.org.png",
-          "authors": "Zhiqin Qian, Ryan Diaz, Sangwon Seo et al.",
-          "published": "24 Feb",
-          "thumbnail": "",
-          "summary": "If Hierarchical Reward Design pans out, it could change how teams approach their current stack (via arXiv CS.AI).",
-          "what_happened": "The Hierarchical Reward Design findings offer clues about where the field is heading next.",
-          "why_it_matters": "The Hierarchical Reward Design results point a direction, but production confidence needs independent replication.",
-          "what_to_do": "Skim the Hierarchical Reward Design abstract and results table \u2014 decide in 10 minutes if it warrants a deep read.",
-          "our_take": "One paper doesn't change a roadmap. Wait for independent replication before acting.",
-          "audience_track": "Researcher",
-          "difficulty": "Advanced",
-          "topic": "Research"
-        }
-      ]
-    },
     {
       "title": "Infra",
       "icon": "\u2601\ufe0f",
@@ -236,20 +124,20 @@
       "read_time_minutes": 1,
       "articles": [
         {
-          "title": "Apple Researchers Introduce Ferret-UI Lite, an On-Device AI Model for Seeing and Controlling UIs",
-          "url": "https://www.infoq.com/news/2026/02/apple-ferret-ui-lite-on-device/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "title": "MySQL 9.6 Changes Foreign Key Constraints and Cascade Handling",
+          "url": "https://www.infoq.com/news/2026/02/mysql-foreign-keys/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
           "source": "InfoQ",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/infoq.com.png",
-          "authors": "Sergio De Simone",
-          "published": "24 Feb",
+          "authors": "Renato Losio",
+          "published": "28 Feb",
           "thumbnail": "",
-          "summary": "New model work on Ferret-UI Lite, an On-Device AI Model could shift the cost-quality tradeoff \u2014 benchmark against your baseline (via InfoQ).",
-          "what_happened": "A new paper on Ferret-UI Lite, an On-Device AI Model introduces methods that may influence downstream tooling.",
-          "why_it_matters": "No immediate action needed, but Ferret-UI Lite, an On-Device AI Model shifts the background assumptions a bit.",
-          "what_to_do": "Review Ferret-UI Lite, an On-Device AI Model and decide on one concrete follow-up action by end of week.",
+          "summary": "Depending on your setup, MySQL might save you time or headaches down the line (via InfoQ).",
+          "what_happened": "Quick read on MySQL \u2014 may or may not matter depending on your stack.",
+          "why_it_matters": "Keep an eye on MySQL \u2014 small moves here tend to become bigger ones.",
+          "what_to_do": "Review MySQL and decide on one concrete follow-up action by end of week.",
           "our_take": "Don't let FOMO drive architecture. Validate on your own terms before changing course.",
           "audience_track": "Builder",
-          "difficulty": "Beginner",
+          "difficulty": "Intermediate",
           "topic": "Infra"
         }
       ]
@@ -269,35 +157,35 @@
       "read_time_minutes": 1,
       "articles": [
         {
-          "title": "OpenAI defeats xAI\u2019s trade secrets lawsuit",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit",
-          "source": "The Verge AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png",
-          "authors": "Hayden Field",
-          "published": "24 Feb",
-          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25739950/247386_Elon_Musk_Open_AI_CVirginia.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-          "summary": "The OpenAI story has enough signal to track \u2014 file it for your next planning round (via The Verge AI).",
-          "what_happened": "A legal dispute involving OpenAI may create compliance exposure for dependent teams.",
-          "why_it_matters": "Legal exposure around OpenAI should trigger a vendor-risk review for teams with dependencies.",
+          "title": "Joint Statement from OpenAI and Microsoft",
+          "url": "https://openai.com/index/continuing-microsoft-partnership",
+          "source": "OpenAI Blog",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png",
+          "authors": "",
+          "published": "27 Feb",
+          "thumbnail": "",
+          "summary": "The OpenAI story has enough signal to track \u2014 file it for your next planning round (via OpenAI Blog).",
+          "what_happened": "OpenAI could ripple into pricing or vendor talks \u2014 add it to your next planning sync.",
+          "why_it_matters": "Industry moves around OpenAI tend to show up in vendor and budget conversations; get ahead of it.",
           "what_to_do": "Add OpenAI as a discussion item in your next strategy or planning meeting.",
-          "our_take": "When vendor leadership is in turmoil, your dependency on their roadmap is the real risk to assess.",
+          "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input.",
           "audience_track": "Leader",
           "difficulty": "Beginner",
           "topic": "Industry"
         },
         {
-          "title": "Anthropic won\u2019t budge as Pentagon escalates AI dispute",
-          "url": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png",
-          "authors": "Rebecca Bellan",
-          "published": "24 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2194795244.jpg?w=1024",
-          "summary": "Not a fire drill, but Anthropic is the kind of thing that compounds if you ignore it (via TechCrunch AI).",
-          "what_happened": "A move around Anthropic is worth a slot in your next ops or leadership review.",
-          "why_it_matters": "Pricing or policy changes from Anthropic could affect your next renewal or roadmap; worth a slot in the sync.",
-          "what_to_do": "Flag Anthropic for your leadership team \u2014 it may shift near-term priorities.",
-          "our_take": "Factor it into your next planning cycle \u2014 don't overreact, but don't ignore it either.",
+          "title": "Trump orders federal agencies to drop Anthropic\u2019s AI",
+          "url": "https://www.theverge.com/policy/886489/pentagon-anthropic-trump-dod",
+          "source": "The Verge AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theverge.com.png",
+          "authors": "Hayden Field, Richard Lawler",
+          "published": "27 Feb",
+          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+          "summary": "Depending on your setup, Trump might save you time or headaches down the line (via The Verge AI).",
+          "what_happened": "A move around Trump is worth a slot in your next ops or leadership review.",
+          "why_it_matters": "The Trump move could shift the math for your next planning cycle; flag it in leadership review.",
+          "what_to_do": "Flag Trump for your leadership team \u2014 it may shift near-term priorities.",
+          "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input (The Verge AI).",
           "audience_track": "Leader",
           "difficulty": "Beginner",
           "topic": "Industry"
@@ -318,6 +206,23 @@
       "read_time_minutes": 1,
       "articles": [
         {
+          "title": "Mixture of Experts (MoEs) in Transformers",
+          "url": "https://huggingface.co/blog/moe-transformers",
+          "source": "Hugging Face Blog",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png",
+          "authors": "",
+          "published": "26 Feb",
+          "thumbnail": "https://huggingface.co/blog/assets/moe-transformers/thumbnail.png",
+          "summary": "The Mixture story has enough signal to track \u2014 file it for your next planning round (via Hugging Face Blog).",
+          "what_happened": "If Mixture delivers on its claims, it could simplify a few steps in your current setup.",
+          "why_it_matters": "Mixture is worth evaluating if your current tools are hitting limits.",
+          "what_to_do": "Spin up Mixture in a 2-hour proof of concept \u2014 compare output against your current tool.",
+          "our_take": "Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.",
+          "audience_track": "Builder",
+          "difficulty": "Advanced",
+          "topic": "Tools"
+        },
+        {
           "title": "How we built Agent Builder\u2019s memory system",
           "url": "https://blog.langchain.com/how-we-built-agent-builders-memory-system/",
           "source": "LangChain Blog",
@@ -326,13 +231,62 @@
           "published": "22 Feb",
           "thumbnail": "https://blog.langchain.com/content/images/2026/02/69690e0c0c3471f7cd4eaf42_create-agents.png",
           "summary": "If Agent Builder pans out, it could change how teams approach their current stack (via LangChain Blog).",
-          "what_happened": "If Agent Builder delivers on its claims, it could simplify a few steps in your current setup.",
+          "what_happened": "Agent Builder is tackling a pain point that most teams work around rather than solve.",
           "why_it_matters": "Adopting Agent Builder could speed delivery if integration friction stays low.",
           "what_to_do": "Allocate one afternoon to test Agent Builder against your top use case.",
           "our_take": "Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
           "topic": "Tools"
+        }
+      ]
+    },
+    {
+      "title": "Open-source picks",
+      "icon": "\u2b50",
+      "deck": "Open-source projects worth a closer look.",
+      "color": "0F4C5C",
+      "badge": "Open-source picks",
+      "topics": [
+        "Repos"
+      ],
+      "tier": "builder",
+      "promise": "What's gaining traction.",
+      "read_time_minutes": 1,
+      "articles": [
+        {
+          "title": "llmfit",
+          "url": "https://github.com/AlexsJones/llmfit",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
+          "authors": "AlexsJones",
+          "published": "28 Feb",
+          "thumbnail": "",
+          "summary": "The llmfit story has enough signal to track \u2014 file it for your next planning round (via GitHub Trending (AI/ML)).",
+          "what_happened": "The llmfit repo is active and well-maintained \u2014 worth a test drive.",
+          "why_it_matters": "Llmfit traction suggests builder demand, but longevity depends on maintainer commitment.",
+          "what_to_do": "Star llmfit for later, but check maintainer activity and issue backlog before depending on it.",
+          "our_take": "A trending repo is a signal, not a recommendation. Do your diligence before depending on it.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Repos"
+        },
+        {
+          "title": "openfang",
+          "url": "https://github.com/RightNow-AI/openfang",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
+          "authors": "RightNow-AI",
+          "published": "28 Feb",
+          "thumbnail": "",
+          "summary": "Open-source Agent Operating System. Currently at 4,646 stars with ~549 stars/day growth.",
+          "what_happened": "Open-source Agent Operating System.",
+          "why_it_matters": "Openfang being open gives teams use to negotiate or self-host.",
+          "what_to_do": "Check openfang for recent activity, open issues, and license compatibility this week.",
+          "our_take": "Popularity and production-readiness are different things. Check the last commit date and open issues first.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Repos"
         }
       ]
     }
@@ -415,19 +369,19 @@
   ],
   "category_selection_available": true,
   "learn_this_week": {
-    "title": "Hugging Face NLP Course",
-    "url": "https://huggingface.co/learn/nlp-course",
-    "provider": "Hugging Face",
-    "level": "Intermediate",
+    "title": "Google Machine Learning Crash Course",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "provider": "Google AI",
+    "level": "Beginner",
     "free": true,
-    "duration": "Self-paced",
-    "note": "Hands-on transformers course with the HF ecosystem. Build real NLP pipelines."
+    "duration": "15 hours",
+    "note": "Interactive exercises with TensorFlow. Google's internal ML training, now public."
   },
   "prompt_of_the_week": {
-    "text": "I'm building a [type] application. List the top 5 security risks specific to this architecture and how to mitigate each one.",
-    "context": "Security",
+    "text": "Rewrite this API documentation to be developer-friendly. Keep it accurate but make it scannable with clear examples.",
+    "context": "Documentation",
     "tool": "Claude / ChatGPT",
-    "why": "Generic security checklists miss architecture-specific threats. Specifying your app type (RAG pipeline, API gateway, agent framework) yields targeted risks that generic OWASP lists won't surface.",
-    "tip": "Be specific about your stack (e.g., 'RAG app with vector DB and public API')."
+    "why": "Bad docs are the #1 reason developers abandon tools. Asking for 'scannable with clear examples' targets the two things devs actually need: quick answers and copy-pasteable code.",
+    "tip": "Paste the existing docs. Specify your audience (junior devs, senior engineers, etc.)."
   }
 }
