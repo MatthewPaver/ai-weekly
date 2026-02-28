@@ -1,595 +1,5 @@
 [
   {
-    "articles_collected": 72,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 24,
-    "after_filters": 4,
-    "after_accessibility": 28,
-    "after_selection": 18,
-    "articles_final": 18,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 24
-      },
-      {
-        "stage": "quality_gates",
-        "after": 4
-      },
-      {
-        "stage": "accessibility",
-        "after": 28
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 18
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Verge AI",
-      "Wired AI",
-      "arXiv CS.AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 4,
-    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
-    "total_articles": 18,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-16T21:55:53.131962+00:00"
-  },
-  {
-    "articles_collected": 72,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 25,
-    "after_filters": 5,
-    "after_accessibility": 28,
-    "after_selection": 18,
-    "articles_final": 18,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 25
-      },
-      {
-        "stage": "quality_gates",
-        "after": 5
-      },
-      {
-        "stage": "accessibility",
-        "after": 28
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 18
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Verge AI",
-      "Wired AI",
-      "arXiv CS.AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 4,
-    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
-    "total_articles": 18,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-16T22:05:33.594324+00:00"
-  },
-  {
-    "articles_collected": 72,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 25,
-    "after_filters": 5,
-    "after_accessibility": 29,
-    "after_selection": 18,
-    "articles_final": 18,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 25
-      },
-      {
-        "stage": "quality_gates",
-        "after": 5
-      },
-      {
-        "stage": "accessibility",
-        "after": 29
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 18
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Dev.to AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Verge AI",
-      "Wired AI",
-      "arXiv CS.AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 5,
-    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
-    "total_articles": 18,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-16T22:22:53.526131+00:00"
-  },
-  {
-    "articles_collected": 72,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 25,
-    "after_filters": 4,
-    "after_accessibility": 29,
-    "after_selection": 18,
-    "articles_final": 18,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 25
-      },
-      {
-        "stage": "quality_gates",
-        "after": 4
-      },
-      {
-        "stage": "accessibility",
-        "after": 29
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 18
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Dev.to AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Verge AI",
-      "Wired AI",
-      "arXiv CS.AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 5,
-    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
-    "total_articles": 18,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-16T23:04:25.113282+00:00"
-  },
-  {
-    "articles_collected": 72,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 24,
-    "after_filters": 3,
-    "after_accessibility": 29,
-    "after_selection": 18,
-    "articles_final": 18,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 24
-      },
-      {
-        "stage": "quality_gates",
-        "after": 3
-      },
-      {
-        "stage": "accessibility",
-        "after": 29
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 18
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Dev.to AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Verge AI",
-      "Wired AI",
-      "arXiv CS.AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 5,
-    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
-    "total_articles": 18,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-16T23:08:26.365186+00:00"
-  },
-  {
-    "articles_collected": 72,
-    "relaxed_history": true,
-    "retry_count": 0,
-    "after_dedup": 24,
-    "after_filters": 3,
-    "after_accessibility": 29,
-    "after_selection": 18,
-    "articles_final": 18,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 24
-      },
-      {
-        "stage": "quality_gates",
-        "after": 3
-      },
-      {
-        "stage": "accessibility",
-        "after": 29
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 18
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Dev.to AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Verge AI",
-      "Wired AI",
-      "arXiv CS.AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 5,
-    "lead_story": "How Ricursive Intelligence raised $335M at a $4B valuation i",
-    "total_articles": 18,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-16T23:13:53.718281+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 52,
-    "after_filters": 33,
-    "after_accessibility": 33,
-    "after_selection": 18,
-    "articles_final": 16,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 52
-      },
-      {
-        "stage": "quality_gates",
-        "after": 33
-      },
-      {
-        "stage": "accessibility",
-        "after": 33
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 16
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "Import AI",
-      "LangChain Blog",
-      "Last Week in AI",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Gradient",
-      "The Verge AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 5,
-    "lead_story": "Google VP warns that two types of AI startups may not surviv",
-    "total_articles": 16,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-22T01:00:54.560262+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 42,
-    "after_filters": 23,
-    "after_accessibility": 23,
-    "after_selection": 18,
-    "articles_final": 15,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 42
-      },
-      {
-        "stage": "quality_gates",
-        "after": 23
-      },
-      {
-        "stage": "accessibility",
-        "after": 23
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 15
-      }
-    ],
-    "sources_used": [
-      "Dev.to AI",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hacker News (AI)",
-      "Hugging Face Blog",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "The Verge AI",
-      "Wired AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 3,
-    "lead_story": "New in Agent Builder: all new agent chat, file uploads + too",
-    "total_articles": 15,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-22T01:31:27.231184+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 33,
-    "after_filters": 16,
-    "after_accessibility": 16,
-    "after_selection": 16,
-    "articles_final": 11,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 33
-      },
-      {
-        "stage": "quality_gates",
-        "after": 16
-      },
-      {
-        "stage": "accessibility",
-        "after": 16
-      },
-      {
-        "stage": "selection",
-        "after": 16
-      },
-      {
-        "stage": "summary_quality",
-        "after": 11
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Dark Reading",
-      "Dev.to AI",
-      "Google AI Blog",
-      "Hacker News (AI)",
-      "InfoQ",
-      "LangChain Blog",
-      "MarkTechPost",
-      "The Register"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 4,
-    "lead_story": "Agent Observability Powers Agent Evaluation",
-    "total_articles": 11,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-22T16:07:51.591183+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 25,
-    "after_filters": 10,
-    "after_accessibility": 10,
-    "after_selection": 10,
-    "articles_final": 5,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 25
-      },
-      {
-        "stage": "quality_gates",
-        "after": 10
-      },
-      {
-        "stage": "accessibility",
-        "after": 10
-      },
-      {
-        "stage": "selection",
-        "after": 10
-      },
-      {
-        "stage": "summary_quality",
-        "after": 5
-      }
-    ],
-    "sources_used": [
-      "Dev.to AI",
-      "LangChain Blog",
-      "MarkTechPost"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 2,
-    "lead_story": "How we built Agent Builder\u2019s memory system",
-    "total_articles": 5,
-    "smoke_test": false,
-    "status": "fail",
-    "timestamp": "2026-02-22T16:21:09.174711+00:00"
-  },
-  {
     "articles_collected": 69,
     "relaxed_history": false,
     "retry_count": 0,
@@ -1736,5 +1146,574 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-28T12:31:45.095414+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 53,
+    "after_filters": 41,
+    "after_accessibility": 41,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 53
+      },
+      {
+        "stage": "quality_gates",
+        "after": 41
+      },
+      {
+        "stage": "accessibility",
+        "after": 41
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dark Reading",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI"
+    ],
+    "source_errors": {
+      "arXiv CS.AI": "empty feed"
+    },
+    "sections": 5,
+    "lead_story": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:39:35.393592+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 53,
+    "after_filters": 41,
+    "after_accessibility": 41,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 53
+      },
+      {
+        "stage": "quality_gates",
+        "after": 41
+      },
+      {
+        "stage": "accessibility",
+        "after": 41
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "InfoQ",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI"
+    ],
+    "sections": 5,
+    "lead_story": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:39:48.311072+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 53,
+    "after_filters": 41,
+    "after_accessibility": 41,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 53
+      },
+      {
+        "stage": "quality_gates",
+        "after": 41
+      },
+      {
+        "stage": "accessibility",
+        "after": 41
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI"
+    ],
+    "sections": 4,
+    "lead_story": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:40:01.032839+00:00"
+  },
+  {
+    "articles_collected": 66,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 50,
+    "after_filters": 38,
+    "after_accessibility": 38,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 50
+      },
+      {
+        "stage": "quality_gates",
+        "after": 38
+      },
+      {
+        "stage": "accessibility",
+        "after": 38
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "Google AI Blog",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "InfoQ",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "source_errors": {
+      "GitHub Trending (AI/ML)": "empty feed"
+    },
+    "sections": 4,
+    "lead_story": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:40:12.704268+00:00"
+  },
+  {
+    "articles_collected": 66,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 50,
+    "after_filters": 38,
+    "after_accessibility": 38,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 50
+      },
+      {
+        "stage": "quality_gates",
+        "after": 38
+      },
+      {
+        "stage": "accessibility",
+        "after": 38
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dark Reading",
+      "Dev.to AI",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "source_errors": {
+      "GitHub Trending (AI/ML)": "empty feed"
+    },
+    "sections": 4,
+    "lead_story": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:40:24.519784+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 51,
+    "after_filters": 40,
+    "after_accessibility": 40,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 51
+      },
+      {
+        "stage": "quality_gates",
+        "after": 40
+      },
+      {
+        "stage": "accessibility",
+        "after": 40
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "InfoQ",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI"
+    ],
+    "sections": 5,
+    "lead_story": "Trump orders federal agencies to drop Anthropic\u2019s AI",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:43:11.309405+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 51,
+    "after_filters": 40,
+    "after_accessibility": 40,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 51
+      },
+      {
+        "stage": "quality_gates",
+        "after": 40
+      },
+      {
+        "stage": "accessibility",
+        "after": 40
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dark Reading",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI"
+    ],
+    "sections": 5,
+    "lead_story": "Agent Observability Powers Agent Evaluation",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:43:23.277842+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 51,
+    "after_filters": 40,
+    "after_accessibility": 40,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 51
+      },
+      {
+        "stage": "quality_gates",
+        "after": 40
+      },
+      {
+        "stage": "accessibility",
+        "after": 40
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI"
+    ],
+    "sections": 4,
+    "lead_story": "Google and the Massachusetts AI Hub are launching a new AI t",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:43:35.902744+00:00"
+  },
+  {
+    "articles_collected": 66,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 48,
+    "after_filters": 37,
+    "after_accessibility": 37,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 48
+      },
+      {
+        "stage": "quality_gates",
+        "after": 37
+      },
+      {
+        "stage": "accessibility",
+        "after": 37
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "InfoQ",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "source_errors": {
+      "GitHub Trending (AI/ML)": "empty feed"
+    },
+    "sections": 4,
+    "lead_story": "OpenAI Fires an Employee for Prediction Market Insider Tradi",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:43:48.014723+00:00"
+  },
+  {
+    "articles_collected": 66,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 48,
+    "after_filters": 37,
+    "after_accessibility": 37,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 48
+      },
+      {
+        "stage": "quality_gates",
+        "after": 37
+      },
+      {
+        "stage": "accessibility",
+        "after": 37
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "InfoQ",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "source_errors": {
+      "GitHub Trending (AI/ML)": "empty feed"
+    },
+    "sections": 4,
+    "lead_story": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:44:00.407620+00:00"
   }
 ]
