@@ -5,23 +5,23 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Mar 2026 14:25:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 19:45:04 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Trump moves to ban Anthropic from the US government]]></title>
       <link>https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/</link>
-      <description><![CDATA[Depending on your setup, Trump might save you time or headaches down the line (via Ars Technica AI).]]></description>
+      <description><![CDATA[Trump is getting traction for a reason. Skim the details before your next sprint (via Ars Technica AI).]]></description>
       <category>Industry</category>
       <pubDate>Sat, 28 Feb 2026 20:00:26 +0000</pubDate>
       <author>Will Knight, WIRED.com</author>
     </item>
     <item>
-      <title><![CDATA[How Organization Roles Change in the AI Era]]></title>
-      <link>https://dev.to/xpromx/how-organization-roles-change-in-the-ai-era-1g2b</link>
-      <description><![CDATA[AI changed how teams build software.]]></description>
+      <title><![CDATA[Interactive Demo: https://coasty.ai/share/a58ee8f6-3821-4795-b4e7-4d77679a6221]]></title>
+      <link>https://dev.to/nitish_kovuru_76280d3ed4b/interactive-demo-httpscoastyaisharea58ee8f6-3821-4795-b4e7-4d77679a6221-356m</link>
+      <description><![CDATA[Worth a quick read — Interactive Demo tackles a gap most teams are still working around (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Sun, 01 Mar 2026 14:16:57 +0000</pubDate>
-      <author>Rodrigo Ramirez</author>
+      <pubDate>Sun, 01 Mar 2026 19:37:12 +0000</pubDate>
+      <author>Nitish Kovuru</author>
     </item>
     <item>
       <title><![CDATA[Show HN: IssueScout – Find open source issues worth contributing to]]></title>
@@ -34,7 +34,7 @@
     <item>
       <title><![CDATA[Letting Machines Decide What Matters]]></title>
       <link>https://spectrum.ieee.org/ai-new-physics</link>
-      <description><![CDATA[Not a fire drill, but Letting Machines Decide What Matters is the kind of thing that compounds if you ignore it (via IEEE Spectrum AI).]]></description>
+      <description><![CDATA[Concise coverage of Letting Machines Decide What Matters. Read it with your current stack in mind (via IEEE Spectrum AI).]]></description>
       <category>Industry</category>
       <pubDate>Sun, 01 Mar 2026 11:00:03 +0000</pubDate>
       <author>Eliza Strickland</author>
@@ -56,28 +56,20 @@
       
     </item>
     <item>
-      <title><![CDATA[The trap Anthropic built for itself]]></title>
-      <link>https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/</link>
-      <description><![CDATA[If Anthropic pans out, it could change how teams approach their current stack (via TechCrunch AI).]]></description>
+      <title><![CDATA[OpenAI reveals more details about its agreement with the Pentagon]]></title>
+      <link>https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon/</link>
+      <description><![CDATA[OpenAI is getting traction for a reason. Skim the details before your next sprint (via TechCrunch AI).]]></description>
       <category>Industry</category>
-      <pubDate>Sun, 01 Mar 2026 00:08:58 +0000</pubDate>
-      <author>Connie Loizos</author>
+      <pubDate>Sun, 01 Mar 2026 16:30:10 +0000</pubDate>
+      <author>Anthony Ha</author>
     </item>
     <item>
-      <title><![CDATA[The billion-dollar infrastructure deals powering the AI boom]]></title>
-      <link>https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/</link>
-      <description><![CDATA[Infrastructure changes around The billion-dollar infrastructure affect cost and reliability calculus for production teams (via TechCrunch AI).]]></description>
-      <category>Industry</category>
-      <pubDate>Sat, 28 Feb 2026 20:41:55 +0000</pubDate>
-      <author>Russell Brandom</author>
-    </item>
-    <item>
-      <title><![CDATA[Our agreement with the Department of War]]></title>
-      <link>https://openai.com/index/our-agreement-with-the-department-of-war</link>
-      <description><![CDATA[Personnel shifts at Department can foreshadow product or API changes — factor into vendor review (via OpenAI Blog).]]></description>
-      <category>Industry</category>
-      <pubDate>Sat, 28 Feb 2026 12:30:00 +0000</pubDate>
-      
+      <title><![CDATA[How to Design a Production-Grade Multi-Agent Communication System Using LangGraph Structured Message Bus, ACP Logging, and Persistent Shared State Architecture]]></title>
+      <link>https://www.marktechpost.com/2026/03/01/how-to-design-a-production-grade-multi-agent-communication-system-using-langgraph-structured-message-bus-acp-logging-and-persistent-shared-state-architecture/</link>
+      <description><![CDATA[New findings around ACP may shape tooling choices once validated by independent teams (via MarkTechPost).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Sun, 01 Mar 2026 19:20:17 +0000</pubDate>
+      <author>Asif Razzaq</author>
     </item>
     <item>
       <title><![CDATA[Alibaba Team Open-Sources CoPaw: A High-Performance Personal Agent Workstation for Developers to Scale Multi-Channel AI Workflows and Memory]]></title>
@@ -90,7 +82,7 @@
     <item>
       <title><![CDATA[OpenClaw, but in containers: Meet NanoClaw]]></title>
       <link>https://go.theregister.com/feed/www.theregister.com/2026/03/01/nanoclaw_container_openclaw/</link>
-      <description><![CDATA[The OpenClaw story has enough signal to track — file it for your next planning round (via The Register).]]></description>
+      <description><![CDATA[Concise coverage of OpenClaw. Read it with your current stack in mind (via The Register).]]></description>
       <category>Infra</category>
       <pubDate>Sun, 01 Mar 2026 11:30:06 +0000</pubDate>
       <author>Thomas Claburn</author>
@@ -98,7 +90,7 @@
     <item>
       <title><![CDATA[SaaS-pocalypse chatter is doomster pr0n. It would be nice if enterprise IT were boring again]]></title>
       <link>https://go.theregister.com/feed/www.theregister.com/2026/03/01/saaspocalypse_opinion/</link>
-      <description><![CDATA[If SaaS pans out, it could change how teams approach their current stack (via The Register).]]></description>
+      <description><![CDATA[Worth a quick read — SaaS tackles a gap most teams are still working around (via The Register).]]></description>
       <category>Infra</category>
       <pubDate>Sun, 01 Mar 2026 08:38:12 +0000</pubDate>
       <author>Lindsay Clark</author>

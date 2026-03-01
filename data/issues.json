@@ -1,20 +1,37 @@
 {
   "issues": [
     {
+      "slug": "2026-03-01",
+      "date_iso": "2026-03-01",
+      "date_label": "01 Mar 2026",
+      "title": "Inference 01 Mar 2026",
+      "lead_title": "Trump moves to ban Anthropic from the US government",
+      "summary": "Leading with Trump moves to ban Anthropic from the US government, and the rest of the week's best AI signal.",
+      "total_articles": 8,
+      "read_time_minutes": 41,
+      "section_count": 4,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-03-01.html",
+      "repo_md_path": "/issues/2026-03-01.md",
+      "search_text": "This week at a glance This week If You Only Read One Thing Learn This Week Prompt of the Week One to test this week \u2b50 Open-source picks \ud83d\udd2c Research worth your time \u2601\ufe0f Infra \ud83c\udf10 What changed in industry Trump moves to ban Anthropic from the US government Show HN: IssueScout \u2013 Find open source issues worth contributing to A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment Alibaba Team Open-Sources CoPaw: A High-Performance Personal Agent Workstation for Developers to Scale Multi-Channel AI Workflows and Memory OpenClaw, but in containers: Meet NanoClaw SaaS-pocalypse chatter is doomster pr0n. It would be nice if enterprise IT were boring again The trap Anthropic built for itself OpenAI and Amazon announce strategic partnership",
+      "cover_image_url": "https://techcrunch.com/wp-content/uploads/2024/12/Claude-ad-e1733259907871.jpg?resize=1200,800",
+      "is_latest": true,
+      "likes": 0
+    },
+    {
       "slug": "2026-02-28",
       "date_iso": "2026-02-28",
       "date_label": "28 Feb 2026",
       "title": "Inference 28 Feb 2026",
-      "lead_title": "The trap Anthropic built for itself",
-      "summary": "Leading with The trap Anthropic built for itself, and the rest of the week's best AI signal.",
-      "total_articles": 9,
-      "read_time_minutes": 41,
+      "lead_title": "OpenAI and Amazon announce strategic partnership",
+      "summary": "Big news this week: OpenAI and Amazon announce strategic partnership, and what it means for your roadmap.",
+      "total_articles": 0,
+      "read_time_minutes": 0,
       "section_count": 4,
       "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-28.html",
       "repo_md_path": "/issues/2026-02-28.md",
-      "search_text": "This week at a glance This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week One to test this week \u2b50 Open-source picks \ud83d\udd2c Research worth your time \u2601\ufe0f Infra \ud83c\udf10 What changed in industry The trap Anthropic built for itself Show HN: IssueScout \u2013 Find open source issues worth contributing to A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment Alibaba Team Open-Sources CoPaw: A High-Performance Personal Agent Workstation for Developers to Scale Multi-Channel AI Workflows and Memory OpenClaw, but in containers: Meet NanoClaw SaaS-pocalypse chatter is doomster pr0n. It would be nice if enterprise IT were boring again Trump moves to ban Anthropic from the US government OpenAI and Amazon announce strategic partnership",
-      "cover_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg",
-      "is_latest": true,
+      "search_text": "This week at a glance This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week \ud83d\udcda Ship-It Playbooks \ud83d\udd2c Research worth your time \u2601\ufe0f Infra \ud83c\udf10 What changed in industry OpenAI and Amazon announce strategic partnership How to Design a Production-Grade Multi-Agent Communication System Using LangGraph Structured Message Bus, ACP Logging, and Persistent Shared State Architecture Interactive Demo: https://coasty.ai/share/a58ee8f6-3821-4795-b4e7-4d77679a6221 A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment Alibaba Team Open-Sources CoPaw: A High-Performance Personal Agent Workstation for Developers to Scale Multi-Channel AI Workflows and Memory OpenClaw, but in containers: Meet NanoClaw SaaS-pocalypse chatter is doomster pr0n. It would be nice if enterprise IT were boring again Trump moves to ban Anthropic from the US government OpenAI reveals more details about its agreement with the Pentagon",
+      "cover_image_url": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2170386424.jpg?w=1024",
+      "is_latest": false,
       "likes": 0
     }
   ]

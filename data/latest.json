@@ -1,17 +1,17 @@
 {
   "date": "28 Feb 2026",
-  "issue_number": 2,
-  "total_articles": 9,
+  "issue_number": 3,
+  "total_articles": 10,
   "source_count": 8,
-  "read_time_minutes": 41,
+  "read_time_minutes": 50,
   "brief_read_time_minutes": 4,
-  "source_read_time_minutes": 41,
-  "intro": "Leading with Trump moves to ban Anthropic from the US government, and the rest of the week's best AI signal.",
+  "source_read_time_minutes": 50,
+  "intro": "Big news this week: OpenAI reveals more details about its agreement with the Pentagon, and what it means for your roadmap.",
   "theme_line": "This week: vendor moves and leadership signals.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (6 stories)."
+      "value": "Industry led coverage (4 stories)."
     },
     {
       "label": "Builder pick",
@@ -28,13 +28,13 @@
   ],
   "issue_menu": [
     {
-      "icon": "\u2b50",
-      "title": "Open-source picks",
-      "count": 1,
-      "read_time_minutes": 3,
-      "label": "\u2b50 Open-source picks (1)",
-      "deck": "Open-source projects worth a closer look.",
-      "promise": "What's gaining traction.",
+      "icon": "\ud83d\udcda",
+      "title": "Ship-It Playbooks",
+      "count": 2,
+      "read_time_minutes": 18,
+      "label": "\ud83d\udcda Ship-It Playbooks (2)",
+      "deck": "Practical implementation guides you can adapt quickly.",
+      "promise": "One thing to try this week.",
       "num": "01"
     },
     {
@@ -61,7 +61,7 @@
       "icon": "\ud83c\udf10",
       "title": "What changed in industry",
       "count": 2,
-      "read_time_minutes": 16,
+      "read_time_minutes": 10,
       "label": "\ud83c\udf10 What changed in industry (2)",
       "deck": "Company moves, launches, and policy shifts that could affect your roadmap.",
       "promise": "What changed and why it matters.",
@@ -70,72 +70,91 @@
   ],
   "briefing": [
     {
-      "title": "How Organization Roles Change in the AI Era",
-      "url": "https://dev.to/xpromx/how-organization-roles-change-in-the-ai-era-1g2b",
-      "note": "AI changed how teams build software. Why it matters: If your team hasn't tried Organisation Roles Change yet, this walkthrough lowers the barrier.",
+      "title": "Show HN: IssueScout \u2013 Find open source issues worth contributing to",
+      "url": "https://github.com/turazashvili/issuescout.dev",
+      "note": "IssueScout going open-source lowers barriers for experimentation and custom deployment. Why it matters: Open access to IssueScout lowers switching cost and pressures competing proprietary tools.",
       "track": "Builder"
     }
   ],
   "editors_note": {
     "headline": "This week",
-    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. Trump moves to ban Anthropic from the US government is the one to keep on your planning radar.",
-    "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
+    "thesis": "We're watching OpenAI reveals more details about its agreement with the Pentagon \u2014 it's the one most likely to affect vendor and roadmap decisions this quarter.",
+    "hook": "We're flagging the lead for leadership \u2014 it's the one most likely to shift budgets or priorities.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
     "underhyped": "A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment deserves more attention than it's getting.",
-    "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
+    "risk": "Keep an eye on Trump moves to ban Anthropic from the US government \u2014 it could shift budgets or vendor assumptions."
   },
   "lead_story": {
-    "title": "Trump moves to ban Anthropic from the US government",
-    "url": "https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/",
-    "source": "Ars Technica AI",
+    "title": "OpenAI reveals more details about its agreement with the Pentagon",
+    "url": "https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon/",
+    "source": "TechCrunch AI",
     "track": "Leader",
     "audience_track": "Leader",
     "difficulty": "Beginner",
-    "source_mark": "AT",
-    "what_happened": "Developments around Trump are worth a slot in your next ops or leadership review.",
-    "our_take": "Treat this as input for your next sync, not an alarm. Second-order effects matter more than the news itself.",
-    "what_to_do": "Add Trump as a discussion item in your next strategy or planning meeting."
+    "source_mark": "TA",
+    "what_happened": "OpenAI is making moves. Check whether your vendor assumptions still hold.",
+    "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input.",
+    "what_to_do": "Flag OpenAI for your leadership team \u2014 it may shift near-term priorities."
   },
   "quick_hits": [
     {
-      "title": "How Organization Roles Change in the AI Era",
-      "url": "https://dev.to/xpromx/how-organization-roles-change-in-the-ai-era-1g2b",
-      "note": "AI changed how teams build software. Why it matters: If your team hasn't tried Organisation Roles Change yet, this walkthrough lowers the barrier.",
+      "title": "Show HN: IssueScout \u2013 Find open source issues worth contributing to",
+      "url": "https://github.com/turazashvili/issuescout.dev",
+      "note": "IssueScout going open-source lowers barriers for experimentation and custom deployment. Why it matters: Open access to IssueScout lowers switching cost and pressures competing proprietary tools.",
       "track": "Builder"
     }
   ],
   "sections": [
     {
-      "title": "Open-source picks",
-      "icon": "\u2b50",
-      "deck": "Open-source projects worth a closer look.",
+      "title": "Ship-It Playbooks",
+      "icon": "\ud83d\udcda",
+      "deck": "Practical implementation guides you can adapt quickly.",
       "color": "0F4C5C",
-      "badge": "Open-source picks",
+      "badge": "Ship It Playbooks",
       "topics": [
-        "Repos"
+        "Tutorials"
       ],
       "tier": "builder",
-      "promise": "What's gaining traction.",
-      "read_time_minutes": 3,
+      "promise": "One thing to try this week.",
+      "read_time_minutes": 18,
       "articles": [
         {
-          "title": "Show HN: IssueScout \u2013 Find open source issues worth contributing to",
-          "url": "https://github.com/turazashvili/issuescout.dev",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/hn.algolia.com.png",
-          "source_mark": "HN",
-          "authors": "",
-          "published": "28 Feb",
-          "thumbnail": "",
-          "summary": "Open distribution of IssueScout lowers adoption barriers and pressures proprietary alternatives (via Hacker News).",
-          "what_happened": "IssueScout going open-source lowers barriers for experimentation and custom deployment.",
-          "why_it_matters": "Open access to IssueScout lowers switching cost and pressures competing proprietary tools.",
-          "what_to_do": "Review IssueScout issue tracker, last commit date, and license before considering adoption.",
-          "our_take": "Star velocity tells you what's popular, not what's reliable. Check the issue backlog before the star count.",
+          "title": "How to Design a Production-Grade Multi-Agent Communication System Using LangGraph Structured Message Bus, ACP Logging, and Persistent Shared State Architecture",
+          "url": "https://www.marktechpost.com/2026/03/01/how-to-design-a-production-grade-multi-agent-communication-system-using-langgraph-structured-message-bus-acp-logging-and-persistent-shared-state-architecture/",
+          "source": "MarkTechPost",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
+          "source_mark": "MA",
+          "authors": "Asif Razzaq",
+          "published": "01 Mar",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/03/blog-banner23-2.png",
+          "summary": "New findings around ACP may shape tooling choices once validated by independent teams (via MarkTechPost).",
+          "what_happened": "Practical write-up on ACP \u2014 more useful than the docs alone.",
+          "why_it_matters": "Hands-on ACP content like this is more useful than reading the API docs alone.",
+          "what_to_do": "Pick the hardest step in the ACP tutorial and work backwards from there.",
+          "our_take": "If you can't run the example in 15 minutes, the tutorial has a friction problem, not you.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
-          "topic": "Repos",
-          "external_read_minutes": 3
+          "topic": "Tutorials",
+          "external_read_minutes": 6
+        },
+        {
+          "title": "Interactive Demo: https://coasty.ai/share/a58ee8f6-3821-4795-b4e7-4d77679a6221",
+          "url": "https://dev.to/nitish_kovuru_76280d3ed4b/interactive-demo-httpscoastyaisharea58ee8f6-3821-4795-b4e7-4d77679a6221-356m",
+          "source": "Dev.to AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/dev.to.png",
+          "source_mark": "DA",
+          "authors": "Nitish Kovuru",
+          "published": "01 Mar",
+          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fs0mhip8ppfx39n3sw2f5.png",
+          "summary": "Worth a quick read \u2014 Interactive Demo tackles a gap most teams are still working around (via Dev.to AI).",
+          "what_happened": "If you've been putting off Interactive Demo, this walkthrough makes a solid starting point.",
+          "why_it_matters": "The Interactive Demo walkthrough could save you a few hours of trial and error.",
+          "what_to_do": "Clone the Interactive Demo example, run it locally, then change one thing to match your project.",
+          "our_take": "Skip the parts you already know. The useful bit is usually two-thirds of the way through.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tutorials",
+          "external_read_minutes": 12
         }
       ]
     },
@@ -164,7 +183,7 @@
           "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/03/blog-banner23-1024x731.png",
           "summary": "Concrete enough to follow along \u2014 the End Coding Guide tutorial goes beyond toy examples (via MarkTechPost).",
           "what_happened": "New funding around End Coding Guide reflects investor confidence in this part of the stack.",
-          "why_it_matters": "If End Coding Guide findings replicate, they could change how teams approach related problems.",
+          "why_it_matters": "Early End Coding Guide numbers look strong. Wait for independent validation before building on it.",
           "what_to_do": "Compare the End Coding Guide eval setup to yours \u2014 check if the benchmark conditions match your workload.",
           "our_take": "Use this for direction-setting, not for production bets. Keep it on the watch list.",
           "audience_track": "Researcher",
@@ -215,8 +234,8 @@
           "authors": "Thomas Claburn",
           "published": "01 Mar",
           "thumbnail": "https://regmedia.co.uk/2018/07/09/yellowcrab.jpg",
-          "summary": "The OpenClaw story has enough signal to track \u2014 file it for your next planning round (via The Register).",
-          "what_happened": "The OpenClaw story is worth a skim \u2014 small signals like this tend to add up.",
+          "summary": "Concise coverage of OpenClaw. Read it with your current stack in mind (via The Register).",
+          "what_happened": "New OpenClaw coverage this week \u2014 quick read with practical context.",
           "why_it_matters": "No immediate action needed, but OpenClaw shifts the background assumptions a bit.",
           "what_to_do": "Add OpenClaw to your weekly review and decide on a next step.",
           "our_take": "Watch closely rather than act now \u2014 the picture will get clearer soon.",
@@ -234,8 +253,8 @@
           "authors": "Lindsay Clark",
           "published": "01 Mar",
           "thumbnail": "https://regmedia.co.uk/2026/02/27/shutterstock_1225883914.jpg",
-          "summary": "If SaaS pans out, it could change how teams approach their current stack (via The Register).",
-          "what_happened": "Not urgent, but SaaS is the kind of thing that shows up again in a month.",
+          "summary": "Worth a quick read \u2014 SaaS tackles a gap most teams are still working around (via The Register).",
+          "what_happened": "SaaS update. Not urgent, but worth knowing about.",
           "why_it_matters": "SaaS sounds minor now, but it could change your shortlist by next quarter.",
           "what_to_do": "Review SaaS and decide on one concrete follow-up action by end of week.",
           "our_take": "Don't let FOMO drive architecture. Validate on your own terms before changing course.",
@@ -258,26 +277,26 @@
       ],
       "tier": "leader",
       "promise": "What changed and why it matters.",
-      "read_time_minutes": 16,
+      "read_time_minutes": 10,
       "articles": [
         {
-          "title": "The trap Anthropic built for itself",
-          "url": "https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png",
-          "source_mark": "TA",
-          "authors": "Connie Loizos",
-          "published": "01 Mar",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261854833.jpg?resize=1200,800",
-          "summary": "If Anthropic pans out, it could change how teams approach their current stack (via TechCrunch AI).",
-          "what_happened": "Anthropic in the news; could affect pricing, roadmaps, or compliance this quarter \u2014 flag it.",
-          "why_it_matters": "Industry moves around Anthropic tend to show up in vendor and budget conversations; get ahead of it.",
-          "what_to_do": "Flag Anthropic for your leadership team \u2014 it may shift near-term priorities.",
-          "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input (TechCrunch AI).",
+          "title": "Trump moves to ban Anthropic from the US government",
+          "url": "https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/",
+          "source": "Ars Technica AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/arstechnica.com.png",
+          "source_mark": "AT",
+          "authors": "Will Knight, WIRED.com",
+          "published": "28 Feb",
+          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg",
+          "summary": "Trump is getting traction for a reason. Skim the details before your next sprint (via Ars Technica AI).",
+          "what_happened": "New developments around Trump \u2014 relevant if it touches your stack or procurement.",
+          "why_it_matters": "Talent movement around Trump often precedes product or strategy pivots.",
+          "what_to_do": "Add Trump as a discussion item in your next strategy or planning meeting.",
+          "our_take": "File it now, act on it when the dust settles. Timing matters.",
           "audience_track": "Leader",
           "difficulty": "Beginner",
           "topic": "Industry",
-          "external_read_minutes": 9
+          "external_read_minutes": 3
         },
         {
           "title": "OpenAI and Amazon announce strategic partnership",
@@ -289,7 +308,7 @@
           "published": "27 Feb",
           "thumbnail": "",
           "summary": "The OpenAI announcement carries implications for budgets and vendor relationships (via OpenAI Blog).",
-          "what_happened": "OpenAI in the news; could affect pricing, roadmaps, or compliance this quarter \u2014 flag it.",
+          "what_happened": "OpenAI update this week. Worth reading if you have exposure to this part of the market.",
           "why_it_matters": "The OpenAI move could shift the math for your next planning cycle; flag it in leadership review.",
           "what_to_do": "Monitor OpenAI for follow-on product or pricing changes over the next month.",
           "our_take": "The market is sending a signal. Teams that read it early get a head start.",
@@ -379,19 +398,19 @@
   ],
   "category_selection_available": true,
   "learn_this_week": {
-    "title": "ChatGPT Prompt Engineering for Developers",
-    "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/",
-    "provider": "DeepLearning.AI",
+    "title": "Machine Learning Specialization",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "provider": "Coursera / Stanford",
     "level": "Beginner",
-    "free": true,
-    "duration": "1.5 hours",
-    "note": "Co-created with OpenAI. Learn prompt patterns that work in production, not just demos. Free during platform beta."
+    "free": false,
+    "duration": "2 months",
+    "note": "Andrew Ng's refreshed ML curriculum. The gold standard intro. Audit free, cert paid."
   },
   "prompt_of_the_week": {
-    "text": "Summarize this research paper in 3 bullet points: what they did, what they found, and what I should try in my own work.",
-    "context": "Research",
+    "text": "Generate a week's worth of social media posts about [topic] in the voice of a technical thought leader \u2014 concise, opinionated, no fluff.",
+    "context": "Content",
     "tool": "Claude / ChatGPT",
-    "why": "The third bullet ('what I should try') is the key. It forces the model past summary into application \u2014 turning reading time into actionable next steps for your own projects.",
-    "tip": "Paste the abstract and conclusion sections for a quick summary."
+    "why": "Technical audiences punish generic content. Specifying 'opinionated, no fluff' constrains the model away from safe, bland takes \u2014 the output reads more like a real practitioner's voice.",
+    "tip": "Replace [topic] with your area. Add 2-3 example posts you admire for tone matching."
   }
 }

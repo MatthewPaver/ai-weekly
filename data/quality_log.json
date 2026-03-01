@@ -3,118 +3,6 @@
     "articles_collected": 69,
     "relaxed_history": false,
     "retry_count": 0,
-    "after_dedup": 43,
-    "after_filters": 25,
-    "after_accessibility": 25,
-    "after_selection": 18,
-    "articles_final": 11,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 43
-      },
-      {
-        "stage": "quality_gates",
-        "after": 25
-      },
-      {
-        "stage": "accessibility",
-        "after": 25
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 11
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Google DeepMind",
-      "Import AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "The Verge AI",
-      "Wired AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 2,
-    "lead_story": "Microsoft deletes blog telling users to train AI on pirated ",
-    "total_articles": 11,
-    "smoke_test": false,
-    "status": "fail",
-    "timestamp": "2026-02-22T16:35:48.915505+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 43,
-    "after_filters": 25,
-    "after_accessibility": 25,
-    "after_selection": 18,
-    "articles_final": 11,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 43
-      },
-      {
-        "stage": "quality_gates",
-        "after": 25
-      },
-      {
-        "stage": "accessibility",
-        "after": 25
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 11
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Google DeepMind",
-      "Import AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "The Verge AI",
-      "Wired AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 2,
-    "lead_story": "Microsoft deletes blog telling users to train AI on pirated ",
-    "total_articles": 11,
-    "smoke_test": false,
-    "status": "fail",
-    "timestamp": "2026-02-22T16:35:48.916310+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
     "after_dedup": 52,
     "after_filters": 35,
     "after_accessibility": 35,
@@ -1668,5 +1556,100 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-03-01T14:25:38.408026+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 23,
+    "after_filters": 12,
+    "after_accessibility": 12,
+    "after_selection": 12,
+    "articles_final": 11,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 23
+      },
+      {
+        "stage": "quality_gates",
+        "after": 12
+      },
+      {
+        "stage": "accessibility",
+        "after": 12
+      },
+      {
+        "stage": "selection",
+        "after": 12
+      },
+      {
+        "stage": "summary_quality",
+        "after": 11
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Hacker News (AI)",
+      "IEEE Spectrum AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Register"
+    ],
+    "sections": 4,
+    "lead_story": "OpenAI and Amazon announce strategic partnership",
+    "total_articles": 11,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-03-01T14:51:12.240605+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 26,
+    "after_filters": 12,
+    "after_accessibility": 12,
+    "after_selection": 12,
+    "articles_final": 11,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 26
+      },
+      {
+        "stage": "quality_gates",
+        "after": 12
+      },
+      {
+        "stage": "accessibility",
+        "after": 12
+      },
+      {
+        "stage": "selection",
+        "after": 12
+      },
+      {
+        "stage": "summary_quality",
+        "after": 11
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "Hacker News (AI)",
+      "IEEE Spectrum AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Register"
+    ],
+    "sections": 4,
+    "lead_story": "OpenAI reveals more details about its agreement with the Pen",
+    "total_articles": 11,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-03-01T19:45:04.934921+00:00"
   }
 ]
