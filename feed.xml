@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Mar 2026 14:06:05 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 14:25:38 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Trump moves to ban Anthropic from the US government]]></title>
@@ -16,12 +16,12 @@
       <author>Will Knight, WIRED.com</author>
     </item>
     <item>
-      <title><![CDATA[I Built a Real-Time AI Vision Assistant in 1 Week — Here's What I Learned About Multimodal AI]]></title>
-      <link>https://dev.to/jackbright/i-built-a-real-time-ai-vision-assistant-in-1-week-heres-what-i-learned-about-multimodal-ai-232i</link>
-      <description><![CDATA[The Real story has enough signal to track — file it for your next planning round (via Dev.to AI).]]></description>
+      <title><![CDATA[How Organization Roles Change in the AI Era]]></title>
+      <link>https://dev.to/xpromx/how-organization-roles-change-in-the-ai-era-1g2b</link>
+      <description><![CDATA[AI changed how teams build software.]]></description>
       <category>Tutorials</category>
-      <pubDate>Sun, 01 Mar 2026 14:02:01 +0000</pubDate>
-      <author>Vishwa Kumaresh</author>
+      <pubDate>Sun, 01 Mar 2026 14:16:57 +0000</pubDate>
+      <author>Rodrigo Ramirez</author>
     </item>
     <item>
       <title><![CDATA[Show HN: IssueScout – Find open source issues worth contributing to]]></title>

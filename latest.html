@@ -9,17 +9,17 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Inference Weekly · 28 Feb 2026" />
-  <meta property="og:description" content="Leading with Trump moves to ban Anthropic from the US government, and the rest of the week&#39;s best AI signal." />
+  <meta property="og:description" content="Leading with The trap Anthropic built for itself, and the rest of the week&#39;s best AI signal." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/latest.html" />
-  <meta property="og:image" content="https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg" />
+  <meta property="og:image" content="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261854833.jpg?resize=1200,800" />
   <meta property="og:site_name" content="Inference Weekly" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Inference Weekly · 28 Feb 2026" />
-  <meta name="twitter:description" content="Leading with Trump moves to ban Anthropic from the US government, and the rest of the week&#39;s best AI signal." />
-  <meta name="twitter:image" content="https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg" />
+  <meta name="twitter:description" content="Leading with The trap Anthropic built for itself, and the rest of the week&#39;s best AI signal." />
+  <meta name="twitter:image" content="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261854833.jpg?resize=1200,800" />
 
   <!-- Canonical + RSS -->
   <link rel="canonical" href="https://matthewpaver.github.io/ai-weekly/latest.html" />
@@ -780,7 +780,7 @@
     .story h3 a { text-decoration: none; color: inherit; }
     .story h3 a:hover { text-decoration: underline; }
 
-    .story img {
+    .story > img {
       width: 100%;
       height: 152px;
       object-fit: cover;
@@ -802,8 +802,8 @@
       margin-bottom: 6px;
     }
     .story-source img {
-      width: 14px !important;
-      height: 14px !important;
+      width: 14px;
+      height: 14px;
       min-width: 14px;
       min-height: 14px;
       border-radius: 3px;
@@ -905,14 +905,6 @@
     }
     .share-btn:hover { transform: translateY(-1px); color: var(--text); box-shadow: 0 4px 12px rgba(15,31,40,0.1); }
 
-    .like-btn {
-      font-size: 13px; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--line);
-      background: var(--surface-2); color: var(--muted); cursor: pointer;
-      display: inline-flex; align-items: center; gap: 4px;
-    }
-    .like-btn:hover:not(:disabled) { color: var(--link); border-color: var(--brand); }
-    .like-icon { vertical-align: middle; transition: fill .15s ease, transform .15s ease; }
-    .like-btn.liked .like-icon { fill: var(--brand); stroke: var(--brand); transform: scale(1.15); }
 
     /* Tier gating placeholder (hidden until tiers_enabled) */
     /* Scroll-triggered reveal (local IntersectionObserver, no external dependency) */
@@ -1115,10 +1107,10 @@
     }
 
     /* Smooth scale on thumbnail hover */
-    .story img {
+    .story > img {
       transition: transform .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
-    .story:hover img { transform: scale(1.03); }
+    .story:hover > img { transform: scale(1.03); }
 
     /* Feedback card polish */
     .feedback-card {
@@ -1159,22 +1151,6 @@
     html.theme-dark .emoji-rating button.selected {
       border-color: var(--link);
       background: rgba(103,232,249,0.1);
-    }
-
-    /* Like button enhanced */
-    .like-btn {
-      transition: transform .15s ease, color .15s ease, border-color .15s ease, background .15s ease;
-    }
-    .like-btn:hover:not(:disabled) {
-      transform: scale(1.05);
-      background: rgba(15,118,110,0.06);
-      background: color-mix(in srgb, var(--brand), transparent 94%);
-    }
-    .like-btn.liked {
-      color: var(--brand);
-      border-color: var(--brand);
-      background: rgba(15,118,110,0.08);
-      background: color-mix(in srgb, var(--brand), transparent 92%);
     }
 
     /* Sticky sidebar TOC on desktop (Stripe docs inspired) */
@@ -1285,7 +1261,7 @@
     @media (max-width: 960px) {
       .content { grid-template-columns: 1fr; }
       .lead-media { height: 168px; }
-      .story img { height: 128px; }
+      .story > img { height: 128px; }
       /* On mobile, move TOC above main content so readers see navigation first */
       .content { display: flex; flex-direction: column; }
       .content aside { order: -1; }
@@ -1360,20 +1336,20 @@
             <span class="topic-pill-icon">🌐</span> What changed in industry <span class="topic-pill-count">2</span>
           </a>
         </nav>
-        <p class="intro intro-line" style="margin: 0 0 12px; font-size: 1rem; color: var(--text); line-height: 1.5;">Leading with Trump moves to ban Anthropic from the US government, and the rest of the week&#39;s best AI signal.</p>
+        <p class="intro intro-line" style="margin: 0 0 12px; font-size: 1rem; color: var(--text); line-height: 1.5;">Leading with The trap Anthropic built for itself, and the rest of the week&#39;s best AI signal.</p>
         <p class="intro" style="margin: 0 0 16px; font-size: 0.9rem; color: var(--muted); font-weight: 500;">This week: vendor moves and leadership signals.</p>
         <article class="lead card">
-          <img class="lead-media" src="https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg" alt="Trump moves to ban Anthropic from the US government" width="400" height="220" decoding="async" fetchpriority="high" onerror="this.style.display='none'" />
+          <img class="lead-media" src="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261854833.jpg?resize=1200,800" alt="The trap Anthropic built for itself" width="400" height="220" decoding="async" fetchpriority="high" onerror="this.style.display='none'" />
           <div class="lead-body">
             <div class="story-source" style="margin-bottom: 8px;">
-<span class="source-mark" aria-hidden="true">AT</span>              <span class="story-source-name">Ars Technica AI</span>
-<span class="story-time">28 Feb</span>              <span class="story-time">3 min</span>
+<span class="source-mark" aria-hidden="true">TA</span>              <span class="story-source-name">TechCrunch AI</span>
+<span class="story-time">01 Mar</span>              <span class="story-time">9 min</span>
               <span class="badge badge-pick" style="margin-left: auto;">Editor's Pick</span>
             </div>
-            <h2><a href="https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/" target="_blank" rel="noopener">Trump moves to ban Anthropic from the US government</a></h2>
-            <p>Developments around Trump are worth a slot in your next ops or leadership review. Talent movement around Trump often precedes product or strategy pivots.</p>
-<p class="take">Treat this as input for your next sync, not an alarm. Second-order effects matter more than the news itself.</p>            <p style="margin: 12px 0 0;">
-              <a href="https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/" target="_blank" rel="noopener" class="share-btn" style="display: inline-block; padding: 10px 20px; font-size: 14px; font-weight: 700; background: var(--brand-2); color: #fff; text-decoration: none; border-radius: 10px; letter-spacing: 0.3px;">Read full story &#x2192;</a>
+            <h2><a href="https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/" target="_blank" rel="noopener">The trap Anthropic built for itself</a></h2>
+            <p>Anthropic in the news; could affect pricing, roadmaps, or compliance this quarter - flag it. Industry moves around Anthropic tend to show up in vendor and budget conversations; get ahead of it.</p>
+<p class="take">The signal is real; the timing matters more than the headline. Use it as a planning input (TechCrunch AI).</p>            <p style="margin: 12px 0 0;">
+              <a href="https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/" target="_blank" rel="noopener" class="share-btn" style="display: inline-block; padding: 10px 20px; font-size: 14px; font-weight: 700; background: var(--brand-2); color: #fff; text-decoration: none; border-radius: 10px; letter-spacing: 0.3px;">Read full story &#x2192;</a>
             </p>
           </div>
         </article>
@@ -1454,13 +1430,13 @@
             <h2 class="section-title"><span class="section-num">4</span> 🌐 What changed in industry <span style="font-weight:500;opacity:.7">(2)</span></h2>
 <p class="section-deck">Company moves, launches, and policy shifts that could affect your roadmap.</p>            <div class="stories">
               <article class="story">
-<img class="lazy" data-src="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261854833.jpg?resize=1200,800" alt="The trap Anthropic built for itself" width="228" height="152" decoding="async" />                <div class="story-body">
+<img class="lazy" data-src="https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg" alt="Trump moves to ban Anthropic from the US government" width="228" height="152" decoding="async" />                <div class="story-body">
                   <div class="story-source">
-<span class="source-mark" aria-hidden="true">TA</span>                    <span class="story-source-name">TechCrunch AI</span>
-<span class="story-time">01 Mar</span>                    <span class="story-time">9 min</span>
+<span class="source-mark" aria-hidden="true">AT</span>                    <span class="story-source-name">Ars Technica AI</span>
+<span class="story-time">28 Feb</span>                    <span class="story-time">3 min</span>
                   </div>
-                  <h3><a href="https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/" target="_blank" rel="noopener">The trap Anthropic built for itself</a></h3>
-                  <p>Industry moves around Anthropic tend to show up in vendor and budget conversations; get ahead of it.</p>
+                  <h3><a href="https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/" target="_blank" rel="noopener">Trump moves to ban Anthropic from the US government</a></h3>
+                  <p>Talent movement around Trump often precedes product or strategy pivots.</p>
                 </div>
               </article>
               <article class="story">
@@ -1508,7 +1484,7 @@
               <span class="menu-text">
                 <span class="menu-label">What changed in industry</span>
               </span>
-              <span class="menu-meta">~16 min linked reads · 2</span>
+              <span class="menu-meta">~10 min linked reads · 2</span>
             </a>
           </div>
         </nav>
@@ -1516,7 +1492,7 @@
         <section class="card also-this-week" style="padding: 14px;">
           <p class="section-head" style="margin: 0 0 10px; font-size: 0.75rem;">Also this week</p>
           <ul style="margin: 0 0 12px; padding-left: 1.2em; font-size: 0.88rem; color: var(--text);">
-            <li style="margin-bottom: 8px;"><a href="https://dev.to/jackbright/i-built-a-real-time-ai-vision-assistant-in-1-week-heres-what-i-learned-about-multimodal-ai-232i" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">I Built a Real-Time AI Vision Assistant in 1 Week — Here&#39;s What I Learned About Multimodal AI</a> <span style="color: var(--muted); font-weight: 400;">· If you&#39;ve been putting off Real, this walkthrough makes a solid starting point. Why it matters: The Real guide fills a gap most docs don&#39;t cover well.</span></li>
+            <li style="margin-bottom: 8px;"><a href="https://dev.to/xpromx/how-organization-roles-change-in-the-ai-era-1g2b" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">How Organization Roles Change in the AI Era</a> <span style="color: var(--muted); font-weight: 400;">· AI changed how teams build software. Why it matters: If your team hasn&#39;t tried Organisation Roles Change yet, this walkthrough lowers the barrier.</span></li>
           </ul>
           <div style="margin: 0 0 12px;">
             <p class="section-head" style="margin: 0 0 4px; font-size: 0.7rem;">📚 Learn This Week</p>
@@ -1557,13 +1533,6 @@
         <div id="feedback-recaptcha" class="recaptcha-placeholder" style="min-height: 1px;"></div>
         <button type="submit" id="feedback-submit" style="padding: 10px 24px; font-size: 14px; font-weight: 600; background: var(--brand); color: white; border: none; border-radius: 8px; cursor: pointer; transition: opacity .15s ease;" disabled>Send feedback</button>
         <p id="feedback-thanks" style="display: none; margin: 12px 0 0; color: var(--brand); font-weight: 600; font-size: 0.95rem;">Thanks — your feedback is noted! 🙏</p>
-      </form>
-      <!-- Hidden form for likes; JS fills article_url and article_title on button click -->
-      <form id="like-form" action="https://formsubmit.co/inference.feedback@gmail.com" method="post" style="display: none;">
-        <input type="hidden" name="article_url" id="like-url" value="" />
-        <input type="hidden" name="article_title" id="like-title" value="" />
-        <input type="hidden" name="_subject" value="Inference · article like" />
-        <input type="hidden" name="g-recaptcha-response" id="like-recaptcha" value="" />
       </form>
     </section>
 
@@ -1667,12 +1636,23 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
     var circumference = ring ? 2 * Math.PI * 16 : 0;
     if (ring) ring.style.strokeDasharray = circumference;
 
+    /* Use the main content column's bottom as the scroll target instead of
+       full document height — avoids the sticky sidebar inflating scrollHeight. */
+    function getScrollTarget() {
+      var main = document.getElementById('main-content');
+      if (main) {
+        var rect = main.getBoundingClientRect();
+        return rect.bottom + window.scrollY - window.innerHeight;
+      }
+      return document.documentElement.scrollHeight - window.innerHeight;
+    }
+
     var ticking = false;
     window.addEventListener('scroll', function() {
       if (!ticking) {
         requestAnimationFrame(function() {
-          var h = document.documentElement.scrollHeight - window.innerHeight;
-          var pct = h > 0 ? window.scrollY / h : 0;
+          var h = getScrollTarget();
+          var pct = h > 0 ? Math.min(window.scrollY / h, 1) : 0;
           if (bar && !reducedMotion) bar.style.width = (pct * 100) + '%';
           if (ring) ring.style.strokeDashoffset = circumference * (1 - pct);
           if (btn) btn.classList.toggle('visible', window.scrollY > 400);
@@ -1821,81 +1801,6 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
   })();
   </script>
 
-  <!-- Like buttons: toggle + local count (always active, no backend required) -->
-  <script>
-  (function() {
-    var likeForm = document.getElementById('like-form');
-    var LIKED_KEY = 'inference_liked_urls';
-    var COUNTS_KEY = 'inference_like_counts';
-
-    function getLikedUrls() {
-      try { return JSON.parse(localStorage.getItem(LIKED_KEY) || '[]'); } catch (e) { return []; }
-    }
-    function saveLikedUrls(urls) { localStorage.setItem(LIKED_KEY, JSON.stringify(urls)); }
-    function getCounts() {
-      try { return JSON.parse(localStorage.getItem(COUNTS_KEY) || '{}'); } catch (e) { return {}; }
-    }
-    function saveCounts(c) { localStorage.setItem(COUNTS_KEY, JSON.stringify(c)); }
-
-    function updateCountDisplay(url) {
-      var counts = getCounts();
-      var n = counts[url] || 0;
-      document.querySelectorAll('.like-count[data-url="' + url + '"]').forEach(function(el) {
-        el.textContent = n === 1 ? '1 like' : n + ' likes';
-      });
-    }
-
-    var heartSvg = '<svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>';
-    function setLikeState(btn, isLiked) {
-      if (isLiked) {
-        btn.innerHTML = heartSvg + ' Liked';
-        btn.classList.add('liked');
-        btn.setAttribute('aria-label', 'Unlike this article');
-      } else {
-        btn.innerHTML = heartSvg + ' Like';
-        btn.classList.remove('liked');
-        btn.setAttribute('aria-label', 'Like this article');
-      }
-    }
-
-    var likedUrls = getLikedUrls();
-    document.querySelectorAll('.like-btn').forEach(function(btn) {
-      var url = btn.getAttribute('data-url');
-      if (!url) return;
-      var isLiked = likedUrls.indexOf(url) !== -1;
-      setLikeState(btn, isLiked);
-      updateCountDisplay(url);
-
-      btn.addEventListener('click', function() {
-        var title = btn.getAttribute('data-title');
-        if (!url) return;
-        var urls = getLikedUrls();
-        var counts = getCounts();
-        var wasLiked = urls.indexOf(url) !== -1;
-
-        if (wasLiked) {
-          urls = urls.filter(function(u) { return u !== url; });
-          counts[url] = Math.max((counts[url] || 1) - 1, 0);
-        } else {
-          urls.push(url);
-          counts[url] = (counts[url] || 0) + 1;
-        }
-        saveLikedUrls(urls);
-        saveCounts(counts);
-        setLikeState(btn, !wasLiked);
-        updateCountDisplay(url);
-
-        /* Submit to form backend if available */
-        if (!wasLiked && likeForm) {
-          document.getElementById('like-url').value = url;
-          document.getElementById('like-title').value = title || '';
-          var formData = new FormData(likeForm);
-          fetch(likeForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } }).catch(function(){});
-        }
-      });
-    });
-  })();
-  </script>
 
   <!-- Schema.org structured data -->
   <script type="application/ld+json">
@@ -1903,7 +1808,7 @@ Who reads this: Builders, product leads, and researchers who ship AI products.  
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     "headline": "Inference Weekly · 28 Feb 2026",
-    "description": "Leading with Trump moves to ban Anthropic from the US government, and the rest of the week&#39;s best AI signal.",
+    "description": "Leading with The trap Anthropic built for itself, and the rest of the week&#39;s best AI signal.",
     "datePublished": "2026-02-28",
     "publisher": {
       "@type": "Organization",

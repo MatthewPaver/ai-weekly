@@ -6,7 +6,7 @@
   "read_time_minutes": 41,
   "brief_read_time_minutes": 4,
   "source_read_time_minutes": 41,
-  "intro": "Leading with The trap Anthropic built for itself, and the rest of the week's best AI signal.",
+  "intro": "Leading with Trump moves to ban Anthropic from the US government, and the rest of the week's best AI signal.",
   "theme_line": "This week: vendor moves and leadership signals.",
   "pulse_board": [
     {
@@ -61,7 +61,7 @@
       "icon": "\ud83c\udf10",
       "title": "What changed in industry",
       "count": 2,
-      "read_time_minutes": 10,
+      "read_time_minutes": 16,
       "label": "\ud83c\udf10 What changed in industry (2)",
       "deck": "Company moves, launches, and policy shifts that could affect your roadmap.",
       "promise": "What changed and why it matters.",
@@ -70,37 +70,37 @@
   ],
   "briefing": [
     {
-      "title": "I Built a Real-Time AI Vision Assistant in 1 Week \u2014 Here's What I Learned About Multimodal AI",
-      "url": "https://dev.to/jackbright/i-built-a-real-time-ai-vision-assistant-in-1-week-heres-what-i-learned-about-multimodal-ai-232i",
-      "note": "If you've been putting off Real, this walkthrough makes a solid starting point. Why it matters: The Real guide fills a gap most docs don't cover well.",
+      "title": "How Organization Roles Change in the AI Era",
+      "url": "https://dev.to/xpromx/how-organization-roles-change-in-the-ai-era-1g2b",
+      "note": "AI changed how teams build software. Why it matters: If your team hasn't tried Organisation Roles Change yet, this walkthrough lowers the barrier.",
       "track": "Builder"
     }
   ],
   "editors_note": {
     "headline": "This week",
-    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. The trap Anthropic built for itself is the one to keep on your planning radar.",
+    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. Trump moves to ban Anthropic from the US government is the one to keep on your planning radar.",
     "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
     "underhyped": "A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment deserves more attention than it's getting.",
-    "risk": "Keep an eye on Trump moves to ban Anthropic from the US government \u2014 it could shift budgets or vendor assumptions."
+    "risk": "Vendor and pricing risk is elevated this week \u2014 review your dependency list."
   },
   "lead_story": {
-    "title": "The trap Anthropic built for itself",
-    "url": "https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/",
-    "source": "TechCrunch AI",
+    "title": "Trump moves to ban Anthropic from the US government",
+    "url": "https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/",
+    "source": "Ars Technica AI",
     "track": "Leader",
     "audience_track": "Leader",
     "difficulty": "Beginner",
-    "source_mark": "TA",
-    "what_happened": "Anthropic in the news; could affect pricing, roadmaps, or compliance this quarter \u2014 flag it.",
-    "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input (TechCrunch AI).",
-    "what_to_do": "Flag Anthropic for your leadership team \u2014 it may shift near-term priorities."
+    "source_mark": "AT",
+    "what_happened": "Developments around Trump are worth a slot in your next ops or leadership review.",
+    "our_take": "Treat this as input for your next sync, not an alarm. Second-order effects matter more than the news itself.",
+    "what_to_do": "Add Trump as a discussion item in your next strategy or planning meeting."
   },
   "quick_hits": [
     {
-      "title": "I Built a Real-Time AI Vision Assistant in 1 Week \u2014 Here's What I Learned About Multimodal AI",
-      "url": "https://dev.to/jackbright/i-built-a-real-time-ai-vision-assistant-in-1-week-heres-what-i-learned-about-multimodal-ai-232i",
-      "note": "If you've been putting off Real, this walkthrough makes a solid starting point. Why it matters: The Real guide fills a gap most docs don't cover well.",
+      "title": "How Organization Roles Change in the AI Era",
+      "url": "https://dev.to/xpromx/how-organization-roles-change-in-the-ai-era-1g2b",
+      "note": "AI changed how teams build software. Why it matters: If your team hasn't tried Organisation Roles Change yet, this walkthrough lowers the barrier.",
       "track": "Builder"
     }
   ],
@@ -258,26 +258,26 @@
       ],
       "tier": "leader",
       "promise": "What changed and why it matters.",
-      "read_time_minutes": 10,
+      "read_time_minutes": 16,
       "articles": [
         {
-          "title": "Trump moves to ban Anthropic from the US government",
-          "url": "https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/",
-          "source": "Ars Technica AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/arstechnica.com.png",
-          "source_mark": "AT",
-          "authors": "Will Knight, WIRED.com",
-          "published": "28 Feb",
-          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg",
-          "summary": "Depending on your setup, Trump might save you time or headaches down the line (via Ars Technica AI).",
-          "what_happened": "Developments around Trump are worth a slot in your next ops or leadership review.",
-          "why_it_matters": "Talent movement around Trump often precedes product or strategy pivots.",
-          "what_to_do": "Add Trump as a discussion item in your next strategy or planning meeting.",
-          "our_take": "Treat this as input for your next sync, not an alarm. Second-order effects matter more than the news itself.",
+          "title": "The trap Anthropic built for itself",
+          "url": "https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/",
+          "source": "TechCrunch AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png",
+          "source_mark": "TA",
+          "authors": "Connie Loizos",
+          "published": "01 Mar",
+          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261854833.jpg?resize=1200,800",
+          "summary": "If Anthropic pans out, it could change how teams approach their current stack (via TechCrunch AI).",
+          "what_happened": "Anthropic in the news; could affect pricing, roadmaps, or compliance this quarter \u2014 flag it.",
+          "why_it_matters": "Industry moves around Anthropic tend to show up in vendor and budget conversations; get ahead of it.",
+          "what_to_do": "Flag Anthropic for your leadership team \u2014 it may shift near-term priorities.",
+          "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input (TechCrunch AI).",
           "audience_track": "Leader",
           "difficulty": "Beginner",
           "topic": "Industry",
-          "external_read_minutes": 3
+          "external_read_minutes": 9
         },
         {
           "title": "OpenAI and Amazon announce strategic partnership",
