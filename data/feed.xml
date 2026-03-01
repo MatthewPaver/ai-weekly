@@ -5,103 +5,103 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 10:17:48 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 14:06:05 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[OpenAI policy exec who opposed chatbot’s “adult mode” reportedly fired on discrimination claim]]></title>
-      <link>https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/</link>
-      <description><![CDATA[The executive has denied the allegation that she engaged in discrimination.]]></description>
+      <title><![CDATA[Trump moves to ban Anthropic from the US government]]></title>
+      <link>https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/</link>
+      <description><![CDATA[Depending on your setup, Trump might save you time or headaches down the line (via Ars Technica AI).]]></description>
       <category>Industry</category>
-      <pubDate>Wed, 11 Feb 2026 02:15:27 +0000</pubDate>
-      <author>Lucas Ropek</author>
+      <pubDate>Sat, 28 Feb 2026 20:00:26 +0000</pubDate>
+      <author>Will Knight, WIRED.com</author>
     </item>
     <item>
-      <title><![CDATA[Transformers.js v4 Preview: Now Available on NPM!]]></title>
-      <link>https://huggingface.co/blog/transformersjs-v4</link>
-      <description><![CDATA[Transformers.js v4 Preview: Now Available on NPM!. This release signal from Hugging Face Blog looks practical enough for a scoped pilot.]]></description>
-      <category>Tools</category>
-      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-      
-    </item>
-    <item>
-      <title><![CDATA[GPU as a Service Pricing: A Complete Guide to Cost Models and Savings]]></title>
-      <link>https://dev.to/cyfutureai/gpu-as-a-service-pricing-a-complete-guide-to-cost-models-and-savings-381m</link>
-      <description><![CDATA[In the fast-evolving world of cloud computing, GPU-as-a-service has become essential for handling intensive tasks such as AI training, machine learning inference, scientific simulations, and graphics rendering. Businesses and developers increasingly turn to these on-demand resources to avoid the high upfront costs of purchasing hardware.]]></description>
+      <title><![CDATA[I Built a Real-Time AI Vision Assistant in 1 Week — Here's What I Learned About Multimodal AI]]></title>
+      <link>https://dev.to/jackbright/i-built-a-real-time-ai-vision-assistant-in-1-week-heres-what-i-learned-about-multimodal-ai-232i</link>
+      <description><![CDATA[The Real story has enough signal to track — file it for your next planning round (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 10:09:51 +0000</pubDate>
-      <author>Cyfuture AI</author>
+      <pubDate>Sun, 01 Mar 2026 14:02:01 +0000</pubDate>
+      <author>Vishwa Kumaresh</author>
     </item>
     <item>
-      <title><![CDATA[A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation]]></title>
-      <link>https://arxiv.org/abs/2602.09112</link>
-      <description><![CDATA[What research can be pursued with small models trained to complete true programs?]]></description>
-      <category>Research</category>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Russ Webb, Jason Ramapuram</author>
-    </item>
-    <item>
-      <title><![CDATA[awesome-ai-research-writing]]></title>
-      <link>https://github.com/Leey21/awesome-ai-research-writing</link>
-      <description><![CDATA[Elevate your AI research writing, no more tedious polishing ✨. (5,379 stars, 417 forks) Only 12 days old with ~448 stars/day.]]></description>
+      <title><![CDATA[Show HN: IssueScout – Find open source issues worth contributing to]]></title>
+      <link>https://github.com/turazashvili/issuescout.dev</link>
+      <description><![CDATA[Open distribution of IssueScout lowers adoption barriers and pressures proprietary alternatives (via Hacker News).]]></description>
       <category>Repos</category>
-      <pubDate>Wed, 11 Feb 2026 04:11:48 +0000</pubDate>
-      <author>Leey21</author>
-    </item>
-    <item>
-      <title><![CDATA[A timeline of claims about AI/LLMs]]></title>
-      <link>https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/</link>
-      <description><![CDATA[A timeline of claims about AI/LLMs. This update from Hacker News is worth tracking for near-term product impact.]]></description>
-      <category>Models</category>
-      <pubDate>Sun, 08 Feb 2026 13:02:08 +0000</pubDate>
+      <pubDate>Sat, 28 Feb 2026 15:40:07 +0000</pubDate>
       
     </item>
     <item>
-      <title><![CDATA[ChatGPT’s deep research tool adds a built-in document viewer so you can read its reports]]></title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer</link>
-      <description><![CDATA[OpenAI is updating ChatGPT's deep research tool with a full-screen viewer that you can use to scroll through and navigate to specific areas of its AI-generated reports. As shown in a video shared by OpenAI, the built-in viewer allows you to open ChatGPT's reports in a window separate from your chat, while showing a table.]]></description>
+      <title><![CDATA[Letting Machines Decide What Matters]]></title>
+      <link>https://spectrum.ieee.org/ai-new-physics</link>
+      <description><![CDATA[Not a fire drill, but Letting Machines Decide What Matters is the kind of thing that compounds if you ignore it (via IEEE Spectrum AI).]]></description>
       <category>Industry</category>
-      <pubDate>Tue, 10 Feb 2026 18:02:32 +0000</pubDate>
-      <author>Emma Roth</author>
+      <pubDate>Sun, 01 Mar 2026 11:00:03 +0000</pubDate>
+      <author>Eliza Strickland</author>
     </item>
     <item>
-      <title><![CDATA[The two patterns by which agents connect sandboxes]]></title>
-      <link>https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/</link>
-      <description><![CDATA[Thank you to Nuno Campos from Witan Labs, Tomas Beran and Mikayel Harutyunyan from E2B, Jonathan Wall from Runloop, and Ben Guo from Zo Computer for their review and comments. TL;DR: More and more agents need a workspace: a computer where they can run code, install packages, and access.]]></description>
-      <category>Tools</category>
-      <pubDate>Tue, 10 Feb 2026 16:32:35 +0000</pubDate>
-      <author>Harrison Chase</author>
+      <title><![CDATA[A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment]]></title>
+      <link>https://www.marktechpost.com/2026/03/01/a-complete-end-to-end-coding-guide-to-mlflow-experiment-tracking-hyperparameter-optimization-model-evaluation-and-live-model-deployment/</link>
+      <description><![CDATA[Concrete enough to follow along — the End Coding Guide tutorial goes beyond toy examples (via MarkTechPost).]]></description>
+      <category>Research</category>
+      <pubDate>Sun, 01 Mar 2026 09:16:26 +0000</pubDate>
+      <author>Michal Sutter</author>
     </item>
     <item>
-      <title><![CDATA[NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving]]></title>
-      <link>https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/</link>
-      <description><![CDATA[Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Wed, 11 Feb 2026 04:38:57 +0000</pubDate>
+      <title><![CDATA[OpenAI and Amazon announce strategic partnership]]></title>
+      <link>https://openai.com/index/amazon-partnership</link>
+      <description><![CDATA[The OpenAI announcement carries implications for budgets and vendor relationships (via OpenAI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Fri, 27 Feb 2026 05:30:00 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[The trap Anthropic built for itself]]></title>
+      <link>https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/</link>
+      <description><![CDATA[If Anthropic pans out, it could change how teams approach their current stack (via TechCrunch AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Sun, 01 Mar 2026 00:08:58 +0000</pubDate>
+      <author>Connie Loizos</author>
+    </item>
+    <item>
+      <title><![CDATA[The billion-dollar infrastructure deals powering the AI boom]]></title>
+      <link>https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/</link>
+      <description><![CDATA[Infrastructure changes around The billion-dollar infrastructure affect cost and reliability calculus for production teams (via TechCrunch AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Sat, 28 Feb 2026 20:41:55 +0000</pubDate>
+      <author>Russell Brandom</author>
+    </item>
+    <item>
+      <title><![CDATA[Our agreement with the Department of War]]></title>
+      <link>https://openai.com/index/our-agreement-with-the-department-of-war</link>
+      <description><![CDATA[Personnel shifts at Department can foreshadow product or API changes — factor into vendor review (via OpenAI Blog).]]></description>
+      <category>Industry</category>
+      <pubDate>Sat, 28 Feb 2026 12:30:00 +0000</pubDate>
+      
+    </item>
+    <item>
+      <title><![CDATA[Alibaba Team Open-Sources CoPaw: A High-Performance Personal Agent Workstation for Developers to Scale Multi-Channel AI Workflows and Memory]]></title>
+      <link>https://www.marktechpost.com/2026/03/01/alibaba-team-open-sources-copaw-a-high-performance-personal-agent-workstation-for-developers-to-scale-multi-channel-ai-workflows-and-memory/</link>
+      <description><![CDATA[Open access to Alibaba Team Open gives teams a new self-hosted option to evaluate (via MarkTechPost).]]></description>
+      <category>Research</category>
+      <pubDate>Sun, 01 Mar 2026 10:03:56 +0000</pubDate>
       <author>Asif Razzaq</author>
     </item>
     <item>
-      <title><![CDATA[antigravity-awesome-skills]]></title>
-      <link>https://github.com/sickn33/antigravity-awesome-skills</link>
-      <description><![CDATA[The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,382 stars, 1,716 forks, Python) Created 27 days ago, averaging ~310 stars/day.]]></description>
-      <category>Repos</category>
-      <pubDate>Wed, 11 Feb 2026 06:57:37 +0000</pubDate>
-      <author>sickn33</author>
+      <title><![CDATA[OpenClaw, but in containers: Meet NanoClaw]]></title>
+      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/01/nanoclaw_container_openclaw/</link>
+      <description><![CDATA[The OpenClaw story has enough signal to track — file it for your next planning round (via The Register).]]></description>
+      <category>Infra</category>
+      <pubDate>Sun, 01 Mar 2026 11:30:06 +0000</pubDate>
+      <author>Thomas Claburn</author>
     </item>
     <item>
-      <title><![CDATA[No humans allowed: This new space-based MMO is designed exclusively for AI agents]]></title>
-      <link>https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/</link>
-      <description><![CDATA[SpaceMolt envisions a world where AI plays with itself and the humans just watch.]]></description>
-      <category>Industry</category>
-      <pubDate>Mon, 09 Feb 2026 21:09:42 +0000</pubDate>
-      <author>Kyle Orland</author>
-    </item>
-    <item>
-      <title><![CDATA[PaperBanana]]></title>
-      <link>https://github.com/dwzhu-pku/PaperBanana</link>
-      <description><![CDATA[PaperBanana: Automating Academic Illustration For AI Scientists. (3,286 stars, 161 forks, JavaScript) Only 12 days old with ~274 stars/day.]]></description>
-      <category>Repos</category>
-      <pubDate>Mon, 02 Feb 2026 23:13:42 +0000</pubDate>
-      <author>dwzhu-pku</author>
+      <title><![CDATA[SaaS-pocalypse chatter is doomster pr0n. It would be nice if enterprise IT were boring again]]></title>
+      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/01/saaspocalypse_opinion/</link>
+      <description><![CDATA[If SaaS pans out, it could change how teams approach their current stack (via The Register).]]></description>
+      <category>Infra</category>
+      <pubDate>Sun, 01 Mar 2026 08:38:12 +0000</pubDate>
+      <author>Lindsay Clark</author>
     </item>
   </channel>
 </rss>
