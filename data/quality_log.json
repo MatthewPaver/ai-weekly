@@ -3,400 +3,6 @@
     "articles_collected": 69,
     "relaxed_history": false,
     "retry_count": 0,
-    "after_dedup": 25,
-    "after_filters": 10,
-    "after_accessibility": 10,
-    "after_selection": 10,
-    "articles_final": 5,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 25
-      },
-      {
-        "stage": "quality_gates",
-        "after": 10
-      },
-      {
-        "stage": "accessibility",
-        "after": 10
-      },
-      {
-        "stage": "selection",
-        "after": 10
-      },
-      {
-        "stage": "summary_quality",
-        "after": 5
-      }
-    ],
-    "sources_used": [
-      "Dev.to AI",
-      "LangChain Blog",
-      "MarkTechPost"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 2,
-    "lead_story": "How we built Agent Builder\u2019s memory system",
-    "total_articles": 5,
-    "smoke_test": false,
-    "status": "fail",
-    "timestamp": "2026-02-22T16:21:09.175370+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 53,
-    "after_filters": 36,
-    "after_accessibility": 36,
-    "after_selection": 18,
-    "articles_final": 14,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 53
-      },
-      {
-        "stage": "quality_gates",
-        "after": 36
-      },
-      {
-        "stage": "accessibility",
-        "after": 36
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 14
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Dev.to AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Gradient",
-      "The Verge AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 4,
-    "lead_story": "Agent Observability Powers Agent Evaluation",
-    "total_articles": 14,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-22T16:27:23.811284+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 43,
-    "after_filters": 25,
-    "after_accessibility": 25,
-    "after_selection": 18,
-    "articles_final": 11,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 43
-      },
-      {
-        "stage": "quality_gates",
-        "after": 25
-      },
-      {
-        "stage": "accessibility",
-        "after": 25
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 11
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Google DeepMind",
-      "Import AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "The Verge AI",
-      "Wired AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 2,
-    "lead_story": "Microsoft deletes blog telling users to train AI on pirated ",
-    "total_articles": 11,
-    "smoke_test": false,
-    "status": "fail",
-    "timestamp": "2026-02-22T16:29:31.512971+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 43,
-    "after_filters": 25,
-    "after_accessibility": 25,
-    "after_selection": 18,
-    "articles_final": 11,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 43
-      },
-      {
-        "stage": "quality_gates",
-        "after": 25
-      },
-      {
-        "stage": "accessibility",
-        "after": 25
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 11
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Google DeepMind",
-      "Import AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "The Verge AI",
-      "Wired AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 2,
-    "lead_story": "Microsoft deletes blog telling users to train AI on pirated ",
-    "total_articles": 11,
-    "smoke_test": false,
-    "status": "fail",
-    "timestamp": "2026-02-22T16:29:31.513719+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 53,
-    "after_filters": 36,
-    "after_accessibility": 36,
-    "after_selection": 18,
-    "articles_final": 14,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 53
-      },
-      {
-        "stage": "quality_gates",
-        "after": 36
-      },
-      {
-        "stage": "accessibility",
-        "after": 36
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 14
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Dev.to AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Gradient",
-      "The Verge AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 4,
-    "lead_story": "Agent Observability Powers Agent Evaluation",
-    "total_articles": 14,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-22T16:29:57.075818+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 43,
-    "after_filters": 25,
-    "after_accessibility": 25,
-    "after_selection": 18,
-    "articles_final": 11,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 43
-      },
-      {
-        "stage": "quality_gates",
-        "after": 25
-      },
-      {
-        "stage": "accessibility",
-        "after": 25
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 11
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Google DeepMind",
-      "Import AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "The Verge AI",
-      "Wired AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 2,
-    "lead_story": "Microsoft deletes blog telling users to train AI on pirated ",
-    "total_articles": 11,
-    "smoke_test": false,
-    "status": "fail",
-    "timestamp": "2026-02-22T16:30:18.422923+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
-    "after_dedup": 43,
-    "after_filters": 25,
-    "after_accessibility": 25,
-    "after_selection": 18,
-    "articles_final": 11,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 43
-      },
-      {
-        "stage": "quality_gates",
-        "after": 25
-      },
-      {
-        "stage": "accessibility",
-        "after": 25
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 11
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "Google DeepMind",
-      "Import AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "MarkTechPost",
-      "OpenAI Blog",
-      "The Verge AI",
-      "Wired AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 2,
-    "lead_story": "Microsoft deletes blog telling users to train AI on pirated ",
-    "total_articles": 11,
-    "smoke_test": false,
-    "status": "fail",
-    "timestamp": "2026-02-22T16:30:18.423681+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
     "after_dedup": 53,
     "after_filters": 36,
     "after_accessibility": 36,
@@ -1715,5 +1321,364 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-02-28T12:44:00.407620+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 35,
+    "after_filters": 24,
+    "after_accessibility": 24,
+    "after_selection": 18,
+    "articles_final": 16,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 35
+      },
+      {
+        "stage": "quality_gates",
+        "after": 24
+      },
+      {
+        "stage": "accessibility",
+        "after": 24
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 16
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dark Reading",
+      "Dev.to AI",
+      "Google AI Blog",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "sections": 3,
+    "lead_story": "Introducing the Stateful Runtime Environment for Agents in A",
+    "total_articles": 16,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T12:58:48.315736+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 24,
+    "after_filters": 14,
+    "after_accessibility": 14,
+    "after_selection": 14,
+    "articles_final": 10,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 24
+      },
+      {
+        "stage": "quality_gates",
+        "after": 14
+      },
+      {
+        "stage": "accessibility",
+        "after": 14
+      },
+      {
+        "stage": "selection",
+        "after": 14
+      },
+      {
+        "stage": "summary_quality",
+        "after": 10
+      }
+    ],
+    "sources_used": [
+      "Dark Reading",
+      "Google DeepMind",
+      "IEEE Spectrum AI",
+      "InfoQ",
+      "LangChain Blog",
+      "OpenAI Blog",
+      "The Register",
+      "The Verge AI"
+    ],
+    "sections": 4,
+    "lead_story": "Defense secretary Pete Hegseth designates Anthropic a supply",
+    "total_articles": 10,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T13:02:50.899030+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 18,
+    "after_filters": 8,
+    "after_accessibility": 8,
+    "after_selection": 8,
+    "articles_final": 6,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 18
+      },
+      {
+        "stage": "quality_gates",
+        "after": 8
+      },
+      {
+        "stage": "accessibility",
+        "after": 8
+      },
+      {
+        "stage": "selection",
+        "after": 8
+      },
+      {
+        "stage": "summary_quality",
+        "after": 6
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Import AI"
+    ],
+    "sections": 3,
+    "lead_story": "Import AI 446: Nuclear LLMs; China's big AI benchmark; measu",
+    "total_articles": 6,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T13:05:09.427527+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": true,
+    "retry_count": 0,
+    "after_dedup": 15,
+    "after_filters": 3,
+    "after_accessibility": 40,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 15
+      },
+      {
+        "stage": "quality_gates",
+        "after": 3
+      },
+      {
+        "stage": "accessibility",
+        "after": 40
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "Last Week in AI",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Gradient",
+      "The Verge AI"
+    ],
+    "sections": 4,
+    "lead_story": "Trump orders federal agencies to drop Anthropic\u2019s AI",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-02-28T14:06:08.053903+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 51,
+    "after_filters": 38,
+    "after_accessibility": 38,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 51
+      },
+      {
+        "stage": "quality_gates",
+        "after": 38
+      },
+      {
+        "stage": "accessibility",
+        "after": 38
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Register",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "sections": 5,
+    "lead_story": "Anthropic\u2019s Claude rises to No. 2 in the App Store following",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-03-01T13:24:26.199883+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 51,
+    "after_filters": 38,
+    "after_accessibility": 38,
+    "after_selection": 18,
+    "articles_final": 17,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 51
+      },
+      {
+        "stage": "quality_gates",
+        "after": 38
+      },
+      {
+        "stage": "accessibility",
+        "after": 38
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 17
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "GitHub Trending (AI/ML)",
+      "Google AI Blog",
+      "Google DeepMind",
+      "Hacker News (AI)",
+      "Hugging Face Blog",
+      "IEEE Spectrum AI",
+      "LangChain Blog",
+      "MIT Technology Review AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Register",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "sections": 5,
+    "lead_story": "Anthropic\u2019s Claude rises to No. 2 in the App Store following",
+    "total_articles": 17,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-03-01T13:26:20.299513+00:00"
+  },
+  {
+    "articles_collected": 69,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 26,
+    "after_filters": 13,
+    "after_accessibility": 13,
+    "after_selection": 13,
+    "articles_final": 12,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 26
+      },
+      {
+        "stage": "quality_gates",
+        "after": 13
+      },
+      {
+        "stage": "accessibility",
+        "after": 13
+      },
+      {
+        "stage": "selection",
+        "after": 13
+      },
+      {
+        "stage": "summary_quality",
+        "after": 12
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dev.to AI",
+      "Hacker News (AI)",
+      "IEEE Spectrum AI",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Register"
+    ],
+    "sections": 4,
+    "lead_story": "The trap Anthropic built for itself",
+    "total_articles": 12,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-03-01T14:06:05.206481+00:00"
   }
 ]

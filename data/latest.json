@@ -1,107 +1,144 @@
 {
   "date": "28 Feb 2026",
-  "issue_number": 6,
-  "total_articles": 8,
-  "source_count": 16,
-  "read_time_minutes": 3,
-  "intro": "Big news this week: Anthropic vs. the Pentagon: What\u2019s actually at stake, and what it means for your roadmap.",
+  "issue_number": 2,
+  "total_articles": 9,
+  "source_count": 8,
+  "read_time_minutes": 41,
+  "brief_read_time_minutes": 4,
+  "source_read_time_minutes": 41,
+  "intro": "Leading with The trap Anthropic built for itself, and the rest of the week's best AI signal.",
   "theme_line": "This week: vendor moves and leadership signals.",
   "pulse_board": [
     {
       "label": "Dominant theme",
-      "value": "Industry led coverage (12 stories)."
+      "value": "Industry led coverage (6 stories)."
     },
     {
       "label": "Builder pick",
-      "value": "[Agent Observability Powers Agent Evaluation](https://blog.langchain.com/agent-observability-powers-agent-evaluation/)"
+      "value": "[OpenAI and Amazon announce strategic partnership](https://openai.com/index/amazon-partnership)"
     },
     {
       "label": "Leader watch",
-      "value": "[Joint Statement from OpenAI and Microsoft](https://openai.com/index/continuing-microsoft-partnership)"
+      "value": "[Trump moves to ban Anthropic from the US government](https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/)"
     },
     {
       "label": "Research watch",
-      "value": "[After Orthogonality: Virtue-Ethical Agency and AI Alignment](https://thegradient.pub/virtue-ethics-ai-alignment/)"
+      "value": "[A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment](https://www.marktechpost.com/2026/03/01/a-complete-end-to-end-coding-guide-to-mlflow-experiment-tracking-hyperparameter-optimization-model-evaluation-and-live-model-deployment/)"
     }
   ],
   "issue_menu": [
     {
+      "icon": "\u2b50",
+      "title": "Open-source picks",
+      "count": 1,
+      "read_time_minutes": 3,
+      "label": "\u2b50 Open-source picks (1)",
+      "deck": "Open-source projects worth a closer look.",
+      "promise": "What's gaining traction.",
+      "num": "01"
+    },
+    {
       "icon": "\ud83d\udd2c",
       "title": "Research worth your time",
-      "count": 1,
-      "read_time_minutes": 1,
-      "label": "\ud83d\udd2c Research worth your time (1)",
+      "count": 2,
+      "read_time_minutes": 9,
+      "label": "\ud83d\udd2c Research worth your time (2)",
       "deck": "Research updates with practical product impact.",
       "promise": "Read this if you build.",
-      "num": "01"
+      "num": "02"
     },
     {
       "icon": "\u2601\ufe0f",
       "title": "Infra",
-      "count": 1,
-      "read_time_minutes": 1,
-      "label": "\u2601\ufe0f Infra (1)",
+      "count": 2,
+      "read_time_minutes": 10,
+      "label": "\u2601\ufe0f Infra (2)",
       "deck": "Cloud, scale, and infrastructure that matters to AI builders.",
       "promise": "Infra that scales.",
-      "num": "02"
+      "num": "03"
     },
     {
       "icon": "\ud83c\udf10",
       "title": "What changed in industry",
       "count": 2,
-      "read_time_minutes": 1,
+      "read_time_minutes": 10,
       "label": "\ud83c\udf10 What changed in industry (2)",
       "deck": "Company moves, launches, and policy shifts that could affect your roadmap.",
       "promise": "What changed and why it matters.",
-      "num": "03"
-    },
-    {
-      "icon": "\ud83d\udee0\ufe0f",
-      "title": "Tools to try",
-      "count": 2,
-      "read_time_minutes": 1,
-      "label": "\ud83d\udee0\ufe0f Tools to try (2)",
-      "deck": "Tools worth testing in a real workflow this week.",
-      "promise": "One practical thing to ship.",
       "num": "04"
     }
   ],
   "briefing": [
     {
-      "title": "Agent Economy Daily #12: MoonPay Gives AI Agents Their Own Wallets",
-      "url": "https://dev.to/noopy420/agent-economy-daily-12-moonpay-gives-ai-agents-their-own-wallets-1ep9",
-      "note": "If you've been putting off Agent Economy Daily, this walkthrough makes a solid starting point. Why it matters: Worth a side-by-side with what you're using now \u2014 Agent Economy Daily could change the tradeoffs.",
+      "title": "I Built a Real-Time AI Vision Assistant in 1 Week \u2014 Here's What I Learned About Multimodal AI",
+      "url": "https://dev.to/jackbright/i-built-a-real-time-ai-vision-assistant-in-1-week-heres-what-i-learned-about-multimodal-ai-232i",
+      "note": "If you've been putting off Real, this walkthrough makes a solid starting point. Why it matters: The Real guide fills a gap most docs don't cover well.",
       "track": "Builder"
     }
   ],
   "editors_note": {
     "headline": "This week",
-    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. Anthropic vs. the Pentagon: What\u2019s actually at stake is the one to keep on your planning radar.",
+    "thesis": "This week's signal is clear: business model decisions are moving faster than product roadmaps. The trap Anthropic built for itself is the one to keep on your planning radar.",
     "hook": "The headline drives the week, but the real question is what it means for your vendor assumptions and Q2 plans.",
     "spotlight": "The lead story is the most likely to change near-term decisions for teams shipping AI products.",
-    "underhyped": "Agent Observability Powers Agent Evaluation deserves more attention than it's getting.",
-    "risk": "Keep an eye on Joint Statement from OpenAI and Microsoft \u2014 it could shift budgets or vendor assumptions."
+    "underhyped": "A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment deserves more attention than it's getting.",
+    "risk": "Keep an eye on Trump moves to ban Anthropic from the US government \u2014 it could shift budgets or vendor assumptions."
   },
   "lead_story": {
-    "title": "Anthropic vs. the Pentagon: What\u2019s actually at stake?",
-    "url": "https://techcrunch.com/2026/02/27/anthropic-vs-the-pentagon-whats-actually-at-stake/",
+    "title": "The trap Anthropic built for itself",
+    "url": "https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/",
     "source": "TechCrunch AI",
     "track": "Leader",
     "audience_track": "Leader",
     "difficulty": "Beginner",
+    "source_mark": "TA",
     "what_happened": "Anthropic in the news; could affect pricing, roadmaps, or compliance this quarter \u2014 flag it.",
     "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input (TechCrunch AI).",
-    "what_to_do": "Bring Anthropic to your next planning sync \u2014 it may affect Q2 priorities."
+    "what_to_do": "Flag Anthropic for your leadership team \u2014 it may shift near-term priorities."
   },
   "quick_hits": [
     {
-      "title": "Agent Economy Daily #12: MoonPay Gives AI Agents Their Own Wallets",
-      "url": "https://dev.to/noopy420/agent-economy-daily-12-moonpay-gives-ai-agents-their-own-wallets-1ep9",
-      "note": "If you've been putting off Agent Economy Daily, this walkthrough makes a solid starting point. Why it matters: Worth a side-by-side with what you're using now \u2014 Agent Economy Daily could change the tradeoffs.",
+      "title": "I Built a Real-Time AI Vision Assistant in 1 Week \u2014 Here's What I Learned About Multimodal AI",
+      "url": "https://dev.to/jackbright/i-built-a-real-time-ai-vision-assistant-in-1-week-heres-what-i-learned-about-multimodal-ai-232i",
+      "note": "If you've been putting off Real, this walkthrough makes a solid starting point. Why it matters: The Real guide fills a gap most docs don't cover well.",
       "track": "Builder"
     }
   ],
   "sections": [
+    {
+      "title": "Open-source picks",
+      "icon": "\u2b50",
+      "deck": "Open-source projects worth a closer look.",
+      "color": "0F4C5C",
+      "badge": "Open-source picks",
+      "topics": [
+        "Repos"
+      ],
+      "tier": "builder",
+      "promise": "What's gaining traction.",
+      "read_time_minutes": 3,
+      "articles": [
+        {
+          "title": "Show HN: IssueScout \u2013 Find open source issues worth contributing to",
+          "url": "https://github.com/turazashvili/issuescout.dev",
+          "source": "Hacker News (AI)",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/hn.algolia.com.png",
+          "source_mark": "HN",
+          "authors": "",
+          "published": "28 Feb",
+          "thumbnail": "",
+          "summary": "Open distribution of IssueScout lowers adoption barriers and pressures proprietary alternatives (via Hacker News).",
+          "what_happened": "IssueScout going open-source lowers barriers for experimentation and custom deployment.",
+          "why_it_matters": "Open access to IssueScout lowers switching cost and pressures competing proprietary tools.",
+          "what_to_do": "Review IssueScout issue tracker, last commit date, and license before considering adoption.",
+          "our_take": "Star velocity tells you what's popular, not what's reliable. Check the issue backlog before the star count.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Repos",
+          "external_read_minutes": 3
+        }
+      ]
+    },
     {
       "title": "Research worth your time",
       "icon": "\ud83d\udd2c",
@@ -114,24 +151,45 @@
       ],
       "tier": "leader",
       "promise": "Read this if you build.",
-      "read_time_minutes": 1,
+      "read_time_minutes": 9,
       "articles": [
         {
-          "title": "After Orthogonality: Virtue-Ethical Agency and AI Alignment",
-          "url": "https://thegradient.pub/virtue-ethics-ai-alignment/",
-          "source": "The Gradient",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/thegradient.pub.png",
-          "authors": "Peli Grietzer",
-          "published": "18 Feb",
-          "thumbnail": "",
-          "summary": "Depending on your setup, Ethical Agency might save you time or headaches down the line (via The Gradient).",
-          "what_happened": "Results from Ethical Agency point to where methods may shift in the next cycle.",
-          "why_it_matters": "If Ethical Agency findings replicate, they could change how teams approach related problems.",
-          "what_to_do": "Spend 10 minutes on the Ethical Agency results \u2014 if nothing applies to your work, move on.",
+          "title": "A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment",
+          "url": "https://www.marktechpost.com/2026/03/01/a-complete-end-to-end-coding-guide-to-mlflow-experiment-tracking-hyperparameter-optimization-model-evaluation-and-live-model-deployment/",
+          "source": "MarkTechPost",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
+          "source_mark": "MA",
+          "authors": "Michal Sutter",
+          "published": "01 Mar",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/03/blog-banner23-1024x731.png",
+          "summary": "Concrete enough to follow along \u2014 the End Coding Guide tutorial goes beyond toy examples (via MarkTechPost).",
+          "what_happened": "New funding around End Coding Guide reflects investor confidence in this part of the stack.",
+          "why_it_matters": "If End Coding Guide findings replicate, they could change how teams approach related problems.",
+          "what_to_do": "Compare the End Coding Guide eval setup to yours \u2014 check if the benchmark conditions match your workload.",
           "our_take": "Use this for direction-setting, not for production bets. Keep it on the watch list.",
           "audience_track": "Researcher",
           "difficulty": "Beginner",
-          "topic": "Research"
+          "topic": "Research",
+          "external_read_minutes": 6
+        },
+        {
+          "title": "Alibaba Team Open-Sources CoPaw: A High-Performance Personal Agent Workstation for Developers to Scale Multi-Channel AI Workflows and Memory",
+          "url": "https://www.marktechpost.com/2026/03/01/alibaba-team-open-sources-copaw-a-high-performance-personal-agent-workstation-for-developers-to-scale-multi-channel-ai-workflows-and-memory/",
+          "source": "MarkTechPost",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
+          "source_mark": "MA",
+          "authors": "Asif Razzaq",
+          "published": "01 Mar",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/03/blog-banner23-1.png",
+          "summary": "Open access to Alibaba Team Open gives teams a new self-hosted option to evaluate (via MarkTechPost).",
+          "what_happened": "Alibaba Team Open released under an open license, giving teams full control over deployment.",
+          "why_it_matters": "The open release of Alibaba Team Open adds a viable alternative to proprietary options.",
+          "what_to_do": "Read the Alibaba Team Open abstract. If the problem matches yours, read the method. Otherwise, skip it.",
+          "our_take": "Don't re-architect on a single paper. Let the results mature, then re-evaluate.",
+          "audience_track": "Researcher",
+          "difficulty": "Beginner",
+          "topic": "Research",
+          "external_read_minutes": 3
         }
       ]
     },
@@ -146,24 +204,45 @@
       ],
       "tier": "builder",
       "promise": "Infra that scales.",
-      "read_time_minutes": 1,
+      "read_time_minutes": 10,
       "articles": [
         {
-          "title": "MySQL 9.6 Changes Foreign Key Constraints and Cascade Handling",
-          "url": "https://www.infoq.com/news/2026/02/mysql-foreign-keys/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "source": "InfoQ",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/infoq.com.png",
-          "authors": "Renato Losio",
-          "published": "28 Feb",
-          "thumbnail": "",
-          "summary": "Depending on your setup, MySQL might save you time or headaches down the line (via InfoQ).",
-          "what_happened": "Quick read on MySQL \u2014 worth a brief review against your current stack.",
-          "why_it_matters": "Keep an eye on MySQL \u2014 small moves here tend to become bigger ones.",
-          "what_to_do": "Review MySQL and decide on one concrete follow-up action by end of week.",
+          "title": "OpenClaw, but in containers: Meet NanoClaw",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/01/nanoclaw_container_openclaw/",
+          "source": "The Register",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theregister.com.png",
+          "source_mark": "TR",
+          "authors": "Thomas Claburn",
+          "published": "01 Mar",
+          "thumbnail": "https://regmedia.co.uk/2018/07/09/yellowcrab.jpg",
+          "summary": "The OpenClaw story has enough signal to track \u2014 file it for your next planning round (via The Register).",
+          "what_happened": "The OpenClaw story is worth a skim \u2014 small signals like this tend to add up.",
+          "why_it_matters": "No immediate action needed, but OpenClaw shifts the background assumptions a bit.",
+          "what_to_do": "Add OpenClaw to your weekly review and decide on a next step.",
+          "our_take": "Watch closely rather than act now \u2014 the picture will get clearer soon.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Infra",
+          "external_read_minutes": 7
+        },
+        {
+          "title": "SaaS-pocalypse chatter is doomster pr0n. It would be nice if enterprise IT were boring again",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/01/saaspocalypse_opinion/",
+          "source": "The Register",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theregister.com.png",
+          "source_mark": "TR",
+          "authors": "Lindsay Clark",
+          "published": "01 Mar",
+          "thumbnail": "https://regmedia.co.uk/2026/02/27/shutterstock_1225883914.jpg",
+          "summary": "If SaaS pans out, it could change how teams approach their current stack (via The Register).",
+          "what_happened": "Not urgent, but SaaS is the kind of thing that shows up again in a month.",
+          "why_it_matters": "SaaS sounds minor now, but it could change your shortlist by next quarter.",
+          "what_to_do": "Review SaaS and decide on one concrete follow-up action by end of week.",
           "our_take": "Don't let FOMO drive architecture. Validate on your own terms before changing course.",
           "audience_track": "Builder",
-          "difficulty": "Intermediate",
-          "topic": "Infra"
+          "difficulty": "Beginner",
+          "topic": "Infra",
+          "external_read_minutes": 3
         }
       ]
     },
@@ -179,90 +258,45 @@
       ],
       "tier": "leader",
       "promise": "What changed and why it matters.",
-      "read_time_minutes": 1,
+      "read_time_minutes": 10,
       "articles": [
         {
-          "title": "Joint Statement from OpenAI and Microsoft",
-          "url": "https://openai.com/index/continuing-microsoft-partnership",
+          "title": "Trump moves to ban Anthropic from the US government",
+          "url": "https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/",
+          "source": "Ars Technica AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/arstechnica.com.png",
+          "source_mark": "AT",
+          "authors": "Will Knight, WIRED.com",
+          "published": "28 Feb",
+          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg",
+          "summary": "Depending on your setup, Trump might save you time or headaches down the line (via Ars Technica AI).",
+          "what_happened": "Developments around Trump are worth a slot in your next ops or leadership review.",
+          "why_it_matters": "Talent movement around Trump often precedes product or strategy pivots.",
+          "what_to_do": "Add Trump as a discussion item in your next strategy or planning meeting.",
+          "our_take": "Treat this as input for your next sync, not an alarm. Second-order effects matter more than the news itself.",
+          "audience_track": "Leader",
+          "difficulty": "Beginner",
+          "topic": "Industry",
+          "external_read_minutes": 3
+        },
+        {
+          "title": "OpenAI and Amazon announce strategic partnership",
+          "url": "https://openai.com/index/amazon-partnership",
           "source": "OpenAI Blog",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png",
+          "source_mark": "OB",
           "authors": "",
           "published": "27 Feb",
           "thumbnail": "",
-          "summary": "The OpenAI story has enough signal to track \u2014 file it for your next planning round (via OpenAI Blog).",
-          "what_happened": "OpenAI could ripple into pricing or vendor talks \u2014 add it to your next planning sync.",
-          "why_it_matters": "Industry moves around OpenAI tend to show up in vendor and budget conversations; get ahead of it.",
-          "what_to_do": "Add OpenAI as a discussion item in your next strategy or planning meeting.",
-          "our_take": "The signal is real; the timing matters more than the headline. Use it as a planning input.",
-          "audience_track": "Leader",
-          "difficulty": "Beginner",
-          "topic": "Industry"
-        },
-        {
-          "title": "Musk bashes OpenAI in deposition, saying \u2018nobody committed suicide because of Grok\u2019",
-          "url": "https://techcrunch.com/2026/02/27/musk-bashes-openai-in-deposition-saying-nobody-committed-suicide-because-of-grok/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png",
-          "authors": "Sarah Perez",
-          "published": "27 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2183887189.jpg?resize=1200,800",
-          "summary": "If Musk pans out, it could change how teams approach their current stack (via TechCrunch AI).",
-          "what_happened": "Musk in the news; could affect pricing, roadmaps, or compliance this quarter \u2014 flag it.",
-          "why_it_matters": "Pricing or policy changes from Musk could affect your next renewal or roadmap; worth a slot in the sync.",
-          "what_to_do": "Flag Musk for your leadership team \u2014 it may shift near-term priorities.",
-          "our_take": "Treat Musk as input for your next sync, not an alarm \u2014 second-order effects matter more than the news.",
-          "audience_track": "Leader",
-          "difficulty": "Beginner",
-          "topic": "Industry"
-        }
-      ]
-    },
-    {
-      "title": "Tools to try",
-      "icon": "\ud83d\udee0\ufe0f",
-      "deck": "Tools worth testing in a real workflow this week.",
-      "color": "0F4C5C",
-      "badge": "Tools to try",
-      "topics": [
-        "Tools"
-      ],
-      "tier": "builder",
-      "promise": "One practical thing to ship.",
-      "read_time_minutes": 1,
-      "articles": [
-        {
-          "title": "Agent Observability Powers Agent Evaluation",
-          "url": "https://blog.langchain.com/agent-observability-powers-agent-evaluation/",
-          "source": "LangChain Blog",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/langchain.dev.png",
-          "authors": "LangChain Accounts",
-          "published": "22 Feb",
-          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/pic.png",
-          "summary": "You can't validate improvements without systematic evaluation.",
-          "what_happened": "You can't validate improvements without systematic evaluation.",
-          "why_it_matters": "Adopting Agent Observability could speed delivery if integration friction stays low.",
-          "what_to_do": "Spin up Agent Observability in a 2-hour proof of concept \u2014 compare output against your current tool.",
-          "our_take": "Ship a proof of concept before forming an opinion. The API surface matters more than the feature list.",
+          "summary": "The OpenAI announcement carries implications for budgets and vendor relationships (via OpenAI Blog).",
+          "what_happened": "OpenAI in the news; could affect pricing, roadmaps, or compliance this quarter \u2014 flag it.",
+          "why_it_matters": "The OpenAI move could shift the math for your next planning cycle; flag it in leadership review.",
+          "what_to_do": "Monitor OpenAI for follow-on product or pricing changes over the next month.",
+          "our_take": "The market is sending a signal. Teams that read it early get a head start.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
-          "topic": "Tools"
-        },
-        {
-          "title": "Mixture of Experts (MoEs) in Transformers",
-          "url": "https://huggingface.co/blog/moe-transformers",
-          "source": "Hugging Face Blog",
-          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/huggingface.co.png",
-          "authors": "",
-          "published": "26 Feb",
-          "thumbnail": "https://huggingface.co/blog/assets/moe-transformers/thumbnail.png",
-          "summary": "The Mixture story has enough signal to track \u2014 file it for your next planning round (via Hugging Face Blog).",
-          "what_happened": "If Mixture delivers on its claims, it could simplify a few steps in your current setup.",
-          "why_it_matters": "Mixture is worth evaluating if your current tools are hitting limits.",
-          "what_to_do": "Allocate one afternoon to test Mixture against your top use case.",
-          "our_take": "Tools are only as good as the problem they solve for you. Try it on a real task, not a tutorial.",
-          "audience_track": "Builder",
-          "difficulty": "Advanced",
-          "topic": "Tools"
+          "topic": "Industry",
+          "external_read_minutes": 7
         }
       ]
     }
@@ -345,19 +379,19 @@
   ],
   "category_selection_available": true,
   "learn_this_week": {
-    "title": "Google Machine Learning Crash Course",
-    "url": "https://developers.google.com/machine-learning/crash-course",
-    "provider": "Google AI",
+    "title": "ChatGPT Prompt Engineering for Developers",
+    "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/",
+    "provider": "DeepLearning.AI",
     "level": "Beginner",
     "free": true,
-    "duration": "15 hours",
-    "note": "Interactive exercises with TensorFlow. Google's internal ML training, now public."
+    "duration": "1.5 hours",
+    "note": "Co-created with OpenAI. Learn prompt patterns that work in production, not just demos. Free during platform beta."
   },
   "prompt_of_the_week": {
-    "text": "Rewrite this API documentation to be developer-friendly. Keep it accurate but make it scannable with clear examples.",
-    "context": "Documentation",
+    "text": "Summarize this research paper in 3 bullet points: what they did, what they found, and what I should try in my own work.",
+    "context": "Research",
     "tool": "Claude / ChatGPT",
-    "why": "Bad docs are the #1 reason developers abandon tools. Asking for 'scannable with clear examples' targets the two things devs actually need: quick answers and copy-pasteable code.",
-    "tip": "Paste the existing docs. Specify your audience (junior devs, senior engineers, etc.)."
+    "why": "The third bullet ('what I should try') is the key. It forces the model past summary into application \u2014 turning reading time into actionable next steps for your own projects.",
+    "tip": "Paste the abstract and conclusion sections for a quick summary."
   }
 }
