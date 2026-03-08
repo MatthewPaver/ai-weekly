@@ -10,7 +10,7 @@
     <item>
       <title><![CDATA[Trump moves to ban Anthropic from the US government]]></title>
       <link>https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/</link>
-      <description><![CDATA[Trump is getting traction for a reason. Skim the details before your next sprint (via Ars Technica AI).]]></description>
+      <description><![CDATA[The Trump administration is moving to ban Anthropic from US government contracts following the ongoing Pentagon dispute over Claude's military use.]]></description>
       <category>Industry</category>
       <pubDate>Sat, 28 Feb 2026 20:00:26 +0000</pubDate>
       <author>Will Knight, WIRED.com</author>
@@ -18,7 +18,7 @@
     <item>
       <title><![CDATA[[Boost]]]></title>
       <link>https://dev.to/omar_corredorpacheco_e0c/-3clh</link>
-      <description><![CDATA[Worth a quick read — Boost tackles a gap most teams are still working around (via Dev.to AI).]]></description>
+      <description><![CDATA[A Dev.to walkthrough covering Boost implementation patterns — practical guide for teams already using the library.]]></description>
       <category>Tutorials</category>
       <pubDate>Mon, 02 Mar 2026 12:21:29 +0000</pubDate>
       <author>Omar Corredor Pacheco</author>
@@ -42,7 +42,7 @@
     <item>
       <title><![CDATA[Letting Machines Decide What Matters]]></title>
       <link>https://spectrum.ieee.org/ai-new-physics</link>
-      <description><![CDATA[Concise coverage of Letting Machines Decide What Matters. Read it with your current stack in mind (via IEEE Spectrum AI).]]></description>
+      <description><![CDATA[Physicists are using ML to sift through Large Hadron Collider data for anomalies outside the Standard Model, potentially identifying undiscovered particles.]]></description>
       <category>Industry</category>
       <pubDate>Sun, 01 Mar 2026 11:00:03 +0000</pubDate>
       <author>Eliza Strickland</author>
@@ -66,7 +66,7 @@
     <item>
       <title><![CDATA[OpenAI reveals more details about its agreement with the Pentagon]]></title>
       <link>https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon/</link>
-      <description><![CDATA[OpenAI is getting traction for a reason. Skim the details before your next sprint (via TechCrunch AI).]]></description>
+      <description><![CDATA[OpenAI disclosed further details about its Pentagon deal, with CEO Altman acknowledging the agreement was rushed and the optics aren't great.]]></description>
       <category>Industry</category>
       <pubDate>Sun, 01 Mar 2026 16:30:10 +0000</pubDate>
       <author>Anthony Ha</author>
@@ -74,7 +74,7 @@
     <item>
       <title><![CDATA[A robot arm with puppy dog eyes is just one of Lenovo’s new desktop AI concepts]]></title>
       <link>https://www.theverge.com/tech/885228/lenovo-ai-workmate-companion-work-concept-robot-arm-desktop-clock-hub</link>
-      <description><![CDATA[Concise coverage of Lenovo. Read it with your current stack in mind (via The Verge AI).]]></description>
+      <description><![CDATA[Lenovo showed desktop AI concepts at MWC including a robot arm companion and an AI-powered desktop clock hub.]]></description>
       <category>Industry</category>
       <pubDate>Sun, 01 Mar 2026 18:01:00 +0000</pubDate>
       <author>Andrew Liszewski</author>
@@ -82,7 +82,7 @@
     <item>
       <title><![CDATA[The Data Centers Have Arrived at the Edge of the Arctic Circle]]></title>
       <link>https://www.wired.com/story/ai-supremacy-data-center-expansion-arctic-circle/</link>
-      <description><![CDATA[Worth a quick read — Data Centres Have Arrived tackles a gap most teams are still working around (via Wired AI).]]></description>
+      <description><![CDATA[AI compute demand is pushing data centre expansion to the Arctic Circle, where cold climates cut cooling costs but infrastructure challenges remain.]]></description>
       <category>Industry</category>
       <pubDate>Mon, 02 Mar 2026 10:00:00 +0000</pubDate>
       <author>Joel Khalili</author>
@@ -90,7 +90,7 @@
     <item>
       <title><![CDATA[FireRedTeam Releases FireRed-OCR-2B Utilizing GRPO to Solve Structural Hallucinations in Tables and LaTeX for Software Developers]]></title>
       <link>https://www.marktechpost.com/2026/03/01/fireredteam-releases-firered-ocr-2b-utilizing-grpo-to-solve-structural-hallucinations-in-tables-and-latex-for-software-developers/</link>
-      <description><![CDATA[Concise coverage of FireRed-OCR-2B Utilizing GRPO. Read it with your current stack in mind (via MarkTechPost).]]></description>
+      <description><![CDATA[FireRed-OCR-2B is a 2B-parameter OCR model trained with GRPO to fix structural hallucinations in table and LaTeX recognition.]]></description>
       <category>Industry</category>
       <pubDate>Mon, 02 Mar 2026 06:38:48 +0000</pubDate>
       <author>Asif Razzaq</author>
@@ -98,7 +98,7 @@
     <item>
       <title><![CDATA[Firefox 149 beta develops a split personality]]></title>
       <link>https://www.theregister.com/2026/03/02/firefox_149_beta/</link>
-      <description><![CDATA[Firefox is getting traction for a reason. Skim the details before your next sprint (via The Register).]]></description>
+      <description><![CDATA[Firefox 149 beta promotes split-view mode (two pages side-by-side) to default-on, adds hardware-accelerated PDF rendering and address autofill.]]></description>
       <category>Infra</category>
       <pubDate>Mon, 02 Mar 2026 11:45:08 +0000</pubDate>
       <author>Liam Proven</author>
@@ -114,7 +114,7 @@
     <item>
       <title><![CDATA[Microsoft's Project Silica promises eternal storage. It can't get there from here]]></title>
       <link>https://www.theregister.com/2026/03/02/microsoft_project_silica_opinion/</link>
-      <description><![CDATA[Microsoft's Project Silica is getting traction for a reason. Skim the details before your next sprint (via The Register).]]></description>
+      <description><![CDATA[Project Silica uses femtosecond lasers to write 2 TB across hundreds of layers in glass plates readable for 10,000 years, but 20 Mbps write speeds make commercialisation unlikely.]]></description>
       <category>Infra</category>
       <pubDate>Mon, 02 Mar 2026 10:13:06 +0000</pubDate>
       <author>Rupert Goodwins</author>
@@ -122,7 +122,7 @@
     <item>
       <title><![CDATA[Flaw-Finding AI Assistants Face Criticism for Speed, Accuracy]]></title>
       <link>https://www.darkreading.com/application-security/flaw-finding-ai-assistants-face-criticism-speed-accuracy</link>
-      <description><![CDATA[Flaw is getting traction for a reason. Skim the details before your next sprint (via Dark Reading).]]></description>
+      <description><![CDATA[AI-powered vulnerability scanners are drawing criticism for high false-positive rates and slow scan times compared to traditional SAST/DAST tools.]]></description>
       <category>Security</category>
       <pubDate>Fri, 27 Feb 2026 20:16:24 +0000</pubDate>
       <author>Robert Lemos</author>
