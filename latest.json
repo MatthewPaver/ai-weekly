@@ -15,7 +15,7 @@
     },
     {
       "label": "Builder pick",
-      "value": "[Microsoft's Project Silica promises eternal storage. It can't get there from here](https://go.theregister.com/feed/www.theregister.com/2026/03/02/microsoft_project_silica_opinion/)"
+      "value": "[Microsoft's Project Silica promises eternal storage. It can't get there from here](https://www.theregister.com/2026/03/02/microsoft_project_silica_opinion/)"
     },
     {
       "label": "Leader watch",
@@ -125,11 +125,11 @@
           "authors": "agentscope-ai",
           "published": "02 Mar",
           "thumbnail": "",
-          "summary": "Concise coverage of CoPaw. Read it with your current stack in mind (via GitHub Trending (AI/ML)).",
-          "what_happened": "CoPaw is gaining stars \u2014 check the repo health before adopting.",
-          "why_it_matters": "CoPaw traction suggests builder demand, but longevity depends on maintainer commitment.",
-          "what_to_do": "Star CoPaw for later, but check maintainer activity and issue backlog before depending on it.",
-          "our_take": "A trending repo is a signal, not a recommendation. Do your diligence before depending on it.",
+          "summary": "CoPaw is a self-hosted AI assistant that runs locally or in the cloud, with integrations for DingTalk, Feishu, QQ, and Discord.",
+          "what_happened": "CoPaw ships a self-hosted AI assistant with multi-platform chat integrations (Discord, DingTalk, Feishu) and local or cloud deployment.",
+          "why_it_matters": "Self-hosted means your data stays on your infra \u2014 useful if you need an internal assistant without third-party API dependencies.",
+          "what_to_do": "Check CoPaw\u2019s issue backlog and last commit date before depending on it for production use.",
+          "our_take": "The multi-platform angle is smart, but we\u2019d want to see sustained maintainer activity before betting on it.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
           "topic": "Repos",
@@ -144,11 +144,11 @@
           "authors": "",
           "published": "28 Feb",
           "thumbnail": "",
-          "summary": "Open distribution of IssueScout lowers adoption barriers and pressures proprietary alternatives (via Hacker News).",
-          "what_happened": "IssueScout going open-source lowers barriers for experimentation and custom deployment.",
-          "why_it_matters": "Open access to IssueScout lowers switching cost and pressures competing proprietary tools.",
-          "what_to_do": "Review IssueScout issue tracker, last commit date, and license before considering adoption.",
-          "our_take": "Star velocity tells you what's popular, not what's reliable. Check the issue backlog before the star count.",
+          "summary": "IssueScout surfaces \u2018good first issue\u2019 labels across repos, enriched with community health scores and AI difficulty estimates for new contributors.",
+          "what_happened": "IssueScout launched as an open-source discovery platform that matches new contributors to welcoming repos using health scores and AI difficulty ratings.",
+          "why_it_matters": "New contributors waste hours on abandoned repos with mislabelled issues \u2014 IssueScout filters for active, well-maintained projects.",
+          "what_to_do": "Try IssueScout this week if you maintain an OSS project and want to attract first-time contributors.",
+          "our_take": "The AI difficulty estimate is the differentiator here \u2014 most \u2018good first issue\u2019 labels are unreliable without it.",
           "audience_track": "Builder",
           "difficulty": "Beginner",
           "topic": "Repos",
@@ -171,7 +171,7 @@
       "articles": [
         {
           "title": "Microsoft's Project Silica promises eternal storage. It can't get there from here",
-          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/02/microsoft_project_silica_opinion/",
+          "url": "https://www.theregister.com/2026/03/02/microsoft_project_silica_opinion/",
           "source": "The Register",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theregister.com.png",
           "source_mark": "TR",
@@ -190,7 +190,7 @@
         },
         {
           "title": "Firefox 149 beta develops a split personality",
-          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/02/firefox_149_beta/",
+          "url": "https://www.theregister.com/2026/03/02/firefox_149_beta/",
           "source": "The Register",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theregister.com.png",
           "source_mark": "TR",
@@ -209,7 +209,7 @@
         },
         {
           "title": "Iran all but vanishes from the global internet amid US-Israel strikes",
-          "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/02/iran_internet_blackout/",
+          "url": "https://www.theregister.com/2026/03/02/iran_internet_blackout/",
           "source": "The Register",
           "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/theregister.com.png",
           "source_mark": "TR",

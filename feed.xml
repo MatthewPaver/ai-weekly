@@ -26,7 +26,7 @@
     <item>
       <title><![CDATA[CoPaw]]></title>
       <link>https://github.com/agentscope-ai/CoPaw</link>
-      <description><![CDATA[Concise coverage of CoPaw. Read it with your current stack in mind (via GitHub Trending (AI/ML)).]]></description>
+      <description><![CDATA[CoPaw is a self-hosted AI assistant with multi-platform chat integrations and local or cloud deployment.]]></description>
       <category>Repos</category>
       <pubDate>Mon, 02 Mar 2026 12:11:37 +0000</pubDate>
       <author>agentscope-ai</author>
@@ -34,10 +34,10 @@
     <item>
       <title><![CDATA[Show HN: IssueScout – Find open source issues worth contributing to]]></title>
       <link>https://github.com/turazashvili/issuescout.dev</link>
-      <description><![CDATA[Open distribution of IssueScout lowers adoption barriers and pressures proprietary alternatives (via Hacker News).]]></description>
+      <description><![CDATA[IssueScout surfaces good-first-issue labels across repos, enriched with community health scores and AI difficulty estimates for new contributors.]]></description>
       <category>Repos</category>
       <pubDate>Sat, 28 Feb 2026 15:40:07 +0000</pubDate>
-      
+      <author>Hacker News (AI)</author>
     </item>
     <item>
       <title><![CDATA[Letting Machines Decide What Matters]]></title>
@@ -61,7 +61,7 @@
       <description><![CDATA[The OpenAI announcement carries implications for budgets and vendor relationships (via OpenAI Blog).]]></description>
       <category>Industry</category>
       <pubDate>Fri, 27 Feb 2026 05:30:00 +0000</pubDate>
-      
+      <author>OpenAI Blog</author>
     </item>
     <item>
       <title><![CDATA[OpenAI reveals more details about its agreement with the Pentagon]]></title>
@@ -97,7 +97,7 @@
     </item>
     <item>
       <title><![CDATA[Firefox 149 beta develops a split personality]]></title>
-      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/02/firefox_149_beta/</link>
+      <link>https://www.theregister.com/2026/03/02/firefox_149_beta/</link>
       <description><![CDATA[Firefox is getting traction for a reason. Skim the details before your next sprint (via The Register).]]></description>
       <category>Infra</category>
       <pubDate>Mon, 02 Mar 2026 11:45:08 +0000</pubDate>
@@ -105,7 +105,7 @@
     </item>
     <item>
       <title><![CDATA[Iran all but vanishes from the global internet amid US-Israel strikes]]></title>
-      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/02/iran_internet_blackout/</link>
+      <link>https://www.theregister.com/2026/03/02/iran_internet_blackout/</link>
       <description><![CDATA[Quick update on Iran — relevant if you're evaluating tools in this space (via The Register).]]></description>
       <category>Infra</category>
       <pubDate>Mon, 02 Mar 2026 10:58:15 +0000</pubDate>
@@ -113,7 +113,7 @@
     </item>
     <item>
       <title><![CDATA[Microsoft's Project Silica promises eternal storage. It can't get there from here]]></title>
-      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/02/microsoft_project_silica_opinion/</link>
+      <link>https://www.theregister.com/2026/03/02/microsoft_project_silica_opinion/</link>
       <description><![CDATA[Microsoft's Project Silica is getting traction for a reason. Skim the details before your next sprint (via The Register).]]></description>
       <category>Infra</category>
       <pubDate>Mon, 02 Mar 2026 10:13:06 +0000</pubDate>
@@ -130,7 +130,7 @@
     <item>
       <title><![CDATA[Podcast: [Video Podcast] Frictionless DevEx with Nicole Forsgren]]></title>
       <link>https://www.infoq.com/podcasts/frictionless-devex/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
-      <description><![CDATA[In this episode, Thomas Betts talks with Dr.]]></description>
+      <description><![CDATA[In this episode, Thomas Betts talks with Dr. Nicole Forsgren about frictionless developer experience, measuring DevEx, and how teams can reduce toil in their workflows.]]></description>
       <category>Infra</category>
       <pubDate>Mon, 02 Mar 2026 11:00:00 +0000</pubDate>
       <author>Nicole Forsgren</author>
