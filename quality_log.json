@@ -3,65 +3,6 @@
     "articles_collected": 69,
     "relaxed_history": false,
     "retry_count": 0,
-    "after_dedup": 52,
-    "after_filters": 35,
-    "after_accessibility": 35,
-    "after_selection": 18,
-    "articles_final": 13,
-    "filter_stages": [
-      {
-        "stage": "dedup",
-        "after": 52
-      },
-      {
-        "stage": "quality_gates",
-        "after": 35
-      },
-      {
-        "stage": "accessibility",
-        "after": 35
-      },
-      {
-        "stage": "selection",
-        "after": 18
-      },
-      {
-        "stage": "summary_quality",
-        "after": 13
-      }
-    ],
-    "sources_used": [
-      "Ars Technica AI",
-      "GitHub Trending (AI/ML)",
-      "Google AI Blog",
-      "Google DeepMind",
-      "Hugging Face Blog",
-      "IEEE Spectrum AI",
-      "LangChain Blog",
-      "MIT Technology Review AI",
-      "OpenAI Blog",
-      "TechCrunch AI",
-      "The Gradient",
-      "The Verge AI"
-    ],
-    "source_errors": {
-      "Anthropic Blog": "empty feed",
-      "The Batch": "empty feed",
-      "Towards Data Science": "empty feed",
-      "arXiv CS.AI": "empty feed",
-      "Papers With Code": "empty feed"
-    },
-    "sections": 4,
-    "lead_story": "Agent Observability Powers Agent Evaluation",
-    "total_articles": 13,
-    "smoke_test": true,
-    "status": "pass",
-    "timestamp": "2026-02-22T16:36:18.150094+00:00"
-  },
-  {
-    "articles_collected": 69,
-    "relaxed_history": false,
-    "retry_count": 0,
     "after_dedup": 43,
     "after_filters": 25,
     "after_accessibility": 25,
@@ -1651,5 +1592,61 @@
     "smoke_test": true,
     "status": "pass",
     "timestamp": "2026-03-01T19:45:04.934921+00:00"
+  },
+  {
+    "articles_collected": 66,
+    "relaxed_history": false,
+    "retry_count": 0,
+    "after_dedup": 31,
+    "after_filters": 19,
+    "after_accessibility": 19,
+    "after_selection": 18,
+    "articles_final": 16,
+    "filter_stages": [
+      {
+        "stage": "dedup",
+        "after": 31
+      },
+      {
+        "stage": "quality_gates",
+        "after": 19
+      },
+      {
+        "stage": "accessibility",
+        "after": 19
+      },
+      {
+        "stage": "selection",
+        "after": 18
+      },
+      {
+        "stage": "summary_quality",
+        "after": 16
+      }
+    ],
+    "sources_used": [
+      "Ars Technica AI",
+      "Dark Reading",
+      "Dev.to AI",
+      "GitHub Trending (AI/ML)",
+      "Hacker News (AI)",
+      "IEEE Spectrum AI",
+      "InfoQ",
+      "MarkTechPost",
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "The Register",
+      "The Verge AI",
+      "Wired AI"
+    ],
+    "source_errors": {
+      "Import AI": "empty feed"
+    },
+    "sections": 3,
+    "lead_story": "OpenAI reveals more details about its agreement with the Pen",
+    "total_articles": 16,
+    "smoke_test": true,
+    "status": "pass",
+    "timestamp": "2026-03-02T12:29:02.523441+00:00"
   }
 ]

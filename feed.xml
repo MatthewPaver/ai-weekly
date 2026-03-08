@@ -5,7 +5,7 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Mar 2026 19:45:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 12:29:02 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Trump moves to ban Anthropic from the US government]]></title>
@@ -16,12 +16,20 @@
       <author>Will Knight, WIRED.com</author>
     </item>
     <item>
-      <title><![CDATA[Interactive Demo: https://coasty.ai/share/a58ee8f6-3821-4795-b4e7-4d77679a6221]]></title>
-      <link>https://dev.to/nitish_kovuru_76280d3ed4b/interactive-demo-httpscoastyaisharea58ee8f6-3821-4795-b4e7-4d77679a6221-356m</link>
-      <description><![CDATA[Worth a quick read — Interactive Demo tackles a gap most teams are still working around (via Dev.to AI).]]></description>
+      <title><![CDATA[[Boost]]]></title>
+      <link>https://dev.to/omar_corredorpacheco_e0c/-3clh</link>
+      <description><![CDATA[Worth a quick read — Boost tackles a gap most teams are still working around (via Dev.to AI).]]></description>
       <category>Tutorials</category>
-      <pubDate>Sun, 01 Mar 2026 19:37:12 +0000</pubDate>
-      <author>Nitish Kovuru</author>
+      <pubDate>Mon, 02 Mar 2026 12:21:29 +0000</pubDate>
+      <author>Omar Corredor Pacheco</author>
+    </item>
+    <item>
+      <title><![CDATA[CoPaw]]></title>
+      <link>https://github.com/agentscope-ai/CoPaw</link>
+      <description><![CDATA[Concise coverage of CoPaw. Read it with your current stack in mind (via GitHub Trending (AI/ML)).]]></description>
+      <category>Repos</category>
+      <pubDate>Mon, 02 Mar 2026 12:11:37 +0000</pubDate>
+      <author>agentscope-ai</author>
     </item>
     <item>
       <title><![CDATA[Show HN: IssueScout – Find open source issues worth contributing to]]></title>
@@ -40,12 +48,12 @@
       <author>Eliza Strickland</author>
     </item>
     <item>
-      <title><![CDATA[A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment]]></title>
-      <link>https://www.marktechpost.com/2026/03/01/a-complete-end-to-end-coding-guide-to-mlflow-experiment-tracking-hyperparameter-optimization-model-evaluation-and-live-model-deployment/</link>
-      <description><![CDATA[Concrete enough to follow along — the End Coding Guide tutorial goes beyond toy examples (via MarkTechPost).]]></description>
-      <category>Research</category>
-      <pubDate>Sun, 01 Mar 2026 09:16:26 +0000</pubDate>
-      <author>Michal Sutter</author>
+      <title><![CDATA[Google AI Introduces STATIC: A Sparse Matrix Framework Delivering 948x Faster Constrained Decoding for LLM Based Generative Retrieval]]></title>
+      <link>https://www.marktechpost.com/2026/03/01/google-ai-introduces-static-a-sparse-matrix-framework-delivering-948x-faster-constrained-decoding-for-llm-based-generative-retrieval/</link>
+      <description><![CDATA[STATIC going open lowers the bar for experimentation and custom deployments (via MarkTechPost).]]></description>
+      <category>Industry</category>
+      <pubDate>Sun, 01 Mar 2026 21:47:04 +0000</pubDate>
+      <author>Asif Razzaq</author>
     </item>
     <item>
       <title><![CDATA[OpenAI and Amazon announce strategic partnership]]></title>
@@ -64,36 +72,68 @@
       <author>Anthony Ha</author>
     </item>
     <item>
-      <title><![CDATA[How to Design a Production-Grade Multi-Agent Communication System Using LangGraph Structured Message Bus, ACP Logging, and Persistent Shared State Architecture]]></title>
-      <link>https://www.marktechpost.com/2026/03/01/how-to-design-a-production-grade-multi-agent-communication-system-using-langgraph-structured-message-bus-acp-logging-and-persistent-shared-state-architecture/</link>
-      <description><![CDATA[New findings around ACP may shape tooling choices once validated by independent teams (via MarkTechPost).]]></description>
-      <category>Tutorials</category>
-      <pubDate>Sun, 01 Mar 2026 19:20:17 +0000</pubDate>
+      <title><![CDATA[A robot arm with puppy dog eyes is just one of Lenovo’s new desktop AI concepts]]></title>
+      <link>https://www.theverge.com/tech/885228/lenovo-ai-workmate-companion-work-concept-robot-arm-desktop-clock-hub</link>
+      <description><![CDATA[Concise coverage of Lenovo. Read it with your current stack in mind (via The Verge AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Sun, 01 Mar 2026 18:01:00 +0000</pubDate>
+      <author>Andrew Liszewski</author>
+    </item>
+    <item>
+      <title><![CDATA[The Data Centers Have Arrived at the Edge of the Arctic Circle]]></title>
+      <link>https://www.wired.com/story/ai-supremacy-data-center-expansion-arctic-circle/</link>
+      <description><![CDATA[Worth a quick read — Data Centres Have Arrived tackles a gap most teams are still working around (via Wired AI).]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 02 Mar 2026 10:00:00 +0000</pubDate>
+      <author>Joel Khalili</author>
+    </item>
+    <item>
+      <title><![CDATA[FireRedTeam Releases FireRed-OCR-2B Utilizing GRPO to Solve Structural Hallucinations in Tables and LaTeX for Software Developers]]></title>
+      <link>https://www.marktechpost.com/2026/03/01/fireredteam-releases-firered-ocr-2b-utilizing-grpo-to-solve-structural-hallucinations-in-tables-and-latex-for-software-developers/</link>
+      <description><![CDATA[Concise coverage of FireRed-OCR-2B Utilizing GRPO. Read it with your current stack in mind (via MarkTechPost).]]></description>
+      <category>Industry</category>
+      <pubDate>Mon, 02 Mar 2026 06:38:48 +0000</pubDate>
       <author>Asif Razzaq</author>
     </item>
     <item>
-      <title><![CDATA[Alibaba Team Open-Sources CoPaw: A High-Performance Personal Agent Workstation for Developers to Scale Multi-Channel AI Workflows and Memory]]></title>
-      <link>https://www.marktechpost.com/2026/03/01/alibaba-team-open-sources-copaw-a-high-performance-personal-agent-workstation-for-developers-to-scale-multi-channel-ai-workflows-and-memory/</link>
-      <description><![CDATA[Open access to Alibaba Team Open gives teams a new self-hosted option to evaluate (via MarkTechPost).]]></description>
-      <category>Research</category>
-      <pubDate>Sun, 01 Mar 2026 10:03:56 +0000</pubDate>
-      <author>Asif Razzaq</author>
+      <title><![CDATA[Firefox 149 beta develops a split personality]]></title>
+      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/02/firefox_149_beta/</link>
+      <description><![CDATA[Firefox is getting traction for a reason. Skim the details before your next sprint (via The Register).]]></description>
+      <category>Infra</category>
+      <pubDate>Mon, 02 Mar 2026 11:45:08 +0000</pubDate>
+      <author>Liam Proven</author>
     </item>
     <item>
-      <title><![CDATA[OpenClaw, but in containers: Meet NanoClaw]]></title>
-      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/01/nanoclaw_container_openclaw/</link>
-      <description><![CDATA[Concise coverage of OpenClaw. Read it with your current stack in mind (via The Register).]]></description>
+      <title><![CDATA[Iran all but vanishes from the global internet amid US-Israel strikes]]></title>
+      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/02/iran_internet_blackout/</link>
+      <description><![CDATA[Quick update on Iran — relevant if you're evaluating tools in this space (via The Register).]]></description>
       <category>Infra</category>
-      <pubDate>Sun, 01 Mar 2026 11:30:06 +0000</pubDate>
-      <author>Thomas Claburn</author>
+      <pubDate>Mon, 02 Mar 2026 10:58:15 +0000</pubDate>
+      <author>Carly Page</author>
     </item>
     <item>
-      <title><![CDATA[SaaS-pocalypse chatter is doomster pr0n. It would be nice if enterprise IT were boring again]]></title>
-      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/01/saaspocalypse_opinion/</link>
-      <description><![CDATA[Worth a quick read — SaaS tackles a gap most teams are still working around (via The Register).]]></description>
+      <title><![CDATA[Microsoft's Project Silica promises eternal storage. It can't get there from here]]></title>
+      <link>https://go.theregister.com/feed/www.theregister.com/2026/03/02/microsoft_project_silica_opinion/</link>
+      <description><![CDATA[Microsoft's Project Silica is getting traction for a reason. Skim the details before your next sprint (via The Register).]]></description>
       <category>Infra</category>
-      <pubDate>Sun, 01 Mar 2026 08:38:12 +0000</pubDate>
-      <author>Lindsay Clark</author>
+      <pubDate>Mon, 02 Mar 2026 10:13:06 +0000</pubDate>
+      <author>Rupert Goodwins</author>
+    </item>
+    <item>
+      <title><![CDATA[Flaw-Finding AI Assistants Face Criticism for Speed, Accuracy]]></title>
+      <link>https://www.darkreading.com/application-security/flaw-finding-ai-assistants-face-criticism-speed-accuracy</link>
+      <description><![CDATA[Flaw is getting traction for a reason. Skim the details before your next sprint (via Dark Reading).]]></description>
+      <category>Security</category>
+      <pubDate>Fri, 27 Feb 2026 20:16:24 +0000</pubDate>
+      <author>Robert Lemos</author>
+    </item>
+    <item>
+      <title><![CDATA[Podcast: [Video Podcast] Frictionless DevEx with Nicole Forsgren]]></title>
+      <link>https://www.infoq.com/podcasts/frictionless-devex/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
+      <description><![CDATA[In this episode, Thomas Betts talks with Dr.]]></description>
+      <category>Infra</category>
+      <pubDate>Mon, 02 Mar 2026 11:00:00 +0000</pubDate>
+      <author>Nicole Forsgren</author>
     </item>
   </channel>
 </rss>
