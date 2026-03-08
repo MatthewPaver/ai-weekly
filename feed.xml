@@ -5,135 +5,135 @@
     <link>https://matthewpaver.github.io/ai-weekly/</link>
     <description>The signal in the noise. Curated AI trends, tools, and research — updated every Monday.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Mar 2026 12:29:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 20:43:36 +0000</lastBuildDate>
     <atom:link href="https://matthewpaver.github.io/ai-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title><![CDATA[Trump moves to ban Anthropic from the US government]]></title>
-      <link>https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/</link>
-      <description><![CDATA[The Trump administration is moving to ban Anthropic from US government contracts following the ongoing Pentagon dispute over Claude's military use.]]></description>
+      <title><![CDATA[Will the Pentagon’s Anthropic controversy scare startups away from defense work?]]></title>
+      <link>https://techcrunch.com/2026/03/08/will-the-pentagons-anthropic-controversy-scare-startups-away-from-defense-work/</link>
+      <description><![CDATA[A TechCrunch podcast discussed whether the Pentagon's issues with Anthropic will deter startups from defense contracts. The podcast speculates that increased scrutiny and potential political fallout may make defense work less attractive despite the lucrative opportunities.]]></description>
       <category>Industry</category>
-      <pubDate>Sat, 28 Feb 2026 20:00:26 +0000</pubDate>
-      <author>Will Knight, WIRED.com</author>
-    </item>
-    <item>
-      <title><![CDATA[[Boost]]]></title>
-      <link>https://dev.to/omar_corredorpacheco_e0c/-3clh</link>
-      <description><![CDATA[A Dev.to walkthrough covering Boost implementation patterns — practical guide for teams already using the library.]]></description>
-      <category>Tutorials</category>
-      <pubDate>Mon, 02 Mar 2026 12:21:29 +0000</pubDate>
-      <author>Omar Corredor Pacheco</author>
-    </item>
-    <item>
-      <title><![CDATA[CoPaw]]></title>
-      <link>https://github.com/agentscope-ai/CoPaw</link>
-      <description><![CDATA[CoPaw is a self-hosted AI assistant with multi-platform chat integrations and local or cloud deployment.]]></description>
-      <category>Repos</category>
-      <pubDate>Mon, 02 Mar 2026 12:11:37 +0000</pubDate>
-      <author>agentscope-ai</author>
-    </item>
-    <item>
-      <title><![CDATA[Show HN: IssueScout – Find open source issues worth contributing to]]></title>
-      <link>https://github.com/turazashvili/issuescout.dev</link>
-      <description><![CDATA[IssueScout surfaces good-first-issue labels across repos, enriched with community health scores and AI difficulty estimates for new contributors.]]></description>
-      <category>Repos</category>
-      <pubDate>Sat, 28 Feb 2026 15:40:07 +0000</pubDate>
-      <author>Hacker News (AI)</author>
-    </item>
-    <item>
-      <title><![CDATA[Letting Machines Decide What Matters]]></title>
-      <link>https://spectrum.ieee.org/ai-new-physics</link>
-      <description><![CDATA[Physicists are using ML to sift through Large Hadron Collider data for anomalies outside the Standard Model, potentially identifying undiscovered particles.]]></description>
-      <category>Industry</category>
-      <pubDate>Sun, 01 Mar 2026 11:00:03 +0000</pubDate>
-      <author>Eliza Strickland</author>
-    </item>
-    <item>
-      <title><![CDATA[Google AI Introduces STATIC: A Sparse Matrix Framework Delivering 948x Faster Constrained Decoding for LLM Based Generative Retrieval]]></title>
-      <link>https://www.marktechpost.com/2026/03/01/google-ai-introduces-static-a-sparse-matrix-framework-delivering-948x-faster-constrained-decoding-for-llm-based-generative-retrieval/</link>
-      <description><![CDATA[STATIC going open lowers the bar for experimentation and custom deployments (via MarkTechPost).]]></description>
-      <category>Industry</category>
-      <pubDate>Sun, 01 Mar 2026 21:47:04 +0000</pubDate>
-      <author>Asif Razzaq</author>
-    </item>
-    <item>
-      <title><![CDATA[OpenAI and Amazon announce strategic partnership]]></title>
-      <link>https://openai.com/index/amazon-partnership</link>
-      <description><![CDATA[The OpenAI announcement carries implications for budgets and vendor relationships (via OpenAI Blog).]]></description>
-      <category>Industry</category>
-      <pubDate>Fri, 27 Feb 2026 05:30:00 +0000</pubDate>
-      <author>OpenAI Blog</author>
-    </item>
-    <item>
-      <title><![CDATA[OpenAI reveals more details about its agreement with the Pentagon]]></title>
-      <link>https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon/</link>
-      <description><![CDATA[OpenAI disclosed further details about its Pentagon deal, with CEO Altman acknowledging the agreement was rushed and the optics aren't great.]]></description>
-      <category>Industry</category>
-      <pubDate>Sun, 01 Mar 2026 16:30:10 +0000</pubDate>
+      <pubDate>Sun, 08 Mar 2026 20:14:42 +0000</pubDate>
       <author>Anthony Ha</author>
     </item>
     <item>
-      <title><![CDATA[A robot arm with puppy dog eyes is just one of Lenovo’s new desktop AI concepts]]></title>
-      <link>https://www.theverge.com/tech/885228/lenovo-ai-workmate-companion-work-concept-robot-arm-desktop-clock-hub</link>
-      <description><![CDATA[Lenovo showed desktop AI concepts at MWC including a robot arm companion and an AI-powered desktop clock hub.]]></description>
+      <title><![CDATA[Google BigQuery Previews Cross-Region SQL Queries for Distributed Data]]></title>
+      <link>https://www.infoq.com/news/2026/03/google-bigquery-cross-region-sql/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
+      <description><![CDATA[Google BigQuery's new global queries feature, now in preview, allows SQL queries across different geographic regions without needing to move or copy data first. This simplifies data aggregation for distributed datasets.]]></description>
+      <category>Tools</category>
+      <pubDate>Sun, 08 Mar 2026 10:11:00 +0000</pubDate>
+      <author>Renato Losio</author>
+    </item>
+    <item>
+      <title><![CDATA[Google's new command-line tool can plug OpenClaw into your Workspace data]]></title>
+      <link>https://arstechnica.com/ai/2026/03/googles-new-command-line-tool-can-plug-openclaw-into-your-workspace-data/</link>
+      <description><![CDATA[Google has released OpenClaw, a command-line tool for interacting with Google Workspace data. While not an official product, OpenClaw simplifies the use of multiple Workspace APIs from the command line.]]></description>
+      <category>Tools</category>
+      <pubDate>Fri, 06 Mar 2026 19:56:20 +0000</pubDate>
+      <author>Ryan Whitwam</author>
+    </item>
+    <item>
+      <title><![CDATA[LWiAI Podcast #235 - Sonnet 4.6, Deep-thinking tokens, Anthropic vs Pentagon]]></title>
+      <link>https://lastweekin.ai/p/lwiai-podcast-235-sonnet-46-deep</link>
+      <description><![CDATA[Anthropic released Sonnet 4.6, a faster and cheaper model than Claude 3 Opus, while Google launched Gemini 1.5 Pro. Anthropic CEO Dario Amodei stated that threats from the Pentagon won't change their AI stance.]]></description>
+      <category>Models</category>
+      <pubDate>Thu, 05 Mar 2026 08:42:21 +0000</pubDate>
+      <author>Last Week in AI</author>
+    </item>
+    <item>
+      <title><![CDATA[How Balyasny Asset Management built an AI research engine for investing]]></title>
+      <link>https://openai.com/index/balyasny-asset-management</link>
+      <description><![CDATA[Balyasny Asset Management created an AI research engine using GPT models and agent workflows to improve investment analysis. Their system uses rigorous model evaluation to ensure quality and reliability in financial decision-making.]]></description>
       <category>Industry</category>
-      <pubDate>Sun, 01 Mar 2026 18:01:00 +0000</pubDate>
-      <author>Andrew Liszewski</author>
+      <pubDate>Fri, 06 Mar 2026 07:00:00 +0000</pubDate>
+      <author>OpenAI Blog</author>
     </item>
     <item>
-      <title><![CDATA[The Data Centers Have Arrived at the Edge of the Arctic Circle]]></title>
-      <link>https://www.wired.com/story/ai-supremacy-data-center-expansion-arctic-circle/</link>
-      <description><![CDATA[AI compute demand is pushing data centre expansion to the Arctic Circle, where cold climates cut cooling costs but infrastructure challenges remain.]]></description>
+      <title><![CDATA[AutoGPT]]></title>
+      <link>https://github.com/Significant-Gravitas/AutoGPT</link>
+      <description><![CDATA[Auto-GPT is an open-source Python application that uses the GPT-4 language model to autonomously achieve any goal you set. With 182k stars and 46k forks, it's a popular starting point for building autonomous agents.]]></description>
+      <category>Repos</category>
+      <pubDate>Sun, 08 Mar 2026 16:53:35 +0000</pubDate>
+      <author>Significant-Gravitas</author>
+    </item>
+    <item>
+      <title><![CDATA[system-prompts-and-models-of-ai-tools]]></title>
+      <link>https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools</link>
+      <description><![CDATA[A GitHub repo aggregates system prompts, internal tools, and AI models used in 28 different AI coding tools, including Cursor and Replit. The collection has amassed nearly 130k stars and 33k forks.]]></description>
+      <category>Tools</category>
+      <pubDate>Sun, 08 Mar 2026 14:37:38 +0000</pubDate>
+      <author>x1xhlol</author>
+    </item>
+    <item>
+      <title><![CDATA[openclaw]]></title>
+      <link>https://github.com/openclaw/openclaw</link>
+      <description><![CDATA[OpenClaw is a self-hosted personal AI assistant that connects to 20+ messaging platforms via a local Gateway control plane, with companion apps for macOS, iOS, and Android.]]></description>
+      <category>Repos</category>
+      <pubDate>Sun, 08 Mar 2026 20:37:49 +0000</pubDate>
+      <author>openclaw</author>
+    </item>
+    <item>
+      <title><![CDATA[Write C Code Without Learning C: The Magic of PythoC]]></title>
+      <link>https://towardsdatascience.com/write-c-code-without-learning-c-the-magic-of-pythoc/</link>
+      <description><![CDATA[Write update worth a look if it overlaps with your current work (via Towards Data Science).]]></description>
+      <category>Tutorials</category>
+      <pubDate>Sun, 08 Mar 2026 15:00:00 +0000</pubDate>
+      <author>Thomas Reid</author>
+    </item>
+    <item>
+      <title><![CDATA[Grammarly is using our identities without permission]]></title>
+      <link>https://www.theverge.com/ai-artificial-intelligence/890921/grammarly-ai-expert-reviews</link>
+      <description><![CDATA[Grammarly's expert review feature uses writing advice inspired by subject matter experts; one user found their boss listed as an expert without prior consent. The AI-generated feedback raises questions about the sourcing and permissions around the expert advice.]]></description>
       <category>Industry</category>
-      <pubDate>Mon, 02 Mar 2026 10:00:00 +0000</pubDate>
-      <author>Joel Khalili</author>
+      <pubDate>Fri, 06 Mar 2026 15:58:24 +0000</pubDate>
+      <author>Stevie Bonifield</author>
     </item>
     <item>
-      <title><![CDATA[FireRedTeam Releases FireRed-OCR-2B Utilizing GRPO to Solve Structural Hallucinations in Tables and LaTeX for Software Developers]]></title>
-      <link>https://www.marktechpost.com/2026/03/01/fireredteam-releases-firered-ocr-2b-utilizing-grpo-to-solve-structural-hallucinations-in-tables-and-latex-for-software-developers/</link>
-      <description><![CDATA[FireRed-OCR-2B is a 2B-parameter OCR model trained with GRPO to fix structural hallucinations in table and LaTeX recognition.]]></description>
-      <category>Industry</category>
-      <pubDate>Mon, 02 Mar 2026 06:38:48 +0000</pubDate>
-      <author>Asif Razzaq</author>
+      <title><![CDATA[Beyond Accuracy: Quantifying the Production Fragility Caused by Excessive, Redundant, and Low-Signal Features in Regression]]></title>
+      <link>https://www.marktechpost.com/2026/03/08/beyond-accuracy-quantifying-the-production-fragility-caused-by-excessive-redundant-and-low-signal-features-in-regression/</link>
+      <description><![CDATA[A new study quantifies how adding features to regression models can increase production fragility, even if accuracy improves. The research introduces a metric, fragility score, to measure the risk associated with each feature based on its redundancy and signal strength. High fragility scores indicate features.]]></description>
+      <category>Research</category>
+      <pubDate>Sun, 08 Mar 2026 19:07:53 +0000</pubDate>
+      <author>Arham Islam</author>
     </item>
     <item>
-      <title><![CDATA[Firefox 149 beta develops a split personality]]></title>
-      <link>https://www.theregister.com/2026/03/02/firefox_149_beta/</link>
-      <description><![CDATA[Firefox 149 beta promotes split-view mode (two pages side-by-side) to default-on, adds hardware-accelerated PDF rendering and address autofill.]]></description>
-      <category>Infra</category>
-      <pubDate>Mon, 02 Mar 2026 11:45:08 +0000</pubDate>
-      <author>Liam Proven</author>
+      <title><![CDATA[Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines]]></title>
+      <link>https://huggingface.co/blog/modular-diffusers</link>
+      <description><![CDATA[Hugging Face released Modular Diffusers, letting users build diffusion pipelines from reusable components instead of writing them from scratch. The library complements the existing `DiffusionPipeline` class, offering a more flexible and composable approach.]]></description>
+      <category>Tools</category>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <author>Hugging Face Blog</author>
     </item>
     <item>
-      <title><![CDATA[Iran all but vanishes from the global internet amid US-Israel strikes]]></title>
-      <link>https://www.theregister.com/2026/03/02/iran_internet_blackout/</link>
-      <description><![CDATA[Quick update on Iran — relevant if you're evaluating tools in this space (via The Register).]]></description>
-      <category>Infra</category>
-      <pubDate>Mon, 02 Mar 2026 10:58:15 +0000</pubDate>
-      <author>Carly Page</author>
-    </item>
-    <item>
-      <title><![CDATA[Microsoft's Project Silica promises eternal storage. It can't get there from here]]></title>
-      <link>https://www.theregister.com/2026/03/02/microsoft_project_silica_opinion/</link>
-      <description><![CDATA[Project Silica uses femtosecond lasers to write 2 TB across hundreds of layers in glass plates readable for 10,000 years, but 20 Mbps write speeds make commercialisation unlikely.]]></description>
-      <category>Infra</category>
-      <pubDate>Mon, 02 Mar 2026 10:13:06 +0000</pubDate>
-      <author>Rupert Goodwins</author>
-    </item>
-    <item>
-      <title><![CDATA[Flaw-Finding AI Assistants Face Criticism for Speed, Accuracy]]></title>
-      <link>https://www.darkreading.com/application-security/flaw-finding-ai-assistants-face-criticism-speed-accuracy</link>
-      <description><![CDATA[AI-powered vulnerability scanners are drawing criticism for high false-positive rates and slow scan times compared to traditional SAST/DAST tools.]]></description>
+      <title><![CDATA[This Jammer Wants to Block Always-Listening AI Wearables. It Probably Won’t Work]]></title>
+      <link>https://www.wired.com/story/deveillance-spectre-i/</link>
+      <description><![CDATA[Deveillances creator acknowledges the difficulty of jamming effectively across diverse environments and devices.]]></description>
       <category>Security</category>
-      <pubDate>Fri, 27 Feb 2026 20:16:24 +0000</pubDate>
-      <author>Robert Lemos</author>
+      <pubDate>Fri, 06 Mar 2026 23:45:14 +0000</pubDate>
+      <author>Boone Ashworth</author>
     </item>
     <item>
-      <title><![CDATA[Podcast: [Video Podcast] Frictionless DevEx with Nicole Forsgren]]></title>
-      <link>https://www.infoq.com/podcasts/frictionless-devex/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global</link>
-      <description><![CDATA[In this episode, Thomas Betts talks with Dr. Nicole Forsgren about frictionless developer experience, measuring DevEx, and how teams can reduce toil in their workflows.]]></description>
-      <category>Infra</category>
-      <pubDate>Mon, 02 Mar 2026 11:00:00 +0000</pubDate>
-      <author>Nicole Forsgren</author>
+      <title><![CDATA[I Built an Agent Skill That Generates Full Videos From a Topic Name]]></title>
+      <link>https://dev.to/businessbuilders/i-built-an-agent-skill-that-generates-full-videos-from-a-topic-name-24d2</link>
+      <description><![CDATA[An AI agent skill can now generate full explainer videos from a topic name using tools like Remotion, Flux, and Chatterbox TTS. The agent automates research, script writing, image generation, scene rendering, and voiceover, creating a 2-minute video with 18 scenes from a single prompt.]]></description>
+      <category>Tools</category>
+      <pubDate>Sun, 08 Mar 2026 20:33:44 +0000</pubDate>
+      <author>William Donovan</author>
+    </item>
+    <item>
+      <title><![CDATA[How our open-source AI model SpeciesNet is helping to promote wildlife conservation]]></title>
+      <link>https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/</link>
+      <description><![CDATA[Google's open-source SpeciesNet AI model helps conservationists analyse motion-triggered camera images of wildlife. SpeciesNet reduces the time needed to turn snapshots into actionable data, which is normally a very time-consuming task.]]></description>
+      <category>Models</category>
+      <pubDate>Fri, 06 Mar 2026 18:00:00 +0000</pubDate>
+      <author>Tanya Birch, Dan Morris</author>
+    </item>
+    <item>
+      <title><![CDATA[Online harassment is entering its AI era]]></title>
+      <link>https://www.technologyreview.com/2026/03/05/1133962/online-harassment-is-entering-its-ai-era/</link>
+      <description><![CDATA[MIT Technology Review reports on how generative AI is being weaponised for online harassment — deepfakes, synthetic voice cloning, and AI-generated abuse at scale are outpacing platform moderation.]]></description>
+      <category>Industry</category>
+      <pubDate>Thu, 05 Mar 2026 10:00:00 +0000</pubDate>
+      <author>Grace Huckins</author>
     </item>
   </channel>
 </rss>

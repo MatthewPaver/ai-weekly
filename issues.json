@@ -1,6 +1,23 @@
 {
   "issues": [
     {
+      "slug": "2026-03-08",
+      "date_iso": "2026-03-08",
+      "date_label": "08 Mar 2026",
+      "title": "Inference 08 Mar 2026",
+      "lead_title": "Will the Pentagon\u2019s Anthropic controversy scare startups away from defense work?",
+      "summary": "Builders, take note: Will the Pentagon\u2019s Anthropic controversy scare startups away from defense work just shifted the stack.",
+      "total_articles": 13,
+      "read_time_minutes": 5,
+      "section_count": 5,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-03-08.html",
+      "repo_md_path": "/issues/2026-03-08.md",
+      "search_text": "This week at a glance This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week One to test this week \u2b50 Open-source picks \ud83d\udd2c Research worth your time \ud83d\udd12 Security \ud83c\udf10 What changed in industry \ud83d\udee0\ufe0f Tools to try Will the Pentagon\u2019s Anthropic controversy scare startups away from defense work? AutoGPT openclaw LWiAI Podcast #235 - Sonnet 4.6, Deep-thinking tokens, Anthropic vs Pentagon Beyond Accuracy: Quantifying the Production Fragility Caused by Excessive, Redundant, and Low-Signal Features in Regression How our open-source AI model SpeciesNet is helping to promote wildlife conservation This Jammer Wants to Block Always-Listening AI Wearables. It Probably Won\u2019t Work How Balyasny Asset Management built an AI research engine for investing Online harassment is entering its AI era Google's new command-line tool can plug OpenClaw into your Workspace data Google BigQuery Previews Cross-Region SQL Queries for Distributed Data system-prompts-and-models-of-ai-tools",
+      "cover_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2020/10/maxresdefault-1152x648.jpg",
+      "is_latest": true,
+      "likes": 0
+    },
+    {
       "slug": "2026-03-02",
       "date_iso": "2026-03-02",
       "date_label": "02 Mar 2026",
@@ -14,7 +31,7 @@
       "repo_md_path": "/issues/2026-03-02.md",
       "search_text": "This week at a glance This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week One to test this week \u2b50 Open-source picks \u2601\ufe0f Infra \ud83c\udf10 What changed in industry Trump moves to ban Anthropic from the US government CoPaw Show HN: IssueScout \u2013 Find open source issues worth contributing to Microsoft's Project Silica promises eternal storage. It can't get there from here Firefox 149 beta develops a split personality Iran all but vanishes from the global internet amid US-Israel strikes OpenAI reveals more details about its agreement with the Pentagon OpenAI and Amazon announce strategic partnership",
       "cover_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg",
-      "is_latest": true,
+      "is_latest": false,
       "likes": 0
     },
     {
