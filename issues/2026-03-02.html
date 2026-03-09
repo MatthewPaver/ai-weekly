@@ -1,0 +1,1823 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FAFAF9" id="meta-theme-color" />
+  <meta name="description" content="Inference Weekly · 02 Mar 2026: 10 AI stories worth reading this week." />
+  <title>Inference Weekly · 02 Mar 2026</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Inference Weekly · 02 Mar 2026" />
+  <meta property="og:description" content="Leading with Trump moves to ban Anthropic from the US government, and the rest of the week&#39;s best AI signal." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/latest.html" />
+  <meta property="og:image" content="https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg" />
+  <meta property="og:site_name" content="Inference Weekly" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Inference Weekly · 02 Mar 2026" />
+  <meta name="twitter:description" content="Leading with Trump moves to ban Anthropic from the US government, and the rest of the week&#39;s best AI signal." />
+  <meta name="twitter:image" content="https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg" />
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://matthewpaver.github.io/ai-weekly/latest.html" />
+  <link rel="alternate" type="application/rss+xml" title="Inference Weekly" href="https://matthewpaver.github.io/ai-weekly/feed.xml" />
+  <link rel="icon" type="image/png" href="https://matthewpaver.github.io/ai-weekly/assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Local scroll-reveal styles (no CDN dependency) -->
+  <script>
+    (function(){try{var m=document.getElementById('meta-theme-color');if(localStorage.getItem('inference-theme')==='dark'){document.documentElement.classList.add('theme-dark');if(m)m.content='#0F172A';}}catch(e){}})();
+  </script>
+  <style>
+    /* Design tokens: light default, dark via JS toggle. WCAG AA contrast throughout (4.5:1+ normal text, 3:1+ large). */
+    :root {
+      --bg: #FAFAF9;
+      --surface: #ffffff;
+      --surface-2: #E5E7EB;
+      --text: #0F172A;
+      --muted: #1F2937;
+      --line: #5B6370;
+      --brand: #0F766E;
+      --brand-2: #0F4C5C;
+      --brand-3: #B45309;
+      --ink: #0F172A;
+      --link: #0B5345;
+      --link-hover: #0D6B5C;
+      --focus: #B45309;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.08);
+      --radius: 10px;
+    }
+
+    /* Dark mode: applied via JS toggle (localStorage key: inference-theme). */
+    html.theme-dark {
+      color-scheme: dark;
+      --bg: #0F172A;
+      --surface: #1E293B;
+      --surface-2: #334155;
+      --text: #F8FAFC;
+      --muted: #CBD5E1;
+      --line: #64748B;
+      --brand: #2DD4BF;
+      --brand-2: #67E8F9;
+      --brand-3: #FBBF24;
+      --link: #67E8F9;
+      --link-hover: #99F6E4;
+      --focus: #FBBF24;
+      --shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
+
+    /* Scroll targets: leave a small gap so anchor links aren't flush under the progress bar */
+    #main-content { scroll-margin-top: 12px; }
+    .section[id] { scroll-margin-top: 12px; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse 80% 50% at 20% -10%, rgba(15, 118, 110, 0.07), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(180, 83, 9, 0.04), transparent),
+        var(--bg);
+      line-height: 1.56;
+    }
+
+    /* Dark body bg only on the dark page (theme-dark class set via JS) */
+    html.theme-dark body {
+      background:
+        radial-gradient(ellipse 80% 50% at 20% -10%, rgba(45, 212, 191, 0.06), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(251, 191, 36, 0.03), transparent),
+        #0F172A;
+    }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: auto;
+      padding: 8px 16px; background: var(--brand); color: #fff;
+      border-radius: 0 0 8px 0; font-size: 0.85rem; font-weight: 600;
+      text-decoration: none; z-index: 100;
+    }
+    .skip-link:focus { left: 0; top: 0; }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 2px;
+    }
+
+    main a,
+    aside a,
+    .footer a {
+      color: var(--link);
+      text-decoration-color: rgba(11,83,69,0.6); /* fallback */
+      text-decoration-color: color-mix(in srgb, var(--link), transparent 40%);
+    }
+
+    main a:hover,
+    aside a:hover,
+    .footer a:hover {
+      color: var(--link-hover);
+      text-decoration-color: currentColor;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+      border-radius: 8px;
+    }
+
+    .top-bar {
+      height: 3px;
+      background: linear-gradient(90deg, #0F4C5C 0%, #0F766E 58%, #C2410C 100%);
+    }
+
+    .wrap {
+      width: min(1140px, 94vw);
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-top: 0;
+      border-radius: 0;
+      background: linear-gradient(135deg, #0F172A 0%, #0F4C5C 50%, #0F766E 100%);
+      color: #fff;
+      padding: 24px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Noise texture overlay on hero for analog depth (Linear-inspired) */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero > * { position: relative; z-index: 1; }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: 18px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .hero-sub {
+      margin: 2px 0 0;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 11px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.92);
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: rgba(255, 255, 255, 0.07);
+      transition: transform .16s ease, background .16s ease;
+    }
+
+    .nav a:hover, .nav .theme-toggle:hover { background: rgba(255,255,255,.14); transform: translateY(-1px); }
+
+    .theme-toggle {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.92);
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: rgba(255, 255, 255, 0.07);
+      transition: transform .16s ease, background .16s ease;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    footer .theme-toggle {
+      font-size: inherit;
+      color: var(--link);
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      background: none;
+      cursor: pointer;
+      text-decoration: underline;
+      font-family: inherit;
+    }
+    footer .theme-toggle:hover { color: var(--link-hover); background: none; transform: none; }
+
+    .hero-stats {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .chip {
+      font-size: 0.72rem;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      padding: 3px 8px;
+    }
+
+    .content {
+      margin: 20px 0 48px;
+      display: grid;
+      grid-template-columns: 1.9fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    /* Sync-style cards: softer elevation, rounded corners, fluid hover */
+    .card {
+      background: var(--surface);
+      border: 1px solid rgba(156,163,175,0.8); /* fallback */
+      border: 1px solid color-mix(in srgb, var(--line), transparent 20%);
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.05);
+      animation: rise .4s ease both;
+      transition: box-shadow .2s ease, border-color .2s ease;
+    }
+
+    html.theme-dark .card {
+      background: #1E293B;
+      border-color: #334155;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 14px rgba(0,0,0,0.15);
+    }
+
+    .intro {
+      padding: 18px 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      border-left: 3px solid var(--brand);
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, rgba(15,118,110,.06), transparent);
+    }
+
+    .menu {
+      padding: 18px 20px;
+      margin-bottom: 12px;
+    }
+
+    .menu .section-head { margin-bottom: 6px; }
+
+    .menu-intro {
+      margin: 0 0 10px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .difficulty-legend {
+      font-size: 0.75rem !important;
+      color: var(--muted) !important;
+      margin: 0 0 12px !important;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 500;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(139,149,165,0.7);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 30%);
+      background: var(--surface);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+      transition: transform .2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow .2s ease, background .2s ease, border-color .2s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-2px);
+      background: #E7EFEE;
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+      box-shadow: 0 4px 14px rgba(15,31,40,0.08);
+      border-color: #B4D2CF;
+      border-color: color-mix(in srgb, var(--brand), transparent 70%);
+    }
+
+    .menu-num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--muted);
+      flex-shrink: 0;
+      line-height: 1.3;
+    }
+
+    .menu-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .menu-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+    .menu-label { font-weight: 600; line-height: 1.3; }
+    .menu-deck {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .menu-promise { font-size: 0.72rem; font-weight: 600; color: var(--brand); font-style: italic; line-height: 1.35; }
+    /* Top-of-main TOC: number in circle (match email) */
+    .menu-top .menu-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 22px; height: 22px; min-width: 22px; min-height: 22px;
+      border-radius: 11px; background: var(--brand-2); color: #fff;
+      font-size: 11px; font-weight: 700; line-height: 1;
+    }
+    .menu-count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      min-width: 22px; height: 22px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 999px;
+      background: #CBE0DD;
+      background: color-mix(in srgb, var(--brand), transparent 80%);
+      color: var(--brand-2);
+      flex-shrink: 0;
+    }
+    html.theme-dark .menu-count { color: var(--link); background: rgba(103,232,249,0.2); background: color-mix(in srgb, var(--link), transparent 80%); }
+    .menu-meta {
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--muted);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    /* Topic pills: horizontal scrollable section nav (Discover-style) */
+    .topic-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 0 12px;
+      margin-bottom: 12px;
+      scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .topic-pills { scroll-behavior: auto; }
+    }
+    .topic-pills::-webkit-scrollbar { display: none; }
+    .topic-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid color-mix(in srgb, var(--line), transparent 20%);
+      background: var(--surface);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      flex-shrink: 0;
+    }
+    .topic-pill:hover {
+      transform: translateY(-1px);
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+      border-color: color-mix(in srgb, var(--brand), transparent 60%);
+    }
+    .topic-pill.active {
+      background: var(--brand-2);
+      color: #fff;
+      border-color: var(--brand-2);
+    }
+    .topic-pill-icon { font-size: 1rem; }
+    .topic-pill-count {
+      font-size: 0.68rem;
+      font-weight: 700;
+      min-width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--brand), transparent 85%);
+      color: var(--brand-2);
+    }
+    .topic-pill.active .topic-pill-count {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+    html.theme-dark .topic-pill-count {
+      background: rgba(103,232,249,0.2);
+      color: var(--link);
+    }
+
+    .section-head {
+      margin: 0;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      color: var(--brand-2);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .lead {
+      overflow: hidden;
+      margin-bottom: 12px;
+      border-radius: 14px;
+      border: 1px solid #90ACB2;
+      border: 1px solid color-mix(in srgb, var(--brand-2), transparent 55%);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(15, 76, 92, 0.08);
+      transition: box-shadow .25s ease;
+    }
+
+    .lead:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 12px 32px rgba(15, 76, 92, 0.12);
+    }
+
+    .lead-media {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center center;
+      background: var(--surface-2);
+      display: block;
+      border-radius: 14px 14px 0 0;
+      transition: transform .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .lead:hover .lead-media { transform: scale(1.03); }
+
+    .lead-body {
+      padding: 16px;
+      background: linear-gradient(180deg, rgba(15,118,110,0.06), transparent 35%);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--brand), transparent 94%), transparent 35%);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+      border-radius: 999px;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      line-height: 1.3;
+    }
+    /* Source + date: attribution style (not a competing pill) — subtle so it reads as metadata */
+    .badge-source {
+      font-size: 0.68rem;
+      font-weight: 500;
+      padding: 1px 7px;
+      line-height: 1.35;
+      gap: 4px;
+      align-items: center;
+      background: color-mix(in srgb, var(--muted), transparent 92%);
+      color: var(--muted);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 60%);
+    }
+    html.theme-dark .badge-source {
+      background: color-mix(in srgb, var(--muted), transparent 88%);
+      color: var(--muted);
+      border-color: color-mix(in srgb, var(--line), transparent 50%);
+    }
+    /* Lock source favicon to 12×12 so it never appears massive; downscaled favicons stay crisp */
+    .source-icon {
+      display: block;
+      flex-shrink: 0;
+      width: 12px !important;
+      height: 12px !important;
+      max-width: 12px !important;
+      max-height: 12px !important;
+      min-width: 12px;
+      min-height: 12px;
+      margin-right: 3px;
+      border-radius: 3px;
+      object-fit: contain;
+      object-position: center;
+      vertical-align: middle;
+    }
+    .badge-source .source-icon {
+      flex: 0 0 12px;
+    }
+    .source-mark {
+      display: inline-flex;
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      background: var(--brand-2);
+      margin-right: 3px;
+      flex: 0 0 14px;
+    }
+    html.theme-dark .source-mark {
+      background: var(--brand);
+      color: #022c22;
+    }
+    /* Difficulty: Beginner (green), Intermediate (amber), Advanced (red) — visible variety */
+    .badge-difficulty-beginner { background: #dcfce7 !important; color: #166534 !important; border-color: transparent !important; }
+    .badge-difficulty-intermediate { background: #fef3c7 !important; color: #92400e !important; border-color: transparent !important; }
+    .badge-difficulty-advanced { background: #fee2e2 !important; color: #991b1b !important; border-color: transparent !important; }
+    html.theme-dark .badge-difficulty-beginner { background: #14532d !important; color: #86efac !important; }
+    html.theme-dark .badge-difficulty-intermediate { background: #78350f !important; color: #fde68a !important; }
+    html.theme-dark .badge-difficulty-advanced { background: #7f1d1d !important; color: #fca5a5 !important; }
+    .badge-track { background: #e0f2fe !important; color: #0c4a6e !important; border-color: transparent !important; }
+    html.theme-dark .badge-track { background: #0c4a6e !important; color: #7dd3fc !important; border-color: #0369a1 !important; }
+    .badge-pick { background: linear-gradient(135deg, #fef3c7, #fde68a) !important; color: #92400e !important; border-color: #f59e0b !important; font-weight: 700 !important; }
+    html.theme-dark .badge-pick { background: linear-gradient(135deg, #78350f, #92400e) !important; color: #fde68a !important; border-color: #f59e0b !important; }
+
+    .lead h2 {
+      margin: 0 0 8px;
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: 1.55rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    .lead p {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 60ch;
+    }
+
+    .take {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    /* This week: single thesis line, competitor-style (Rundown/Batch use one clear take) */
+    .editors-main {
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--brand-2);
+    }
+
+    .editors-thesis {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: var(--text);
+      font-style: italic;
+    }
+
+    .quick,
+    .editors,
+    .pulse {
+      padding: 18px;
+      margin-bottom: 12px;
+    }
+
+    .quick ul {
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .quick li {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: #EBEDEF;
+      background: color-mix(in srgb, var(--surface-2), transparent 30%);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .quick strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 3px;
+      font-size: 0.91rem;
+    }
+
+    .editors ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      display: grid;
+      gap: 6px;
+    }
+
+    .pulse table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 0.88rem;
+    }
+
+    .pulse td {
+      border-bottom: 1px solid var(--line);
+      padding: 7px 0;
+      color: var(--muted);
+      vertical-align: top;
+    }
+
+    .pulse td:first-child {
+      color: var(--text);
+      font-weight: 600;
+      width: 36%;
+      padding-right: 10px;
+    }
+
+    .sections {
+      margin-top: 12px;
+      display: grid;
+      gap: 32px;
+    }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid rgba(139,149,165,0.85);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 15%);
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.04);
+      overflow: hidden;
+    }
+
+    html.theme-dark .section {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.18), 0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    .section-title {
+      margin: 0;
+      padding: 18px 20px;
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: 0.98rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, color-mix(in srgb, var(--brand), transparent 40%), transparent);
+    }
+
+    .section-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand-2), var(--brand));
+      color: #fff;
+      font-size: 0.82rem; font-weight: 700; flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(15, 76, 92, 0.2);
+    }
+
+    .section-deck {
+      margin: 0;
+      padding: 0 14px 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .stories {
+      padding: 0 16px 20px;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    }
+
+    /* Story cards: Discover-style — clean, scannable, whole card clickable */
+    .story {
+      border: 1px solid rgba(139,149,165,0.75);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 25%);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--surface);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform .22s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow .22s ease, border-color .2s ease;
+      position: relative;
+    }
+
+    .story:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(15,31,40,0.1), 0 4px 12px rgba(0,0,0,0.06);
+      border-color: #9CC5C1;
+      border-color: color-mix(in srgb, var(--brand), transparent 60%);
+    }
+
+    html.theme-dark .story {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.1);
+    }
+    html.theme-dark .story:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Clickable card: stretch the headline link over the full card */
+    .story h3 a::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    .story h3 a { text-decoration: none; color: inherit; }
+    .story h3 a:hover { text-decoration: underline; }
+
+    .story > img {
+      width: 100%;
+      height: 152px;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      background: var(--surface-2);
+      border-radius: 14px 14px 0 0;
+    }
+
+    .story-body { padding: 14px 16px 16px; }
+
+    /* Source-first meta: favicon + publisher + time, Google Discover style */
+    .story-source {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .story-source img {
+      width: 14px;
+      height: 14px;
+      min-width: 14px;
+      min-height: 14px;
+      border-radius: 3px;
+      object-fit: contain;
+      display: inline-block;
+      background: transparent;
+    }
+    .story-source .source-mark {
+      margin-right: 0;
+    }
+    .story-source-name {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .story-time {
+      color: var(--muted);
+    }
+    .story-time::before {
+      content: '·';
+      margin-right: 6px;
+    }
+
+    .badge-section {
+      font-size: 0.65rem;
+      padding: 2px 6px;
+      background: #D7E6E4;
+      background: color-mix(in srgb, var(--brand), transparent 85%);
+      color: var(--brand-2);
+      border-color: #9CC5C1;
+      border-color: color-mix(in srgb, var(--brand), transparent 60%);
+    }
+    html.theme-dark .badge-section { background: rgba(103,232,249,0.25); background: color-mix(in srgb, var(--link), transparent 75%); color: var(--link); }
+
+    .story h3 {
+      margin: 8px 0;
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    .story p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .footer {
+      margin: 16px 0 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .footer a {
+      color: var(--link);
+      margin: 0 5px;
+    }
+
+    .search::placeholder {
+      color: rgba(31,41,55,0.9);
+      color: color-mix(in srgb, var(--muted), transparent 10%);
+    }
+
+    .subscribe-card {
+      background: linear-gradient(125deg, #0b1c2b 0%, #0f4c5c 54%, #0f766e 100%);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .subscribe-card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+    .subscribe-card p { margin: 0 0 12px; font-size: 0.88rem; color: rgba(255,255,255,0.8); }
+    .subscribe-form { display: flex; gap: 6px; max-width: 380px; margin: 0 auto; }
+    .subscribe-form input {
+      flex: 1; padding: 9px 12px; border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px; background: rgba(255,255,255,0.12); color: #fff;
+      font: inherit; font-size: 0.88rem;
+    }
+    .subscribe-form input::placeholder { color: rgba(255,255,255,0.6); }
+    .subscribe-form button {
+      padding: 9px 16px; border: none; border-radius: 8px;
+      background: #fff; color: #0f4c5c; font: inherit; font-size: 0.88rem;
+      font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #e6f4f2; }
+
+    .share-row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+    .share-btn {
+      font-size: 0.82rem; font-weight: 600; padding: 7px 12px;
+      border-radius: 8px; text-decoration: none; border: 1px solid var(--line);
+      color: var(--muted); background: var(--surface);
+      transition: transform .12s ease;
+    }
+    .share-btn:hover { transform: translateY(-1px); color: var(--text); box-shadow: 0 4px 12px rgba(15,31,40,0.1); }
+
+
+    /* Tier gating placeholder (hidden until tiers_enabled) */
+    /* Scroll-triggered reveal (local IntersectionObserver, no external dependency) */
+    [data-sal] {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .4s ease, transform .4s ease;
+    }
+    [data-sal].sal-in {
+      opacity: 1;
+      transform: none;
+    }
+    .no-js [data-sal] { opacity: 1; transform: none; }
+
+    .copyright {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    /* Learn This Week card */
+    .learn-card {
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .learn-title {
+      display: block;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--link);
+      margin: 6px 0 8px;
+      line-height: 1.35;
+    }
+    .learn-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      font-size: 0.78rem;
+      margin: 0 0 8px;
+    }
+    .learn-provider {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .badge-level {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      border-radius: 10px;
+    }
+    .badge-level-beginner { background: #DCFCE7; color: #166534; }
+    .badge-level-intermediate { background: #FEF3C7; color: #92400E; }
+    .badge-level-advanced { background: #FEE2E2; color: #991B1B; }
+    .badge-free { display: inline-block; padding: 2px 8px; font-size: 0.7rem; font-weight: 600; border-radius: 10px; background: #E0F2FE; color: #0C4A6E; }
+    .badge-paid { display: inline-block; padding: 2px 8px; font-size: 0.7rem; font-weight: 600; border-radius: 10px; background: #F3E8FF; color: #6B21A8; }
+    .learn-duration {
+      color: var(--muted);
+    }
+    .learn-note {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    html.theme-dark .badge-level-beginner { background: #14532d; color: #86efac; }
+    html.theme-dark .badge-level-intermediate { background: #78350f; color: #fde68a; }
+    html.theme-dark .badge-level-advanced { background: #7f1d1d; color: #fca5a5; }
+    html.theme-dark .badge-free { background: #0c4a6e; color: #bae6fd; }
+    html.theme-dark .badge-paid { background: #581c87; color: #e9d5ff; }
+
+    /* Prompt of the Week card */
+    .prompt-card {
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .prompt-text {
+      margin: 8px 0;
+      padding: 10px 14px;
+      border-left: 3px solid var(--brand-2);
+      background: #E7ECEC;
+      background: color-mix(in srgb, var(--brand-2), transparent 92%);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .prompt-meta {
+      display: flex;
+      gap: 8px;
+      font-size: 0.78rem;
+      margin: 0 0 6px;
+    }
+    .prompt-context {
+      font-weight: 600;
+      color: var(--brand-2);
+    }
+    .prompt-tool {
+      color: var(--muted);
+    }
+    .prompt-tip {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* Reading progress bar */
+    .reading-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--brand) 0%, var(--brand-2) 100%);
+      z-index: 1000;
+      transition: width .1s linear;
+    }
+
+    /* Staggered card entrance */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .story { animation: rise .4s ease both; }
+    .story:nth-child(1) { animation-delay: 0s; }
+    .story:nth-child(2) { animation-delay: 0.08s; }
+    .story:nth-child(3) { animation-delay: 0.16s; }
+    .story:nth-child(4) { animation-delay: 0.24s; }
+
+    /* Badge entrance pop */
+    @keyframes badgePop {
+      0% { transform: scale(0.7); opacity: 0; }
+      70% { transform: scale(1.08); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .badge-level, .badge-free, .badge-paid,
+    .meta-row .badge { animation: badgePop .3s ease both; animation-delay: 0.2s; }
+
+    /* Pulse glow on Weekly Pulse header */
+    @keyframes pulseGlow {
+      0%, 100% { text-shadow: 0 0 0 transparent; }
+      50% { text-shadow: 0 0 8px rgba(15,76,92,0.4); text-shadow: 0 0 8px color-mix(in srgb, var(--brand-2), transparent 60%); }
+    }
+    .pulse .section-head { animation: pulseGlow 3s ease-in-out infinite; }
+
+    /* Section number entrance */
+    @keyframes numPop {
+      from { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+      to { transform: scale(1) rotate(0); opacity: 1; }
+    }
+    .section-num { animation: numPop .4s ease both; }
+
+    /* Glassmorphism nav bar (Mobbin / Linear-inspired) */
+    .wrap > nav.nav {
+      backdrop-filter: blur(12px) saturate(1.2);
+      -webkit-backdrop-filter: blur(12px) saturate(1.2);
+      background: rgba(15, 23, 42, 0.75);
+    }
+
+    /* Staggered story card delays (up to 6) */
+    .story:nth-child(5) { animation-delay: 0.32s; }
+    .story:nth-child(6) { animation-delay: 0.40s; }
+
+    /* Animated gradient border on lead card (Stripe + Linear inspired) */
+    @property --border-angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+    .lead { position: relative; }
+    .lead::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 15px;
+      padding: 1px;
+      background: conic-gradient(
+        from var(--border-angle),
+        var(--brand) 0%,
+        var(--brand-2) 33%,
+        var(--brand-3) 66%,
+        var(--brand) 100%
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.5;
+      animation: rotateBorder 8s linear infinite;
+    }
+    .lead:hover::before { opacity: 0.8; }
+    @keyframes rotateBorder {
+      to { --border-angle: 360deg; }
+    }
+
+    /* Smooth scale on thumbnail hover */
+    .story > img {
+      transition: transform .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .story:hover > img { transform: scale(1.03); }
+
+    /* Feedback card polish */
+    .feedback-card {
+      background: linear-gradient(135deg, var(--surface) 0%, rgba(15,118,110,0.03) 100%);
+      border-left: 3px solid var(--brand);
+    }
+    .emoji-rating {
+      display: flex;
+      gap: 8px;
+      margin: 0 0 16px;
+    }
+    .emoji-rating button {
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+      border: 2px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      cursor: pointer;
+      transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+    }
+    .emoji-rating button:hover {
+      transform: scale(1.15);
+      border-color: var(--brand);
+      box-shadow: 0 4px 12px rgba(15,76,92,0.15);
+    }
+    .emoji-rating button.selected {
+      border-color: var(--brand);
+      background: rgba(15,118,110,0.08);
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+      transform: scale(1.1);
+    }
+    html.theme-dark .emoji-rating button {
+      background: var(--surface-2);
+      border-color: #475569;
+    }
+    html.theme-dark .emoji-rating button:hover,
+    html.theme-dark .emoji-rating button.selected {
+      border-color: var(--link);
+      background: rgba(103,232,249,0.1);
+    }
+
+    /* Sticky sidebar TOC on desktop (Stripe docs inspired) */
+    @media (min-width: 961px) {
+      aside {
+        position: sticky;
+        top: 24px;
+        max-height: calc(100vh - 48px);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--line) transparent;
+      }
+      /* Compact sidebar TOC items */
+      aside .menu { padding: 14px; margin-bottom: 12px; }
+      aside .menu .menu-item { padding: 8px 10px; font-size: 0.82rem; }
+      aside .menu .menu-icon { font-size: 0.95rem; }
+      aside .menu .menu-count { width: 20px; height: 20px; font-size: 0.68rem; min-width: 20px; }
+    }
+
+    /* Scroll-spy: active menu item highlight */
+    .menu-item.active {
+      background: color-mix(in srgb, var(--brand), transparent 88%);
+      border-color: var(--brand);
+    }
+    .menu-item.active .menu-label { font-weight: 700; }
+
+    /* Keyboard focus indicator on stories */
+    .story:focus-visible, .lead:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 4px;
+      border-radius: 16px;
+    }
+    .story[tabindex], .lead[tabindex] { outline: none; }
+
+    /* Floating keyboard hint */
+    .kbd-hint {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 0.72rem;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 6px 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 50;
+      pointer-events: none;
+    }
+    .kbd-hint.visible { opacity: 0.7; pointer-events: auto; }
+    .kbd-hint:hover { opacity: 1; }
+    @media (max-width: 768px) { .kbd-hint { display: none; } }
+
+    /* Floating back-to-top with progress ring */
+    .scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border: none;
+      background: var(--surface);
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12), 0 0 0 1px color-mix(in srgb, var(--line), transparent 50%);
+      cursor: pointer;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s ease;
+      pointer-events: none;
+    }
+    .scroll-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .scroll-top:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.16), 0 0 0 1px var(--brand);
+    }
+    .scroll-top-arrow {
+      position: absolute;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* Section read time chip */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+      html { scroll-behavior: auto; }
+      .reading-progress { display: none; }
+      .lead::before { animation: none; opacity: 0.4; }
+      .scroll-top { transition: none; }
+    }
+
+    @media (max-width: 600px) {
+      .menu-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 960px) {
+      .content { grid-template-columns: 1fr; }
+      .lead-media { height: 168px; }
+      .story > img { height: 128px; }
+      /* On mobile, move TOC above main content so readers see navigation first */
+      .content { display: flex; flex-direction: column; }
+      .content aside { order: -1; }
+      .content main { order: 1; }
+      .menu-grid { grid-template-columns: 1fr; }
+      /* Bigger tap targets on mobile (WCAG 2.5.5: 44x44px min) */
+      .share-btn { padding: 10px 16px; font-size: 0.88rem; }
+      .subscribe-form button { padding: 12px 20px; }
+      .story a { padding: 2px 0; }
+    }
+
+    /* Windows High Contrast / forced-colors mode */
+    @media (forced-colors: active) {
+      .badge, .badge-source, .badge-section, .badge-track,
+      .badge-difficulty-beginner, .badge-difficulty-intermediate, .badge-difficulty-advanced {
+        border: 1px solid ButtonText;
+      }
+      .story, .card, .section, .menu-item { border: 1px solid ButtonText; }
+      .share-btn, .subscribe-form button { border: 1px solid ButtonText; }
+      .top-bar, .reading-progress { forced-color-adjust: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="top-bar"></div>
+
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="brand">
+          <img class="logo" src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" srcset="https://matthewpaver.github.io/ai-weekly/assets/logo.png 1x, https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png 2x" alt="" role="presentation" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" width="44" height="44" />
+          <svg class="logo logo-fallback" width="44" height="44" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none;"><rect width="52" height="52" rx="14" fill="url(#inf-logo-g)"/><path d="M26 14v24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="38" r="2.5" fill="#fff"/><defs><linearGradient id="inf-logo-g" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#0F4C5C"/><stop offset=".5" stop-color="#0F766E"/><stop offset="1" stop-color="#0F4C5C"/></linearGradient></defs></svg>
+          <div>
+            <h1>Inference</h1>
+            <p class="hero-sub">The week in AI, minus the noise.</p>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Issue navigation">
+          <a href="https://matthewpaver.github.io/ai-weekly/">Archive</a>
+          <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a>
+          <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+<a href="https://matthewpaver.github.io/ai-weekly/email.html">Email View</a>          <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
+        </nav>
+      </div>
+
+      <div class="hero-stats">
+        <span class="chip">Issue #2</span>
+        <span class="chip">02 Mar 2026</span>
+        <span class="chip">10 stories</span>
+        <span class="chip">4 min read</span>
+      </div>
+      <p class="hero-who-reads" style="margin: 8px 0 0; font-size: 12px; color: rgba(255,255,255,0.7);">Who reads this: Engineers, founders, and researchers building with AI.</p>
+    </header>
+
+    <div class="content">
+      <main id="main-content">
+        <nav class="topic-pills" aria-label="Jump to section">
+          <a class="topic-pill" href="#open-source-picks">
+            <span class="topic-pill-icon">⭐</span> Open-source picks <span class="topic-pill-count">2</span>
+          </a>
+          <a class="topic-pill" href="#infra">
+            <span class="topic-pill-icon">☁️</span> Infra <span class="topic-pill-count">3</span>
+          </a>
+          <a class="topic-pill" href="#what-changed-in-industry">
+            <span class="topic-pill-icon">🌐</span> What changed in industry <span class="topic-pill-count">2</span>
+          </a>
+        </nav>
+        <p class="intro intro-line" style="margin: 0 0 12px; font-size: 1rem; color: var(--text); line-height: 1.5;">Leading with Trump moves to ban Anthropic from the US government, and the rest of the week&#39;s best AI signal.</p>
+        <p class="intro" style="margin: 0 0 16px; font-size: 0.9rem; color: var(--muted); font-weight: 500;">This week: vendor moves and leadership signals.</p>
+        <article class="lead card">
+          <img class="lead-media" src="https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg" alt="Trump moves to ban Anthropic from the US government" width="400" height="220" decoding="async" fetchpriority="high" onerror="this.style.display='none'" />
+          <div class="lead-body">
+            <div class="story-source" style="margin-bottom: 8px;">
+<span class="source-mark" aria-hidden="true">AT</span>              <span class="story-source-name">Ars Technica AI</span>
+<span class="story-time">28 Feb</span>              <span class="story-time">3 min</span>
+              <span class="badge badge-pick" style="margin-left: auto;">Editor's Pick</span>
+            </div>
+            <h2><a href="https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/" target="_blank" rel="noopener">Trump moves to ban Anthropic from the US government</a></h2>
+            <p>New developments around Trump - relevant if it touches your stack or procurement. Talent movement around Trump often precedes product or strategy pivots.</p>
+<p class="take">File it now, act on it when the dust settles. Timing matters.</p>            <p style="margin: 12px 0 0;">
+              <a href="https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government/" target="_blank" rel="noopener" class="share-btn" style="display: inline-block; padding: 10px 20px; font-size: 14px; font-weight: 700; background: var(--brand-2); color: #fff; text-decoration: none; border-radius: 10px; letter-spacing: 0.3px;">Read full story &#x2192;</a>
+            </p>
+          </div>
+        </article>
+
+        <div class="share-row">
+          <a class="share-btn" href="https://twitter.com/intent/tweet?text=Inference%20Weekly%20%E2%80%94%2002%20Mar%202026&url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on X</a>
+          <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on LinkedIn</a>
+          <a class="share-btn" href="mailto:?subject=Inference%20Weekly%20%E2%80%94%2002%20Mar%202026&body=Check%20out%20this%20week's%20AI%20briefing%3A%20https://matthewpaver.github.io/ai-weekly/latest.html">Forward via Email</a>
+        </div>
+
+        <div class="sections">
+          <section class="section" data-sal="slide-up" id="open-source-picks" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">1</span> ⭐ Open-source picks <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">Open-source projects worth a closer look.</p>            <div class="stories">
+              <article class="story">
+                <div class="story-body">
+                  <div class="story-source">
+<span class="source-mark" aria-hidden="true">GT</span>                    <span class="story-source-name">GitHub Trending (AI/ML)</span>
+<span class="story-time">02 Mar</span>                    <span class="story-time">4 min</span>
+                  </div>
+                  <h3><a href="https://github.com/agentscope-ai/CoPaw" target="_blank" rel="noopener">CoPaw</a></h3>
+                  <p>Self-hosted means your data stays on your infra — useful if you need an internal assistant without third-party API dependencies.</p>
+                </div>
+              </article>
+              <article class="story">
+                <div class="story-body">
+                  <div class="story-source">
+<span class="source-mark" aria-hidden="true">HN</span>                    <span class="story-source-name">Hacker News (AI)</span>
+<span class="story-time">28 Feb</span>                    <span class="story-time">3 min</span>
+                  </div>
+                  <h3><a href="https://github.com/turazashvili/issuescout.dev" target="_blank" rel="noopener">Show HN: IssueScout – Find open source issues worth contributing to</a></h3>
+                  <p>New contributors waste hours on abandoned repos with mislabelled issues — IssueScout filters for active, well-maintained projects.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section" data-sal="slide-up" id="infra" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">2</span> ☁️ Infra <span style="font-weight:500;opacity:.7">(3)</span></h2>
+<p class="section-deck">Cloud, scale, and infrastructure that matters to AI builders.</p>            <div class="stories">
+              <article class="story">
+<img class="lazy" data-src="https://regmedia.co.uk/2025/06/02/project-silica-library-robots.jpg" alt="Microsoft&#39;s Project Silica promises eternal storage. It can&#39;t get there from here" width="228" height="152" decoding="async" />                <div class="story-body">
+                  <div class="story-source">
+<span class="source-mark" aria-hidden="true">TR</span>                    <span class="story-source-name">The Register</span>
+<span class="story-time">02 Mar</span>                    <span class="story-time">4 min</span>
+                  </div>
+                  <h3><a href="https://https://www.theregister.com/2026/03/02/microsoft_project_silica_opinion/" target="_blank" rel="noopener">Microsoft&#39;s Project Silica promises eternal storage. It can&#39;t get there from here</a></h3>
+                  <p>Worth bookmarking Microsoft&#39;s Project Silica - this kind of thing tends to compound.</p>
+                </div>
+              </article>
+              <article class="story">
+<img class="lazy" data-src="https://regmedia.co.uk/2026/02/27/ffox-149-split.jpg" alt="Firefox 149 beta develops a split personality" width="228" height="152" decoding="async" />                <div class="story-body">
+                  <div class="story-source">
+<span class="source-mark" aria-hidden="true">TR</span>                    <span class="story-source-name">The Register</span>
+<span class="story-time">02 Mar</span>                    <span class="story-time">5 min</span>
+                  </div>
+                  <h3><a href="https://https://www.theregister.com/2026/03/02/firefox_149_beta/" target="_blank" rel="noopener">Firefox 149 beta develops a split personality</a></h3>
+                  <p>Firefox sounds minor now, but it could change your shortlist by next quarter.</p>
+                </div>
+              </article>
+              <article class="story">
+<img class="lazy" data-src="https://regmedia.co.uk/2017/03/07/iranphones.jpg" alt="Iran all but vanishes from the global internet amid US-Israel strikes" width="228" height="152" decoding="async" />                <div class="story-body">
+                  <div class="story-source">
+<span class="source-mark" aria-hidden="true">TR</span>                    <span class="story-source-name">The Register</span>
+<span class="story-time">02 Mar</span>                    <span class="story-time">3 min</span>
+                  </div>
+                  <h3><a href="https://https://www.theregister.com/2026/03/02/iran_internet_blackout/" target="_blank" rel="noopener">Iran all but vanishes from the global internet amid US-Israel strikes</a></h3>
+                  <p>Keep an eye on Iran - small moves here tend to become bigger ones.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section" data-sal="slide-up" id="what-changed-in-industry" data-tier="leader">
+            <h2 class="section-title"><span class="section-num">3</span> 🌐 What changed in industry <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">Company moves, launches, and policy shifts that could affect your roadmap.</p>            <div class="stories">
+              <article class="story">
+<img class="lazy" data-src="https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2170386424.jpg?w=1024" alt="OpenAI reveals more details about its agreement with the Pentagon" width="228" height="152" decoding="async" />                <div class="story-body">
+                  <div class="story-source">
+<span class="source-mark" aria-hidden="true">TA</span>                    <span class="story-source-name">TechCrunch AI</span>
+<span class="story-time">01 Mar</span>                    <span class="story-time">3 min</span>
+                  </div>
+                  <h3><a href="https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon/" target="_blank" rel="noopener">OpenAI reveals more details about its agreement with the Pentagon</a></h3>
+                  <p>Personnel changes at OpenAI are a leading indicator of roadmap shifts.</p>
+                </div>
+              </article>
+              <article class="story">
+                <div class="story-body">
+                  <div class="story-source">
+<span class="source-mark" aria-hidden="true">OB</span>                    <span class="story-source-name">OpenAI Blog</span>
+<span class="story-time">27 Feb</span>                    <span class="story-time">7 min</span>
+                  </div>
+                  <h3><a href="https://openai.com/index/amazon-partnership" target="_blank" rel="noopener">OpenAI and Amazon announce strategic partnership</a></h3>
+                  <p>The OpenAI move could shift the math for your next planning cycle; flag it in leadership review.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <aside>
+        <nav class="menu card" aria-label="This week at a glance">
+          <p class="section-head">This week at a glance</p>
+          <div class="menu-grid" style="grid-template-columns: 1fr;">
+            <a class="menu-item" href="#open-source-picks">
+              <span class="menu-icon">⭐</span>
+              <span class="menu-text">
+                <span class="menu-label">Open-source picks</span>
+              </span>
+              <span class="menu-meta">~7 min linked reads · 2</span>
+            </a>
+            <a class="menu-item" href="#infra">
+              <span class="menu-icon">☁️</span>
+              <span class="menu-text">
+                <span class="menu-label">Infra</span>
+              </span>
+              <span class="menu-meta">~12 min linked reads · 3</span>
+            </a>
+            <a class="menu-item" href="#what-changed-in-industry">
+              <span class="menu-icon">🌐</span>
+              <span class="menu-text">
+                <span class="menu-label">What changed in industry</span>
+              </span>
+              <span class="menu-meta">~10 min linked reads · 2</span>
+            </a>
+          </div>
+        </nav>
+
+        <section class="card also-this-week" style="padding: 14px;">
+          <p class="section-head" style="margin: 0 0 10px; font-size: 0.75rem;">Also this week</p>
+          <ul style="margin: 0 0 12px; padding-left: 1.2em; font-size: 0.88rem; color: var(--text);">
+            <li style="margin-bottom: 8px;"><a href="https://dev.to/omar_corredorpacheco_e0c/-3clh" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">[Boost]</a> <span style="color: var(--muted); font-weight: 400;">· If you&#39;ve been putting off Boost, this walkthrough makes a solid starting point. Why it matters: The Boost guide fills a gap most docs don&#39;t cover well.</span></li>
+            <li style="margin-bottom: 8px;"><a href="https://www.darkreading.com/application-security/flaw-finding-ai-assistants-face-criticism-speed-accuracy" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">Flaw-Finding AI Assistants Face Criticism for Speed, Accuracy</a> <span style="color: var(--muted); font-weight: 400;">· New Flaw coverage this week — quick read with practical context. Why it matters: No immediate action needed, but Flaw shifts the background assumptions a bit.</span></li>
+          </ul>
+          <div style="margin: 0 0 12px;">
+            <p class="section-head" style="margin: 0 0 4px; font-size: 0.7rem;">📚 Learn This Week</p>
+            <p style="margin: 0 0 4px; font-size: 0.85rem; color: var(--muted);"><a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">ChatGPT Prompt Engineering for Developers</a> · DeepLearning.AI · Free · 1.5 hours</p>
+            <span class="badge badge-difficulty-beginner">Beginner</span>
+<p style="margin: 4px 0 0; font-size: 0.78rem; color: var(--muted); line-height: 1.4;">Co-created with OpenAI. Learn prompt patterns that work in production, not just demos. Free during platform beta.</p>          </div>
+          <div style="margin: 12px 0 0; padding: 10px; background: var(--surface); border-radius: 8px; border-left: 3px solid var(--brand);">
+            <p style="margin: 0 0 4px; font-size: 0.7rem; font-weight: 700; color: var(--brand); letter-spacing: 0.8px; text-transform: uppercase;">Prompt of the Week · Research</p>
+            <p style="margin: 0 0 6px; font-size: 0.82rem; color: var(--text); font-style: italic; line-height: 1.4;">"Summarize this research paper in 3 bullet points: what they did, what they found, and what I should try in my own work."</p>
+            <p style="margin: 0 0 4px; font-size: 0.78rem; color: var(--muted); line-height: 1.4;"><strong style="color: var(--brand);">Why it works:</strong> The third bullet (&#39;what I should try&#39;) is the key. It forces the model past summary into application — turning reading time into actionable next steps for your own projects.</p>
+            <p style="margin: 0; font-size: 0.72rem; color: var(--muted); font-style: italic;">Paste the abstract and conclusion sections for a quick summary.</p>
+          </div>
+        </section>
+
+        <section class="card" style="padding: 14px; margin-top: 12px;">
+          <p class="section-head" style="margin: 0 0 6px; font-size: 0.72rem;">One to test this week</p>
+          <p style="margin: 0 0 4px; font-size: 0.88rem;"><a href="https://github.com/agentscope-ai/CoPaw" target="_blank" rel="noopener" style="color: var(--link); font-weight: 600;">CoPaw</a></p>
+<p style="margin: 0; font-size: 0.78rem; color: var(--muted); line-height: 1.4;">CoPaw is a self-hosted AI assistant with multi-platform chat integrations (Discord, DingTalk, Feishu) and local or cloud deployment.</p>        </section>
+      </aside>
+    </div>
+
+    <!-- Feedback card at bottom: Formspree or Formsubmit.co (free) -->
+    <section class="card feedback-card" data-sal="fade" style="margin: 24px 0; padding: 24px;">
+      <h3 style="margin: 0 0 4px; font-size: 1.15rem; color: var(--text);">How was this issue?</h3>
+      <p style="margin: 0 0 14px; font-size: 0.88rem; color: var(--muted);">Helps me pick better stories next week.</p>
+      <form id="feedback-form" class="feedback-form" action="https://formsubmit.co/inference.feedback@gmail.com" method="post" style="max-width: 480px;">
+        <input type="hidden" name="issue_date" value="02 Mar 2026" />
+        <input type="hidden" name="_subject" value="Inference feedback · 02 Mar 2026" />
+        <input type="hidden" id="feedback-rating-value" name="rating" value="" />
+        <!-- Emoji reaction buttons (no dropdown) -->
+        <div class="emoji-rating" role="radiogroup" aria-label="Rate this issue">
+          <button type="button" data-value="Loved it" aria-label="Loved it" title="Loved it">🤩</button>
+          <button type="button" data-value="Great" aria-label="Great" title="Great">👍</button>
+          <button type="button" data-value="Okay" aria-label="Okay" title="Okay">😐</button>
+          <button type="button" data-value="Not useful" aria-label="Not useful" title="Not useful">👎</button>
+        </div>
+        <textarea id="feedback-comment" name="comment" rows="2" placeholder="What should we cover next? (optional)" style="width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; resize: vertical; background: var(--surface); color: var(--text); box-sizing: border-box;"></textarea>
+        <div id="feedback-recaptcha" class="recaptcha-placeholder" style="min-height: 1px;"></div>
+        <button type="submit" id="feedback-submit" style="padding: 10px 24px; font-size: 14px; font-weight: 600; background: var(--brand); color: white; border: none; border-radius: 8px; cursor: pointer; transition: opacity .15s ease;" disabled>Send feedback</button>
+        <p id="feedback-thanks" style="display: none; margin: 12px 0 0; color: var(--brand); font-weight: 600; font-size: 0.95rem;">Thanks — your feedback is noted! 🙏</p>
+      </form>
+    </section>
+
+    <!-- Giscus: GitHub Discussions-based reactions & comments (zero backend) -->
+    <!-- To enable: install the Giscus app at https://github.com/apps/giscus on this repo -->
+
+    <!-- Back to top with reading progress ring -->
+    <button class="scroll-top" id="scroll-top" aria-label="Back to top">
+      <svg viewBox="0 0 36 36" width="36" height="36">
+        <circle cx="18" cy="18" r="16" fill="none" stroke="var(--line)" stroke-width="2" opacity="0.3"/>
+        <circle cx="18" cy="18" r="16" fill="none" stroke="var(--brand)" stroke-width="2"
+          stroke-dasharray="100.53" stroke-dashoffset="100.53" stroke-linecap="round"
+          transform="rotate(-90 18 18)" id="progress-ring"/>
+      </svg>
+      <span class="scroll-top-arrow">&#8593;</span>
+    </button>
+
+    <!-- Keyboard shortcuts hint (desktop only) -->
+    <div class="kbd-hint" id="kbd-hint">Press <strong>j</strong>/<strong>k</strong> to navigate, <strong>t</strong> for top</div>
+
+    <footer class="footer">
+      <a href="https://matthewpaver.github.io/ai-weekly/">Archive</a> ·
+      <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a> ·
+      <button type="button" class="theme-toggle" aria-label="Toggle dark mode" onclick="document.getElementById('theme-toggle').click()">Dark</button> ·<a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a> ·
+      <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
+      <p class="footer-social-proof" style="margin-top: 12px; font-size: 12px; color: var(--muted);">
+Who reads this: Engineers, founders, and researchers building with AI.      </p>
+      <p class="copyright">Editorial analysis &copy; 2026 Matthew Paver. Original articles &copy; respective authors and publications.</p>
+    </footer>
+  </div>
+
+  <!-- Theme toggle (client-side, persisted in localStorage) -->
+  <script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    var meta = document.getElementById('meta-theme-color');
+    var allToggles = document.querySelectorAll('.theme-toggle');
+    function setGiscusTheme(theme) {
+      var iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: theme } } }, 'https://giscus.app');
+    }
+    function updateLabels() {
+      var isDark = document.documentElement.classList.contains('theme-dark');
+      allToggles.forEach(function(b) { b.textContent = isDark ? 'Light' : 'Dark'; });
+      if (meta) meta.content = isDark ? '#0F172A' : '#FAFAF9';
+      setGiscusTheme(isDark ? 'dark_dimmed' : 'light');
+    }
+    if (btn) {
+      updateLabels();
+      btn.addEventListener('click', function() {
+        var isDark = document.documentElement.classList.toggle('theme-dark');
+        try { localStorage.setItem('inference-theme', isDark ? 'dark' : 'light'); } catch(e) {}
+        updateLabels();
+      });
+    }
+  })();
+  </script>
+
+
+  <!-- Scroll-triggered reveal (local, no CDN dependency) -->
+  <script>
+  (function() {
+    var nodes = document.querySelectorAll('[data-sal]');
+    if (!nodes.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      nodes.forEach(function(n) { n.classList.add('sal-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('sal-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    nodes.forEach(function(n) { io.observe(n); });
+  })();
+  </script>
+
+  <!-- vanilla-lazyload: responsive images with error fallback; fallback if CDN fails -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19/dist/lazyload.min.js"></script>
+  <script>
+  (function(){
+    function fallbackLazy(){ document.querySelectorAll('.lazy[data-src]').forEach(function(el){ el.src=el.getAttribute('data-src'); }); }
+    try {
+      if (typeof LazyLoad !== 'undefined') {
+        new LazyLoad({ elements_selector: '.lazy', threshold: 200, callback_error: function(el){ el.style.display='none'; } });
+      } else { fallbackLazy(); }
+    } catch (e) { fallbackLazy(); }
+  })();
+  </script>
+
+  <!-- Reading progress bar + scroll-top progress ring -->
+  <script>
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    var btn = document.getElementById('scroll-top');
+    var ring = document.getElementById('progress-ring');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var circumference = ring ? 2 * Math.PI * 16 : 0;
+    if (ring) ring.style.strokeDasharray = circumference;
+
+    /* Use the main content column's bottom as the scroll target instead of
+       full document height — avoids the sticky sidebar inflating scrollHeight. */
+    function getScrollTarget() {
+      var main = document.getElementById('main-content');
+      if (main) {
+        var rect = main.getBoundingClientRect();
+        return rect.bottom + window.scrollY - window.innerHeight;
+      }
+      return document.documentElement.scrollHeight - window.innerHeight;
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() {
+          var h = getScrollTarget();
+          var pct = h > 0 ? Math.min(window.scrollY / h, 1) : 0;
+          if (bar && !reducedMotion) bar.style.width = (pct * 100) + '%';
+          if (ring) ring.style.strokeDashoffset = circumference * (1 - pct);
+          if (btn) btn.classList.toggle('visible', window.scrollY > 400);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    if (btn) {
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+
+  <!-- Scroll-spy: highlight current section in sidebar TOC + topic pills (single active section = topmost in view) -->
+  <script>
+  (function() {
+    var sections = document.querySelectorAll('.section[id]');
+    var menuItems = document.querySelectorAll('.menu-item');
+    var pills = document.querySelectorAll('.topic-pill');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!sections.length) return;
+
+    var observer = new IntersectionObserver(function(entries) {
+      var intersecting = [];
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) intersecting.push(entry.target);
+      });
+      if (intersecting.length === 0) return;
+      /* Pick the topmost section in view so only one TOC item is active */
+      intersecting.sort(function(a, b) { return a.getBoundingClientRect().top - b.getBoundingClientRect().top; });
+      var activeId = intersecting[0].getAttribute('id');
+      menuItems.forEach(function(item) {
+        item.classList.toggle('active', item.getAttribute('href') === '#' + activeId);
+      });
+      pills.forEach(function(pill) {
+        var isActive = pill.getAttribute('href') === '#' + activeId;
+        pill.classList.toggle('active', isActive);
+        if (isActive) pill.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest', inline: 'center' });
+      });
+    }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+    sections.forEach(function(s) { observer.observe(s); });
+  })();
+  </script>
+
+  <!-- Keyboard navigation (j/k for stories, t for top, 1-9 for sections) -->
+  <script>
+  (function() {
+    var stories = document.querySelectorAll('.story, .lead');
+    var sections = document.querySelectorAll('.section[id]');
+    var hint = document.getElementById('kbd-hint');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var scrollBehavior = reducedMotion ? 'auto' : 'smooth';
+    var current = -1;
+    var hintShown = false;
+
+    // Make stories focusable
+    stories.forEach(function(s) { s.setAttribute('tabindex', '-1'); });
+
+    // Show keyboard hint briefly on first scroll (desktop only)
+    if (hint && window.innerWidth > 768) {
+      var scrollCount = 0;
+      var hintHandler = function() {
+        scrollCount++;
+        if (scrollCount > 2 && !hintShown) {
+          hintShown = true;
+          hint.classList.add('visible');
+          setTimeout(function() { hint.classList.remove('visible'); }, 4000);
+          window.removeEventListener('scroll', hintHandler);
+        }
+      };
+      window.addEventListener('scroll', hintHandler, { passive: true });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      var tag = e.target.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+
+      if (e.key === 'j') {
+        current = Math.min(current + 1, stories.length - 1);
+        stories[current].scrollIntoView({ behavior: scrollBehavior, block: 'center' });
+        stories[current].focus({ preventScroll: true });
+      } else if (e.key === 'k') {
+        current = Math.max(current - 1, 0);
+        stories[current].scrollIntoView({ behavior: scrollBehavior, block: 'center' });
+        stories[current].focus({ preventScroll: true });
+      } else if (e.key === 't') {
+        window.scrollTo({ top: 0, behavior: scrollBehavior });
+        current = -1;
+      } else if (e.key >= '1' && e.key <= '9') {
+        var idx = parseInt(e.key) - 1;
+        if (sections[idx]) sections[idx].scrollIntoView({ behavior: scrollBehavior, block: 'start' });
+      }
+    });
+  })();
+  </script>
+
+  <!-- Feedback/like form submit (Formspree or Formsubmit.co; optional reCAPTCHA v3 for Formspree) -->
+  <script>
+  (function() {
+    var recaptchaKey = null;
+    function getRecaptchaToken(action) {
+      return new Promise(function(resolve) {
+        if (!recaptchaKey || typeof grecaptcha === 'undefined') { resolve(''); return; }
+        try {
+          grecaptcha.ready(function() {
+            grecaptcha.execute(recaptchaKey, { action: action || 'submit' }).then(resolve).catch(function() { resolve(''); });
+          });
+        } catch (e) { resolve(''); }
+      });
+    }
+
+    /* ---- Emoji feedback form ---- */
+    var feedbackForm = document.getElementById('feedback-form');
+    if (feedbackForm) {
+      var ratingInput = document.getElementById('feedback-rating-value');
+      var submitBtn = document.getElementById('feedback-submit');
+      var emojiButtons = feedbackForm.querySelectorAll('.emoji-rating button');
+      emojiButtons.forEach(function(eb) {
+        eb.addEventListener('click', function() {
+          emojiButtons.forEach(function(b) { b.classList.remove('selected'); });
+          eb.classList.add('selected');
+          ratingInput.value = eb.getAttribute('data-value');
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+        });
+      });
+      feedbackForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (!ratingInput.value) return;
+        submitBtn.disabled = true;
+        var thanks = document.getElementById('feedback-thanks');
+        getRecaptchaToken('feedback').then(function(token) {
+          var input = document.createElement('input');
+          input.type = 'hidden'; input.name = 'g-recaptcha-response'; input.value = token;
+          feedbackForm.appendChild(input);
+          var formData = new FormData(feedbackForm);
+          fetch(feedbackForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
+            .then(function() {
+              if (thanks) { thanks.style.display = 'block'; }
+              feedbackForm.querySelectorAll('.emoji-rating, textarea, #feedback-submit').forEach(function(el) { el.style.display = 'none'; });
+            })
+            .catch(function() { submitBtn.disabled = false; });
+        });
+      });
+    }
+
+  })();
+  </script>
+
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Inference Weekly · 02 Mar 2026",
+    "description": "Leading with Trump moves to ban Anthropic from the US government, and the rest of the week&#39;s best AI signal.",
+    "datePublished": "2026-03-02",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Inference Weekly",
+      "logo": { "@type": "ImageObject", "url": "https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" }
+    },
+    "mainEntityOfPage": "https://matthewpaver.github.io/ai-weekly/latest.html",
+    "image": "https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png"
+  }
+  </script>
+</body>
+</html>

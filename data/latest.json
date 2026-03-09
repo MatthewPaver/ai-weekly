@@ -1,211 +1,498 @@
 {
-  "date": "11 Feb 2026",
-  "total_articles": 20,
-  "source_count": 25,
-  "intro": "Big moves in the AI industry this week. We combed through 25+ sources to surface what actually matters \u2014 here are the highlights.",
+  "date": "08 Mar 2026",
+  "issue_number": 3,
+  "total_articles": 13,
+  "source_count": 14,
+  "read_time_minutes": 62,
+  "brief_read_time_minutes": 5,
+  "source_read_time_minutes": 62,
+  "intro": "Google shipped a CLI that plugs OpenClaw into Workspace, Anthropic’s Pentagon fallout is chilling defense-tech founders, and a new fragility metric could change how you prune features.",
+  "theme_line": "This week: builder tools and defense-tech nerves.",
+  "pulse_board": [
+    {
+      "label": "Dominant theme",
+      "value": "Tools led coverage (5 stories)."
+    },
+    {
+      "label": "Builder pick",
+      "value": "[Google's new command-line tool can plug OpenClaw into your Workspace data](https://arstechnica.com/ai/2026/03/googles-new-command-line-tool-can-plug-openclaw-into-your-workspace-data/)"
+    },
+    {
+      "label": "Leader watch",
+      "value": "[Will the Pentagon’s Anthropic controversy scare startups away from defense work?](https://techcrunch.com/2026/03/08/will-the-pentagons-anthropic-controversy-scare-startups-away-from-defense-work/)"
+    },
+    {
+      "label": "Research watch",
+      "value": "[Beyond Accuracy: Quantifying the Production Fragility Caused by Excessive, Redundant, and Low-Signal Features in Regression](https://www.marktechpost.com/2026/03/08/beyond-accuracy-quantifying-the-production-fragility-caused-by-excessive-redundant-and-low-signal-features-in-regression/)"
+    }
+  ],
+  "issue_menu": [
+    {
+      "icon": "⭐",
+      "title": "Open-source picks",
+      "count": 2,
+      "read_time_minutes": 15,
+      "label": "⭐ Open-source picks (2)",
+      "deck": "Repos gaining traction.",
+      "promise": "What's gaining traction.",
+      "num": "01"
+    },
+    {
+      "icon": "🔬",
+      "title": "Research worth your time",
+      "count": 3,
+      "read_time_minutes": 16,
+      "label": "🔬 Research worth your time (3)",
+      "deck": "Papers with real-world impact.",
+      "promise": "Read this if you build.",
+      "num": "02"
+    },
+    {
+      "icon": "🔒",
+      "title": "Security",
+      "count": 1,
+      "read_time_minutes": 6,
+      "label": "🔒 Security (1)",
+      "deck": "Threats and fixes.",
+      "promise": "Security and compliance to act on.",
+      "num": "03"
+    },
+    {
+      "icon": "🌐",
+      "title": "What changed in industry",
+      "count": 3,
+      "read_time_minutes": 16,
+      "label": "🌐 What changed in industry (3)",
+      "deck": "Moves that matter.",
+      "promise": "What changed and why it matters.",
+      "num": "04"
+    },
+    {
+      "icon": "🛠️",
+      "title": "Tools to try",
+      "count": 2,
+      "read_time_minutes": 6,
+      "label": "🛠️ Tools to try (2)",
+      "deck": "Ship something with these.",
+      "promise": "One practical thing to ship.",
+      "num": "05"
+    }
+  ],
+  "briefing": [
+    {
+      "title": "Write C Code Without Learning C: The Magic of PythoC",
+      "url": "https://towardsdatascience.com/write-c-code-without-learning-c-the-magic-of-pythoc/",
+      "note": "PythoC lets you write C extensions in Python syntax — the tutorial walks through real examples, not just toy code.",
+      "track": "Builder"
+    }
+  ],
+  "editors_note": {
+    "headline": "This week",
+    "thesis": "The builder stack shifted this week. Google's OpenClaw CLI is the headline, but the Pentagon–Anthropic fallout could reshape which startups take defense contracts at all.",
+    "hook": "Builder-heavy week — a new CLI to test, a fragility metric worth stealing, and a defense-tech question every founder should read.",
+    "spotlight": "The lead story gives teams a new way to script Workspace integrations without the usual API slog.",
+    "underhyped": "The Pentagon–Anthropic controversy deserves more attention than it's getting — the chilling effect on defense-tech could outlast the news cycle.",
+    "risk": "Watch the Anthropic–Pentagon story — if other startups pull back from defense work, budget assumptions change fast."
+  },
+  "lead_story": {
+    "title": "Google's new command-line tool can plug OpenClaw into your Workspace data",
+    "url": "https://arstechnica.com/ai/2026/03/googles-new-command-line-tool-can-plug-openclaw-into-your-workspace-data/",
+    "source": "Ars Technica AI",
+    "track": "Builder",
+    "audience_track": "Builder",
+    "difficulty": "Intermediate",
+    "source_mark": "AT",
+    "what_happened": "OpenClaw allows users to manage and access data across various Google Workspace applications like Drive, Gmail, and Calendar through a unified command-line interface.",
+    "our_take": "It's not official, so expect some rough edges. Still, a unified CLI is a big usability win.",
+    "what_to_do": "Explore OpenClaw's features and test its integration with your existing Google Workspace scripts this month."
+  },
+  "quick_hits": [
+    {
+      "title": "Write C Code Without Learning C: The Magic of PythoC",
+      "url": "https://towardsdatascience.com/write-c-code-without-learning-c-the-magic-of-pythoc/",
+      "note": "PythoC lets you write C extensions in Python syntax — the tutorial walks through real examples, not just toy code.",
+      "track": "Builder"
+    }
+  ],
   "sections": [
     {
-      "title": "Industry & Community",
-      "icon": "\ud83c\udf10",
-      "topics": [
-        "Industry",
-        "Community"
-      ],
-      "articles": [
-        {
-          "title": "OpenAI policy exec who opposed chatbot\u2019s \u201cadult mode\u201d reportedly fired on discrimination claim",
-          "url": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
-          "source": "TechCrunch AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=techcrunch.com&sz=16",
-          "authors": "Lucas Ropek",
-          "published": "11 Feb",
-          "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024",
-          "summary": "The executive has denied the allegation that she engaged in discrimination.",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        },
-        {
-          "title": "ChatGPT\u2019s deep research tool adds a built-in document viewer so you can read its reports",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer",
-          "source": "The Verge AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.theverge.com&sz=16",
-          "authors": "Emma Roth",
-          "published": "10 Feb",
-          "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-          "summary": "OpenAI is updating ChatGPT's deep research tool with a full-screen viewer that you can use to scroll through and navigate to specific areas of its AI-generated reports. As shown in a video shared by OpenAI, the built-in viewer allows you to open ChatGPT's reports in a window separate from your chat, while showing a table [\u2026].",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        },
-        {
-          "title": "No humans allowed: This new space-based MMO is designed exclusively for AI agents",
-          "url": "https://arstechnica.com/ai/2026/02/after-moltbook-ai-agents-can-now-hang-out-in-their-own-space-faring-mmo/",
-          "source": "Ars Technica AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arstechnica.com&sz=16",
-          "authors": "Kyle Orland",
-          "published": "09 Feb",
-          "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/moltmining-1152x648.jpeg",
-          "summary": "SpaceMolt envisions a world where AI plays with itself and the humans just watch.",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        },
-        {
-          "title": "A \u201cQuitGPT\u201d campaign is urging people to cancel their ChatGPT subscriptions",
-          "url": "https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/",
-          "source": "MIT Technology Review AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.technologyreview.com&sz=16",
-          "authors": "Michelle Kim",
-          "published": "10 Feb",
-          "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/260205_chatgpt_boycott_hero.jpg?resize=1200,600",
-          "summary": "In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced models, to speed up his work. But he grew frustrated with the chatbot\u2019s coding abilities and its gushing, meandering replies. Then he came across a post on Reddit about\u2026.",
-          "difficulty": "Intermediate",
-          "topic": "Industry"
-        }
-      ]
-    },
-    {
-      "title": "Tools & Frameworks",
-      "icon": "\ud83d\udee0\ufe0f",
-      "topics": [
-        "Tools"
-      ],
-      "articles": [
-        {
-          "title": "Transformers.js v4 Preview: Now Available on NPM!",
-          "url": "https://huggingface.co/blog/transformersjs-v4",
-          "source": "Hugging Face Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=16",
-          "authors": "",
-          "published": "09 Feb",
-          "thumbnail": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
-          "summary": "Transformers.js v4 Preview: Now Available on NPM!. Published on the Hugging Face blog covering open-source ML tools and models.",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        },
-        {
-          "title": "The two patterns by which agents connect sandboxes",
-          "url": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
-          "source": "LangChain Blog",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.langchain.com&sz=16",
-          "authors": "Harrison Chase",
-          "published": "10 Feb",
-          "thumbnail": "https://blog.langchain.com/content/images/size/w1200/2026/02/Screenshot-2026-02-09-at-9.30.02---PM.png",
-          "summary": "Thank you to Nuno Campos from Witan Labs, Tomas Beran and Mikayel Harutyunyan from E2B, Jonathan Wall from Runloop, and Ben Guo from Zo Computer for their review and comments. TL;DR: More and more agents need a workspace: a computer where they can run code, install packages, and access.",
-          "difficulty": "Intermediate",
-          "topic": "Tools"
-        }
-      ]
-    },
-    {
-      "title": "Trending Repos",
-      "icon": "\u2b50",
+      "title": "Open-source picks",
+      "icon": "⭐",
+      "deck": "Repos gaining traction.",
+      "color": "0F4C5C",
+      "badge": "Open-source picks",
       "topics": [
         "Repos"
       ],
+      "tier": "builder",
+      "promise": "What's gaining traction.",
+      "read_time_minutes": 15,
       "articles": [
         {
-          "title": "awesome-ai-research-writing",
-          "url": "https://github.com/Leey21/awesome-ai-research-writing",
+          "title": "AutoGPT",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
           "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "Leey21",
-          "published": "11 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/112166430?v=4",
-          "summary": "Elevate your AI research writing, no more tedious polishing \u2728 . (5,368 stars, 416 forks) Only 12 days old with ~447 stars/day.",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
+          "source_mark": "GT",
+          "authors": "Significant-Gravitas",
+          "published": "08 Mar",
+          "thumbnail": "",
+          "summary": "Auto-GPT is an open-source Python application that uses the GPT-4 language model to autonomously achieve any goal you set. With 182k stars and 46k forks, it's a popular starting point for building autonomous agents.",
+          "what_happened": "The Auto-GPT repo gained significant traction, becoming one of the most starred AI projects on GitHub.",
+          "why_it_matters": "Auto-GPT provides a ready-to-go agent implementation, which can accelerate experimentation but may introduce vendor lock-in to OpenAI's API.",
+          "what_to_do": "Try Auto-GPT with a small, well-defined task this week to evaluate its capabilities.",
+          "our_take": "We'd look closely at the agent's planning and memory management before deploying it to production.",
+          "audience_track": "Builder",
           "difficulty": "Intermediate",
-          "topic": "Repos"
+          "topic": "Repos",
+          "external_read_minutes": 5
         },
         {
-          "title": "PaperBanana",
-          "url": "https://github.com/dwzhu-pku/PaperBanana",
+          "title": "openclaw",
+          "url": "https://github.com/openclaw/openclaw",
           "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "dwzhu-pku",
-          "published": "02 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/52273452?v=4",
-          "summary": "PaperBanana: Automating Academic Illustration For AI Scientists. (3,281 stars, 161 forks, JavaScript) Only 12 days old with ~273 stars/day.",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        },
-        {
-          "title": "antigravity-awesome-skills",
-          "url": "https://github.com/sickn33/antigravity-awesome-skills",
-          "source": "GitHub Trending (AI/ML)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=github.com&sz=16",
-          "authors": "sickn33",
-          "published": "11 Feb",
-          "thumbnail": "https://avatars.githubusercontent.com/u/184072420?v=4",
-          "summary": "The Ultimate Collection of 700+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. (8,368 stars, 1,715 forks, Python) Created 27 days ago, averaging ~310 stars/day.",
-          "difficulty": "Intermediate",
-          "topic": "Repos"
-        }
-      ]
-    },
-    {
-      "title": "Tutorials & Guides",
-      "icon": "\ud83d\udcda",
-      "topics": [
-        "Tutorials"
-      ],
-      "articles": [
-        {
-          "title": "How to build a Voice-to-Text App with Laravel AI SDK",
-          "url": "https://dev.to/maiobarbero/how-to-build-a-voice-to-text-app-with-laravel-ai-sdk-1ida",
-          "source": "Dev.to AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=dev.to&sz=16",
-          "authors": "Matteo Barbero",
-          "published": "11 Feb",
-          "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8dmhz8vbdve297ynmlyl.png",
-          "summary": "Stop Writing Boilerplate: Build a Voice-to-Text App with Laravel AI SDK If you are a PHP developer, you have likely looked at AI integration with a mix of excitement and fatigue. Excitement for the possibilities, but fatigue from WRITING THE SAME BOILERPLATE code to handle multipart requests, API keys, and error handling for OpenAI or Anthropic.",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
+          "source_mark": "GT",
+          "authors": "openclaw",
+          "published": "08 Mar",
+          "thumbnail": "",
+          "summary": "OpenClaw is a self-hosted personal AI assistant that connects to 20+ messaging platforms (WhatsApp, Telegram, Slack, Discord, Signal, iMessage) via a local Gateway control plane, with companion apps for macOS, iOS, and Android.",
+          "what_happened": "OpenClaw hit 280k stars on GitHub. It's a self-hosted AI assistant written in TypeScript that bridges 20+ messaging platforms through a local gateway, with native apps for macOS, iOS, and Android.",
+          "why_it_matters": "A self-hosted assistant that spans every major messaging app could replace several point integrations — if it's stable enough for production use.",
+          "what_to_do": "Spin up the local gateway and test it against one messaging platform before committing to a broader rollout.",
+          "our_take": "280k stars is hard to ignore, but check how active the maintainers are and whether the platform connectors you need are production-grade.",
+          "audience_track": "Builder",
           "difficulty": "Beginner",
-          "topic": "Tutorials"
-        },
-        {
-          "title": "NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving",
-          "url": "https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/",
-          "source": "MarkTechPost",
-          "source_icon": "https://www.google.com/s2/favicons?domain=www.marktechpost.com&sz=16",
-          "authors": "Asif Razzaq",
-          "published": "11 Feb",
-          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-1-10.png",
-          "summary": "Serving Large Language Models (LLMs) at scale is a massive engineering challenge because of Key-Value (KV) cache management. As models grow in size and reasoning capability, the KV cache footprint increases and becomes a major bottleneck for throughput and latency. For modern Transformers, this cache can occupy multiple gigabytes.",
-          "difficulty": "Intermediate",
-          "topic": "Tutorials"
+          "topic": "Repos",
+          "external_read_minutes": 10
         }
       ]
     },
     {
-      "title": "Research & Papers",
-      "icon": "\ud83d\udd2c",
+      "title": "Research worth your time",
+      "icon": "🔬",
+      "deck": "Papers with real-world impact.",
+      "color": "0F4C5C",
+      "badge": "Research worth your time",
       "topics": [
         "Research",
         "Models"
       ],
+      "tier": "leader",
+      "promise": "Read this if you build.",
+      "read_time_minutes": 16,
       "articles": [
         {
-          "title": "A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation",
-          "url": "https://arxiv.org/abs/2602.09112",
-          "source": "arXiv CS.AI",
-          "source_icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=16",
-          "authors": "Russ Webb, Jason Ramapuram",
-          "published": "11 Feb",
-          "thumbnail": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
-          "summary": "What research can be pursued with small models trained to complete true programs?",
+          "title": "LWiAI Podcast #235 - Sonnet 4.6, Deep-thinking tokens, Anthropic vs Pentagon",
+          "url": "https://lastweekin.ai/p/lwiai-podcast-235-sonnet-46-deep",
+          "source": "Last Week in AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/lastweekin.ai.png",
+          "source_mark": "LW",
+          "authors": "Last Week in AI",
+          "published": "05 Mar",
+          "thumbnail": "https://substackcdn.com/image/youtube/w_728,c_limit/c1btnWzQnYc",
+          "summary": "Anthropic released Sonnet 4.6, a faster and cheaper model than Claude 3 Opus, while Google launched Gemini 1.5 Pro. Anthropic CEO Dario Amodei stated that threats from the Pentagon won't change their AI stance.",
+          "what_happened": "Sonnet 4.6 doubles the speed and halves the price of its predecessor, Claude 3 Opus, and is available in the API.",
+          "why_it_matters": "Faster, cheaper models will accelerate experimentation, potentially shifting budgets toward more frequent fine-tuning runs.",
+          "what_to_do": "Test Sonnet 4.6 against your current model this week to compare cost and latency.",
+          "our_take": "We're keen to see if the speedup costs accuracy on complex tasks.",
+          "audience_track": "Builder",
           "difficulty": "Intermediate",
-          "topic": "Research"
+          "topic": "Models",
+          "external_read_minutes": 3
         },
         {
-          "title": "A timeline of claims about AI/LLMs",
-          "url": "https://blog.nethuml.xyz/posts/2026/02/timeline-of-claims-about-ai-llms/",
-          "source": "Hacker News (AI)",
-          "source_icon": "https://www.google.com/s2/favicons?domain=blog.nethuml.xyz&sz=16",
-          "authors": "",
-          "published": "08 Feb",
-          "thumbnail": "",
-          "summary": "A timeline of claims about AI/LLMs. Published by Hacker News (AI).",
+          "title": "Beyond Accuracy: Quantifying the Production Fragility Caused by Excessive, Redundant, and Low-Signal Features in Regression",
+          "url": "https://www.marktechpost.com/2026/03/08/beyond-accuracy-quantifying-the-production-fragility-caused-by-excessive-redundant-and-low-signal-features-in-regression/",
+          "source": "MarkTechPost",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/marktechpost.com.png",
+          "source_mark": "MA",
+          "authors": "Arham Islam",
+          "published": "08 Mar",
+          "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/03/blog-banner23-28-1024x731.png",
+          "summary": "A new study quantifies how adding features to regression models can increase production fragility, even if accuracy improves. The research introduces a metric, fragility score, to measure the risk associated with each feature based on its redundancy and signal strength. High fragility scores indicate features.",
+          "what_happened": "The study found that models with many features are more vulnerable to data pipeline failures and external system dependencies, leading to increased maintenance overhead.",
+          "why_it_matters": "This research could change how teams prioritize feature selection, pushing them to focus on fewer, higher-signal features to reduce operational risk and model maintenance costs.",
+          "what_to_do": "Calculate fragility scores for your regression features this quarter to identify and prune high-risk dependencies.",
+          "our_take": "It's a good reminder that accuracy isn't everything — we'd love to see this applied to classification problems too.",
+          "audience_track": "Researcher",
+          "difficulty": "Advanced",
+          "topic": "Research",
+          "external_read_minutes": 9
+        },
+        {
+          "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
+          "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/",
+          "source": "Google AI Blog",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/blog.google.png",
+          "source_mark": "GA",
+          "authors": "Tanya Birch, Dan Morris",
+          "published": "06 Mar",
+          "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/speciessocial.width-1300.png",
+          "summary": "Google's open-source SpeciesNet AI model helps conservationists analyse motion-triggered camera images of wildlife. SpeciesNet reduces the time needed to turn snapshots into actionable data, which is normally a very time-consuming task.",
+          "what_happened": "SpeciesNet uses a semi-supervised learning approach, pre-trained on a large dataset of labeled images and then fine-tuned with a smaller set of expert-labeled images.",
+          "why_it_matters": "Faster analysis of wildlife images can accelerate conservation efforts and improve the accuracy of population monitoring, potentially influencing policy decisions.",
+          "what_to_do": "Explore the SpeciesNet model and contribute to the project on GitHub this quarter.",
+          "our_take": "We'd want to see independent validation of its accuracy before relying on it for critical conservation decisions.",
+          "audience_track": "Researcher",
           "difficulty": "Intermediate",
-          "topic": "Models"
+          "topic": "Models",
+          "external_read_minutes": 4
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "icon": "🔒",
+      "deck": "Threats and fixes.",
+      "color": "0F4C5C",
+      "badge": "Security",
+      "topics": [
+        "Security"
+      ],
+      "tier": "builder",
+      "promise": "Security and compliance to act on.",
+      "read_time_minutes": 6,
+      "articles": [
+        {
+          "title": "This Jammer Wants to Block Always-Listening AI Wearables. It Probably Won’t Work",
+          "url": "https://www.wired.com/story/deveillance-spectre-i/",
+          "source": "Wired AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/wired.com.png",
+          "source_mark": "WA",
+          "authors": "Boone Ashworth",
+          "published": "06 Mar",
+          "thumbnail": "https://media.wired.com/photos/69a9ed524d78fe1b285c59c4/191:100/w_1280,c_limit/Gear_Spectre_2.jpg",
+          "summary": "Deveillances creator acknowledges the difficulty of jamming effectively across diverse environments and devices.",
+          "what_happened": "Spectre I attempts to counter ambient AI surveillance by emitting disruptive signals, but its effectiveness is limited by the power needed to overcome diverse device microphones in varying environments.",
+          "why_it_matters": "Practical limitations of hardware jammers highlight that privacy protection against AI wearables will likely need policy and legal solutions, not just counter-tech.",
+          "what_to_do": "Research existing legal frameworks for audio and video recording in public spaces this quarter.",
+          "our_take": "This feels like security theater. We'd rather see effort put into open-source, auditable AI implementations.",
+          "audience_track": "Leader",
+          "difficulty": "Beginner",
+          "topic": "Security",
+          "external_read_minutes": 6
+        }
+      ]
+    },
+    {
+      "title": "What changed in industry",
+      "icon": "🌐",
+      "deck": "Moves that matter.",
+      "color": "0F4C5C",
+      "badge": "What changed in industry",
+      "topics": [
+        "Industry",
+        "Community"
+      ],
+      "tier": "leader",
+      "promise": "What changed and why it matters.",
+      "read_time_minutes": 16,
+      "articles": [
+        {
+          "title": "Will the Pentagon’s Anthropic controversy scare startups away from defense work?",
+          "url": "https://techcrunch.com/2026/03/08/will-the-pentagons-anthropic-controversy-scare-startups-away-from-defense-work/",
+          "source": "TechCrunch AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/techcrunch.com.png",
+          "source_mark": "TA",
+          "authors": "Anthony Ha",
+          "published": "08 Mar",
+          "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-1461207630.jpg?resize=1200,857",
+          "summary": "A TechCrunch podcast discussed whether the Pentagon's issues with Anthropic will deter startups from defense contracts. The podcast speculates that increased scrutiny and potential political fallout may make defense work less attractive despite the lucrative opportunities.",
+          "what_happened": "The Equity podcast on TechCrunch explored the potential chilling effect of the Pentagon's Anthropic controversy on startups considering government contracts.",
+          "why_it_matters": "Startups might deprioritize defense contracts, impacting the talent pool and innovation available to national security initiatives.",
+          "what_to_do": "If you're a founder, weigh the ethical and PR risks against the financial rewards before your next board meeting.",
+          "our_take": "We think the controversy is overblown; founders should look closely at the actual contract terms and compliance costs.",
+          "audience_track": "Leader",
+          "difficulty": "Beginner",
+          "topic": "Industry",
+          "external_read_minutes": 5
+        },
+        {
+          "title": "How Balyasny Asset Management built an AI research engine for investing",
+          "url": "https://openai.com/index/balyasny-asset-management",
+          "source": "OpenAI Blog",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/openai.com.png",
+          "source_mark": "OB",
+          "authors": "",
+          "published": "06 Mar",
+          "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/382VlVZkaBExAEgbStv48/c153600f543d4c65cf209cfdf83ca854/oai_Balyasny_SEO.png?w=1600&h=900&fit=fill",
+          "summary": "Balyasny Asset Management created an AI research engine using GPT models and agent workflows to improve investment analysis. Their system uses rigorous model evaluation to ensure quality and reliability in financial decision-making.",
+          "what_happened": "Balyasny built an AI research engine using GPT models, custom evaluations, and agent workflows to analyse investments at scale.",
+          "why_it_matters": "AI-driven investment analysis could change the speed and scale at which firms make decisions, potentially impacting market efficiency and returns.",
+          "what_to_do": "Audit your firm's AI research capabilities against those highlighted in the article by end of Q3.",
+          "our_take": "We're curious how this compares to traditional quant strategies in terms of risk-adjusted returns; show us the Sharpe ratio.",
+          "audience_track": "Leader",
+          "difficulty": "Intermediate",
+          "topic": "Industry",
+          "external_read_minutes": 4
+        },
+        {
+          "title": "Online harassment is entering its AI era",
+          "url": "https://www.technologyreview.com/2026/03/05/1133962/online-harassment-is-entering-its-ai-era/",
+          "source": "MIT Technology Review AI",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/technologyreview.com.png",
+          "source_mark": "MT",
+          "authors": "Grace Huckins",
+          "published": "05 Mar",
+          "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/ai-hitpiece.jpg?resize=1200,600",
+          "summary": "MIT Technology Review reports on how generative AI is being weaponised for online harassment — deepfakes, synthetic voice cloning, and AI-generated abuse at scale are outpacing platform moderation.",
+          "what_happened": "Generative AI tools are making online harassment cheaper and more scalable — deepfake images, cloned voices, and automated abuse campaigns now require minimal technical skill to deploy.",
+          "why_it_matters": "Platform teams building moderation systems need to account for AI-generated content that's harder to detect and easier to mass-produce than traditional abuse.",
+          "what_to_do": "Review your content moderation stack for AI-generated media detection gaps this quarter.",
+          "our_take": "The tooling gap between creating and detecting synthetic abuse is widening fast. Moderation teams that haven't updated their pipelines for generative content are already behind.",
+          "audience_track": "Leader",
+          "difficulty": "Beginner",
+          "topic": "Industry",
+          "external_read_minutes": 7
+        }
+      ]
+    },
+    {
+      "title": "Tools to try",
+      "icon": "🛠️",
+      "deck": "Ship something with these.",
+      "color": "0F4C5C",
+      "badge": "Tools to try",
+      "topics": [
+        "Tools"
+      ],
+      "tier": "builder",
+      "promise": "One practical thing to ship.",
+      "read_time_minutes": 6,
+      "articles": [
+        {
+          "title": "Google BigQuery Previews Cross-Region SQL Queries for Distributed Data",
+          "url": "https://www.infoq.com/news/2026/03/google-bigquery-cross-region-sql/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "source": "InfoQ",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/infoq.com.png",
+          "source_mark": "IN",
+          "authors": "Renato Losio",
+          "published": "08 Mar",
+          "thumbnail": "",
+          "summary": "Google BigQuery's new global queries feature, now in preview, allows SQL queries across different geographic regions without needing to move or copy data first. This simplifies data aggregation for distributed datasets.",
+          "what_happened": "Google Cloud's BigQuery now supports running SQL queries across datasets stored in different geographic regions, directly.",
+          "why_it_matters": "This reduces the complexity and cost of analysing geographically distributed data, potentially impacting your data warehousing budget.",
+          "what_to_do": "Test cross-region queries on a representative dataset within the next month to estimate cost savings.",
+          "our_take": "It's about time. We'd like to see performance benchmarks on common query patterns before migrating.",
+          "audience_track": "Builder",
+          "difficulty": "Intermediate",
+          "topic": "Tools",
+          "external_read_minutes": 3
+        },
+        {
+          "title": "system-prompts-and-models-of-ai-tools",
+          "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+          "source": "GitHub Trending (AI/ML)",
+          "source_icon": "https://matthewpaver.github.io/ai-weekly/favicons/github.com.png",
+          "source_mark": "GT",
+          "authors": "x1xhlol",
+          "published": "08 Mar",
+          "thumbnail": "",
+          "summary": "A GitHub repo aggregates system prompts, internal tools, and AI models used in 28 different AI coding tools, including Cursor and Replit. The collection has amassed nearly 130k stars and 33k forks.",
+          "what_happened": "The GitHub repo includes system prompts for tools like Claude Code and Perplexity, offering insight into their design.",
+          "why_it_matters": "Peeking at successful prompts can inform prompt engineering and model selection, potentially saving weeks of experimentation.",
+          "what_to_do": "Browse the prompts for inspiration this week.",
+          "our_take": "It's a grab bag, but start with the prompts from tools most similar to your use case.",
+          "audience_track": "Builder",
+          "difficulty": "Beginner",
+          "topic": "Tools",
+          "external_read_minutes": 3
         }
       ]
     }
-  ]
+  ],
+  "personalisation_categories": [
+    {
+      "id": "construction",
+      "label": "Construction & built environment",
+      "description": "AI in construction, proptech, and built environment",
+      "tier": "premium"
+    },
+    {
+      "id": "medical",
+      "label": "Medical & healthcare",
+      "description": "AI in healthcare, clinical applications, and medical research",
+      "tier": "premium"
+    },
+    {
+      "id": "legal",
+      "label": "Legal & compliance",
+      "description": "AI in law, regulation, and compliance",
+      "tier": "premium"
+    },
+    {
+      "id": "finance",
+      "label": "Finance & fintech",
+      "description": "AI in finance, trading, and fintech",
+      "tier": "premium"
+    },
+    {
+      "id": "education",
+      "label": "Education & learning",
+      "description": "AI in education, learning tools, free course recommendations, and education in the news (expand over time)",
+      "tier": "builder"
+    },
+    {
+      "id": "general",
+      "label": "General AI news",
+      "description": "Broad AI news and industry (default)",
+      "tier": "free"
+    }
+  ],
+  "categories_for_tier": [
+    {
+      "id": "construction",
+      "label": "Construction & built environment",
+      "description": "AI in construction, proptech, and built environment",
+      "tier": "premium"
+    },
+    {
+      "id": "medical",
+      "label": "Medical & healthcare",
+      "description": "AI in healthcare, clinical applications, and medical research",
+      "tier": "premium"
+    },
+    {
+      "id": "legal",
+      "label": "Legal & compliance",
+      "description": "AI in law, regulation, and compliance",
+      "tier": "premium"
+    },
+    {
+      "id": "finance",
+      "label": "Finance & fintech",
+      "description": "AI in finance, trading, and fintech",
+      "tier": "premium"
+    },
+    {
+      "id": "education",
+      "label": "Education & learning",
+      "description": "AI in education, learning tools, free course recommendations, and education in the news (expand over time)",
+      "tier": "builder"
+    },
+    {
+      "id": "general",
+      "label": "General AI news",
+      "description": "Broad AI news and industry (default)",
+      "tier": "free"
+    }
+  ],
+  "category_selection_available": true,
+  "learn_this_week": {
+    "title": "Hugging Face NLP Course",
+    "url": "https://huggingface.co/learn/nlp-course",
+    "provider": "Hugging Face",
+    "level": "Intermediate",
+    "free": true,
+    "duration": "Self-paced",
+    "note": "Hands-on transformers course with the HF ecosystem. Build real NLP pipelines."
+  },
+  "prompt_of_the_week": {
+    "text": "I'm building a [type] application. List the top 5 security risks specific to this architecture and how to mitigate each one.",
+    "context": "Security",
+    "tool": "Claude / ChatGPT",
+    "why": "Generic security checklists miss architecture-specific threats. Specifying your app type (RAG pipeline, API gateway, agent framework) yields targeted risks that generic OWASP lists won't surface.",
+    "tip": "Be specific about your stack (e.g., 'RAG app with vector DB and public API')."
+  }
 }

@@ -1,1000 +1,713 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inference — The Signal in the Noise</title>
-    <meta name="description" content="Your weekly briefing on AI trends, tools, and research. Curated from 25+ sources and published every Monday.">
-    <meta property="og:title" content="Inference — AI Newsletter">
-    <meta property="og:description" content="The signal in the noise. Curated AI trends, tools, and research.">
-    <meta property="og:type" content="website">
-    <link rel="alternate" type="application/rss+xml" title="Inference RSS" href="feed.xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-            --radius: 14px;
-            --radius-sm: 10px;
-            --radius-pill: 100px;
-            --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            --max-w: 860px;
-            --beginner: #10b981;
-            --intermediate: #f59e0b;
-            --advanced: #ef4444;
-        }
-
-        /* ─── Light ─── */
-        [data-theme="light"] {
-            --accent: #6366f1;
-            --accent-2: #a855f7;
-            --accent-3: #ec4899;
-            --accent-soft: rgba(99,102,241,0.06);
-            --accent-hover: rgba(99,102,241,0.10);
-            --accent-border: rgba(99,102,241,0.18);
-            --bg: #f8f9fc;
-            --bg-2: #ffffff;
-            --surface: #ffffff;
-            --surface-raised: #ffffff;
-            --surface-hover: #f5f3ff;
-            --border: #e5e7eb;
-            --border-subtle: #f0f0f5;
-            --text: #0f172a;
-            --text-2: #475569;
-            --text-3: #94a3b8;
-            --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.03);
-            --shadow-card-hover: 0 8px 24px rgba(99,102,241,0.08), 0 0 0 1px rgba(99,102,241,0.1);
-            --shadow-float: 0 12px 40px rgba(0,0,0,0.08);
-            --filter-bg: rgba(248,249,252,0.85);
-            --mesh-1: rgba(99,102,241,0.07);
-            --mesh-2: rgba(168,85,247,0.05);
-            --mesh-3: rgba(236,72,153,0.04);
-            --mesh-4: rgba(59,130,246,0.04);
-            --diff-beginner-bg: rgba(16,185,129,0.08);
-            --diff-beginner-border: rgba(16,185,129,0.20);
-            --diff-intermediate-bg: rgba(245,158,11,0.08);
-            --diff-intermediate-border: rgba(245,158,11,0.20);
-            --diff-advanced-bg: rgba(239,68,68,0.08);
-            --diff-advanced-border: rgba(239,68,68,0.20);
-        }
-
-        /* ─── Dark ─── */
-        [data-theme="dark"] {
-            --accent: #818cf8;
-            --accent-2: #c084fc;
-            --accent-3: #f472b6;
-            --accent-soft: rgba(129,140,248,0.08);
-            --accent-hover: rgba(129,140,248,0.12);
-            --accent-border: rgba(129,140,248,0.20);
-            --bg: #0b0d14;
-            --bg-2: #10121c;
-            --surface: #151824;
-            --surface-raised: #1a1d2e;
-            --surface-hover: #1f2340;
-            --border: #252a3a;
-            --border-subtle: #1e2132;
-            --text: #f1f5f9;
-            --text-2: #94a3b8;
-            --text-3: #64748b;
-            --shadow-card: 0 1px 3px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.03);
-            --shadow-card-hover: 0 8px 24px rgba(129,140,248,0.1), 0 0 0 1px rgba(129,140,248,0.15);
-            --shadow-float: 0 12px 40px rgba(0,0,0,0.4);
-            --filter-bg: rgba(11,13,20,0.88);
-            --mesh-1: rgba(129,140,248,0.06);
-            --mesh-2: rgba(192,132,252,0.04);
-            --mesh-3: rgba(244,114,182,0.03);
-            --mesh-4: rgba(96,165,250,0.03);
-            --beginner: #34d399;
-            --intermediate: #fbbf24;
-            --advanced: #f87171;
-            --diff-beginner-bg: rgba(52,211,153,0.10);
-            --diff-beginner-border: rgba(52,211,153,0.22);
-            --diff-intermediate-bg: rgba(251,191,36,0.10);
-            --diff-intermediate-border: rgba(251,191,36,0.22);
-            --diff-advanced-bg: rgba(248,113,113,0.10);
-            --diff-advanced-border: rgba(248,113,113,0.22);
-        }
-
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: var(--font-sans);
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        a { color: inherit; text-decoration: none; }
-
-        /* ─── Accent bar ─── */
-        .accent-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3), var(--accent));
-            background-size: 200% 100%;
-            animation: gradientSlide 8s ease infinite;
-            z-index: 300;
-        }
-
-        @keyframes gradientSlide {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* ─── Gradient mesh background ─── */
-        .bg-mesh {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
-
-        .bg-mesh::before {
-            content: '';
-            position: absolute;
-            top: -20%;
-            left: -10%;
-            width: 60%;
-            height: 60%;
-            background: radial-gradient(ellipse at center, var(--mesh-1) 0%, transparent 70%);
-        }
-
-        .bg-mesh::after {
-            content: '';
-            position: absolute;
-            top: 10%;
-            right: -15%;
-            width: 50%;
-            height: 50%;
-            background: radial-gradient(ellipse at center, var(--mesh-2) 0%, transparent 70%);
-        }
-
-        .bg-mesh-2 {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
-
-        .bg-mesh-2::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 20%;
-            width: 50%;
-            height: 40%;
-            background: radial-gradient(ellipse at center, var(--mesh-3) 0%, transparent 70%);
-        }
-
-        .bg-mesh-2::after {
-            content: '';
-            position: absolute;
-            top: 40%;
-            left: -5%;
-            width: 40%;
-            height: 40%;
-            background: radial-gradient(ellipse at center, var(--mesh-4) 0%, transparent 70%);
-        }
-
-        /* Subtle dot grid in dark mode */
-        [data-theme="dark"] .bg-dots {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
-            background-size: 32px 32px;
-            mask-image: radial-gradient(ellipse 80% 50% at 50% 30%, black 20%, transparent 80%);
-        }
-
-        /* ─── Theme toggle ─── */
-        .theme-toggle {
-            position: fixed;
-            top: 14px;
-            right: 16px;
-            z-index: 200;
-            width: 38px;
-            height: 38px;
-            border-radius: var(--radius-sm);
-            border: 1px solid var(--border);
-            background: var(--surface);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            color: var(--text-2);
-            box-shadow: var(--shadow-card);
-            transition: all var(--transition);
-        }
-
-        .theme-toggle:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            box-shadow: var(--shadow-card-hover);
-            transform: translateY(-1px);
-        }
-
-        .theme-toggle .icon-sun,
-        .theme-toggle .icon-moon { display: none; }
-        [data-theme="light"] .theme-toggle .icon-moon { display: block; }
-        [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
-
-        /* ─── Hero ─── */
-        .hero {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            padding: 72px 20px 40px;
-            animation: fadeInUp 0.5s ease-out;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 5px 14px;
-            background: var(--accent-soft);
-            border: 1px solid var(--accent-border);
-            border-radius: var(--radius-pill);
-            font-size: 0.68rem;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 24px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .hero-badge .pulse {
-            width: 6px;
-            height: 6px;
-            background: var(--accent);
-            border-radius: 50%;
-            animation: pulse 2.5s infinite;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.6rem, 6vw, 4.2rem);
-            font-weight: 800;
-            letter-spacing: -0.05em;
-            line-height: 1.05;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 50%, var(--accent-3) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 8px;
-        }
-
-        .hero .tagline {
-            font-size: 1.05rem;
-            font-weight: 500;
-            color: var(--text-2);
-            margin-bottom: 8px;
-            font-style: italic;
-        }
-
-        .hero p {
-            font-size: 0.88rem;
-            color: var(--text-3);
-            max-width: 420px;
-            margin: 0 auto 32px;
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 48px;
-        }
-
-        .stat-value {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--accent);
-            font-family: var(--font-mono);
-        }
-
-        .stat-label {
-            font-size: 0.68rem;
-            color: var(--text-3);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 500;
-        }
-
-        /* ─── Filter bar ─── */
-        .filter-bar {
-            position: sticky;
-            top: 3px;
-            z-index: 100;
-            background: var(--filter-bg);
-            backdrop-filter: blur(24px) saturate(1.4);
-            -webkit-backdrop-filter: blur(24px) saturate(1.4);
-            border-bottom: 1px solid var(--border-subtle);
-            padding: 10px 20px;
-        }
-
-        .filter-inner {
-            max-width: var(--max-w);
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
-
-        .filter-group {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            flex-wrap: wrap;
-        }
-
-        .filter-label {
-            font-size: 0.62rem;
-            font-weight: 700;
-            color: var(--text-3);
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            margin-right: 3px;
-            white-space: nowrap;
-        }
-
-        .filter-sep {
-            width: 1px;
-            height: 22px;
-            background: var(--border);
-            margin: 0 10px;
-            flex-shrink: 0;
-        }
-
-        .filter-btn {
-            padding: 5px 14px;
-            border: 1px solid var(--border);
-            border-radius: var(--radius-sm);
-            background: transparent;
-            color: var(--text-3);
-            font-family: var(--font-sans);
-            font-size: 0.74rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all var(--transition);
-            white-space: nowrap;
-        }
-
-        .filter-btn:hover {
-            background: var(--accent-soft);
-            border-color: var(--accent-border);
-            color: var(--accent);
-        }
-
-        .filter-btn.active {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: #fff;
-            font-weight: 600;
-            box-shadow: 0 2px 8px rgba(99,102,241,0.25);
-        }
-
-        .filter-btn[data-diff="Beginner"].active {
-            background: var(--beginner);
-            border-color: var(--beginner);
-            box-shadow: 0 2px 8px rgba(16,185,129,0.25);
-        }
-        .filter-btn[data-diff="Beginner"]:hover:not(.active) {
-            border-color: var(--beginner); color: var(--beginner); background: var(--diff-beginner-bg);
-        }
-
-        .filter-btn[data-diff="Intermediate"].active {
-            background: var(--intermediate);
-            border-color: var(--intermediate);
-            box-shadow: 0 2px 8px rgba(245,158,11,0.25);
-        }
-        .filter-btn[data-diff="Intermediate"]:hover:not(.active) {
-            border-color: var(--intermediate); color: var(--intermediate); background: var(--diff-intermediate-bg);
-        }
-
-        .filter-btn[data-diff="Advanced"].active {
-            background: var(--advanced);
-            border-color: var(--advanced);
-            box-shadow: 0 2px 8px rgba(239,68,68,0.25);
-        }
-        .filter-btn[data-diff="Advanced"]:hover:not(.active) {
-            border-color: var(--advanced); color: var(--advanced); background: var(--diff-advanced-bg);
-        }
-
-        /* ─── Editorial intro ─── */
-        .editorial-intro {
-            max-width: var(--max-w);
-            margin: 0 auto;
-            padding: 24px 20px 0;
-            position: relative;
-            z-index: 1;
-        }
-
-        .editorial-box {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            padding: 16px 20px;
-            background: var(--surface);
-            border: 1px solid var(--accent-border);
-            border-left: 3px solid var(--accent);
-            border-radius: var(--radius-sm);
-            font-size: 0.86rem;
-            color: var(--text-2);
-            line-height: 1.65;
-            box-shadow: var(--shadow-card);
-        }
-
-        .editorial-icon {
-            font-size: 1.05rem;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        /* ─── Content ─── */
-        .content {
-            position: relative;
-            z-index: 1;
-            max-width: var(--max-w);
-            margin: 0 auto;
-            padding: 0 20px 60px;
-        }
-
-        .issue-date {
-            text-align: center;
-            padding: 28px 0 12px;
-            font-size: 0.8rem;
-            color: var(--text-3);
-        }
-
-        .issue-date strong { color: var(--text); }
-
-        /* ─── Section ─── */
-        .section {
-            margin-bottom: 32px;
-            animation: fadeInUp 0.5s ease-out both;
-        }
-
-        .section:nth-child(2) { animation-delay: 0.05s; }
-        .section:nth-child(3) { animation-delay: 0.1s; }
-        .section:nth-child(4) { animation-delay: 0.15s; }
-        .section:nth-child(5) { animation-delay: 0.2s; }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-
-        .section-icon { font-size: 1.1rem; }
-
-        .section-title {
-            font-size: 0.95rem;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-        }
-
-        .section-count {
-            margin-left: auto;
-            font-size: 0.65rem;
-            color: #fff;
-            background: var(--accent);
-            padding: 2px 9px;
-            border-radius: var(--radius-pill);
-            font-family: var(--font-mono);
-            font-weight: 600;
-            min-width: 20px;
-            text-align: center;
-        }
-
-        /* ─── Article card ─── */
-        .article {
-            display: flex;
-            gap: 14px;
-            padding: 14px 16px;
-            margin-bottom: 6px;
-            border-radius: var(--radius);
-            background: var(--surface-raised);
-            border: 1px solid var(--border-subtle);
-            box-shadow: var(--shadow-card);
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-        }
-
-        .article:hover {
-            background: var(--surface-hover);
-            border-color: var(--accent-border);
-            box-shadow: var(--shadow-card-hover);
-            transform: translateY(-2px);
-        }
-
-        .article-thumb {
-            flex-shrink: 0;
-            width: 80px;
-            height: 60px;
-            border-radius: 8px;
-            overflow: hidden;
-            background: var(--bg);
-        }
-
-        .article-thumb img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .article:hover .article-thumb img {
-            transform: scale(1.05);
-        }
-
-        .article-body {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .article-title {
-            font-size: 0.88rem;
-            font-weight: 600;
-            margin-bottom: 4px;
-            line-height: 1.4;
-        }
-
-        .article-title a {
-            color: var(--text);
-            text-decoration: none;
-            transition: color var(--transition);
-        }
-
-        .article-title a:hover { color: var(--accent); }
-
-        .article-meta {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.72rem;
-            color: var(--text-3);
-            margin-bottom: 5px;
-            flex-wrap: wrap;
-        }
-
-        .article-meta img {
-            width: 14px;
-            height: 14px;
-            border-radius: 3px;
-        }
-
-        .meta-dot {
-            width: 3px;
-            height: 3px;
-            background: var(--text-3);
-            border-radius: 50%;
-            opacity: 0.4;
-        }
-
-        .article-diff {
-            font-family: var(--font-mono);
-            font-size: 0.6rem;
-            padding: 2px 7px;
-            border-radius: 5px;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-        }
-
-        .article-diff.Beginner { background: var(--diff-beginner-bg); color: var(--beginner); border: 1px solid var(--diff-beginner-border); }
-        .article-diff.Intermediate { background: var(--diff-intermediate-bg); color: var(--intermediate); border: 1px solid var(--diff-intermediate-border); }
-        .article-diff.Advanced { background: var(--diff-advanced-bg); color: var(--advanced); border: 1px solid var(--diff-advanced-border); }
-
-        .article-summary {
-            font-size: 0.78rem;
-            color: var(--text-2);
-            line-height: 1.55;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        /* ─── Subscribe CTA ─── */
-        .subscribe-cta {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 36px;
-            text-align: center;
-            margin: 48px 0;
-            box-shadow: var(--shadow-card);
-        }
-
-        .subscribe-cta h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin-bottom: 6px;
-        }
-
-        .subscribe-cta p {
-            color: var(--text-2);
-            margin-bottom: 20px;
-            font-size: 0.86rem;
-        }
-
-        .subscribe-actions {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 10px 22px;
-            border-radius: var(--radius-sm);
-            font-family: var(--font-sans);
-            font-size: 0.84rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all var(--transition);
-            text-decoration: none;
-            border: none;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent), var(--accent-2));
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(99,102,241,0.3);
-        }
-
-        .btn-secondary {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            color: var(--text-2);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-
-        /* ─── Footer ─── */
-        .footer {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            padding: 32px 20px;
-            border-top: 1px solid var(--border-subtle);
-            color: var(--text-3);
-            font-size: 0.78rem;
-        }
-
-        .footer a { color: var(--accent); }
-        .footer a:hover { opacity: 0.7; }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            margin-top: 8px;
-        }
-
-        /* ─── Loading ─── */
-        .empty-state { text-align: center; padding: 60px 20px; color: var(--text-3); }
-        .empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
-
-        .skeleton {
-            background: linear-gradient(90deg, var(--bg) 25%, var(--surface-hover) 50%, var(--bg) 75%);
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
-            border-radius: 8px;
-        }
-
-        @keyframes shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
-
-        .skeleton-card { display: flex; gap: 14px; padding: 14px 16px; margin-bottom: 6px; background: var(--surface-raised); border-radius: var(--radius); border: 1px solid var(--border-subtle); }
-        .skeleton-thumb { width: 80px; height: 60px; flex-shrink: 0; }
-        .skeleton-body { flex: 1; display: flex; flex-direction: column; gap: 8px; }
-        .skeleton-title { height: 16px; width: 75%; }
-        .skeleton-meta { height: 12px; width: 45%; }
-        .skeleton-text { height: 12px; width: 90%; }
-
-        .no-results { text-align: center; padding: 48px 20px; color: var(--text-3); display: none; }
-        .no-results.visible { display: block; }
-
-        /* ─── Animations ─── */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(12px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.3; transform: scale(1.6); }
-        }
-
-        /* ─── Responsive ─── */
-        @media (max-width: 640px) {
-            .hero { padding: 56px 16px 28px; }
-            .hero-stats { gap: 28px; }
-            .article { flex-direction: column; }
-            .article-thumb { width: 100%; height: 160px; }
-            .filter-bar { padding: 8px 12px; }
-            .filter-inner { gap: 4px; }
-            .filter-btn { font-size: 0.7rem; padding: 4px 10px; }
-            .filter-sep { margin: 0 5px; height: 18px; }
-            .filter-label { font-size: 0.58rem; }
-            .theme-toggle { top: 12px; right: 12px; width: 34px; height: 34px; font-size: 0.95rem; }
-        }
-
-        .hidden { display: none !important; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FAFAF9" id="meta-theme-color" />
+  <meta name="description" content="Inference Weekly: archive of 3 AI newsletter issues for builders, leaders, and researchers." />
+  <title>Inference Weekly: Archive</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Inference Weekly: Archive" />
+  <meta property="og:description" content="Browse 3 issues of weekly AI coverage." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/" />
+  <meta property="og:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Inference Weekly: Archive" />
+  <meta name="twitter:description" content="Browse 3 issues of weekly AI coverage." />
+  <meta name="twitter:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://matthewpaver.github.io/ai-weekly/" />
+  <link rel="alternate" type="application/rss+xml" title="Inference Weekly" href="https://matthewpaver.github.io/ai-weekly/feed.xml" />
+  <link rel="icon" type="image/png" href="https://matthewpaver.github.io/ai-weekly/assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function(){ try { if (localStorage.getItem('inference-theme') === 'dark') document.documentElement.classList.add('theme-dark'); } catch(e) {} })();
+  </script>
+  <style>
+    /* Strong contrast (WCAG AA). Design ref: docs/DESIGN_REFERENCE.md. */
+    :root {
+      --bg: #FAFAF9;
+      --surface: #ffffff;
+      --surface-2: #E5E7EB;
+      --text: #0F172A;
+      --muted: #1F2937;
+      --line: #5B6370;
+      --brand: #0F766E;
+      --brand-2: #0F4C5C;
+      --brand-3: #B45309;
+      --link: #0B5345;
+      --link-hover: #0D6B5C;
+      --focus: #B45309;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    html.theme-dark {
+      color-scheme: dark;
+      --bg: #0F172A;
+      --surface: #1E293B;
+      --surface-2: #334155;
+      --text: #F8FAFC;
+      --muted: #CBD5E1;
+      --line: #64748B;
+      --brand: #2DD4BF;
+      --brand-2: #67E8F9;
+      --brand-3: #FBBF24;
+      --link: #67E8F9;
+      --link-hover: #99F6E4;
+      --focus: #FBBF24;
+      --shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(15, 118, 110, 0.17), transparent 34%),
+        radial-gradient(circle at 100% 0%, rgba(194, 65, 12, 0.11), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.56;
+    }
+
+    html.theme-dark body {
+      background:
+        radial-gradient(circle at 0% 0%, rgba(15, 118, 110, 0.08), transparent 34%),
+        radial-gradient(circle at 100% 0%, rgba(194, 65, 12, 0.05), transparent 28%),
+        var(--bg);
+    }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: auto;
+      padding: 8px 16px; background: var(--brand); color: #fff;
+      border-radius: 0 0 8px 0; font-size: 0.85rem; font-weight: 600;
+      text-decoration: none; z-index: 100;
+    }
+    .skip-link:focus { left: 0; top: 0; }
+
+    .copyright {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 2px;
+    }
+
+    .latest a,
+    .side a,
+    .issue .links a,
+    .footer a {
+      color: var(--link);
+      text-decoration-color: rgba(11,83,69,0.48);
+      text-decoration-color: color-mix(in srgb, var(--link), transparent 52%);
+    }
+
+    .latest a:hover,
+    .side a:hover,
+    .issue .links a:hover,
+    .footer a:hover {
+      color: var(--link-hover);
+      text-decoration-color: currentColor;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+      border-radius: 8px;
+    }
+
+    .top-bar {
+      height: 3px;
+      background: linear-gradient(90deg, var(--brand-2) 0%, var(--brand) 58%, var(--brand-3) 100%);
+    }
+
+    .wrap {
+      width: min(1140px, 94vw);
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-top: 0;
+      border: none;
+      border-radius: 0;
+      background: linear-gradient(145deg, #0a1628 0%, #0d3340 35%, #0f766e 75%, #0f4c5c 100%);
+      color: #fff;
+      padding: 48px 28px 36px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      left: 25%;
+      width: 50%;
+      height: 80%;
+      background: radial-gradient(ellipse, rgba(45, 212, 191, 0.15), transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero > * { position: relative; z-index: 1; }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 0;
+      box-shadow: none;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-weight: 700;
+    }
+
+    .hero-sub {
+      margin: 8px 0 0;
+      color: rgba(255,255,255,.65);
+      font-size: 1.15rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .stats {
+      margin-top: 28px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .chip {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,.88);
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 999px;
+      padding: 10px 22px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 640px) {
+      .brand h1 { font-size: 2rem; letter-spacing: .12em; }
+      .logo { width: 48px; height: 48px; }
+      .hero { padding: 32px 16px 24px; }
+      .hero-sub { font-size: 0.95rem; }
+      .chip { font-size: 0.78rem; padding: 7px 14px; }
+    }
+
+    .layout {
+      margin: 16px 0 36px;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    /* Sync-style cards: softer elevation, 14px radius, fluid hover */
+    .card {
+      background: var(--surface);
+      border: 1px solid rgba(139,149,165,0.8);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 20%);
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05);
+      animation: rise .45s ease both;
+      transition: box-shadow .2s ease, border-color .2s ease;
+    }
+
+    html.theme-dark .card {
+      border-color: #334155;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 14px rgba(0,0,0,0.15);
+    }
+
+    .latest {
+      padding: 20px;
+      display: grid;
+      gap: 10px;
+      background: var(--surface);
+      border-left: 4px solid var(--brand-2);
+    }
+
+    .latest .kicker,
+    .archive-head {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .latest h2 {
+      margin: 0;
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: 1.44rem;
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .latest p {
+      margin: 0;
+      color: var(--text);
+    }
+    .latest .meta {
+      color: var(--muted);
+    }
+
+    .latest-cover {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      display: block;
+      background: var(--surface-2);
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-top: 4px;
+      font-size: 0.9rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .btn {
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-radius: 10px;
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      transition: transform .16s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn.primary {
+      color: #fff;
+      border-color: transparent;
+      background: linear-gradient(120deg, var(--brand-2), var(--brand));
+    }
+
+    .btn.secondary {
+      color: var(--link);
+      background: #E7EFEE;
+      background: color-mix(in srgb, var(--brand), transparent 92%);
+      border-color: #B9D5D2;
+      border-color: color-mix(in srgb, var(--brand), transparent 72%);
+    }
+
+    .side {
+      padding: 18px;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .side p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .side a {
+      color: var(--link);
+      font-weight: 600;
+    }
+
+    .archive {
+      margin-top: 8px;
+      padding: 16px;
+    }
+
+    .search {
+      width: 100%;
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+    }
+
+    .search::placeholder {
+      color: rgba(31,41,55,0.9);
+      color: color-mix(in srgb, var(--muted), transparent 10%);
+    }
+
+    .issues-grid {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+
+    .issue {
+      border: 1px solid rgba(139,149,165,0.75);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 25%);
+      border-radius: 14px;
+      padding: 14px;
+      background: var(--surface);
+      display: grid;
+      gap: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform .22s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow .22s ease, border-color .2s ease;
+    }
+
+    .issue.has-badge {
+      grid-template-columns: 56px 1fr;
+      align-items: start;
+    }
+
+    .issue .issue-badge {
+      width: 56px;
+      height: 56px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--brand-2) 0%, var(--brand) 100%);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.65rem;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      text-align: center;
+    }
+
+    .issue .issue-badge .issue-num { font-size: 1.1rem; }
+
+    .issue:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+      border-color: #9CC5C1;
+      border-color: color-mix(in srgb, var(--brand), transparent 60%);
+    }
+
+    .issue.latest-flag {
+      border-left: 4px solid var(--brand-2);
+    }
+
+    .issue-cover {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+      display: block;
+      background: var(--surface-2);
+    }
+
+    .issue time {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .issue h3 {
+      margin: 0;
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.35;
+      color: var(--text);
+      padding-bottom: 6px;
+      border-bottom: 1px solid color-mix(in srgb, var(--line), transparent 70%);
+    }
+
+    .issue .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .issue .summary {
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .issue .links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+
+    .issue .links a {
+      color: var(--link);
+      font-weight: 600;
+      font-size: 0.84rem;
+    }
+
+    .empty {
+      display: none;
+      color: var(--muted);
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      margin: 20px 0 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .footer a {
+      color: var(--link);
+      margin: 0 6px;
+    }
+
+    .theme-toggle {
+      font-size: 0.88rem; padding: 10px 22px; border-radius: 999px; border: none;
+      background: #fff; color: #0F172A; cursor: pointer; font-weight: 700;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .theme-toggle:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    html.theme-dark .theme-toggle { background: #1E293B; color: #F8FAFC; border: 1px solid #475569; }
+
+    .subscribe-card {
+      background: linear-gradient(125deg, #0b1c2b 0%, #0f4c5c 54%, #0f766e 100%);
+      color: #fff;
+      padding: 20px;
+    }
+    .subscribe-card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+    .subscribe-card p { margin: 0 0 12px; font-size: 0.88rem; color: rgba(255,255,255,0.85); }
+    .subscribe-form { display: flex; gap: 6px; }
+    .subscribe-form input {
+      flex: 1; padding: 9px 12px; border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px; background: rgba(255,255,255,0.12); color: #fff;
+      font: inherit; font-size: 0.88rem;
+    }
+    .subscribe-form input::placeholder { color: rgba(255,255,255,0.6); }
+    .subscribe-form button {
+      padding: 9px 16px; border: none; border-radius: 8px;
+      background: #fff; color: #0f4c5c; font: inherit; font-size: 0.88rem;
+      font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #e6f4f2; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    @media (max-width: 920px) {
+      .layout { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <div class="accent-bar"></div>
-    <div class="bg-mesh"></div>
-    <div class="bg-mesh-2"></div>
-    <div class="bg-dots"></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="top-bar"></div>
 
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <span class="icon-sun">&#9728;&#65039;</span>
-        <span class="icon-moon">&#127769;</span>
-    </button>
-
+  <div class="wrap">
     <header class="hero">
-        <div class="hero-badge">
-            <span class="pulse"></span>
-            Updated Weekly
-        </div>
+      <div class="brand">
+        <img class="logo" src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" srcset="https://matthewpaver.github.io/ai-weekly/assets/logo.png 1x, https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png 2x" alt="" role="presentation" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" width="72" height="72" />
+        <svg class="logo logo-fallback" width="72" height="72" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none;"><rect width="52" height="52" rx="14" fill="url(#inf-logo-g)"/><path d="M26 14v24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="38" r="2.5" fill="#fff"/><defs><linearGradient id="inf-logo-g" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#0F4C5C"/><stop offset=".5" stop-color="#0F766E"/><stop offset="1" stop-color="#0F4C5C"/></linearGradient></defs></svg>
         <h1>Inference</h1>
-        <div class="tagline">The signal in the noise</div>
-        <p>Your curated AI briefing — trends, tools, and research from 25+ sources, every Monday.</p>
-        <div class="hero-stats">
-            <div class="stat">
-                <div class="stat-value" id="article-count">&mdash;</div>
-                <div class="stat-label">Articles</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="source-count">25+</div>
-                <div class="stat-label">Sources</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="section-count">&mdash;</div>
-                <div class="stat-label">Categories</div>
-            </div>
-        </div>
+      </div>
+      <p class="hero-sub">New issue every Monday</p>
+
+      <div class="stats">
+        <span class="chip">3 issues</span>
+        <span class="chip">Latest: 08 Mar 2026</span>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+      </div>
     </header>
 
-    <nav class="filter-bar" id="filter-bar">
-        <div class="filter-inner">
-            <div class="filter-group" id="topic-filters">
-                <span class="filter-label">Topic</span>
-                <button class="filter-btn active" data-filter="all">All</button>
+    <section class="layout" id="main-content">
+      <article class="card latest">
+        <p class="kicker">Latest issue</p>
+<img class="latest-cover" src="https://cdn.arstechnica.net/wp-content/uploads/2020/10/maxresdefault-1152x648.jpg" alt="Cover image for Google’s new command-line tool can plug OpenClaw into your Workspace data" width="600" height="180" loading="eager" fetchpriority="high" decoding="async">        <h2>Google’s new command-line tool can plug OpenClaw into your Workspace data</h2>
+        <p>Google shipped a CLI that plugs OpenClaw into Workspace, Anthropic’s Pentagon fallout is chilling defense-tech founders, and a new fragility metric could change how you prune features.</p>
+        <div class="meta">13 stories · ~5 min read · 5 sections</div>
+        <div class="cta-row">
+          <a class="btn primary" href="https://matthewpaver.github.io/ai-weekly/issues/2026-03-08.html">Read latest issue</a>
+<a class="btn secondary" href="https://matthewpaver.github.io/ai-weekly/email.html">Email version</a>        </div>
+      </article>
+
+      <div style="display: grid; gap: 14px; align-content: start;">
+        <aside class="card side">
+          <p><strong>About</strong></p>
+          <p>What actually matters in AI this week. Ships every Monday.</p>
+          <p><strong>Links</strong></p>
+          <p><a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS feed</a> · <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Web</a> · <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a></p>
+        </aside>
+
+        <aside class="card side">
+          <p><strong>What's inside</strong></p>
+          <p>Each issue: 10-15 stories across 5 sections, hand-picked from 25+ sources. Lead story with full analysis, quick hits, a prompt to try, and a free course recommendation.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="card archive">
+      <p class="archive-head">All issues</p>
+      <input id="search" class="search" type="search" placeholder="Search by date, title, or keyword" aria-label="Search issues" />
+
+      <div id="issues" class="issues-grid">
+        <article class="issue has-badge latest-flag" data-search="08 mar 2026 inference 08 mar 2026 google&#39;s new command-line tool can plug openclaw into your workspace data this week at a glance this week if you only read one thing fast signals learn this week prompt of the week one to test this week ⭐ open-source picks 🔬 research worth your time 🔒 security 🌐 what changed in industry 🛠️ tools to try openclaw lwiai podcast #235 - sonnet 4.6, deep-thinking tokens, anthropic vs pentagon beyond accuracy: quantifying the production fragility caused by excessive, redundant, and low-signal features in regression how our open-source ai model speciesnet is helping to promote wildlife conservation this jammer wants to block always-listening ai wearables. it probably won’t work how balyasny asset management built an ai research engine for investing online harassment is entering its ai era will the pentagon&#39;s anthropic controversy scare startups away from defense work? google bigquery previews cross-region sql queries for distributed data system-prompts-and-models-of-ai-tools">
+          <div class="issue-badge" aria-hidden="true">
+            <span class="issue-num">#3</span>
+            <span>Issue</span>
+          </div>
+          <div>
+<img class="issue-cover" src="https://cdn.arstechnica.net/wp-content/uploads/2020/10/maxresdefault-1152x648.jpg" alt="Cover for Google’s new command-line tool can plug OpenClaw into your Workspace data" width="400" height="100" loading="lazy" decoding="async">            <time datetime="2026-03-08">08 Mar 2026</time>
+            <h3>Google’s new command-line tool can plug OpenClaw into your Workspace data</h3>
+            <div class="meta">13 stories · ~5 min read · 5 sections</div>
+            <p class="summary">Google shipped a CLI that plugs OpenClaw into Workspace, Anthropic’s Pentagon fallout is chilling defense-tech founders, and a new fragility metric could change how you prune features.</p>
+            <div class="links">
+              <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-03-08.html">Read issue</a>
             </div>
-            <div class="filter-sep"></div>
-            <div class="filter-group" id="diff-filters">
-                <span class="filter-label">Level</span>
-                <button class="filter-btn" data-diff="Beginner">Beginner</button>
-                <button class="filter-btn" data-diff="Intermediate">Intermediate</button>
-                <button class="filter-btn" data-diff="Advanced">Advanced</button>
+          </div>
+        </article>
+        <article class="issue has-badge" data-search="02 mar 2026 inference 02 mar 2026 trump moves to ban anthropic from the us government leading with trump moves to ban anthropic from the us government, and the rest of the week&#39;s best ai signal. this week at a glance this week if you only read one thing fast signals learn this week prompt of the week one to test this week ⭐ open-source picks ☁️ infra 🌐 what changed in industry trump moves to ban anthropic from the us government copaw show hn: issuescout – find open source issues worth contributing to microsoft&#39;s project silica promises eternal storage. it can&#39;t get there from here firefox 149 beta develops a split personality iran all but vanishes from the global internet amid us-israel strikes openai reveals more details about its agreement with the pentagon openai and amazon announce strategic partnership">
+          <div class="issue-badge" aria-hidden="true">
+            <span class="issue-num">#2</span>
+            <span>Issue</span>
+          </div>
+          <div>
+<img class="issue-cover" src="https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg" alt="Cover for Trump moves to ban Anthropic from the US government" width="400" height="100" loading="lazy" decoding="async">            <time datetime="2026-03-02">02 Mar 2026</time>
+            <h3>Trump moves to ban Anthropic from the US government</h3>
+            <div class="meta">10 stories · ~4 min read · 3 sections</div>
+            <p class="summary">Trump's Anthropic ban, Copaw for developers, and Project Silica's storage problem.</p>
+            <div class="links">
+              <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-03-02.html">Read issue</a>
             </div>
-        </div>
-    </nav>
-
-    <div class="editorial-intro" id="editorial-intro" style="display:none">
-        <div class="editorial-box">
-            <span class="editorial-icon">&#9889;</span>
-            <span id="intro-text"></span>
-        </div>
-    </div>
-
-    <main class="content" id="newsletter-content">
-        <div class="issue-date">Loading latest issue...</div>
-        <div class="skeleton-card"><div class="skeleton skeleton-thumb"></div><div class="skeleton-body"><div class="skeleton skeleton-title"></div><div class="skeleton skeleton-meta"></div><div class="skeleton skeleton-text"></div></div></div>
-        <div class="skeleton-card"><div class="skeleton skeleton-thumb"></div><div class="skeleton-body"><div class="skeleton skeleton-title"></div><div class="skeleton skeleton-meta"></div><div class="skeleton skeleton-text"></div></div></div>
-        <div class="skeleton-card"><div class="skeleton skeleton-thumb"></div><div class="skeleton-body"><div class="skeleton skeleton-title"></div><div class="skeleton skeleton-meta"></div><div class="skeleton skeleton-text"></div></div></div>
-    </main>
-
-    <div class="no-results" id="no-results">
-        <div class="icon">&#128269;</div>
-        <p>No articles match your filters. Try a different combination.</p>
-    </div>
-
-    <div class="content">
-        <div class="subscribe-cta">
-            <h3>Stay in the loop</h3>
-            <p>Get notified every Monday when a new issue drops.</p>
-            <div class="subscribe-actions">
-                <a href="https://github.com/MatthewPaver/ai-weekly" target="_blank" rel="noopener" class="btn btn-primary">&#9733; Watch on GitHub</a>
-                <a href="feed.xml" class="btn btn-secondary" title="Copy this link into your favourite RSS reader">&#128225; RSS Feed</a>
+          </div>
+        </article>
+        <article class="issue has-badge" data-search="28 feb 2026 inference 28 feb 2026 openai and amazon announce strategic partnership big news this week: openai and amazon announce strategic partnership, and what it means for your roadmap. this week at a glance this week if you only read one thing fast signals learn this week prompt of the week 📚 ship-it playbooks 🔬 research worth your time ☁️ infra 🌐 what changed in industry openai and amazon announce strategic partnership how to design a production-grade multi-agent communication system using langgraph structured message bus, acp logging, and persistent shared state architecture interactive demo: https://coasty.ai/share/a58ee8f6-3821-4795-b4e7-4d77679a6221 a complete end-to-end coding guide to mlflow experiment tracking, hyperparameter optimization, model evaluation, and live model deployment alibaba team open-sources copaw: a high-performance personal agent workstation for developers to scale multi-channel ai workflows and memory openclaw, but in containers: meet nanoclaw saas-pocalypse chatter is doomster pr0n. it would be nice if enterprise it were boring again trump moves to ban anthropic from the us government openai reveals more details about its agreement with the pentagon">
+          <div class="issue-badge" aria-hidden="true">
+            <span class="issue-num">#1</span>
+            <span>Issue</span>
+          </div>
+          <div>
+<img class="issue-cover" src="https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2170386424.jpg?w=1024" alt="Cover for OpenAI and Amazon announce strategic partnership" width="400" height="100" loading="lazy" decoding="async">            <time datetime="2026-02-28">28 Feb 2026</time>
+            <h3>OpenAI and Amazon announce strategic partnership</h3>
+            <div class="meta">10 stories · ~4 min read · 4 sections</div>
+            <p class="summary">OpenAI and Amazon partnered up, a multi-agent LangGraph guide shipped, and the SaaS-pocalypse discourse continued.</p>
+            <div class="links">
+              <a href="https://matthewpaver.github.io/ai-weekly/issues/2026-02-28.html">Read issue</a>
             </div>
-        </div>
-    </div>
+          </div>
+        </article>
+      </div>
+
+      <p id="empty" class="empty">No issues match your search.</p>
+    </section>
 
     <footer class="footer">
-        <p>Built by <a href="https://github.com/MatthewPaver" target="_blank" rel="noopener">Matthew Paver</a></p>
-        <div class="footer-links">
-            <a href="https://github.com/MatthewPaver/ai-weekly" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/matthew-paver-534262166/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/MatthewPaver/portfolio" target="_blank" rel="noopener">Portfolio</a>
-        </div>
+      <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a> ·
+      <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a> ·
+      <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
+      <p class="copyright">Editorial analysis &copy; 2026 Matthew Paver. Original articles &copy; respective authors and publications.</p>
     </footer>
+  </div>
 
-    <script>
+  <script>
     (function() {
-        'use strict';
-
-        var html = document.documentElement;
-        var themeBtn = document.getElementById('theme-toggle');
-        var saved = localStorage.getItem('inference-theme');
-        if (saved) html.setAttribute('data-theme', saved);
-
-        themeBtn.addEventListener('click', function() {
-            var next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-            html.setAttribute('data-theme', next);
-            localStorage.setItem('inference-theme', next);
-        });
-
-        async function loadNewsletter() {
-            try {
-                var resp = await fetch('data/latest.json');
-                if (!resp.ok) throw new Error('Failed');
-                renderNewsletter(await resp.json());
-            } catch (e) {
-                document.getElementById('newsletter-content').innerHTML =
-                    '<div class="empty-state"><div class="icon">&#128240;</div><p>Newsletter loading — check back Monday!</p></div>';
-            }
+      var btn = document.getElementById('theme-toggle');
+      var meta = document.getElementById('meta-theme-color');
+      if (btn) {
+        function apply() {
+          var isDark = document.documentElement.classList.toggle('theme-dark');
+          try { localStorage.setItem('inference-theme', isDark ? 'dark' : 'light'); } catch(e) {}
+          btn.textContent = isDark ? 'Light' : 'Dark';
+          if (meta) meta.content = isDark ? '#0F172A' : '#FAFAF9';
         }
-
-        function esc(s) {
-            if (!s) return '';
-            return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        if (document.documentElement.classList.contains('theme-dark')) {
+          btn.textContent = 'Light';
+          if (meta) meta.content = '#0F172A';
         }
-
-        function buildFilters(data) {
-            var g = document.getElementById('topic-filters');
-            var seen = {};
-            data.sections.forEach(function(s) {
-                if (!seen[s.title]) {
-                    seen[s.title] = true;
-                    var b = document.createElement('button');
-                    b.className = 'filter-btn';
-                    b.setAttribute('data-filter', (s.topics||[]).join(','));
-                    b.textContent = s.title;
-                    g.appendChild(b);
-                }
-            });
-        }
-
-        function renderNewsletter(data) {
-            var c = document.getElementById('newsletter-content');
-            document.getElementById('article-count').textContent = data.total_articles;
-            document.getElementById('source-count').textContent = data.source_count + '+';
-            document.getElementById('section-count').textContent = data.sections.length;
-
-            if (data.intro) {
-                document.getElementById('intro-text').textContent = data.intro;
-                document.getElementById('editorial-intro').style.display = '';
-            }
-
-            buildFilters(data);
-
-            var h = '<div class="issue-date">Issue: <strong>' + esc(data.date) + '</strong></div>';
-
-            data.sections.forEach(function(sec, i) {
-                var topics = (sec.topics||[]).join(',');
-                h += '<div class="section" data-topics="' + esc(topics) + '" style="animation-delay:' + (i*0.05) + 's">' +
-                    '<div class="section-header">' +
-                    '<span class="section-icon">' + sec.icon + '</span>' +
-                    '<span class="section-title">' + esc(sec.title) + '</span>' +
-                    '<span class="section-count">' + sec.articles.length + '</span></div>';
-
-                sec.articles.forEach(function(a) {
-                    var u = esc(a.url);
-                    h += '<div class="article" data-topic="' + esc(a.topic) + '" data-diff="' + esc(a.difficulty) + '"' +
-                        ' onclick="window.open(\'' + u.replace(/'/g,"\\'") + '\',\'_blank\')">' +
-                        (a.thumbnail ? '<div class="article-thumb"><img src="' + esc(a.thumbnail) + '" alt="" loading="lazy" onerror="this.parentElement.style.display=\'none\'"></div>' : '') +
-                        '<div class="article-body">' +
-                        '<div class="article-title"><a href="' + u + '" target="_blank" rel="noopener">' + esc(a.title) + '</a></div>' +
-                        '<div class="article-meta">' +
-                        '<img src="' + esc(a.source_icon) + '" alt="" width="14" height="14" onerror="this.style.display=\'none\'">' +
-                        '<span>' + esc(a.source) + '</span>' +
-                        (a.authors ? '<span class="meta-dot"></span><span style="font-style:italic">' + esc(a.authors) + '</span>' : '') +
-                        (a.published ? '<span class="meta-dot"></span><span>' + esc(a.published) + '</span>' : '') +
-                        '<span class="article-diff ' + esc(a.difficulty) + '">' + esc(a.difficulty) + '</span>' +
-                        '</div>' +
-                        '<div class="article-summary">' + esc(a.summary) + '</div>' +
-                        '</div></div>';
-                });
-                h += '</div>';
-            });
-
-            c.innerHTML = h;
-            applyFilters();
-        }
-
-        var topicFilter = 'all';
-        var diffFilters = new Set();
-
-        document.getElementById('filter-bar').addEventListener('click', function(e) {
-            var b = e.target.closest('.filter-btn');
-            if (!b) return;
-            var f = b.getAttribute('data-filter');
-            var d = b.getAttribute('data-diff');
-            if (f !== null) {
-                topicFilter = f;
-                document.querySelectorAll('.filter-btn[data-filter]').forEach(function(x){ x.classList.remove('active'); });
-                b.classList.add('active');
-            }
-            if (d !== null) {
-                if (diffFilters.has(d)) { diffFilters.delete(d); b.classList.remove('active'); }
-                else { diffFilters.add(d); b.classList.add('active'); }
-            }
-            applyFilters();
-        });
-
-        function applyFilters() {
-            var arts = document.querySelectorAll('.article');
-            var vis = 0;
-            var topics = topicFilter !== 'all' ? topicFilter.split(',') : [];
-            arts.forEach(function(a) {
-                var t = a.getAttribute('data-topic');
-                var d = a.getAttribute('data-diff');
-                var st = topicFilter === 'all' || topics.indexOf(t) !== -1;
-                var sd = diffFilters.size === 0 || diffFilters.has(d);
-                var show = st && sd;
-                a.classList.toggle('hidden', !show);
-                if (show) vis++;
-            });
-            document.querySelectorAll('.section').forEach(function(s) {
-                s.classList.toggle('hidden', !s.querySelector('.article:not(.hidden)'));
-            });
-            var nr = document.getElementById('no-results');
-            if (nr) nr.classList.toggle('visible', arts.length > 0 && vis === 0);
-        }
-
-        var st = localStorage.getItem('inference-filter-topic');
-        var sd = localStorage.getItem('inference-filter-diffs');
-        if (st && st !== 'all') topicFilter = st;
-        if (sd) { try { JSON.parse(sd).forEach(function(d) {
-            diffFilters.add(d);
-            var b = document.querySelector('.filter-btn[data-diff="'+d+'"]');
-            if (b) b.classList.add('active');
-        }); } catch(e) {} }
-
-        var origApply = applyFilters;
-        applyFilters = function() {
-            origApply();
-            localStorage.setItem('inference-filter-topic', topicFilter);
-            localStorage.setItem('inference-filter-diffs', JSON.stringify(Array.from(diffFilters)));
-            document.querySelectorAll('.filter-btn[data-filter]').forEach(function(b){ b.classList.remove('active'); });
-            var ab = document.querySelector('.filter-btn[data-filter="'+topicFilter+'"]');
-            if (ab) ab.classList.add('active');
-            else { topicFilter = 'all'; var all = document.querySelector('.filter-btn[data-filter="all"]'); if (all) all.classList.add('active'); }
-        };
-
-        loadNewsletter();
+        btn.addEventListener('click', apply);
+      }
     })();
-    </script>
+  </script>
+  <script>
+    (function () {
+      var input = document.getElementById('search');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.issue'));
+      var empty = document.getElementById('empty');
+
+      function applyFilter() {
+        var q = (input.value || '').trim().toLowerCase();
+        var visible = 0;
+        cards.forEach(function (card) {
+          var hay = card.getAttribute('data-search') || '';
+          var ok = !q || hay.indexOf(q) !== -1;
+          card.style.display = ok ? '' : 'none';
+          if (ok) visible += 1;
+        });
+        empty.style.display = visible ? 'none' : 'block';
+      }
+
+      input.addEventListener('input', applyFilter);
+      applyFilter();
+    })();
+  </script>
 </body>
 </html>
