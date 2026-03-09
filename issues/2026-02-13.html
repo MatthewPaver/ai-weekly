@@ -1,0 +1,1270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Inference Weekly — 13 Feb 2026: 14 curated AI stories for builders, leaders, and researchers." />
+  <title>Inference Weekly — 13 Feb 2026</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Inference Weekly — 13 Feb 2026" />
+  <meta property="og:description" content="This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://matthewpaver.github.io/ai-weekly/latest.html" />
+  <meta property="og:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
+  <meta property="og:site_name" content="Inference Weekly" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Inference Weekly — 13 Feb 2026" />
+  <meta name="twitter:description" content="This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap." />
+  <meta name="twitter:image" content="https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" />
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://matthewpaver.github.io/ai-weekly/latest.html" />
+  <link rel="alternate" type="application/rss+xml" title="Inference Weekly" href="https://matthewpaver.github.io/ai-weekly/feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Match email design: WCAG AA contrast (4.5:1+ normal text), no blending into background */
+    :root {
+      --bg: #FAFAF9;
+      --surface: #ffffff;
+      --surface-2: #E5E7EB;
+      --text: #111827;
+      --muted: #4B5563;
+      --line: #D1D5DB;
+      --brand: #0F766E;
+      --brand-2: #0F4C5C;
+      --brand-3: #B45309;
+      --ink: #0F172A;
+      --link: #0C5C54;
+      --link-hover: #0F766E;
+      --focus: #B45309;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.08);
+      --radius: 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0F172A;
+        --surface: #1E293B;
+        --surface-2: #334155;
+        --text: #F1F5F9;
+        --muted: #94A3B8;
+        --line: #475569;
+        --link: #5EEAD4;
+        --link-hover: #99F6E4;
+        --focus: #FBBF24;
+        --shadow: 0 4px 16px rgba(0,0,0,0.3);
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.56;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #0F172A; }
+    }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: auto;
+      padding: 8px 16px; background: var(--brand); color: #fff;
+      border-radius: 0 0 8px 0; font-size: 0.85rem; font-weight: 600;
+      text-decoration: none; z-index: 100;
+    }
+    .skip-link:focus { left: 0; top: 0; }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 2px;
+    }
+
+    main a,
+    aside a,
+    .footer a {
+      color: var(--link);
+      text-decoration-color: color-mix(in srgb, var(--link), transparent 52%);
+    }
+
+    main a:hover,
+    aside a:hover,
+    .footer a:hover {
+      color: var(--link-hover);
+      text-decoration-color: currentColor;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+      border-radius: 8px;
+    }
+
+    .top-bar {
+      height: 3px;
+      background: linear-gradient(90deg, #0F4C5C 0%, #0F766E 58%, #C2410C 100%);
+    }
+
+    .wrap {
+      width: min(1140px, 94vw);
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-top: 0;
+      border-radius: 0;
+      background: linear-gradient(135deg, #0F172A 0%, #0F4C5C 50%, #0F766E 100%);
+      color: #fff;
+      padding: 18px 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero > * { position: relative; z-index: 1; }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .hero-sub {
+      margin: 2px 0 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 11px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.92);
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: rgba(255, 255, 255, 0.07);
+      transition: transform .16s ease, background .16s ease;
+    }
+
+    .nav a:hover { background: rgba(255,255,255,.14); transform: translateY(-1px); }
+
+    .hero-stats {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .chip {
+      font-size: 0.74rem;
+      color: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 4px 9px;
+    }
+
+    .content {
+      margin: 16px 0 36px;
+      display: grid;
+      grid-template-columns: 1.9fr 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06);
+      animation: rise .4s ease both;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .card {
+        background: #1E293B;
+        border-color: #334155;
+      }
+    }
+
+    .intro {
+      padding: 14px 16px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      border-left: 3px solid var(--brand);
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, rgba(15,118,110,.06), transparent);
+    }
+
+    .menu {
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .menu .section-head { margin-bottom: 6px; }
+
+    .menu-intro {
+      margin: 0 0 12px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 500;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: color-mix(in srgb, var(--surface-2), transparent 50%);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-1px);
+      background: color-mix(in srgb, var(--brand), transparent 88%);
+      box-shadow: 0 4px 12px rgba(15,31,40,0.08);
+    }
+
+    .menu-num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--muted);
+      flex-shrink: 0;
+      line-height: 1.3;
+    }
+
+    .menu-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .menu-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+    .menu-label { font-weight: 600; line-height: 1.3; }
+    .menu-deck {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .menu-count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      min-width: 22px; height: 22px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--brand), transparent 85%);
+      color: var(--brand-2);
+      flex-shrink: 0;
+    }
+
+    .section-head {
+      margin: 0;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      color: var(--brand-2);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .lead {
+      overflow: hidden;
+      margin-bottom: 12px;
+      border-color: color-mix(in srgb, var(--brand), transparent 66%);
+    }
+
+    .lead-media {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      background: var(--surface-2);
+      display: block;
+      transition: transform .4s ease;
+    }
+
+    .lead:hover .lead-media { transform: scale(1.03); }
+
+    .lead-body {
+      padding: 16px;
+      background: linear-gradient(180deg, color-mix(in srgb, var(--brand), transparent 94%), transparent 35%);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      border-radius: 999px;
+      padding: 3px 7px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--muted);
+    }
+    /* Difficulty: Beginner (green), Intermediate (amber), Advanced (red) — visible variety */
+    .badge-difficulty-beginner { background: #dcfce7 !important; color: #166534 !important; border-color: #bbf7d0 !important; }
+    .badge-difficulty-intermediate { background: #fef3c7 !important; color: #92400e !important; border-color: #fde68a !important; }
+    .badge-difficulty-advanced { background: #fee2e2 !important; color: #991b1b !important; border-color: #fecaca !important; }
+    .badge-track { background: #e0f2fe !important; color: #0c4a6e !important; border-color: #bae6fd !important; }
+    @media (prefers-color-scheme: dark) {
+      .badge-track { background: #0c4a6e !important; color: #7dd3fc !important; border-color: #0369a1 !important; }
+    }
+
+    .section-promise { font-weight: 600; font-style: italic; color: var(--brand); font-size: 0.88rem; }
+
+    .testimonial { margin: 12px 0 0; font-style: italic; font-size: 0.88rem; opacity: 0.9; line-height: 1.5; }
+    .testimonial footer { font-style: normal; font-size: 0.78rem; opacity: 0.75; margin-top: 4px; }
+
+    .social-proof { margin: 8px 0 0; font-size: 0.82rem; opacity: 0.8; }
+    .conversion-hook { margin: 10px 0 0; font-size: 0.82rem; opacity: 0.85; }
+    .conversion-hook a { color: #fff; text-decoration: underline; }
+
+    .lead h2 {
+      margin: 0 0 8px;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 1.45rem;
+      line-height: 1.34;
+    }
+
+    .lead p {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 60ch;
+    }
+
+    .action {
+      color: var(--link);
+      font-weight: 600;
+    }
+
+    .take {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    /* This week: single thesis line, competitor-style (Rundown/Batch use one clear take) */
+    .editors-main {
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--brand-2);
+    }
+
+    .editors-thesis {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: var(--text);
+      font-style: italic;
+    }
+
+    .quick,
+    .editors,
+    .pulse {
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .quick ul {
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .quick li {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: color-mix(in srgb, var(--surface-2), transparent 30%);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .quick strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 3px;
+      font-size: 0.91rem;
+    }
+
+    .editors ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      display: grid;
+      gap: 6px;
+    }
+
+    .pulse table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 0.88rem;
+    }
+
+    .pulse td {
+      border-bottom: 1px solid var(--line);
+      padding: 7px 0;
+      color: var(--muted);
+      vertical-align: top;
+    }
+
+    .pulse td:first-child {
+      color: var(--text);
+      font-weight: 600;
+      width: 36%;
+      padding-right: 10px;
+    }
+
+    .sections {
+      margin-top: 8px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .section {
+      background: color-mix(in srgb, var(--surface), transparent 4%);
+      border: 1px solid var(--line);
+      border-top: 1px solid rgba(255,255,255,0.5);
+      border-radius: var(--radius);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 2px rgba(15,31,40,0.05), 0 8px 24px rgba(15,31,40,0.08);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      overflow: hidden;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .section {
+        border-top-color: rgba(255,255,255,0.06);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 1px 3px rgba(0,0,0,0.2), 0 8px 24px rgba(0,0,0,0.3);
+      }
+    }
+
+    .section-title {
+      margin: 0;
+      padding: 14px 16px;
+      font-size: 0.98rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px; border-radius: 8px;
+      background: var(--brand-2); color: #fff;
+      font-size: 0.78rem; font-weight: 700; flex-shrink: 0;
+    }
+
+    .section-deck {
+      margin: 0;
+      padding: 0 14px 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .stories {
+      padding: 0 12px 12px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .story {
+      border: 1px solid var(--line);
+      border-top: 1px solid rgba(255,255,255,0.5);
+      border-radius: 12px;
+      overflow: hidden;
+      background: color-mix(in srgb, var(--surface-2), transparent 30%);
+      box-shadow: 0 2px 4px rgba(15,31,40,0.04), 0 8px 16px rgba(15,31,40,0.07);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+
+    .story:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(15,31,40,0.12);
+      border-color: color-mix(in srgb, var(--brand), transparent 50%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .story {
+        border-top-color: rgba(255,255,255,0.05);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.25);
+      }
+      .story:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 16px 32px rgba(0,0,0,0.35);
+      }
+    }
+
+    .story img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      display: block;
+      background: var(--surface-2);
+    }
+
+    .story-body { padding: 10px; }
+
+    .story h3 {
+      margin: 6px 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 1rem;
+      line-height: 1.36;
+    }
+
+    .story p {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .story a {
+      color: var(--link);
+      font-weight: 600;
+      font-size: 0.88rem;
+    }
+
+    .footer {
+      margin: 16px 0 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .footer a {
+      color: var(--link);
+      margin: 0 5px;
+    }
+
+    .search::placeholder {
+      color: color-mix(in srgb, var(--muted), transparent 10%);
+    }
+
+    .subscribe-card {
+      background: linear-gradient(125deg, #0b1c2b 0%, #0f4c5c 54%, #0f766e 100%);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .subscribe-card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+    .subscribe-card p { margin: 0 0 12px; font-size: 0.88rem; opacity: 0.85; }
+    .subscribe-form { display: flex; gap: 6px; max-width: 380px; margin: 0 auto; }
+    .subscribe-form input {
+      flex: 1; padding: 9px 12px; border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px; background: rgba(255,255,255,0.12); color: #fff;
+      font: inherit; font-size: 0.88rem;
+    }
+    .subscribe-form input::placeholder { color: rgba(255,255,255,0.6); }
+    .subscribe-form button {
+      padding: 9px 16px; border: none; border-radius: 8px;
+      background: #fff; color: #0f4c5c; font: inherit; font-size: 0.88rem;
+      font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #e6f4f2; }
+
+    .share-row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+    .share-btn {
+      font-size: 0.82rem; font-weight: 600; padding: 7px 12px;
+      border-radius: 8px; text-decoration: none; border: 1px solid var(--line);
+      color: var(--muted); background: var(--surface);
+      transition: transform .12s ease;
+    }
+    .share-btn:hover { transform: translateY(-1px); color: var(--text); box-shadow: 0 4px 12px rgba(15,31,40,0.1); }
+
+    .like-btn {
+      font-size: 13px; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--line);
+      background: var(--surface-2); color: var(--muted); cursor: pointer;
+    }
+    .like-btn:hover:not(:disabled) { color: var(--link); border-color: var(--brand); }
+    .like-btn:disabled { cursor: default; opacity: 0.8; }
+
+    /* Tier gating placeholder (hidden until tiers_enabled) */
+    .tier-gate { display: none; }
+
+    /* Scroll-triggered reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .copyright {
+      font-size: 0.75rem;
+      color: var(--muted);
+      opacity: 0.7;
+      margin-top: 8px;
+    }
+
+    /* Learn This Week card */
+    .learn-card {
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .learn-title {
+      display: block;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--link);
+      margin: 6px 0 8px;
+      line-height: 1.35;
+    }
+    .learn-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      font-size: 0.78rem;
+      margin: 0 0 8px;
+    }
+    .learn-provider {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .badge-level {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      border-radius: 10px;
+    }
+    .badge-level-beginner { background: #DCFCE7; color: #166534; }
+    .badge-level-intermediate { background: #FEF3C7; color: #92400E; }
+    .badge-level-advanced { background: #FEE2E2; color: #991B1B; }
+    .badge-free { display: inline-block; padding: 2px 8px; font-size: 0.7rem; font-weight: 600; border-radius: 10px; background: #E0F2FE; color: #0C4A6E; }
+    .badge-paid { display: inline-block; padding: 2px 8px; font-size: 0.7rem; font-weight: 600; border-radius: 10px; background: #F3E8FF; color: #6B21A8; }
+    .learn-duration {
+      color: var(--muted);
+    }
+    .learn-note {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .badge-level-beginner { background: #14532d; color: #86efac; }
+      .badge-level-intermediate { background: #78350f; color: #fde68a; }
+      .badge-level-advanced { background: #7f1d1d; color: #fca5a5; }
+      .badge-free { background: #0c4a6e; color: #bae6fd; }
+      .badge-paid { background: #581c87; color: #e9d5ff; }
+    }
+
+    /* Prompt of the Week card */
+    .prompt-card {
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .prompt-text {
+      margin: 8px 0;
+      padding: 10px 14px;
+      border-left: 3px solid var(--brand-2);
+      background: color-mix(in srgb, var(--brand-2), transparent 92%);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .prompt-meta {
+      display: flex;
+      gap: 8px;
+      font-size: 0.78rem;
+      margin: 0 0 6px;
+    }
+    .prompt-context {
+      font-weight: 600;
+      color: var(--brand-2);
+    }
+    .prompt-tool {
+      color: var(--muted);
+    }
+    .prompt-tip {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* Reading progress bar */
+    .reading-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--brand) 0%, var(--brand-2) 100%);
+      z-index: 1000;
+      transition: width .1s linear;
+    }
+
+    /* Staggered card entrance */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .story { animation: rise .4s ease both; }
+    .story:nth-child(1) { animation-delay: 0s; }
+    .story:nth-child(2) { animation-delay: 0.08s; }
+    .story:nth-child(3) { animation-delay: 0.16s; }
+    .story:nth-child(4) { animation-delay: 0.24s; }
+
+    /* Badge entrance pop */
+    @keyframes badgePop {
+      0% { transform: scale(0.7); opacity: 0; }
+      70% { transform: scale(1.08); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .badge-level, .badge-free, .badge-paid,
+    .meta-row .badge { animation: badgePop .3s ease both; animation-delay: 0.2s; }
+
+    /* Pulse glow on Weekly Pulse header */
+    @keyframes pulseGlow {
+      0%, 100% { text-shadow: 0 0 0 transparent; }
+      50% { text-shadow: 0 0 8px color-mix(in srgb, var(--brand-2), transparent 60%); }
+    }
+    .pulse .section-head { animation: pulseGlow 3s ease-in-out infinite; }
+
+    /* Section number entrance */
+    @keyframes numPop {
+      from { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+      to { transform: scale(1) rotate(0); opacity: 1; }
+    }
+    .section-num { animation: numPop .4s ease both; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+      .reading-progress { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .menu-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 960px) {
+      .content { grid-template-columns: 1fr; }
+      .lead-media { height: 210px; }
+      /* On mobile, reorder so sidebar content appears after lead, before sections */
+      .content { display: flex; flex-direction: column; }
+      .content main { order: 1; }
+      .content .mobile-early { order: 0; }
+      .content aside { order: 2; }
+      .menu-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="top-bar"></div>
+
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="brand">
+          <img class="logo" src="https://matthewpaver.github.io/ai-weekly/assets/logo.png" alt="Inference logo" />
+          <div>
+            <h1>Inference</h1>
+            <p class="hero-sub">Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes.</p>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Issue navigation">
+          <a href="https://matthewpaver.github.io/ai-weekly/">Archive</a>
+          <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a>
+          <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email View</a>
+          <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
+        </nav>
+      </div>
+
+      <div class="hero-stats">
+        <span class="chip">Issue #4</span>
+        <span class="chip">13 Feb 2026</span>
+        <span class="chip">14 stories</span>
+        <span class="chip">~5 min read</span>
+        <span class="chip">25+ sources</span>
+      </div>
+    </header>
+
+    <div class="content">
+      <main id="main-content">
+        <section class="intro card">This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap.</section>
+
+        <section class="menu card" aria-label="In this issue">
+          <p class="section-head">In This Issue</p>
+          <p class="menu-intro">What’s in this issue — each category has a short description so you can skim before you read.</p>
+          <p class="difficulty-legend" style="font-size: 0.8rem; color: var(--muted); margin: 0 0 12px;"><span class="badge badge-difficulty-beginner">Beginner</span> <span class="badge badge-difficulty-intermediate">Intermediate</span> <span class="badge badge-difficulty-advanced">Advanced</span> = reading level</p>
+          <div class="menu-grid">
+            <a class="menu-item" href="#industry-radar">
+              <span class="menu-num">01</span>
+              <span class="menu-icon">🌐</span>
+              <span class="menu-text">
+                <span class="menu-label">Industry Radar</span>
+<span class="menu-deck">The moves that change product plans, budgets, and positioning.</span>              </span>
+              <span class="menu-count">2</span>
+            </a>
+            <a class="menu-item" href="#builders-bench">
+              <span class="menu-num">02</span>
+              <span class="menu-icon">🛠️</span>
+              <span class="menu-text">
+                <span class="menu-label">Builder&#39;s Bench</span>
+<span class="menu-deck">New tooling worth evaluating in an actual workflow this week.</span>              </span>
+              <span class="menu-count">2</span>
+            </a>
+            <a class="menu-item" href="#lab-notes">
+              <span class="menu-num">03</span>
+              <span class="menu-icon">🔬</span>
+              <span class="menu-text">
+                <span class="menu-label">Lab Notes</span>
+<span class="menu-deck">Research and model updates with downstream product impact.</span>              </span>
+              <span class="menu-count">1</span>
+            </a>
+          </div>
+        </section>
+
+        <article class="lead card">
+          <div class="lead-body">
+            <p class="section-head">Top Story</p>
+            <div class="meta-row">
+              <span class="badge">OpenAI Blog - 09 Feb</span>
+<span class="badge badge-difficulty-beginner">Beginner</span><span class="badge badge-track">Leader</span>            </div>
+            <h2><a href="https://openai.com/index/testing-ads-in-chatgpt" target="_blank" rel="noopener">Testing ads in ChatGPT</a></h2>
+            <p><strong style="color: var(--text);">Testing is introducing ad-supported revenue, which could shift the user experience.</strong> Policy or pricing changes around Testing could ripple into your cost model and compliance posture.</p>
+            <p class="action">Action: Add Testing as a discussion item in your next strategy or planning meeting.</p>
+<p class="take">Teams that factor Testing into next quarter early usually gain execution room later.</p>          </div>
+        </article>
+
+        <div class="share-row">
+          <a class="share-btn" href="https://twitter.com/intent/tweet?text=Inference%20Weekly%20%E2%80%94%2013%20Feb%202026&url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on X</a>
+          <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://matthewpaver.github.io/ai-weekly/latest.html" target="_blank" rel="noopener">Share on LinkedIn</a>
+          <a class="share-btn" href="mailto:?subject=Inference%20Weekly%20%E2%80%94%2013%20Feb%202026&body=Check%20out%20this%20week's%20AI%20briefing%3A%20https://matthewpaver.github.io/ai-weekly/latest.html">Forward via Email</a>
+        </div>
+
+        <!-- This week: one-line editorial (competitors use top summary, not a long block) -->
+        <section class="editors-main card reveal" aria-label="This week">
+          <p class="section-head">This week</p>
+          <p class="editors-thesis">This week&#39;s signal is clear: business model decisions are moving faster than product roadmaps. If you&#39;re not tracking Testing ads in ChatGPT, you&#39;re already behind.</p>
+        </section>
+
+        <div class="sections">
+          <section class="section reveal" id="industry-radar" data-tier="leader">
+            <h2 class="section-title"><span class="section-num">1</span> 🌐 Industry Radar <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">The moves that change product plans, budgets, and positioning.</p>            <div class="stories">
+              <article class="story">
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2225076517_resize-1152x648.jpg" alt="OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=arstechnica.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">Ars Technica AI</span>
+                    <span>
+                      <span class="badge badge-difficulty-beginner">Beginner</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <h3><a href="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" target="_blank" rel="noopener">OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips</a></h3>
+                  <p><strong style="color: var(--text);">A strategic move around OpenAI is worth factoring into near-term planning.</strong> Strategic moves around OpenAI may reshape vendor dynamics for downstream teams.</p>
+                  <p class="action">Monitor OpenAI for follow-on product or pricing changes over the next month.</p>
+                  <a href="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" target="_blank" rel="noopener">Read article -></a>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/" data-title="OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips" aria-label="Like this article">👍 Like</button>
+                  </p>
+                </div>
+              </article>
+              <article class="story">
+<img src="https://spectrum.ieee.org/media-library/image.jpg?id=63854297&amp;width=1200&amp;height=600&amp;coordinates=0%2C15%2C0%2C15" alt="ChatGPT’s Translation Skills Parallel Most Human Translators" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=spectrum.ieee.org&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">IEEE Spectrum AI</span>
+                    <span>
+                      <span class="badge badge-difficulty-beginner">Beginner</span>
+<span class="badge badge-track">Leader</span>                    </span>
+                  </div>
+                  <h3><a href="https://spectrum.ieee.org/chatgpt-translate-skills-human-comparison" target="_blank" rel="noopener">ChatGPT’s Translation Skills Parallel Most Human Translators</a></h3>
+                  <p><strong style="color: var(--text);">A strategic move around ChatGPT is worth factoring into near-term planning.</strong> Strategic moves around ChatGPT may reshape vendor dynamics for downstream teams.</p>
+                  <p class="action">Add ChatGPT as a discussion item in your next strategy or planning meeting.</p>
+                  <a href="https://spectrum.ieee.org/chatgpt-translate-skills-human-comparison" target="_blank" rel="noopener">Read article -></a>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://spectrum.ieee.org/chatgpt-translate-skills-human-comparison" data-title="ChatGPT’s Translation Skills Parallel Most Human Translators" aria-label="Like this article">👍 Like</button>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section reveal" id="builders-bench" data-tier="builder">
+            <h2 class="section-title"><span class="section-num">2</span> 🛠️ Builder&#39;s Bench <span style="font-weight:500;opacity:.7">(2)</span></h2>
+<p class="section-deck">New tooling worth evaluating in an actual workflow this week.</p>            <div class="stories">
+              <article class="story">
+<img src="https://blog.langchain.com/content/images/size/w1200/2026/02/On-Agent-Frameworks--1-.png" alt="On Agent Frameworks and Agent Observability" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=blog.langchain.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">LangChain Blog</span>
+                    <span>
+                      <span class="badge badge-difficulty-intermediate">Intermediate</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <h3><a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">On Agent Frameworks and Agent Observability</a></h3>
+                  <p><strong style="color: var(--text);">On Agent Frameworks brings fresh capabilities for teams looking to improve their pipeline.</strong> The open release of On Agent Frameworks adds a viable alternative to proprietary options.</p>
+                  <p class="action">Try On Agent Frameworks on your most common use case — measure the gap vs your current setup.</p>
+                  <a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">Read article -></a>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" data-title="On Agent Frameworks and Agent Observability" aria-label="Like this article">👍 Like</button>
+                  </p>
+                </div>
+              </article>
+              <article class="story">
+                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">Hacker News (AI)</span>
+                    <span>
+                      <span class="badge badge-difficulty-beginner">Beginner</span>
+<span class="badge badge-track">Builder</span>                    </span>
+                  </div>
+                  <h3><a href="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" target="_blank" rel="noopener">Show HN: I&#39;m 75, building an OSS Virtual Protest Protocol for digital activism</a></h3>
+                  <p><strong style="color: var(--text);">Show HN brings fresh capabilities for teams looking to improve their pipeline.</strong> The Show HN release addresses gaps that many builder teams have flagged.</p>
+                  <p class="action">Try Show HN on a non-critical task this week and log the results.</p>
+                  <a href="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" target="_blank" rel="noopener">Read article -></a>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://github.com/voice-of-japan/Virtual-Protest-Protocol/blob/main/README.md" data-title="Show HN: I&#39;m 75, building an OSS Virtual Protest Protocol for digital activism" aria-label="Like this article">👍 Like</button>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section reveal" id="lab-notes" data-tier="leader">
+            <h2 class="section-title"><span class="section-num">3</span> 🔬 Lab Notes <span style="font-weight:500;opacity:.7">(1)</span></h2>
+<p class="section-deck">Research and model updates with downstream product impact.</p>            <div class="stories">
+              <article class="story">
+<img src="https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png" alt="Latent Generative Solvers for Generalizable Long-Term Physics Simulation" loading="lazy" />                <div class="story-body">
+                  <div class="meta-row" style="justify-content: space-between;">
+                    <span class="badge" style="font-size: 0.72rem;"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=16" alt="" width="12" height="12" style="vertical-align: middle; margin-right: 3px; border-radius: 2px;">arXiv CS.AI</span>
+                    <span>
+                      <span class="badge badge-difficulty-advanced">Advanced</span>
+<span class="badge badge-track">Researcher</span>                    </span>
+                  </div>
+                  <h3><a href="https://arxiv.org/abs/2602.11229" target="_blank" rel="noopener">Latent Generative Solvers for Generalizable Long-Term Physics Simulation</a></h3>
+                  <p><strong style="color: var(--text);">Results from Latent Generative Solvers point to where methods may shift in the next cycle.</strong> The Latent Generative Solvers results point a direction, but production confidence needs independent replication.</p>
+                  <p class="action">Skim the Latent Generative Solvers abstract and results table — decide in 10 minutes if it warrants a deep read.</p>
+                  <a href="https://arxiv.org/abs/2602.11229" target="_blank" rel="noopener">Read article -></a>
+                  <p class="like-row" style="margin: 10px 0 0; font-size: 13px;">
+                    <button type="button" class="like-btn" data-url="https://arxiv.org/abs/2602.11229" data-title="Latent Generative Solvers for Generalizable Long-Term Physics Simulation" aria-label="Like this article">👍 Like</button>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <aside>
+        <section class="quick card">
+          <p class="section-head">Fast Signals</p>
+          <ul>
+            <li>
+              <strong><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" target="_blank" rel="noopener">Custom Kernels for All from Codex and Claude</a></strong>
+              A new tool release around Custom Kernels targets gaps in current developer workflows. Why it matters: Custom Kernels is worth evaluating if your current tools are hitting limits.
+            </li>
+            <li>
+              <strong><a href="https://arxiv.org/abs/2602.11229" target="_blank" rel="noopener">Latent Generative Solvers for Generalizable Long-Term Physics Simulation</a></strong>
+              Results from Latent Generative Solvers point to where methods may shift in the next cycle. Why it matters: The Latent Generative Solvers results point a direction, but production confidence needs independent.
+            </li>
+            <li>
+              <strong><a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener">marketingskills</a></strong>
+              Marketing skills for Claude Code and AI agents. Why it matters: CRO, copywriting, SEO, analytics, and growth engineering.
+            </li>
+            <li>
+              <strong><a href="https://dev.to/olivier-coreprose/feldman-v-affable-avenue-lessons-from-an-ai-hallucinated-default-judgment-in-federal-court-30pc" target="_blank" rel="noopener">Feldman v Affable Avenue: Lessons from an AI-Hallucinated Default Judgment in Federal Court</a></strong>
+              A step-by-step guide on Feldman provides a template for your own projects. Why it matters: Feldman is worth a closer look for teams making near-term technology choices.
+            </li>
+          </ul>
+        </section>
+
+        <section class="pulse card">
+          <p class="section-head">Weekly Pulse</p>
+          <table>
+            <tr>
+              <td>Dominant theme</td>
+              <td>Industry led coverage (8 stories).</td>
+            </tr>
+            <tr>
+              <td>Builder pick</td>
+              <td><a href="https://huggingface.co/blog/custom-cuda-kernels-agent-skills" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Custom Kernels for All from Codex and Claude</a></td>
+            </tr>
+            <tr>
+              <td>Leader watch</td>
+              <td><a href="https://openai.com/index/testing-ads-in-chatgpt" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Testing ads in ChatGPT</a></td>
+            </tr>
+            <tr>
+              <td>Research watch</td>
+              <td><a href="https://arxiv.org/abs/2602.11229" style="color: #0F4C5C; text-decoration: none; font-weight: 500;">Latent Generative Solvers for Generalizable Long-Term Physics Simulation</a></td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="learn-card card">
+          <p class="section-head">Learn This Week</p>
+          <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/" target="_blank" rel="noopener" class="learn-title">LangChain for LLM Application Development</a>
+          <p class="learn-meta">
+            <span class="learn-provider">DeepLearning.AI</span>
+            <span class="badge-level badge-level-intermediate">Intermediate</span>
+<span class="badge-free">Free</span><span class="learn-duration">1 hour</span>          </p>
+          <p class="learn-note">Build LLM-powered apps with chains, memory, and agents. Practical and concise.</p>
+        </section>
+
+        <section class="prompt-card card">
+          <p class="section-head">Prompt of the Week</p>
+          <blockquote class="prompt-text">"I&#39;m building a [type] application. List the top 5 security risks specific to this architecture and how to mitigate each one."</blockquote>
+          <p class="prompt-meta">
+            <span class="prompt-context">Security</span>
+            <span class="prompt-tool">Claude / ChatGPT</span>
+          </p>
+          <p class="prompt-tip">Be specific about your stack (e.g., &#39;RAG app with vector DB and public API&#39;).</p>
+        </section>
+      </aside>
+    </div>
+
+    <!-- Bottom subscribe CTA -->
+    <section class="subscribe-card card reveal" style="margin: 16px 0;">
+      <h3>Enjoyed this issue?</h3>
+      <p>Operator-grade AI briefing for builders and leaders — every Monday in ~5 minutes.</p>
+      <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/inference" method="post" target="_blank">
+        <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+<p class="conversion-hook">This week's pick: <a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">On Agent Frameworks and Agent Observability</a></p>    </section>
+
+    <!-- Feedback card at bottom: Formspree or Formsubmit.co (free) -->
+    <section class="card feedback-card reveal" style="margin: 24px 0; padding: 24px;">
+      <h3 style="margin: 0 0 6px; font-size: 1.15rem; color: var(--text);">One quick question</h3>
+      <p style="margin: 0 0 16px; font-size: 0.9rem; color: var(--muted);">Your feedback shapes what we cover next.</p>
+      <form id="feedback-form" class="feedback-form" action="https://formsubmit.co/9f7fb1b5db732b04fdea60e73e14ef65" method="post" style="max-width: 420px;">
+        <input type="hidden" name="issue_date" value="13 Feb 2026" />
+        <input type="hidden" name="_subject" value="Inference feedback — 13 Feb 2026" />
+        <label for="feedback-rating" style="display: block; margin-bottom: 6px; font-size: 14px; color: var(--muted);">Rating</label>
+        <select id="feedback-rating" name="rating" required style="width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; background: var(--surface); color: var(--text);">
+          <option value="">— Choose —</option>
+          <option value="Great">Great</option>
+          <option value="Good">Good</option>
+          <option value="Okay">Okay</option>
+          <option value="Not useful">Not useful</option>
+        </select>
+        <label for="feedback-comment" style="display: block; margin-bottom: 6px; font-size: 14px; color: var(--muted);">Comment (optional)</label>
+        <textarea id="feedback-comment" name="comment" rows="2" placeholder="Anything we could do better?" style="width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; resize: vertical; background: var(--surface); color: var(--text);"></textarea>
+        <div id="feedback-recaptcha" class="recaptcha-placeholder" style="min-height: 1px;"></div>
+        <button type="submit" id="feedback-submit" style="padding: 10px 20px; font-size: 14px; font-weight: 600; background: var(--brand); color: white; border: none; border-radius: 8px; cursor: pointer;">Send feedback</button>
+        <p id="feedback-thanks" style="display: none; margin: 12px 0 0; color: var(--brand); font-weight: 500;">Thanks for your feedback.</p>
+      </form>
+      <!-- Hidden form for likes; JS fills article_url and article_title on button click -->
+      <form id="like-form" action="https://formsubmit.co/9f7fb1b5db732b04fdea60e73e14ef65" method="post" style="display: none;">
+        <input type="hidden" name="article_url" id="like-url" value="" />
+        <input type="hidden" name="article_title" id="like-title" value="" />
+        <input type="hidden" name="_subject" value="Inference — article like" />
+        <input type="hidden" name="g-recaptcha-response" id="like-recaptcha" value="" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <a href="https://matthewpaver.github.io/ai-weekly/">Archive</a>
+      <a href="https://matthewpaver.github.io/ai-weekly/latest.html">Latest</a>
+      <a href="https://matthewpaver.github.io/ai-weekly/email.html">Email</a>
+      <a href="https://matthewpaver.github.io/ai-weekly/feed.xml">RSS</a>
+      <a href="https://github.com/MatthewPaver/ai-weekly-newsletter/tree/main/issues">Issues on GitHub</a>
+      <p class="copyright">Editorial analysis &copy; 2026 Matthew Paver. Original articles &copy; respective authors and publications.</p>
+    </footer>
+  </div>
+
+
+  <!-- Scroll-triggered reveal -->
+  <script>
+  (function() {
+    var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mq.matches) {
+      document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('visible'); });
+      return;
+    }
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+  })();
+  </script>
+
+  <!-- Reading progress bar -->
+  <script>
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() {
+          var h = document.documentElement.scrollHeight - window.innerHeight;
+          bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
+  </script>
+
+  <!-- Feedback/like form submit (Formspree or Formsubmit.co; optional reCAPTCHA v3 for Formspree) -->
+  <script>
+  (function() {
+    var recaptchaKey = null;
+    function getRecaptchaToken(action) {
+      return new Promise(function(resolve) {
+        if (!recaptchaKey || typeof grecaptcha === 'undefined') { resolve(''); return; }
+        try {
+          grecaptcha.ready(function() {
+            grecaptcha.execute(recaptchaKey, { action: action || 'submit' }).then(resolve).catch(function() { resolve(''); });
+          });
+        } catch (e) { resolve(''); }
+      });
+    }
+
+    var feedbackForm = document.getElementById('feedback-form');
+    if (feedbackForm) {
+      feedbackForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var btn = document.getElementById('feedback-submit');
+        var thanks = document.getElementById('feedback-thanks');
+        if (btn) btn.disabled = true;
+        getRecaptchaToken('feedback').then(function(token) {
+          var input = document.createElement('input');
+          input.type = 'hidden'; input.name = 'g-recaptcha-response'; input.value = token;
+          feedbackForm.appendChild(input);
+          var formData = new FormData(feedbackForm);
+          fetch(feedbackForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
+            .then(function() { if (thanks) thanks.style.display = 'block'; feedbackForm.reset(); })
+            .catch(function() { if (btn) btn.disabled = false; });
+        });
+      });
+    }
+
+    var likeForm = document.getElementById('like-form');
+    var LIKED_KEY = 'inference_liked_urls';
+    function getLikedUrls() {
+      try {
+        var raw = localStorage.getItem(LIKED_KEY);
+        return raw ? JSON.parse(raw) : [];
+      } catch (e) { return []; }
+    }
+    function setLiked(url) {
+      var urls = getLikedUrls();
+      if (urls.indexOf(url) === -1) { urls.push(url); localStorage.setItem(LIKED_KEY, JSON.stringify(urls)); }
+    }
+    if (likeForm) {
+      var likedUrls = getLikedUrls();
+      document.querySelectorAll('.like-btn').forEach(function(btn) {
+        var url = btn.getAttribute('data-url');
+        if (url && likedUrls.indexOf(url) !== -1) {
+          btn.textContent = '✓ Liked';
+          btn.disabled = true;
+        }
+        btn.addEventListener('click', function() {
+          var title = this.getAttribute('data-title');
+          if (!url || !title || btn.disabled) return;
+          document.getElementById('like-url').value = url;
+          document.getElementById('like-title').value = title;
+          var recaptchaEl = document.getElementById('like-recaptcha');
+          btn.disabled = true;
+          getRecaptchaToken('like').then(function(token) {
+            recaptchaEl.value = token;
+            var formData = new FormData(likeForm);
+            fetch(likeForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
+              .then(function() { btn.textContent = '✓ Liked'; setLiked(url); })
+              .catch(function() { btn.disabled = false; });
+          });
+        });
+      });
+    }
+  })();
+  </script>
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Inference Weekly — 13 Feb 2026",
+    "description": "This week&#39;s signal: Testing ads in ChatGPT — and what it means for your roadmap.",
+    "datePublished": "13 Feb 2026",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Inference Weekly",
+      "logo": { "@type": "ImageObject", "url": "https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png" }
+    },
+    "mainEntityOfPage": "https://matthewpaver.github.io/ai-weekly/latest.html",
+    "image": "https://matthewpaver.github.io/ai-weekly/assets/logo@2x.png"
+  }
+  </script>
+</body>
+</html>

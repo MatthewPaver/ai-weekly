@@ -1,0 +1,55 @@
+{
+  "issues": [
+    {
+      "slug": "2026-03-08",
+      "date_iso": "2026-03-08",
+      "date_label": "08 Mar 2026",
+      "title": "Inference 08 Mar 2026",
+      "lead_title": "Will the Pentagon\u2019s Anthropic controversy scare startups away from defense work?",
+      "summary": "Builders, take note: Will the Pentagon\u2019s Anthropic controversy scare startups away from defense work just shifted the stack.",
+      "total_articles": 13,
+      "read_time_minutes": 5,
+      "section_count": 5,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-03-08.html",
+      "repo_md_path": "/issues/2026-03-08.md",
+      "search_text": "This week at a glance This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week One to test this week \u2b50 Open-source picks \ud83d\udd2c Research worth your time \ud83d\udd12 Security \ud83c\udf10 What changed in industry \ud83d\udee0\ufe0f Tools to try Will the Pentagon\u2019s Anthropic controversy scare startups away from defense work? AutoGPT openclaw LWiAI Podcast #235 - Sonnet 4.6, Deep-thinking tokens, Anthropic vs Pentagon Beyond Accuracy: Quantifying the Production Fragility Caused by Excessive, Redundant, and Low-Signal Features in Regression How our open-source AI model SpeciesNet is helping to promote wildlife conservation This Jammer Wants to Block Always-Listening AI Wearables. It Probably Won\u2019t Work How Balyasny Asset Management built an AI research engine for investing Online harassment is entering its AI era Google's new command-line tool can plug OpenClaw into your Workspace data Google BigQuery Previews Cross-Region SQL Queries for Distributed Data system-prompts-and-models-of-ai-tools",
+      "cover_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2020/10/maxresdefault-1152x648.jpg",
+      "is_latest": true,
+      "likes": 0
+    },
+    {
+      "slug": "2026-03-02",
+      "date_iso": "2026-03-02",
+      "date_label": "02 Mar 2026",
+      "title": "Inference 02 Mar 2026",
+      "lead_title": "Trump moves to ban Anthropic from the US government",
+      "summary": "Leading with Trump moves to ban Anthropic from the US government, and the rest of the week's best AI signal.",
+      "total_articles": 10,
+      "read_time_minutes": 4,
+      "section_count": 3,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-03-02.html",
+      "repo_md_path": "/issues/2026-03-02.md",
+      "search_text": "This week at a glance This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week One to test this week \u2b50 Open-source picks \u2601\ufe0f Infra \ud83c\udf10 What changed in industry Trump moves to ban Anthropic from the US government CoPaw Show HN: IssueScout \u2013 Find open source issues worth contributing to Microsoft's Project Silica promises eternal storage. It can't get there from here Firefox 149 beta develops a split personality Iran all but vanishes from the global internet amid US-Israel strikes OpenAI reveals more details about its agreement with the Pentagon OpenAI and Amazon announce strategic partnership",
+      "cover_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/11/getty-Dario-Amodei-1152x648.jpg",
+      "is_latest": false,
+      "likes": 0
+    },
+    {
+      "slug": "2026-02-28",
+      "date_iso": "2026-02-28",
+      "date_label": "28 Feb 2026",
+      "title": "Inference 28 Feb 2026",
+      "lead_title": "OpenAI and Amazon announce strategic partnership",
+      "summary": "Big news this week: OpenAI and Amazon announce strategic partnership, and what it means for your roadmap.",
+      "total_articles": 10,
+      "read_time_minutes": 4,
+      "section_count": 4,
+      "web_path": "https://matthewpaver.github.io/ai-weekly/issues/2026-02-28.html",
+      "repo_md_path": "/issues/2026-02-28.md",
+      "search_text": "This week at a glance This week If You Only Read One Thing Fast Signals Learn This Week Prompt of the Week \ud83d\udcda Ship-It Playbooks \ud83d\udd2c Research worth your time \u2601\ufe0f Infra \ud83c\udf10 What changed in industry OpenAI and Amazon announce strategic partnership How to Design a Production-Grade Multi-Agent Communication System Using LangGraph Structured Message Bus, ACP Logging, and Persistent Shared State Architecture Interactive Demo: https://coasty.ai/share/a58ee8f6-3821-4795-b4e7-4d77679a6221 A Complete End-to-End Coding Guide to MLflow Experiment Tracking, Hyperparameter Optimization, Model Evaluation, and Live Model Deployment Alibaba Team Open-Sources CoPaw: A High-Performance Personal Agent Workstation for Developers to Scale Multi-Channel AI Workflows and Memory OpenClaw, but in containers: Meet NanoClaw SaaS-pocalypse chatter is doomster pr0n. It would be nice if enterprise IT were boring again Trump moves to ban Anthropic from the US government OpenAI reveals more details about its agreement with the Pentagon",
+      "cover_image_url": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2170386424.jpg?w=1024",
+      "is_latest": false,
+      "likes": 0
+    }
+  ]
+}
