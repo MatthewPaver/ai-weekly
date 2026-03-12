@@ -2,50 +2,61 @@
 
 # AI Weekly
 
-**Your curated briefing on AI trends, tools, and research**
+**Archived public newsletter output**
 
-*Updated every Monday from 15+ sources*
+This repository is no longer the main product or development surface.
 
-[![Website](https://img.shields.io/badge/Website-Live-00D9FF?style=for-the-badge)](https://matthewpaver.github.io/ai-weekly/)
-[![RSS](https://img.shields.io/badge/RSS-Feed-orange?style=for-the-badge&logo=rss)](https://matthewpaver.github.io/ai-weekly/feed.xml)
+[![Read Archive](https://img.shields.io/badge/Read_Archive-00D9FF?style=for-the-badge)](https://matthewpaver.github.io/ai-weekly/)
+[![Main Product](https://img.shields.io/badge/Main_Product-Inference_Brief-181717?style=for-the-badge)](https://inferencebrief.co/)
+[![Main Repo](https://img.shields.io/badge/Main_Repo-inference--web-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/inference-web)
 
 </div>
 
 ---
 
-### What's Inside
+## Status
 
-Each week, AI Weekly curates the most relevant articles across:
+`AI Weekly` has been superseded by **Inference Brief**, which is the current and actively developed version of the product.
 
-| Category | What You'll Find |
-|----------|-----------------|
-| Research & Papers | Latest from arXiv, MIT Tech Review |
-| Tools & Frameworks | New releases, libraries, APIs |
-| Trending Repos | Hot AI/ML repositories on GitHub |
-| Tutorials & Guides | Learn from beginner to advanced |
-| Industry & Community | News, funding, launches |
+Use these destinations instead:
 
-### Difficulty Levels
+- **Main live product:** [inferencebrief.co](https://inferencebrief.co/)
+- **Main codebase:** [MatthewPaver/inference-web](https://github.com/MatthewPaver/inference-web)
 
-Every article is tagged by difficulty so you can find content that matches your level:
+This repository remains available as:
 
-- **Beginner** — Conceptual overviews, getting-started guides
-- **Intermediate** — Implementation guides, applied ML
-- **Advanced** — Research papers, novel architectures
+- a public archive of the earlier static newsletter
+- the published output for the older GitHub Pages version
+- a readable RSS/archive endpoint for that earlier format
 
-### Personalise Your Feed
+---
 
-Use the filter bar on the [website](https://matthewpaver.github.io/ai-weekly/) to show only the topics and difficulty levels you care about. Your preferences are saved locally.
+## What Lives Here
 
-### Subscribe
+This repo is intentionally lightweight. It contains generated site output and archive assets for the original `AI Weekly` publishing flow, rather than the main application source for the current product.
 
-- **RSS**: Add the [feed](https://matthewpaver.github.io/ai-weekly/feed.xml) to your reader
-- **GitHub**: Watch this repo for weekly notifications
+If you are looking for:
+
+- personalised feeds
+- accounts and preferences
+- bookmarks and reading history
+- subscription flows
+- the current editorial and publishing pipeline
+
+those now live in **Inference Brief**.
+
+---
+
+## Archive Links
+
+- [Website archive](https://matthewpaver.github.io/ai-weekly/)
+- [RSS feed](https://matthewpaver.github.io/ai-weekly/feed.xml)
+- [Inference Brief](https://inferencebrief.co/)
 
 ---
 
 <div align="center">
 
-**Built by [Matthew Paver](https://github.com/MatthewPaver)** | [LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/) | [Portfolio](https://github.com/MatthewPaver/portfolio)
+Built by [Matthew Paver](https://github.com/MatthewPaver) | [LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/)
 
 </div>
