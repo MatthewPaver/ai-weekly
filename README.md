@@ -2,13 +2,11 @@
 
 # AI Weekly
 
-**Archived public newsletter output**
+**Archived newsletter output**
 
 This repository is no longer the main product or development surface.
 
-[![Read Archive](https://img.shields.io/badge/Read_Archive-00D9FF?style=for-the-badge)](https://matthewpaver.github.io/ai-weekly/)
 [![Main Product](https://img.shields.io/badge/Main_Product-Inference_Brief-181717?style=for-the-badge)](https://inferencebrief.co/)
-[![Main Repo](https://img.shields.io/badge/Main_Repo-inference--web-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/inference-web)
 
 </div>
 
@@ -21,13 +19,11 @@ This repository is no longer the main product or development surface.
 Use these destinations instead:
 
 - **Main live product:** [inferencebrief.co](https://inferencebrief.co/)
-- **Main codebase:** [MatthewPaver/inference-web](https://github.com/MatthewPaver/inference-web)
 
 This repository remains available as:
 
 - a public archive of the earlier static newsletter
-- the published output for the older GitHub Pages version
-- a readable RSS/archive endpoint for that earlier format
+- generated output and archive assets for the older publishing flow
 
 ---
 
@@ -49,8 +45,6 @@ those now live in **Inference Brief**.
 
 ## Archive Links
 
-- [Website archive](https://matthewpaver.github.io/ai-weekly/)
-- [RSS feed](https://matthewpaver.github.io/ai-weekly/feed.xml)
 - [Inference Brief](https://inferencebrief.co/)
 
 ---
